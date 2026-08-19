@@ -1,0 +1,6 @@
+# Robots.txt for SkyBlue Calzado Mayorista
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://skybluecalzado.com.ar/sitemap.xml
