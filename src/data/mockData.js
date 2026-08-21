@@ -264,200 +264,189 @@ export const CATEGORIES = [
 ];
 
 export const PRODUCTS = [
-  // --- 1. CALZADO DAMA (8 Modelos: 2 en 'todas' + 6 exclusivos de dama) ---
+  // --- 1. CALZADO DE MUJER / DAMA (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
   {
     id: "dama-01",
-    name: "XTI143760",
+    name: "XTI146102",
     brand: "Xti",
     category: "dama",
     featuredInAll: true,
     module: "Módulo 8 o 12 pares (35 al 40)",
     markup: "Margen x2.2",
-    image: "/images/products/XTI143760.jpg",
-    altText: "Calzado mayorista modelo XTI143760"
+    image: "/images/products/XTI146102.jpg",
+    altText: "Calzado de mujer mayorista XTI146102"
   },
   {
     id: "dama-02",
-    name: "REF175009",
-    brand: "Refresh",
+    name: "XTI145473",
+    brand: "Xti",
     category: "dama",
     featuredInAll: true,
     module: "Módulo 8 o 12 pares (35 al 40)",
     markup: "Margen x2.2",
-    image: "/images/products/REF175009.jpg",
-    altText: "Calzado mayorista modelo REF175009"
+    image: "/images/products/XTI145473.jpg",
+    altText: "Calzado de mujer mayorista XTI145473"
   },
   {
     id: "dama-03",
-    name: "XTI142553",
+    name: "XTI146098",
     brand: "Xti",
     category: "dama",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (35 al 40)",
     markup: "Margen x2.3",
-    image: "/images/products/XTI142553.jpg",
-    altText: "Calzado mayorista modelo XTI142553"
+    image: "/images/products/XTI146098.jpg",
+    altText: "Calzado de mujer mayorista XTI146098"
   },
   {
     id: "dama-04",
-    name: "XTI130689",
+    name: "XTI145218",
     brand: "Xti",
     category: "dama",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (35 al 40)",
     markup: "Margen x2.2",
-    image: "/images/products/XTI130689.jpg",
-    altText: "Calzado mayorista modelo XTI130689"
+    image: "/images/products/XTI145218.jpg",
+    altText: "Calzado de mujer mayorista XTI145218"
   },
   {
     id: "dama-05",
-    name: "XTI141807",
+    name: "XTI145442",
     brand: "Xti",
     category: "dama",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (35 al 40)",
-    markup: "Margen x2.3",
-    image: "/images/products/XTI141807.jpg",
-    altText: "Calzado mayorista modelo XTI141807"
+    markup: "Margen x2.2",
+    image: "/images/products/XTI145442.jpg",
+    altText: "Calzado de mujer mayorista XTI145442"
   },
   {
     id: "dama-06",
-    name: "REF175021",
-    brand: "Refresh",
+    name: "XTI145220",
+    brand: "Xti",
     category: "dama",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (35 al 40)",
-    markup: "Margen x2.2",
-    image: "/images/products/REF175021.jpg",
-    altText: "Calzado mayorista modelo REF175021"
+    markup: "Margen x2.3",
+    image: "/images/products/XTI145220.jpg",
+    altText: "Calzado de mujer mayorista XTI145220"
   },
   {
     id: "dama-07",
-    name: "REF175051",
-    brand: "Refresh",
+    name: "XTI145073",
+    brand: "Xti",
     category: "dama",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (35 al 40)",
-    markup: "Margen x2.1",
-    image: "/images/products/REF175051.jpg",
-    altText: "Calzado mayorista modelo REF175051"
+    markup: "Margen x2.2",
+    image: "/images/products/XTI145073.jpg",
+    altText: "Calzado de mujer mayorista XTI145073"
   },
   {
     id: "dama-08",
-    name: "GD016093",
-    brand: "Giulia Domna",
+    name: "XTI145260",
+    brand: "Xti",
     category: "dama",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (35 al 40)",
-    markup: "Margen x2.5",
-    image: "/images/products/GD016093.jpg",
-    altText: "Calzado mayorista modelo GD016093"
+    markup: "Margen x2.1",
+    image: "/images/products/XTI145260.jpg",
+    altText: "Calzado de mujer mayorista XTI145260"
   },
 
-  // --- 2. CALZADO CABALLERO (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
+  // --- 2. CALZADO DE HOMBRE / CABALLERO (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
   {
     id: "cab-01",
-    name: "REF175515",
-    brand: "Refresh",
+    name: "XTI146742",
+    brand: "Xti",
     category: "caballero",
     featuredInAll: true,
     module: "Módulo 8 o 12 pares (39 al 44)",
     markup: "Margen x2.2",
-    image: "/images/products/REF175515.jpg",
-    altText: "Calzado hombre mayorista REF175515"
+    image: "/images/products/XTI146742.jpg",
+    altText: "Calzado de hombre mayorista XTI146742"
   },
   {
     id: "cab-02",
-    name: "REF175522",
-    brand: "Refresh",
+    name: "XTI145798",
+    brand: "Xti",
     category: "caballero",
     featuredInAll: true,
     module: "Módulo 8 o 12 pares (39 al 44)",
     markup: "Margen x2.2",
-    image: "/images/products/REF175522.jpg",
-    altText: "Calzado hombre mayorista REF175522"
+    image: "/images/products/XTI145798.jpg",
+    altText: "Calzado de hombre mayorista XTI145798"
   },
   {
     id: "cab-03",
-    name: "REF175526",
-    brand: "Refresh",
+    name: "XTI144138",
+    brand: "Xti",
     category: "caballero",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (39 al 44)",
     markup: "Margen x2.1",
-    image: "/images/products/REF175526.jpg",
-    altText: "Calzado hombre mayorista REF175526"
+    image: "/images/products/XTI144138.jpg",
+    altText: "Calzado de hombre mayorista XTI144138"
   },
   {
     id: "cab-04",
-    name: "REF175538",
-    brand: "Refresh",
+    name: "XTI145808",
+    brand: "Xti",
     category: "caballero",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (39 al 44)",
     markup: "Margen x2.2",
-    image: "/images/products/REF175538.jpg",
-    altText: "Calzado hombre mayorista REF175538"
+    image: "/images/products/XTI145808.jpg",
+    altText: "Calzado de hombre mayorista XTI145808"
   },
   {
     id: "cab-05",
-    name: "REF175549",
-    brand: "Refresh",
+    name: "XTI145735",
+    brand: "Xti",
     category: "caballero",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (39 al 44)",
     markup: "Margen x2.2",
-    image: "/images/products/REF175549.jpg",
-    altText: "Calzado hombre mayorista REF175549"
+    image: "/images/products/XTI145735.jpg",
+    altText: "Calzado de hombre mayorista XTI145735"
   },
   {
     id: "cab-06",
-    name: "REF175558",
-    brand: "Refresh",
-    category: "caballero",
-    featuredInAll: false,
-    module: "Módulo 8 o 12 pares (39 al 44)",
-    markup: "Margen x2.1",
-    image: "/images/products/REF175558.jpg",
-    altText: "Calzado hombre mayorista REF175558"
-  },
-  {
-    id: "cab-07",
-    name: "REF175664",
-    brand: "Refresh",
-    category: "caballero",
-    featuredInAll: false,
-    module: "Módulo 8 o 12 pares (39 al 44)",
-    markup: "Margen x2.2",
-    image: "/images/products/REF175664.jpg",
-    altText: "Calzado hombre mayorista REF175664"
-  },
-  {
-    id: "cab-08",
-    name: "REF170184",
-    brand: "Refresh",
+    name: "XTI144713",
+    brand: "Xti",
     category: "caballero",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (39 al 44)",
     markup: "Margen x2.3",
-    image: "/images/products/REF170184.jpg",
-    altText: "Calzado hombre mayorista REF170184"
+    image: "/images/products/XTI144713.jpg",
+    altText: "Calzado de hombre mayorista XTI144713"
+  },
+  {
+    id: "cab-07",
+    name: "REF176718",
+    brand: "Refresh",
+    category: "caballero",
+    featuredInAll: false,
+    module: "Módulo 8 o 12 pares (39 al 44)",
+    markup: "Margen x2.2",
+    image: "/images/products/REF176718.jpg",
+    altText: "Calzado de hombre mayorista REF176718"
+  },
+  {
+    id: "cab-08",
+    name: "REF176738",
+    brand: "Refresh",
+    category: "caballero",
+    featuredInAll: false,
+    module: "Módulo 8 o 12 pares (39 al 44)",
+    markup: "Margen x2.2",
+    image: "/images/products/REF176738.jpg",
+    altText: "Calzado de hombre mayorista REF176738"
   },
 
-  // --- 3. CALZADO NIÑOS / XTI KIDS (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
+  // --- 3. CALZADO DE NIÑOS (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
   {
     id: "ninos-01",
-    name: "XTI151117",
-    brand: "Xti",
-    category: "ninos",
-    featuredInAll: true,
-    module: "Módulo 8 o 12 pares (28 al 36)",
-    markup: "Margen x2.2",
-    image: "/images/products/XTI151117.jpg",
-    altText: "Calzado infantil mayorista XTI151117"
-  },
-  {
-    id: "ninos-02",
     name: "XTI151385",
     brand: "Xti",
     category: "ninos",
@@ -468,18 +457,18 @@ export const PRODUCTS = [
     altText: "Calzado infantil mayorista XTI151385"
   },
   {
-    id: "ninos-03",
-    name: "XTI151386",
+    id: "ninos-02",
+    name: "XTI151117",
     brand: "Xti",
     category: "ninos",
-    featuredInAll: false,
+    featuredInAll: true,
     module: "Módulo 8 o 12 pares (28 al 36)",
     markup: "Margen x2.2",
-    image: "/images/products/XTI151386.jpg",
-    altText: "Calzado infantil mayorista XTI151386"
+    image: "/images/products/XTI151117.jpg",
+    altText: "Calzado infantil mayorista XTI151117"
   },
   {
-    id: "ninos-04",
+    id: "ninos-03",
     name: "XTI153009",
     brand: "Xti",
     category: "ninos",
@@ -490,228 +479,239 @@ export const PRODUCTS = [
     altText: "Calzado infantil mayorista XTI153009"
   },
   {
-    id: "ninos-05",
-    name: "XTI153010",
+    id: "ninos-04",
+    name: "XTI153045",
     brand: "Xti",
     category: "ninos",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (28 al 36)",
     markup: "Margen x2.2",
-    image: "/images/products/XTI153010.jpg",
-    altText: "Calzado infantil mayorista XTI153010"
+    image: "/images/products/XTI153045.jpg",
+    altText: "Calzado infantil mayorista XTI153045"
+  },
+  {
+    id: "ninos-05",
+    name: "XTI154116",
+    brand: "Xti",
+    category: "ninos",
+    featuredInAll: false,
+    module: "Módulo 8 o 12 pares (28 al 36)",
+    markup: "Margen x2.2",
+    image: "/images/products/XTI154116.jpg",
+    altText: "Calzado infantil mayorista XTI154116"
   },
   {
     id: "ninos-06",
-    name: "XTI153025",
+    name: "XTI154159",
     brand: "Xti",
     category: "ninos",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (28 al 36)",
     markup: "Margen x2.2",
-    image: "/images/products/XTI153025.jpg",
-    altText: "Calzado infantil mayorista XTI153025"
+    image: "/images/products/XTI154159.jpg",
+    altText: "Calzado infantil mayorista XTI154159"
   },
   {
     id: "ninos-07",
-    name: "XTI153032",
-    brand: "Xti",
-    category: "ninos",
-    featuredInAll: false,
-    module: "Módulo 8 o 12 pares (28 al 36)",
-    markup: "Margen x2.3",
-    image: "/images/products/XTI153032.jpg",
-    altText: "Calzado infantil mayorista XTI153032"
-  },
-  {
-    id: "ninos-08",
-    name: "XTI153038",
+    name: "XTI151075",
     brand: "Xti",
     category: "ninos",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (28 al 36)",
     markup: "Margen x2.1",
-    image: "/images/products/XTI153038.jpg",
-    altText: "Calzado infantil mayorista XTI153038"
+    image: "/images/products/XTI151075.jpg",
+    altText: "Calzado infantil mayorista XTI151075"
+  },
+  {
+    id: "ninos-08",
+    name: "XTI153043",
+    brand: "Xti",
+    category: "ninos",
+    featuredInAll: false,
+    module: "Módulo 8 o 12 pares (28 al 36)",
+    markup: "Margen x2.3",
+    image: "/images/products/XTI153043.jpg",
+    altText: "Calzado infantil mayorista XTI153043"
   },
 
-  // --- 4. MARROQUINERÍA & BOLSOS (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
+  // --- 4. MARROQUINERÍA (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
   {
     id: "marroq-01",
-    name: "XTI184203",
+    name: "XTI184568",
     brand: "Xti",
     category: "marroquineria",
     featuredInAll: true,
     module: "Pack 4 unidades surtidas",
     markup: "Margen x2.4",
-    image: "/images/products/XTI184203.jpg",
-    altText: "Marroquinería mayorista XTI184203"
+    image: "/images/products/XTI184568.jpg",
+    altText: "Marroquinería mayorista XTI184568"
   },
   {
     id: "marroq-02",
-    name: "XTI184205",
+    name: "XTI184492",
     brand: "Xti",
     category: "marroquineria",
     featuredInAll: true,
     module: "Pack 4 unidades surtidas",
     markup: "Margen x2.3",
-    image: "/images/products/XTI184205.jpg",
-    altText: "Marroquinería mayorista XTI184205"
+    image: "/images/products/XTI184492.jpg",
+    altText: "Marroquinería mayorista XTI184492"
   },
   {
     id: "marroq-03",
-    name: "XTI184219",
+    name: "XTI184693",
     brand: "Xti",
     category: "marroquineria",
     featuredInAll: false,
     module: "Pack 4 unidades surtidas",
-    markup: "Margen x2.4",
-    image: "/images/products/XTI184219.jpg",
-    altText: "Marroquinería mayorista XTI184219"
+    markup: "Margen x2.3",
+    image: "/images/products/XTI184693.jpg",
+    altText: "Marroquinería mayorista XTI184693"
   },
   {
     id: "marroq-04",
-    name: "XTI184227",
+    name: "XTI184708",
     brand: "Xti",
     category: "marroquineria",
     featuredInAll: false,
     module: "Pack 4 unidades surtidas",
-    markup: "Margen x2.3",
-    image: "/images/products/XTI184227.jpg",
-    altText: "Marroquinería mayorista XTI184227"
+    markup: "Margen x2.2",
+    image: "/images/products/XTI184708.jpg",
+    altText: "Marroquinería mayorista XTI184708"
   },
   {
     id: "marroq-05",
-    name: "XTI184241",
-    brand: "Xti",
+    name: "PJ11172",
+    brand: "Petite Jolie",
     category: "marroquineria",
     featuredInAll: false,
     module: "Pack 4 unidades surtidas",
-    markup: "Margen x2.3",
-    image: "/images/products/XTI184241.jpg",
-    altText: "Marroquinería mayorista XTI184241"
+    markup: "Margen x2.4",
+    image: "/images/products/PJ11172.jpg",
+    altText: "Cartera impermeable Petite Jolie PJ11172"
   },
   {
     id: "marroq-06",
-    name: "XTI184335",
-    brand: "Xti",
+    name: "PJ11015",
+    brand: "Petite Jolie",
     category: "marroquineria",
     featuredInAll: false,
     module: "Pack 4 unidades surtidas",
-    markup: "Margen x2.4",
-    image: "/images/products/XTI184335.jpg",
-    altText: "Marroquinería mayorista XTI184335"
+    markup: "Margen x2.3",
+    image: "/images/products/PJ11015.jpg",
+    altText: "Cartera impermeable Petite Jolie PJ11015"
   },
   {
     id: "marroq-07",
-    name: "XTI184340",
-    brand: "Xti",
+    name: "PJ11362",
+    brand: "Petite Jolie",
     category: "marroquineria",
     featuredInAll: false,
     module: "Pack 4 unidades surtidas",
-    markup: "Margen x2.2",
-    image: "/images/products/XTI184340.jpg",
-    altText: "Marroquinería mayorista XTI184340"
+    markup: "Margen x2.4",
+    image: "/images/products/PJ11362.jpg",
+    altText: "Cartera impermeable Petite Jolie PJ11362"
   },
   {
     id: "marroq-08",
-    name: "XTI184344",
-    brand: "Xti",
+    name: "PJ11160",
+    brand: "Petite Jolie",
     category: "marroquineria",
     featuredInAll: false,
     module: "Pack 4 unidades surtidas",
-    markup: "Margen x2.3",
-    image: "/images/products/XTI184344.jpg",
-    altText: "Marroquinería mayorista XTI184344"
+    markup: "Margen x2.4",
+    image: "/images/products/PJ11160.jpg",
+    altText: "Cartera impermeable Petite Jolie PJ11160"
   },
 
-  // --- 5. ACCESORIOS & COMPLEMENTOS (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
+  // --- 5. ACCESORIOS (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
   {
     id: "acc-01",
-    name: "XTI184424",
-    brand: "Xti",
+    name: "PJ000762",
+    brand: "Petite Jolie",
     category: "accesorios",
     featuredInAll: true,
-    module: "Pack 6 unidades surtidas",
+    module: "Exhibidor docena surtida",
     markup: "Margen x2.5",
-    image: "/images/products/XTI184424.jpg",
-    altText: "Accesorio mayorista XTI184424"
+    image: "/images/products/PJ000762.jpg",
+    altText: "Charms coleccionables Petite Jolie PJ000762"
   },
   {
     id: "acc-02",
-    name: "XTI184429",
-    brand: "Xti",
+    name: "PJ20344",
+    brand: "Petite Jolie",
     category: "accesorios",
     featuredInAll: true,
     module: "Pack 6 unidades surtidas",
     markup: "Margen x2.3",
-    image: "/images/products/XTI184429.jpg",
-    altText: "Accesorio mayorista XTI184429"
+    image: "/images/products/PJ20344.jpg",
+    altText: "Accesorio Petite Jolie PJ20344"
   },
   {
     id: "acc-03",
-    name: "XTI184446",
-    brand: "Xti",
+    name: "PJ20326",
+    brand: "Petite Jolie",
     category: "accesorios",
     featuredInAll: false,
     module: "Pack 6 unidades surtidas",
     markup: "Margen x2.4",
-    image: "/images/products/XTI184446.jpg",
-    altText: "Accesorio mayorista XTI184446"
+    image: "/images/products/PJ20326.jpg",
+    altText: "Accesorio Petite Jolie PJ20326"
   },
   {
     id: "acc-04",
-    name: "XTI184453",
-    brand: "Xti",
+    name: "PJ20351E",
+    brand: "Petite Jolie",
     category: "accesorios",
     featuredInAll: false,
     module: "Pack 6 unidades surtidas",
     markup: "Margen x2.3",
-    image: "/images/products/XTI184453.jpg",
-    altText: "Accesorio mayorista XTI184453"
+    image: "/images/products/PJ20351E.jpg",
+    altText: "Accesorio Petite Jolie PJ20351E"
   },
   {
     id: "acc-05",
-    name: "XTI184459",
-    brand: "Xti",
+    name: "PJ20339",
+    brand: "Petite Jolie",
     category: "accesorios",
     featuredInAll: false,
     module: "Pack 6 unidades surtidas",
-    markup: "Margen x2.2",
-    image: "/images/products/XTI184459.jpg",
-    altText: "Accesorio mayorista XTI184459"
+    markup: "Margen x2.3",
+    image: "/images/products/PJ20339.jpg",
+    altText: "Accesorio Petite Jolie PJ20339"
   },
   {
     id: "acc-06",
-    name: "XTI184482",
-    brand: "Xti",
+    name: "PJ20351B",
+    brand: "Petite Jolie",
     category: "accesorios",
     featuredInAll: false,
     module: "Pack 6 unidades surtidas",
-    markup: "Margen x2.5",
-    image: "/images/products/XTI184482.jpg",
-    altText: "Accesorio mayorista XTI184482"
+    markup: "Margen x2.3",
+    image: "/images/products/PJ20351B.jpg",
+    altText: "Accesorio Petite Jolie PJ20351B"
   },
   {
     id: "acc-07",
-    name: "XTI184484",
+    name: "XTI92164",
     brand: "Xti",
     category: "accesorios",
     featuredInAll: false,
     module: "Pack 6 unidades surtidas",
     markup: "Margen x2.4",
-    image: "/images/products/XTI184484.jpg",
-    altText: "Accesorio mayorista XTI184484"
+    image: "/images/products/XTI92164.jpg",
+    altText: "Accesorio mayorista XTI92164"
   },
   {
     id: "acc-08",
-    name: "XTI184504",
+    name: "XTI87488",
     brand: "Xti",
     category: "accesorios",
     featuredInAll: false,
     module: "Pack 6 unidades surtidas",
-    markup: "Margen x2.5",
-    image: "/images/products/XTI184504.jpg",
-    altText: "Accesorio mayorista XTI184504"
+    markup: "Margen x2.4",
+    image: "/images/products/XTI87488.jpg",
+    altText: "Accesorio mayorista XTI87488"
   }
 ];
 
