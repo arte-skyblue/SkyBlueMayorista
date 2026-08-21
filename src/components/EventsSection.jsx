@@ -51,7 +51,7 @@ export default function EventsSection({ onOpenModal }) {
           </div>
         </div>
 
-        {/* Event Grid Layout with 16:9 Vertical Aspect Ratio */}
+        {/* Event Grid Layout with 3:4 Vertical Aspect Ratio */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {EVENTS.map((event) => {
             const media = eventMedia[event.id] || { type: 'image', src: '/images/events/efica.jpg' };
@@ -61,8 +61,8 @@ export default function EventsSection({ onOpenModal }) {
                 <article className="bg-neutral-900/90 hover:bg-neutral-900 rounded-3xl border border-neutral-800 hover:border-primary/40 hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col justify-between h-full group">
                   
                   <div>
-                    {/* 16:9 Vertical Ratio (aspect-[9/16]) */}
-                    <div className="relative aspect-[9/16] overflow-hidden bg-neutral-950">
+                    {/* 3:4 Vertical Ratio (aspect-[3/4]) */}
+                    <div className="relative aspect-[3/4] overflow-hidden bg-neutral-950">
                       {media.type === 'video' ? (
                         <video
                           src={media.src}
