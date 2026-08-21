@@ -1,0 +1,58 @@
+{
+  "id": "4276",
+  "sku": "XTI184492",
+  "title": "XTI184492",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "",
+  "price": 58758,
+  "priceFormatted": "$ 58.758,00 + IVA",
+  "available": true,
+  "totalStock": 1,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5317257.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5317257.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5317258.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5317261.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5317262.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5317259.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5317260.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4276",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 58758
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 58.758,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "534282"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 58.758,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "534282"
+        }
+      ]
+    }
+  ]
+}

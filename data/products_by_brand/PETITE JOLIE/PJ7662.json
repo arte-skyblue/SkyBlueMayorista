@@ -1,0 +1,209 @@
+{
+  "id": "3972",
+  "sku": "PJ7662",
+  "title": "PJ7662",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "Las chanclas Jimmy para mujer están confeccionadas en J-Lastic con suela plana y acabado pulido, aportando ligereza y estilo a tus looks. Su suave plantilla garantiza comodidad en cada paso, mientras que su delicado diseño se realza con la hebilla asimétrica, un detalle único que completa la pieza. Fáciles de calzar, las Jimmy son la opción práctica y elegante para los días de verano.\r\n\r\nAltura del tacón: 1,3 cm",
+  "price": 30522,
+  "priceFormatted": "$ 30.522,00 + IVA",
+  "available": true,
+  "totalStock": 216,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312529.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312529.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312530.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312531.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312532.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312533.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312534.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312535.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312536.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312537.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312538.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312528.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3972",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1",
+      "salePrice": 30522
+    }
+  ],
+  "variants": [
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 30.522,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 5,
+          "masterPid": "533337"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "533337"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 15,
+          "masterPid": "533337"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 15,
+          "masterPid": "533337"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 10,
+          "masterPid": "533337"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 5,
+          "masterPid": "533337"
+        }
+      ]
+    },
+    {
+      "color": "Lima",
+      "colorId": "384",
+      "price": "$ 30.522,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 4,
+          "masterPid": "533337"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 8,
+          "masterPid": "533337"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 12,
+          "masterPid": "533337"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 12,
+          "masterPid": "533337"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 8,
+          "masterPid": "533337"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "533337"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 30.522,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 5,
+          "masterPid": "533337"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "533337"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 15,
+          "masterPid": "533337"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 15,
+          "masterPid": "533337"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 10,
+          "masterPid": "533337"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 5,
+          "masterPid": "533337"
+        }
+      ]
+    },
+    {
+      "color": "TRANSLUCIDO",
+      "colorId": "598",
+      "price": "$ 30.522,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 4,
+          "masterPid": "533337"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 8,
+          "masterPid": "533337"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 12,
+          "masterPid": "533337"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 12,
+          "masterPid": "533337"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 8,
+          "masterPid": "533337"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "533337"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "4449",
+  "sku": "XTI144710",
+  "title": "XTI144710",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "",
+  "price": 33500,
+  "priceFormatted": "$ 33.500,00 + IVA",
+  "available": true,
+  "totalStock": 8,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5316452.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5316452.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316453.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316454.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316455.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316456.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316457.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316458.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316459.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316460.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316461.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4449",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 33500
+    }
+  ],
+  "variants": [
+    {
+      "color": "NAVY",
+      "colorId": "434",
+      "price": "$ 33.500,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "534085"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "534085"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "534085"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 0,
+          "masterPid": "534085"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 0,
+          "masterPid": "534085"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 0,
+          "masterPid": "534085"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 0,
+          "masterPid": "534085"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 33.500,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "534085"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "534085"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 1,
+          "masterPid": "534085"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 2,
+          "masterPid": "534085"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 2,
+          "masterPid": "534085"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 1,
+          "masterPid": "534085"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 1,
+          "masterPid": "534085"
+        }
+      ]
+    }
+  ]
+}

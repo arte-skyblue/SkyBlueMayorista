@@ -1,0 +1,85 @@
+{
+  "id": "4172",
+  "sku": "REF173026",
+  "title": "REF173026",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Botín de mujer, de la marca Refresh. Fabricado en material que imita a la piel. Cierre mediante cremallera interior. Botín tipo chelsea con elástico en el lateral. Tirador trasero para facilitar el calce. Suela volumen de goma antideslizante. Con plantilla extraíble.",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 80,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5321549.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5321549.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321550.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321551.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321552.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321548.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4172",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x2, 39x2, 40x1, 41x0",
+      "salePrice": 65940
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 4,
+          "masterPid": "534137"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 12,
+          "masterPid": "534137"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 20,
+          "masterPid": "534137"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 20,
+          "masterPid": "534137"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 16,
+          "masterPid": "534137"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 8,
+          "masterPid": "534137"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "534137"
+        }
+      ]
+    }
+  ]
+}

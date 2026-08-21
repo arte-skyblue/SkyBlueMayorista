@@ -1,0 +1,79 @@
+{
+  "id": "4648",
+  "sku": "XTI145417",
+  "title": "XTI145417",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Alpargata de mujer, de la marca Xti. \r\nFabricada en material textil de alta calidad, presenta un bonito dibujo trenzado que aporta un aire artesanal y elegante. Incorpora sujeción al tobillo mediante hebilla, garantizando un ajuste seguro y personalizado. La cuña de 8 cm ofrece altura y estiliza la silueta, sin renunciar a la comodidad gracias a su diseño ergonómico. Ideal para tus looks veraniegos, combinando frescura y estilo en cada paso.\r\n\r\n Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 54000,
+  "priceFormatted": "$ 54.000,00 + IVA",
+  "available": true,
+  "totalStock": 24,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5349143.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5349143.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5349144.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5349145.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5349142.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4648",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x2, 37x2, 38x2, 39x1, 40x0, 41x0",
+      "salePrice": 54000
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 54.000,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 3,
+          "masterPid": "539479"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 6,
+          "masterPid": "539479"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 6,
+          "masterPid": "539479"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 6,
+          "masterPid": "539479"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 3,
+          "masterPid": "539479"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "539479"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "539479"
+        }
+      ]
+    }
+  ]
+}

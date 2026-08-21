@@ -1,0 +1,118 @@
+{
+  "id": "3981",
+  "sku": "PJ7720",
+  "title": "PJ7720",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "La sandalia Lovin' Flat Fur es una sandalia J-Lastic para mujer con dos tiras, hebillas funcionales y diseño sin puntera, perfecta para quienes buscan comodidad y practicidad. El modelo presenta un ribete de pelo en la parte exterior del empeine, que le aporta un toque moderno y elegante. Con una plantilla anatómica J-Soft, la Lovin' Flat Fur garantiza comodidad durante todo el día, mientras que su suela suave y antideslizante proporciona seguridad en cada paso. Fácil de poner, combina a la perfección con looks casuales y urbanos, uniendo estilo y bienestar en un solo calzado.",
+  "price": 52480,
+  "priceFormatted": "$ 52.480,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312692.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312692.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312693.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312694.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312695.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312696.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312691.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3981",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1",
+      "salePrice": 52480
+    }
+  ],
+  "variants": [
+    {
+      "color": "CREMA",
+      "colorId": "470",
+      "price": "$ 52.480,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "533349"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "533349"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "533349"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "533349"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "533349"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "533349"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 52.480,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "533349"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "533349"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "533349"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "533349"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "533349"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "533349"
+        }
+      ]
+    }
+  ]
+}

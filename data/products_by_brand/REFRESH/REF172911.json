@@ -1,0 +1,80 @@
+{
+  "id": "3802",
+  "sku": "REF172911",
+  "title": "REF172911",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Botín de mujer, de la marca Refresh. Fabricado en material que imita a la piel. Collarín de pelo para los días más fríos. Cierre mediante cremallera interior. Cordones regulables al tono. Cremallera lateral decorativa. Tacón en bloque de 6 cm. Suela de goma antideslizante. Plantilla extraíble.\r\n\r\nEste modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nCALCE:\r\nAltura Tacon: 6 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cremallera",
+  "price": 67158,
+  "priceFormatted": "$ 67.158,00 + IVA",
+  "available": true,
+  "totalStock": 32,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5309061.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5309061.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309062.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309063.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309064.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309060.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3802",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 67158
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 67.158,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 4,
+          "masterPid": "507757"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "507757"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 8,
+          "masterPid": "507757"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 8,
+          "masterPid": "507757"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 4,
+          "masterPid": "507757"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "507757"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507757"
+        }
+      ]
+    }
+  ]
+}

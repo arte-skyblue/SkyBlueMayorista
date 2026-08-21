@@ -1,0 +1,161 @@
+{
+  "id": "3984",
+  "sku": "PJ7683",
+  "title": "PJ7683",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "La sandalia Noah II Petite Jolie es ligera, moderna y perfecta para quienes buscan comodidad y estilo. Confeccionada en J-Lastic, cuenta con delicadas tiras y cierre de hebilla que brindan seguridad y facilidad de uso. La suela plana con acabado pulido garantiza flexibilidad y ligereza, mientras que su diseño minimalista transforma cualquier look en un conjunto sencillo y a la moda. La Noah II Petite Jolie es ideal para salidas, días de verano y ocasiones que requieren un estilo impecable.",
+  "price": 20881,
+  "priceFormatted": "$ 20.881,00 + IVA",
+  "available": true,
+  "totalStock": 216,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312707.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312707.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312708.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312710.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312711.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312712.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312709.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3984",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1",
+      "salePrice": 20881
+    }
+  ],
+  "variants": [
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 20.881,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 6,
+          "masterPid": "533339"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 12,
+          "masterPid": "533339"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 18,
+          "masterPid": "533339"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 18,
+          "masterPid": "533339"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 12,
+          "masterPid": "533339"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 6,
+          "masterPid": "533339"
+        }
+      ]
+    },
+    {
+      "color": "CREMA",
+      "colorId": "470",
+      "price": "$ 20.881,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 6,
+          "masterPid": "533339"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 12,
+          "masterPid": "533339"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 18,
+          "masterPid": "533339"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 18,
+          "masterPid": "533339"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 12,
+          "masterPid": "533339"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 6,
+          "masterPid": "533339"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 20.881,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 6,
+          "masterPid": "533339"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 12,
+          "masterPid": "533339"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 18,
+          "masterPid": "533339"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 18,
+          "masterPid": "533339"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 12,
+          "masterPid": "533339"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 6,
+          "masterPid": "533339"
+        }
+      ]
+    }
+  ]
+}

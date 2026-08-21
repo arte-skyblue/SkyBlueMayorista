@@ -1,0 +1,158 @@
+{
+  "id": "3976",
+  "sku": "PJ7757",
+  "title": "PJ7757",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "La zapatilla Puff es un calzado de estilo aventurero con una parte superior de gran detalle, que combina una mezcla de materiales y texturas que garantizan estilo y durabilidad. La mediasuela J-Puff y la suela antideslizante proporcionan ligereza, amortiguación y una comodidad extrema, transformando el impacto de la marcha en propulsión, lo que la hace ideal también para actividades deportivas. El modelo cuenta con protección de espuma en el talón y una plantilla tecnológica supersuave y resistente que se adapta perfectamente al pie y recupera su posición original tras su uso. La zapatilla Puff combina rendimiento, comodidad y un diseño moderno, lo que la convierte en la opción perfecta para quienes buscan estilo, practicidad y rendimiento en un solo calzado.",
+  "price": 43057,
+  "priceFormatted": "$ 43.057,00 + IVA",
+  "available": true,
+  "totalStock": 12,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312629.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312629.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312631.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312630.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3976",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1",
+      "salePrice": 43057
+    }
+  ],
+  "variants": [
+    {
+      "color": "BLANCO MULTI",
+      "colorId": "599",
+      "price": "$ 43.057,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "533354"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "533354"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "533354"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "533354"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "533354"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "533354"
+        }
+      ]
+    },
+    {
+      "color": "BLANCO MULTI2",
+      "colorId": "595",
+      "price": "$ 43.057,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 1,
+          "masterPid": "533354"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 2,
+          "masterPid": "533354"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 3,
+          "masterPid": "533354"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 3,
+          "masterPid": "533354"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 2,
+          "masterPid": "533354"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "533354"
+        }
+      ]
+    },
+    {
+      "color": "NEGRO MULTI",
+      "colorId": "594",
+      "price": "$ 43.057,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "533354"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "533354"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "533354"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "533354"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "533354"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "533354"
+        }
+      ]
+    }
+  ]
+}

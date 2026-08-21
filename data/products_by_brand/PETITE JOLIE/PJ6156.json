@@ -1,0 +1,119 @@
+{
+  "id": "3965",
+  "sku": "PJ6156",
+  "title": "PJ6156",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El botín Chelsea, de estilo Chelsea y confeccionado en J-Lastic, tiene un largo hasta la pantorrilla y suela con relieve, ideal para quienes buscan practicidad, comodidad y estilo. Cuenta con cremallera interna y tirador en la parte trasera para ponérselo y quitárselo fácilmente, además de una plantilla supersuave que garantiza comodidad durante todo el día.\r\n\r\nSu diseño monocromático lo hace versátil, combinando fácilmente con diversos looks, mientras que la suela con relieve le aporta personalidad y durabilidad, incluso en días de lluvia. Una opción práctica y elegante para el día a día y looks urbanos.",
+  "price": 47124,
+  "priceFormatted": "$ 47.124,00 + IVA",
+  "available": true,
+  "totalStock": 180,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312575.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312575.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312576.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312577.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312578.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312579.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312580.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312574.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3965",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1",
+      "salePrice": 47124
+    }
+  ],
+  "variants": [
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 47.124,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 3,
+          "masterPid": "533317"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 6,
+          "masterPid": "533317"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 15,
+          "masterPid": "533317"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 11,
+          "masterPid": "533317"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 10,
+          "masterPid": "533317"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 3,
+          "masterPid": "533317"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 47.124,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 11,
+          "masterPid": "533317"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 22,
+          "masterPid": "533317"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 33,
+          "masterPid": "533317"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 33,
+          "masterPid": "533317"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 22,
+          "masterPid": "533317"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 11,
+          "masterPid": "533317"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "id": "4308",
+  "sku": "REF175038",
+  "title": "REF175038",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Zapatilla multicolor de la marca Refresh. Fabricada en material que imita a la piel combinada con nylon. Cierre mediante cordones. Suela de goma.\r\n\r\nAltura Tacon: 0 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cordón",
+  "price": 54558,
+  "priceFormatted": "$ 54.558,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5327080.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5327080.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5327081.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5327082.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5327084.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5327085.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5327086.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5327087.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5327088.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5327089.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5327090.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5327091.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5327083.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4308",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 54558
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 54558
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 54558
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 54558
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 54.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "536099"
+        }
+      ]
+    },
+    {
+      "color": "Celeste",
+      "colorId": "383",
+      "price": "$ 54.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "536099"
+        }
+      ]
+    },
+    {
+      "color": "Rosa",
+      "colorId": "266",
+      "price": "$ 54.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "536099"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "536099"
+        }
+      ]
+    }
+  ]
+}

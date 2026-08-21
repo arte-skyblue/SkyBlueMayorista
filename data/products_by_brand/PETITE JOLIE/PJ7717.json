@@ -1,0 +1,125 @@
+{
+  "id": "3982",
+  "sku": "PJ7717",
+  "title": "PJ7717",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "",
+  "price": 69083,
+  "priceFormatted": "$ 69.083,00 + IVA",
+  "available": true,
+  "totalStock": 48,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5337897.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5337897.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337898.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337899.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337900.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337901.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337902.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337903.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337904.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337905.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337906.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337908.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337909.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337907.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3982",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1",
+      "salePrice": 69083
+    }
+  ],
+  "variants": [
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 69.083,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 2,
+          "masterPid": "533348"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "533348"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 6,
+          "masterPid": "533348"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 6,
+          "masterPid": "533348"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 4,
+          "masterPid": "533348"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 2,
+          "masterPid": "533348"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 69.083,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 2,
+          "masterPid": "533348"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "533348"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 6,
+          "masterPid": "533348"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 6,
+          "masterPid": "533348"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 4,
+          "masterPid": "533348"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 2,
+          "masterPid": "533348"
+        }
+      ]
+    }
+  ]
+}

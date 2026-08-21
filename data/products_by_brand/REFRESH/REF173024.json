@@ -1,0 +1,84 @@
+{
+  "id": "3785",
+  "sku": "REF173024",
+  "title": "REF173024",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Saca a relucir tu lado más atrevido con los botines REFRESH 173024. Una fusión perfecta entre la robustez y la moda moderna, estos botines de inspiración militar están diseñados para realzar tu estilo. La suela gruesa y el tacón de bloque, que marcan tendencia, proporcionan una pisada segura y un agarre excepcional. Los cordones delanteros ofrecen un ajuste totalmente regulable, mientras que la cremallera lateral interior facilita ponérselos y quitárselos. Versátiles y cómodos, con una clásica puntera redonda, combínalos con todo, desde vaqueros hasta vestidos, para conseguir un look chic y atrevido que marca tendencia en cualquier temporada.",
+  "price": 65958,
+  "priceFormatted": "$ 65.958,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5308653.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5308653.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308654.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308655.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5276825.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3785",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 65958
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 65958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "507641"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "507641"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "507641"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "507641"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "507641"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "507641"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507641"
+        }
+      ]
+    }
+  ]
+}

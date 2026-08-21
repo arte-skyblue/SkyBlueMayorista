@@ -1,0 +1,147 @@
+{
+  "id": "4298",
+  "sku": "REF175017",
+  "title": "REF175017",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Dale un toque urbano y moderno a tus outfits con estos tenis casuales de la marca Refresh. Presentan una combinación de materiales resaltan su diseño dinámico y juvenil. La suela tipo chunky en blanco con base color caramelo ofrece gran tracción y estilo. Ideales para combinar con jeans, joggers o looks deportivos. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 0 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cordón",
+  "price": 58758,
+  "priceFormatted": "$ 58.758,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5326277.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5326277.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326278.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326279.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326280.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326281.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326283.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326284.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326282.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4298",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 58758
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 58758
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 58758
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 58758
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 58.758,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "536086"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "536086"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "536086"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "536086"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "536086"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "536086"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "536086"
+        }
+      ]
+    },
+    {
+      "color": "LILA",
+      "colorId": "372",
+      "price": "$ 58.758,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "536086"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "536086"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "536086"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "536086"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "536086"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "536086"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "536086"
+        }
+      ]
+    }
+  ]
+}

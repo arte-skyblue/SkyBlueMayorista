@@ -1,0 +1,85 @@
+{
+  "id": "3946",
+  "sku": "PJ11274",
+  "title": "PJ11274",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "Un bolso de compras estructurado con amplio espacio interior para llevar todo lo que necesitas. Cuenta con asa superior y correa para el hombro para mayor comodidad en tu día a día. Este diseño clásico se adapta a cualquier situación, acompañándote al trabajo, salidas y otros eventos. Si buscas practicidad, este es el bolso ideal.\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Cremallera\r\nCorrea para el hombro: 74 cm - 128 cm\r\nAjustable: Sí\r\nDesmontable: Sí\r\nAltura: 23 cm\r\nAbertura superior: 32 cm\r\nAbertura inferior: 24,5 cm\r\nProfundidad: 14 cm",
+  "price": 39091,
+  "priceFormatted": "$ 39.091,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312341.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312341.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312342.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312343.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312346.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312348.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312349.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312340.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3946",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 39091
+    }
+  ],
+  "variants": [
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 39.091,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533365"
+        }
+      ]
+    },
+    {
+      "color": "CREMA",
+      "colorId": "470",
+      "price": "$ 39.091,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533365"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 39.091,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533365"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 39.091,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533365"
+        }
+      ]
+    }
+  ]
+}

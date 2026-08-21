@@ -1,0 +1,82 @@
+{
+  "id": "4179",
+  "sku": "XTI144264",
+  "title": "XTI144264",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Bailarina de mujer, de la marca Xti. Fabricada en material que imita la piel decorada con tachas que incorporan cristales brillantes, añadiendo un toque de estilo y sofisticación. Cuenta con una hebilla ajustable para asegurar un ajuste perfecto. Un diseño elegante y moderno, ideal para aportar un toque de distinción y confort a tus looks. Suela de goma antideslizante. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 54558,
+  "priceFormatted": "$ 54.558,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5321709.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5321709.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321710.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321712.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321713.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321714.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321715.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321711.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4179",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 54558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 54.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "534123"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "534123"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "534123"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "534123"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "534123"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "534123"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "534123"
+        }
+      ]
+    }
+  ]
+}

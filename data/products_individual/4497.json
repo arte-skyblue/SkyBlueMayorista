@@ -1,0 +1,272 @@
+{
+  "id": "4497",
+  "sku": "PJ7494",
+  "title": "PJ7494",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 47304,
+  "priceFormatted": "$ 47.304,00 + IVA",
+  "available": true,
+  "totalStock": 216,
+  "mainImage": "/images/nodisponible-cuadrda.jpg",
+  "images": [
+    "/images/nodisponible-cuadrda.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4497",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 47304
+    }
+  ],
+  "variants": [
+    {
+      "color": "BLANCO/CAMEL",
+      "colorId": "354",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492883"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 9,
+          "masterPid": "492883"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 18,
+          "masterPid": "492883"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 27,
+          "masterPid": "492883"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 27,
+          "masterPid": "492883"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 18,
+          "masterPid": "492883"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 9,
+          "masterPid": "492883"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492883"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 9,
+          "masterPid": "492883"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 17,
+          "masterPid": "492883"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 27,
+          "masterPid": "492883"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 27,
+          "masterPid": "492883"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 18,
+          "masterPid": "492883"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 10,
+          "masterPid": "492883"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492883"
+        }
+      ]
+    },
+    {
+      "color": "OFF WHITE",
+      "colorId": "587",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492883"
+        }
+      ]
+    },
+    {
+      "color": "UVA",
+      "colorId": "586",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "492883"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492883"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": "3786",
+  "sku": "XTI142197",
+  "title": "XTI142197",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Pantubota de mujer, de la marca Xti. Fabricado en suave antelina con forro de pelito ideal para el frío. Lleva este modelo en casa o en la calle. Doble piso con suela antideslizante. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 54560,
+  "priceFormatted": "$ 54.560,00 + IVA",
+  "available": true,
+  "totalStock": 564,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14219703_38-1ea61c7e7090e2605117516388758178-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14219703_38-1ea61c7e7090e2605117516388758178-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14219703_40-f00991ab4eea096e7817516388777334-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14219703_41-8dd8e0a53e6375394117516388796854-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/botas-polares-mujer-xti-142197-beige-1-749cf0a687c9b189e517508558197819-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/botas-polares-mujer-xti-142197-beige-453f99a5269c190ac317508562944575-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14219704_38-1-65b53f53124f5d960b17516383475131-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14219704_40-1-ead314253ff287f48317516383496373-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14219704_41-1-f915bebd919adaadc817516383506508-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14219701_42-5966bd22dc054335f317803184636206-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14219701_41-c0589192901a59698517803184645712-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14219701_40-70f9d7fc7ed617ab0817803184659151-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/foto-web-1280-x-1280-px-1-2a389ab04fd28f43c317803185558357-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/foto-web-1280-x-1280-px-2-96d3721eb87482bd0017803185927646-1024-1024.png"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3786",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 54560
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 54560
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 54.560,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489732"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 17,
+          "masterPid": "489732"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 34,
+          "masterPid": "489732"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 51,
+          "masterPid": "489732"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 51,
+          "masterPid": "489732"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 34,
+          "masterPid": "489732"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 17,
+          "masterPid": "489732"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 54.560,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 30,
+          "masterPid": "489732"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 60,
+          "masterPid": "489732"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 90,
+          "masterPid": "489732"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 90,
+          "masterPid": "489732"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 60,
+          "masterPid": "489732"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 30,
+          "masterPid": "489732"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489732"
+        }
+      ]
+    }
+  ]
+}

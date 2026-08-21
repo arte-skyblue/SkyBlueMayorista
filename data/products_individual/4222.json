@@ -1,0 +1,184 @@
+{
+  "id": "4222",
+  "sku": "REF172784",
+  "title": "REF172784",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Botín de mujer, de la marca Refresh. Fabricado en material que imita a la piel con detalle calado decorativo. Cremallera exterior decorativa. Cierre mediante cremallera interior. Botín con caña de 10 cm y tacón de 6 cm. Suela de goma antideslizante.\r\n\r\nAltura Tacon: 6 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cremallera",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 608,
+  "mainImage": "/images/nodisponible-cuadrda.jpg",
+  "images": [
+    "/images/nodisponible-cuadrda.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4222",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 62958
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x2, 39x2, 40x1, 41x0",
+      "salePrice": 62958
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 22,
+          "masterPid": "491651"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 44,
+          "masterPid": "491651"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 66,
+          "masterPid": "491651"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 66,
+          "masterPid": "491651"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 44,
+          "masterPid": "491651"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 22,
+          "masterPid": "491651"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491651"
+        }
+      ]
+    },
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 21,
+          "masterPid": "491651"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 43,
+          "masterPid": "491651"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 64,
+          "masterPid": "491651"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 64,
+          "masterPid": "491651"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 43,
+          "masterPid": "491651"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 21,
+          "masterPid": "491651"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491651"
+        }
+      ]
+    },
+    {
+      "color": "Oro",
+      "colorId": "292",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491651"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 7,
+          "masterPid": "491651"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 14,
+          "masterPid": "491651"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 22,
+          "masterPid": "491651"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 22,
+          "masterPid": "491651"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 15,
+          "masterPid": "491651"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 8,
+          "masterPid": "491651"
+        }
+      ]
+    }
+  ]
+}

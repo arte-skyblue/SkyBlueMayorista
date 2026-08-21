@@ -1,0 +1,232 @@
+{
+  "id": "4499",
+  "sku": "PJ7130II",
+  "title": "PJ7130II",
+  "brand": "PETITE JOLIE",
+  "season": "Verano 27",
+  "description": "",
+  "price": 40694,
+  "priceFormatted": "$ 40.694,00 + IVA",
+  "available": true,
+  "totalStock": 240,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/372082-1200-auto-cc32a94505350f19d317612292003615-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/372082-1200-auto-cc32a94505350f19d317612292003615-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/372083-1200-auto-bce5c2dc712407ac0217612292022922-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/372084-1200-auto-c43c91ae5ee109ac4117612292033041-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/372085-1200-auto-b05fa3d83c3bfb7a6c17612292045456-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/372086-1200-auto-8f4cf7b782917b7ed317612292058777-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/379380-1200-auto-874d4ff5b693d63cbb17612293500664-640-0-f2fb8b37204207e51517613213451522-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/379378-1200-auto-e5421810ae9b6b41f917612293447278-640-0-d067cd27d7309647d017613213508229-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/379377-1200-auto-80e35e993f919bb52c17612293440254-640-0-87fc9013bb0887872117613213540862-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/379379-1200-auto-753da2f9c6ddcfd8d517612293454572-640-0-cca86d8922701174ae17613213590422-1024-1024.webp",
+    "https://images.ib2c.com.ar/repository/310/productsList/5222554.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4499",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 40694
+    }
+  ],
+  "variants": [
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 40.694,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "492894"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "492894"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "492894"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "492894"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "492894"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "492894"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492894"
+        }
+      ]
+    },
+    {
+      "color": "BLANCO MULTI4",
+      "colorId": "597",
+      "price": "$ 40.694,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 9,
+          "masterPid": "492894"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 18,
+          "masterPid": "492894"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 27,
+          "masterPid": "492894"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 27,
+          "masterPid": "492894"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 18,
+          "masterPid": "492894"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 9,
+          "masterPid": "492894"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492894"
+        }
+      ]
+    },
+    {
+      "color": "CREMA",
+      "colorId": "470",
+      "price": "$ 40.694,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 4,
+          "masterPid": "492894"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 8,
+          "masterPid": "492894"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 12,
+          "masterPid": "492894"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 12,
+          "masterPid": "492894"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 8,
+          "masterPid": "492894"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "492894"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492894"
+        }
+      ]
+    },
+    {
+      "color": "NEGRO MULTI",
+      "colorId": "594",
+      "price": "$ 40.694,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 7,
+          "masterPid": "492894"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 14,
+          "masterPid": "492894"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 21,
+          "masterPid": "492894"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 21,
+          "masterPid": "492894"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 14,
+          "masterPid": "492894"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 7,
+          "masterPid": "492894"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492894"
+        }
+      ]
+    }
+  ]
+}

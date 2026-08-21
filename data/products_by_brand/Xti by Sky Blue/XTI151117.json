@@ -1,0 +1,178 @@
+{
+  "id": "4443",
+  "sku": "XTI151117",
+  "title": "XTI151117",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "",
+  "price": 46158,
+  "priceFormatted": "$ 46.158,00 + IVA",
+  "available": true,
+  "totalStock": 14,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5316925.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5316925.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316927.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316928.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316929.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316930.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316926.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4443",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 46158
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "28",
+          "sizeId": "17",
+          "stock": 0,
+          "masterPid": "534217"
+        },
+        {
+          "size": "29",
+          "sizeId": "18",
+          "stock": 0,
+          "masterPid": "534217"
+        },
+        {
+          "size": "30",
+          "sizeId": "19",
+          "stock": 0,
+          "masterPid": "534217"
+        },
+        {
+          "size": "31",
+          "sizeId": "20",
+          "stock": 0,
+          "masterPid": "534217"
+        },
+        {
+          "size": "32",
+          "sizeId": "21",
+          "stock": 1,
+          "masterPid": "534217"
+        },
+        {
+          "size": "33",
+          "sizeId": "22",
+          "stock": 1,
+          "masterPid": "534217"
+        },
+        {
+          "size": "34",
+          "sizeId": "7",
+          "stock": 1,
+          "masterPid": "534217"
+        },
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 1,
+          "masterPid": "534217"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 1,
+          "masterPid": "534217"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 1,
+          "masterPid": "534217"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 1,
+          "masterPid": "534217"
+        }
+      ]
+    },
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "28",
+          "sizeId": "17",
+          "stock": 0,
+          "masterPid": "534217"
+        },
+        {
+          "size": "29",
+          "sizeId": "18",
+          "stock": 0,
+          "masterPid": "534217"
+        },
+        {
+          "size": "30",
+          "sizeId": "19",
+          "stock": 0,
+          "masterPid": "534217"
+        },
+        {
+          "size": "31",
+          "sizeId": "20",
+          "stock": 0,
+          "masterPid": "534217"
+        },
+        {
+          "size": "32",
+          "sizeId": "21",
+          "stock": 1,
+          "masterPid": "534217"
+        },
+        {
+          "size": "33",
+          "sizeId": "22",
+          "stock": 1,
+          "masterPid": "534217"
+        },
+        {
+          "size": "34",
+          "sizeId": "7",
+          "stock": 1,
+          "masterPid": "534217"
+        },
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 1,
+          "masterPid": "534217"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 1,
+          "masterPid": "534217"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 1,
+          "masterPid": "534217"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 1,
+          "masterPid": "534217"
+        }
+      ]
+    }
+  ]
+}

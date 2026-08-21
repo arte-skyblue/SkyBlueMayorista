@@ -1,0 +1,56 @@
+{
+  "id": "3954",
+  "sku": "PJ20344",
+  "title": "PJ20344",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "Petite Jolie presenta el llavero de osito de peluche, con logo y mosquetón metálico: el detalle elegante que toda fashionista desea.\r\nUn accesorio que transforma cualquier bolso en un objeto con personalidad.",
+  "price": 12921,
+  "priceFormatted": "$ 12.921,00 + IVA",
+  "available": true,
+  "totalStock": 1,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312516.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312516.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312517.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312519.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312518.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3954",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 12921
+    }
+  ],
+  "variants": [
+    {
+      "color": "GRIS",
+      "colorId": "306",
+      "price": "$ 12.921,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533397"
+        }
+      ]
+    },
+    {
+      "color": "Oro",
+      "colorId": "292",
+      "price": "$ 12.921,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533397"
+        }
+      ]
+    }
+  ]
+}

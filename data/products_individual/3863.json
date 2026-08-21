@@ -1,0 +1,125 @@
+{
+  "id": "3863",
+  "sku": "XTI143006",
+  "title": "XTI143006",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Botín motero de mujer, de la marca Xti. Fabricada en material que imita la piel. Cierre mediante cremallera interior, que con ayuda del tirador trasero facilitara la puesta. Suela gruesa antideslizante. Únete a la tendencia motera de esta temporada. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 139,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5207090.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5207090.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3863",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 17,
+          "masterPid": "489450"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 17,
+          "masterPid": "489450"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 34,
+          "masterPid": "489450"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 34,
+          "masterPid": "489450"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 17,
+          "masterPid": "489450"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 17,
+          "masterPid": "489450"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489450"
+        }
+      ]
+    },
+    {
+      "color": "PLOMO",
+      "colorId": "565",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489450"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 1,
+          "masterPid": "489450"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 1,
+          "masterPid": "489450"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489450"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489450"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "489450"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489450"
+        }
+      ]
+    }
+  ]
+}

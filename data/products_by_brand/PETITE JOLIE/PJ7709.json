@@ -1,0 +1,164 @@
+{
+  "id": "3983",
+  "sku": "PJ7709",
+  "title": "PJ7709",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "La sandalia Smash Fur para mujer está confeccionada en J-Lastic con suela J-Soft y dos anchas tiras cruzadas con pelo sintético, que le aportan un toque moderno y elegante. Su plantilla anatómica garantiza un ajuste perfecto, ofreciendo suavidad y flexibilidad para caminar cómodamente durante todo el día. Versátil y con estilo, la Smash Fur es ideal para crear looks casuales, urbanos o de ocio, convirtiéndose en la opción perfecta para quienes buscan practicidad sin renunciar al estilo.\r\n\r\nAltura del tacón: 3 cm",
+  "price": 27844,
+  "priceFormatted": "$ 27.844,00 + IVA",
+  "available": true,
+  "totalStock": 48,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312698.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312698.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312699.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312700.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312701.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312702.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312703.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312704.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312705.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312697.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3983",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1",
+      "salePrice": 27844
+    }
+  ],
+  "variants": [
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 27.844,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 2,
+          "masterPid": "533347"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "533347"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 6,
+          "masterPid": "533347"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 6,
+          "masterPid": "533347"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 4,
+          "masterPid": "533347"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 2,
+          "masterPid": "533347"
+        }
+      ]
+    },
+    {
+      "color": "CREMA",
+      "colorId": "470",
+      "price": "$ 27.844,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 2,
+          "masterPid": "533347"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "533347"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 6,
+          "masterPid": "533347"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 6,
+          "masterPid": "533347"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 4,
+          "masterPid": "533347"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 2,
+          "masterPid": "533347"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 27.844,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "533347"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "533347"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "533347"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "533347"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "533347"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "533347"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "id": "4418",
+  "sku": "REF172122",
+  "title": "REF172122",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "Bota de mujer, de la marca Refresh. Fabricado en un material que imita la piel. Caña 32 cm. Cierre mediante cremallera. Tacón de 6 cm y plataforma gruesa para mayor comodidad. Ideal para hacer de un look sencillo, un look ideal. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 6 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cremallera",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5208680.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5208680.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17212201_42-f4be405d8e5d84b08717369526345827-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17212201_41-7b50043bc705bfc51a17369526345097-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17212201_40-6533c32619eabe345c17369526345125-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17212201_39-c1f943c7c7c08513bd17369526346306-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17212201_38-29adc7426eb6fa98ef17369526345293-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4418",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 75558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489792"
+        }
+      ]
+    },
+    {
+      "color": "NEGRO X6",
+      "colorId": "571",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489792"
+        }
+      ]
+    },
+    {
+      "color": "NEGRO X8",
+      "colorId": "572",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489792"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489792"
+        }
+      ]
+    }
+  ]
+}

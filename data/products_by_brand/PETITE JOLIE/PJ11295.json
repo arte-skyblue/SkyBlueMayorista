@@ -1,0 +1,110 @@
+{
+  "id": "3932",
+  "sku": "PJ11295",
+  "title": "PJ11295",
+  "brand": "PETITE JOLIE",
+  "season": "Verano 27",
+  "description": "Un bolso cruzado con forma estructurada y correa ancha para mayor comodidad. Siguiendo la tendencia de la logomanía, el bolso Pop Matte es un accesorio elegante que le da un toque especial a cualquier atuendo, ya sea para el día a día o para salir de noche. Tiene un amplio espacio interior para llevar todo lo que necesitas. Te acompañará a todas partes, aportando mucho estilo. ¡Hazte con él!\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Cremallera\r\nCorrea para el hombro: 60 cm - 120 cm\r\nAjustable: Sí\r\nDesmontable: Sí\r\nAltura: 12 cm\r\nAbertura superior: 19 cm\r\nAbertura inferior: 19 cm\r\nProfundidad: 6 cm",
+  "price": 35334,
+  "priceFormatted": "$ 35.334,00 + IVA",
+  "available": true,
+  "totalStock": 2,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312356.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312356.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345343.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345344.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345345.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345346.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312085.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3932",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 35334
+    }
+  ],
+  "variants": [
+    {
+      "color": "ARENA",
+      "colorId": "406",
+      "price": "$ 35.334,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533367"
+        }
+      ]
+    },
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 35.334,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533367"
+        }
+      ]
+    },
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 35.334,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533367"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 35.334,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533367"
+        }
+      ]
+    },
+    {
+      "color": "Fucsia",
+      "colorId": "289",
+      "price": "$ 35.334,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533367"
+        }
+      ]
+    },
+    {
+      "color": "NEGRO PLATA",
+      "colorId": "535",
+      "price": "$ 35.334,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533367"
+        }
+      ]
+    }
+  ]
+}

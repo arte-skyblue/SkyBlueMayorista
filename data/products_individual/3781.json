@@ -1,0 +1,137 @@
+{
+  "id": "3781",
+  "sku": "REF171994",
+  "title": "REF171994",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Subite a la tendencia con esta bota de mujer de Refresh. Cuenta con cierre lateral para que te la pongas fácil y una presilla trasera que ayuda al calce. Su suela con volumen y base antideslizante te asegura comodidad y firmeza en cada paso.\r\n\r\n\r\nMATERIALES Y FABRICACIÓN\r\nConfeccionada en material símil cuero, ideal para armar looks con personalidad. Además, es un modelo 100% vegano, certificado por PETA. Elegí pisar fuerte con estilo y conciencia.\r\n\r\n\r\nCALCE\r\nTaco de 6 cm.\r\nCaña de 32 cm.\r\nTipo de suela: Goma.\r\nDetalle de avíos: Cierres en ambos laterales\r\nTipo de horma: Horma pequeña, pedir un talle más del habitual.\r\n\r\n\r\nIDEAS DE USO\r\nClásico para el invierno: Jeans ajustados (por dentro de la bota) + suéter de lana grueso + parka o tapado largo.\r\nLook urbano casual: Leggings/calzas térmicas + vestido de punto corto o túnica + bufanda grande.\r\nToque moderno con falda: Falda midi plisada o de lana + medias térmicas + suéter ajustado o camisa y blazer.",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA &nbsp;&nbsp; -",
+  "available": true,
+  "totalStock": 8,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5308612.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5308612.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308613.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308614.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308615.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308616.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308618.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17199402_39-d5153641081be91c1217761706019266-1024-1024.webp",
+    "https://images.ib2c.com.ar/repository/310/productsList/5224553.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3781",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 75558
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 163205
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "493558"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "493558"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "493558"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "493558"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "493558"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "493558"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "493558"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 1,
+          "masterPid": "493558"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 1,
+          "masterPid": "493558"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 2,
+          "masterPid": "493558"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 2,
+          "masterPid": "493558"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 1,
+          "masterPid": "493558"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "493558"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "493558"
+        }
+      ]
+    }
+  ]
+}

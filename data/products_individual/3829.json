@@ -1,0 +1,162 @@
+{
+  "id": "3829",
+  "sku": "XTI142965",
+  "title": "XTI142965",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Zapatilla de la marca Xti. Fabricada en material que imita la piel. Detalles brillantes para dar un toque moderno. Cierre de cordones ajustables para mayor comodidad. Suela gruesa de goma antideslizante y cómoda. Un modelo indispensable para dar un toque final a tus looks de invierno. Con plantilla extraíble. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\n\r\nFABRICACIÓN\r\nHechas con materiales sintéticos de alta calidad, libres de componentes animales. Su confección precisa asegura resistencia, confort y un calzado liviano para el uso diario.\r\n\r\n\r\nIDEAS DE USO\r\nJogger de algodón + buzo oversized + campera inflable.\r\nPantalón cargo + remera básica + campera biker.\r\nVestido de punto midi + tapado largo para un look urbano y moderno.",
+  "price": 58751,
+  "priceFormatted": "$ 58.751,00 + IVA",
+  "available": true,
+  "totalStock": 76,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5209272.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5209272.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14296502_tau_1-2-97025a51803ae5748c17472476962603-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14296502_tau_5-2-b2c324b03cac9552e117472476965257-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14296502_tau_4-2-e45e2c53098bde2c6517472476967128-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14296502_tau_3-2-08372fc4ad0429706a17472476962743-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/gemini_generated_image_cubz6fcubz6fcubz-79a2a91eede3b31d9117658891013516-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pantuflas-crocs-850ch-59-60e33cc1fea6c4655417658888400889-1024-1024.png"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3829",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 58751
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 58.751,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489857"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489857"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489857"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489857"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489857"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489857"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 58.751,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 6,
+          "masterPid": "489857"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 13,
+          "masterPid": "489857"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 19,
+          "masterPid": "489857"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 19,
+          "masterPid": "489857"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 13,
+          "masterPid": "489857"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 6,
+          "masterPid": "489857"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 58.751,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489857"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489857"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489857"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489857"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489857"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489857"
+        }
+      ]
+    }
+  ]
+}

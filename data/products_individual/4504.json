@@ -1,0 +1,80 @@
+{
+  "id": "4504",
+  "sku": "PJ7541C",
+  "title": "PJ7541C",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 55337,
+  "priceFormatted": "$ 55.337,00 + IVA",
+  "available": true,
+  "totalStock": 60,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/366997-1200-auto-e7838fda85cc7c842417642788281769-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/366997-1200-auto-e7838fda85cc7c842417642788281769-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/366998-1200-auto-125f96665580ec4e5217642788305483-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/366999-1200-auto-430e833f81cd45e50217642788335708-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/367001-1200-auto-6a7145c6f1eb064f8a17642788361293-1024-1024.webp",
+    "https://images.ib2c.com.ar/repository/310/productsList/5255901.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4504",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 55337
+    }
+  ],
+  "variants": [
+    {
+      "color": "VAINILLA",
+      "colorId": "588",
+      "price": "$ 55.337,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 5,
+          "masterPid": "501826"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "501826"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 15,
+          "masterPid": "501826"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 15,
+          "masterPid": "501826"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 10,
+          "masterPid": "501826"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 5,
+          "masterPid": "501826"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "501826"
+        }
+      ]
+    }
+  ]
+}

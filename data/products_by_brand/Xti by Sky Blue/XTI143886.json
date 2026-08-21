@@ -1,0 +1,246 @@
+{
+  "id": "4464",
+  "sku": "XTI143886",
+  "title": "XTI143886",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 62616,
+  "priceFormatted": "$ 62.616,00 + IVA",
+  "available": true,
+  "totalStock": 24,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5218096.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5218096.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/xti-botn_de_mujer_xti_143886-14388602-camel-3213178-b-bd890b2f5b3b2024b817555317371869-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/xti-botn_de_mujer_xti_143886-14388602-camel-3213178-e-6178a4d188325499d417555317381133-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/xti-botn_de_mujer_xti_143886-14388602-camel-3213178-a-d9580af0b9853651df17555317271856-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4464",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 62616
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 62616
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 62616
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 62616
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 62616
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 62.616,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491946"
+        }
+      ]
+    },
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 62.616,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 2,
+          "masterPid": "491946"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "491946"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 6,
+          "masterPid": "491946"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 6,
+          "masterPid": "491946"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 4,
+          "masterPid": "491946"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 2,
+          "masterPid": "491946"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491946"
+        }
+      ]
+    },
+    {
+      "color": "KAKI",
+      "colorId": "570",
+      "price": "$ 62.616,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491946"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 62.616,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "491946"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491946"
+        }
+      ]
+    }
+  ]
+}

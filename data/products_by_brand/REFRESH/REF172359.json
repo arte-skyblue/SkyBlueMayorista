@@ -1,0 +1,118 @@
+{
+  "id": "3824",
+  "sku": "REF172359",
+  "title": "REF172359",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "Zapatillas de la marca Refresh. Fabricado en material que imita la piel. Cierre lateral y cordones ajustables. Suela con volumen de goma antideslizante. Modelo ideal para dar unos cm a tu look. Con plantilla extraíble. \r\n \r\n\r\nFABRICACIÓN\r\nEstá hecho en material que imita la piel, súper resistente y fácil de mantener. Tiene suela de goma con volumen y base antideslizante, ideal para caminar segura todo el día. \r\n\r\n\r\nCALCE\r\nAlto de suela: 6 cm.\r\nTipo de suela: Goma.\r\nHorma europea.\r\nMás info: Cordones ajustables y cierre lateral.\r\n\r\n\r\nIDEAS DE USO\r\nLook diario:  Calza negra + camisa blanca + gorra\r\nLook Casual: Jeans + top básico + chaqueta corta",
+  "price": 44837,
+  "priceFormatted": "$ 44.837,00 + IVA",
+  "available": true,
+  "totalStock": 168,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17235901_39-e9d2a51801037527f617563065686092-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17235901_39-e9d2a51801037527f617563065686092-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17235901_42-3689a7a2d79c4b6b3b17563065700584-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17235902_42-483c469a992cd6ab2817563064731779-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17235902_39-40f009f7abc755222417563064757867-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_8a5318bf-4ba8-4eb6-a150-1d2a20ef47e3_1362552_1400800-04cab9ded4241b33f017646039349060-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_d20d9a43-481f-45e3-ac2e-dfda9bcff99f_1362552_1400800-677cf7a3d32ea6240b17646039461836-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3824",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 44837
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 44.837,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "489816"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 20,
+          "masterPid": "489816"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 30,
+          "masterPid": "489816"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 30,
+          "masterPid": "489816"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 20,
+          "masterPid": "489816"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 10,
+          "masterPid": "489816"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 44.837,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "489816"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 8,
+          "masterPid": "489816"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 12,
+          "masterPid": "489816"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 12,
+          "masterPid": "489816"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 8,
+          "masterPid": "489816"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "489816"
+        }
+      ]
+    }
+  ]
+}

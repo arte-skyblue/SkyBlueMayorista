@@ -1,0 +1,180 @@
+{
+  "id": "4598",
+  "sku": "XTI145798",
+  "title": "XTI145798",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Zapatilla de caballero, de la marca Xti, fabricada en material textil de alta calidad que aporta frescura y comodidad durante todo el día. Modelo con cordones que asegura un ajuste perfecto al pie, combinando funcionalidad y estilo. Su diseño versátil la hace ideal tanto para vestir en el día a día como para ocasiones en las que se requiere un look más arreglado, sin renunciar a la comodidad. Suela ligera y flexible que proporciona un gran confort al caminar, perfecta para quienes buscan un calzado práctico y elegante a la vez. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 58758,
+  "priceFormatted": "$ 58.758,00 + IVA",
+  "available": true,
+  "totalStock": 72,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5338497.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5338497.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338496.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4598",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "39x0, 40x1, 41x2, 42x3, 43x3, 44x2, 45x1",
+      "salePrice": 58758
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "39x1, 40x2, 41x3, 42x3, 43x2, 44x1, 45x0",
+      "salePrice": 58758
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 58.758,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 1,
+          "masterPid": "538854"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "538854"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 7,
+          "masterPid": "538854"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 9,
+          "masterPid": "538854"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 8,
+          "masterPid": "538854"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 5,
+          "masterPid": "538854"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 2,
+          "masterPid": "538854"
+        }
+      ]
+    },
+    {
+      "color": "GRIS",
+      "colorId": "306",
+      "price": "$ 58.758,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "538854"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "538854"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "538854"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 0,
+          "masterPid": "538854"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 0,
+          "masterPid": "538854"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 0,
+          "masterPid": "538854"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 0,
+          "masterPid": "538854"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 58.758,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "538854"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 3,
+          "masterPid": "538854"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 6,
+          "masterPid": "538854"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 9,
+          "masterPid": "538854"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 9,
+          "masterPid": "538854"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 6,
+          "masterPid": "538854"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 3,
+          "masterPid": "538854"
+        }
+      ]
+    }
+  ]
+}

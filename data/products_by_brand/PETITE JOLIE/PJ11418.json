@@ -1,0 +1,54 @@
+{
+  "id": "4569",
+  "sku": "PJ11418",
+  "title": "PJ11418",
+  "brand": "PETITE JOLIE",
+  "season": "Verano 27",
+  "description": "",
+  "price": 35334,
+  "priceFormatted": "$ 35.334,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5338445.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5338445.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338444.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4569",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 35334
+    }
+  ],
+  "variants": [
+    {
+      "color": "ARENA",
+      "colorId": "406",
+      "price": "$ 35.334,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "539045"
+        }
+      ]
+    },
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 35.334,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "539045"
+        }
+      ]
+    }
+  ]
+}

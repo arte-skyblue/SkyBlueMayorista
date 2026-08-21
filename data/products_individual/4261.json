@@ -1,0 +1,79 @@
+{
+  "id": "4261",
+  "sku": "REF172721",
+  "title": "REF172721",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Sandalia de mujer, de la marca Refresh. Fabricada en piel. Diseño de pala ancha con doble correa. Hebillas metalizadas para un ajuste personalizado. Planta tipo bios. Gruesa suela de goma antideslizante. Un modelo imprescindible para completar todos tus looks esta temporada.\r\n\r\nAltura Tacon: 0 cm\r\nMaterial Exterior: Piel\r\nCierre: Sin cierre",
+  "price": 50358,
+  "priceFormatted": "$ 50.358,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5325100.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5325100.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5325101.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5325102.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5325103.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4261",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 50358
+    }
+  ],
+  "variants": [
+    {
+      "color": "Oro",
+      "colorId": "292",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "535864"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "535864"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "535864"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "535864"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "535864"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "535864"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "535864"
+        }
+      ]
+    }
+  ]
+}

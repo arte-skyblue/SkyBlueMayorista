@@ -1,0 +1,82 @@
+{
+  "id": "4176",
+  "sku": "REF172935",
+  "title": "REF172935",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Bota de mujer, marca Refresh. Fabricada en material que imita a la piel con parte trasera en tejido elástico para un mejor ajuste. Cierre mediante cremallera interior. Caña de 36 cm. Con gruesa suela de goma antideslizante. Con plantilla extraíble. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA",
+  "available": true,
+  "totalStock": 96,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5316648.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5316648.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321645.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321646.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321647.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321649.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321650.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321648.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4176",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 75558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 8,
+          "masterPid": "534133"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 16,
+          "masterPid": "534133"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 24,
+          "masterPid": "534133"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 24,
+          "masterPid": "534133"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 16,
+          "masterPid": "534133"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 8,
+          "masterPid": "534133"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "534133"
+        }
+      ]
+    }
+  ]
+}

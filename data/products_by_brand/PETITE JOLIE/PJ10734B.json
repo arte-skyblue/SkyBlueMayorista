@@ -1,0 +1,123 @@
+{
+  "id": "4509",
+  "sku": "PJ10734B",
+  "title": "PJ10734B",
+  "brand": "PETITE JOLIE",
+  "season": "Verano 27",
+  "description": "",
+  "price": 47304,
+  "priceFormatted": "$ 47.304,00 + IVA",
+  "available": true,
+  "totalStock": 37,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5345503.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5345503.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345505.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345506.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345507.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345508.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345504.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4509",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 47304
+    }
+  ],
+  "variants": [
+    {
+      "color": "ARENA",
+      "colorId": "406",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "442272"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "442272"
+        }
+      ]
+    },
+    {
+      "color": "Fucsia",
+      "colorId": "289",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 5,
+          "masterPid": "442272"
+        }
+      ]
+    },
+    {
+      "color": "Lima",
+      "colorId": "384",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "442272"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 21,
+          "masterPid": "442272"
+        }
+      ]
+    },
+    {
+      "color": "NUDE",
+      "colorId": "282",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 11,
+          "masterPid": "442272"
+        }
+      ]
+    },
+    {
+      "color": "TRANSLUCIDO",
+      "colorId": "598",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "442272"
+        }
+      ]
+    }
+  ]
+}

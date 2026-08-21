@@ -1,0 +1,117 @@
+{
+  "id": "3748",
+  "sku": "XTI143367",
+  "title": "XTI143367",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Bota de la marca Xti. Fabricada en un material que imita la piel. Caña alta. Cierre  en el lateral. Tacón grueso de 6 cm. Estilo motero, un indispensable para esta temporada. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\n\r\nIDEAS DE USO\r\nLook rock urbano: pollera mini de jean + top negro + campera de cuero\r\nLook casual con actitud: jean tiro bajo ancho + crop top con estampa \r\n\r\n\r\nCALCE\r\nAltura Tacón: 6 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cremallera",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA",
+  "available": true,
+  "totalStock": 102,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5190032.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5190032.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14336701_4-1-48613225595cacb4b017682460789349-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/saveclip-app_366719800_672505361466026_5281978553342533918_n-eff65662ec22be365e17682461722427-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/saveclip-app_367493442_672505404799355_5764586941655713588_n-ad1d470e37d284037117682461746428-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/bota-new-york-b66c26db1bd88e1ea617682460177057-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3748",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 75558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 11,
+          "masterPid": "486013"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 10,
+          "masterPid": "486013"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 19,
+          "masterPid": "486013"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 19,
+          "masterPid": "486013"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 9,
+          "masterPid": "486013"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 10,
+          "masterPid": "486013"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 3,
+          "masterPid": "486013"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 3,
+          "masterPid": "486013"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 6,
+          "masterPid": "486013"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 6,
+          "masterPid": "486013"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 3,
+          "masterPid": "486013"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 3,
+          "masterPid": "486013"
+        }
+      ]
+    }
+  ]
+}

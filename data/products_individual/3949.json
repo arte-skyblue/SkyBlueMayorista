@@ -1,0 +1,85 @@
+{
+  "id": "3949",
+  "sku": "PJ20204",
+  "title": "PJ20204",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "Llavero con el logo de Petite Jolie. Delicado, colorido y con mucho encanto. ¡Ideal para llevar las llaves, colgar en el bolso o la mochila, o para regalar a alguien especial!",
+  "price": 9843,
+  "priceFormatted": "$ 9.843,00 + IVA",
+  "available": true,
+  "totalStock": 6,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312505.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312505.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312506.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312507.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312508.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312509.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312510.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312504.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3949",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 9843
+    }
+  ],
+  "variants": [
+    {
+      "color": "AZUL",
+      "colorId": "281",
+      "price": "$ 9.843,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533386"
+        }
+      ]
+    },
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 9.843,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533386"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 9.843,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 6,
+          "masterPid": "533386"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 9.843,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533386"
+        }
+      ]
+    }
+  ]
+}

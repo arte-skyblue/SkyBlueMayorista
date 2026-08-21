@@ -1,0 +1,137 @@
+{
+  "id": "3834",
+  "sku": "XTI143074",
+  "title": "XTI143074",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Zapatillas de mujer de la marca Xti. Confeccionadas en material que imita la piel. Cierre de cremallera lateral y cordones ajustables para mayor comodidad y un ajuste perfecto. Cómoda cuña de 6 cm con suela de goma antideslizante dentada. Plantilla extraíble. Este modelo cuenta con la certificación vegana de la organización internacional PETA (Animal Rights Organization).\r\n\r\nAltura Tacón: 6 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cremallera",
+  "price": 53514,
+  "priceFormatted": "$ 53.514,00 + IVA",
+  "available": true,
+  "totalStock": 324,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5309495.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5309495.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309496.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309497.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309498.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309499.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309500.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309501.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5212371.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3834",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 53514
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 53514
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 53.514,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "490570"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 18,
+          "masterPid": "490570"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 36,
+          "masterPid": "490570"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 54,
+          "masterPid": "490570"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 54,
+          "masterPid": "490570"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 36,
+          "masterPid": "490570"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 18,
+          "masterPid": "490570"
+        }
+      ]
+    },
+    {
+      "color": "PLOMO",
+      "colorId": "565",
+      "price": "$ 53.514,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "490570"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 9,
+          "masterPid": "490570"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 18,
+          "masterPid": "490570"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 27,
+          "masterPid": "490570"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 27,
+          "masterPid": "490570"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 18,
+          "masterPid": "490570"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 9,
+          "masterPid": "490570"
+        }
+      ]
+    }
+  ]
+}

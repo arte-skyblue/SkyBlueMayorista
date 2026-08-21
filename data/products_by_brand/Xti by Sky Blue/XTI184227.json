@@ -1,0 +1,59 @@
+{
+  "id": "4460",
+  "sku": "XTI184227",
+  "title": "XTI184227",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 44700,
+  "priceFormatted": "$ 44.700,00 + IVA",
+  "available": true,
+  "totalStock": 2,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/xti-bolso_de_mujer_xti_184227-18422701-negro-3050611-a-ba590e6fb97a760e0f17383386325155-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/xti-bolso_de_mujer_xti_184227-18422701-negro-3050611-a-ba590e6fb97a760e0f17383386325155-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/xti-bolso_de_mujer_xti_184227-18422701-negro-3050611-b-ed76dcb0123962188317383386323171-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/xti-bolso_de_mujer_xti_184227-18422701-negro-3050611-c-105c120b8157fc9bd317383386326397-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/bolso-xti-184227-taupe-11a2e25bae17a513c717383387712788-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/bolso-xti-184227-taupe-2-10a340b6c85920b70117383387710534-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/bolso-xti-184227-taupe-1-c62e440274ccdec86e17383387710684-1024-1024.jpg",
+    "https://images.ib2c.com.ar/repository/310/productsList/5212309.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4460",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 44700
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 44.700,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "483876"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 44.700,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "483876"
+        }
+      ]
+    }
+  ]
+}

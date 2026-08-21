@@ -1,0 +1,130 @@
+{
+  "id": "4539",
+  "sku": "XTI146748",
+  "title": "XTI146748",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Botín de caballero, de la marca Xti. Fabricado en serraje, con un diseño de estilo casual y actual que combina diferentes texturas para un acabado atractivo y versátil. Presenta cierre de cordones que asegura una buena sujeción al pie, además de cuello acolchado para mayor confort en el uso diario. Su suela gruesa y ligera proporciona una pisada cómoda y estable, ideal para acompañarte durante todo el día. Un modelo práctico y cómodo, perfecto para looks informales y urbanos sin renunciar al estilo.",
+  "price": 79758,
+  "priceFormatted": "$ 79.758,00 + IVA",
+  "available": true,
+  "totalStock": 64,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5337978.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5337978.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337979.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337980.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337981.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337982.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337983.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4539",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "39x0, 40x1, 41x1, 42x2, 43x2, 44x1, 45x1",
+      "salePrice": 79758
+    }
+  ],
+  "variants": [
+    {
+      "color": "Marron",
+      "colorId": "325",
+      "price": "$ 79.758,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "538943"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "538943"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "538943"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 8,
+          "masterPid": "538943"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 8,
+          "masterPid": "538943"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 4,
+          "masterPid": "538943"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 4,
+          "masterPid": "538943"
+        }
+      ]
+    },
+    {
+      "color": "NAVY",
+      "colorId": "434",
+      "price": "$ 79.758,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "538943"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "538943"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "538943"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 8,
+          "masterPid": "538943"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 8,
+          "masterPid": "538943"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 4,
+          "masterPid": "538943"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 4,
+          "masterPid": "538943"
+        }
+      ]
+    }
+  ]
+}

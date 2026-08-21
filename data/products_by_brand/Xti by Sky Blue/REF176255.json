@@ -1,0 +1,125 @@
+{
+  "id": "4384",
+  "sku": "REF176255",
+  "title": "REF176255",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Botín de mujer, marca Refresh. Fabricado en antelina de alta calidad con caña fruncida decorada con tachuelas en la parte superior. Detalle trasero de cordones entrelazados que aporta un toque boho al diseño. Plantilla extraíble. Tacón ancho de altura media combinado con suela de goma que ofrece comodidad y estabilidad. Un botín con personalidad perfecto para el día a día.",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 360,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5334865.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5334865.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4384",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Marron",
+      "colorId": "325",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 15,
+          "masterPid": "537242"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 30,
+          "masterPid": "537242"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 45,
+          "masterPid": "537242"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 45,
+          "masterPid": "537242"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 30,
+          "masterPid": "537242"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 15,
+          "masterPid": "537242"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "537242"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 15,
+          "masterPid": "537242"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 30,
+          "masterPid": "537242"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 45,
+          "masterPid": "537242"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 45,
+          "masterPid": "537242"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 30,
+          "masterPid": "537242"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 15,
+          "masterPid": "537242"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "537242"
+        }
+      ]
+    }
+  ]
+}

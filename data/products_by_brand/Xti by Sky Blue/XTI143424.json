@@ -1,0 +1,81 @@
+{
+  "id": "3751",
+  "sku": "XTI143424",
+  "title": "XTI143424",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Bota de la marca Xti. Fabricada en una suave antelina. Con cierre lateral y caña alta. Material elástico para facilitar la puesta y el ajuste. Cómodo tacón de 7 cm suela antideslizante.\r\n\r\n \r\nIDEAS DE USO\r\nLook urbano: pollera mini de jean + top negro + campera de cuero\r\nLook casual con actitud: jean tiro bajo skinny de cuero con cadena + crop top negro",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5207043.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5207043.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14342401_neg_2-a0ad4382209a738fd617416994289894-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14342401_neg_3-ac889a08f508b4ba5817416994275258-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14342401_neg_4-abf322061e57aa0f4a17416994286619-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14342401_neg_5-50074c767a3a06770617416994286232-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14342401_neg_1-048c372e6955c651bc17416994280691-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3751",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 75558
+    }
+  ],
+  "variants": [
+    {
+      "color": "NEGRO X8",
+      "colorId": "572",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489443"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489443"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489443"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489443"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489443"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489443"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489443"
+        }
+      ]
+    }
+  ]
+}

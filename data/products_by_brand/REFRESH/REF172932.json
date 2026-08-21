@@ -1,0 +1,130 @@
+{
+  "id": "3860",
+  "sku": "REF172932",
+  "title": "REF172932",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Bota de mujer, de la marca Refresh. Fabricada en material que imita a la piel. Cierre mediante cremallera interior. Bota estilo motorista perfecta para los mejores looks de la temporada. Caña de 24 cm. Con gruesa suela de goma antideslizante. Con plantilla extraíble. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 71358,
+  "priceFormatted": "$ 71.358,00 + IVA",
+  "available": true,
+  "totalStock": 344,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5282586.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5282586.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3860",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 71358
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 71358
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 71.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 28,
+          "masterPid": "526553"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 24,
+          "masterPid": "526553"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 48,
+          "masterPid": "526553"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 48,
+          "masterPid": "526553"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 20,
+          "masterPid": "526553"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 24,
+          "masterPid": "526553"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "526553"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 71.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 25,
+          "masterPid": "526553"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 13,
+          "masterPid": "526553"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 38,
+          "masterPid": "526553"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 38,
+          "masterPid": "526553"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 13,
+          "masterPid": "526553"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 25,
+          "masterPid": "526553"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "526553"
+        }
+      ]
+    }
+  ]
+}

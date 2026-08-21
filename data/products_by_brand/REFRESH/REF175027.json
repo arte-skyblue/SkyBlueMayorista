@@ -1,0 +1,181 @@
+{
+  "id": "4303",
+  "sku": "REF175027",
+  "title": "REF175027",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Sandalia de tacón marca Refresh. Confeccionada en material que imita a la piel, presenta una tira frontal decorada con una hebilla de acabado tipo carey y material tipo rafia. Pulsera con cierre autoadherente ajustable al tobillo. Su tacón de 7 cm y plataforma baja brindan comodidad y estilo para el uso diario o eventos casuales. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 7 cm\r\nMaterial Exterior: Sintético\r\nCierre: Hebilla",
+  "price": 50358,
+  "priceFormatted": "$ 50.358,00 + IVA",
+  "available": true,
+  "totalStock": 480,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5326316.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5326316.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326317.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326318.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326319.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326322.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326323.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326327.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5326321.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4303",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 50358
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "536093"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "536093"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "536093"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "536093"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "536093"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "536093"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "536093"
+        }
+      ]
+    },
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 20,
+          "masterPid": "536093"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 40,
+          "masterPid": "536093"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 60,
+          "masterPid": "536093"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 60,
+          "masterPid": "536093"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 40,
+          "masterPid": "536093"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 20,
+          "masterPid": "536093"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "536093"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 20,
+          "masterPid": "536093"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 40,
+          "masterPid": "536093"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 60,
+          "masterPid": "536093"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 60,
+          "masterPid": "536093"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 40,
+          "masterPid": "536093"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 20,
+          "masterPid": "536093"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "536093"
+        }
+      ]
+    }
+  ]
+}

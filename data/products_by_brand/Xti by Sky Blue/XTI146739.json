@@ -1,0 +1,132 @@
+{
+  "id": "4537",
+  "sku": "XTI146739",
+  "title": "XTI146739",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Zapatilla de caballero, de la marca Xti. Fabricada en material textil, combina resistencia y ligereza para ofrecer un diseño moderno y funcional, ideal para actividades al aire libre y uso diario. Presenta un acabado técnico con detalles gráficos que refuerzan su estilo deportivo, junto con cierre de cordones que asegura un ajuste firme y estable. El interior acolchado aporta una agradable sensación de confort, mientras que la suela gruesa y robusta, con buen agarre, garantiza una pisada segura y amortiguada incluso en terrenos más exigentes. Un modelo versátil y actual, pensado para el hombre que busca comodidad, diseño y rendimiento en un mismo calzado.",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 64,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5337964.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5337964.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337965.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337966.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337967.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337968.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337970.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337971.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5337969.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4537",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "39x0, 40x1, 41x1, 42x2, 43x2, 44x1, 45x1",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "GRIS",
+      "colorId": "306",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "538941"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "538941"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "538941"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 8,
+          "masterPid": "538941"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 8,
+          "masterPid": "538941"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 4,
+          "masterPid": "538941"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 4,
+          "masterPid": "538941"
+        }
+      ]
+    },
+    {
+      "color": "KAKI",
+      "colorId": "570",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "538941"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "538941"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "538941"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 8,
+          "masterPid": "538941"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 8,
+          "masterPid": "538941"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 4,
+          "masterPid": "538941"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 4,
+          "masterPid": "538941"
+        }
+      ]
+    }
+  ]
+}

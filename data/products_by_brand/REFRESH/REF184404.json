@@ -1,0 +1,22 @@
+{
+  "id": "4541",
+  "sku": "REF184404",
+  "title": "REF184404",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 2,
+  "priceFormatted": "$ 2,00",
+  "available": false,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5338104.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5338104.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338105.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338106.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4541",
+  "publishedByUnits": false,
+  "purchaseModalities": [],
+  "variants": []
+}

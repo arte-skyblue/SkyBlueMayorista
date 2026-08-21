@@ -1,0 +1,81 @@
+{
+  "id": "3855",
+  "sku": "XTI144448",
+  "title": "XTI144448",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Botín de mujer, de la marca Xti. Fabricado en material textil resistente, ideal para los días fríos de invierno. Su diseño está pensado especialmente para condiciones de nieve, con un elástico en la parte superior que proporciona una sujeción ajustada y evita la entrada de frío o humedad. Con una suela antideslizante, garantiza estabilidad y comodidad en superficies resbaladizas, mientras que su estilo práctico y funcional lo convierte en el calzado perfecto para mantener los pies calientes y secos durante la temporada invernal. Un modelo esencial para quienes buscan confort y protección sin renunciar al estilo.Con plantilla extraíble. \r\n\r\nEste modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 67158,
+  "priceFormatted": "$ 67.158,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5276655.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5276655.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3855",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 67158
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 67158
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 67.158,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "507625"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "507625"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "507625"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "507625"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "507625"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "507625"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507625"
+        }
+      ]
+    }
+  ]
+}

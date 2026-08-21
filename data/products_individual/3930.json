@@ -1,0 +1,44 @@
+{
+  "id": "3930",
+  "sku": "PJ11182",
+  "title": "PJ11182",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "Versátil y auténtico, el bolso Icon es perfecto para crear looks casuales, urbanos o más vanguardistas , acompañándote en diferentes momentos del día.\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Cremallera\r\nCorrea para el hombro: 89 - 109 cm\r\nAjustable: Sí\r\nDesmontable: Sí\r\nAltura: 14 cm\r\nAbertura superior: 23 cm\r\nAbertura inferior: 30 cm\r\nProfundidad: 5 cm",
+  "price": 44447,
+  "priceFormatted": "$ 44.447,00 + IVA",
+  "available": true,
+  "totalStock": 3,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312219.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312219.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312220.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312221.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312222.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312218.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3930",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 44447
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 44.447,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 3,
+          "masterPid": "533364"
+        }
+      ]
+    }
+  ]
+}

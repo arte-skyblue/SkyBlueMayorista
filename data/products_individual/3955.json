@@ -1,0 +1,56 @@
+{
+  "id": "3955",
+  "sku": "PJ20346",
+  "title": "PJ20346",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "La correa para celular Petite Jolie Black PJ20346 es el accesorio ideal para quienes desean tener su celular siempre a mano con practicidad, estilo y personalidad . Fabricada en J-Lastic , un material ligero y resistente con un acabado delicado, esta correa combina funcionalidad y un diseño moderno que marca la diferencia en tu día a día.",
+  "price": 11690,
+  "priceFormatted": "$ 11.690,00 + IVA",
+  "available": true,
+  "totalStock": 4,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312617.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312617.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312619.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312620.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312618.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3955",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 11690
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 11.690,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 2,
+          "masterPid": "533398"
+        }
+      ]
+    },
+    {
+      "color": "Rosa",
+      "colorId": "266",
+      "price": "$ 11.690,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 2,
+          "masterPid": "533398"
+        }
+      ]
+    }
+  ]
+}

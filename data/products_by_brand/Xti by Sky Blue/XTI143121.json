@@ -1,0 +1,76 @@
+{
+  "id": "4528",
+  "sku": "XTI143121",
+  "title": "XTI143121 - Brillo",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 592,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/143121-negro-2036800a91ef4784d517423221936984-1024-1024.jpeg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/143121-negro-2036800a91ef4784d517423221936984-1024-1024.jpeg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4528",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 74,
+          "masterPid": "489439"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 73,
+          "masterPid": "489439"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 148,
+          "masterPid": "489439"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 148,
+          "masterPid": "489439"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 74,
+          "masterPid": "489439"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 75,
+          "masterPid": "489439"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489439"
+        }
+      ]
+    }
+  ]
+}

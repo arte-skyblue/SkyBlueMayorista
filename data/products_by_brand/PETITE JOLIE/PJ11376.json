@@ -1,0 +1,77 @@
+{
+  "id": "3944",
+  "sku": "PJ11376",
+  "title": "PJ11376",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El bolso Fluffy es un bolso mediano confeccionado completamente en piel sintética, perfecto para quienes buscan estilo y practicidad. Con una correa ajustable de J-Lastic con hebilla, se adapta al cuerpo durante su uso, garantizando comodidad y un ajuste perfecto. Suave y versátil, el bolso Fluffy es ideal para llevar todos tus imprescindibles diarios.\r\n\r\nAdemás, incluye un llavero extraíble y un interior espacioso y sin divisiones, que te permite organizar tus pertenencias a tu gusto, aportando libertad y practicidad a tu rutina.\r\n\r\nMaterial: Piel sintética de poliéster.\r\nLongitud de la correa: 22-31 cm.\r\nAjustable: No.\r\nDesmontable: No.\r\nAltura: 30 cm.\r\nAbertura superior: 31 cm.\r\nAbertura inferior: 31 cm.\r\nProfundidad: 10 cm.",
+  "price": 47124,
+  "priceFormatted": "$ 47.124,00 + IVA",
+  "available": true,
+  "totalStock": 2,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312447.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312447.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312448.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312449.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312450.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312452.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312453.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312454.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312455.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312456.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312457.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312458.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312451.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3944",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 47124
+    }
+  ],
+  "variants": [
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 47.124,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533380"
+        }
+      ]
+    },
+    {
+      "color": "CREMA",
+      "colorId": "470",
+      "price": "$ 47.124,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533380"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 47.124,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533380"
+        }
+      ]
+    }
+  ]
+}

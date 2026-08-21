@@ -1,0 +1,43 @@
+{
+  "id": "4268",
+  "sku": "REF183332",
+  "title": "REF183332",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "",
+  "price": 46158,
+  "priceFormatted": "$ 46.158,00 + IVA",
+  "available": true,
+  "totalStock": 3,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5315601.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5315601.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5315602.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5315603.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5315604.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4268",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 46158
+    }
+  ],
+  "variants": [
+    {
+      "color": "LEOPARDO",
+      "colorId": "445",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 3,
+          "masterPid": "533878"
+        }
+      ]
+    }
+  ]
+}

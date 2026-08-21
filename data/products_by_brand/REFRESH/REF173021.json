@@ -1,0 +1,179 @@
+{
+  "id": "3784",
+  "sku": "REF173021",
+  "title": "REF173021",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Realza tu estilo con los botines REFRESH 173021, donde la elegancia natural se une a la comodidad diaria. Estos botines elegantes de corte bajo presentan una textura única tipo lino para una sensación fresca y transpirable. Su favorecedora silueta y su tacón de bloque estable proporcionan una altura cómoda, perfecta para usar todo el día. Una práctica cremallera lateral facilita ponérselos y quitárselos, mientras que la suela antideslizante ofrece una tracción segura. Desde jeans cortos hasta vestidos fluidos, estos versátiles botines son la prenda de transición perfecta para cualquier guardarropa moderno, acompañándote del día a la noche con sofisticación y facilidad.",
+  "price": 65958,
+  "priceFormatted": "$ 65.958,00 + IVA",
+  "available": true,
+  "totalStock": 368,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5308642.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5308642.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308644.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308645.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308646.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308647.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308643.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3784",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 65958
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 65.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 10,
+          "masterPid": "507773"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "507773"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 20,
+          "masterPid": "507773"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 20,
+          "masterPid": "507773"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 10,
+          "masterPid": "507773"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 10,
+          "masterPid": "507773"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507773"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 10,
+          "masterPid": "507773"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "507773"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 20,
+          "masterPid": "507773"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 20,
+          "masterPid": "507773"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 10,
+          "masterPid": "507773"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 10,
+          "masterPid": "507773"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507773"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 65.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 26,
+          "masterPid": "507773"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 26,
+          "masterPid": "507773"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 52,
+          "masterPid": "507773"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 52,
+          "masterPid": "507773"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 26,
+          "masterPid": "507773"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 26,
+          "masterPid": "507773"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507773"
+        }
+      ]
+    }
+  ]
+}

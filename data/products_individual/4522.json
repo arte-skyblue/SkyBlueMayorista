@@ -1,0 +1,54 @@
+{
+  "id": "4522",
+  "sku": "PJ11335",
+  "title": "PJ11335",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 25166,
+  "priceFormatted": "$ 25.166,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_90eae8ca-fecb-4d7c-b226-433a461595f6_1362552_1400800-df528bec1d475a1ab717763487805732-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_90eae8ca-fecb-4d7c-b226-433a461595f6_1362552_1400800-df528bec1d475a1ab717763487805732-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pantuflas-crocs-850ch-82-c10fd9487043f467b617683093381018-1024-1024.png"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4522",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 25166
+    }
+  ],
+  "variants": [
+    {
+      "color": "BORDO",
+      "colorId": "328",
+      "price": "$ 25.166,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "501855"
+        }
+      ]
+    },
+    {
+      "color": "VAINILLA",
+      "colorId": "588",
+      "price": "$ 25.166,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "501855"
+        }
+      ]
+    }
+  ]
+}

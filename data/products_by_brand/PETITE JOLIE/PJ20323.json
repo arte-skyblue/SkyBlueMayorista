@@ -1,0 +1,82 @@
+{
+  "id": "3950",
+  "sku": "PJ20323",
+  "title": "PJ20323",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El llavero Petite Jolie con colgantes de llave y corazón es el accesorio ideal para quienes aman añadir estilo y personalidad a los detalles cotidianos. Fabricado con J-Lastic , el material exclusivo de Petite Jolie, combina ligereza, durabilidad y un acabado moderno, perfecto para complementar tu rutina con practicidad y encanto.\r\n\r\nPrincipales ventajas\r\n• Se puede usar como llavero o adorno para bolso\r\n• Colgantes de llave y corazón con un diseño delicado\r\n• Material J-Lastic : ligero, duradero y fácil de limpiar\r\n• Mosquetón de metal para una fácil sujeción y cambio de uso\r\n• Ideal para personalizar bolsos, mochilas o looks cotidianos",
+  "price": 11690,
+  "priceFormatted": "$ 11.690,00 + IVA",
+  "available": true,
+  "totalStock": 13,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312500.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312500.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312502.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312503.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312501.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3950",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 11690
+    }
+  ],
+  "variants": [
+    {
+      "color": "AZUL",
+      "colorId": "281",
+      "price": "$ 11.690,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 4,
+          "masterPid": "533388"
+        }
+      ]
+    },
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 11.690,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 4,
+          "masterPid": "533388"
+        }
+      ]
+    },
+    {
+      "color": "Lima",
+      "colorId": "384",
+      "price": "$ 11.690,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533388"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 11.690,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 4,
+          "masterPid": "533388"
+        }
+      ]
+    }
+  ]
+}

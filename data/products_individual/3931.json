@@ -1,0 +1,58 @@
+{
+  "id": "3931",
+  "sku": "PJ11282",
+  "title": "PJ11282",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El bolso Petite Jolie Thayla es un modelo moderno inspirado en el estilo baguette , perfecto para quienes buscan un accesorio compacto con una fuerte presencia en la moda. Con un diseño contemporáneo y detalles llamativos, aporta personalidad a looks urbanos llenos de actitud.\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Cremallera\r\nCorrea para el hombro: 22 cm - 31 cm\r\nAjustable: Sí\r\nDesmontable: No\r\nAltura: 14 cm\r\nAbertura superior: 28 cm\r\nAbertura inferior: 29,5 cm\r\nProfundidad: 9 cm",
+  "price": 41769,
+  "priceFormatted": "$ 41.769,00 + IVA",
+  "available": true,
+  "totalStock": 1,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312350.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312350.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312351.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312353.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312354.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312355.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312352.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3931",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 41769
+    }
+  ],
+  "variants": [
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 41.769,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533366"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 41.769,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533366"
+        }
+      ]
+    }
+  ]
+}

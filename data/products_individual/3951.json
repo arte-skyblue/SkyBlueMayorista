@@ -1,0 +1,83 @@
+{
+  "id": "3951",
+  "sku": "PJ20326",
+  "title": "PJ20326",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El llavero Petite Jolie Chocolate 1 PJ20326 es un accesorio divertido y lleno de personalidad que añade un toque creativo a tus looks diarios. Inspirado en una barra de chocolate y fabricado con J-Lastic , el material exclusivo de Petite Jolie, combina estilo, ligereza y durabilidad para seguirte el ritmo con practicidad y encanto.\r\n\r\n• Ideal como llavero para bolso o accesorio para llaves\r\n• Divertida forma de barra de chocolate que añade estilo\r\n• Material J-Lastic : ligero, duradero y fácil de limpiar\r\n• Mosquetón metálico en forma de corazón para un uso práctico\r\n• Perfecto para personalizar bolsos, mochilas o looks casuales",
+  "price": 9843,
+  "priceFormatted": "$ 9.843,00 + IVA",
+  "available": true,
+  "totalStock": 14,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312495.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312495.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312496.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312498.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312499.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312497.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3951",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 9843
+    }
+  ],
+  "variants": [
+    {
+      "color": "AZUL",
+      "colorId": "281",
+      "price": "$ 9.843,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 8,
+          "masterPid": "533392"
+        }
+      ]
+    },
+    {
+      "color": "Chocolate 1",
+      "colorId": "602",
+      "price": "$ 9.843,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 3,
+          "masterPid": "533392"
+        }
+      ]
+    },
+    {
+      "color": "Chocolate 3",
+      "colorId": "603",
+      "price": "$ 9.843,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533392"
+        }
+      ]
+    },
+    {
+      "color": "Chocolate 4",
+      "colorId": "604",
+      "price": "$ 9.843,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 3,
+          "masterPid": "533392"
+        }
+      ]
+    }
+  ]
+}

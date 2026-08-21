@@ -1,0 +1,57 @@
+{
+  "id": "4266",
+  "sku": "REF183309",
+  "title": "REF183309",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "",
+  "price": 58758,
+  "priceFormatted": "$ 58.758,00 + IVA",
+  "available": true,
+  "totalStock": 2,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5315573.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5315573.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5315574.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5315572.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5315575.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5315571.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4266",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 58758
+    }
+  ],
+  "variants": [
+    {
+      "color": "HIELO",
+      "colorId": "568",
+      "price": "$ 58.758,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533874"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 58.758,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533874"
+        }
+      ]
+    }
+  ]
+}

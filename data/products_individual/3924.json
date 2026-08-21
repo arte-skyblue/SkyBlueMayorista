@@ -1,0 +1,89 @@
+{
+  "id": "3924",
+  "sku": "PJ10072",
+  "title": "PJ10072",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "Estructurado, seguro y funcional, el bolso Olga es ideal para el uso diario. Su textura acolchada le da un toque moderno, y sus correas con detalles de cadena le aportan un aire contemporáneo.\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCorrea extraíble: No\r\nAltura: 26 centímetros\r\nAbertura superior: 30 centímetros\r\nParte inferior: 30 centímetros\r\nProfundidad: 9 centímetros\r\nCorrea de mano ligera: 22 x 40 centímetros",
+  "price": 47124,
+  "priceFormatted": "$ 47.124,00 + IVA",
+  "available": true,
+  "totalStock": 2,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312203.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312203.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312205.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312206.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312207.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312208.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312209.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312210.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312211.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345524.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345525.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312204.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3924",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 47124
+    }
+  ],
+  "variants": [
+    {
+      "color": "ARENA",
+      "colorId": "406",
+      "price": "$ 47.124,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533358"
+        }
+      ]
+    },
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 47.124,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533358"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 47.124,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533358"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 47.124,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 2,
+          "masterPid": "533358"
+        }
+      ]
+    }
+  ]
+}

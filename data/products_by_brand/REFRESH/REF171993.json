@@ -1,0 +1,140 @@
+{
+  "id": "3772",
+  "sku": "REF171993",
+  "title": "REF171993",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "Estilo urbano con actitud. Esta bota corta de mujer de Refresh suma presencia a cualquier outfit con su diseño robusto y detalles funcionales. Tiene cierre lateral para calzar fácilmente y una presilla trasera que facilita el ajuste. La suela antideslizante aporta seguridad y comodidad en cada paso. Elegí moda con personalidad y carácter.\r\n\r\n\r\nMATERIALES Y FABRICACIÓN\r\nHecha en material sintético de alta calidad con acabado símil cuero. Es 100% vegana y cuenta con certificación oficial de PETA, garantizando un calzado libre de componentes animales y fabricado con conciencia.\r\n\r\n\r\nCALCE\r\nTaco de 6 cm.\r\nCaña de 13 cm. (ver si cambia por talla)\r\nTipo de suela: Goma.\r\nDetalle de avíos: Cierren en ambos laterales\r\nTipo de horma: Horma pequeña, pedir un talle más del habitual.\r\n\r\n\r\nIDEAS DE USO\r\nLook urbano casual: Jeans cropped o ajustados (azul o negro) + suéter de punto/buzo con capucha + campera de jean o parka.\r\nEstilo confortable chic: Leggings/calzas + vestido corto de punto o túnica + cárdigan oversized.\r\nToque moderno y práctico: Pantalones de gabardina (tipo cargo o rectos) + remera básica + blazer de tweed/lana o campera bomber.",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 2,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5208678.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5208678.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3772",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 62958
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 62958
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 62958
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "483501"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "483501"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "483501"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "483501"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "483501"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "483501"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "483501"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "483501"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "483501"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "483501"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "483501"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 1,
+          "masterPid": "483501"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "483501"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "483501"
+        }
+      ]
+    }
+  ]
+}

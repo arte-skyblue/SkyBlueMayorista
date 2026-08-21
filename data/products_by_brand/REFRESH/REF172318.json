@@ -1,0 +1,73 @@
+{
+  "id": "3821",
+  "sku": "REF172318",
+  "title": "REF172318",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "Zapatilla tipo botín de mujer, de la marca Refresh. Fabricado en un material que imita la piel. Cierre mediante cremallera lateral y cordones ajustables para mayor sujección. Tirador trasero para facilitar la puesta. Piso volumen con suela dentada de goma antideslizante. Con plantilla extraíble.\r\n\r\nEste modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 35352,
+  "priceFormatted": "$ 35.352,00 + IVA",
+  "available": true,
+  "totalStock": 36,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/captura-de-pantalla-2026-02-06-125756-ead5ca49fc381fda9017703945559487-1024-1024.png",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/captura-de-pantalla-2026-02-06-125756-ead5ca49fc381fda9017703945559487-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/captura-de-pantalla-2026-02-06-125737-a87b1ed56595b5440517703945565750-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/captura-de-pantalla-2026-02-06-125747-d36575895773f4ffa417703945559090-1024-1024.png",
+    "https://images.ib2c.com.ar/repository/310/productsList/5208794.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3821",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 35352
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 35.352,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 3,
+          "masterPid": "489814"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 6,
+          "masterPid": "489814"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 9,
+          "masterPid": "489814"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 9,
+          "masterPid": "489814"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 6,
+          "masterPid": "489814"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 3,
+          "masterPid": "489814"
+        }
+      ]
+    }
+  ]
+}

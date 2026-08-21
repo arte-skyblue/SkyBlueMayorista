@@ -1,0 +1,134 @@
+{
+  "id": "3837",
+  "sku": "XTI143177",
+  "title": "XTI143177",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Zapatilla de mujer, de la marca Xti. Fabricada en tejido técnico. Cierre mediante cordones ajustables. Tirador delantero y trasero para facilitar la puesta. Cómoda planta acolchada y suela flexible de goma antideslizante. Con plantilla extraíble. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 3 cm\r\nMaterial Exterior: Textil\r\nCierre: Cordón",
+  "price": 31491,
+  "priceFormatted": "$ 31.491,00 + IVA",
+  "available": true,
+  "totalStock": 720,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14317703_2-30be51aa05278067b017724674700299-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14317703_2-30be51aa05278067b017724674700299-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14317703_3-232ede984daf7a7ef517724674714890-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14317703_4-64c4489045956fbbff17724674721367-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14317703_5-ce2d2d1a486911f91e17724674732564-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14317702_1-08dc83b29a5ba4b0a317724677323896-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14317702_2-12bfdbcd8ba669fc4017724677385112-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14317702_3-84ecff37d2f61fc74217724677415274-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14317702_4-aa43d99fbfca51a46317724677435971-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14317702_5-bf30156a443f76ee1717724677428028-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14317703_1-b113bc589f6a6d2cac17724674636400-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3837",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 31491
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 31.491,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "490124"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 32,
+          "masterPid": "490124"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 64,
+          "masterPid": "490124"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 96,
+          "masterPid": "490124"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 96,
+          "masterPid": "490124"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 64,
+          "masterPid": "490124"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 32,
+          "masterPid": "490124"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 31.491,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "490124"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 28,
+          "masterPid": "490124"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 56,
+          "masterPid": "490124"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 84,
+          "masterPid": "490124"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 84,
+          "masterPid": "490124"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 56,
+          "masterPid": "490124"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 28,
+          "masterPid": "490124"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "3817",
+  "sku": "REF172869",
+  "title": "REF172869",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "¡Atrévete a destacar con esta zapatilla estilo basket de la marca Refresh! Confeccionada en material que imita la piel con estampado animal print, es la combinación perfecta entre moda y actitud. Su diseño en tendencia se completa con cordones regulables para un ajuste ideal, plantilla extraíble que suma confort y una suela con volumen de goma antideslizante para una pisada firme y segura. ¡Ideal para elevar tus looks urbanos con un toque salvaje y lleno de personalidad!\r\n\r\nEste modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 47000,
+  "priceFormatted": "$ 47.000,00 + IVA",
+  "available": true,
+  "totalStock": 252,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17286902_cam_5-3ba24bbf7bdb29f35f17603824426749-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17286902_cam_5-3ba24bbf7bdb29f35f17603824426749-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17286902_cam_2-4d7d157e3574f7d1aa17603824434113-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17286902_cam_3-2659fafef8e32c737017603824421107-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17286902_cam_4-1b564b02e0686737e217603824424141-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17286902_cam_2-1-d02899c3f968d8cc9f17603824409231-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3817",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 47000
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 47.000,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491683"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 21,
+          "masterPid": "491683"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 42,
+          "masterPid": "491683"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 63,
+          "masterPid": "491683"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 63,
+          "masterPid": "491683"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 42,
+          "masterPid": "491683"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 21,
+          "masterPid": "491683"
+        }
+      ]
+    }
+  ]
+}

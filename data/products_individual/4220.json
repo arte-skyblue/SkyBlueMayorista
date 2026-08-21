@@ -1,0 +1,137 @@
+{
+  "id": "4220",
+  "sku": "REF171540",
+  "title": "REF171540",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Sandalia de mujer, de la marca Refresh. Fabricada en material que imita la piel. Sandalia tipo cangrejera con hebilla. Tacón ancho de 7 cm con plataforma delantera al tono. Suela antideslizante. Un modelo cómodo y en tendencia ideal para esta temporada. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 7 cm\r\nMaterial Exterior: Sintético\r\nCierre: Hebilla",
+  "price": 36990,
+  "priceFormatted": "$ 36.990,00 + IVA",
+  "available": true,
+  "totalStock": 536,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5352407.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5352407.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352408.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352410.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352411.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352412.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352413.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352414.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352409.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4220",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 36990
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 36990
+    }
+  ],
+  "variants": [
+    {
+      "color": "HIELO",
+      "colorId": "568",
+      "price": "$ 36.990,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491675"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 18,
+          "masterPid": "491675"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 36,
+          "masterPid": "491675"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 54,
+          "masterPid": "491675"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 54,
+          "masterPid": "491675"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 36,
+          "masterPid": "491675"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 14,
+          "masterPid": "491675"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 36.990,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491675"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 27,
+          "masterPid": "491675"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 54,
+          "masterPid": "491675"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 81,
+          "masterPid": "491675"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 81,
+          "masterPid": "491675"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 54,
+          "masterPid": "491675"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 27,
+          "masterPid": "491675"
+        }
+      ]
+    }
+  ]
+}

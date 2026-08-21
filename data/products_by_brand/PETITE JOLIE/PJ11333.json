@@ -1,0 +1,44 @@
+{
+  "id": "3935",
+  "sku": "PJ11333",
+  "title": "PJ11333",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "La Petite Jolie Thayla (PJ11333) es una bolsa estilo baguete, pequeña y moderna, fabricada en J-Lastic (PVC exclusivo de la marca) con acabado mate. Cuenta con cierre de cremallera, asa de hombro ajustable y un interior amplio para su tamaño. Es un accesorio versátil, suave y cómodo, ideal para uso diario.",
+  "price": 33200,
+  "priceFormatted": "$ 33.200,00 + IVA",
+  "available": true,
+  "totalStock": 1,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312376.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312376.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312377.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/chatgpt-image-26-may-2026-01_32_21-p-m-3194c6cb5d110d602217798131655694-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/chatgpt-image-26-may-2026-01_34_20-p-m-a98ba2f6a59cec97bf17798132801179-1024-1024.png",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312378.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3935",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 33200
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 33.200,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533370"
+        }
+      ]
+    }
+  ]
+}

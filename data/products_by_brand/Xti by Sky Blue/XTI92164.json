@@ -1,0 +1,54 @@
+{
+  "id": "4180",
+  "sku": "XTI92164",
+  "title": "XTI92164",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Juego de maletas de 3 piezas en negro con diseño moderno, rígidas y resistentes a golpes, ideal para viajes con ruedas de 360° y candado incluido. Incluye S, M y L para distintos tipos de viaje y protección de tus pertenencias.",
+  "price": 189000,
+  "priceFormatted": "$ 189.000,00 + IVA",
+  "available": true,
+  "totalStock": 125,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/chatgpt-image-22-may-2026-10_53_25-ea8f0fa452b971673f17794580182241-1024-1024.png",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/chatgpt-image-22-may-2026-10_53_25-ea8f0fa452b971673f17794580182241-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/chatgpt-image-22-may-2026-10_40_35-4-85096cd871ef5a559717794576839880-1024-1024.png"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4180",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 189000
+    }
+  ],
+  "variants": [
+    {
+      "color": "KAKI",
+      "colorId": "570",
+      "price": "$ 189.000,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 15,
+          "masterPid": "488229"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 189.000,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 110,
+          "masterPid": "488229"
+        }
+      ]
+    }
+  ]
+}

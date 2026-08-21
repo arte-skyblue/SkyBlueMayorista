@@ -1,0 +1,184 @@
+{
+  "id": "3744",
+  "sku": "XTI141807",
+  "title": "XTI141807",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Botines elaborados en material sintético en color negro. Cierre de cordones y cremallera. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\n\r\n IDEAS DE USO\r\nLook diario: jean recto o skinny + remera básica + campera de jean o abrigo corto.\r\nLook urbano: pantalón cargo o sastrero + buzo oversized o camisa + campera de cuero o trench.",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 86,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5208618.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5208618.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14180701_neg_2-05ac9a96a2d30f8c5617468190752444-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14180701_neg_5-a9d3f79ed9c2ddcba117468190746329-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14180701_neg_4-f9f04f9660154e459317468190745381-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14180701_neg_3-becae5c1438bb962ef17468190746463-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14180701_neg_1-15d9e75fe6db45ad7117468190745410-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3744",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x6",
+      "sizesBreakdown": "35x1, 36x1, 37x1, 38x1, 39x1, 40x1, 41x0",
+      "salePrice": 65940
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489754"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 7,
+          "masterPid": "489754"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 7,
+          "masterPid": "489754"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 14,
+          "masterPid": "489754"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 14,
+          "masterPid": "489754"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 7,
+          "masterPid": "489754"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 7,
+          "masterPid": "489754"
+        }
+      ]
+    },
+    {
+      "color": "NEGRO X6",
+      "colorId": "571",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 5,
+          "masterPid": "489754"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 5,
+          "masterPid": "489754"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 5,
+          "masterPid": "489754"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 5,
+          "masterPid": "489754"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 5,
+          "masterPid": "489754"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 5,
+          "masterPid": "489754"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489754"
+        }
+      ]
+    },
+    {
+      "color": "NEGRO X8",
+      "colorId": "572",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489754"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489754"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489754"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489754"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489754"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489754"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489754"
+        }
+      ]
+    }
+  ]
+}

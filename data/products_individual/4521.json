@@ -1,0 +1,72 @@
+{
+  "id": "4521",
+  "sku": "PJ11053",
+  "title": "PJ11053",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 52480,
+  "priceFormatted": "$ 52.480,00 + IVA",
+  "available": true,
+  "totalStock": 11,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5222524.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5222524.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/gemini_generated_image_7g0i2c7g0i2c7g0i-f04992885ed466499917604524271986-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/gemini_generated_image_a5pg75a5pg75a5pg-5106afdd69ec1a1d7017604526293872-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/369314-600-auto-30d1d8ade24563032c17576830853640-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/369315-600-auto-869309d9e641e7865b17576830864157-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/369316-600-auto-337220b34c22b3a97a17576830876480-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_653fc47e-92db-43f0-83bb-65ada0147e72_1362552_1400800-c02cb2c09503faad9317604641475135-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4521",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 52480
+    }
+  ],
+  "variants": [
+    {
+      "color": "AZUL",
+      "colorId": "281",
+      "price": "$ 52.480,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 7,
+          "masterPid": "492864"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 52.480,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 3,
+          "masterPid": "492864"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 52.480,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "492864"
+        }
+      ]
+    }
+  ]
+}

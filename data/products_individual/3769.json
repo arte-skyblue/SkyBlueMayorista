@@ -1,0 +1,81 @@
+{
+  "id": "3769",
+  "sku": "REF172241",
+  "title": "REF172241",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 8,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5208681.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5208681.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3769",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 65940
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "TAUPE X8",
+      "colorId": "576",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489795"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 1,
+          "masterPid": "489795"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 1,
+          "masterPid": "489795"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 2,
+          "masterPid": "489795"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 2,
+          "masterPid": "489795"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "489795"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 1,
+          "masterPid": "489795"
+        }
+      ]
+    }
+  ]
+}

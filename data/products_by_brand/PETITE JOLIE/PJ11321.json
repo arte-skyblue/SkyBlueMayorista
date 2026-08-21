@@ -1,0 +1,74 @@
+{
+  "id": "3934",
+  "sku": "PJ11321",
+  "title": "PJ11321",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El bolso Petite Jolie Amalfi es un bolso shopper espacioso y versátil, perfecto para acompañar tu rutina diaria con practicidad y estilo. Con un diseño minimalista y un acabado moderno, fue creado para quienes necesitan un bolso funcional sin renunciar a la personalidad.\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Magnético\r\nCorrea para el hombro: No\r\nAjustable: No\r\nDesmontable: No\r\nAltura: 37 cm\r\nAbertura superior: 42 cm\r\nAbertura inferior: 34 cm\r\nProfundidad: 10 cm\r\nCorrea de mano: 23 cm",
+  "price": 47124,
+  "priceFormatted": "$ 47.124,00 + IVA",
+  "available": true,
+  "totalStock": 1,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312368.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312368.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312369.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312370.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312371.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312372.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312373.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312374.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312375.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312367.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3934",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 47124
+    }
+  ],
+  "variants": [
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 47.124,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533369"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 47.124,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533369"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 47.124,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533369"
+        }
+      ]
+    }
+  ]
+}

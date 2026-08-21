@@ -1,0 +1,144 @@
+{
+  "id": "4224",
+  "sku": "REF172461",
+  "title": "REF172461",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Sandalia de mujer, de la marca Refresh. Fabricada en serraje. Modelo de pala ancha destalonado. Fabricado en antelina troquelada. Piso de plataforma forrado en yute trenzado. Suela de goma antideslizante. Un imprescindible para el verano.\r\n\r\nAltura Tacon: 0 cm\r\nMaterial Exterior: Textil\r\nCierre: Sin cierre",
+  "price": 46158,
+  "priceFormatted": "$ 46.158,00 + IVA",
+  "available": true,
+  "totalStock": 612,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5352415.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5352415.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352416.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352417.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352419.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352420.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352421.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352422.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352423.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352424.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5352418.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4224",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 46158
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x2, 37x2, 38x2, 39x1, 40x0, 41x0",
+      "salePrice": 46158
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 46158
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 26,
+          "masterPid": "491672"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 52,
+          "masterPid": "491672"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 78,
+          "masterPid": "491672"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 78,
+          "masterPid": "491672"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 52,
+          "masterPid": "491672"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 26,
+          "masterPid": "491672"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491672"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 25,
+          "masterPid": "491672"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 50,
+          "masterPid": "491672"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 75,
+          "masterPid": "491672"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 75,
+          "masterPid": "491672"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 50,
+          "masterPid": "491672"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 25,
+          "masterPid": "491672"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491672"
+        }
+      ]
+    }
+  ]
+}

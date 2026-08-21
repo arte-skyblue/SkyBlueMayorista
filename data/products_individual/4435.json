@@ -1,0 +1,42 @@
+{
+  "id": "4435",
+  "sku": "XTI92169",
+  "title": "XTI92169",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 46200,
+  "priceFormatted": "$ 46.200,00 + IVA",
+  "available": true,
+  "totalStock": 42,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/chatgpt-image-3-jun-2026-16_45_11-c302bd4bb2a1b2c9e117805161937851-1024-1024.png",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/chatgpt-image-3-jun-2026-16_45_11-c302bd4bb2a1b2c9e117805161937851-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/chatgpt-image-3-jun-2026-16_47_13-4951c9886c48324a2117805161942370-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/chatgpt-image-3-jun-2026-16_48_23-6a27ef8de385fd556517805161937685-1024-1024.png"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4435",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 46200
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 46.200,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 42,
+          "masterPid": "536263"
+        }
+      ]
+    }
+  ]
+}

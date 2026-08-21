@@ -1,0 +1,180 @@
+{
+  "id": "3818",
+  "sku": "REF172433",
+  "title": "REF172433",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Esta zapatilla de Refresh está pensada para quienes buscan marcar estilo sin resignar comodidad. Combina materiales sintéticos que imitan la piel con nylon de alta calidad y tejido de rejilla respirable, logrando un diseño moderno, liviano y súper actual.\r\n\r\n\r\nFABRICACIÓN\r\nConfeccionada en material sintético que imita la piel, combinado con nylon y textil de rejilla respirable. Cuenta con plantilla extraíble y acolchada para mayor confort. Calce práctico con tira en el talón. Modelo vegano avalado por PETA.\r\n \r\n\r\nIDEAS DE USO\r\nLook deportivo urbano: Leggings + remera oversized + zapatillas Refresh\r\nEstilo casual: Jean recto + buzo crop + zapatillas Refresh\r\nOutfit statement: Pantalón cargo + campera bomber + zapatillas Refresh",
+  "price": 36257,
+  "priceFormatted": "$ 36.257,00 + IVA",
+  "available": true,
+  "totalStock": 180,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17243307_38-2a9c0163a34a0ef66917722005063149-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17243307_38-2a9c0163a34a0ef66917722005063149-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17243307_40-d27480d4de97a936b817722005052352-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17243307_41-afc23109ee6bda6ff417722005074624-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17243304_38-19a8fc0d03a098dc7417722007058135-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17243304_39-4233f1f22de3c8a0db17722007335692-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17243304_40-023842fa50155addbd17722007349222-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17243304_41-342a0bc20d64e2dbfa17722007410522-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3818",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 36257
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 36.257,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491685"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "491685"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 8,
+          "masterPid": "491685"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 12,
+          "masterPid": "491685"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 12,
+          "masterPid": "491685"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 8,
+          "masterPid": "491685"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "491685"
+        }
+      ]
+    },
+    {
+      "color": "HIELO",
+      "colorId": "568",
+      "price": "$ 36.257,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491685"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "491685"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "491685"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "491685"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "491685"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "491685"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491685"
+        }
+      ]
+    },
+    {
+      "color": "LEOPARDO",
+      "colorId": "445",
+      "price": "$ 36.257,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491685"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 11,
+          "masterPid": "491685"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 22,
+          "masterPid": "491685"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 33,
+          "masterPid": "491685"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 33,
+          "masterPid": "491685"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 22,
+          "masterPid": "491685"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 11,
+          "masterPid": "491685"
+        }
+      ]
+    }
+  ]
+}

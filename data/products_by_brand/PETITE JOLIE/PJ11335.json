@@ -1,0 +1,140 @@
+{
+  "id": "3936",
+  "sku": "PJ11335",
+  "title": "PJ11335",
+  "brand": "PETITE JOLIE",
+  "season": "Verano 27",
+  "description": "Un bolso cruzado con forma estructurada y correa ancha para mayor comodidad. Siguiendo la tendencia de la logomanía, el bolso Pop Matte es un accesorio elegante que le da un toque especial a cualquier atuendo, ya sea para el día a día o para salir de noche. Tiene un amplio espacio interior para llevar todo lo que necesitas. Te acompañará a todas partes, aportando mucho estilo. ¡Hazte con él!\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Cremallera\r\nCorrea para el hombro: 60 cm - 120 cm\r\nAjustable: Sí\r\nDesmontable: Sí\r\nAltura: 12 cm\r\nAbertura superior: 19 cm\r\nAbertura inferior: 19 cm\r\nProfundidad: 6 cm",
+  "price": 26784,
+  "priceFormatted": "$ 26.784,00 + IVA",
+  "available": true,
+  "totalStock": 18,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312095.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312095.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312096.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj11335-01719-berry-c86aa8d343da7afee817763488419357-1024-1024.jpg",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345337.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345338.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345339.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345340.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345341.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345342.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312094.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3936",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 26784
+    }
+  ],
+  "variants": [
+    {
+      "color": "ARENA",
+      "colorId": "406",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533371"
+        }
+      ]
+    },
+    {
+      "color": "AZUL",
+      "colorId": "281",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533371"
+        }
+      ]
+    },
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533371"
+        }
+      ]
+    },
+    {
+      "color": "BORDO",
+      "colorId": "328",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 3,
+          "masterPid": "533371"
+        }
+      ]
+    },
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533371"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533371"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 7,
+          "masterPid": "533371"
+        }
+      ]
+    },
+    {
+      "color": "VAINILLA",
+      "colorId": "588",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 8,
+          "masterPid": "533371"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "3961",
+  "sku": "PJ20351F",
+  "title": "PJ20351F",
+  "brand": "PETITE JOLIE",
+  "season": "Verano 27",
+  "description": "Lleva el estilo y la energía de Petite Jolie a cada momento con nuestra botella térmica. Diseñada para quienes viven en constante movimiento, combina funcionalidad, diseño y ese toque fresco que caracteriza a la marca.\r\nCon una capacidad de 500 ml, es perfecta para tu rutina diaria: cabe en tu bolso, mochila y todos los días sin esfuerzo. Su cierre hermético con tapa garantiza que mantenga la temperatura hasta por 12 horas, tanto para bebidas frías como calientes.\r\nY, por supuesto, todo esto con estampados exclusivos llenos de personalidad, porque hidratarse también puede ser elegante.",
+  "price": 22155,
+  "priceFormatted": "$ 22.155,00 + IVA",
+  "available": true,
+  "totalStock": 1,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312600.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312600.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312601.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312599.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3961",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 22155
+    }
+  ],
+  "variants": [
+    {
+      "color": "Estampa floral 2",
+      "colorId": "610",
+      "price": "$ 22.155,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533405"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "3940",
+  "sku": "PJ11362",
+  "title": "PJ11362",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El bolso May es un bolso baguette de tamaño mediano confeccionado en J-Lastic, con solapa y cierre magnético. El detalle de cadena en el asa le aporta un toque moderno, mientras que el separador interno permite organizar los objetos personales de forma práctica. Incluye dos opciones de correa: una para el hombro y una extensión que se puede acoplar, transformándolo en un bolso cruzado y ofreciendo mayor versatilidad. Su delicada textura y acabado mate completan el sofisticado diseño del May, convirtiéndolo en la opción perfecta para quienes buscan practicidad sin renunciar al estilo.\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Magnético\r\nCorrea para el hombro: 42 - 112 cm\r\nAjustable: Sí\r\nDesmontable: Sí\r\nAltura: 16 cm\r\nAbertura superior: 21 cm\r\nAbertura inferior: 25 cm\r\nProfundidad: 7,5 cm",
+  "price": 39091,
+  "priceFormatted": "$ 39.091,00 + IVA",
+  "available": true,
+  "totalStock": 5,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312410.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312410.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312411.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312412.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312413.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312414.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312415.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312416.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312417.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312418.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312419.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312420.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312421.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312422.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312409.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3940",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 39091
+    }
+  ],
+  "variants": [
+    {
+      "color": "BORDO",
+      "colorId": "328",
+      "price": "$ 39.091,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 3,
+          "masterPid": "533375"
+        }
+      ]
+    },
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 39.091,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533375"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 39.091,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533375"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 39.091,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 2,
+          "masterPid": "533375"
+        }
+      ]
+    }
+  ]
+}

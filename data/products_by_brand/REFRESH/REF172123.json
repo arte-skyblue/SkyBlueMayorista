@@ -1,0 +1,113 @@
+{
+  "id": "3782",
+  "sku": "REF172123",
+  "title": "REF172123",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Sumá estilo y altura a tus looks con esta bota alta de mujer de Refresh. Tiene una caña de 35 cm que realza cualquier outfit. Se ajusta fácilmente con cierre lateral y cuenta con una suela tipo track antideslizante, taco de 8 cm y plataforma que brindan comodidad sin resignar actitud. \r\n\r\n\r\nMATERIALES Y FABRICACIÓN\r\nConfeccionada en un material suave tipo gamuza sintética. Además, es 100% vegana y cuenta con certificación oficial de PETA. \r\n\r\n\r\nCALCE\r\nTaco de 8 cm.\r\nAlto de Caña 35 cm.\r\nTipo de Suela: Goma.\r\nDetalle de avíos: Cierre en ambos laterales\r\nTipo de Horma: Horma pequeña, pedir un talle más del habitual.\r\n\r\n\r\nIDEAS DE USO\r\nLook noche elegante: Combínalas con un vestido o minifalda corta (lana, tejido, cuero) para salir.\r\nEstilo casual chic: Úsalas sobre jeans ajustados o leggings de cuero, con un suéter oversized o camisa larga.\r\nToque bohemio: Llévalas con un vestido midi o maxi con aberturas, ideal para un estilo más relajado.\r\n \r\nTip: Evita usarlas en días de lluvia para proteger la gamuza.",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA",
+  "available": true,
+  "totalStock": 312,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5229593.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5229593.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3782",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x2, 39x2, 40x1",
+      "salePrice": 75558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 24,
+          "masterPid": "477143"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 23,
+          "masterPid": "477143"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 46,
+          "masterPid": "477143"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 46,
+          "masterPid": "477143"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 22,
+          "masterPid": "477143"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 23,
+          "masterPid": "477143"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 16,
+          "masterPid": "477143"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 16,
+          "masterPid": "477143"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 32,
+          "masterPid": "477143"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 32,
+          "masterPid": "477143"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 16,
+          "masterPid": "477143"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 16,
+          "masterPid": "477143"
+        }
+      ]
+    }
+  ]
+}

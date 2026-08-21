@@ -1,0 +1,81 @@
+{
+  "id": "4473",
+  "sku": "REF172576",
+  "title": "REF172576",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 36990,
+  "priceFormatted": "$ 36.990,00 + IVA",
+  "available": true,
+  "totalStock": 96,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5216319.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5216319.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4473",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 36990
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 36990
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 36.990,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 8,
+          "masterPid": "491678"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 16,
+          "masterPid": "491678"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 24,
+          "masterPid": "491678"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 24,
+          "masterPid": "491678"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 16,
+          "masterPid": "491678"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 8,
+          "masterPid": "491678"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491678"
+        }
+      ]
+    }
+  ]
+}

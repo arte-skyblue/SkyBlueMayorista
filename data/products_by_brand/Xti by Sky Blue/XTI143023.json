@@ -1,0 +1,132 @@
+{
+  "id": "4552",
+  "sku": "XTI143023",
+  "title": "XTI143023 - Brillo",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Bota de mujer, de la marca Xti, fabricada en antelina decorada con cristales decorativos al tono. Con cierre cremallera interior para facilitar su puesta. Suela antideslizante y tacón de 7 cm. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA",
+  "available": true,
+  "totalStock": 592,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5207092.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5207092.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14302301_2-ebe412d31291fab8a517412711778390-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14302301_3-fdc46f51e507611cb617412711755953-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14302301_4-45047400b3d156470717412711758208-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14302301_5-04bfb876bcdb797a3f17412711754177-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/bota-ivy-143023-2-b883b5e60b0515441a17691888598357-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/bota-ivy-143023-3-f9f43662aff130b7d117691888651931-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14302301_1-3bbb939bfdb7cefea217412711760528-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4552",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 75558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 75,
+          "masterPid": "489453"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 75,
+          "masterPid": "489453"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 148,
+          "masterPid": "489453"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 148,
+          "masterPid": "489453"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 73,
+          "masterPid": "489453"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 73,
+          "masterPid": "489453"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489453"
+        }
+      ]
+    },
+    {
+      "color": "NEGRO X6",
+      "colorId": "571",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489453"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489453"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489453"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489453"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489453"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489453"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489453"
+        }
+      ]
+    }
+  ]
+}

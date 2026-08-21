@@ -1,0 +1,179 @@
+{
+  "id": "3815",
+  "sku": "REF172404",
+  "title": "REF172404",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Zapatilla de la marca Refresh. Fabricada en una combinación de materiales que imitan a la piel y tejido técnico que le aporta estilo y frescura. Versátil y fácil de combinar, es el comodín perfecto para looks cómodos y cancheros.\r\n \r\n\r\nFABRICACIÓN\r\nHecha con materiales sintéticos de alta calidad, libres de componentes animales, y con acabados precisos que garantizan durabilidad y confort. Material interno y externo.\r\n\r\n\r\nCALCE\r\nAlto de suela: 4 cm.\r\nTipo de suela: Goma.\r\nHorma europea.\r\nMás info: Tirador trasero de calce.\r\n\r\n\r\nIDEAS DE USO\r\nLook casual diario: Jeans azules rectos o “mom fit”, remera blanca y campera de jean.\r\nSportchic: Leggings: negros o joggers y buzo oversize, podes agregar una gorra.",
+  "price": 39483,
+  "priceFormatted": "$ 39.483,00 + IVA",
+  "available": true,
+  "totalStock": 774,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17240407_violet_1-78936c6b9f1583e6c617603695055424-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17240407_violet_1-78936c6b9f1583e6c617603695055424-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/diseno-sin-titulo-2-f62eb0deda244b7d2517555532518366-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/diseno-sin-titulo-bd05bfd806ad19a78617555532501243-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17240403_bei_1-5d5b418b446c4c739617603692312960-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17240403_bei_2-622c452e582e4f8cd617603692353206-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_a878dafc-c18c-47cf-a418-5c5ef102760d_1362552_1400800-b0ad4f7b77ac81699217646040946358-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3815",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 39483
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 39.483,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491684"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 12,
+          "masterPid": "491684"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 24,
+          "masterPid": "491684"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 36,
+          "masterPid": "491684"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 36,
+          "masterPid": "491684"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 24,
+          "masterPid": "491684"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 12,
+          "masterPid": "491684"
+        }
+      ]
+    },
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 39.483,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491684"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 30,
+          "masterPid": "491684"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 60,
+          "masterPid": "491684"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 90,
+          "masterPid": "491684"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 90,
+          "masterPid": "491684"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 60,
+          "masterPid": "491684"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 60,
+          "masterPid": "491684"
+        }
+      ]
+    },
+    {
+      "color": "LILA",
+      "colorId": "372",
+      "price": "$ 39.483,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491684"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 20,
+          "masterPid": "491684"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 40,
+          "masterPid": "491684"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 60,
+          "masterPid": "491684"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 60,
+          "masterPid": "491684"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 40,
+          "masterPid": "491684"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 20,
+          "masterPid": "491684"
+        }
+      ]
+    }
+  ]
+}

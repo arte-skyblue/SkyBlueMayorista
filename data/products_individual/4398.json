@@ -1,0 +1,174 @@
+{
+  "id": "4398",
+  "sku": "XTI144104",
+  "title": "XTI144104",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Alpargata estilo valenciana de mujer, de la marca Xti. Fabricada en antelina y material textil en el talón. Sujeción con hebilla. Cuña baja de yute con suela antideslizante. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 6 cm\r\nMaterial Exterior: Textil\r\nCierre: Hebilla",
+  "price": 46158,
+  "priceFormatted": "$ 46.158,00 + IVA",
+  "available": true,
+  "totalStock": 168,
+  "mainImage": "/images/nodisponible-cuadrda.jpg",
+  "images": [
+    "/images/nodisponible-cuadrda.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4398",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 46158
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491730"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "491730"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "491730"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "491730"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "491730"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "491730"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491730"
+        }
+      ]
+    },
+    {
+      "color": "KAKI",
+      "colorId": "570",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 13,
+          "masterPid": "491730"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 26,
+          "masterPid": "491730"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 39,
+          "masterPid": "491730"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 39,
+          "masterPid": "491730"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 26,
+          "masterPid": "491730"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 13,
+          "masterPid": "491730"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491730"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 1,
+          "masterPid": "491730"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 2,
+          "masterPid": "491730"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 3,
+          "masterPid": "491730"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 3,
+          "masterPid": "491730"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 2,
+          "masterPid": "491730"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "491730"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491730"
+        }
+      ]
+    }
+  ]
+}

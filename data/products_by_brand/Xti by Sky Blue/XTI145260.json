@@ -1,0 +1,134 @@
+{
+  "id": "4646",
+  "sku": "XTI145260",
+  "title": "XTI145260",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "sandalia de mujer, de la marca Xti. Fabricada en una combinación de material que imita la piel y tiras decoradas con strass, este modelo multitiras ofrece un diseño elegante y luminoso, perfecto para brillar en los días soleados. Las tiras trenzadas se combinan con el brillo sutil de las piedrecitas, aportando un contraste atractivo y moderno. El cierre mediante hebilla asegura una buena sujeción al tobillo, mientras que el tacón bajo con efecto metalizado al tono añade un toque sofisticado sin renunciar a la comodidad.\r\nUna sandalia ideal para elevar cualquier look veraniego con estilo y frescura. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 50358,
+  "priceFormatted": "$ 50.358,00 + IVA",
+  "available": true,
+  "totalStock": 32,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5349121.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5349121.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5349122.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5349124.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5349125.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5349126.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5349127.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5349128.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5349129.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5349130.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5349123.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4646",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x2, 37x2, 38x2, 39x1, 40x0, 41x0",
+      "salePrice": 50358
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 2,
+          "masterPid": "539477"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "539477"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 4,
+          "masterPid": "539477"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 4,
+          "masterPid": "539477"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 2,
+          "masterPid": "539477"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "539477"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "539477"
+        }
+      ]
+    },
+    {
+      "color": "Oro",
+      "colorId": "292",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 2,
+          "masterPid": "539477"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "539477"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 4,
+          "masterPid": "539477"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 4,
+          "masterPid": "539477"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 2,
+          "masterPid": "539477"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "539477"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "539477"
+        }
+      ]
+    }
+  ]
+}

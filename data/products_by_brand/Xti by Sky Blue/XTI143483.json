@@ -1,0 +1,72 @@
+{
+  "id": "3841",
+  "sku": "XTI143483",
+  "title": "XTI143483",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Zapatilla de Xti, confeccionada en suave material tipo gamuza, ligera y confortable. Un modelo en plena tendencia esta temporada, ideal para sumar estilo sin resignar comodidad. Su diseño casual con suela doble la convierte en un básico infaltable para elevar cualquier look diario.\r\n\r\n\r\nFABRICACIÓN\r\nMaterial tipo suede de tacto suave y agradable. Incorpora suela gruesa doble de goma antideslizante, que brinda mayor estabilidad y un andar seguro. Pensada para acompañarte todos los días con durabilidad y confort.\r\n\r\n \r\nCALCE\r\nSuela doble de goma antideslizante\r\nPlantilla extraíble\r\nCordones ajustables\r\nHorma europea\r\n\r\n\r\nIDEAS DE USO\r\nLooks urbanos: combínala con jeans rectos y sweaters oversized.\r\nCasual chic: ideal con pantalones sastreros y camperas cortas.\r\nDía a día: perfecta para elevar outfits simples con un toque trendy.",
+  "price": 38325,
+  "priceFormatted": "$ 38.325,00 + IVA",
+  "available": true,
+  "totalStock": 12,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/143483-34194-1-e789d19d9fd2b2f53f17724692114892-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/143483-34194-1-e789d19d9fd2b2f53f17724692114892-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/143483-34194-2-52b17512e388e4a32617724692130936-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pantuflas-crocs-850ch-91-2967dec1ae6cb8e36217724693042973-1024-1024.png"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3841",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 38325
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 38.325,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 1,
+          "masterPid": "489775"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 2,
+          "masterPid": "489775"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 3,
+          "masterPid": "489775"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 3,
+          "masterPid": "489775"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 2,
+          "masterPid": "489775"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 1,
+          "masterPid": "489775"
+        }
+      ]
+    }
+  ]
+}

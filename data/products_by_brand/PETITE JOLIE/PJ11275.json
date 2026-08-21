@@ -1,0 +1,77 @@
+{
+  "id": "4505",
+  "sku": "PJ11275",
+  "title": "PJ11275",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 44447,
+  "priceFormatted": "$ 44.447,00 + IVA",
+  "available": true,
+  "totalStock": 55,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/348904-1200-auto-b22ad7ff8893153d0517580294931547-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/348904-1200-auto-b22ad7ff8893153d0517580294931547-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/348905-1200-auto-ff11d4080531c412c317580294944538-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/348906-1200-auto-e1e08afaa59c01104117580294967299-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/348910-1200-auto-c0d54f6e810e53526d17580295723534-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/348912-1200-auto-652f22d2f9a2c019c317580295701178-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/348911-1200-auto-00efa82b9003c179b417580295710275-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/367205-1200-auto-2a1a3b953b1fdce7ae17580296294165-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/367203-1200-auto-1a381f428723136a0717580296307570-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/367204-1200-auto-b39c69a5d7a49cad0a17580296321671-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/foto-web-1280-x-1280-px-23-1d5f3d0ffa79af22b817804052211900-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/foto-web-1280-x-1280-px-22-e3c14ef6bd580b1f2117804051495749-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/foto-web-1280-x-1280-px-24-b8cfb9297f53a7a1dc17804054077799-1024-1024.png"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4505",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 44447
+    }
+  ],
+  "variants": [
+    {
+      "color": "CREMA",
+      "colorId": "470",
+      "price": "$ 44.447,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 3,
+          "masterPid": "492866"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 44.447,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 22,
+          "masterPid": "492866"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 44.447,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 30,
+          "masterPid": "492866"
+        }
+      ]
+    }
+  ]
+}

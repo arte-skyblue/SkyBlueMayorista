@@ -1,0 +1,285 @@
+{
+  "id": "4379",
+  "sku": "REF172736",
+  "title": "REF172736",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Sandalia de mujer, de la marca Refresh. Fabricada en antelina. Pala multitiras con pulsera trasera para ajustar al tobillo. Cierre de hebilla. Cómoda planta al tono. Cuña de 7 cm, forrada en antelina con plataforma recubierta en tiras de yute. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 7 cm\r\nMaterial Exterior: Textil\r\nCierre: Hebilla",
+  "price": 50358,
+  "priceFormatted": "$ 50.358,00 + IVA",
+  "available": true,
+  "totalStock": 444,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5325127.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5325127.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5325128.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5325130.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334761.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334762.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334763.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334764.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334765.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5325129.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4379",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 50358
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 50358
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "493335"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "493335"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "493335"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "493335"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "493335"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "493335"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "493335"
+        }
+      ]
+    },
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 20,
+          "masterPid": "493335"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 40,
+          "masterPid": "493335"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 60,
+          "masterPid": "493335"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 40,
+          "masterPid": "493335"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 20,
+          "masterPid": "493335"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "493335"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "493335"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "493335"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 1,
+          "masterPid": "493335"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 2,
+          "masterPid": "493335"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 3,
+          "masterPid": "493335"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 3,
+          "masterPid": "493335"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 2,
+          "masterPid": "493335"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 1,
+          "masterPid": "493335"
+        }
+      ]
+    },
+    {
+      "color": "NUDE",
+      "colorId": "282",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 20,
+          "masterPid": "493335"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 40,
+          "masterPid": "493335"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 60,
+          "masterPid": "493335"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 60,
+          "masterPid": "493335"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 40,
+          "masterPid": "493335"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 20,
+          "masterPid": "493335"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "493335"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "493335"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 1,
+          "masterPid": "493335"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 2,
+          "masterPid": "493335"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 3,
+          "masterPid": "493335"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 3,
+          "masterPid": "493335"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 2,
+          "masterPid": "493335"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 1,
+          "masterPid": "493335"
+        }
+      ]
+    }
+  ]
+}

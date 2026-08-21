@@ -1,0 +1,198 @@
+{
+  "id": "4466",
+  "sku": "XTI143025",
+  "title": "XTI143025",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 4,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5209369.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5209369.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14302503_neg_5-b1e9508a179397313817468175516092-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14302503_neg_3-a4d013759a61b4e5d917468175521894-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14302503_neg_4-5e54169a25c05fd3b717468175521796-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14302503_neg_1-23ec33c1267b1815e417468175514492-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4466",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 65940
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 65940
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 65940
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 65940
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489861"
+        }
+      ]
+    },
+    {
+      "color": "NEGRO X6",
+      "colorId": "571",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489861"
+        }
+      ]
+    },
+    {
+      "color": "PLOMO",
+      "colorId": "565",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 1,
+          "masterPid": "489861"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 1,
+          "masterPid": "489861"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 1,
+          "masterPid": "489861"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489861"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 1,
+          "masterPid": "489861"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "id": "4367",
+  "sku": "REF175293",
+  "title": "REF175293",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Bota de mujer, de la marca Refresh. Fabricada en antelina troquelada con varias tiras decorativas atadas al tobillo. Altura de la caña de 25 cm. Tacón efecto madera de 6 cm.\r\n\r\nAltura Tacon: 6 cm\r\nMaterial Exterior: Textil\r\nCierre: Cremallera",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA",
+  "available": true,
+  "totalStock": 540,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5334660.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5334660.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334661.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334662.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334663.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334664.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334666.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334667.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334668.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334659.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4367",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 75558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 15,
+          "masterPid": "537178"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 30,
+          "masterPid": "537178"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 45,
+          "masterPid": "537178"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 45,
+          "masterPid": "537178"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 30,
+          "masterPid": "537178"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 15,
+          "masterPid": "537178"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "537178"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 15,
+          "masterPid": "537178"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 30,
+          "masterPid": "537178"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 45,
+          "masterPid": "537178"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 45,
+          "masterPid": "537178"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 30,
+          "masterPid": "537178"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 15,
+          "masterPid": "537178"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "537178"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 15,
+          "masterPid": "537178"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 30,
+          "masterPid": "537178"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 45,
+          "masterPid": "537178"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 45,
+          "masterPid": "537178"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 30,
+          "masterPid": "537178"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 15,
+          "masterPid": "537178"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "537178"
+        }
+      ]
+    }
+  ]
+}

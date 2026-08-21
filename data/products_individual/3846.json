@@ -1,0 +1,82 @@
+{
+  "id": "3846",
+  "sku": "XTI143644",
+  "title": "XTI143644",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Zapatillas deportivas con un diseño moderno y desenfadado, estampado de leopardo, superposiciones de rayas blancas y ribete en el talón, cordones en contraste y el logotipo de XTI en el lateral. \r\n\r\nCómodas, con plantilla acolchada, cuello del tobillo acolchado y suela de plataforma de 4 cm.",
+  "price": 39161,
+  "priceFormatted": "$ 39.161,00 + IVA",
+  "available": true,
+  "totalStock": 121,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5309635.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5309635.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309636.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14364408_leo_2-c62a393eceda2499f017604476754475-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14364408_leo_5-469023249b072783e517604476776269-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14364408_leo_3-1456d89997f3ec347f17604476749707-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14364408_leo_4-d665e613def34ba15117604476746662-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14364408_leo_1-c0b703c91a00471ae017604476744904-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3846",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 39161
+    }
+  ],
+  "variants": [
+    {
+      "color": "LEOPARDO",
+      "colorId": "445",
+      "price": "$ 39.161,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "528608"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 9,
+          "masterPid": "528608"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 19,
+          "masterPid": "528608"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 30,
+          "masterPid": "528608"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 31,
+          "masterPid": "528608"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 21,
+          "masterPid": "528608"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 11,
+          "masterPid": "528608"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "4513",
+  "sku": "PJ11160",
+  "title": "PJ11160",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "¡El bolso Heaven regresa con un nuevo diseño! Es un bolso tote súper espacioso con una textura tejida que imita el lino. El modelo cuenta con correas para el hombro y de mano, lo que le brinda aún más seguridad y practicidad. Este es el bolso perfecto para la ajetreada rutina de la mujer moderna. Ya sea para el trabajo, la universidad o las clases, el bolso Heaven tiene espacio para llevar todas tus pertenencias. ¡Hazte con él!\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Magnético\r\nCorrea para el hombro: 100 - 112 cm\r\nAjustable: Sí\r\nDesmontable: Sí\r\nAltura: 21 cm\r\nAbertura superior: 28 cm\r\nAbertura inferior: 28 cm\r\nProfundidad: 10,5 cm",
+  "price": 47304,
+  "priceFormatted": "$ 47.304,00 + IVA",
+  "available": true,
+  "totalStock": 27,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_706a6938-7678-4788-b198-de94f3b973fa_1362552_1400800-f172045d6f6ca2f20617604631358278-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_706a6938-7678-4788-b198-de94f3b973fa_1362552_1400800-f172045d6f6ca2f20617604631358278-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_91a68549-8e1d-448a-8e4b-fad20a9552ae_1362552_1400800-c19e159e5fbe52dc1917604630114494-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/foto-web-1280-x-1280-px-27-c1660d64cf141d3bf817804068206080-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/foto-web-1280-x-1280-px-28-5fdc4931b9a34f8c2117804069594749-1024-1024.png"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4513",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 47304
+    }
+  ],
+  "variants": [
+    {
+      "color": "AZUL",
+      "colorId": "281",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 7,
+          "masterPid": "492873"
+        }
+      ]
+    },
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "492873"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 9,
+          "masterPid": "492873"
+        }
+      ]
+    },
+    {
+      "color": "OFF WHITE",
+      "colorId": "587",
+      "price": "$ 47.304,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 11,
+          "masterPid": "492873"
+        }
+      ]
+    }
+  ]
+}

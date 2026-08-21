@@ -1,0 +1,121 @@
+{
+  "id": "4507",
+  "sku": "PJ11172",
+  "title": "PJ11172",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 26784,
+  "priceFormatted": "$ 26.784,00 + IVA",
+  "available": true,
+  "totalStock": 41,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5222532.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5222532.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/foto-web-1280-x-1280-px-18-68eb4f9709986212f417803225081316-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/foto-web-1280-x-1280-px-19-38a9992eb580f830c817803225553321-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/foto-web-1280-x-1280-px-17-ad856453174ae327aa17803225087693-1024-1024.png"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4507",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 26784
+    }
+  ],
+  "variants": [
+    {
+      "color": "ARENA",
+      "colorId": "406",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 8,
+          "masterPid": "492874"
+        }
+      ]
+    },
+    {
+      "color": "BLANCO / DULCE DE LECHE",
+      "colorId": "653",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "492874"
+        }
+      ]
+    },
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "492874"
+        }
+      ]
+    },
+    {
+      "color": "OFF WHITE",
+      "colorId": "587",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 9,
+          "masterPid": "492874"
+        }
+      ]
+    },
+    {
+      "color": "PINK GELATO",
+      "colorId": "592",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 12,
+          "masterPid": "492874"
+        }
+      ]
+    },
+    {
+      "color": "Rosa",
+      "colorId": "266",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 12,
+          "masterPid": "492874"
+        }
+      ]
+    },
+    {
+      "color": "VAINILLA",
+      "colorId": "588",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "492874"
+        }
+      ]
+    }
+  ]
+}

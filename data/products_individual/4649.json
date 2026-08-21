@@ -1,0 +1,135 @@
+{
+  "id": "4649",
+  "sku": "XTI146311",
+  "title": "XTI146311",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Bailarina de mujer, de la marca Xti. Fabricada en suave antelina, de tacto agradable y acabado elegante. Diseño plano con puntera redondeada y pulsera con hebilla para un ajuste cómodo y seguro. Decorada con tachuelas metálicas distribuidas por todo el empeine, que aportan un toque moderno y sofisticado. Un modelo ideal para combinar confort y estilo en tus looks diarios.",
+  "price": 50000,
+  "priceFormatted": "$ 50.000,00 + IVA",
+  "available": true,
+  "totalStock": 60,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5349146.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5349146.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4649",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x2, 39x2, 40x1, 41x0",
+      "salePrice": 50000
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x0, 37x2, 38x2, 39x2, 40x2, 41x0",
+      "salePrice": 50000
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 50000
+    }
+  ],
+  "variants": [
+    {
+      "color": "Marron",
+      "colorId": "325",
+      "price": "$ 50.000,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "539480"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 2,
+          "masterPid": "539480"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 8,
+          "masterPid": "539480"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 9,
+          "masterPid": "539480"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 9,
+          "masterPid": "539480"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 7,
+          "masterPid": "539480"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 1,
+          "masterPid": "539480"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 50.000,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "539480"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 3,
+          "masterPid": "539480"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 6,
+          "masterPid": "539480"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 6,
+          "masterPid": "539480"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 6,
+          "masterPid": "539480"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 3,
+          "masterPid": "539480"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "539480"
+        }
+      ]
+    }
+  ]
+}

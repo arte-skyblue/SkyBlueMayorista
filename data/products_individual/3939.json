@@ -1,0 +1,60 @@
+{
+  "id": "3939",
+  "sku": "PJ11359",
+  "title": "PJ11359",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El bolso Icon es un pequeño bolso confeccionado íntegramente en J-Lastic, perfecto para quienes buscan estilo y personalidad. La correa para el hombro presenta adornos en diversas formas y acabados, mientras que el acabado pulido le aporta sofisticación. Su forma original garantiza un look moderno, y los colgantes refuerzan su estilo único. El interior espacioso y sin divisiones permite organizar tus pertenencias a tu gusto, ofreciendo libertad y practicidad para el día a día. Además de la correa para el hombro, incluye una correa cruzada, lo que garantiza su versatilidad.\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Cremallera\r\nCorrea para el hombro: 89 - 109 cm\r\nAjustable: Sí\r\nDesmontable: Sí\r\nAltura: 14 cm\r\nAbertura superior: 23 cm\r\nAbertura inferior: 30 cm\r\nProfundidad: 5 cm",
+  "price": 44447,
+  "priceFormatted": "$ 44.447,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312401.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312401.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312403.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312404.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312405.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312406.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312407.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312408.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312402.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3939",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 44447
+    }
+  ],
+  "variants": [
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 44.447,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533374"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 44.447,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533374"
+        }
+      ]
+    }
+  ]
+}

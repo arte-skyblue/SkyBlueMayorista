@@ -1,0 +1,43 @@
+{
+  "id": "4500",
+  "sku": "PJ10676",
+  "title": "PJ10676",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 18950,
+  "priceFormatted": "$ 18.950,00 + IVA",
+  "available": true,
+  "totalStock": 3,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10676_c_2-09388cda86b3c9b69e16985124613746-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10676_c_2-09388cda86b3c9b69e16985124613746-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10676_c_3-8e78666065b192aaf416985124628936-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10676_c_4-608a880c3cf790c994169851246446761-5ea4ced16be906305f16985125207848-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10676_c_1-78d6ce65e5a2a85abd169851245971351-c13fac961865e0781516985125207358-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4500",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 18950
+    }
+  ],
+  "variants": [
+    {
+      "color": "NUDE",
+      "colorId": "282",
+      "price": "$ 18.950,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 3,
+          "masterPid": "444340"
+        }
+      ]
+    }
+  ]
+}

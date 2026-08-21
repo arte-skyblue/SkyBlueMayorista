@@ -1,0 +1,80 @@
+{
+  "id": "3752",
+  "sku": "XTI143477",
+  "title": "XTI143477",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Texana de la marca Xti estilo cowboy. Fabricado en un material que imita la piel con cierre lateral y tiradores laterales para dar más facilidad al calce. Además, cuenta con una suela gruesa antideslizante. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\n\r\nIDEAS DE USO\r\nLook diario:  Pollera negra larga + crop top\r\nLook formal tipo oficina: Pantalón sastrero negro + blusa.",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 32,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14347701_2-7c86c69f2951eeb8cf17412737993083-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14347701_2-7c86c69f2951eeb8cf17412737993083-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14347701_3-18541aac532f3a663e17412737971448-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14347701_4-f53e5623b8ee4fd05117412737981133-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14347701_5-7c910969394fd2f5bf17412737983384-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14347701_1-094b01c7ea7c79070f17412737978928-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3752",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Bronce",
+      "colorId": "296",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489447"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "489447"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 4,
+          "masterPid": "489447"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 8,
+          "masterPid": "489447"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 8,
+          "masterPid": "489447"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "489447"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "489447"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "4372",
+  "sku": "XTI145220",
+  "title": "XTI145220",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Bailarina de mujer, de la marca Xti. Fabricada en material que imita la piel, con un diseño deportivo y cómodo. Cuenta con dos correas ajustables con cinta adhesiva para un mejor ajuste y sujeción. Su suela plana antideslizante garantiza seguridad y estabilidad en cada paso, perfecta para el uso diario.\r\n\r\nAltura Tacon: 2 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cierre adherente",
+  "price": 54558,
+  "priceFormatted": "$ 54.558,00 + IVA",
+  "available": true,
+  "totalStock": 720,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5334700.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5334700.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334701.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334702.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334703.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334704.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334706.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334707.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334708.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334709.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334710.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334711.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334705.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4372",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 54558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 54.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 20,
+          "masterPid": "537209"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 40,
+          "masterPid": "537209"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 60,
+          "masterPid": "537209"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 60,
+          "masterPid": "537209"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 40,
+          "masterPid": "537209"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 20,
+          "masterPid": "537209"
+        }
+      ]
+    },
+    {
+      "color": "Celeste",
+      "colorId": "383",
+      "price": "$ 54.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 20,
+          "masterPid": "537209"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 40,
+          "masterPid": "537209"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 60,
+          "masterPid": "537209"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 60,
+          "masterPid": "537209"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 40,
+          "masterPid": "537209"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 20,
+          "masterPid": "537209"
+        }
+      ]
+    },
+    {
+      "color": "CORAL",
+      "colorId": "312",
+      "price": "$ 54.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 20,
+          "masterPid": "537209"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 40,
+          "masterPid": "537209"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 60,
+          "masterPid": "537209"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 60,
+          "masterPid": "537209"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 40,
+          "masterPid": "537209"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 20,
+          "masterPid": "537209"
+        }
+      ]
+    },
+    {
+      "color": "HIELO",
+      "colorId": "568",
+      "price": "$ 54.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "537209"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 54.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "537209"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "537209"
+        }
+      ]
+    }
+  ]
+}

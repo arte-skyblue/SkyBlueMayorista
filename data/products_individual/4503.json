@@ -1,0 +1,179 @@
+{
+  "id": "4503",
+  "sku": "PJ7541",
+  "title": "PJ7541",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 45824,
+  "priceFormatted": "$ 45.824,00 + IVA",
+  "available": true,
+  "totalStock": 60,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/378112-1200-auto-f17746c9074a377d8c17604482904949-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/378112-1200-auto-f17746c9074a377d8c17604482904949-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/378113-1200-auto-d5990a40a8ef74a75517604482917011-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/378114-1200-auto-a20dc9e122f8b12ecd17604482933181-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/378115-1200-auto-f169a8f54d69ef538917604482940778-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/378116-1200-auto-9ad44c7b2113780d3c17604482953557-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_3c1e0b66-5934-4b17-9fa3-d8a096ce5875_1362552_1400800-bd97768bbc1140b48d17604677832462-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4503",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 45824
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 45.824,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 3,
+          "masterPid": "492893"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 6,
+          "masterPid": "492893"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 9,
+          "masterPid": "492893"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 9,
+          "masterPid": "492893"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 6,
+          "masterPid": "492893"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 3,
+          "masterPid": "492893"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492893"
+        }
+      ]
+    },
+    {
+      "color": "Plata",
+      "colorId": "299",
+      "price": "$ 45.824,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 2,
+          "masterPid": "492893"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "492893"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 6,
+          "masterPid": "492893"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 6,
+          "masterPid": "492893"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 4,
+          "masterPid": "492893"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 2,
+          "masterPid": "492893"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492893"
+        }
+      ]
+    },
+    {
+      "color": "VAINILLA",
+      "colorId": "588",
+      "price": "$ 45.824,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "492893"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "492893"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "492893"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "492893"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "492893"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "492893"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492893"
+        }
+      ]
+    }
+  ]
+}

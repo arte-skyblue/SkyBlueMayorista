@@ -1,0 +1,188 @@
+{
+  "id": "4230",
+  "sku": "REF172870",
+  "title": "REF172870",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Zueco destalonado, de la marca Refresh. Fabricado en suave antelina. Correa ajustable con hebilla en oro. Cómoda planta de bios con suela de goma antideslizante. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 0 cm\r\nMaterial Exterior: Textil\r\nCierre: Sin cierre",
+  "price": 44189,
+  "priceFormatted": "$ 44.189,00 + IVA",
+  "available": true,
+  "totalStock": 12,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287001_38-319119d64e5f42c96417525091399904-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287001_38-319119d64e5f42c96417525091399904-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287001_39-d3ed5db5abe9fcc6c417525091401451-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287001_40-5ca5405a2211b8d83817525091401007-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287001_41-2b72b6415328eeec8e17525091418781-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287001_42-9f3ef9a30474bae03d17525091409565-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287002_38-0d22ba20a002a0325617525091032420-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287002_39-16b5090cf4d2006b9017525091032580-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287002_40-b0bfb1d9d4c5461b3b17525091058804-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287002_41-cb5710b0fc83cfb03b17525091064511-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287002_42-059f17c76440a4016717525091062470-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287003_38-fea2ecb5de8bf2127f17525081996063-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287003_39-93d9450f363a81d8aa17525081996996-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287003_40-c5bc3e2a55c9baf30817525081999478-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287003_41-c9bc084db0424b590517525081997553-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17287003_42-2b8e437721186e983317525081998173-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4230",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 44189
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 44.189,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "492386"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "492386"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "492386"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "492386"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "492386"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "492386"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492386"
+        }
+      ]
+    },
+    {
+      "color": "KAKI",
+      "colorId": "570",
+      "price": "$ 44.189,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "492386"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "492386"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "492386"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "492386"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "492386"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "492386"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492386"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 44.189,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 1,
+          "masterPid": "492386"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 2,
+          "masterPid": "492386"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 3,
+          "masterPid": "492386"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 3,
+          "masterPid": "492386"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 2,
+          "masterPid": "492386"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "492386"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492386"
+        }
+      ]
+    }
+  ]
+}

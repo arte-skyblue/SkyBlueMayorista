@@ -1,0 +1,74 @@
+{
+  "id": "3736",
+  "sku": "XTI143300",
+  "title": "XTI143300",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Bota de la marca Xti. Fabricada en un material que imita la piel. Elástico que proporciona un mayor ajuste y tirador trasero para facilitar el calce. Suela gruesa de 4 cm. Una bota en tendencia ideal para completar tu fondo de armario. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 127,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14330001_2-3b3cb92378290f6f8817437709969076-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14330001_2-3b3cb92378290f6f8817437709969076-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14330001_4-abd6798e3f72666f9017437709960577-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14330001_5-ecb2c5fcc315cd338e17437709963100-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_864ba5fc-f13b-49c3-9701-c2daac15a0ec_1362552_1400800-684a335e08b3d9ae7617646041686948-1024-1024.webp",
+    "https://images.ib2c.com.ar/repository/310/productsList/5190667.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3736",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 15,
+          "masterPid": "486045"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 16,
+          "masterPid": "486045"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 32,
+          "masterPid": "486045"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 32,
+          "masterPid": "486045"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 16,
+          "masterPid": "486045"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 16,
+          "masterPid": "486045"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "3925",
+  "sku": "PJ10085",
+  "title": "PJ10085",
+  "brand": "PETITE JOLIE",
+  "season": "Verano 27",
+  "description": "Bolso pequeño rectangular negro. Fabricado en J-Lastic con textura de nailon, cuenta con dos aberturas, una más grande y otra más pequeña. Tiene una correa larga y ajustable de grosgrain con el logo, todo en negro. Se cierra con cremallera y lleva una etiqueta con el nombre de la marca en la solapa. ¡El bolso favorito de Petite Jolie llega en nuevos colores! El bolso Ted viene en un diseño monocromático para que puedas lucirlo con estilo en diferentes ocasiones. ¿Para el día a día? ¿O para una fiesta? ¡Para cualquier ocasión, llévate tu Ted y completa tu look!\r\n\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Cremallera\r\nCorrea para el hombro: 68 - 135 centímetros\r\nAjustable: Sí\r\nDesmontable: No\r\nAltura: 18 centímetros\r\nAbertura superior: 13 centímetros\r\nAbertura inferior: 13 centímetros\r\nProfundidad: 4,5 centímetros",
+  "price": 32484,
+  "priceFormatted": "$ 32.484,00 + IVA",
+  "available": true,
+  "totalStock": 2,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5345348.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5345348.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345349.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345350.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345347.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3925",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 32484
+    }
+  ],
+  "variants": [
+    {
+      "color": "ARENA",
+      "colorId": "406",
+      "price": "$ 32.484,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533359"
+        }
+      ]
+    },
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 32.484,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533359"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 32.484,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533359"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 32.484,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533359"
+        }
+      ]
+    },
+    {
+      "color": "NEGRO MULTI",
+      "colorId": "594",
+      "price": "$ 32.484,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 2,
+          "masterPid": "533359"
+        }
+      ]
+    }
+  ]
+}

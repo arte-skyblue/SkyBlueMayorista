@@ -1,0 +1,59 @@
+{
+  "id": "3942",
+  "sku": "PJ11367",
+  "title": "PJ11367",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El bolso Petite Jolie Moon es el accesorio ideal para quienes buscan un look moderno, práctico y con personalidad. Con un diseño de media luna inspirado en el estilo hobo , este modelo se ajusta cómodamente y crea un look contemporáneo que complementa diferentes atuendos cotidianos.\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Cremallera\r\nCorrea para el hombro: No\r\nAjustable: Sí\r\nDesmontable: No\r\nAltura: 14 cm\r\nAbertura superior: 20 cm\r\nAbertura inferior: 24 cm\r\nProfundidad: 4 cm\r\nCorrea de mano: 23 - 29 cm",
+  "price": 41769,
+  "priceFormatted": "$ 41.769,00 + IVA",
+  "available": true,
+  "totalStock": 3,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312433.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312433.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312434.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312435.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312436.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312437.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312438.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312432.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3942",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 41769
+    }
+  ],
+  "variants": [
+    {
+      "color": "BORDO",
+      "colorId": "328",
+      "price": "$ 41.769,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "533378"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 41.769,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 2,
+          "masterPid": "533378"
+        }
+      ]
+    }
+  ]
+}

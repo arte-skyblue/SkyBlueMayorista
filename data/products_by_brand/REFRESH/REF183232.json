@@ -1,0 +1,60 @@
+{
+  "id": "4485",
+  "sku": "REF183232",
+  "title": "REF183232",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 44100,
+  "priceFormatted": "$ 44.100,00 + IVA",
+  "available": true,
+  "totalStock": 22,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18323203_39-8576138637c214d5f217383326467324-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18323203_39-8576138637c214d5f217383326467324-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18323203_40-b4b1130f065ce30ca717383326461960-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18323203_41-dd9db0dcf73b8a30f517383326462338-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18323202_39-00e55ec6d41bba04a617377265960929-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18323202_40-31da99d70e9f5795b517377265961168-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18323202_41-c7650a856b62a4840d17377265960968-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_88a5cead-8b39-440e-87fd-124e9eca4da2_1362552_1400800-e7f04a399c205b6d6d17646043149462-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_8fa807e4-f9ee-4561-a875-da481ebdd369_1362552_1400800-b57aab9c16605bc07717646043253319-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4485",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 44100
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 44.100,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 2,
+          "masterPid": "483879"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 44.100,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 20,
+          "masterPid": "483879"
+        }
+      ]
+    }
+  ]
+}

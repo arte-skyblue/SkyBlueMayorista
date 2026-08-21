@@ -1,0 +1,79 @@
+{
+  "id": "3791",
+  "sku": "XTI143291",
+  "title": "XTI143291",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Mocasín de mujer, de la marca Xti. Fabricado en un material que imita la piel. Con detalle decorativo en el frente. Tacón ancho de 6 cm, suela dentada antideslizante. Un básico del invierno.\r\n\r\nEste modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 6 cm\r\nMaterial Exterior: Sintético\r\nCierre: Sin cierre",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 228,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14329102_neg_1-34d90b845777b64ea817468151540641-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14329102_neg_1-34d90b845777b64ea817468151540641-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14329102_neg_3-f27960bce7335bad0817468151537309-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14329102_neg_4-99c7b6ae3c80bb31cb17468151531743-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14329102_neg_5-d438fab917e73bd3c617468151531916-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3791",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 19,
+          "masterPid": "489887"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 38,
+          "masterPid": "489887"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 57,
+          "masterPid": "489887"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 57,
+          "masterPid": "489887"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 38,
+          "masterPid": "489887"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 19,
+          "masterPid": "489887"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489887"
+        }
+      ]
+    }
+  ]
+}

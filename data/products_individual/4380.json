@@ -1,0 +1,144 @@
+{
+  "id": "4380",
+  "sku": "REF175278",
+  "title": "REF175278",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Sandalia de mujer, de la marca Refresh. Fabricada en suave antelina. Hebillas metalizadas el oro viejo. Cómoda planta tipo bios con gruesa suela de goma. Un modelo ideal para el día a día.\r\n\r\nAltura Tacon: 0 cm\r\nMaterial Exterior: Textil\r\nCierre: Sin cierre",
+  "price": 50358,
+  "priceFormatted": "$ 50.358,00 + IVA",
+  "available": true,
+  "totalStock": 480,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5334774.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5334774.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334776.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334777.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334778.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334779.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334780.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334781.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334782.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334783.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334784.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334785.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334786.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334787.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334788.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5334775.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4380",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 50358
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 50358
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "537420"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 20,
+          "masterPid": "537420"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 40,
+          "masterPid": "537420"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 60,
+          "masterPid": "537420"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 60,
+          "masterPid": "537420"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 40,
+          "masterPid": "537420"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 20,
+          "masterPid": "537420"
+        }
+      ]
+    },
+    {
+      "color": "HIELO",
+      "colorId": "568",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "537420"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 20,
+          "masterPid": "537420"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 40,
+          "masterPid": "537420"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 60,
+          "masterPid": "537420"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 60,
+          "masterPid": "537420"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 40,
+          "masterPid": "537420"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 20,
+          "masterPid": "537420"
+        }
+      ]
+    }
+  ]
+}

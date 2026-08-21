@@ -1,0 +1,70 @@
+{
+  "id": "4556",
+  "sku": "PJ10362II",
+  "title": "PJ10362II",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 16040,
+  "priceFormatted": "$ 16.040,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5255912.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5255912.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_1eebf1bb-cd2a-4d4f-9d73-33f5e3292583_1362552_1400800-188f0b6cad6f0b48c017703873230775-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/captura-de-pantalla-2026-02-06-111429-a4b983efe3a0fce49d17703873124102-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/captura-de-pantalla-2026-02-06-111450-ae751bd8c5e428937317703873126206-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/captura-de-pantalla-2026-02-06-111408-8c9baa7f07c91cc0f517703873123588-1024-1024.png"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4556",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 16040
+    }
+  ],
+  "variants": [
+    {
+      "color": "Celeste",
+      "colorId": "383",
+      "price": "$ 16.040,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "501836"
+        }
+      ]
+    },
+    {
+      "color": "LILA",
+      "colorId": "372",
+      "price": "$ 16.040,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "501836"
+        }
+      ]
+    },
+    {
+      "color": "Rosa",
+      "colorId": "266",
+      "price": "$ 16.040,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "501836"
+        }
+      ]
+    }
+  ]
+}

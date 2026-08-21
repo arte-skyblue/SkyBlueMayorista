@@ -1,0 +1,187 @@
+{
+  "id": "3767",
+  "sku": "REF172249",
+  "title": "REF172249",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "Bota de mujer de la marca Refresh, pensada para acompañarte con estilo durante los días fríos. De diseño moderno y detalles llamativos, combina correas decorativas con apliques metálicos que suman carácter y personalidad. Una opción ideal para elevar tus looks invernales sin esfuerzo. Además, cuenta con el sello vegano de PETA, lo que la convierte en una elección consciente y libre de crueldad animal.\r\n\r\n\r\nFABRICACIÓN\r\nInterior: Textil suave al tacto\r\nSuela: Goma antideslizante\r\nCierre: Cremallera lateral para facilitar el calce\r\nDetalles: Correas decorativas con herrajes metálicos\r\nAltura de tacón: 9 cm \r\nPlataforma: 2 cm \r\n\r\n\r\n IDEAS DE USO\r\n Combina con jeans ajustados y sweater oversized para un look urbano y relajado.\r\n Úsalas con vestidos midi o faldas plisadas para un contraste moderno y femenino.\r\nSumalas a un total black look para un outfit elegante con actitud.",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 45,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5208549.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5208549.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17224904_39-98035e7546ac8b26e317800755781704-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17224904_40-ff12534fead50cdb4f17800755782411-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17224904_41-bfe70634fa96eeab2c17800755782083-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17224904_42-b93e41a44a917ebf2617800755785294-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_04649506-3920-45f0-b9d6-8c767508358a_1362552_1400800-cbaae76fdc7fdc578717763659220405-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/dsc_6090-921996ab4d59a972d617443310938883-1024-1024-cf2303e5ee447e822617528631778338-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/dsc_6091-c39ebbe6d443137a6617443310891226-1024-1024-b171a1b0213f7154b717528631809227-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17224904_38-f0002d09456008c55417800755783574-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3767",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 65940
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 5,
+          "masterPid": "489726"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 5,
+          "masterPid": "489726"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 10,
+          "masterPid": "489726"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 10,
+          "masterPid": "489726"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 5,
+          "masterPid": "489726"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 10,
+          "masterPid": "489726"
+        }
+      ]
+    },
+    {
+      "color": "CAMEL X8",
+      "colorId": "575",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489726"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489726"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489726"
+        }
+      ]
+    }
+  ]
+}

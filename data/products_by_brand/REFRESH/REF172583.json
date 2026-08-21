@@ -1,0 +1,135 @@
+{
+  "id": "4227",
+  "sku": "REF172583",
+  "title": "REF172583",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Sandalia de mujer, de la marca Refresh. Fabricada en suave antelina. Modelo de doble pala cruzada con pulsera al tobillo. Cierre mediante hebilla forrada del mismo material que el corte. Tacón ancho de 9 cm con plataforma delantera para mayor comodidad, forrado en el mismo material. Suela antideslizante. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 9 cm\r\nMaterial Exterior: Textil\r\nCierre: Hebilla",
+  "price": 35000,
+  "priceFormatted": "$ 35.000,00 + IVA",
+  "available": true,
+  "totalStock": 324,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5216328.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5216328.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4227",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 35000
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x2, 37x2, 38x2, 39x1, 40x0, 41x0",
+      "salePrice": 35000
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 35000
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 35.000,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491681"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 14,
+          "masterPid": "491681"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 28,
+          "masterPid": "491681"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 42,
+          "masterPid": "491681"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 42,
+          "masterPid": "491681"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 28,
+          "masterPid": "491681"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 14,
+          "masterPid": "491681"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 35.000,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491681"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 13,
+          "masterPid": "491681"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 26,
+          "masterPid": "491681"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 39,
+          "masterPid": "491681"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 39,
+          "masterPid": "491681"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 26,
+          "masterPid": "491681"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 13,
+          "masterPid": "491681"
+        }
+      ]
+    }
+  ]
+}

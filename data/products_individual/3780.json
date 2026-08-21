@@ -1,0 +1,185 @@
+{
+  "id": "3780",
+  "sku": "XTI144470",
+  "title": "XTI144470",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Botín de mujer, de la marca Xti. Fabricado en antelina de alta calidad, con un diseño elegante que incluye un faldón que añade movimiento y sofisticación al modelo. Su suela estilo cowboy, con un bonito cosido que resalta el diseño, le otorga un toque de originalidad y estilo. Con un tacón de 7 cm de altura, este Botín ofrece el equilibrio perfecto entre confort y altura. Ideal para complementar looks tanto casuales como más arreglados, garantizando un caminar seguro y cómodo gracias a su suela antideslizante. Un modelo único para quienes buscan destacar con estilo. Con plantilla extraíble. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 7 cm\r\nMaterial Exterior: Textil\r\nCierre: Cremallera",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA",
+  "available": true,
+  "totalStock": 232,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5308605.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5308605.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308607.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308608.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308609.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308610.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308611.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308606.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3780",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 75558
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x2, 39x2, 40x1, 41x0",
+      "salePrice": 75558
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 12,
+          "masterPid": "507672"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 12,
+          "masterPid": "507672"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 24,
+          "masterPid": "507672"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 24,
+          "masterPid": "507672"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 12,
+          "masterPid": "507672"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 12,
+          "masterPid": "507672"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507672"
+        }
+      ]
+    },
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 10,
+          "masterPid": "507672"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "507672"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 20,
+          "masterPid": "507672"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 20,
+          "masterPid": "507672"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 10,
+          "masterPid": "507672"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 10,
+          "masterPid": "507672"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507672"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 7,
+          "masterPid": "507672"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 6,
+          "masterPid": "507672"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 14,
+          "masterPid": "507672"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 14,
+          "masterPid": "507672"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 7,
+          "masterPid": "507672"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 8,
+          "masterPid": "507672"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507672"
+        }
+      ]
+    }
+  ]
+}

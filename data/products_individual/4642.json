@@ -1,0 +1,125 @@
+{
+  "id": "4642",
+  "sku": "XTI146784",
+  "title": "XTI146784",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Zapatilla deportiva de caballero, de la marca Xti. Fabricada en material textil transpirable, ligera y flexible, presenta un diseño tipo slip on que facilita el calce y aporta un ajuste cómodo y práctico para el uso diario. Su estructura favorece la ventilación del pie, mientras que la suela gruesa y amortiguada ofrece una pisada suave y estable, ideal para caminar durante horas. Un modelo versátil y funcional que combina confort y estilo deportivo para acompañar looks casuales con total comodidad.",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 64,
+  "mainImage": "/images/nodisponible-cuadrda.jpg",
+  "images": [
+    "/images/nodisponible-cuadrda.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4642",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "39x0, 40x1, 41x1, 42x2, 43x2, 44x1, 45x1",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "539443"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "539443"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "539443"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 8,
+          "masterPid": "539443"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 8,
+          "masterPid": "539443"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 4,
+          "masterPid": "539443"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 4,
+          "masterPid": "539443"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "539443"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "539443"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "539443"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 8,
+          "masterPid": "539443"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 8,
+          "masterPid": "539443"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 4,
+          "masterPid": "539443"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 4,
+          "masterPid": "539443"
+        }
+      ]
+    }
+  ]
+}

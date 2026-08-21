@@ -1,0 +1,132 @@
+{
+  "id": "4546",
+  "sku": "REF173060",
+  "title": "REF173060",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Zapatilla de hombre, de la marca Refresh. Fabricado en material que imita a la piel. Cierre mediante cordones regulables al tono. Con suela de goma. Plantilla extraíble.",
+  "price": 46200,
+  "priceFormatted": "$ 46.200,00 + IVA",
+  "available": true,
+  "totalStock": 64,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5338044.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5338044.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338045.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338046.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338047.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338048.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338049.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338051.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338050.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4546",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "39x0, 40x1, 41x1, 42x2, 43x2, 44x1, 45x1",
+      "salePrice": 46200
+    }
+  ],
+  "variants": [
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 46.200,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "538950"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "538950"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "538950"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 8,
+          "masterPid": "538950"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 8,
+          "masterPid": "538950"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 4,
+          "masterPid": "538950"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 4,
+          "masterPid": "538950"
+        }
+      ]
+    },
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 46.200,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "538950"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "538950"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "538950"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 8,
+          "masterPid": "538950"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 8,
+          "masterPid": "538950"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 4,
+          "masterPid": "538950"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 4,
+          "masterPid": "538950"
+        }
+      ]
+    }
+  ]
+}

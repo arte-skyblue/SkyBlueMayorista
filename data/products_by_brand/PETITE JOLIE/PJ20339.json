@@ -1,0 +1,83 @@
+{
+  "id": "3953",
+  "sku": "PJ20339",
+  "title": "PJ20339",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El llavero Petite Jolie Lemon 2 PJ20339 es un accesorio versátil que transforma lo básico en algo lleno de personalidad. Fabricado con J-Lastic , el material exclusivo de Petite Jolie, cuenta con un colgante en forma de corazón , una delicada cadena y un mosquetón metálico también en forma de corazón , combinando diseño, ligereza y durabilidad para el uso diario.",
+  "price": 11690,
+  "priceFormatted": "$ 11.690,00 + IVA",
+  "available": true,
+  "totalStock": 16,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312511.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312511.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312512.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312514.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312515.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312513.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3953",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 11690
+    }
+  ],
+  "variants": [
+    {
+      "color": "Lima",
+      "colorId": "384",
+      "price": "$ 11.690,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 2,
+          "masterPid": "533395"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 11.690,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 10,
+          "masterPid": "533395"
+        }
+      ]
+    },
+    {
+      "color": "Rojo",
+      "colorId": "234",
+      "price": "$ 11.690,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 2,
+          "masterPid": "533395"
+        }
+      ]
+    },
+    {
+      "color": "Rosa chicle",
+      "colorId": "601",
+      "price": "$ 11.690,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 2,
+          "masterPid": "533395"
+        }
+      ]
+    }
+  ]
+}

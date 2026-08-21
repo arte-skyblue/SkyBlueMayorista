@@ -1,0 +1,125 @@
+{
+  "id": "4469",
+  "sku": "REF171985",
+  "title": "REF171985",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 266,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5208677.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5208677.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4469",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489788"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "489788"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 10,
+          "masterPid": "489788"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 20,
+          "masterPid": "489788"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 20,
+          "masterPid": "489788"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 10,
+          "masterPid": "489788"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 10,
+          "masterPid": "489788"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489788"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 21,
+          "masterPid": "489788"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 21,
+          "masterPid": "489788"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 51,
+          "masterPid": "489788"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 51,
+          "masterPid": "489788"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 21,
+          "masterPid": "489788"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 21,
+          "masterPid": "489788"
+        }
+      ]
+    }
+  ]
+}

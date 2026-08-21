@@ -1,0 +1,191 @@
+{
+  "id": "3947",
+  "sku": "PJ20167",
+  "title": "PJ20167",
+  "brand": "PETITE JOLIE",
+  "season": "Verano 27",
+  "description": "La cartera Petite Jolie Push es el accesorio perfecto para quienes buscan practicidad y estilo en su día a día. Compacta y funcional, puede usarse como cartera y como pequeño bolso de mano , acompañando diferentes momentos con versatilidad.\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Cremallera\r\nAltura: 11,5 centímetros\r\nAbertura superior: 17,5 centímetros\r\nAbertura inferior: 17,5 centímetros\r\nProfundidad: 2,5 centímetros\r\nCorrea de mano ligera: 12 centímetros",
+  "price": 19374,
+  "priceFormatted": "$ 19.374,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312475.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312475.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312479.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345295.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345296.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345297.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345298.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345299.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345300.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345293.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3947",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 19374
+    }
+  ],
+  "variants": [
+    {
+      "color": "AZUL",
+      "colorId": "281",
+      "price": "$ 19.374,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533383"
+        }
+      ]
+    },
+    {
+      "color": "Azul translucido",
+      "colorId": "618",
+      "price": "$ 19.374,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533383"
+        }
+      ]
+    },
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 19.374,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533383"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 19.374,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533383"
+        }
+      ]
+    },
+    {
+      "color": "Fuccia translucido",
+      "colorId": "617",
+      "price": "$ 19.374,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533383"
+        }
+      ]
+    },
+    {
+      "color": "Fucsia",
+      "colorId": "289",
+      "price": "$ 19.374,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533383"
+        }
+      ]
+    },
+    {
+      "color": "Lima",
+      "colorId": "384",
+      "price": "$ 19.374,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533383"
+        }
+      ]
+    },
+    {
+      "color": "Naranja translucido",
+      "colorId": "616",
+      "price": "$ 19.374,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533383"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 19.374,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533383"
+        }
+      ]
+    },
+    {
+      "color": "Oro glitter",
+      "colorId": "615",
+      "price": "$ 19.374,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533383"
+        }
+      ]
+    },
+    {
+      "color": "Rojo",
+      "colorId": "234",
+      "price": "$ 19.374,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533383"
+        }
+      ]
+    },
+    {
+      "color": "TRANSLUCIDO",
+      "colorId": "598",
+      "price": "$ 19.374,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533383"
+        }
+      ]
+    }
+  ]
+}

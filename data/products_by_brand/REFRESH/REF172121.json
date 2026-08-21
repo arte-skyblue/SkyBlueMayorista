@@ -1,0 +1,91 @@
+{
+  "id": "3760",
+  "sku": "REF172121",
+  "title": "REF172121",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "Botín de mujer, de la marca Refresh. Fabricado en un material que imita la piel. Cierre lateral. Decorado con correas y hebillas de metal. Modelo en tendencia esta temporada. Ideal para hacer de un look sencillo, un look ideal. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 72000,
+  "priceFormatted": "$ 72.000,00 + IVA",
+  "available": true,
+  "totalStock": 12,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5208679.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5208679.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17212101_42-ee28575c6e875678ca17369520389288-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17212101_41-91910f2c14a80ed05d17369520389192-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17212101_40-a8cf73aca178bd61a917369520389158-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17212101_39-758ad87593bdbd153817369520390495-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17212101_38-a50daf7243761b7f8a17369520388861-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3760",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x6",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x1, 39x1, 40x1, 41x1",
+      "salePrice": 72000
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 72000
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 72000
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 72.000,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489791"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 1,
+          "masterPid": "489791"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 2,
+          "masterPid": "489791"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 3,
+          "masterPid": "489791"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 3,
+          "masterPid": "489791"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 2,
+          "masterPid": "489791"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 1,
+          "masterPid": "489791"
+        }
+      ]
+    }
+  ]
+}

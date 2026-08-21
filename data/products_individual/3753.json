@@ -1,0 +1,81 @@
+{
+  "id": "3753",
+  "sku": "REF172310",
+  "title": "REF172310",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "Un modelo con onda outdoor y mucho estilo. Con cordones para un ajuste perfecto y cierre lateral que facilita el calce. La hebilla decorativa y el detalle de pelito en el cuello le dan un toque montañés súper canchero. Su suela tipo track con taco de 8 cm y plataforma delantera te ofrece altura y comodidad todo el día. \r\n\r\n\r\nMATERIALES Y FABRICACIÓN\r\nEste calzado de mujer de Refresh está hecho en material símil cuero. Además, es 100% vegano y cuenta con la certificación oficial de PETA. Ideal para looks urbanos con espíritu aventurero.\r\n\r\n\r\nCALCE\r\nTaco de 8cm. \r\nAlto de caña 13cm\r\nTipo de Suela: Goma.\r\nDetalle de avíos: Doble cierres+cordones+hebilla ajuste de talón\r\nTipo de horma: Horma pequeña, pedir un talle más del habitual. \r\n\r\n\r\nIDEAS DE USO\r\nLook urbano rebelde: Jeans rotos/oscuros + remera gráfica/banda + campera de cuero.\r\nToque femenino/rudo: Vestido fluido (estampado/liso) + medias opacas + chaleco de jean/cárdigan.\r\nDía a día, cómodo: Leggings/pantalón cargo + buzo oversized/sweater de punto grueso.",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 84,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5208471.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5208471.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3753",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x6",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x1, 39x1, 40x1, 41x1",
+      "salePrice": 65940
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489716"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 7,
+          "masterPid": "489716"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 14,
+          "masterPid": "489716"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 21,
+          "masterPid": "489716"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 21,
+          "masterPid": "489716"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 14,
+          "masterPid": "489716"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 7,
+          "masterPid": "489716"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "4534",
+  "sku": "XTI143265",
+  "title": "XTI143265",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Botín de hombre, de la marca Xti. Fabricado en serraje de alta calidad, este Botín tipo Chelsea destaca por su diseño moderno y elegante. Los elásticos laterales y el tirador trasero facilitan su puesta, ofreciendo un ajuste cómodo y práctico. Su suela track antideslizante garantiza estabilidad y seguridad al caminar. Un modelo versátil que combina perfectamente con diversos estilos, ideal para darle un toque sofisticado a tu look diario.",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 64,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5337935.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5337935.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4534",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "39x0, 40x1, 41x1, 42x2, 43x2, 44x1, 45x1",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Marron",
+      "colorId": "325",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "538938"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "538938"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "538938"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 8,
+          "masterPid": "538938"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 8,
+          "masterPid": "538938"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 4,
+          "masterPid": "538938"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 4,
+          "masterPid": "538938"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "538938"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 4,
+          "masterPid": "538938"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "538938"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 8,
+          "masterPid": "538938"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 8,
+          "masterPid": "538938"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 4,
+          "masterPid": "538938"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 4,
+          "masterPid": "538938"
+        }
+      ]
+    }
+  ]
+}

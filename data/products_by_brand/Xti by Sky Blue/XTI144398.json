@@ -1,0 +1,81 @@
+{
+  "id": "3796",
+  "sku": "XTI144398",
+  "title": "XTI144398",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Botín de mujer, de la marca Xti. Fabricado en material que imita la piel, con una caña de 16 cm que le da un diseño estilizado y moderno. La suela plana, con un pequeño tacón de 5 cm, ofrece comodidad y estabilidad, mientras que el detalle dorado en la parte interior del tacón le añade un toque de sofisticación. El botín también cuenta con un elegante detalle estilo cadena en el lateral de color dorado, que aporta un toque de lujo y distinción. Además, la cremallera interior facilita la puesta y el ajuste, haciendo de este modelo una opción práctica y versátil para cualquier ocasión.\r\n\r\nEste modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 5 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cremallera",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 88,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/foto-web-1280-x-1280-px-1-023475a80064fafed117811065451967-1024-1024.png",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/foto-web-1280-x-1280-px-1-023475a80064fafed117811065451967-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/256-9853de6c504b0a878717811119127955-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/253-59d31f6388d48fa9c517811119131672-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/255-7145d69e09291346da17811119127199-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/254-d92224c1d84997aa6317811119127907-1024-1024.png",
+    "https://images.ib2c.com.ar/repository/310/productsList/5276880.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3796",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 13,
+          "masterPid": "507722"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 11,
+          "masterPid": "507722"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 22,
+          "masterPid": "507722"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 22,
+          "masterPid": "507722"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 9,
+          "masterPid": "507722"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 11,
+          "masterPid": "507722"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507722"
+        }
+      ]
+    }
+  ]
+}

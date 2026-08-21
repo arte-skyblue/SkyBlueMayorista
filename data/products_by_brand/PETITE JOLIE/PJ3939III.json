@@ -1,0 +1,75 @@
+{
+  "id": "4512",
+  "sku": "PJ3939III",
+  "title": "PJ3939III",
+  "brand": "PETITE JOLIE",
+  "season": "Verano 27",
+  "description": "",
+  "price": 39091,
+  "priceFormatted": "$ 39.091,00 + IVA",
+  "available": true,
+  "totalStock": 34,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/325017-1200-auto-ea36b2123c2481a81617575993285710-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/325017-1200-auto-ea36b2123c2481a81617575993285710-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/325018-1200-auto-411b30aa7d63cb257817575993296511-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/325019-1200-auto-88baa818feb2a63a0017575993306840-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/325020-1200-auto-042f7108b5ea3e5ef317575993321713-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj3939iii-00812-cream-2-1-6a90615d09a24f4e5517575988843801-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj3939iii-00812-cream-4-1-a0ebcf45f3007730c517575988861259-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj3939iii-00812-cream-1-1-722ac459a69e27524417575988830781-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/355887-800-auto-34aae2f34641f15a6d17575989593751-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/355890-800-auto-d63c883d457c90eae617575989609748-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_0e9e5934-09e6-4c44-ba48-91074b86bf5b_1362552_1400800-83d7b92e3f5e3f613517604639950008-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4512",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 39091
+    }
+  ],
+  "variants": [
+    {
+      "color": "CREMA",
+      "colorId": "470",
+      "price": "$ 39.091,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 6,
+          "masterPid": "492871"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 39.091,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 14,
+          "masterPid": "492871"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 39.091,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 14,
+          "masterPid": "492871"
+        }
+      ]
+    }
+  ]
+}

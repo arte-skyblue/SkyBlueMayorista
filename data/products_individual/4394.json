@@ -1,0 +1,42 @@
+{
+  "id": "4394",
+  "sku": "REF183387",
+  "title": "REF183387",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Luce elegante y práctica con este bolso de hombro Refresh para mujer. Fabricado en material que imita la piel, aporta un acabado sofisticado. Su cierre mediante clip  y el asa bandolera extraíble permiten seguridad y adaptabilidad a cualquier estilo y ocasión. Medidas: 34 x 41 x 11 cm. .Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 58758,
+  "priceFormatted": "$ 58.758,00 + IVA",
+  "available": true,
+  "totalStock": 10,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5338093.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5338093.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338094.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338095.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4394",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 58758
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 58.758,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 10,
+          "masterPid": "538454"
+        }
+      ]
+    }
+  ]
+}

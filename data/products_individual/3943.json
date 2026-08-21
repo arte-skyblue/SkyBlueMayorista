@@ -1,0 +1,60 @@
+{
+  "id": "3943",
+  "sku": "PJ11369",
+  "title": "PJ11369",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El bolso Icon Fur Bag es un bolso J-Lastic de tamaño mediano, estilo baguette, forrado en piel sintética, que añade un toque moderno y sofisticado a tu look. Con cierre de cremallera, el Icon Fur Bag se ajusta cómodamente y garantiza practicidad para el uso diario. El modelo incluye una correa para el hombro y una correa adicional que se puede convertir en bandolera, adaptándose a tu forma de llevarlo. El Icon Fur Bag viene con colgantes extraíbles que refuerzan su estilo y personalidad. Su interior amplio y abierto te permite organizar tus pertenencias como quieras, ofreciéndote libertad y practicidad.\r\n\r\nMaterial: Ante Cierre\r\n: Cremallera Correa\r\npara el hombro: 37 - 105 cm\r\nAjustable: Sí\r\nDesmontable: Sí\r\nAltura: 14 cm\r\nAbertura superior: 23 cm\r\nAbertura inferior: 30 cm\r\nProfundidad: 5 cm",
+  "price": 44447,
+  "priceFormatted": "$ 44.447,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312439.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312439.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312440.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312441.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312442.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312444.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312445.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312446.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312443.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3943",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 44447
+    }
+  ],
+  "variants": [
+    {
+      "color": "Chocolate",
+      "colorId": "401",
+      "price": "$ 44.447,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533379"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 44.447,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533379"
+        }
+      ]
+    }
+  ]
+}

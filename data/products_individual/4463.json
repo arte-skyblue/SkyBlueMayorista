@@ -1,0 +1,82 @@
+{
+  "id": "4463",
+  "sku": "XTI184369",
+  "title": "XTI184369",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 21000,
+  "priceFormatted": "$ 21.000,00 + IVA",
+  "available": true,
+  "totalStock": 1,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18436903_39-4b3180a5052911a1f117811887553447-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18436903_39-4b3180a5052911a1f117811887553447-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18436903_40-c6a737e1bfc467e46417811887564419-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18436903_41-2b0dc6c99b2296deb917811887577367-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18436903_38-3e0c0981e034d0dcf617811887539080-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4463",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 21000
+    }
+  ],
+  "variants": [
+    {
+      "color": "KAKI",
+      "colorId": "570",
+      "price": "$ 21.000,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "490548"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 21.000,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 1,
+          "masterPid": "490548"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 21.000,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "490548"
+        }
+      ]
+    },
+    {
+      "color": "Verde",
+      "colorId": "264",
+      "price": "$ 21.000,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "490548"
+        }
+      ]
+    }
+  ]
+}

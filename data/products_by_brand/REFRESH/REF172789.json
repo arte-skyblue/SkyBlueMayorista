@@ -1,0 +1,187 @@
+{
+  "id": "3819",
+  "sku": "REF172789",
+  "title": "REF172789",
+  "brand": "REFRESH",
+  "season": "Verano 27",
+  "description": "Aporta frescura, comodidad y un toque femenino a tus looks diarios con esta zapatilla de mujer de Refresh.\r\nFabricada en PU de alta calidad, destaca por su delicado troquelado floral, que no solo suma estilo, sino que también aporta ventilación y ligereza. Incluye un cierre lateral con cremallera que permite un calce rápido y práctico, mientras que los cordones regulables aseguran un ajuste personalizado.\r\nSu suela de goma antideslizante brinda estabilidad y confort en cada paso, convirtiéndola en una opción perfecta para acompañarte durante tus actividades cotidianas con un aire moderno y chic.\r\nAdemás, este modelo cuenta con la certificación vegana de PETA, avalando una fabricación respetuosa con los animales.\r\n\r\nFABRICACIÓN\r\nMaterial: PU sintético.\r\nDiseño: Troquelado floral en laterales y empeine.\r\nCierre: Cremallera lateral + cordones ajustables.\r\nSuela: Goma antideslizante y flexible.\r\nCertificación: Producto vegano avalado por PETA.\r\n\r\n\r\nIDEAS DE USO\r\nCasual diario: Jeans + camiseta básica + zapatillas Refresh.\r\nPaseo de fin de semana: Leggings + sudadera liviana + zapatillas Refresh.\r\nLook femenino y urbano: Falda midi + remera lisa + zapatillas Refresh.\r\nTrabajo relajado: Pantalón recto + blusa holgada + zapatillas Refresh.\r\n\r\n\r\nIMPORTANTE\r\nCalce rápido gracias a su cremallera lateral.\r\nAjuste cómodo con cordones regulables.\r\nDiseño troquelado que aporta frescura y estilo.\r\nSuela ligera y antideslizante.",
+  "price": 40740,
+  "priceFormatted": "$ 40.740,00 + IVA",
+  "available": true,
+  "totalStock": 156,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17278906_neg_1-1370f024a5068f6e4a17603663387748-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17278906_neg_1-1370f024a5068f6e4a17603663387748-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17278906_neg_2-e5bcbfd025b5fd561217603663400678-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17278906_neg_5-5bc4d7f249b900d37717603663380608-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17278903_bei_1-b7987dfe485a3b9b4e17603658081901-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17278903_bei_2-8238300afbdc701a3417603658090567-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17278903_bei_5-fcf45a213c05b625af17603658082598-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17278905_hie_5-226262c3a7f24608f117603660609270-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17278905_hie_2-ca0a552744de9ed39217603660623125-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17278905_hie_1-0653585c6525d1834917603660611782-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3819",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 40740
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 40740
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 40.740,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491688"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "491688"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "491688"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "491688"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "491688"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "491688"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491688"
+        }
+      ]
+    },
+    {
+      "color": "HIELO",
+      "colorId": "568",
+      "price": "$ 40.740,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491688"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 3,
+          "masterPid": "491688"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 6,
+          "masterPid": "491688"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 9,
+          "masterPid": "491688"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 9,
+          "masterPid": "491688"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 6,
+          "masterPid": "491688"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 3,
+          "masterPid": "491688"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 40.740,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491688"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "491688"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 19,
+          "masterPid": "491688"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 29,
+          "masterPid": "491688"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 33,
+          "masterPid": "491688"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 19,
+          "masterPid": "491688"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 10,
+          "masterPid": "491688"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "4422",
+  "sku": "REF172711",
+  "title": "REF172711",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "Sandalia de la marca Refresh, elegante y cómoda, ideal para completar tus looks de temporada. Fabricada en material que imita la piel, presenta un diseño de una sola pala con pulsera trasera y cierre con hebilla forrada en el mismo material.",
+  "price": 36990,
+  "priceFormatted": "$ 36.990,00 + IVA",
+  "available": true,
+  "totalStock": 576,
+  "mainImage": "/images/nodisponible-cuadrda.jpg",
+  "images": [
+    "/images/nodisponible-cuadrda.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4422",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 36990
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 36990
+    }
+  ],
+  "variants": [
+    {
+      "color": "HIELO",
+      "colorId": "568",
+      "price": "$ 36.990,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491673"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 16,
+          "masterPid": "491673"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 32,
+          "masterPid": "491673"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 48,
+          "masterPid": "491673"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 48,
+          "masterPid": "491673"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 32,
+          "masterPid": "491673"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 16,
+          "masterPid": "491673"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 36.990,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491673"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 32,
+          "masterPid": "491673"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 64,
+          "masterPid": "491673"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 96,
+          "masterPid": "491673"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 96,
+          "masterPid": "491673"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 64,
+          "masterPid": "491673"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 32,
+          "masterPid": "491673"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "3742",
+  "sku": "XTI143015",
+  "title": "XTI143015",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Botín de mujer, de la marca de Xti. Fabricado en un material que imita la piel. Con cierre cremallera trasera la cual facilita su puesta. Disfruta de un básico de invierno con sus 6 cm de tacón y suela antideslizante. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 144,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5207091.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5207091.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3742",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "BORDO",
+      "colorId": "328",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 18,
+          "masterPid": "489452"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 18,
+          "masterPid": "489452"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 37,
+          "masterPid": "489452"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 36,
+          "masterPid": "489452"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 17,
+          "masterPid": "489452"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 18,
+          "masterPid": "489452"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489452"
+        }
+      ]
+    }
+  ]
+}

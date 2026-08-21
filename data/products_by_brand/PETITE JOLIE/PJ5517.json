@@ -1,0 +1,74 @@
+{
+  "id": "3963",
+  "sku": "PJ5517",
+  "title": "PJ5517",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "¡Hasta los más pequeños pueden tener unas zapatillas deportivas increíbles para acompañar sus aventuras! Las Hype IN son la elección perfecta, con suela J-Flow y detalles J-Lastic (PVC exclusivo de Petite Jolie) en el lateral, además de una parte superior de punto en una variedad de colores para todos los gustos. ¡Que la diversión fluya con las Hype IN, que brindan comodidad, ligereza y mucha suavidad en cada paso! <3\r\n\r\nMaterial: Punto.\r\nAltura de la suela: 2,8 centímetros.",
+  "price": 25061,
+  "priceFormatted": "$ 25.061,00 + IVA",
+  "available": true,
+  "totalStock": 12,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312586.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312586.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312588.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312589.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312590.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312587.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3963",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1",
+      "salePrice": 25061
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 25.061,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 1,
+          "masterPid": "533315"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 2,
+          "masterPid": "533315"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 3,
+          "masterPid": "533315"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 3,
+          "masterPid": "533315"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 2,
+          "masterPid": "533315"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "533315"
+        }
+      ]
+    }
+  ]
+}

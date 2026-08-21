@@ -1,0 +1,132 @@
+{
+  "id": "3844",
+  "sku": "XTI143613",
+  "title": "XTI143613",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Diseño urbano, moderno y súper cómodo. Esta zapatilla de XTI combina materiales textiles transpirables con detalles en material simil cuero, logrando un estilo versátil que se adapta a cualquier ocasión. Su cierre con cordones permite un ajuste firme y personalizado, ideal para acompañarte tanto en días activos como en momentos de relax. La suela de goma antideslizante garantiza una pisada segura, mientras que su plantilla extraíble brinda confort y practicidad para el uso diario. Una zapatilla que fusiona estilo, funcionalidad y bienestar, convirtiéndose en un básico infaltable del guardarropa urbano.\r\n\r\n\r\nFABRICACIÓN\r\nZapatilla confeccionada en una combinación de textil con detalles en material simil cuero, con cierre de cordones ajustables para un calce personalizado. Cuenta con plantilla extraíble que brinda mayor comodidad e higiene, forro interior de textil suave y transpirable, y suela de goma antideslizante que garantiza seguridad al caminar.\r\n\r\n\r\nCALCE\r\nAltura Tacon: 3 cm\r\nMaterial Exterior: Textil\r\nCierre: Cordón\r\n\r\n\r\nIDEAS DE USO\r\nLook casual urbano: Jeans rectos + remera básica + campera liviana.\r\nDía activo: Leggings + buzo oversize + mochila.\r\nEscapadas o viajes: Outfit relajado + gafas de sol + zapatillas XTI.",
+  "price": 50238,
+  "priceFormatted": "$ 50.238,00 + IVA",
+  "available": true,
+  "totalStock": 684,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14361303_38-1-fe8c7f8947bbfa9e8417600367800474-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14361303_38-1-fe8c7f8947bbfa9e8417600367800474-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14361303_40-98d84e6dbc0eb7769117600367802138-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14361303_41-0613662c388cbe143117600367801729-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14361303_42-6a64a6e94ab417eda217600367801828-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14361301_40-014a1a9811fe32210617600363628939-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14361301_41-33a5a2f7858813074417600363629405-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14361301_42-51215daa03d590140e17600363631116-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14361301_38-1-1ca9b4f75875b4ea9b17600363634165-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3844",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 50238
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 50.238,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491768"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 33,
+          "masterPid": "491768"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 66,
+          "masterPid": "491768"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 99,
+          "masterPid": "491768"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 99,
+          "masterPid": "491768"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 66,
+          "masterPid": "491768"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 33,
+          "masterPid": "491768"
+        }
+      ]
+    },
+    {
+      "color": "KAKI",
+      "colorId": "570",
+      "price": "$ 50.238,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491768"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 24,
+          "masterPid": "491768"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 48,
+          "masterPid": "491768"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 72,
+          "masterPid": "491768"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 72,
+          "masterPid": "491768"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 48,
+          "masterPid": "491768"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 24,
+          "masterPid": "491768"
+        }
+      ]
+    }
+  ]
+}

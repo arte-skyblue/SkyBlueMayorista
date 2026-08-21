@@ -1,0 +1,86 @@
+{
+  "id": "3879",
+  "sku": "XTI144661",
+  "title": "XTI144661",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Botín de mujer, de la marca Xti. Fabricado en material que imita la piel, con un diseño moderno y elegante. Cuenta con una cremallera delantera que aporta un toque distintivo y facilita el calzado. Su suela plana con tacón bajo de 5 cm ofrece comodidad y estabilidad, ideal para el uso diario. Además, incluye un tirador trasero, lo que facilita su colocación y añade un detalle práctico. La suela antideslizante asegura un paso firme y seguro, convirtiéndolo en una opción perfecta para cualquier ocasión. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 60,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5310095.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5310095.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5310096.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5310097.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5310099.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5310100.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5310098.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3879",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 62958
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 5,
+          "masterPid": "532924"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "532924"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 15,
+          "masterPid": "532924"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 15,
+          "masterPid": "532924"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 10,
+          "masterPid": "532924"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 5,
+          "masterPid": "532924"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "532924"
+        }
+      ]
+    }
+  ]
+}

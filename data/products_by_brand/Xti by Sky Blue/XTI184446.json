@@ -1,0 +1,43 @@
+{
+  "id": "4593",
+  "sku": "XTI184446",
+  "title": "XTI184446",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "",
+  "price": 54558,
+  "priceFormatted": "$ 54.558,00 + IVA",
+  "available": true,
+  "totalStock": 3,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18444601_40-b6924d8b8db2e22f2017749664471751-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18444601_40-b6924d8b8db2e22f2017749664471751-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18444601_41-86aab88cce7a7edbbe17749664482791-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18444601_44-4b318dbd50e530b1c917749664492774-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/18444601_38-3fb9d0d69faa455de317749664463078-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4593",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 54558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 54.558,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 3,
+          "masterPid": "532742"
+        }
+      ]
+    }
+  ]
+}

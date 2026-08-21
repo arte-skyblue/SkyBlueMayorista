@@ -1,0 +1,82 @@
+{
+  "id": "4393",
+  "sku": "XTI184693",
+  "title": "XTI184693",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Bolso de hombro de mujer XTI confeccionado en suave antelina, con un diseño moderno y funcional. Dispone de cierre con botón y asa cómoda para llevarlo con facilidad. Un accesorio versátil que combina estilo y practicidad en el día a día. Medidas: 32 x 30 x 19 cm. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 48712,
+  "priceFormatted": "$ 48.712,00 + IVA",
+  "available": true,
+  "totalStock": 30,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5338114.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5338114.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338115.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338116.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338113.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4393",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 48712
+    }
+  ],
+  "variants": [
+    {
+      "color": "KAKI",
+      "colorId": "570",
+      "price": "$ 48.712,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 5,
+          "masterPid": "538456"
+        }
+      ]
+    },
+    {
+      "color": "Marron",
+      "colorId": "325",
+      "price": "$ 48.712,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 10,
+          "masterPid": "538456"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 48.712,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 10,
+          "masterPid": "538456"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 48.712,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 5,
+          "masterPid": "538456"
+        }
+      ]
+    }
+  ]
+}

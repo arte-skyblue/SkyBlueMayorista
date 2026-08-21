@@ -1,0 +1,128 @@
+{
+  "id": "4488",
+  "sku": "REF172873",
+  "title": "REF172873",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "",
+  "price": 54558,
+  "priceFormatted": "$ 54.558,00 + IVA",
+  "available": true,
+  "totalStock": 16,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_488e4a5e-a691-478c-a10d-e87a1e69be96_1362552_1400800-ebca1cfea0dd79773b17773146450675-1024-1024.png",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_488e4a5e-a691-478c-a10d-e87a1e69be96_1362552_1400800-ebca1cfea0dd79773b17773146450675-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/178-8ffb427f856ba11a7717773146113301-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/177-97c56e6ce2dbeca5c817773146113023-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/176-2766100c60cb93559c17773146110106-1024-1024.png"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4488",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "39x0, 40x1, 41x1, 42x2, 43x2, 44x1, 45x1",
+      "salePrice": 54558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 54.558,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "534102"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "534102"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "534102"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 0,
+          "masterPid": "534102"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 0,
+          "masterPid": "534102"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 0,
+          "masterPid": "534102"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 0,
+          "masterPid": "534102"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 54.558,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 2,
+          "masterPid": "534102"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 2,
+          "masterPid": "534102"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "534102"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 4,
+          "masterPid": "534102"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 2,
+          "masterPid": "534102"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 2,
+          "masterPid": "534102"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 0,
+          "masterPid": "534102"
+        }
+      ]
+    }
+  ]
+}

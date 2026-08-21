@@ -1,0 +1,68 @@
+{
+  "id": "4395",
+  "sku": "XTI184708",
+  "title": "XTI184708",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Bolso de mujer Xti confeccionado en suave antelina, con flecos decorativos que aportan movimiento y estilo. Dispone de cierre superior con cremallera y asa cómoda para llevarlo de mano o al hombro. Un diseño moderno y versátil, ideal para completar cualquier look casual o bohemio. Medidas: 31 x 41 x 14 cm. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 48712,
+  "priceFormatted": "$ 48.712,00 + IVA",
+  "available": true,
+  "totalStock": 25,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5338101.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5338101.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338102.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5338100.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4395",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 48712
+    }
+  ],
+  "variants": [
+    {
+      "color": "Marron",
+      "colorId": "325",
+      "price": "$ 48.712,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 10,
+          "masterPid": "538457"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 48.712,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 10,
+          "masterPid": "538457"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 48.712,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 5,
+          "masterPid": "538457"
+        }
+      ]
+    }
+  ]
+}

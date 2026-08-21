@@ -1,0 +1,100 @@
+{
+  "id": "4625",
+  "sku": "XTI151075",
+  "title": "XTI151075",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Mocasín de niña, de la marca Xti Kids. Fabricada en material que imita a la piel con adorno metálico. Cómoda planta y suela de goma antideslizante.  Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 46158,
+  "priceFormatted": "$ 46.158,00 + IVA",
+  "available": true,
+  "totalStock": 105,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5348771.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5348771.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4625",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x7",
+      "sizesBreakdown": "28x0, 29x0, 30x0, 31x1, 32x1, 33x1, 34x1, 35x1, 36x1, 37x1, 38x0",
+      "salePrice": 46158
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "28",
+          "sizeId": "17",
+          "stock": 0,
+          "masterPid": "539410"
+        },
+        {
+          "size": "29",
+          "sizeId": "18",
+          "stock": 0,
+          "masterPid": "539410"
+        },
+        {
+          "size": "30",
+          "sizeId": "19",
+          "stock": 0,
+          "masterPid": "539410"
+        },
+        {
+          "size": "31",
+          "sizeId": "20",
+          "stock": 15,
+          "masterPid": "539410"
+        },
+        {
+          "size": "32",
+          "sizeId": "21",
+          "stock": 15,
+          "masterPid": "539410"
+        },
+        {
+          "size": "33",
+          "sizeId": "22",
+          "stock": 15,
+          "masterPid": "539410"
+        },
+        {
+          "size": "34",
+          "sizeId": "7",
+          "stock": 15,
+          "masterPid": "539410"
+        },
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 15,
+          "masterPid": "539410"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 15,
+          "masterPid": "539410"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 15,
+          "masterPid": "539410"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "539410"
+        }
+      ]
+    }
+  ]
+}

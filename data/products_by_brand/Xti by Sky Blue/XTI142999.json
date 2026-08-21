@@ -1,0 +1,181 @@
+{
+  "id": "3739",
+  "sku": "XTI142999",
+  "title": "XTI142999",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Bota de la marca Xti. Fabricada en material que imita la piel. Cierre mediante cremallera interior, la cual facilita la puesta. Además de los detalles que trae haciendo un modelo único y diferente. Únete a la tendencia motera de esta temporada. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA",
+  "available": true,
+  "totalStock": 158,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5207099.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5207099.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/142999_bronce_02-60971b93456a4192d717423117738914-1024-1024.jpeg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/142999_bronce_03-787596f314d0c22d5317423117742566-1024-1024.jpeg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/142999_bronce_04-fe0f3417634652ca4117423117738830-1024-1024.jpeg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14299903_38-9c7bf8ed1514e9b77217420568984942-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/xti_142999-_negro_03-246d6aeb67b6263e6717407208089991-640-0-86aa78b91055c4970017420568007386-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/xti_142999-_negro_02-10262c6589db894b8d17407208093928-640-0-5a54eb4bb767ad1e4f17420568003337-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/142999_bronce-54ecb947a8a1d8e3db17423117738574-1024-1024.jpeg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3739",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 75558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Bronce",
+      "colorId": "296",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489457"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 19,
+          "masterPid": "489457"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 19,
+          "masterPid": "489457"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 38,
+          "masterPid": "489457"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 38,
+          "masterPid": "489457"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 19,
+          "masterPid": "489457"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 19,
+          "masterPid": "489457"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489457"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489457"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489457"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489457"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489457"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489457"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489457"
+        }
+      ]
+    },
+    {
+      "color": "NEGRO X6",
+      "colorId": "571",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489457"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489457"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 1,
+          "masterPid": "489457"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 2,
+          "masterPid": "489457"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 2,
+          "masterPid": "489457"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "489457"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489457"
+        }
+      ]
+    }
+  ]
+}

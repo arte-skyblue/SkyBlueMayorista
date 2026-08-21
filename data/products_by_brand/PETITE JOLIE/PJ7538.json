@@ -1,0 +1,161 @@
+{
+  "id": "3970",
+  "sku": "PJ7538",
+  "title": "PJ7538 - PJ7538C",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "Estas zapatillas ofrecen un estilo urbano e informal, garantizando comodidad y estilo. Son versátiles y combinan con diversas ocasiones y conjuntos. La parte superior presenta recortes que crean un diseño acorde con las últimas tendencias, y la suela de goma antideslizante asegura comodidad y agarre al caminar. Además, cuentan con una plantilla suave con forro de tela y acolchado de espuma.\r\n\r\nAltura del tacón: 3,3 cm",
+  "price": 45824,
+  "priceFormatted": "$ 45.824,00 + IVA",
+  "available": true,
+  "totalStock": 96,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312545.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312545.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312546.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312547.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312548.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312549.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312544.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3970",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1",
+      "salePrice": 45824
+    }
+  ],
+  "variants": [
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 45.824,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "533331"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "533331"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "533331"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "533331"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "533331"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "533331"
+        }
+      ]
+    },
+    {
+      "color": "BLANCO BEIGE",
+      "colorId": "492",
+      "price": "$ 45.824,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 6,
+          "masterPid": "533331"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 12,
+          "masterPid": "533331"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 18,
+          "masterPid": "533331"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 18,
+          "masterPid": "533331"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 12,
+          "masterPid": "533331"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 6,
+          "masterPid": "533331"
+        }
+      ]
+    },
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 45.824,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 2,
+          "masterPid": "533331"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "533331"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 6,
+          "masterPid": "533331"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 6,
+          "masterPid": "533331"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 4,
+          "masterPid": "533331"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 2,
+          "masterPid": "533331"
+        }
+      ]
+    }
+  ]
+}

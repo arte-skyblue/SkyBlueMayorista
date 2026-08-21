@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo SkyBlue Mayorista - Tabla de Productos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .badge-petite { background-color: #fdf2f8; color: #db2777; border: 1px solid #fbcfe8; }
+    .badge-refresh { background-color: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
+    .badge-xti { background-color: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; }
+    .img-zoom { transition: transform 0.2s ease-in-out; }
+    .img-zoom:hover { transform: scale(1.1); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center space-x-3">
+        <div class="h-10 w-10 bg-sky-600 rounded-xl flex items-center justify-center text-white shadow">
+          <i class="fa-solid fa-boxes-stacked text-lg"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold text-slate-900 leading-tight">SkyBlue Mayorista — Catálogo de Productos</h1>
+          <p class="text-xs text-slate-500">551 productos extraídos con stock, colores, talles, precios y fotos</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-2">
+        <a href="products.csv" download class="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow-sm transition">
+          <i class="fa-solid fa-file-csv"></i> Descargar CSV
+        </a>
+        <a href="products_variants.csv" download class="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg border border-slate-300 transition">
+          <i class="fa-solid fa-list"></i> CSV Variantes
+        </a>
+        <a href="products_all.json" download class="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg border border-slate-300 transition">
+          <i class="fa-solid fa-code"></i> JSON Completo
+        </a>
+      </div>
+    </div>
+
+    <!-- FILTER BAR -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4 pt-2">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+        <!-- Search input -->
+        <div class="relative">
+          <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+          <input type="text" id="searchInput" placeholder="Buscar por SKU, nombre, color..." 
+            class="w-full pl-9 pr-3 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+        </div>
+
+        <!-- Brand filter -->
+        <div>
+          <select id="brandFilter" class="w-full px-3 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+            <option value="">Todas las Marcas (Todas)</option>
+            <option value="PETITE JOLIE">PETITE JOLIE (123)</option>
+            <option value="REFRESH">REFRESH (209)</option>
+            <option value="Xti by Sky Blue">Xti by Sky Blue (219)</option>
+          </select>
+        </div>
+
+        <!-- Season filter -->
+        <div>
+          <select id="seasonFilter" class="w-full px-3 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+            <option value="">Todas las Temporadas</option>
+            <option value="Verano 27">Verano 27</option>
+            <option value="Invierno 26">Invierno 26</option>
+            <option value="Todo el año">Todo el año</option>
+          </select>
+        </div>
+
+        <!-- Availability filter -->
+        <div>
+          <select id="availFilter" class="w-full px-3 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+            <option value="">Disponibilidad (Todos)</option>
+            <option value="true">Solo Disponibles</option>
+            <option value="false">Solo Agotados</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Stats Summary -->
+      <div class="mt-3 flex flex-wrap items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100">
+        <div id="resultCount" class="font-medium text-slate-700">Mostrando 551 productos</div>
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> Con Stock / Disponible</span>
+          <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-slate-300 inline-block"></span> Agotado</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TABLE CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full">
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+          <thead class="bg-slate-100/75 text-xs font-semibold text-slate-600 uppercase tracking-wider">
+            <tr>
+              <th scope="col" class="px-4 py-3 text-center">Foto</th>
+              <th scope="col" class="px-4 py-3">SKU / Modelo</th>
+              <th scope="col" class="px-4 py-3">Marca</th>
+              <th scope="col" class="px-4 py-3">Temporada</th>
+              <th scope="col" class="px-4 py-3 text-right">Precio</th>
+              <th scope="col" class="px-4 py-3 text-center">Stock</th>
+              <th scope="col" class="px-4 py-3">Colores</th>
+              <th scope="col" class="px-4 py-3">Talles / Modalidad</th>
+              <th scope="col" class="px-4 py-3 text-center">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody" class="divide-y divide-slate-100 bg-white font-normal">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="mt-4 flex items-center justify-between">
+      <button id="prevPage" class="px-3 py-1.5 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 disabled:opacity-40">
+        <i class="fa-solid fa-chevron-left mr-1"></i> Anterior
+      </button>
+      <span id="pageInfo" class="text-xs text-slate-600 font-medium">Página 1 de 28</span>
+      <button id="nextPage" class="px-3 py-1.5 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 disabled:opacity-40">
+        Siguiente <i class="fa-solid fa-chevron-right ml-1"></i>
+      </button>
+    </div>
+  </main>
+
+  <!-- MODAL FOR DETAIL & GALLERY -->
+  <div id="detailModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
+      <div class="sticky top-0 bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between z-10">
+        <div class="flex items-center space-x-3">
+          <span id="modalBrandBadge" class="px-2.5 py-0.5 rounded-full text-xs font-semibold"></span>
+          <h3 id="modalTitle" class="text-lg font-bold text-slate-900"></h3>
+        </div>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 p-1.5 rounded-lg hover:bg-slate-100">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-6">
+        <!-- Main Info Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Gallery Carousel -->
+          <div>
+            <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden border border-slate-200 flex items-center justify-center">
+              <img id="modalMainImg" src="" alt="" class="w-full h-full object-contain p-2">
+            </div>
+            <div id="modalGalleryThumbs" class="mt-3 flex gap-2 overflow-x-auto pb-2">
+              <!-- Thumbs -->
+            </div>
+          </div>
+
+          <!-- Specs -->
+          <div class="space-y-4">
+            <div>
+              <div class="text-xs text-slate-400 font-medium">SKU / Código</div>
+              <div id="modalSku" class="text-base font-bold text-slate-800"></div>
+            </div>
+
+            <div>
+              <div class="text-xs text-slate-400 font-medium">Precio Mayorista</div>
+              <div id="modalPrice" class="text-xl font-black text-sky-700"></div>
+            </div>
+
+            <div>
+              <div class="text-xs text-slate-400 font-medium">Temporada</div>
+              <div id="modalSeason" class="text-sm font-semibold text-slate-700"></div>
+            </div>
+
+            <div>
+              <div class="text-xs text-slate-400 font-medium">Stock Total Disponible</div>
+              <div id="modalStock" class="text-sm font-bold"></div>
+            </div>
+
+            <div>
+              <div class="text-xs text-slate-400 font-medium">Modalidades de Compra</div>
+              <div id="modalModalities" class="text-xs text-slate-600 space-y-1 mt-1"></div>
+            </div>
+
+            <div>
+              <div class="text-xs text-slate-400 font-medium">Descripción</div>
+              <p id="modalDesc" class="text-xs text-slate-600 leading-relaxed mt-1 whitespace-pre-line max-h-40 overflow-y-auto pr-1"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Variants Table -->
+        <div>
+          <h4 class="text-sm font-bold text-slate-800 mb-2">Desglose de Variantes (Colores y Talles)</h4>
+          <div class="border border-slate-200 rounded-xl overflow-hidden">
+            <table class="min-w-full divide-y divide-slate-200 text-xs">
+              <thead class="bg-slate-50 font-semibold text-slate-600">
+                <tr>
+                  <th class="px-3 py-2 text-left">Color</th>
+                  <th class="px-3 py-2 text-left">Talles y Stock</th>
+                  <th class="px-3 py-2 text-right">Precio</th>
+                </tr>
+              </thead>
+              <tbody id="modalVariantsBody" class="divide-y divide-slate-100">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let allProducts = [];
+    let filteredProducts = [];
+    let currentPage = 1;
+    const pageSize = 20;
+
+    async function loadData() {
+      try {
+        const res = await fetch('products_all.json');
+        allProducts = await res.json();
+        filteredProducts = [...allProducts];
+        renderTable();
+      } catch (err) {
+        console.error('Error cargando products_all.json:', err);
+      }
+    }
+
+    function getBrandClass(brand) {
+      if (!brand) return 'bg-slate-100 text-slate-700';
+      if (brand.includes('PETITE')) return 'badge-petite';
+      if (brand.includes('REFRESH')) return 'badge-refresh';
+      return 'badge-xti';
+    }
+
+    function applyFilters() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      const brand = document.getElementById('brandFilter').value;
+      const season = document.getElementById('seasonFilter').value;
+      const avail = document.getElementById('availFilter').value;
+
+      filteredProducts = allProducts.filter(p => {
+        if (brand && p.brand !== brand) return false;
+        if (season && p.season !== season) return false;
+        if (avail === 'true' && !p.available) return false;
+        if (avail === 'false' && p.available) return false;
+        if (q) {
+          const colors = (p.variants || []).map(v => v.color).join(' ');
+          const text = `${p.sku} ${p.title} ${p.brand} ${p.season} ${p.description} ${colors}`.toLowerCase();
+          if (!text.includes(q)) return false;
+        }
+        return true;
+      });
+
+      currentPage = 1;
+      renderTable();
+    }
+
+    function renderTable() {
+      const tbody = document.getElementById('tableBody');
+      const start = (currentPage - 1) * pageSize;
+      const end = start + pageSize;
+      const pageItems = filteredProducts.slice(start, end);
+
+      const totalPages = Math.ceil(filteredProducts.length / pageSize) || 1;
+      document.getElementById('pageInfo').innerText = `Página ${currentPage} de ${totalPages} (${filteredProducts.length} productos)`;
+      document.getElementById('resultCount').innerText = `Mostrando ${filteredProducts.length} productos`;
+      document.getElementById('prevPage').disabled = currentPage <= 1;
+      document.getElementById('nextPage').disabled = currentPage >= totalPages;
+
+      if (pageItems.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="9" class="px-6 py-12 text-center text-slate-400 font-medium">No se encontraron productos con los filtros seleccionados</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = pageItems.map(p => {
+        const brandBadge = `<span class="px-2 py-0.5 rounded-full text-xs font-semibold ${getBrandClass(p.brand)}">${p.brand}</span>`;
+        const colors = [...new Set((p.variants || []).map(v => v.color).filter(Boolean))];
+        const colorsBadge = colors.length > 0 
+          ? colors.slice(0, 3).map(c => `<span class="inline-block px-1.5 py-0.5 bg-slate-100 text-slate-700 rounded text-[11px] mr-1 mb-1">${c}</span>`).join('') + (colors.length > 3 ? `<span class="text-[10px] text-slate-400">+${colors.length - 3}</span>` : '')
+          : '<span class="text-slate-400 text-xs">-</span>';
+
+        const sizes = new Set();
+        (p.variants || []).forEach(v => (v.sizes || []).forEach(s => s.size && sizes.add(s.size)));
+        const sizesText = sizes.size > 0 ? Array.from(sizes).join(', ') : '-';
+
+        const modality = (p.purchaseModalities || []).map(m => m.taskName).join(', ') || 'Unidades';
+
+        const stockBadge = p.totalStock > 0
+          ? `<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">${p.totalStock} u.</span>`
+          : (p.available ? `<span class="text-xs text-slate-500 font-medium">Bajo Pedido</span>` : `<span class="text-xs text-slate-400">Sin stock</span>`);
+
+        const imgTag = p.mainImage
+          ? `<img src="${p.mainImage}" alt="${p.sku}" class="w-12 h-12 object-contain rounded-lg bg-slate-50 border border-slate-200 p-0.5 img-zoom cursor-pointer" onclick="openDetail('${p.id}')">`
+          : `<div class="w-12 h-12 rounded-lg bg-slate-100 flex items-center justify-center text-slate-300"><i class="fa-solid fa-image"></i></div>`;
+
+        return `
+          <tr class="hover:bg-slate-50/80 transition-colors">
+            <td class="px-4 py-2.5 text-center">${imgTag}</td>
+            <td class="px-4 py-2.5 font-bold text-slate-900">
+              <a href="javascript:void(0)" onclick="openDetail('${p.id}')" class="hover:text-sky-600 transition">${p.sku}</a>
+            </td>
+            <td class="px-4 py-2.5">${brandBadge}</td>
+            <td class="px-4 py-2.5 text-slate-600 text-xs font-medium">${p.season || '-'}</td>
+            <td class="px-4 py-2.5 text-right font-bold text-slate-900">${p.priceFormatted || '-'}</td>
+            <td class="px-4 py-2.5 text-center">${stockBadge}</td>
+            <td class="px-4 py-2.5 max-w-xs">${colorsBadge}</td>
+            <td class="px-4 py-2.5 text-xs text-slate-600">
+              <div class="font-medium text-slate-700">${sizesText}</div>
+              <div class="text-[11px] text-slate-400">${modality}</div>
+            </td>
+            <td class="px-4 py-2.5 text-center">
+              <button onclick="openDetail('${p.id}')" class="px-2.5 py-1 text-xs font-medium text-sky-700 bg-sky-50 hover:bg-sky-100 rounded-lg transition border border-sky-200">
+                <i class="fa-solid fa-eye mr-1"></i> Ver
+              </button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function openDetail(id) {
+      const p = allProducts.find(x => String(x.id) === String(id));
+      if (!p) return;
+
+      document.getElementById('modalTitle').innerText = `${p.brand} — ${p.sku}`;
+      const brandBadge = document.getElementById('modalBrandBadge');
+      brandBadge.className = `px-2.5 py-0.5 rounded-full text-xs font-semibold ${getBrandClass(p.brand)}`;
+      brandBadge.innerText = p.brand;
+
+      document.getElementById('modalSku').innerText = p.sku;
+      document.getElementById('modalPrice').innerText = p.priceFormatted || 'Consultar';
+      document.getElementById('modalSeason').innerText = p.season || 'No especificada';
+      document.getElementById('modalStock').innerHTML = p.totalStock > 0 
+        ? `<span class="text-emerald-600 font-bold">${p.totalStock} unidades en total</span>`
+        : `<span class="text-slate-400">Sin stock registrado</span>`;
+
+      document.getElementById('modalDesc').innerText = p.description || 'Sin descripción detallada.';
+
+      // Purchase modalities
+      const modContainer = document.getElementById('modalModalities');
+      if (p.purchaseModalities && p.purchaseModalities.length > 0) {
+        modContainer.innerHTML = p.purchaseModalities.map(m => `
+          <div class="p-2 bg-slate-50 rounded border border-slate-200">
+            <span class="font-bold text-slate-800">${m.taskName}</span>
+            ${m.sizesBreakdown ? `<span class="text-slate-500 ml-1">(${m.sizesBreakdown})</span>` : ''}
+          </div>
+        `).join('');
+      } else {
+        modContainer.innerHTML = '<span class="text-slate-400">Unidades sueltas</span>';
+      }
+
+      // Images
+      const mainImg = document.getElementById('modalMainImg');
+      mainImg.src = p.mainImage || '';
+      
+      const thumbsContainer = document.getElementById('modalGalleryThumbs');
+      if (p.images && p.images.length > 0) {
+        thumbsContainer.innerHTML = p.images.map((imgUrl, i) => `
+          <img src="${imgUrl}" class="w-14 h-14 object-contain rounded-lg border border-slate-200 bg-white p-1 cursor-pointer hover:border-sky-500 transition" onclick="document.getElementById('modalMainImg').src='${imgUrl}'">
+        `).join('');
+      } else {
+        thumbsContainer.innerHTML = '';
+      }
+
+      // Variants Table
+      const varBody = document.getElementById('modalVariantsBody');
+      if (p.variants && p.variants.length > 0) {
+        varBody.innerHTML = p.variants.map(v => {
+          const sizesList = (v.sizes || []).map(s => `
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-100 text-slate-700 mr-1 mb-1">
+              <span class="font-bold">${s.size}:</span> ${s.stock > 0 ? `<span class="text-emerald-700 font-bold">${s.stock}u</span>` : `<span class="text-slate-400">0</span>`}
+            </span>
+          `).join('');
+
+          return `
+            <tr>
+              <td class="px-3 py-2 font-bold text-slate-800">${v.color || 'Único'}</td>
+              <td class="px-3 py-2">${sizesList || '-'}</td>
+              <td class="px-3 py-2 text-right font-medium text-slate-700">${v.price || p.priceFormatted || '-'}</td>
+            </tr>
+          `;
+        }).join('');
+      } else {
+        varBody.innerHTML = `<tr><td colspan="3" class="px-3 py-4 text-center text-slate-400">No hay matriz de variantes</td></tr>`;
+      }
+
+      document.getElementById('detailModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('detailModal').classList.add('hidden');
+    }
+
+    document.getElementById('searchInput').addEventListener('input', applyFilters);
+    document.getElementById('brandFilter').addEventListener('change', applyFilters);
+    document.getElementById('seasonFilter').addEventListener('change', applyFilters);
+    document.getElementById('availFilter').addEventListener('change', applyFilters);
+
+    document.getElementById('prevPage').addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderTable();
+      }
+    });
+
+    document.getElementById('nextPage').addEventListener('click', () => {
+      const totalPages = Math.ceil(filteredProducts.length / pageSize);
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderTable();
+      }
+    });
+
+    // Close on backdrop click
+    document.getElementById('detailModal').addEventListener('click', (e) => {
+      if (e.target.id === 'detailModal') closeModal();
+    });
+
+    loadData();
+  </script>
+</body>
+</html>

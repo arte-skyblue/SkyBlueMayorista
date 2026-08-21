@@ -1,0 +1,75 @@
+{
+  "id": "3746",
+  "sku": "XTI143307",
+  "title": "XTI143307",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Botas de la marca Xti. Fabricada en un material que imita la piel. bota estilo militar. Tendencia. Cierre y cordones ajustables para un mayor ajuste. 4 cm de tacón grueso y suela antideslizante. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales)\r\n\r\n\r\nIDEAS DE USO\r\nLook rock urbano: jean negro recto o skinny + remera gráfica o básica + campera de cuero\r\nLook casual con actitud: pantalón cargo o jogger + sweater oversized o buzo + abrigo puffer",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 184,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5190748.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5190748.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14330701_2-b3e1542dc6e696862517437711041676-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14330701_5-8ad73701b48e09b8e417437711028347-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14330701_3-5e76df7034dd2ffb2317437711027058-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14330701_4-33d93062aae78de72317437711028386-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14330701_1-df443c299fa5afa2d117437711037000-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3746",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 23,
+          "masterPid": "486058"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 23,
+          "masterPid": "486058"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 46,
+          "masterPid": "486058"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 46,
+          "masterPid": "486058"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 23,
+          "masterPid": "486058"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 23,
+          "masterPid": "486058"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "4510",
+  "sku": "PJ7499",
+  "title": "PJ7499",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 26784,
+  "priceFormatted": "$ 26.784,00 + IVA",
+  "available": true,
+  "totalStock": 36,
+  "mainImage": "/images/nodisponible-cuadrda.jpg",
+  "images": [
+    "/images/nodisponible-cuadrda.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4510",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 26784
+    }
+  ],
+  "variants": [
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 26.784,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 3,
+          "masterPid": "492887"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 6,
+          "masterPid": "492887"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 9,
+          "masterPid": "492887"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 9,
+          "masterPid": "492887"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 6,
+          "masterPid": "492887"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 3,
+          "masterPid": "492887"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "492887"
+        }
+      ]
+    }
+  ]
+}

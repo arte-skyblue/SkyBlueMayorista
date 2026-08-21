@@ -1,0 +1,81 @@
+{
+  "id": "3825",
+  "sku": "XTI142957",
+  "title": "XTI142957",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Zapatilla de la marca Xti confeccionada en materiales sintéticos de alta calidad, con combinación de texturas que incluyen ante, charol y detalles brillantes sobre el lateral, que le dan un toque sofisticado y moderno. Presenta cierre de cordones ajustables y un práctico cierre lateral metálico que facilita la puesta. Su plantilla es extraíble, proporcionando comodidad e higiene, mientras que la suela gruesa de goma antideslizante asegura estabilidad y confort durante todo el día. Este modelo se convertirá en tu aliado perfecto para cualquier look urbano.\r\n\r\n\r\nFABRICACIÓN\r\nSu confección precisa garantiza durabilidad, ligereza y confort para el uso diario.\r\n \r\n\r\nCALCE\r\nAltura Tacon: 6 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cordón\r\n\r\n\r\nIDEAS DE USO\r\nJogger + buzo oversized + campera inflable para un look casual y moderno.\r\nPantalón cargo + remera básica + campera biker urbana.\r\nVestido midi + tapado largo para un estilo elegante y chic de ciudad.",
+  "price": 58751,
+  "priceFormatted": "$ 58.751,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14295701_neg_1-da025ab9c9ae9bc88e17480148331203-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14295701_neg_1-da025ab9c9ae9bc88e17480148331203-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14295701_neg_2-2afe76eec5bfae77f717480148341559-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14295701_neg_5-f4e95abe16b88f5d2d17480148336002-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14295701_neg_3-4456c4341143df59ed17480148333537-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14295701_neg_4-2500edd440f56ac4cd17480148329148-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/xti-maria-becerra-new-collection-ss25-143717-negro-3-1-1aa5ccc879a9191df017683940686049-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3825",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 58751
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 58.751,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491053"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "491053"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "491053"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "491053"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "491053"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "491053"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491053"
+        }
+      ]
+    }
+  ]
+}

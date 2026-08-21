@@ -1,0 +1,41 @@
+{
+  "id": "4146",
+  "sku": "XTI87488",
+  "title": "XTI87488",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 2000,
+  "priceFormatted": "$ 2.000,00 + IVA",
+  "available": true,
+  "totalStock": 50,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5318941.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5318941.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5318940.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4146",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 2000
+    }
+  ],
+  "variants": [
+    {
+      "color": "Rojo",
+      "colorId": "234",
+      "price": "$ 2.000,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 50,
+          "masterPid": "534550"
+        }
+      ]
+    }
+  ]
+}

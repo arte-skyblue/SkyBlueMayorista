@@ -1,0 +1,74 @@
+{
+  "id": "3789",
+  "sku": "XTI143103",
+  "title": "XTI143103",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Descripción\r\nBota de la marca Xti. Fabricado en material que imita la piel. Cierre interior. Correa decorativa y hebilla metálica. Ideal para el invierno.\r\n\r\n\r\nCALCE\r\nAltura Tacón: 4 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cremallera",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14310301_3-956a4d9e87cd4fae8f17365343571589-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14310301_3-956a4d9e87cd4fae8f17365343571589-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14310301_4-74b820a57a8234b54017365343563483-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14310301_5-a04302edc0f619826e17365343565950-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14310301_2-e307b25a04386b70e317365343571495-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/xti_143103-_negro_01-c41dfc417e40ef4dd017407232622532-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3789",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "483758"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "483758"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "483758"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "483758"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "483758"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "483758"
+        }
+      ]
+    }
+  ]
+}

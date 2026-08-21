@@ -1,0 +1,130 @@
+{
+  "id": "4352",
+  "sku": "REF172774",
+  "title": "REF172774",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "Sandalia de mujer, de la marca Refresh. Diseño de pala ancha destalonada. Cómoda planta acolchada. Plataforma de 6 cm recubierta con tiras de yute. Suela de goma antideslizante. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 6 cm\r\nMaterial Exterior: Sintético\r\nCierre: Sin cierre",
+  "price": 46158,
+  "priceFormatted": "$ 46.158,00 + IVA",
+  "available": true,
+  "totalStock": 444,
+  "mainImage": "/images/nodisponible-cuadrda.jpg",
+  "images": [
+    "/images/nodisponible-cuadrda.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4352",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 46158
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 46158
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 18,
+          "masterPid": "491669"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 36,
+          "masterPid": "491669"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 54,
+          "masterPid": "491669"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 54,
+          "masterPid": "491669"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 36,
+          "masterPid": "491669"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 18,
+          "masterPid": "491669"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491669"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 19,
+          "masterPid": "491669"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 38,
+          "masterPid": "491669"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 57,
+          "masterPid": "491669"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 57,
+          "masterPid": "491669"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 38,
+          "masterPid": "491669"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 19,
+          "masterPid": "491669"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "491669"
+        }
+      ]
+    }
+  ]
+}

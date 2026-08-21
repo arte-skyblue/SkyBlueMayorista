@@ -1,0 +1,155 @@
+{
+  "id": "4655",
+  "sku": "XTI145499",
+  "title": "XTI145499",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Botín de mujer de la marca Xti. Fabricado en suave material con acabado, destaca por su diseño de inspiración western con largas flecos decorativos que aportan movimiento y personalidad a cada paso. Su tacón ancho ofrece una pisada estable y cómoda, ideal para el uso diario, mientras que la puntera afilada estiliza la silueta y añade un toque de tendencia. Un modelo perfecto para completar looks casuales o más sofisticados. Suela antideslizante para una mayor seguridad al caminar.",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 120,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5349219.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5349219.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4655",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x6",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x1, 39x1, 40x1, 41x1",
+      "salePrice": 62958
+    },
+    {
+      "taskName": "Módulo x6",
+      "sizesBreakdown": "35x1, 36x1, 37x1, 38x1, 39x1, 40x1, 41x0",
+      "salePrice": 62958
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 62958
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x2, 39x2, 40x1, 41x0",
+      "salePrice": 62958
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x2, 37x2, 38x2, 39x2, 40x0, 41x0",
+      "salePrice": 62958
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 62958
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 5,
+          "masterPid": "539485"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 9,
+          "masterPid": "539485"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 13,
+          "masterPid": "539485"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 13,
+          "masterPid": "539485"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 9,
+          "masterPid": "539485"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 5,
+          "masterPid": "539485"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "539485"
+        }
+      ]
+    },
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "539485"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 8,
+          "masterPid": "539485"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 13,
+          "masterPid": "539485"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 16,
+          "masterPid": "539485"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 16,
+          "masterPid": "539485"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 9,
+          "masterPid": "539485"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 4,
+          "masterPid": "539485"
+        }
+      ]
+    }
+  ]
+}

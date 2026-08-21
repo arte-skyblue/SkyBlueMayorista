@@ -1,0 +1,102 @@
+{
+  "id": "4174",
+  "sku": "REF173025",
+  "title": "REF173025",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Bota de mujer, de la marca Refresh. Fabricada en material que imita a la piel. Cierre mediante cremallera interior. Cordones tubulares regulables. Cremallera trasera que deja ver detalle con piedras pequeñas decorativas. Con gruesa suela de goma antideslizante. Con plantilla extraíble. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA",
+  "available": true,
+  "totalStock": 64,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5321563.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5321563.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321564.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321565.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321566.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321567.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321568.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316652.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4174",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x6",
+      "sizesBreakdown": "35x0, 36x0, 37x1, 38x2, 39x2, 40x1, 41x0",
+      "salePrice": 75558
+    },
+    {
+      "taskName": "Módulo x6",
+      "sizesBreakdown": "35x1, 36x1, 37x1, 38x1, 39x1, 40x1, 41x0",
+      "salePrice": 75558
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 75558
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x2, 37x2, 38x2, 39x2, 40x0, 41x0",
+      "salePrice": 75558
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x0, 37x2, 38x2, 39x2, 40x2, 41x0",
+      "salePrice": 75558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 3,
+          "masterPid": "534136"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "534136"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 13,
+          "masterPid": "534136"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 15,
+          "masterPid": "534136"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 15,
+          "masterPid": "534136"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 7,
+          "masterPid": "534136"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 1,
+          "masterPid": "534136"
+        }
+      ]
+    }
+  ]
+}

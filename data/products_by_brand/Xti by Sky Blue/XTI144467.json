@@ -1,0 +1,129 @@
+{
+  "id": "3778",
+  "sku": "XTI144467",
+  "title": "XTI144467",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Botín de mujer de la marca Xti. Confeccionado en suave ante, presenta un diseño único con una elegante falda que le aporta un toque sofisticado. Este modelo destaca por su diseño adornado con pedrería, que le confiere un brillo sutil y chic. La suela estilo cowboy le da un aire vanguardista y moderno, mientras que el tacón de 7 cm ofrece altura y comodidad al caminar. Ideal para quienes buscan un botín llamativo y con estilo, este modelo combina a la perfección con looks urbanos o más sofisticados. Además, su suela antideslizante garantiza estabilidad y comodidad en cada paso. Con plantilla extraíble. Este modelo cuenta con la certificación vegana de la organización mundial PETA (Animal Rights Organization).\r\n\r\n\r\nAltura Tacon: 7 cm\r\nMaterial Exterior: Textil\r\nCierre: Cremallera",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA",
+  "available": true,
+  "totalStock": 160,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5308592.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5308592.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308594.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308595.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308596.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5308598.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3778",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 75558
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 14,
+          "masterPid": "507717"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 12,
+          "masterPid": "507717"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 24,
+          "masterPid": "507717"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 24,
+          "masterPid": "507717"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 10,
+          "masterPid": "507717"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 12,
+          "masterPid": "507717"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507717"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 11,
+          "masterPid": "507717"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 5,
+          "masterPid": "507717"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 16,
+          "masterPid": "507717"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 16,
+          "masterPid": "507717"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 5,
+          "masterPid": "507717"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 11,
+          "masterPid": "507717"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507717"
+        }
+      ]
+    }
+  ]
+}

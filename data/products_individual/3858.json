@@ -1,0 +1,79 @@
+{
+  "id": "3858",
+  "sku": "REF170184",
+  "title": "REF170184",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Bota XL de mujer, de la marca Refresh. Fabricada en material que imita la piel con tejido elástico para que se adapte a la pierna. Cierre con cremallera lateral y tirador trasero para facilitar la puesta. Suela track de goma antideslizante. Detalle de logo de marca en el lateral. Una bota cómodo y atrevida para tus looks de esta temporada. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 75558,
+  "priceFormatted": "$ 75.558,00 + IVA",
+  "available": true,
+  "totalStock": 208,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_5eefc361-5ba8-4059-866b-3347c3997a53_1362552_1400800-b451cb0627651c251617763598160418-1024-1024.png",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_5eefc361-5ba8-4059-866b-3347c3997a53_1362552_1400800-b451cb0627651c251617763598160418-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17018401_39-58dfe2f8980079848f17365359685091-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/2-4c7ac496070562f10b17763597901391-1024-1024.png",
+    "https://images.ib2c.com.ar/repository/310/productsList/5212352.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3858",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 75558
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 75.558,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 26,
+          "masterPid": "490558"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 26,
+          "masterPid": "490558"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 52,
+          "masterPid": "490558"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 52,
+          "masterPid": "490558"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 26,
+          "masterPid": "490558"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 26,
+          "masterPid": "490558"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "490558"
+        }
+      ]
+    }
+  ]
+}

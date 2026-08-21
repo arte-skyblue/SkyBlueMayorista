@@ -1,0 +1,84 @@
+{
+  "id": "4514",
+  "sku": "PJ10789",
+  "title": "PJ10789",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 12250,
+  "priceFormatted": "$ 12.250,00 + IVA",
+  "available": true,
+  "totalStock": 26,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10789_c_2-435ac894a9f3abebd317525059912440-640-0-0a95e34d13af7dcfc717525060901411-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10789_c_2-435ac894a9f3abebd317525059912440-640-0-0a95e34d13af7dcfc717525060901411-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10789_c_3-3651f2d1b21855b74017525059922699-640-0-0e08d0afef63d3c4a917525060919823-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10789_c_4-509f55fa75a255c4c417525059934699-640-0-21f303836f6a798a7717525060936535-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10789_e_1-2f51ae70e00fe2dfc516978407595238-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10789_e_2-7d61670e19929b3dce16978407624230-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10789_c_1-75372776040c52cacc169867069141331-7c77e03f0f0893a8c717525059901393-640-0-c8d41d455bb9e879af17525060882187-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4514",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 12250
+    }
+  ],
+  "variants": [
+    {
+      "color": "AMBAR",
+      "colorId": "520",
+      "price": "$ 12.250,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 5,
+          "masterPid": "442269"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 12.250,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 10,
+          "masterPid": "442269"
+        }
+      ]
+    },
+    {
+      "color": "NUDE",
+      "colorId": "282",
+      "price": "$ 12.250,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 7,
+          "masterPid": "442269"
+        }
+      ]
+    },
+    {
+      "color": "Violeta",
+      "colorId": "301",
+      "price": "$ 12.250,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 4,
+          "masterPid": "442269"
+        }
+      ]
+    }
+  ]
+}

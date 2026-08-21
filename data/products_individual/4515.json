@@ -1,0 +1,83 @@
+{
+  "id": "4515",
+  "sku": "PJ10834",
+  "title": "PJ10834",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 15900,
+  "priceFormatted": "$ 15.900,00 + IVA",
+  "available": true,
+  "totalStock": 25,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/gemini_generated_image_d5hte6d5hte6d5ht-2fe8fe93b379e9ffa317611438670852-1024-1024.png",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/gemini_generated_image_d5hte6d5hte6d5ht-2fe8fe93b379e9ffa317611438670852-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pantuflas-crocs-850ch-8-ac1f88f647d9a4439e17611438864691-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pantuflas-crocs-850ch-1-6f6d9a3ae0a70954cd17606272661083-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_450ccfc8-a8b6-412d-8476-808c94970ebe_1362552_1400800-845b7f53cd78c2528117646031562200-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/gemini_generated_image_z5x67az5x67az5x6-bd21434236ee1d835e17611390642881-1024-1024.png"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4515",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 15900
+    }
+  ],
+  "variants": [
+    {
+      "color": "AZUL",
+      "colorId": "281",
+      "price": "$ 15.900,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 2,
+          "masterPid": "444319"
+        }
+      ]
+    },
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 15.900,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 5,
+          "masterPid": "444319"
+        }
+      ]
+    },
+    {
+      "color": "Fucsia",
+      "colorId": "289",
+      "price": "$ 15.900,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 11,
+          "masterPid": "444319"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 15.900,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 7,
+          "masterPid": "444319"
+        }
+      ]
+    }
+  ]
+}

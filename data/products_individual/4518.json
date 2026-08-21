@@ -1,0 +1,69 @@
+{
+  "id": "4518",
+  "sku": "PJ10860",
+  "title": "PJ10860",
+  "brand": "PETITE JOLIE",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 9300,
+  "priceFormatted": "$ 9.300,00 + IVA",
+  "available": true,
+  "totalStock": 21,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10860_r_2-bba0347792cc34a53716985109164293-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10860_r_2-bba0347792cc34a53716985109164293-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10860_r_3-a6dfd7d7b2cf25051116985109180764-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10860_r_4-dee4be3590b874ec8716985109200239-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/pj10860_r-d2460f7c0c9f00afcd16985109146321-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4518",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 9300
+    }
+  ],
+  "variants": [
+    {
+      "color": "Fucsia",
+      "colorId": "289",
+      "price": "$ 9.300,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 3,
+          "masterPid": "444352"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 9.300,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 8,
+          "masterPid": "444352"
+        }
+      ]
+    },
+    {
+      "color": "NUDE",
+      "colorId": "282",
+      "price": "$ 9.300,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 10,
+          "masterPid": "444352"
+        }
+      ]
+    }
+  ]
+}

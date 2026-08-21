@@ -1,0 +1,81 @@
+{
+  "id": "3864",
+  "sku": "XTI143415",
+  "title": "XTI143415",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Bota de mujer, de la marca Xti. Fabricada en un material que imita la piel. Cierre cremallera para facilitar su puesta. Estilo motorista. Con hebilla decorativa. Modelo en tendencia esta temporada. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 83958,
+  "priceFormatted": "$ 83.958,00 + IVA",
+  "available": true,
+  "totalStock": 80,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/fotos-navidad-editadas-3-5e297996ac33a6f38517691949931882-1024-1024.png",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/fotos-navidad-editadas-3-5e297996ac33a6f38517691949931882-1024-1024.png",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14341501_2-de2bc4975007be69f117412785548615-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14341501_3-da183e4ffb7d2bded717412785531245-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14341501_4-5c8888f649ebc3eda217412785532393-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14341501_5-e81ff8dcea6b3d943917412785533336-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14341501_1-2e15ff1ea40445fb0417412785530224-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3864",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 83958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 83.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 10,
+          "masterPid": "489430"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "489430"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 20,
+          "masterPid": "489430"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 20,
+          "masterPid": "489430"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 10,
+          "masterPid": "489430"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 10,
+          "masterPid": "489430"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489430"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "3761",
+  "sku": "REF172081",
+  "title": "REF172081",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "Borcego de mujer, de la marca Refresh. Fabricado en un material que imita la piel. Cierre  y cordones ajustables. Suela gruesa dentada antideslizante. Tirador trasero para facilitar la puesta. Un básico para esta temporada. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales)",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 232,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5214815.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5214815.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17208101_42-524b886f72763d71c917369515018424-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17208101_41-5d088099a911c98b6f17369515019006-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17208101_40-52f8855111bbc8e05b17369515018504-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17208101_39-d6ada7436d63dc9a2317369515018910-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17208101_38-6629ab78e87fded7ac17369515019490-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3761",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "491177"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 29,
+          "masterPid": "491177"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 28,
+          "masterPid": "491177"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 58,
+          "masterPid": "491177"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 58,
+          "masterPid": "491177"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 29,
+          "masterPid": "491177"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 30,
+          "masterPid": "491177"
+        }
+      ]
+    }
+  ]
+}

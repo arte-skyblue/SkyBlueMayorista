@@ -1,0 +1,58 @@
+{
+  "id": "3941",
+  "sku": "PJ11366",
+  "title": "PJ11366",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El bolso Petite Jolie Amalfi es la elección perfecta para quienes buscan practicidad, estilo y versatilidad en un solo accesorio. Con un diseño moderno y funcional, este modelo se adapta fácilmente a diferentes momentos del día, desde atuendos urbanos hasta paseos al aire libre o tiempo libre.\r\n\r\nMaterial: J-Lastic (PVC exclusivo de Petite Jolie)\r\nCierre: Magnético\r\nCorrea para el hombro: No\r\nAjustable: No\r\nDesmontable: No\r\nAltura: 37 cm\r\nAbertura superior: 42 cm\r\nAbertura inferior: 34 cm\r\nProfundidad: 10 cm\r\nCorrea de mano: 23 cm",
+  "price": 55158,
+  "priceFormatted": "$ 55.158,00 + IVA",
+  "available": true,
+  "totalStock": 2,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312426.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312426.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312428.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312429.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312430.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312431.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312427.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3941",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 55158
+    }
+  ],
+  "variants": [
+    {
+      "color": "BORDO",
+      "colorId": "328",
+      "price": "$ 55.158,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 2,
+          "masterPid": "533377"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 55.158,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533377"
+        }
+      ]
+    }
+  ]
+}

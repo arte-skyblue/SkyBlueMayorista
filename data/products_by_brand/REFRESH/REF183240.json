@@ -1,0 +1,40 @@
+{
+  "id": "4482",
+  "sku": "REF183240",
+  "title": "REF183240",
+  "brand": "REFRESH",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 44100,
+  "priceFormatted": "$ 44.100,00 + IVA",
+  "available": true,
+  "totalStock": 5,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5210674.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5210674.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4482",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 44100
+    }
+  ],
+  "variants": [
+    {
+      "color": "PLOMO",
+      "colorId": "565",
+      "price": "$ 44.100,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 5,
+          "masterPid": "490037"
+        }
+      ]
+    }
+  ]
+}

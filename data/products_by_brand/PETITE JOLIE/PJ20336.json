@@ -1,0 +1,56 @@
+{
+  "id": "3952",
+  "sku": "PJ20336",
+  "title": "PJ20336",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "Delicado, elegante y lleno de personalidad, el llavero Petite Jolie es el accesorio perfecto para quienes aman añadir un toque de encanto a su día a día. Fabricado con J-Lastic , el material exclusivo de la marca, luce el logo de Petite Jolie , creando un look moderno que combina con diferentes estilos.\r\nAdemás de organizar tus llaves cómodamente, este llavero también funciona como un detalle de moda para complementar tus accesorios. Puedes engancharlo a un bolso, mochila o incluso usarlo como un pequeño toque especial en tu atuendo, aportando la identidad colorida, ligera y auténtica de Petite Jolie.\r\n\r\n• Fabricado con J-Lastic , un material ligero y resistente\r\n• Luce el logotipo de Petite Jolie , que realza el diseño\r\n• Ideal como llavero para tu bolso , mochila o estuche\r\n• Un práctico accesorio para organizar las llaves con estilo\r\n• Una excelente opción para un regalo delicado y encantador",
+  "price": 6149,
+  "priceFormatted": "$ 6.149,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312491.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312491.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312493.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312494.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312492.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3952",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 6149
+    }
+  ],
+  "variants": [
+    {
+      "color": "Lima",
+      "colorId": "384",
+      "price": "$ 6.149,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533394"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 6.149,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533394"
+        }
+      ]
+    }
+  ]
+}

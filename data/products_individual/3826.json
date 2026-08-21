@@ -1,0 +1,120 @@
+{
+  "id": "3826",
+  "sku": "XTI142934",
+  "title": "XTI142934",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Zapatilla de la marca Xti fabricada en textil con cierres de cordones ajustables. Con plantilla extraíble y suelo de goma gruesa antideslizante, este modelo de zapatilla se convertirá en tu nuevo básico de armario. \r\n\r\n\r\nFABRICACIÓN\r\nEstán hechas con materiales sintéticos de alta calidad, libres de componentes animales. Su confección precisa asegura resistencia, confort y un calzado liviano para el uso diario.\r\n\r\n\r\nIDEAS DE USO\r\nJogger de algodón + buzo oversized + campera inflable.\r\nPantalón cargo + remera básica + campera biker.\r\nVestido de punto midi + tapado largo para un look urbano y moderno.",
+  "price": 46376,
+  "priceFormatted": "$ 46.376,00 + IVA",
+  "available": true,
+  "totalStock": 520,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14293401_multi_3-195caacd02b56b435917468180157238-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14293401_multi_3-195caacd02b56b435917468180157238-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14293401_multi_4-9e6996980d4339ab1717468180159683-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14293401_multi_5-addd7038e17c54142f17468180156615-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14293402_kaki_1-92a3bd81ecc629d3cc17468181606584-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14293402_kaki_3-f47386008199d9c68317468181611691-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14293402_kaki_5-c12566108028575bf617468181610339-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14293402_kaki_4-8ae946dd2594cbfe7917468181603508-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_0f708e99-adf5-4f47-acf8-59af0101e21e_1362552_1400800-13e41e1af422f5208d17646039698237-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3826",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "36x1, 37x1, 38x2, 39x2, 40x1, 41x1",
+      "salePrice": 46376
+    }
+  ],
+  "variants": [
+    {
+      "color": "KAKI",
+      "colorId": "570",
+      "price": "$ 46.376,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 16,
+          "masterPid": "489757"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 32,
+          "masterPid": "489757"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 48,
+          "masterPid": "489757"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 48,
+          "masterPid": "489757"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 32,
+          "masterPid": "489757"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 16,
+          "masterPid": "489757"
+        }
+      ]
+    },
+    {
+      "color": "MULTICOLOR",
+      "colorId": "346",
+      "price": "$ 46.376,00",
+      "sizes": [
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 41,
+          "masterPid": "489757"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 41,
+          "masterPid": "489757"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 82,
+          "masterPid": "489757"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 82,
+          "masterPid": "489757"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 41,
+          "masterPid": "489757"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 41,
+          "masterPid": "489757"
+        }
+      ]
+    }
+  ]
+}

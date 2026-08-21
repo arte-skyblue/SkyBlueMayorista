@@ -1,0 +1,132 @@
+{
+  "id": "3883",
+  "sku": "REF170919",
+  "title": "REF170919",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Botín de mujer, de la marca Refresh. Fabricado en material que imita la piel. Cierre mediante cremallera lateral y cordones para un buen ajuste. Tirador trasero para facilitar la puesta. Botín estilo militar con tacón ancho de 6 cm con suela dentada de goma antideslizante. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 144,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5215104.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5215104.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17091901_39-15ecae3c73f6337bc117365366470263-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/17091901_38-857b250014f2afe84717365366475089-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3883",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 65940
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x2, 39x2, 40x1, 41x0",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 18,
+          "masterPid": "490627"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 18,
+          "masterPid": "490627"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 36,
+          "masterPid": "490627"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 36,
+          "masterPid": "490627"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 18,
+          "masterPid": "490627"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 18,
+          "masterPid": "490627"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "490627"
+        }
+      ]
+    },
+    {
+      "color": "Taupe",
+      "colorId": "326",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "490627"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "490627"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "490627"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "490627"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "490627"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "490627"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "490627"
+        }
+      ]
+    }
+  ]
+}

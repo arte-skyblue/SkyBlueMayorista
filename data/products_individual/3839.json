@@ -1,0 +1,184 @@
+{
+  "id": "3839",
+  "sku": "XTI143262",
+  "title": "XTI143262",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "Zapatilla de la marca Xti. Fabricado en un material que imita la piel. Cierre con cordones para un mayor ajuste. Suela de goma antideslizante con plantilla extraíble. Ideal para un look de invierno. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\n\r\nCALCE\r\nAltura Tacon: 4 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cordón \r\n\r\n\r\nIDEAS DE USO\r\nJogger de algodón + buzo oversized + campera inflable.\r\nPantalón cargo + remera básica + campera biker.\r\nVestido largo + tapado largo para un look urbano y moderno.",
+  "price": 38691,
+  "priceFormatted": "$ 38.691,00 + IVA",
+  "available": true,
+  "totalStock": 108,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14326203_3-1cd70340a6f7bdb93817468156679748-1024-1024.jpg",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14326203_3-1cd70340a6f7bdb93817468156679748-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14326203_4-27ae20c2871f47e54717468156677488-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14326201_neg_2-4-9ff2bc3a5313bdbee517468154273723-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14326201_5-af7b5277788bcd4e3017468154256802-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14326201_3-1cb572a85ea8ebe53e17468154257590-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14326202_bla_3-9eaa164412cab1670817468155910919-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14326202_bla_4-c574aad1307d7ac80017468155912920-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14326202_bla_5-f38fca96077281f3f917468155913881-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_f27b23a7-161e-49be-bc81-1a54b00ec3e8_1362552_1400800-732945033b30c1af6017646039970488-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_c0592e75-36c1-42c3-8ed1-3f5991f2856c_1362552_1400800-d3ff19659a27dc8b5b17646040227466-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/tmp_b64_eeff741c-0ce6-439e-a317-964f5cf2e48a_1362552_1400800-547b50d0278e0f368f17646040095569-1024-1024.webp"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3839",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x0, 36x1, 37x2, 38x3, 39x3, 40x2, 41x1",
+      "salePrice": 38691
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 38.691,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489886"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 3,
+          "masterPid": "489886"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 6,
+          "masterPid": "489886"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 9,
+          "masterPid": "489886"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 9,
+          "masterPid": "489886"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 6,
+          "masterPid": "489886"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 3,
+          "masterPid": "489886"
+        }
+      ]
+    },
+    {
+      "color": "Blanco",
+      "colorId": "283",
+      "price": "$ 38.691,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489886"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 6,
+          "masterPid": "489886"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 12,
+          "masterPid": "489886"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 18,
+          "masterPid": "489886"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 18,
+          "masterPid": "489886"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 12,
+          "masterPid": "489886"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 6,
+          "masterPid": "489886"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 38.691,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489886"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "489886"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "489886"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "489886"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "489886"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 0,
+          "masterPid": "489886"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489886"
+        }
+      ]
+    }
+  ]
+}

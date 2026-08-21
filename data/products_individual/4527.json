@@ -1,0 +1,79 @@
+{
+  "id": "4527",
+  "sku": "XTI143114",
+  "title": "XTI143114 - Brillo",
+  "brand": "Xti by Sky Blue",
+  "season": "Verano 27",
+  "description": "Botín de mujer de la marca Xti. Fabricado en antelina con piedras decorativas de fantasía al tono.  Tacón metalizado de 8 cm con suela antideslizante. Ideal para elevar tus looks más elegantes.  Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 592,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5207042.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5207042.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14311401_neg_3-9d2b5aee2ad8aee03217423223858981-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14311401_neg_4-62eedb8daf7cafd3c517423223853256-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14311401_neg_1-f341622553020ba62117423223853468-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4527",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 75,
+          "masterPid": "489442"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 73,
+          "masterPid": "489442"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 148,
+          "masterPid": "489442"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 148,
+          "masterPid": "489442"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 73,
+          "masterPid": "489442"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 75,
+          "masterPid": "489442"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "489442"
+        }
+      ]
+    }
+  ]
+}

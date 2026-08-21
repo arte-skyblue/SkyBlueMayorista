@@ -1,0 +1,86 @@
+{
+  "id": "4177",
+  "sku": "REF173116",
+  "title": "REF173116",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Zapatillas deportivas Refresh para mujer. Fabricadas con diferentes materiales. Cierre ajustable con cordones. Asa trasera para facilitar su colocación. Suela de volumen perfecto para la comodidad necesaria en el uso diario. Plantilla extraíble.",
+  "price": 62500,
+  "priceFormatted": "$ 62.500,00 + IVA",
+  "available": true,
+  "totalStock": 16,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5316658.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5316658.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321577.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321579.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321580.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321581.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5321578.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4177",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 62500
+    },
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x0, 36x2, 37x2, 38x2, 39x2, 40x0, 41x0",
+      "salePrice": 62500
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 62.500,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 1,
+          "masterPid": "534140"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 3,
+          "masterPid": "534140"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 4,
+          "masterPid": "534140"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 4,
+          "masterPid": "534140"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 3,
+          "masterPid": "534140"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "534140"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "534140"
+        }
+      ]
+    }
+  ]
+}

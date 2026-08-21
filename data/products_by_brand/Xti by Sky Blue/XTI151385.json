@@ -1,0 +1,85 @@
+{
+  "id": "4452",
+  "sku": "XTI151385",
+  "title": "XTI151385",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "",
+  "price": 50358,
+  "priceFormatted": "$ 50.358,00 + IVA",
+  "available": true,
+  "totalStock": 7,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5316803.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5316803.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316805.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316806.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316804.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4452",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 50358
+    }
+  ],
+  "variants": [
+    {
+      "color": "NUDE",
+      "colorId": "282",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "24",
+          "sizeId": "34",
+          "stock": 0,
+          "masterPid": "534177"
+        },
+        {
+          "size": "25",
+          "sizeId": "35",
+          "stock": 1,
+          "masterPid": "534177"
+        },
+        {
+          "size": "26",
+          "sizeId": "15",
+          "stock": 1,
+          "masterPid": "534177"
+        },
+        {
+          "size": "27",
+          "sizeId": "16",
+          "stock": 1,
+          "masterPid": "534177"
+        },
+        {
+          "size": "28",
+          "sizeId": "17",
+          "stock": 1,
+          "masterPid": "534177"
+        },
+        {
+          "size": "29",
+          "sizeId": "18",
+          "stock": 1,
+          "masterPid": "534177"
+        },
+        {
+          "size": "30",
+          "sizeId": "19",
+          "stock": 1,
+          "masterPid": "534177"
+        },
+        {
+          "size": "31",
+          "sizeId": "20",
+          "stock": 1,
+          "masterPid": "534177"
+        }
+      ]
+    }
+  ]
+}

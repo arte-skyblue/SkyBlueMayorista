@@ -1,0 +1,324 @@
+{
+  "id": "4431",
+  "sku": "XTI153043",
+  "title": "XTI153043",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "",
+  "price": 46158,
+  "priceFormatted": "$ 46.158,00 + IVA",
+  "available": true,
+  "totalStock": 98,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5316864.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5316864.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316865.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316866.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316868.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316869.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316867.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4431",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 46158
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "28",
+          "sizeId": "17",
+          "stock": 2,
+          "masterPid": "534203"
+        },
+        {
+          "size": "29",
+          "sizeId": "18",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "30",
+          "sizeId": "19",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "31",
+          "sizeId": "20",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "32",
+          "sizeId": "21",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "33",
+          "sizeId": "22",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "34",
+          "sizeId": "7",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 2,
+          "masterPid": "534203"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "534203"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "534203"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "534203"
+        }
+      ]
+    },
+    {
+      "color": "KAKI",
+      "colorId": "570",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "28",
+          "sizeId": "17",
+          "stock": 2,
+          "masterPid": "534203"
+        },
+        {
+          "size": "29",
+          "sizeId": "18",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "30",
+          "sizeId": "19",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "31",
+          "sizeId": "20",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "32",
+          "sizeId": "21",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "33",
+          "sizeId": "22",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "34",
+          "sizeId": "7",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 2,
+          "masterPid": "534203"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "534203"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "534203"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "534203"
+        }
+      ]
+    },
+    {
+      "color": "NAVY",
+      "colorId": "434",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "28",
+          "sizeId": "17",
+          "stock": 1,
+          "masterPid": "534203"
+        },
+        {
+          "size": "29",
+          "sizeId": "18",
+          "stock": 2,
+          "masterPid": "534203"
+        },
+        {
+          "size": "30",
+          "sizeId": "19",
+          "stock": 2,
+          "masterPid": "534203"
+        },
+        {
+          "size": "31",
+          "sizeId": "20",
+          "stock": 2,
+          "masterPid": "534203"
+        },
+        {
+          "size": "32",
+          "sizeId": "21",
+          "stock": 2,
+          "masterPid": "534203"
+        },
+        {
+          "size": "33",
+          "sizeId": "22",
+          "stock": 2,
+          "masterPid": "534203"
+        },
+        {
+          "size": "34",
+          "sizeId": "7",
+          "stock": 2,
+          "masterPid": "534203"
+        },
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 1,
+          "masterPid": "534203"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "534203"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "534203"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "534203"
+        }
+      ]
+    },
+    {
+      "color": "NUDE",
+      "colorId": "282",
+      "price": "$ 46.158,00",
+      "sizes": [
+        {
+          "size": "28",
+          "sizeId": "17",
+          "stock": 2,
+          "masterPid": "534203"
+        },
+        {
+          "size": "29",
+          "sizeId": "18",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "30",
+          "sizeId": "19",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "31",
+          "sizeId": "20",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "32",
+          "sizeId": "21",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "33",
+          "sizeId": "22",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "34",
+          "sizeId": "7",
+          "stock": 4,
+          "masterPid": "534203"
+        },
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 2,
+          "masterPid": "534203"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 0,
+          "masterPid": "534203"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 0,
+          "masterPid": "534203"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 0,
+          "masterPid": "534203"
+        }
+      ]
+    }
+  ]
+}

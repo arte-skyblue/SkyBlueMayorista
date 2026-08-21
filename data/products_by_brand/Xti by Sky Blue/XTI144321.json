@@ -1,0 +1,130 @@
+{
+  "id": "3869",
+  "sku": "XTI144321",
+  "title": "XTI144321",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Bota de mujer de antelina, de la marca Xti. Con un elegante diseño de corte estilo cowboy, esta bota cuenta con brillantes al tono que aportan un toque de glamour y sofisticación. Su tacón de 6 cm proporciona la altura ideal para un look cómodo y estilizado. La hebilla decorativa en el lateral añade un detalle moderno y original, mientras que su suela antideslizante garantiza seguridad al caminar. Perfecta para quienes buscan un calzado con personalidad y estilo.",
+  "price": 83958,
+  "priceFormatted": "$ 83.958,00 + IVA",
+  "available": true,
+  "totalStock": 320,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5310009.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5310009.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5310010.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5310012.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5310013.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5310014.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5310011.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3869",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 83958
+    }
+  ],
+  "variants": [
+    {
+      "color": "BEIGE",
+      "colorId": "259",
+      "price": "$ 83.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 20,
+          "masterPid": "507715"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 20,
+          "masterPid": "507715"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 40,
+          "masterPid": "507715"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 40,
+          "masterPid": "507715"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 20,
+          "masterPid": "507715"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 20,
+          "masterPid": "507715"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507715"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 83.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 20,
+          "masterPid": "507715"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 20,
+          "masterPid": "507715"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 40,
+          "masterPid": "507715"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 40,
+          "masterPid": "507715"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 20,
+          "masterPid": "507715"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 20,
+          "masterPid": "507715"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507715"
+        }
+      ]
+    }
+  ]
+}

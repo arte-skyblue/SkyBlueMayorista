@@ -1,0 +1,126 @@
+{
+  "id": "4493",
+  "sku": "REF175539",
+  "title": "REF175539",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "",
+  "price": 50358,
+  "priceFormatted": "$ 50.358,00 + IVA",
+  "available": true,
+  "totalStock": 16,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5316512.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5316512.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5316513.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4493",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 50358
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "534109"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "534109"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 1,
+          "masterPid": "534109"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 2,
+          "masterPid": "534109"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 2,
+          "masterPid": "534109"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 1,
+          "masterPid": "534109"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 1,
+          "masterPid": "534109"
+        }
+      ]
+    },
+    {
+      "color": "NAVY",
+      "colorId": "434",
+      "price": "$ 50.358,00",
+      "sizes": [
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 0,
+          "masterPid": "534109"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "534109"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 1,
+          "masterPid": "534109"
+        },
+        {
+          "size": "42",
+          "sizeId": "24",
+          "stock": 2,
+          "masterPid": "534109"
+        },
+        {
+          "size": "43",
+          "sizeId": "25",
+          "stock": 2,
+          "masterPid": "534109"
+        },
+        {
+          "size": "44",
+          "sizeId": "26",
+          "stock": 1,
+          "masterPid": "534109"
+        },
+        {
+          "size": "45",
+          "sizeId": "27",
+          "stock": 1,
+          "masterPid": "534109"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "3792",
+  "sku": "XTI144305",
+  "title": "XTI144305",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Botín de mujer, de la marca Xti. Fabricado en material que imita la piel, con un diseño estilo cowboy que destaca por su tacón de 7 cm, perfecto para añadir altura sin perder comodidad. Este modelo cuenta con un bonito cosido lateral que aporta un toque artesanal y elegante. La punta ligeramente alargada y la forma estilizada lo convierten en un calzado versátil para diversas ocasiones. Suela antideslizante que asegura estabilidad y seguridad al caminar, ideal para cualquier tipo de terreno. Plantilla extraíble.\r\n\r\nEste modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).\r\n\r\nAltura Tacon: 7 cm\r\nMaterial Exterior: Sintético\r\nCierre: Cremallera",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 88,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5276387.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5276387.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3792",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 12,
+          "masterPid": "507581"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 10,
+          "masterPid": "507581"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 22,
+          "masterPid": "507581"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 22,
+          "masterPid": "507581"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 10,
+          "masterPid": "507581"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 12,
+          "masterPid": "507581"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507581"
+        }
+      ]
+    }
+  ]
+}

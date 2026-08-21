@@ -1,0 +1,86 @@
+{
+  "id": "4447",
+  "sku": "XTI143108",
+  "title": "XTI143108",
+  "brand": "Xti by Sky Blue",
+  "season": "Todo el a&#xF1;o",
+  "description": "",
+  "price": 65940,
+  "priceFormatted": "$ 65.940,00 + IVA",
+  "available": true,
+  "totalStock": 8,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5207033.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5207033.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14310801_2-ceaca8d1f08681179f17412713670665-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14310801_3-5200e78fe3601827f817412713658188-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14310801_4-e5a8a87154383d8e1317412713650151-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14310801_5-da3a0763ad6a8ff04617412713656288-1024-1024.jpg",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14310801_1-4c245db23ba700222617412713653079-1024-1024.jpg"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/4447",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 65940
+    },
+    {
+      "taskName": "Módulo x12",
+      "sizesBreakdown": "35x1, 36x2, 37x3, 38x3, 39x2, 40x1, 41x0",
+      "salePrice": 65940
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 65.940,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 0,
+          "masterPid": "489438"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 1,
+          "masterPid": "489438"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 1,
+          "masterPid": "489438"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 2,
+          "masterPid": "489438"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 2,
+          "masterPid": "489438"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 1,
+          "masterPid": "489438"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 1,
+          "masterPid": "489438"
+        }
+      ]
+    }
+  ]
+}

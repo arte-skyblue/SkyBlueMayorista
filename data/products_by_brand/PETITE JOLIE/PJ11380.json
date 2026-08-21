@@ -1,0 +1,82 @@
+{
+  "id": "3945",
+  "sku": "PJ11380",
+  "title": "PJ11380",
+  "brand": "PETITE JOLIE",
+  "season": "Invierno 26",
+  "description": "El bolso de crochet Maiorca Petite Jolie encarna la ligereza y la sofisticación del verano. Con una forma flexible y dos asas, es práctico, cómodo y te acompaña desde la playa hasta las tardes después del sol sin perder su encanto. Su interior abierto permite guardar fácilmente una toalla, protector solar, gafas de sol y otros imprescindibles, mientras que la textura natural del crochet le confiere un irresistible toque artesanal. Ligero y sencillo, el Maiorca Petite Jolie es el accesorio que realza cualquier look con frescura y personalidad.\r\n\r\nMaterial: Punto.\r\nCorrea para el hombro: No.\r\nAjustable: No.\r\nDesmontable: No.\r\nAltura: 33 cm.\r\nAbertura superior: 39 cm.\r\nBase: 38 cm.\r\nProfundidad: 1,5 cm.\r\nLongitud del asa: 27 cm.",
+  "price": 41604,
+  "priceFormatted": "$ 41.604,00 + IVA",
+  "available": true,
+  "totalStock": 0,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5312464.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5312464.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345301.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5345302.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5312460.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3945",
+  "publishedByUnits": true,
+  "purchaseModalities": [
+    {
+      "taskName": "Unidades sueltas",
+      "sizesBreakdown": "",
+      "salePrice": 41604
+    }
+  ],
+  "variants": [
+    {
+      "color": "DULCE DE LECHE",
+      "colorId": "584",
+      "price": "$ 41.604,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533381"
+        }
+      ]
+    },
+    {
+      "color": "Jaguar",
+      "colorId": "613",
+      "price": "$ 41.604,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533381"
+        }
+      ]
+    },
+    {
+      "color": "MULTICOLOR",
+      "colorId": "346",
+      "price": "$ 41.604,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533381"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 41.604,00",
+      "sizes": [
+        {
+          "size": "Unico",
+          "sizeId": "61",
+          "stock": 0,
+          "masterPid": "533381"
+        }
+      ]
+    }
+  ]
+}

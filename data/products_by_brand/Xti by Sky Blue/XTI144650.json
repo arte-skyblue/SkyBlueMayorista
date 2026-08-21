@@ -1,0 +1,80 @@
+{
+  "id": "3857",
+  "sku": "XTI144650",
+  "title": "XTI144650",
+  "brand": "Xti by Sky Blue",
+  "season": "Invierno 26",
+  "description": "Bota de mujer, de la marca Xti.",
+  "price": 83958,
+  "priceFormatted": "$ 83.958,00 + IVA",
+  "available": true,
+  "totalStock": 136,
+  "mainImage": "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14465001_38-0bee7c783d03cd6a9017760938303174-1024-1024.webp",
+  "images": [
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14465001_38-0bee7c783d03cd6a9017760938303174-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14465001_41-7ac5d23d80369be1db17760938345514-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/14465001_42-588607819f073c67ed17760938373008-1024-1024.webp",
+    "https://acdn-us.mitiendanube.com/stores/001/362/552/products/chatgpt-image-29-jun-2026-03_55_41-p-m-02f4c79e3c91c462c317827593541253-1024-1024.png",
+    "https://images.ib2c.com.ar/repository/310/productsList/5276341.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3857",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 83958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 83.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 17,
+          "masterPid": "507573"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 17,
+          "masterPid": "507573"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 34,
+          "masterPid": "507573"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 34,
+          "masterPid": "507573"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 17,
+          "masterPid": "507573"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 17,
+          "masterPid": "507573"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "507573"
+        }
+      ]
+    }
+  ]
+}

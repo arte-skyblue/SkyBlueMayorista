@@ -1,0 +1,134 @@
+{
+  "id": "3861",
+  "sku": "REF173200",
+  "title": "REF173200",
+  "brand": "REFRESH",
+  "season": "Invierno 26",
+  "description": "Botín de mujer, de la marca Refresh. Fabricado en un material que imita la piel. Cierre mediante cremallera interior. Modelo tipo Chelsea con elástico lateral y tirador trasero para facilitar la puesta. Tacón ancho de 9 cm con suela de goma antideslizante. Tirador trasero para facilitar la puesta. Con plantilla extraíble. Este modelo ha obtenido el certificado vegano por la organización mundial PETA (Organización de los derechos de los animales).",
+  "price": 62958,
+  "priceFormatted": "$ 62.958,00 + IVA",
+  "available": true,
+  "totalStock": 288,
+  "mainImage": "https://images.ib2c.com.ar/repository/310/productsList/5309981.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+  "images": [
+    "https://images.ib2c.com.ar/repository/310/productsList/5309981.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309982.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309984.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309985.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309986.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309987.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309988.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309989.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309990.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white",
+    "https://images.ib2c.com.ar/repository/310/productsList/5309983.jpg?width=1024&height=1024&format=webp&rmode=pad&rcolor=white"
+  ],
+  "url": "https://mayoristas.skyblue.com.ar/Products/3861",
+  "publishedByUnits": false,
+  "purchaseModalities": [
+    {
+      "taskName": "Módulo x8",
+      "sizesBreakdown": "35x1, 36x1, 37x2, 38x2, 39x1, 40x1, 41x0",
+      "salePrice": 62958
+    }
+  ],
+  "variants": [
+    {
+      "color": "Camel",
+      "colorId": "327",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 23,
+          "masterPid": "526551"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 4,
+          "masterPid": "526551"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 38,
+          "masterPid": "526551"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 38,
+          "masterPid": "526551"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 15,
+          "masterPid": "526551"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 34,
+          "masterPid": "526551"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "526551"
+        }
+      ]
+    },
+    {
+      "color": "Negro",
+      "colorId": "2",
+      "price": "$ 62.958,00",
+      "sizes": [
+        {
+          "size": "35",
+          "sizeId": "1",
+          "stock": 26,
+          "masterPid": "526551"
+        },
+        {
+          "size": "36",
+          "sizeId": "2",
+          "stock": 3,
+          "masterPid": "526551"
+        },
+        {
+          "size": "37",
+          "sizeId": "3",
+          "stock": 34,
+          "masterPid": "526551"
+        },
+        {
+          "size": "38",
+          "sizeId": "4",
+          "stock": 34,
+          "masterPid": "526551"
+        },
+        {
+          "size": "39",
+          "sizeId": "5",
+          "stock": 8,
+          "masterPid": "526551"
+        },
+        {
+          "size": "40",
+          "sizeId": "6",
+          "stock": 31,
+          "masterPid": "526551"
+        },
+        {
+          "size": "41",
+          "sizeId": "14",
+          "stock": 0,
+          "masterPid": "526551"
+        }
+      ]
+    }
+  ]
+}
