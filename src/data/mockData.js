@@ -30,7 +30,7 @@ export const COMPANY_INFO = {
   defaultDiscount: 10, // 10% adicional abonando en efectivo, transferencia o depósito
   minimumPurchase: "1 módulo (8 o 12 pares) por modelo",
   shippingPolicy: "Envío 100% bonificado y gratuito en CABA y GBA. Despacho bonificado en 24/48 hs al expreso para el interior.",
-  taxPolicy: "Precios de catálogo netos sin IVA. Facturación obligatoria (Factura A o B oficial) por mercadería importada.",
+  taxPolicy: "Precios de catálogo netos sin IVA. Facturación obligatoria (Factura A o B oficial con CUIT) por mercadería importada legalmente.",
   sizeGuideImage: "/assets/images/guia-de-tallas.jpeg",
   sizeCurves: {
     curve8: {
@@ -54,11 +54,11 @@ export const ADVISORS = [
   {
     id: "juliana",
     name: "Juliana",
-    role: "Asesora Comercial Senior & Showroom",
+    role: "Asesora Comercial Senior - Showroom",
     specialty: "Calzado Dama, Colecciones Xti, Coordinación de Visitas al Showroom y Grandes Cuentas",
     phone: "+54 9 11 3891-6779",
     cleanPhone: "5491138916779",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    avatar: "/images/advisors/juliana.jpg",
     status: "En línea",
     responseTime: "Responde en < 5 min",
     defaultMessage: "¡Hola Juliana! Vengo de la web de SkyBlue Calzado Mayorista y quiero consultar el catálogo y coordinar mi compra por módulos."
@@ -66,26 +66,26 @@ export const ADVISORS = [
   {
     id: "jesica",
     name: "Jesica",
-    role: "Asesora Comercial - Interior & Kids",
-    specialty: "Línea XTI Kids, Marroquinería Petite Jolie, Giulia Domna y Envíos por Expreso al Interior",
+    role: "Asesora Comercial - Facturación",
+    specialty: "Línea XTI Kids, Marroquinería Petite Jolie, Giulia Domna y Facturación B2B",
     phone: "+54 9 11 3093-6075",
     cleanPhone: "5491130936075",
-    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
+    avatar: "/images/advisors/jesica.jpg",
     status: "En línea",
     responseTime: "Responde en < 10 min",
-    defaultMessage: "¡Hola Jesi! Vengo de la web mayorista de SkyBlue. Quiero consultar stock por módulos y despachos al interior para mi negocio."
+    defaultMessage: "¡Hola Jesi! Vengo de la web mayorista de SkyBlue. Quiero consultar sobre facturación y condiciones para mi negocio."
   },
   {
     id: "marcelino",
     name: "Marcelino",
-    role: "Asesor Comercial - Cuentas Corporativas",
-    specialty: "Distribución Mayorista, Apertura de Cuentas B2B y Pedidos por Volumen para Cadenas",
+    role: "Asesor Comercial - Marketing",
+    specialty: "Material Publicitario, Contenido para Redes y Acceso al Drive VIP",
     phone: "+54 9 11 3658-2482",
     cleanPhone: "5491136582482",
-    avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
+    avatar: "/images/advisors/marcelino.jpg",
     status: "En línea",
     responseTime: "Responde en < 10 min",
-    defaultMessage: "¡Hola Marcelino! Quiero solicitar información mayorista y alta de cuenta en la plataforma B2B de SkyBlue Calzado."
+    defaultMessage: "¡Hola Marcelino! Quiero solicitar acceso al material de marketing y contenido publicitario de SkyBlue Calzado."
   }
 ];
 
@@ -96,11 +96,12 @@ export const BRANDS = [
     country: "España 🇪🇸",
     origin: "Moda Europea y Vanguardia Urbana",
     ambassador: "María Becerra",
-    logoSvg: "/logos/Xti.svg",
+    logoSvg: "/logos/Xti - maria becerra.svg",
+    video: "/videos/brands/xti.mp4",
     description: "Marca líder internacional de calzado urbano y diseño contemporáneo. Con María Becerra como embajadora oficial, Xti tracciona clientas de forma masiva a zapaterías y showrooms de todo el país.",
     categories: ["Calzado de Dama", "Calzado de Caballero", "XTI Kids", "Marroquinería"],
     badge: "María Becerra Oficial",
-    image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80",
+    image: "/images/banners/hero-xti.jpg",
     uspList: [
       "Embajadora oficial de marca: María Becerra",
       "Venta por módulo de 8 o 12 pares balanceados",
@@ -114,11 +115,12 @@ export const BRANDS = [
     country: "España 🇪🇸",
     origin: "Casual Wear & Street Style",
     ambassador: "Línea Juvenil",
-    logoSvg: "/logos/Refresh.svg",
+    logoSvg: "/logos/Refresh - Mar lucas.svg",
+    video: "/videos/brands/refresh.mp4",
     description: "La marca joven española de referencia. Modelos versátiles, zapatillas livianas, calzado de media estación y sandalias que garantizan una rotación continua en escaparate.",
     categories: ["Calzado Femenino", "Zapatillas Urbanas", "Sandalias Casual"],
     badge: "Alta Rotación",
-    image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+    image: "/images/banners/hero-refresh.jpg",
     uspList: [
       "Calzado ultraliviano de uso cotidiano",
       "Excelente relación margen-rotación minorista",
@@ -132,11 +134,12 @@ export const BRANDS = [
     country: "Brasil 🇧🇷",
     origin: "Marroquinería y Calzado en J-Lastic®",
     ambassador: "Diseño & Aroma Icónico",
-    logoSvg: "/logos/Petite.svg",
+    logoSvg: "/logos/Petite jolie.svg",
+    video: "/videos/brands/petite-jolie.mp4",
     description: "Marca icónica de Brasil famosa por su tecnología exclusiva en J-Lastic® (PVC patentado), colores intensos, resistencia al agua y su característica fragancia que genera atracción inmediata en el punto de venta.",
     categories: ["Carteras & Bolsos", "Mochilas & Bandoleras", "Calzado Dama", "Charms Coleccionables"],
     badge: "Aroma & J-Lastic®",
-    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+    image: "/images/banners/hero-petite-jolie.jpg",
     uspList: [
       "Material exclusivo J-Lastic® impermeable y lavable",
       "Fragancia dulce inconfundible en cada producto",
@@ -150,11 +153,12 @@ export const BRANDS = [
     country: "Brasil 🇧🇷",
     origin: "Calzado Premium en Cuero y Alta Moda",
     ambassador: "Línea Sofisticada",
-    logoSvg: "/logos/Giulia Domna - Texto.svg",
+    logoSvg: "/logos/Giulina domna Horizontal.svg",
+    video: "/videos/brands/giulia-domna.mp4",
     description: "Línea brasileña de calzado de lujo y diseño refinado. Confeccionada con cueros seleccionados, texturas nobles y detalles de alta costura pensados para boutiques y zapaterías de segmento medio-alto.",
     categories: ["Calzado en Cuero", "Sandalias de Fiesta", "Zapatos de Vestir"],
     badge: "Cuero & Elegancia",
-    image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+    image: "/images/placeholder.svg",
     uspList: [
       "Confección en cuero legítimo de exportación",
       "Diseños elegantes con herrajes de alta gama",
@@ -169,45 +173,37 @@ export const BANNERS = [
     id: 1,
     tag: "CAMPAÑA GLOBAL 2026",
     title: "MARÍA BECERRA × XTI",
-    subtitle: "Incorporá a tu zapatería la marca internacional que genera demanda espontánea de tus clientas.",
-    benefitBadge: "🔥 Alta Demanda Comprobada",
+    subtitle: "Colecciones europeas de calzado urbano con demanda masiva garantizada en tu zapatería.",
     ctaText: "Ver Colección Xti",
     categoryLink: "marcas",
-    image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=80",
-    highlight: "Venta exclusiva por módulos mayoristas de 8 o 12 pares"
+    image: "/images/banners/hero-xti.jpg"
   },
   {
     id: 2,
-    tag: "CONDICIÓN MAYORISTA",
-    title: "MÓDULOS DE 8 Y 12 PARES",
-    subtitle: "Mínimos de compra optimizados para comerciantes. Despacho ágil en 24 a 48 hs hábiles a todo el país.",
-    benefitBadge: "📦 Curvas Comerciales",
-    ctaText: "Conocer Condiciones",
-    categoryLink: "condiciones",
-    image: "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=1200&q=80",
-    highlight: "10% adicional por pago efectivo, transferencia o depósito"
+    tag: "LANZAMIENTO SS26",
+    title: "REFRESH CASUAL WEAR",
+    subtitle: "Modelos versátiles y zapatillas de alta rotación para impulsar tus ventas diarias.",
+    ctaText: "Ver Catálogo Refresh",
+    categoryLink: "catalogo",
+    image: "/images/banners/hero-refresh.jpg"
   },
   {
     id: 3,
     tag: "TENDENCIA BRASIL",
     title: "PETITE JOLIE & GIULIA DOMNA",
-    subtitle: "Bolsos en J-Lastic®, charms coleccionables y calzado en cuero legítimo de máxima sofisticación.",
-    benefitBadge: "🌸 Exclusividad y Aroma",
+    subtitle: "Bolsos en J-Lastic® impermeable y calzado premium en cuero legítimo de exportación.",
     ctaText: "Ver Marroquinería",
     categoryLink: "marcas",
-    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80",
-    highlight: "Productos con alto valor percibido y rotación garantizada"
+    image: "/images/banners/hero-petite-jolie.jpg"
   },
   {
     id: 4,
-    tag: "SHOWROOM EXCLUSIVO",
-    title: "SHOWROOM TAPIALES CITA PREVIA",
-    subtitle: "Vení a conocer más de 300 modelos exhibidos en Curapaligüe 1428 (1er Piso). Lunes a viernes de 08:00 a 17:00 hs.",
-    benefitBadge: "📍 Cita Previa con Juliana",
-    ctaText: "Agendar Visita Showroom",
-    categoryLink: "showroom",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
-    highlight: "Atención comercial VIP y café de cortesía"
+    tag: "BENEFICIO FINANCIERO",
+    title: "10% EXTRA & ENVÍOS GRATIS CABA/GBA",
+    subtitle: "Descuento directo por transferencia o efectivo y despacho bonificado a todo el país.",
+    ctaText: "Conocer Condiciones",
+    categoryLink: "condiciones",
+    image: "/images/banners/hero-catalogos.jpg"
   }
 ];
 
@@ -216,7 +212,7 @@ export const CATEGORIES = [
     id: "dama",
     name: "Calzado de Dama",
     description: "Botas, botinetas, sandalias, plataformas, mocasines y zapatillas urbanas de gran demanda.",
-    image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80",
+    image: "/images/categories/calzado-dama.jpg",
     itemCount: "+120 Modelos",
     moduleInfo: "Módulos de 8 o 12 pares (35 al 40)",
     brandTags: ["Xti", "Refresh", "Giulia Domna"]
@@ -225,7 +221,7 @@ export const CATEGORIES = [
     id: "caballero",
     name: "Calzado de Caballero",
     description: "Línea urbana, zapatillas confort, calzado casual y modelos clásicos con suelas durables.",
-    image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=600&q=80",
+    image: "/images/categories/calzado-caballero.jpg",
     itemCount: "+60 Modelos",
     moduleInfo: "Módulos de 8 o 12 pares (39 al 44)",
     brandTags: ["Xti Men", "Refresh"]
@@ -234,7 +230,7 @@ export const CATEGORIES = [
     id: "ninos",
     name: "Calzado de Niños (XTI Kids)",
     description: "Colegiales reforzados, zapatillas urbanas resistentes y calzado ergonómico para chicos.",
-    image: "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=600&q=80",
+    image: "/images/categories/calzado-ninos.jpg",
     itemCount: "+80 Modelos",
     moduleInfo: "Módulos de 8 o 12 pares (28 al 36)",
     brandTags: ["XTI Kids"]
@@ -243,7 +239,7 @@ export const CATEGORIES = [
     id: "marroquineria",
     name: "Marroquinería & Bolsos",
     description: "Carteras de mano, bandoleras, mochilas urbanas y bolsos impermeables en J-Lastic®.",
-    image: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=600&q=80",
+    image: "/images/categories/marroquineria-bolsos.jpg",
     itemCount: "+90 Modelos",
     moduleInfo: "Packs surtidos de 4 a 6 unidades",
     brandTags: ["Petite Jolie", "Xti Bags"]
@@ -252,158 +248,157 @@ export const CATEGORIES = [
     id: "accesorios",
     name: "Accesorios & Charms",
     description: "Charms coleccionables Petite Jolie, billeteras, valijas y complementos para el mostrador.",
-    image: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80",
+    image: "/images/categories/accesorios-charms.jpg",
     itemCount: "+50 Modelos",
     moduleInfo: "Exhibidores surtidos por docena",
     brandTags: ["Petite Jolie", "SkyBlue"]
   }
 ];
 
-// 12 Selected Products displayed in 6 columns on desktop
-export const PRODUCTS_FEATURED = [
+export const PRODUCTS = [
   {
     id: "xti-boot-01",
-    name: "Bota Urbana Plataforma XTI María Becerra",
+    name: "Sneaker Urbano XTI María Becerra 145035",
     brand: "Xti",
     category: "dama",
     module: "Módulo 8 o 12 pares (35 al 40)",
     profitMargin: "Margen x2.2",
-    badge: "Top Ventas",
-    image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=500&q=80",
-    altText: "Bota urbana con plataforma marca XTI oficial María Becerra venta mayorista por módulo",
+    badge: "María Becerra",
+    image: "/images/banners/hero-xti.jpg",
+    altText: "Zapatilla de mujer marca XTI oficial María Becerra venta mayorista por módulo",
     tags: ["Campaña Oficial", "Plataforma"]
   },
   {
+    id: "refresh-fw25-01",
+    name: "Sneaker Refresh SS26 Camel 175009",
+    brand: "Refresh",
+    category: "dama",
+    module: "Módulo 8 o 12 pares (35 al 40)",
+    profitMargin: "Margen x2.2",
+    badge: "Nueva Colección",
+    image: "/images/banners/hero-refresh.jpg",
+    altText: "Sneaker Refresh de mujer colección SS26 venta por mayor",
+    tags: ["Tendencia", "Casual Chic"]
+  },
+  {
     id: "pj-bag-01",
-    name: "Cartera Petite Jolie Bloom J-Lastic®",
+    name: "Bolso Petite Jolie Bloom J-Lastic®",
     brand: "Petite Jolie",
     category: "marroquineria",
     module: "Pack 4 unidades surtidas",
     profitMargin: "Margen x2.4",
     badge: "Aroma Icónico",
-    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=500&q=80",
-    altText: "Cartera estructurada Petite Jolie material J-Lastic impermeable por mayor",
+    image: "/images/banners/hero-petite-jolie.jpg",
+    altText: "Bolso estructurado Petite Jolie material J-Lastic impermeable por mayor",
     tags: ["J-Lastic®", "Impermeable"]
   },
   {
-    id: "xti-kids-01",
-    name: "Zapatilla Urbana XTI Kids Reforzada",
+    id: "xti-sandalia-01",
+    name: "Sandalia Plataforma XTI Be Magic 145066",
     brand: "Xti",
-    category: "ninos",
-    module: "Módulo 8 o 12 pares (28 al 35)",
-    profitMargin: "Margen x2.0",
-    badge: "Alta Rotación",
-    image: "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=500&q=80",
-    altText: "Zapatilla infantil reforzada XTI Kids venta mayorista para zapaterías",
-    tags: ["XTI Kids", "Urbana"]
-  },
-  {
-    id: "refresh-sneaker-01",
-    name: "Zapatilla Chunky Refresh Sporty",
-    brand: "Refresh",
     category: "dama",
     module: "Módulo 8 o 12 pares (35 al 40)",
-    profitMargin: "Margen x2.1",
-    badge: "Tendencia",
-    image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=500&q=80",
-    altText: "Zapatilla deportiva casual Refresh para mujer venta mayorista",
-    tags: ["Ultraliviana", "Street"]
+    profitMargin: "Margen x2.3",
+    badge: "Be Magic",
+    image: "/images/categories/calzado-dama.jpg",
+    altText: "Sandalia plataforma de mujer XTI oficial venta mayorista para zapaterías",
+    tags: ["XTI", "Plataforma"]
   },
   {
     id: "gd-leather-01",
-    name: "Sandalia Cuero Legítimo Giulia Domna",
+    name: "Stiletto en Cuero Legítimo Giulia Domna 872710",
     brand: "Giulia Domna",
     category: "dama",
     module: "Módulo 8 o 12 pares (35 al 40)",
     profitMargin: "Margen x2.5",
     badge: "Cuero Premium",
-    image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=500&q=80",
-    altText: "Sandalia de vestir en cuero legítimo Giulia Domna distribución mayorista",
+    image: "/images/categories/calzado-dama.jpg",
+    altText: "Calzado de vestir en cuero legítimo Giulia Domna distribución mayorista",
     tags: ["Cuero Vacuno", "Boutique"]
   },
   {
-    id: "xti-men-01",
-    name: "Zapatilla Casual XTI Men Comfort",
-    brand: "Xti",
+    id: "refresh-men-01",
+    name: "Zapatilla Urbana Refresh Men 175515",
+    brand: "Refresh",
     category: "caballero",
     module: "Módulo 8 o 12 pares (39 al 44)",
     profitMargin: "Margen x2.2",
-    badge: "Clásico",
-    image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=500&q=80",
-    altText: "Calzado urbano para hombre XTI Men venta por curva cerrada mayorista",
-    tags: ["Plantilla Memory", "Hombre"]
+    badge: "Hombre",
+    image: "/images/categories/calzado-caballero.jpg",
+    altText: "Calzado urbano para hombre Refresh Men venta por curva cerrada mayorista",
+    tags: ["Plantilla Confort", "Hombre"]
   },
   {
-    id: "pj-backpack-01",
-    name: "Mochila Petite Jolie Kit J-Lastic®",
+    id: "refresh-sneaker-01",
+    name: "Sneaker Sporty Refresh Beige 175051",
+    brand: "Refresh",
+    category: "dama",
+    module: "Módulo 8 o 12 pares (35 al 40)",
+    profitMargin: "Margen x2.1",
+    badge: "Ultraliviana",
+    image: "/images/categories/calzado-dama.jpg",
+    altText: "Zapatilla deportiva casual Refresh para mujer venta mayorista",
+    tags: ["Ultraliviana", "Street"]
+  },
+  {
+    id: "pj-cartera-02",
+    name: "Cartera Bandolera Petite Jolie Daily",
     brand: "Petite Jolie",
     category: "marroquineria",
     module: "Pack 4 unidades surtidas",
     profitMargin: "Margen x2.3",
     badge: "Moda Brasil",
-    image: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=500&q=80",
-    altText: "Mochila urbana Petite Jolie impermeable con aroma exclusivo",
-    tags: ["Mochila", "Lavable"]
+    image: "/images/categories/marroquineria-bolsos.jpg",
+    altText: "Bandolera urbana Petite Jolie impermeable con aroma exclusivo",
+    tags: ["Bandolera", "Lavable"]
   },
   {
-    id: "pj-charms-01",
-    name: "Exhibidor Charms Petite Jolie",
-    brand: "Petite Jolie",
-    category: "accesorios",
-    module: "Exhibidor 24 piezas",
+    id: "gd-sandalia-02",
+    name: "Sandalia de Fiesta en Cuero Giulia Domna 873090",
+    brand: "Giulia Domna",
+    category: "dama",
+    module: "Módulo 8 o 12 pares (35 al 40)",
     profitMargin: "Margen x2.5",
-    badge: "Impulso",
-    image: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=500&q=80",
-    altText: "Charms coleccionables Petite Jolie para llaveros y carteras por mayor",
-    tags: ["Coleccionable", "Ticket +"]
+    badge: "Alta Gama",
+    image: "/images/categories/calzado-dama.jpg",
+    altText: "Sandalia de fiesta en cuero legítimo Giulia Domna",
+    tags: ["Fiesta", "Boutique"]
   },
   {
-    id: "xti-sandal-01",
-    name: "Sandalia Plataforma Yute Xti",
+    id: "xti-boot-black",
+    name: "Stiletto de Fiesta Negro XTI 145102",
     brand: "Xti",
     category: "dama",
     module: "Módulo 8 o 12 pares (35 al 40)",
     profitMargin: "Margen x2.2",
-    badge: "Temporada",
-    image: "https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?auto=format&fit=crop&w=500&q=80",
-    altText: "Sandalia de verano con plataforma de yute marca XTI para zapaterías",
-    tags: ["Verano", "Plataforma"]
+    badge: "Básico Continuo",
+    image: "/images/banners/hero-xti.jpg",
+    altText: "Stiletto negro XTI venta por curva mayorista",
+    tags: ["Negro", "Básico"]
   },
   {
-    id: "refresh-boot-01",
-    name: "Borcego Urbano Refresh Classic",
+    id: "refresh-taupe-01",
+    name: "Sandalia Plataforma Refresh Taupe 175180",
     brand: "Refresh",
     category: "dama",
     module: "Módulo 8 o 12 pares (35 al 40)",
     profitMargin: "Margen x2.1",
-    badge: "Otoño/Invierno",
-    image: "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=500&q=80",
-    altText: "Borcegos urbanos con cordones Refresh para comercio minorista",
-    tags: ["Borcego", "Tendencia"]
+    badge: "Media Estación",
+    image: "/images/banners/hero-refresh.jpg",
+    altText: "Sandalia plataforma Refresh para comercio minorista",
+    tags: ["Taupe", "Tendencia"]
   },
   {
-    id: "gd-pump-01",
-    name: "Zapato Stiletto Cuero Giulia Domna",
-    brand: "Giulia Domna",
+    id: "xti-kids-sneaker",
+    name: "Botín Fashion XTI 145138",
+    brand: "Xti",
     category: "dama",
     module: "Módulo 8 o 12 pares (35 al 40)",
-    profitMargin: "Margen x2.4",
-    badge: "Alta Noche",
-    image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=500&q=80",
-    altText: "Zapato de tacón elegante en cuero vacuno Giulia Domna mayorista",
-    tags: ["Fiesta", "Cuero"]
-  },
-  {
-    id: "xti-sneaker-men-02",
-    name: "Zapatilla Urbana XTI Men Retro",
-    brand: "Xti",
-    category: "caballero",
-    module: "Módulo 8 o 12 pares (39 al 44)",
     profitMargin: "Margen x2.2",
-    badge: "Novedad",
-    image: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=500&q=80",
-    altText: "Zapatilla retro urbana para hombre XTI Men venta por bulto mayorista",
-    tags: ["Retro", "Suela Antideslizante"]
+    badge: "Colección 2026",
+    image: "/images/categories/calzado-ninos.jpg",
+    altText: "Botín de mujer XTI",
+    tags: ["Mujer", "Resistente"]
   }
 ];
 
@@ -439,9 +434,9 @@ export const BENEFITS = [
   {
     id: "logistica",
     icon: "Truck",
-    title: "Despachos en 24 a 48 hs",
-    subtitle: "Envíos Asegurados a Todo el País",
-    description: "Embalaje reforzado y entrega puntual en el transporte o expreso de tu preferencia con número de guía y remito asegurado."
+    title: "Envíos Gratis CABA/GBA & 24/48hs Interior",
+    subtitle: "Logística Bonificada y Asegurada",
+    description: "Envío 100% gratuito en CABA y GBA. Despacho bonificado en 24 a 48 hs al expreso de tu elección para todo el país."
   },
   {
     id: "asesoria",
@@ -449,57 +444,6 @@ export const BENEFITS = [
     title: "Asesores Dedicados por WhatsApp",
     subtitle: "Juliana, Jesica y Marcelino",
     description: "Atención comercial personalizada para armar tus módulos, consultar disponibilidad de stock y coordinar reposiciones ágiles."
-  }
-];
-
-export const REELS_DATA = [
-  {
-    id: "reel-1",
-    title: "Prueba de Flexibilidad y Suela Xti",
-    category: "Calzado Dama",
-    views: "42.8K",
-    likes: "2.4K",
-    duration: "0:24",
-    poster: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=400&q=80",
-    description: "Mirá la calidad de confección, costuras reforzadas y amortiguación de la bota Xti elegida por María Becerra.",
-    tag: "Calidad en Vivo",
-    altText: "Video vertical demostrando flexibilidad y calidad del calzado Xti para comerciantes"
-  },
-  {
-    id: "reel-2",
-    title: "Unboxing de Módulo XTI Kids",
-    category: "XTI Kids",
-    views: "29.1K",
-    likes: "1.8K",
-    duration: "0:30",
-    poster: "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=400&q=80",
-    description: "Así viene embalada la caja máster con numeración del 28 al 35 lista para exhibir en tu estantería.",
-    tag: "Módulo Mayorista",
-    altText: "Unboxing de módulo de 8 pares de calzado infantil XTI Kids embalado de fábrica"
-  },
-  {
-    id: "reel-3",
-    title: "Marroquinería Petite Jolie en J-Lastic®",
-    category: "Marroquinería",
-    views: "58.4K",
-    likes: "3.9K",
-    duration: "0:20",
-    poster: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&q=80",
-    description: "Descubrí el brillo inalterable, la flexibilidad total y la fragancia exclusiva de las carteras Petite Jolie.",
-    tag: "Tendencia Brasil",
-    altText: "Muestra en video de carteras Petite Jolie con material impermeable J-Lastic"
-  },
-  {
-    id: "reel-4",
-    title: "Tour Showroom Mayorista Tapiales",
-    category: "Showroom",
-    views: "35.2K",
-    likes: "2.1K",
-    duration: "0:35",
-    poster: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=400&q=80",
-    description: "Recorré nuestro espacio exclusivo en Curapaligüe 1428 (1er Piso, Tapiales) con más de 300 modelos exhibidos.",
-    tag: "Experiencia VIP",
-    altText: "Recorrido en video por el Showroom mayorista de SkyBlue Calzado en Tapiales Buenos Aires"
   }
 ];
 
@@ -512,7 +456,7 @@ export const BLOG_POSTS = [
     date: "18 Agosto 2026",
     readTime: "4 min de lectura",
     category: "Marketing B2B",
-    image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80",
+    image: "/images/banners/hero-xti.jpg",
     altText: "Vidriera de zapatería exhibiendo calzado Xti con imagen de María Becerra"
   },
   {
@@ -523,7 +467,7 @@ export const BLOG_POSTS = [
     date: "12 Agosto 2026",
     readTime: "5 min de lectura",
     category: "Gestión Comercial",
-    image: "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=600&q=80",
+    image: "/images/banners/hero-catalogos.jpg",
     altText: "Organización de cajas de calzado por curva y módulo en depósito mayorista"
   },
   {
@@ -534,57 +478,51 @@ export const BLOG_POSTS = [
     date: "05 Agosto 2026",
     readTime: "3 min de lectura",
     category: "Tendencias",
-    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80",
+    image: "/images/banners/hero-petite-jolie.jpg",
     altText: "Bolsos y carteras Petite Jolie exhibidos en tienda de moda"
   }
 ];
 
 export const REELS = [
-  {
-    id: "reel-1",
-    title: "Nueva Colección María Becerra × XTI Primavera/Verano",
-    category: "Línea Dama",
-    brand: "XTI Oficial",
-    views: "240K",
-    likes: "18.4K",
-    poster: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "reel-2",
-    title: "Bolsos & Bandoleras Petite Jolie en J-Lastic® Impermeables",
-    category: "Marroquinería",
-    brand: "Petite Jolie",
-    views: "185K",
-    likes: "14.2K",
-    poster: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "reel-3",
-    title: "Unboxing Módulos Refresh Urban Shoes",
-    category: "Streetwear",
-    brand: "Refresh Casual",
-    views: "142K",
-    likes: "9.8K",
-    poster: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "reel-4",
-    title: "Calzado Giulia Domna en Cuero 100% Legítimo",
-    category: "Alta Gama",
-    brand: "Giulia Domna",
-    views: "98K",
-    likes: "7.1K",
-    poster: "https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "reel-5",
-    title: "XTI Kids: Curvas Escolares y Zapatillas Juveniles",
-    category: "Infantil",
-    brand: "XTI Kids",
-    views: "115K",
-    likes: "8.3K",
-    poster: "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=600&q=80"
-  }
+  { id: "reel-1", title: "Campaña Oficial María Becerra × XTI SS26", category: "Línea Dama", brand: "XTI Oficial", views: "240K", likes: "18.4K", videoUrl: "/reels/0820-1.mp4", poster: "/images/banners/hero-xti.jpg" },
+  { id: "reel-2", title: "XTI Be Magic - Sandalias y Plataformas de Temporada", category: "Tendencia", brand: "XTI España", views: "195K", likes: "15.1K", videoUrl: "/reels/0820-2.mp4", poster: "/images/categories/calzado-dama.jpg" },
+  { id: "reel-3", title: "Stilettos y Calzado de Fiesta XTI Fashion", category: "Alta Costura", brand: "XTI Oficial", views: "168K", likes: "12.8K", videoUrl: "/reels/0820-3.mp4", poster: "/images/banners/hero-xti.jpg" },
+  { id: "reel-4", title: "Ingreso de Módulos XTI en Local Oficial", category: "Showroom", brand: "XTI Oficial", views: "210K", likes: "16.5K", videoUrl: "/reels/0820-4.mp4", poster: "/images/showroom/showroom-1.jpg" },
+  { id: "reel-5", title: "Sneakers Urbanos María Becerra Collection", category: "Sneakers", brand: "XTI España", views: "285K", likes: "22.3K", videoUrl: "/reels/0820-5.mp4", poster: "/images/banners/hero-xti.jpg" },
+  { id: "reel-6", title: "XTI SS26 Colección Europea en Pasarela", category: "Fashion Film", brand: "XTI Oficial", views: "172K", likes: "14.2K", videoUrl: "/reels/0820-6.mp4", poster: "/images/categories/calzado-dama.jpg" },
+  { id: "reel-7", title: "Lookbook Primavera Verano XTI", category: "Lookbook", brand: "XTI Oficial", views: "188K", likes: "14.7K", videoUrl: "/reels/0820-7.mp4", poster: "/images/banners/hero-xti.jpg" },
+  { id: "reel-8", title: "Sandalias de Temporada XTI Be Magic", category: "Sandalias", brand: "XTI", views: "160K", likes: "11.9K", videoUrl: "/reels/0820-8.mp4", poster: "/images/categories/calzado-dama.jpg" },
+  { id: "reel-9", title: "Refresh Essence SS26 - Colección Urbana", category: "Streetwear", brand: "Refresh Casual", views: "174K", likes: "13.9K", videoUrl: "/reels/0820-9.mp4", poster: "/images/banners/hero-refresh.jpg" },
+  { id: "reel-10", title: "Unboxing Módulos Refresh en Tienda Mayorista", category: "Unboxing", brand: "Refresh", views: "142K", likes: "10.4K", videoUrl: "/reels/0820-10.mp4", poster: "/images/banners/hero-refresh.jpg" },
+  { id: "reel-11", title: "Línea Refresh Men & Zapatillas Urbanas", category: "Hombres", brand: "Refresh Men", views: "135K", likes: "9.7K", videoUrl: "/reels/0820-11.mp4", poster: "/images/categories/calzado-caballero.jpg" },
+  { id: "reel-12", title: "Detalle de Texturas y Confort Refresh Shoes", category: "Calce & Detalle", brand: "Refresh", views: "158K", likes: "11.6K", videoUrl: "/reels/0820-12.mp4", poster: "/images/banners/hero-refresh.jpg" },
+  { id: "reel-13", title: "Giro 360° Sandalias & Plataformas Refresh", category: "Calzado 360°", brand: "Refresh Casual", views: "163K", likes: "12.5K", videoUrl: "/reels/0820-13.mp4", poster: "/images/categories/calzado-dama.jpg" },
+  { id: "reel-14", title: "UGC Calce Real y Lookbook Refresh en Local", category: "UGC Local", brand: "Refresh", views: "180K", likes: "15.3K", videoUrl: "/reels/0820-14.mp4", poster: "/images/banners/hero-refresh.jpg" },
+  { id: "reel-15", title: "Sneakers Urbanos Ultralivianos Refresh", category: "Sneakers", brand: "Refresh", views: "150K", likes: "11.2K", videoUrl: "/reels/0820-15.mp4", poster: "/images/banners/hero-refresh.jpg" },
+  { id: "reel-16", title: "Colección Casual Refresh para Vidriera", category: "Streetwear", brand: "Refresh Casual", views: "138K", likes: "9.8K", videoUrl: "/reels/0820-16.mp4", poster: "/images/banners/hero-refresh.jpg" },
+  { id: "reel-17", title: "Showroom Petite Jolie - Bolsos J-Lastic® Perfumados", category: "Marroquinería", brand: "Petite Jolie", views: "230K", likes: "19.2K", videoUrl: "/reels/0820-17.mp4", poster: "/images/banners/hero-petite-jolie.jpg" },
+  { id: "reel-18", title: "Charms y Accesorios Coleccionables Petite Jolie", category: "Accesorios", brand: "Petite Jolie", views: "145K", likes: "10.8K", videoUrl: "/reels/0820-18.mp4", poster: "/images/categories/accesorios-charms.jpg" },
+  { id: "reel-19", title: "XTI Kids - Curvas Escolares y Juveniles", category: "Infantil", brand: "XTI Kids", views: "115K", likes: "8.3K", videoUrl: "/reels/0820-19.mp4", poster: "/images/categories/calzado-ninos.jpg" },
+  { id: "reel-20", title: "Línea Confort y Pantuflas de Invierno", category: "Confort Wear", brand: "Refresh Casual", views: "122K", likes: "8.9K", videoUrl: "/reels/0820-20.mp4", poster: "/images/categories/calzado-dama.jpg" },
+  { id: "reel-21", title: "Pantuflas de Temporada Colección Confort", category: "Confort", brand: "Refresh", views: "118K", likes: "7.9K", videoUrl: "/reels/0820-21.mp4", poster: "/images/banners/hero-refresh.jpg" },
+  { id: "reel-22", title: "Bandoleras Impermeables Petite Jolie", category: "Marroquinería", brand: "Petite Jolie", views: "190K", likes: "14.5K", videoUrl: "/reels/0820-22.mp4", poster: "/images/categories/marroquineria-bolsos.jpg" },
+  { id: "reel-23", title: "Sandalias y Calzado de Media Estación XTI", category: "Colección Dama", brand: "XTI España", views: "205K", likes: "17.4K", videoUrl: "/reels/0820-23.mp4", poster: "/images/categories/calzado-dama.jpg" },
+  { id: "reel-24", title: "Showroom Recorrido Tapiales SkyBlue", category: "Showroom", brand: "SkyBlue", views: "215K", likes: "18.1K", videoUrl: "/reels/0820-24.mp4", poster: "/images/showroom/showroom-2.jpg" }
+];
+
+export const DRIFT_WALL_ITEMS = [
+  { image: "/images/banners/hero-xti.jpg", title: "Campaña Oficial María Becerra × XTI", brand: "XTI España", category: "Campaña Dama", videoUrl: "/reels/0820-1.mp4" },
+  { image: "/images/banners/hero-refresh.jpg", title: "Sandalias Urbanas Confort", brand: "Refresh", category: "Streetwear", videoUrl: "/reels/0820-9.mp4" },
+  { image: "/images/banners/hero-petite-jolie.jpg", title: "Bolsos J-Lastic® Perfumados", brand: "Petite Jolie", category: "Marroquinería", videoUrl: "/reels/0820-17.mp4" },
+  { image: "/images/categories/calzado-dama.jpg", title: "Calzado de Fiesta y Tendencia", brand: "Giulia Domna", category: "Alta Gama", videoUrl: "/reels/0820-3.mp4" },
+  { image: "/images/categories/calzado-ninos.jpg", title: "Zapatillas Urbanas Juveniles", brand: "XTI Kids", category: "Infantil", videoUrl: "/reels/0820-19.mp4" },
+  { image: "/images/categories/marroquineria-bolsos.jpg", title: "Mochilas & Bandoleras Impermeables", brand: "Petite Jolie", category: "Accesorios", videoUrl: "/reels/0820-22.mp4" },
+  { image: "/images/showroom/showroom-1.jpg", title: "Showroom Mayorista Tapiales", brand: "SkyBlue Showroom", category: "Showroom", videoUrl: "/reels/0820-4.mp4" },
+  { image: "/images/categories/calzado-caballero.jpg", title: "Sneakers Hombre Urban Men", brand: "Refresh Men", category: "Hombre", videoUrl: "/reels/0820-11.mp4" },
+  { image: "/images/showroom/showroom-2.jpg", title: "Muestrarios Físicos Completos", brand: "SkyBlue VIP", category: "Muestrario", videoUrl: "/reels/0820-24.mp4" },
+  { image: "/images/categories/accesorios-charms.jpg", title: "Charms y Accesorios de Impulso", brand: "Petite Jolie", category: "Accesorios", videoUrl: "/reels/0820-18.mp4" },
+  { image: "/images/banners/hero-catalogos.jpg", title: "Módulos Cerrados 8 y 12 Pares", brand: "SkyBlue B2B", category: "Módulos", videoUrl: "/reels/0820-10.mp4" },
+  { image: "/images/showroom/showroom-3.jpg", title: "Atención Exclusiva Comerciantes", brand: "SkyBlue Asesoras", category: "Atención", videoUrl: "/reels/0820-14.mp4" }
 ];
 
 export const EVENTS = [
@@ -592,8 +530,8 @@ export const EVENTS = [
     id: "efica",
     title: "Exposición EFICA 114",
     location: "Centro Costa Salguero, CABA",
-    date: "Próxima Edición de Temporada",
-    badge: "Feria Nacional",
+    date: "Edición Anterior",
+    badge: "Evento Finalizado",
     description: "Presentación oficial de las nuevas colecciones mayoristas de Xti, Refresh, Petite Jolie y Giulia Domna ante comerciantes de todo el país.",
     stand: "Stand Principal SkyBlue - Pabellón A"
   },
@@ -601,8 +539,8 @@ export const EVENTS = [
     id: "exical",
     title: "Feria EXICAL Córdoba",
     location: "Centro de Convenciones Córdoba",
-    date: "Próxima Edición Centro del País",
-    badge: "Interior Federal",
+    date: "Edición Anterior",
+    badge: "Evento Finalizado",
     description: "Encuentro comercial con zapaterías y boutiques de Córdoba, Santa Fe, Cuyo y el NOA para pedidos por módulos de 8 y 12 pares.",
     stand: "Stand SkyBlue Marcas Oficiales"
   },
@@ -614,99 +552,6 @@ export const EVENTS = [
     badge: "Gira Exclusiva",
     description: "Nuestros asesores comerciales viajan a las principales plazas del interior con muestrarios completos para que armes tus pedidos sin viajar.",
     stand: "Salones de Eventos Hoteleros"
-  }
-];
-
-export const DRIFT_WALL_ITEMS = [
-  {
-    image: "/assets/images/img_1_68747470733a.jpg",
-    title: "Campaña XTI Oficial",
-    brand: "Xti España",
-    category: "Campaña Dama"
-  },
-  {
-    image: "/assets/images/img_2_68747470733a.jpg",
-    title: "Sandalias Urbanas Confort",
-    brand: "Refresh",
-    category: "Streetwear"
-  },
-  {
-    image: "/assets/images/img_3_68747470733a.jpg",
-    title: "Bolsos J-Lastic® con Fragancia",
-    brand: "Petite Jolie",
-    category: "Marroquinería"
-  },
-  {
-    image: "/assets/images/img_5_68747470733a.jpg",
-    title: "Calzado de Fiesta en Cuero",
-    brand: "Giulia Domna",
-    category: "Alta Gama"
-  },
-  {
-    image: "/assets/images/img_6_68747470733a.jpg",
-    title: "Zapatillas Urbanas Juveniles",
-    brand: "Xti Kids",
-    category: "Infantil"
-  },
-  {
-    image: "/assets/images/img_7_68747470733a.jpg",
-    title: "Mochilas & Bandoleras",
-    brand: "Petite Jolie",
-    category: "Accesorios"
-  },
-  {
-    image: "/assets/images/img_8_68747470733a.jpg",
-    title: "Botas Caña Media Xti",
-    brand: "Xti Oficial",
-    category: "Dama Otoño/Invierno"
-  },
-  {
-    image: "/assets/images/img_9_68747470733a.jpg",
-    title: "Muestrario Showroom Tapiales",
-    brand: "SkyBlue Showroom",
-    category: "Showroom"
-  },
-  {
-    image: "/assets/images/img_10_68747470733a.jpg",
-    title: "Sneakers Mujer Trendy",
-    brand: "Refresh Casual",
-    category: "Urban"
-  },
-  {
-    image: "/assets/images/img_11_68747470733a.jpg",
-    title: "Carteras Estructuradas",
-    brand: "Petite Jolie",
-    category: "Marroquinería"
-  },
-  {
-    image: "/assets/images/img_12_68747470733a.jpg",
-    title: "Sandalias de Vestir Cuero",
-    brand: "Giulia Domna",
-    category: "Fiesta"
-  },
-  {
-    image: "/assets/images/img_13_68747470733a.jpg",
-    title: "Colección María Becerra × XTI",
-    brand: "Xti España",
-    category: "Viral Social"
-  },
-  {
-    image: "/assets/images/img_14_68747470733a.jpg",
-    title: "Zapatillas Livianas Niños",
-    brand: "Xti Kids",
-    category: "Colegial"
-  },
-  {
-    image: "/assets/images/img_15_68747470733a.jpg",
-    title: "Mini Bags & Charms",
-    brand: "Petite Jolie",
-    category: "Impulso"
-  },
-  {
-    image: "/assets/images/img_16_68747470733a.jpg",
-    title: "Zapatos Clásicos de Taco",
-    brand: "Giulia Domna",
-    category: "Elegante"
   }
 ];
 
@@ -733,7 +578,7 @@ export const FAQS = [
   },
   {
     question: "¿Cómo funciona el 10% de descuento adicional por pago al contado o transferencia?",
-    answer: "Si abonas tu pedido mayorista en efectivo en nuestro showroom de Tapiales, mediante transferencia bancaria o depósito bancario, se aplica un 10% de descuento adicional sobre la liquidación de tu compra, aumentando de inmediato tu margen de ganancia neta.",
+    answer: "Si abonas tu pedido mayorista en efectivo en nuestro showroom de Tapiales, mediante transferencia bancaria o depósito bancario, se aplica un 10% de descuento adicional sobre la liquidación neta de tu compra, aumentando de inmediato tu margen de ganancia neta.",
     category: "pagos"
   },
   {
@@ -750,100 +595,89 @@ export const FAQS = [
     question: "¿Cómo accedo al material de marketing y fotos de María Becerra para mis redes?",
     answer: "Al darte de alta como cliente mayorista de SkyBlue, tu asesora te otorga acceso a nuestro Google Drive VIP con fotos de estudio en alta resolución, videos verticales listos para publicar en Instagram/TikTok y gráficas oficiales de las campañas de Xti con María Becerra, Refresh, Petite Jolie y Giulia Domna.",
     category: "marketing"
-  },
-  {
-    question: "¿Tienen garantía por fallas de fabricación?",
-    answer: "Todos los módulos pasan por control de calidad previo al embalaje y cuentan con garantía oficial de distribuidor por defectos de fabricación, gestionando el recambio en tu siguiente pedido.",
-    category: "garantia"
   }
 ];
 
-// Complete SEO Configurations for each section / page
-export const SEO_PAGES = {
+export const SEO_DATA = {
   inicio: {
     path: "/",
     metaTitle: "SkyBlue Calzado Mayorista | Distribuidor Oficial B2B Argentina",
-    metaDescription: "Distribuidora mayorista de calzado en Argentina por módulos de 8 y 12 pares. Marcas oficiales Xti con María Becerra, Refresh, Petite Jolie y Giulia Domna con CUIT.",
-    h1: "Distribución Mayorista de Calzado y Marroquinería Internacional en Argentina",
-    searchIntent: "Comprar calzado por mayor en Argentina para zapaterías, showrooms y locales de moda con marcas oficiales y venta por módulos.",
-    tldr: [
-      "Venta exclusiva a comerciantes con CUIT por módulos de 8 o 12 pares.",
-      "Distribuidor oficial de Xti (España feat. María Becerra), Refresh, Petite Jolie (Brasil) y Giulia Domna.",
-      "10% de descuento adicional en pagos por efectivo, transferencia o depósito bancario.",
-      "Plataforma B2B exclusiva con acceso privado a precios en mayoristas.skyblue.com.ar.",
-      "Showroom mayorista en Curapaligüe 1428 (Tapiales) con cita previa de 08:00 a 17:00 hs."
-    ],
-    topicCluster: "Calzado Mayorista Argentina B2B"
+    metaDescription: "Distribuidora mayorista de calzado en Argentina por módulos de 8 y 12 pares. Marcas oficiales Xti con María Becerra, Refresh, Petite Jolie y Giulia Domna con CUIT. Despachos a todo el país."
   },
   marcas: {
     path: "/marcas-oficiales",
     metaTitle: "Marcas Oficiales de Calzado Mayorista | Xti, Refresh, Petite Jolie, Giulia Domna",
-    metaDescription: "Conocé las marcas internacionales representadas por SkyBlue: Xti España con María Becerra, Refresh, Petite Jolie en J-Lastic® y Giulia Domna en cuero vacuno.",
-    h1: "Marcas Internacionales Oficiales de Calzado y Marroquinería en Argentina",
-    searchIntent: "Descubrir las marcas oficiales distribuidas por SkyBlue, especificaciones de calce, materiales y respaldo publicitario.",
-    tldr: [
-      "Xti España: Colección de moda urbana internacional con María Becerra como embajadora oficial.",
-      "Refresh España: Streetwear juvenil y calzado ultraliviano de alta rotación.",
-      "Petite Jolie Brasil: Bolsos y calzado en J-Lastic® impermeable con aroma icónico.",
-      "Giulia Domna Brasil: Calzado boutique confeccionado en cuero legítimo de exportación."
-    ],
-    topicCluster: "Marcas de Calzado B2B"
+    metaDescription: "Conocé las marcas internacionales que distribuimos en exclusiva para zapaterías: Xti España con María Becerra, Refresh, Petite Jolie Brasil y Giulia Domna en cuero."
   },
   catalogo: {
     path: "/catalogo-mayorista",
     metaTitle: "Catálogo Mayorista por Módulos de Calzado B2B | SkyBlue",
-    metaDescription: "Explorá calzado de dama, caballero, niños XTI Kids y marroquinería por módulos de 8 y 12 pares. Acceso a plataforma B2B mayoristas.skyblue.com.ar.",
-    h1: "Catálogo de Calzado Mayorista por Módulos de 8 y 12 Pares",
-    searchIntent: "Ver colecciones mayoristas de calzado, composición de módulos por talles y solicitar cuenta para ver precios de fábrica.",
-    tldr: [
-      "Composición de curvas en módulos de 8 o 12 pares para optimizar el inventario sin sobrantes.",
-      "Líneas disponibles: Dama (35-40), Caballero (39-44), XTI Kids (28-35), Marroquinería y Accesorios.",
-      "Sin precios visibles al público para resguardar el margen del comerciante minorista.",
-      "Acceso directo a la plataforma de pedidos en https://mayoristas.skyblue.com.ar/."
-    ],
-    topicCluster: "Catálogo de Calzado Mayorista"
+    metaDescription: "Explorá calzado de dama, caballero, niños XTI Kids y marroquinería por módulos de 8 y 12 pares. Acceso a plataforma B2B mayoristas.skyblue.com.ar."
   },
   beneficios: {
-    path: "/beneficios-rentabilidad",
-    metaTitle: "Márgenes y Beneficios Mayoristas B2B | Calculadora SkyBlue",
-    metaDescription: "Calculá tu rentabilidad con márgenes de x2.0 a x2.5 en calzado. Kit de marketing HD gratuito, impulso de María Becerra y despachos en 24/48hs.",
-    h1: "Beneficios Comerciales y Calculadora de Margen de Ganancia Mayorista",
-    searchIntent: "Calcular rentabilidad de compra mayorista de calzado, ahorro por 10% OFF y herramientas de venta provistas.",
-    tldr: [
-      "Márgenes reales de ganancia entre x2.0 (100%) y x2.5 (150%) sobre el costo mayorista.",
-      "Kit digital de marketing incluido gratis: fotos en estudio HD y reels verticales editados.",
-      "Ahorro directo del 10% pagando por transferencia, depósito o efectivo.",
-      "Despachos rápidos en 24 a 48 hs por expresos a todas las provincias argentinas."
-    ],
-    topicCluster: "Rentabilidad B2B Zapaterías"
+    path: "/beneficios-comerciales",
+    metaTitle: "Beneficios para Zapaterías y Comercios | SkyBlue Mayorista",
+    metaDescription: "Márgenes del 100% al 150%, 10% adicional por pago contado o transferencia, envíos en 24 a 48 hs a todo el país y kit de marketing gratuito."
   },
   showroom: {
     path: "/showroom-tapiales",
-    metaTitle: "Showroom Mayorista Tapiales y Locales Minoristas | SkyBlue Calzado",
-    metaDescription: "Visitá nuestro Showroom B2B en Curapaligüe 1428 (Tapiales, 1er piso) con cita previa. Locales minoristas en Tapiales y Av. Libertad 1190 (Cañuelas).",
-    h1: "Showroom Mayorista Exclusivo en Tapiales y Locales a la Calle",
-    searchIntent: "Conocer la ubicación del Showroom mayorista en Tapiales, horarios de atención, solicitud de cita previa y locales minoristas.",
-    tldr: [
-      "Showroom Mayorista: Curapaligüe 1428 (1er Piso, Tapiales, Buenos Aires).",
-      "Horario de atención: Lunes a viernes de 08:00 a 17:00 hs con cita previa coordinada con Juliana.",
-      "Local Minorista 1: Curapaligüe 1428, Tapiales (Buenos Aires).",
-      "Local Minorista 2: Av. Libertad 1190, Cañuelas (Buenos Aires).",
-      "+300 modelos exhibidos en vivo con prueba física de materiales y calce."
-    ],
-    topicCluster: "Showroom y Locales SkyBlue"
+    metaTitle: "Showroom Mayorista en Tapiales Buenos Aires | SkyBlue Calzado",
+    metaDescription: "Visitá nuestro showroom exclusivo para comerciantes en Curapaligüe 1428 (1er Piso), Tapiales. Más de 300 modelos exhibidos con cita previa."
   },
   faq: {
-    path: "/faq-mayorista",
-    metaTitle: "Preguntas Frecuentes y Asesores Comerciales | SkyBlue Mayorista",
-    metaDescription: "Respuestas a dudas sobre compra mínima de 1 módulo (8 o 12 pares), CUIT, 10% OFF, envíos y contacto directo con Juliana, Jesica y Marcelino.",
-    h1: "Preguntas Frecuentes Mayoristas y Contacto con Asesores Comerciales",
-    searchIntent: "Resolver dudas comerciales sobre requisitos con CUIT, medios de pago, tiempos de envío y contacto con asesores por WhatsApp.",
-    tldr: [
-      "Mínimo de compra: 1 módulo de 8 o 12 pares.",
-      "Asesores directos: Juliana (+54 9 11 3891-6779), Jesica (+54 9 11 3093-6075), Marcelino (+54 9 11 3658-2482).",
-      "Medios de pago: Efectivo, transferencia o depósito con 10% de descuento adicional.",
-      "Envíos por expreso a toda la Argentina con despacho en 24 a 48 hs hábiles."
-    ],
-    topicCluster: "Soporte y Preguntas Frecuentes B2B"
+    path: "/preguntas-frecuentes",
+    metaTitle: "Preguntas Frecuentes sobre Compra Mayorista de Calzado | SkyBlue",
+    metaDescription: "Respuestas sobre módulos mínimos de 8 y 12 pares, CUIT comercial, bonificación del 10%, envíos por expreso y acceso a plataforma privada."
+  },
+  blog: {
+    path: "/blog-zapaterias",
+    metaTitle: "Blog para Dueños de Zapaterías y Negocios de Calzado | SkyBlue",
+    metaDescription: "Guías comerciales, estrategias de vidriera, marketing de calzado y consejos para rentabilizar módulos mayoristas sin pares sobrantes."
+  }
+};
+
+
+export const SEO_PAGES = {
+  inicio: {
+    metaTitle: "SkyBlue Calzado Mayorista | Distribuidor Oficial Argentina (Xti, Refresh, Petite Jolie, Giulia Domna)",
+    metaDescription: "Distribuidor oficial de calzado y marroquinería en Argentina. Venta mayorista por curvas de fábrica de 8 y 12 pares. Precios netos sin IVA, envíos gratis en CABA/GBA y showroom en Tapiales.",
+    h1: "SkyBlue Calzado Mayorista — Distribuidor Oficial en Argentina",
+    topicCluster: "Inicio Mayorista",
+    path: "/"
+  },
+  marcas: {
+    metaTitle: "Marcas Oficiales de Calzado Mayorista | Xti, Refresh, Petite Jolie, Giulia Domna",
+    metaDescription: "Representación e importación oficial de calzado español y brasileño en Argentina: Xti (María Becerra), Refresh, Petite Jolie y Giulia Domna.",
+    h1: "Marcas Internacionales Oficiales de Calzado y Marroquinería",
+    topicCluster: "Marcas Oficiales",
+    path: "/#marcas"
+  },
+  catalogo: {
+    metaTitle: "Catálogo Mayorista de Calzado | Curvas de 8 y 12 Pares Directo de Fábrica",
+    metaDescription: "Accedé a nuestro catálogo mayorista de sandalias, botas, zapatillas, stilettos y carteras por curvas completas para zapaterías y boutiques.",
+    h1: "Catálogo de Calzado y Marroquinería por Módulos Mayoristas",
+    topicCluster: "Catálogo Mayorista",
+    path: "/#catalogo"
+  },
+  beneficios: {
+    metaTitle: "Beneficios Comerciales y Rentabilidad Mayorista | SkyBlue Argentina",
+    metaDescription: "Conocé las ventajas de comprar con SkyBlue: 10% adicional por transferencia, material para redes sociales, envíos bonificados y Factura A/B.",
+    h1: "Condiciones Comerciales y Rentabilidad para tu Zapatería",
+    topicCluster: "Beneficios & Márgenes",
+    path: "/#beneficios"
+  },
+  showroom: {
+    metaTitle: "Showroom Mayorista en Tapiales | Cita Previa con Asesor B2B SkyBlue",
+    metaDescription: "Visitá nuestro showroom exclusivo en Tapiales (Curapaligüe 1428, 1er Piso) para probar muestras, texturas y armar pedidos de temporada.",
+    h1: "Showroom Mayorista B2B en Tapiales — Cita Previa",
+    topicCluster: "Showroom Tapiales",
+    path: "/#showroom"
+  },
+  contacto: {
+    metaTitle: "Contacto y Asesoras Comerciales WhatsApp | SkyBlue Mayorista",
+    metaDescription: "Chateá directamente con Juliana, Jesica y Marcelino para recibir listas de precios netos, catálogos en PDF y coordinar despachos.",
+    h1: "Equipo de Asesores Comerciales SkyBlue Mayorista",
+    topicCluster: "Contacto WhatsApp",
+    path: "/#asesoras"
   }
 };

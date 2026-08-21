@@ -283,3 +283,50 @@
     max-width: 1780px;
   }
 }
+
+/* Apple Typography & SF Pro Classes */
+.font-sf-regular {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.font-sf-light-italic {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.font-sf-medium {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.font-sf-bold {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.apple-headline {
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+  line-height: 1.08;
+}
+
+.apple-subheadline {
+  letter-spacing: -0.01em;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.apple-kicker {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+  font-weight: 700;
+}
+

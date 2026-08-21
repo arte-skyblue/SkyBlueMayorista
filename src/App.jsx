@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import SeoHeaderBlock from './components/SeoHeaderBlock';
 import HeroSlider from './components/HeroSlider';
+import BrandMarquee from './components/reactbits/BrandMarquee';
 import CommercialConditions from './components/CommercialConditions';
 import BrandShowcase from './components/BrandShowcase';
 import CategoryCatalog from './components/CategoryCatalog';
@@ -69,17 +70,13 @@ export default function App() {
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
 
-            <CommercialConditions 
-              onOpenModal={handleOpenModal} 
-              onOpenAdvisorModal={handleOpenAdvisorModal} 
-            />
+            <BrandMarquee />
 
             <BrandShowcase 
               onOpenModal={handleOpenModal} 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
 
-            {/* 6 Columns of Selected Products on Desktop */}
             <CategoryCatalog 
               onOpenModal={handleOpenModal} 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
@@ -89,11 +86,14 @@ export default function App() {
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
 
-            <ReelsSection 
+            <BenefitsSection 
+              onOpenModal={handleOpenModal} 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
 
-            <AdvisorsHub />
+            <ReelsSection 
+              onOpenAdvisorModal={handleOpenAdvisorModal} 
+            />
 
             <ShowroomSection 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
@@ -102,6 +102,13 @@ export default function App() {
             <EventsSection 
               onOpenModal={handleOpenModal} 
             />
+
+            <CommercialConditions 
+              onOpenModal={handleOpenModal} 
+              onOpenAdvisorModal={handleOpenAdvisorModal} 
+            />
+
+            <AdvisorsHub />
 
             <FaqSection 
               onOpenAdvisorModal={handleOpenAdvisorModal} 

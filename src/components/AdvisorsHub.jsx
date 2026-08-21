@@ -14,18 +14,14 @@ export default function AdvisorsHub() {
       <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-14 2xl:mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs 2xl:text-sm font-extrabold uppercase tracking-wider">
-            <Users className="w-4 h-4 text-primary" />
-            <span>Atención B2B Directa por WhatsApp</span>
-          </div>
-
-          <h2 className="text-3xl sm:text-5xl 2xl:text-6xl font-black text-foreground tracking-tight">
-            Nuestro Equipo de Asesores Comerciales
+        <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-5xl 2xl:text-6xl uppercase tracking-tight apple-headline">
+            <span className="font-sf-light-italic text-muted-foreground mr-2">ASESORAMIENTO</span>
+            <span className="font-sf-bold text-foreground">PERSONALIZADO</span>
           </h2>
 
-          <p className="text-muted-foreground text-base sm:text-lg 2xl:text-xl">
-            Te asesoramos de forma personalizada para armar tus módulos de 8 o 12 pares, coordinar tu visita al Showroom de Tapiales o gestionar tus despachos al interior.
+          <p className="font-sf-medium text-muted-foreground text-base sm:text-lg 2xl:text-xl apple-subheadline">
+            Chateá por WhatsApp con nuestras asesoras para armar tu compra por módulos y coordinar despachos
           </p>
         </div>
 
@@ -54,19 +50,19 @@ export default function AdvisorsHub() {
 
                   <div>
                     <div className="flex items-center gap-2">
-                      <h3 className="text-xl font-black text-foreground">
+                      <h3 className="text-xl font-sf-bold text-foreground">
                         {advisor.name}
                       </h3>
-                      <span className="bg-emerald-500/10 text-emerald-600 text-[9px] font-black uppercase px-2 py-0.5 rounded-full border border-emerald-500/20">
+                      <span className="bg-emerald-500/10 text-emerald-600 text-[9px] font-sf-bold uppercase px-2 py-0.5 rounded-full border border-emerald-500/20">
                         {advisor.status}
                       </span>
                     </div>
 
-                    <p className="text-[11px] font-bold text-primary mt-0.5">
+                    <p className="text-[11px] font-sf-bold text-primary mt-0.5">
                       {advisor.role}
                     </p>
 
-                    <div className="flex items-center gap-1 text-[10px] text-muted-foreground font-semibold mt-0.5">
+                    <div className="flex items-center gap-1 text-[10px] text-muted-foreground font-sf-medium mt-0.5">
                       <Clock className="w-3 h-3 text-emerald-600" />
                       <span>{advisor.responseTime}</span>
                     </div>
@@ -75,36 +71,40 @@ export default function AdvisorsHub() {
 
                 {/* Phone & Specialty Box */}
                 <div className="p-3.5 rounded-2xl bg-muted/40 border border-border space-y-1.5 shadow-xs">
-                  <div className="text-xs font-black text-foreground flex items-center justify-between">
+                  <div className="text-xs font-sf-bold text-foreground flex items-center justify-between">
                     <span>Contacto Directo:</span>
                     <span className="text-primary">{advisor.phone}</span>
                   </div>
-                  <p className="text-xs text-muted-foreground font-medium leading-snug">
+                  <p className="text-xs text-muted-foreground font-sf-regular leading-snug">
                     {advisor.specialty}
                   </p>
                 </div>
 
                 {/* Benefits Bullet Points */}
-                <div className="space-y-1.5 text-xs text-foreground">
+                <div className="space-y-1.5 text-xs text-foreground font-sf-regular">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                    <span>Envío de catálogo y lista mayorista</span>
+                    <span>Envío de catálogo y lista mayorista neta</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
                     <span>Coordinación de módulos y 10% OFF</span>
                   </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                    <span>Envío gratis en CABA y GBA</span>
+                  </div>
                 </div>
 
               </div>
 
-              {/* Bottom WhatsApp Button */}
-              <div className="relative z-10 pt-5 mt-5 border-t border-border">
+              {/* WhatsApp Action Button */}
+              <div className="relative z-10 pt-5">
                 <a
                   href={`https://wa.me/${advisor.cleanPhone}?text=${encodeURIComponent(advisor.defaultMessage)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3 px-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold text-xs sm:text-sm shadow-md shadow-emerald-600/20 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                  className="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-sf-bold text-xs sm:text-sm shadow-lg shadow-emerald-600/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2"
                 >
                   <MessageCircle className="w-4 h-4 fill-white" />
                   <span>Chatear con {advisor.name}</span>

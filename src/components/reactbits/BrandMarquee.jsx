@@ -5,9 +5,9 @@ export default function BrandMarquee() {
   const logos = [
     { name: 'XTI España', file: '/logos/Xti.svg', tag: 'María Becerra' },
     { name: 'Refresh Casual', file: '/logos/Refresh.svg', tag: 'Streetwear' },
-    { name: 'Petite Jolie Brasil', file: '/logos/Petite.svg', tag: 'J-Lastic®' },
-    { name: 'Giulia Domna', file: '/logos/Giulia Domna - Texto.svg', tag: 'Cuero Legítimo' },
-    { name: 'SkyBlue Mayorista', file: '/logos/SkyBlue.svg', tag: 'Distribuidor B2B' },
+    { name: 'Petite Jolie Brasil', file: '/logos/Petite jolie.svg', tag: 'J-Lastic®' },
+    { name: 'Giulia Domna', file: '/logos/Giulina domna Horizontal.svg', tag: 'Cuero Legítimo' },
+    { name: 'SkyBlue Mayorista', file: '/logos/SKYBLUE Horizontal.svg', tag: 'Distribuidor B2B' },
   ];
 
   return (

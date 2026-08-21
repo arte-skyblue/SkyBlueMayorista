@@ -1,228 +1,131 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { 
+  ChevronDown, 
   HelpCircle, 
-  Plus, 
-  Minus, 
   Search, 
+  Building2, 
   MessageCircle, 
-  Sparkles, 
   Layers, 
   Lock, 
   Percent, 
-  Building2, 
   Truck, 
   ShieldCheck, 
-  ChevronRight,
-  Send,
-  Users
+  Users 
 } from 'lucide-react';
 import { FAQS, ADVISORS } from '../data/mockData';
-import SpotlightCard from './reactbits/SpotlightCard';
 
 export default function FaqSection({ onOpenAdvisorModal }) {
   const [activeCategory, setActiveCategory] = useState('todas');
-  const [openIdx, setOpenIdx] = useState(0);
+  const [openIndex, setOpenIndex] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
 
   const categories = [
     { id: 'todas', name: 'Todas las Preguntas', icon: HelpCircle, count: FAQS.length },
-    { id: 'minimos', name: 'Módulos & Mínimos (8/12 Pares)', icon: Layers, count: 2 },
-    { id: 'precios', name: 'Precios & Plataforma B2B', icon: Lock, count: 2 },
+    { id: 'minimos', name: 'Módulos & Curvas (8/12 Pares)', icon: Layers, count: 1 },
+    { id: 'precios', name: 'Precios Netos & Factura A/B', icon: Lock, count: 1 },
     { id: 'pagos', name: '10% Adicional & Pagos', icon: Percent, count: 1 },
     { id: 'showroom', name: 'Showroom Tapiales (1er Piso)', icon: Building2, count: 1 },
-    { id: 'envios', name: 'Envíos a Todo el País', icon: Truck, count: 2 },
+    { id: 'envios', name: 'Envíos Gratis CABA/GBA & Expresos', icon: Truck, count: 1 }
   ];
 
   const filteredFaqs = FAQS.filter((faq) => {
-    const matchesSearch =
-      faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      faq.answer.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          faq.answer.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory = activeCategory === 'todas' || faq.category === activeCategory;
     return matchesSearch && matchesCategory;
   });
 
-  const toggleFaq = (index) => {
-    setOpenIdx(openIdx === index ? null : index);
+  const toggleAccordion = (idx) => {
+    setOpenIndex(openIndex === idx ? null : idx);
   };
 
   return (
-    <section id="faq" className="py-16 sm:py-24 bg-slate-950 text-white relative overflow-hidden border-b border-slate-800">
+    <section id="faq" className="py-16 sm:py-24 bg-neutral-950 text-white relative overflow-hidden border-b border-neutral-800">
       
       {/* Background ambient lighting */}
       <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 relative z-10 space-y-12">
+      <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-primary-foreground text-xs 2xl:text-sm font-extrabold uppercase tracking-wider">
-            <HelpCircle className="w-4 h-4 text-primary" />
-            <span>Centro de Ayuda Mayorista B2B</span>
-          </div>
-
-          <h2 className="text-3xl sm:text-5xl 2xl:text-6xl font-black text-white tracking-tight">
-            Preguntas Frecuentes de Zapaterías y Locales
+        <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-5xl 2xl:text-6xl uppercase tracking-tight apple-headline">
+            <span className="font-sf-light-italic text-neutral-400 mr-2">PREGUNTAS</span>
+            <span className="font-sf-bold text-white">FRECUENTES</span>
           </h2>
 
-          <p className="text-slate-300 text-base sm:text-lg 2xl:text-xl">
-            Resolvé de forma rápida tus dudas comerciales antes de realizar tu pedido por módulos.
+          <p className="font-sf-medium text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
+            Respuestas a las dudas habituales sobre mínimos de compra, curvas de fábrica, precios sin IVA y logística
           </p>
+        </div>
 
-          {/* Search bar */}
-          <div className="pt-2 max-w-xl mx-auto relative">
-            <Search className="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
+        {/* Search Bar */}
+        <div className="max-w-xl mx-auto mb-10">
+          <div className="relative">
+            <Search className="w-5 h-5 text-neutral-400 absolute left-4 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Buscar por palabra clave: CUIT, 8 pares, María Becerra, Tapiales..."
-              className="w-full pl-12 pr-10 py-3.5 rounded-2xl bg-slate-900/90 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-primary text-sm text-white placeholder:text-slate-500 shadow-inner"
+              placeholder="Buscar por módulo, curvas, factura, envíos..."
+              className="w-full pl-12 pr-4 py-3.5 rounded-2xl bg-neutral-900 border border-neutral-800 text-white text-xs sm:text-sm placeholder:text-neutral-500 focus:outline-none focus:border-primary transition-colors"
             />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery('')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-slate-400 hover:text-white"
-              >
-                Limpiar
-              </button>
-            )}
           </div>
         </div>
 
-        {/* FAQ 7 Architecture: Vertical Category Rail on Left + Interactive Accordion on Right */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
-          {/* Left Column (4 Cols): Vertical Category Rail with Layout-Animated Indicator (FAQ-7 Pattern) */}
-          <div className="lg:col-span-4 space-y-2 p-2 rounded-3xl bg-slate-900/70 border border-slate-800 backdrop-blur-xl">
-            <span className="text-[10px] font-black uppercase text-slate-400 tracking-wider px-3 py-2 block">
-              Categorías de Ayuda:
-            </span>
-
-            {categories.map((cat) => {
-              const Icon = cat.icon;
-              const isActive = activeCategory === cat.id;
-
-              return (
-                <button
-                  key={cat.id}
-                  onClick={() => setActiveCategory(cat.id)}
-                  className={`w-full p-3.5 rounded-2xl text-left font-bold text-xs sm:text-sm flex items-center justify-between transition-all relative ${
-                    isActive
-                      ? 'text-primary-foreground font-black shadow-lg shadow-primary/20'
-                      : 'text-slate-300 hover:bg-slate-800/80 hover:text-white'
-                  }`}
-                >
-                  {/* Animated Background Indicator for Active Rail Tab */}
-                  {isActive && (
-                    <motion.div
-                      layoutId="faq-category-rail-indicator"
-                      className="absolute inset-0 bg-primary rounded-2xl -z-10"
-                      transition={{ type: 'spring', stiffness: 450, damping: 35 }}
-                    />
-                  )}
-
-                  <div className="flex items-center gap-3">
-                    <Icon className={`w-4 h-4 ${isActive ? 'text-primary-foreground' : 'text-primary'}`} />
-                    <span>{cat.name}</span>
-                  </div>
-
-                  <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${
-                    isActive ? 'bg-slate-950 text-primary' : 'bg-slate-800 text-slate-400'
-                  }`}>
-                    {cat.count}
-                  </span>
-                </button>
-              );
-            })}
-
-            {/* Sticky Advisor Mini-Trigger in Left Rail */}
-            <div className="pt-4 mt-4 border-t border-slate-800 px-3 pb-2 space-y-2">
-              <div className="flex items-center gap-2 text-xs font-bold text-emerald-400">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                <span>¿Pregunta puntual?</span>
-              </div>
-              <p className="text-[11px] text-slate-400 leading-snug">
-                Juliana y el equipo comercial te asesoran directamente por WhatsApp.
-              </p>
+        {/* Category Pills */}
+        <div className="flex justify-center flex-wrap gap-2 mb-10">
+          {categories.map((cat) => {
+            const Icon = cat.icon;
+            const isSelected = activeCategory === cat.id;
+            return (
               <button
-                onClick={() => onOpenAdvisorModal(ADVISORS[0])}
-                className="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-colors border border-slate-700"
+                key={cat.id}
+                onClick={() => setActiveCategory(cat.id)}
+                className={`px-4 py-2.5 rounded-xl text-xs font-sf-bold transition-all flex items-center gap-2 ${
+                  isSelected
+                    ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/30'
+                    : 'bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800'
+                }`}
               >
-                <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Consultar por WhatsApp</span>
+                <Icon className="w-3.5 h-3.5" />
+                <span>{cat.name}</span>
               </button>
-            </div>
-          </div>
+            );
+          })}
+        </div>
 
-          {/* Right Column (8 Cols): Accordion List */}
-          <div className="lg:col-span-8 space-y-3.5">
-            {filteredFaqs.length > 0 ? (
-              filteredFaqs.map((faq, idx) => {
-                const isOpen = openIdx === idx;
-
-                return (
-                  <motion.div
-                    key={idx}
-                    initial={false}
-                    className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
-                      isOpen
-                        ? 'bg-slate-900 border-primary/70 shadow-xl shadow-primary/5'
-                        : 'bg-slate-900/60 border-slate-800 hover:border-slate-700'
+        {/* FAQs Accordion */}
+        <div className="max-w-3xl 2xl:max-w-4xl mx-auto space-y-3.5">
+          {filteredFaqs.map((faq, idx) => {
+            const isOpen = openIndex === idx;
+            return (
+              <div
+                key={idx}
+                className="rounded-2xl bg-neutral-900/80 border border-neutral-800 overflow-hidden transition-colors"
+              >
+                <button
+                  onClick={() => toggleAccordion(idx)}
+                  className="w-full p-5 text-left flex items-center justify-between gap-4 hover:text-primary transition-colors"
+                >
+                  <span className="font-sf-bold text-sm sm:text-base text-white">
+                    {faq.question}
+                  </span>
+                  <ChevronDown
+                    className={`w-5 h-5 text-neutral-400 shrink-0 transition-transform duration-300 ${
+                      isOpen ? 'rotate-180 text-primary' : ''
                     }`}
-                  >
-                    <button
-                      onClick={() => toggleFaq(idx)}
-                      className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 group"
-                      aria-expanded={isOpen}
-                    >
-                      <div className="flex items-center gap-3 sm:gap-4">
-                        <span className={`w-7 h-7 rounded-xl flex items-center justify-center text-xs font-black shrink-0 transition-colors ${
-                          isOpen ? 'bg-primary text-primary-foreground' : 'bg-slate-800 text-slate-400 group-hover:text-white'
-                        }`}>
-                          {idx + 1 < 10 ? `0${idx + 1}` : idx + 1}
-                        </span>
+                  />
+                </button>
 
-                        <span className={`font-bold text-sm sm:text-base leading-snug transition-colors ${
-                          isOpen ? 'text-white font-extrabold' : 'text-slate-200 group-hover:text-white'
-                        }`}>
-                          {faq.question}
-                        </span>
-                      </div>
-
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
-                        isOpen ? 'bg-primary text-primary-foreground rotate-180' : 'bg-slate-800 text-slate-400 group-hover:bg-slate-700'
-                      }`}>
-                        {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
-                      </div>
-                    </button>
-
-                    <AnimatePresence initial={false}>
-                      {isOpen && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: 'auto', opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-                        >
-                          <div className="px-5 sm:px-6 pb-6 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/80 mt-1">
-                            <p className="pt-4">{faq.answer}</p>
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </motion.div>
-                );
-              })
-            ) : (
-              <div className="p-8 text-center bg-slate-900/60 rounded-2xl border border-slate-800 space-y-2">
-                <p className="font-bold text-slate-300">No encontramos resultados para tu búsqueda.</p>
-                <p className="text-xs text-slate-500">Probá con otra palabra clave o consultanos por WhatsApp.</p>
+                {isOpen && (
+                  <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-neutral-300 leading-relaxed font-sf-regular border-t border-neutral-800/60">
+                    {faq.answer}
+                  </div>
+                )}
               </div>
-            )}
-          </div>
-
+            );
+          })}
         </div>
 
       </div>
