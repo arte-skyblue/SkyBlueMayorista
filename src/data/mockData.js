@@ -692,3 +692,152 @@ export const SEO_PAGES = {
 
 
 export const REVIEWS = [{id:1,name:`Valeria Gómez`,business:`Zapatería 'Valen Calzados'`,location:`Córdoba Capital`,rating:5,avatar:`https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80`,date:`Hace 3 días`,verified:!0,bought:`Módulos Xti & Refresh`,text:`Hola gente! La verdad que las zapas de Xti con la foto de Maria Becerra vuelan en el local, no me duraron ni 4 dias el modulo de 12 pares. Ya es el tercer pedido que le hago a Juli por whatsapp y siempre despachan al toque x expreso. Recomendadisimos!!`},{id:2,name:`Mariano Rossi`,business:`Rossi Shoes & Accesorios`,location:`Rosario, Santa Fe`,rating:5,avatar:`https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80`,date:`Hace 1 semana`,verified:!0,bought:`Marroquinería Petite Jolie`,text:`Las carteras de Petite Jolie tienen un aroma tremendo que llama la atencion apenas entran al negocio. El material J-Lastic es super facil de vender porque no se arruina con la lluvia. Buen margen y atencion de diez.`},{id:3,name:`Carolina Méndez`,business:`Showroom Caro Méndez`,location:`San Miguel de Tucumán`,rating:5,avatar:`https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80`,date:`Hace 2 semanas`,verified:!0,bought:`Línea Giulia Domna Cuero`,text:`El calzado de Giulia Domna tiene unas terminaciones de cuero de primer nivel. Para el segmento boutique que manejo en Tucuman me vino barbaro. Ademas el descuento del 10% por transferencia suma un monton.`},{id:4,name:`Gonzalo Benítez`,business:`Calzados Benítez e Hijos`,location:`Mendoza Capital`,rating:5,avatar:`https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80`,date:`Hace 2 semanas`,verified:!0,bought:`Módulos Refresh & XTI Kids`,text:`Excelente distribuidora. Compramos modulos cerrados para la temporada y llegaron a Mendoza en 48hs por Cruz del Sur bien embalados con su remito. La linea kids de Xti salio rapidisimo.`},{id:5,name:`Florencia Álvarez`,business:`Flor Álvarez Boutique`,location:`Neuquén Capital`,rating:5,avatar:`https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80`,date:`Hace 3 semanas`,verified:!0,bought:`Xti Zapatillas & Sandalias`,text:`Fui al showroom de Tapiales a ver los muestrarios y me atendieron super bien con un cafe mientras elegia los codigos. Comprobe la calidad en persona y me quede re tranquila. Ya arme mi segundo pedido.`},{id:6,name:`Lucas Pereyra`,business:`Tienda Urbana Calzado`,location:`Mar del Plata, Bs As`,rating:5,avatar:`https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=150&q=80`,date:`Hace 1 mes`,verified:!0,bought:`Zapatillas Refresh`,text:`El material de fotos y reels que te mandan al Drive VIP te ahorra contratar fotografo. Subo las historias a Instagram y se venden solas las zapas. Muy conforme con Skyblue.`},{id:7,name:`Romina Castillo`,business:`Romina Calzados`,location:`Salta Capital`,rating:5,avatar:`https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80`,date:`Hace 1 mes`,verified:!0,bought:`Petite Jolie & Xti`,text:`Las clientas me piden especificamente las zapatillas de Maria Becerra. El marketing que tienen atras las marcas oficiales hace toda la diferencia. Los modulos de 8 pares vienen super balanceados en talles.`},{id:8,name:`Esteban Morales`,business:`Morales Shoes`,location:`San Juan Capital`,rating:5,avatar:`https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80`,date:`Hace 1 mes`,verified:!0,bought:`Módulos Xti`,text:`Precios transparentes y respetan la exclusividad mayorista con CUIT. No le venden suelto a particulares lo cual para los que tenemos local es fundamental para cuidar el precio al publico.`},{id:9,name:`Daniela Aguirre`,business:`Aguirre Calzados y Carteras`,location:`La Plata, Bs As`,rating:5,avatar:`https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80`,date:`Hace 2 meses`,verified:!0,bought:`Petite Jolie & Refresh`,text:`Compre varios bultos de Petite Jolie y Refresh para la temporada de verano. La calidad de los herrajes y costuras es impecable. El asesoramiento por WhatsApp fue rápido y cordial en todo momento.`}];
+
+// ==========================================
+// REGISTRO Y METADATA SEO DE ASSETS DIGITALES
+// ==========================================
+export const ASSET_SEO_METADATA = {
+  banners: {
+    heroXti: {
+      path: "/images/banners/hero-xti.jpg",
+      title: "Campaña Oficial Xti España con María Becerra — Calzado Mayorista",
+      altText: "María Becerra luciendo calzado urbano Xti España para venta mayorista por curva en Argentina",
+      metaDescription: "Distribuidor oficial de calzado Xti en Argentina. Módulos cerrados de 8 y 12 pares de la campaña oficial con María Becerra. Venta con CUIT y Factura A/B.",
+      keywords: ["Xti Argentina", "calzado Maria Becerra", "calzado mayorista España", "zapaterias modulos Xti", "distribuidora de zapatos CUIT"]
+    },
+    heroRefresh: {
+      path: "/images/banners/hero-refresh.jpg",
+      title: "Campaña Refresh con Mar Lucas — Sneakers y Sandalias Mayoristas",
+      altText: "Mar Lucas presentando la colección de zapatillas urbanas y sandalias Refresh para zapaterías",
+      metaDescription: "Sneakers ultralivianos y sandalias europeas Refresh por mayor. Margen de reventa del 120% (x2.2 a x2.5). Despacho en 24/48 hs a todo el país.",
+      keywords: ["Refresh calzado mayorista", "sneakers por mayor Argentina", "sandalias europeas por curva", "zapatillas por modulo"]
+    },
+    heroPetiteJolie: {
+      path: "/images/banners/hero-petite-jolie.jpg",
+      title: "Petite Jolie Brasil — Bolsos y Calzado en J-Lastic® Impermeable",
+      altText: "Bolsos, carteras y sandalias Petite Jolie en material impermeable J-Lastic aromático para reventa",
+      metaDescription: "Mayorista oficial Petite Jolie en Argentina. Bolsos y carteras impermeables con fragancia dulce icónica. Compra por impulso asegurada en mostrador.",
+      keywords: ["Petite Jolie mayorista", "bolsos Jlastic por mayor", "carteras Petite Jolie Argentina", "marroquineria importada Brasil"]
+    },
+    heroCatalogos: {
+      path: "/images/banners/hero-catalogos.jpg",
+      title: "Catálogo Mayorista B2B SkyBlue — Módulos Cerrados de Fábrica",
+      altText: "Cajas cerradas de fábrica y módulos surtidos de 8 y 12 pares de calzado importado oficial",
+      metaDescription: "Catálogo oficial de calzado mayorista en Argentina. Curvas ideales de fábrica (75% talles 37 y 38 sin clavos de stock). 10% OFF extra por transferencia.",
+      keywords: ["curva de calzado mayorista", "modulos de 8 pares zapatos", "zapateria por mayor Flores Once", "distribuidora calzado Tapiales"]
+    }
+  },
+  categories: {
+    calzadoDama: {
+      path: "/images/categories/calzado-dama.jpg",
+      title: "Calzado de Dama Mayorista — Stilettos, Sandalias y Botas Xti",
+      altText: "Colección de calzado femenino de fiesta, sandalias y plataformas europeas para zapaterías",
+      metaDescription: "Venta mayorista de calzado femenino importado de España y Brasil. Modelos de alta costura, confort y tendencia por curvas de 8 y 12 pares.",
+      keywords: ["calzado de mujer por mayor", "sandalias de dama mayorista", "botas importadas España por mayor", "stilettos mayoristas"]
+    },
+    calzadoCaballero: {
+      path: "/images/categories/calzado-caballero.jpg",
+      title: "Calzado Masculino Urbano y Casual — Xti Men & Refresh Men",
+      altText: "Zapatillas urbanas, mocasines y calzado casual de hombre para tiendas de calzado",
+      metaDescription: "Línea de calzado de hombre mayorista con suelas de memory foam y materiales resistentes. Diseños urbanos europeos listos para despacho inmediato.",
+      keywords: ["calzado masculino mayorista", "zapatillas de hombre por curva", "calzado casual hombre por mayor", "distribuidor calzado hombre"]
+    },
+    calzadoNinos: {
+      path: "/images/categories/calzado-ninos.jpg",
+      title: "Xti Kids — Calzado Infantil Mayorista Resistente y Ergonómico",
+      altText: "Zapatillas y botines infantiles Xti Kids con plantilla ergonómica y suela antideslizante",
+      metaDescription: "Calzado para niños y niñas importado con certificación europea. Módulos escolares y urbanos de alta durabilidad para zapaterías infantiles.",
+      keywords: ["calzado infantil mayorista", "zapatillas de niños por mayor", "Xti Kids Argentina", "calzado escolar por mayor"]
+    },
+    marroquineriaBolsos: {
+      path: "/images/categories/marroquineria-bolsos.jpg",
+      title: "Marroquinería Mayorista — Bolsos, Mochilas y Carteras Petite Jolie",
+      altText: "Bolsos de mano, mochilas urbanas y bandoleras en material J-Lastic de colores vibrantes",
+      metaDescription: "Marroquinería importada de Brasil por mayor. Carteras y bolsos 100% lavables, impermeables y con aroma dulce. Alta rentabilidad en caja.",
+      keywords: ["marroquineria mayorista", "bolsos Petite Jolie por mayor", "carteras por mayor Argentina", "mochilas importadas por mayor"]
+    },
+    accesoriosCharms: {
+      path: "/images/categories/accesorios-charms.jpg",
+      title: "Accesorios de Moda y Charms Coleccionables Petite Jolie",
+      altText: "Llaveros, monederos, charms y accesorios de moda para sumar al ticket de compra",
+      metaDescription: "Accesorios y complementos de moda para zapaterías. Incrementá el ticket promedio de tu local con productos de impulso de bajo costo y alto margen.",
+      keywords: ["accesorios de moda por mayor", "llaveros Petite Jolie por mayor", "charms para carteras mayorista", "productos de impulso zapateria"]
+    }
+  },
+  showroom: {
+    showroom1: {
+      path: "/images/showroom/showroom-1.jpg",
+      title: "Salón de Exposición Mayorista SkyBlue — Tapiales (Buenos Aires)",
+      altText: "Showroom mayorista en Curapaligüe 1428 Tapiales con estanterías y exhibidores de calzado europeo",
+      metaDescription: "Visitá nuestro showroom físico en Tapiales (La Matanza). Muestrarios completos, café para comerciantes y atención personalizada con cita previa.",
+      keywords: ["showroom calzado Tapiales", "distribuidora de zapatos La Matanza", "venta mayorista calzado Buenos Aires", "visita showroom calzado"]
+    },
+    showroom2: {
+      path: "/images/showroom/showroom-2.jpg",
+      title: "Sector de Asesoramiento Comercial y Armado de Módulos",
+      altText: "Mesas de trabajo y atención personalizada para dueños de zapaterías armando sus pedidos",
+      metaDescription: "Comprobá la calidad de los cueros, herrajes y suelas en persona. Asesoramiento 1 a 1 con Juliana, Jesica y Marcelino para armar tu stock.",
+      keywords: ["atencion personalizada zapaterias", "armado de curvas calzado", "compra mayorista presencial calzado"]
+    },
+    showroom3: {
+      path: "/images/showroom/showroom-3.jpg",
+      title: "Exhibición de Colecciones de Temporada en Showroom",
+      altText: "Detalle de calzado de temporada exhibido bajo iluminación profesional en el showroom de SkyBlue",
+      metaDescription: "Todas las líneas de Xti, Refresh, Petite Jolie y Giulia Domna en exhibición permanente para comerciantes mayoristas.",
+      keywords: ["coleccion calzado temporada mayorista", "muestrarios de calzado Argentina", "exhibicion calzado importado"]
+    }
+  },
+  events: {
+    efica: {
+      path: "/images/events/efica.jpg",
+      title: "Stand de SkyBlue en EFICA — Exposición de Fabricantes de la Industria del Calzado",
+      altText: "Stand oficial de SkyBlue Calzado Mayorista en el Centro Costa Salguero, CABA",
+      metaDescription: "Participación oficial de SkyBlue en EFICA Costa Salguero. Presentación exclusiva de las colecciones europeas y brasileñas para el canal mayorista.",
+      keywords: ["EFICA Costa Salguero calzado", "feria de calzado Buenos Aires", "SkyBlue en EFICA", "exposicion mayorista calzado"]
+    },
+    exical: {
+      path: "/images/events/exical.jpg",
+      title: "Stand de SkyBlue en EXICAL — Exposición de Calzado de la Región Centro",
+      altText: "Stand de exhibición de calzado SkyBlue en el Complejo Ferial Córdoba",
+      metaDescription: "Presencia federal de SkyBlue en EXICAL Córdoba. Abastecemos a zapaterías y comercios de Córdoba, Santa Fe, Cuyo y el norte argentino.",
+      keywords: ["EXICAL Cordoba calzado", "feria calzado region centro", "SkyBlue EXICAL", "zapaterias Cordoba mayorista"]
+    },
+    tucumanVideo: {
+      path: "/videos/events/tucuman.mp4",
+      title: "Gira Comercial SkyBlue en Tucumán y el Norte Argentino",
+      altText: "Video de la gira comercial de SkyBlue acercando colecciones y muestras a zapaterías del NOA",
+      metaDescription: "Llevamos nuestras colecciones de calzado oficial a los principales centros comerciales del interior del país con logística bonificada.",
+      keywords: ["gira comercial calzado Tucuman", "calzado mayorista NOA", "distribuidor calzado interior Argentina"]
+    }
+  },
+  videos: {
+    xtiCampaign: {
+      path: "/videos/brands/xti.mp4",
+      title: "Fashion Film Internacional María Becerra × XTI SS26",
+      altText: "Spot publicitario de alta definición de María Becerra luciendo calzado Xti en pasarela",
+      metaDescription: "Video promocional oficial de Xti España con María Becerra. Material en 4K disponible para descargar en el Drive VIP de clientes mayoristas.",
+      keywords: ["video Maria Becerra Xti", "spot publicitario calzado", "reels calzado mayorista"]
+    },
+    refreshCampaign: {
+      path: "/videos/brands/refresh.mp4",
+      title: "Campaña Oficial Refresh con Mar Lucas",
+      altText: "Spot de moda casual y sneakers urbanos de la marca europea Refresh",
+      metaDescription: "Video de campaña de Refresh España con Mar Lucas. Descargá el material audiovisual oficial para publicar en tus historias de Instagram.",
+      keywords: ["video Refresh Mar Lucas", "campaña calzado casual", "video zapatillas urbanas"]
+    },
+    petiteJolieCampaign: {
+      path: "/videos/brands/petite-jolie.mp4",
+      title: "Spot Petite Jolie — El Poder del J-Lastic® Impermeable",
+      altText: "Video demostrativo de bolsos y calzado Petite Jolie destacando su resistencia al agua y aroma",
+      metaDescription: "Video de producto de Petite Jolie demostrando la flexibilidad, impermeabilidad y brillo del material exclusivo J-Lastic.",
+      keywords: ["video Petite Jolie", "demostracion Jlastic impermeable", "reels carteras por mayor"]
+    },
+    giuliaDomnaCampaign: {
+      path: "/videos/brands/giulia-domna.mp4",
+      title: "Spot Giulia Domna — Cuero Legítimo de Brasil",
+      altText: "Video de confección artesanal y calzado de cuero de alta gama Giulia Domna",
+      metaDescription: "Spot de calzado brasileño en cuero genuino con terminaciones artesanales para boutiques de calzado fino.",
+      keywords: ["video Giulia Domna", "calzado cuero Brasil mayorista", "botas de cuero por mayor"]
+    }
+  }
+};
