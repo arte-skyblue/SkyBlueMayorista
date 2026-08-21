@@ -17,7 +17,6 @@ import BlogSection from './components/BlogSection';
 import WholesaleModal from './components/WholesaleModal';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Footer from './components/Footer';
-import MobileBottomDock from './components/reactbits/MobileBottomDock';
 import { ADVISORS, SEO_PAGES } from './data/mockData';
 
 export default function App() {
@@ -190,14 +189,6 @@ export default function App() {
         onOpenModal={handleOpenModal} 
         onOpenAdvisorModal={handleOpenAdvisorModal} 
         setActiveTab={setActiveTab} 
-      />
-
-      {/* Mobile Bottom Dock */}
-      <MobileBottomDock
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-        onOpenModal={handleOpenModal}
-        onOpenAdvisorModal={handleOpenAdvisorModal}
       />
 
       {/* Floating WhatsApp */}
