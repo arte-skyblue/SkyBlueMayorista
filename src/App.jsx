@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import SeoHeaderBlock from './components/SeoHeaderBlock';
 import HeroSlider from './components/HeroSlider';
-import BrandMarquee from './components/reactbits/BrandMarquee';
-import CommercialConditions from './components/CommercialConditions';
 import BrandShowcase from './components/BrandShowcase';
+import CommercialConditions from './components/CommercialConditions';
 import CategoryCatalog from './components/CategoryCatalog';
-import BenefitsSection from './components/BenefitsSection';
 import ProfitCalculator from './components/ProfitCalculator';
+import BenefitsSection from './components/BenefitsSection';
 import ReelsSection from './components/ReelsSection';
-import AdvisorsHub from './components/AdvisorsHub';
+import ReviewsSection from './components/ReviewsSection';
 import ShowroomSection from './components/ShowroomSection';
 import EventsSection from './components/EventsSection';
-import BlogSection from './components/BlogSection';
+import AdvisorsHub from './components/AdvisorsHub';
 import FaqSection from './components/FaqSection';
+import BlogSection from './components/BlogSection';
 import WholesaleModal from './components/WholesaleModal';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Footer from './components/Footer';
@@ -42,9 +42,9 @@ export default function App() {
   const currentSeoPage = SEO_PAGES[activeTab] || SEO_PAGES.inicio;
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground font-['SF_Pro_Display',-apple-system,BlinkMacSystemFont,sans-serif] selection:bg-primary selection:text-primary-foreground">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden flex flex-col bg-background text-foreground font-['SF_Pro_Display',-apple-system,BlinkMacSystemFont,sans-serif] selection:bg-primary selection:text-primary-foreground relative">
       
-      {/* 1. Top Navbar with Tabs & SVG Logo */}
+      {/* 1. Navbar */}
       <Navbar 
         activeTab={activeTab}
         setActiveTab={setActiveTab}
@@ -52,16 +52,14 @@ export default function App() {
         onOpenAdvisorModal={handleOpenAdvisorModal} 
       />
 
-      {/* 2. SEO Header Block: Unique H1, Search Intent, TL;DR and Schema */}
+      {/* 2. SEO Header Block */}
       <SeoHeaderBlock 
         pageData={currentSeoPage} 
         activeTab={activeTab} 
       />
 
-      {/* Main Tab Content */}
+      {/* Main Content */}
       <main className="flex-grow">
-        
-        {/* Tab 1: Inicio (Full Funnel & Hub Overview) */}
         {activeTab === 'inicio' && (
           <>
             <HeroSlider 
@@ -69,54 +67,44 @@ export default function App() {
               onOpenModal={handleOpenModal} 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
-
-            <BrandMarquee />
-
             <BrandShowcase 
               onOpenModal={handleOpenModal} 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
-
-            <CategoryCatalog 
-              onOpenModal={handleOpenModal} 
-              onOpenAdvisorModal={handleOpenAdvisorModal} 
-            />
-
-            <ProfitCalculator 
-              onOpenAdvisorModal={handleOpenAdvisorModal} 
-            />
-
-            <BenefitsSection 
-              onOpenModal={handleOpenModal} 
-              onOpenAdvisorModal={handleOpenAdvisorModal} 
-            />
-
-            <ReelsSection 
-              onOpenAdvisorModal={handleOpenAdvisorModal} 
-            />
-
-            <ShowroomSection 
-              onOpenAdvisorModal={handleOpenAdvisorModal} 
-            />
-
-            <EventsSection 
-              onOpenModal={handleOpenModal} 
-            />
-
             <CommercialConditions 
               onOpenModal={handleOpenModal} 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
-
+            <CategoryCatalog 
+              onOpenModal={handleOpenModal} 
+              onOpenAdvisorModal={handleOpenAdvisorModal} 
+            />
+            <ProfitCalculator 
+              onOpenAdvisorModal={handleOpenAdvisorModal} 
+            />
+            <BenefitsSection 
+              onOpenModal={handleOpenModal} 
+              onOpenAdvisorModal={handleOpenAdvisorModal} 
+            />
+            <ReelsSection 
+              onOpenAdvisorModal={handleOpenAdvisorModal} 
+            />
+            <ReviewsSection 
+              onOpenAdvisorModal={handleOpenAdvisorModal} 
+            />
+            <ShowroomSection 
+              onOpenAdvisorModal={handleOpenAdvisorModal} 
+            />
+            <EventsSection 
+              onOpenModal={handleOpenModal} 
+            />
             <AdvisorsHub />
-
             <FaqSection 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
           </>
         )}
 
-        {/* Tab 2: Marcas Oficiales */}
         {activeTab === 'marcas' && (
           <div className="space-y-12 py-8">
             <BrandShowcase 
@@ -131,7 +119,6 @@ export default function App() {
           </div>
         )}
 
-        {/* Tab 3: Catálogo Módulos B2B */}
         {activeTab === 'catalogo' && (
           <div className="space-y-12 py-8">
             <CategoryCatalog 
@@ -148,7 +135,6 @@ export default function App() {
           </div>
         )}
 
-        {/* Tab 4: Beneficios & Rentabilidad */}
         {activeTab === 'beneficios' && (
           <div className="space-y-12 py-8">
             <BenefitsSection 
@@ -165,7 +151,6 @@ export default function App() {
           </div>
         )}
 
-        {/* Tab 5: Showroom Tapiales & Locales */}
         {activeTab === 'showroom' && (
           <div className="space-y-12 py-8">
             <ShowroomSection 
@@ -178,7 +163,6 @@ export default function App() {
           </div>
         )}
 
-        {/* Tab 6: Preguntas Frecuentes & Asesores */}
         {activeTab === 'faq' && (
           <div className="space-y-12 py-8">
             <FaqSection 
@@ -192,33 +176,30 @@ export default function App() {
           </div>
         )}
 
-        {/* Tab 7: Blog B2B */}
         {activeTab === 'blog' && (
           <div className="space-y-12 py-8">
             <BlogSection />
             <AdvisorsHub />
           </div>
         )}
-
       </main>
 
       {/* Footer */}
       <Footer 
         onOpenModal={handleOpenModal} 
         onOpenAdvisorModal={handleOpenAdvisorModal} 
-        setActiveTab={setActiveTab}
+        setActiveTab={setActiveTab} 
       />
 
-      {/* Floating WhatsApp Widget */}
+      {/* Floating WhatsApp */}
       <FloatingWhatsApp />
 
-      {/* Wholesale Modal */}
+      {/* Wholesale Registration Modal */}
       <WholesaleModal 
         isOpen={modalState.isOpen} 
         onClose={handleCloseModal} 
         modalType={modalState.type} 
       />
-
     </div>
   );
 }

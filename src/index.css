@@ -330,3 +330,44 @@
   font-weight: 700;
 }
 
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes marquee-vertical {
+  0% { transform: translateY(0%); }
+  to { transform: translateY(-50%); }
+}
+
+@keyframes marquee-vertical-reverse {
+  0% { transform: translateY(-50%); }
+  to { transform: translateY(0%); }
+}
+
+.animate-marquee {
+  width: max-content;
+  animation: 25s linear infinite marquee;
+  display: flex;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-vertical {
+  animation: 32s linear infinite marquee-vertical;
+}
+
+.animate-marquee-vertical-slow {
+  animation: 40s linear infinite marquee-vertical;
+}
+
+.animate-marquee-vertical-reverse {
+  animation: 36s linear infinite marquee-vertical-reverse;
+}
+
+.pause-hover:hover {
+  animation-play-state: paused;
+}
+
