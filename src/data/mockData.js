@@ -177,7 +177,7 @@ export const BANNERS = [
     subtitle: "Calzado urbano europeo con tracción de venta masiva. Módulos de 8 y 12 pares con curva comercial directa de fábrica.",
     cta: "Ver Módulos Xti",
     link: "marcas",
-    image: "/images/banners/hero-xti.jpg",
+    image: "/images/banners/banner1-xti.png",
     accent: "#E04C32"
   },
   {
@@ -188,7 +188,7 @@ export const BANNERS = [
     subtitle: "Zapatillas ultralivianas y sandalias casual de máxima rotación en mostrador. Margen neto directo de reventa x2.2 a x2.5.",
     cta: "Ver Módulos Refresh",
     link: "marcas",
-    image: "/images/banners/hero-refresh.jpg",
+    image: "/images/banners/banner2-refresh.png",
     accent: "#F59E0B"
   },
   {
@@ -199,18 +199,18 @@ export const BANNERS = [
     subtitle: "Bolsos, carteras y calzado impermeable con su icónico aroma dulce. Compra por impulso asegurada en tu local.",
     cta: "Ver Módulos Petite Jolie",
     link: "marcas",
-    image: "/images/banners/hero-petite-jolie.jpg",
+    image: "/images/banners/banner3-petitejolie.png",
     accent: "#EC4899"
   },
   {
     id: 4,
     brand: "SkyBlue",
-    tag: "VENTA DIRECTA CON CUIT",
-    title: "RENTABILIDAD NETA +120%",
-    subtitle: "10% OFF extra por transferencia, Factura A o B oficial y Despacho bonificado en 24 a 48 hs a todo el país.",
-    cta: "Simular Mi Ganancia",
-    link: "beneficios",
-    image: "/images/banners/hero-catalogos.jpg",
+    tag: "SHOWROOM MAYORISTA B2B",
+    title: "SHOWROOM & ATENCIÓN DIRECTA",
+    subtitle: "Atención personalizada en Curapaligüe 1428 (1er Piso), Tapiales. Muestrarios físicos completos y café para comerciantes.",
+    cta: "Visitar Showroom",
+    link: "showroom",
+    image: "/images/banners/banner4-showroom.png",
     accent: "#10B981"
   }
 ];
@@ -699,28 +699,28 @@ export const REVIEWS = [{id:1,name:`Valeria Gómez`,business:`Zapatería 'Valen 
 export const ASSET_SEO_METADATA = {
   banners: {
     heroXti: {
-      path: "/images/banners/hero-xti.jpg",
+      path: "/images/banners/banner1-xti.png",
       title: "Campaña Oficial Xti España con María Becerra — Calzado Mayorista",
       altText: "María Becerra luciendo calzado urbano Xti España para venta mayorista por curva en Argentina",
       metaDescription: "Distribuidor oficial de calzado Xti en Argentina. Módulos cerrados de 8 y 12 pares de la campaña oficial con María Becerra. Venta con CUIT y Factura A/B.",
       keywords: ["Xti Argentina", "calzado Maria Becerra", "calzado mayorista España", "zapaterias modulos Xti", "distribuidora de zapatos CUIT"]
     },
     heroRefresh: {
-      path: "/images/banners/hero-refresh.jpg",
+      path: "/images/banners/banner2-refresh.png",
       title: "Campaña Refresh con Mar Lucas — Sneakers y Sandalias Mayoristas",
       altText: "Mar Lucas presentando la colección de zapatillas urbanas y sandalias Refresh para zapaterías",
       metaDescription: "Sneakers ultralivianos y sandalias europeas Refresh por mayor. Margen de reventa del 120% (x2.2 a x2.5). Despacho en 24/48 hs a todo el país.",
       keywords: ["Refresh calzado mayorista", "sneakers por mayor Argentina", "sandalias europeas por curva", "zapatillas por modulo"]
     },
     heroPetiteJolie: {
-      path: "/images/banners/hero-petite-jolie.jpg",
+      path: "/images/banners/banner3-petitejolie.png",
       title: "Petite Jolie Brasil — Bolsos y Calzado en J-Lastic® Impermeable",
       altText: "Bolsos, carteras y sandalias Petite Jolie en material impermeable J-Lastic aromático para reventa",
       metaDescription: "Mayorista oficial Petite Jolie en Argentina. Bolsos y carteras impermeables con fragancia dulce icónica. Compra por impulso asegurada en mostrador.",
       keywords: ["Petite Jolie mayorista", "bolsos Jlastic por mayor", "carteras Petite Jolie Argentina", "marroquineria importada Brasil"]
     },
     heroCatalogos: {
-      path: "/images/banners/hero-catalogos.jpg",
+      path: "/images/banners/banner4-showroom.png",
       title: "Catálogo Mayorista B2B SkyBlue — Módulos Cerrados de Fábrica",
       altText: "Cajas cerradas de fábrica y módulos surtidos de 8 y 12 pares de calzado importado oficial",
       metaDescription: "Catálogo oficial de calzado mayorista en Argentina. Curvas ideales de fábrica (75% talles 37 y 38 sin clavos de stock). 10% OFF extra por transferencia.",
