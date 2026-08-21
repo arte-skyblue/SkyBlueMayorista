@@ -20,18 +20,48 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
 
   const selectedBrand = BRANDS.find((b) => b.id === selectedBrandId) || BRANDS[0];
 
+  // Brand Dynamic Atmospheric Ambience
+  const brandThemes = {
+    'xti': {
+      glow: 'from-red-600/20 via-rose-500/10 to-transparent',
+      accent: 'border-red-500/40 text-red-400',
+      badgeBg: 'bg-red-600/20 text-red-400 border-red-500/30',
+      tabActive: 'border-red-500/60 shadow-red-500/25 bg-red-600/10'
+    },
+    'refresh': {
+      glow: 'from-amber-600/20 via-orange-500/10 to-transparent',
+      accent: 'border-amber-500/40 text-amber-400',
+      badgeBg: 'bg-amber-600/20 text-amber-400 border-amber-500/30',
+      tabActive: 'border-amber-500/60 shadow-amber-500/25 bg-amber-600/10'
+    },
+    'petite-jolie': {
+      glow: 'from-pink-600/20 via-purple-500/10 to-transparent',
+      accent: 'border-pink-500/40 text-pink-400',
+      badgeBg: 'bg-pink-600/20 text-pink-400 border-pink-500/30',
+      tabActive: 'border-pink-500/60 shadow-pink-500/25 bg-pink-600/10'
+    },
+    'giulia-domna': {
+      glow: 'from-sky-600/20 via-blue-500/10 to-transparent',
+      accent: 'border-sky-500/40 text-sky-300',
+      badgeBg: 'bg-sky-600/20 text-sky-300 border-sky-500/30',
+      tabActive: 'border-sky-500/60 shadow-sky-500/25 bg-sky-600/10'
+    }
+  };
+
+  const currentTheme = brandThemes[selectedBrand.id] || brandThemes.xti;
+
   return (
-    <section id="marcas" className="py-16 sm:py-24 2xl:py-28 bg-neutral-900 text-white relative overflow-hidden">
+    <section id="marcas" className="py-16 sm:py-24 2xl:py-28 bg-neutral-950 text-white relative overflow-hidden">
       
-      {/* Background Glows */}
-      <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-10 left-0 w-[450px] h-[450px] bg-neutral-800/40 rounded-full blur-[120px] pointer-events-none" />
+      {/* Dynamic Atmospheric Ambience Glow */}
+      <div className={`absolute top-1/4 right-0 w-[600px] h-[600px] bg-gradient-to-br ${currentTheme.glow} rounded-full blur-[150px] pointer-events-none transition-all duration-700`} />
+      <div className="absolute bottom-10 left-0 w-[450px] h-[450px] bg-neutral-900/60 rounded-full blur-[130px] pointer-events-none" />
 
       <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 relative z-10">
         
         {/* Header */}
         <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-10 sm:mb-14 2xl:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-neutral-300 apple-kicker text-[11px]">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-neutral-300 apple-kicker text-[11px] shadow-sm">
             <Award className="w-3.5 h-3.5 text-primary" />
             <span>Marcas Internacionales Oficiales</span>
           </div>
@@ -48,7 +78,7 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
 
         {/* Brand Selector Tabs with Official SVG Logos */}
         <div className="flex justify-center mb-8 sm:mb-12 overflow-x-auto pb-3 px-2 scrollbar-none">
-          <div className="inline-flex items-center p-1.5 sm:p-2.5 rounded-2xl bg-neutral-950/90 border border-neutral-800 backdrop-blur-xl gap-1.5 sm:gap-4 shadow-2xl shrink-0">
+          <div className="inline-flex items-center p-1.5 sm:p-2.5 rounded-2xl bg-neutral-900/90 border border-neutral-800 backdrop-blur-xl gap-1.5 sm:gap-4 shadow-2xl shrink-0">
             {BRANDS.map((brand) => {
               const isSelected = selectedBrandId === brand.id;
               const isGiulia = brand.id === 'giulia-domna';
@@ -57,7 +87,7 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
                 <button
                   key={brand.id}
                   onClick={() => setSelectedBrandId(brand.id)}
-                  className={`group relative px-3 sm:px-7 py-2.5 sm:py-4 rounded-xl transition-all flex items-center justify-center shrink-0 z-10 ${
+                  className={`group relative px-4 sm:px-8 py-3 sm:py-4 rounded-xl transition-all flex items-center justify-center shrink-0 z-10 ${
                     isSelected
                       ? 'bg-white/10 shadow-lg border border-white/20'
                       : 'bg-transparent hover:bg-white/5'
@@ -67,20 +97,18 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
                   {isSelected && (
                     <motion.div
                       layoutId="active-brand-tab"
-                      className={`absolute inset-0 bg-white/10 rounded-xl border shadow-lg -z-10 ${
-                        isGiulia ? 'border-sky-400/60 shadow-sky-400/25' : 'border-primary/50 shadow-primary/20'
-                      }`}
+                      className={`absolute inset-0 rounded-xl border shadow-lg -z-10 ${currentTheme.tabActive}`}
                       transition={{ type: 'spring', stiffness: 450, damping: 35 }}
                     />
                   )}
                   <img
                     src={brand.logoSvg}
                     alt={brand.name}
-                    className={`h-7 sm:h-11 2xl:h-12 w-auto max-w-[105px] sm:max-w-[190px] object-contain transition-all duration-300 ${
+                    className={`h-8 sm:h-11 2xl:h-12 w-auto max-w-[110px] sm:max-w-[190px] object-contain transition-all duration-300 ${
                       isSelected
                         ? isGiulia
                           ? '[filter:brightness(0)_saturate(100%)_invert(75%)_sepia(45%)_saturate(1200%)_hue-rotate(160deg)_brightness(105%)_contrast(95%)] opacity-100 scale-105 drop-shadow-[0_2px_12px_rgba(56,189,248,0.4)]'
-                          : 'filter-none opacity-100 scale-105 drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]'
+                          : 'filter-none opacity-100 scale-105 drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]'
                         : 'brightness-0 invert opacity-75 group-hover:filter-none group-hover:opacity-100 group-hover:scale-105'
                     }`}
                   />
@@ -90,7 +118,7 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
           </div>
         </div>
 
-        {/* Brand Detail Showcase Card with Video Support */}
+        {/* Brand Detail Showcase Card with Video Support & 3D Glare Tilt */}
         <AnimatePresence mode="wait">
           <motion.div
             key={selectedBrand.id}
@@ -98,14 +126,14 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-            className="rounded-3xl bg-neutral-950/80 border border-neutral-800 backdrop-blur-xl overflow-hidden shadow-2xl mb-12 sm:mb-14"
+            className="rounded-3xl bg-neutral-900/80 border border-neutral-800 backdrop-blur-2xl overflow-hidden shadow-2xl mb-12 sm:mb-14"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 p-5 sm:p-10 2xl:p-12 items-center">
               
-              {/* Left Column: Video / Image with React Bits TiltedCard (3D Perspective) */}
+              {/* Left Column: Video / Image with React Bits TiltedCard (3D Perspective & Glare) */}
               <div className="lg:col-span-5">
-                <TiltedCard maxTilt={8} scale={1.02} className="rounded-2xl overflow-hidden shadow-2xl">
-                  <div className="relative aspect-[3/4] border border-neutral-700 bg-neutral-950 rounded-2xl overflow-hidden">
+                <TiltedCard maxTilt={8} scale={1.02} glare={true} className="rounded-2xl overflow-hidden shadow-2xl">
+                  <div className="relative aspect-[3/4] border border-neutral-700 bg-neutral-950 rounded-2xl overflow-hidden shadow-inner">
                     {selectedBrand.video ? (
                       <video
                         key={selectedBrand.id}
@@ -183,7 +211,7 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
               <div className="lg:col-span-7 space-y-6">
                 <div>
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full bg-primary/20 text-red-400 border border-primary/30">
+                    <span className={`text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full border ${currentTheme.badgeBg}`}>
                       {selectedBrand.badge}
                     </span>
                     <span className="text-xs text-neutral-400 font-sf-medium">
@@ -209,7 +237,7 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
                     {selectedBrand.categories.map((cat, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 rounded-lg bg-neutral-900 border border-neutral-800 text-xs font-medium text-neutral-200"
+                        className="px-3.5 py-1 rounded-xl bg-neutral-950 border border-neutral-800 text-xs font-medium text-neutral-200 shadow-xs"
                       >
                         {cat}
                       </span>
@@ -221,7 +249,7 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
                 <div className="space-y-3 pt-2">
                   {selectedBrand.uspList.map((usp, idx) => (
                     <div key={idx} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-400 shrink-0 mt-0.5">
+                      <div className="w-5 h-5 rounded-full bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-400 shrink-0 mt-0.5 shadow-sm">
                         <Check className="w-3.5 h-3.5" />
                       </div>
                       <span className="text-xs sm:text-sm text-neutral-200 font-sf-regular">
@@ -242,8 +270,8 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
                   </button>
 
                   <button
-                    onClick={() => onOpenAdvisorModal(ADVISORS[0])}
-                    className="px-5 py-3.5 rounded-xl bg-neutral-900 hover:bg-neutral-800 text-neutral-200 font-sf-medium text-xs sm:text-sm border border-neutral-800 hover:border-neutral-700 flex items-center gap-2 transition-colors"
+                    onClick={() => onOpenAdvisorModal ? onOpenAdvisorModal(ADVISORS[0]) : null}
+                    className="px-5 py-3.5 rounded-xl bg-neutral-900 hover:bg-neutral-800 text-neutral-200 font-sf-medium text-xs sm:text-sm border border-neutral-800 hover:border-neutral-700 flex items-center gap-2 transition-colors hover:scale-105"
                   >
                     <MessageCircle className="w-4 h-4 text-emerald-400" />
                     <span>Consultar Disponibilidad</span>

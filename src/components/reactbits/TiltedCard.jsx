@@ -4,12 +4,14 @@ import { motion, useSpring } from 'framer-motion';
 export default function TiltedCard({
   children,
   className = '',
-  maxTilt = 12,
+  maxTilt = 10,
   scale = 1.02,
+  glare = true,
 }) {
   const ref = useRef(null);
+  const [glarePos, setGlarePos] = useState({ x: 50, y: 50, opacity: 0 });
 
-  const springConfig = { damping: 20, stiffness: 300 };
+  const springConfig = { damping: 25, stiffness: 350 };
   const rotateX = useSpring(0, springConfig);
   const rotateY = useSpring(0, springConfig);
 
@@ -26,11 +28,22 @@ export default function TiltedCard({
 
     rotateX.set(-yPct * maxTilt);
     rotateY.set(xPct * maxTilt);
+
+    if (glare) {
+      setGlarePos({
+        x: (mouseX / width) * 100,
+        y: (mouseY / height) * 100,
+        opacity: 0.25,
+      });
+    }
   };
 
   const handleMouseLeave = () => {
     rotateX.set(0);
     rotateY.set(0);
+    if (glare) {
+      setGlarePos((prev) => ({ ...prev, opacity: 0 }));
+    }
   };
 
   return (
@@ -42,12 +55,23 @@ export default function TiltedCard({
         rotateX,
         rotateY,
         transformStyle: 'preserve-3d',
+        perspective: 1000,
       }}
       whileHover={{ scale }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 0.25, ease: 'easeOut' }}
       className={`relative will-change-transform ${className}`}
     >
       {children}
+
+      {glare && (
+        <div
+          className="pointer-events-none absolute inset-0 rounded-3xl transition-opacity duration-500 ease-out z-20"
+          style={{
+            opacity: glarePos.opacity,
+            background: `radial-gradient(circle at ${glarePos.x}% ${glarePos.y}%, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 60%)`,
+          }}
+        />
+      )}
     </motion.div>
   );
 }
