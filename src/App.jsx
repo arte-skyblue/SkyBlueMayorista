@@ -3,9 +3,9 @@ import Navbar from './components/Navbar';
 import SeoHeaderBlock from './components/SeoHeaderBlock';
 import HeroSlider from './components/HeroSlider';
 import BrandShowcase from './components/BrandShowcase';
-import CommercialConditions from './components/CommercialConditions';
 import CategoryCatalog from './components/CategoryCatalog';
 import ProfitCalculator from './components/ProfitCalculator';
+import CommercialConditions from './components/CommercialConditions';
 import BenefitsSection from './components/BenefitsSection';
 import ReelsSection from './components/ReelsSection';
 import ReviewsSection from './components/ReviewsSection';
@@ -35,70 +35,88 @@ export default function App() {
   };
 
   const handleOpenAdvisorModal = (advisor = ADVISORS[0]) => {
-    const message = encodeURIComponent(advisor.defaultMessage);
-    window.open(`https://wa.me/${advisor.cleanPhone}?text=${message}`, '_blank');
+    setModalState({ isOpen: true, type: 'asesor', advisor });
   };
 
-  const currentSeoPage = SEO_PAGES[activeTab] || SEO_PAGES.inicio;
+  const currentPageData = SEO_PAGES[activeTab] || SEO_PAGES.inicio;
 
   return (
-    <div className="min-h-screen w-full max-w-full overflow-x-hidden flex flex-col bg-background text-foreground font-['SF_Pro_Display',-apple-system,BlinkMacSystemFont,sans-serif] selection:bg-primary selection:text-primary-foreground relative">
-      
-      {/* 1. Navbar */}
+    <div className="min-h-screen bg-neutral-950 text-white flex flex-col font-sans selection:bg-primary selection:text-white">
+      {/* Dynamic SEO Meta & Schema Block */}
+      <SeoHeaderBlock pageData={currentPageData} activeTab={activeTab} />
+
+      {/* Floating Dynamic Glass Capsule Navbar with Morphing Animated Toggle */}
       <Navbar 
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-        onOpenModal={handleOpenModal} 
-        onOpenAdvisorModal={handleOpenAdvisorModal} 
-      />
-
-      {/* 2. SEO Header Block */}
-      <SeoHeaderBlock 
-        pageData={currentSeoPage} 
         activeTab={activeTab} 
+        setActiveTab={setActiveTab} 
+        onOpenModal={handleOpenModal}
+        onOpenAdvisorModal={handleOpenAdvisorModal}
       />
 
-      {/* Main Content */}
+      {/* Main Content Area with High Conversion B2B Funnel Order */}
       <main className="flex-grow">
         {activeTab === 'inicio' && (
           <>
+            {/* 1. Hero Slider: Massive Hook + 3 Glass Pills */}
             <HeroSlider 
-              setActiveTab={setActiveTab}
+              setActiveTab={setActiveTab} 
               onOpenModal={handleOpenModal} 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
+
+            {/* 2. Brand Showcase: Authority & Campaign Video 3D Glare */}
             <BrandShowcase 
               onOpenModal={handleOpenModal} 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
-            <CommercialConditions 
-              onOpenModal={handleOpenModal} 
-              onOpenAdvisorModal={handleOpenAdvisorModal} 
-            />
+
+            {/* 3. Category Catalog: Product Showcase in 45° with Margin Stickers */}
             <CategoryCatalog 
               onOpenModal={handleOpenModal} 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
+
+            {/* 4. Profit Calculator: Financial Simulator with NumberTicker & Confetti */}
             <ProfitCalculator 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
+
+            {/* 5. Commercial Conditions & Factory Box Curve Infographic */}
+            <CommercialConditions 
+              onOpenModal={handleOpenModal} 
+              onOpenAdvisorModal={handleOpenAdvisorModal} 
+            />
+
+            {/* 6. Benefits Section: B2B Exclusive Perks */}
             <BenefitsSection 
               onOpenModal={handleOpenModal} 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
+
+            {/* 7. Social Content: Dual Track 4K Video Marquee */}
             <ReelsSection 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
+
+            {/* 8. Social Proof: 3-Column Vertical Marquee with Verified CUITs */}
             <ReviewsSection 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
+
+            {/* 9. Showroom & Physical Trust: Tapiales HQ Bento */}
             <ShowroomSection 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
+
+            {/* 10. Industry Exhibitions & Events: EFICA, EXICAL & Giras */}
             <EventsSection 
               onOpenModal={handleOpenModal} 
             />
+
+            {/* 11. Human Commercial Advisors: Juliana, Jesica & Marcelino */}
             <AdvisorsHub />
+
+            {/* 12. Quick FAQ Accordion with Live Search */}
             <FaqSection 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />

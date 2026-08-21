@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { 
   Building2, 
   Layers, 
@@ -10,13 +11,16 @@ import {
   ExternalLink, 
   Ruler, 
   X, 
-  ShieldCheck 
+  ShieldCheck,
+  PackageCheck,
+  Flame
 } from 'lucide-react';
 import { COMPANY_INFO, ADVISORS } from '../data/mockData';
 import SpotlightCard from './reactbits/SpotlightCard';
 
 export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }) {
   const [showSizeGuideModal, setShowSizeGuideModal] = useState(false);
+  const [activeCurveTab, setActiveCurveTab] = useState('8pares');
 
   const conditions = [
     {
@@ -32,7 +36,7 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
       icon: Layers,
       tag: "SURTIDO DE FÁBRICA",
       title: "Módulos de 8 y 12 Pares",
-      description: "Curvas surtidas de manera ideal directo de fábrica con máxima concentración en talles centrales (37 y 38 en dama) para rápida rotación de mostrador y cero clavos de stock.",
+      description: "Curvas surtidas de manera ideal directo de fábrica con 75% de concentración en talles centrales (37 y 38 en dama) para rápida rotación de mostrador y cero clavos de stock.",
       highlight: "Curvas balanceadas de alta rotación",
       badgeColor: "bg-neutral-900 text-white border-neutral-700",
       spotlight: "rgba(224, 76, 50, 0.16)"
@@ -57,6 +61,26 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
     }
   ];
 
+  // Distribution data for factory curve infographic
+  const curve8 = [
+    { size: '36', pairs: 1, percent: 12.5, hot: false },
+    { size: '37', pairs: 2, percent: 25.0, hot: true },
+    { size: '38', pairs: 2, percent: 25.0, hot: true },
+    { size: '39', pairs: 2, percent: 25.0, hot: true },
+    { size: '40', pairs: 1, percent: 12.5, hot: false }
+  ];
+
+  const curve12 = [
+    { size: '35', pairs: 1, percent: 8.3, hot: false },
+    { size: '36', pairs: 2, percent: 16.7, hot: false },
+    { size: '37', pairs: 3, percent: 25.0, hot: true },
+    { size: '38', pairs: 3, percent: 25.0, hot: true },
+    { size: '39', pairs: 2, percent: 16.7, hot: true },
+    { size: '40', pairs: 1, percent: 8.3, hot: false }
+  ];
+
+  const currentCurve = activeCurveTab === '8pares' ? curve8 : curve12;
+
   return (
     <section id="condiciones" className="py-16 sm:py-20 2xl:py-28 bg-neutral-950 text-white border-b border-neutral-800 relative">
       <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12">
@@ -74,7 +98,7 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
           </h2>
 
           <p className="font-sf-medium text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            En <span className="font-bold text-white">SkyBlue Calzado Mayorista</span> establecemos reglas comerciales claras: venta por módulos surtidos de fábrica, precios netos protegidos y logística bonificada.
+            En <span className="font-bold text-white">SkyBlue Calzado Mayorista</span> establecemos reglas claras: venta por módulos surtidos de fábrica, precios netos protegidos y logística bonificada.
           </p>
         </div>
 
@@ -118,57 +142,102 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
           })}
         </div>
 
-        {/* Curvas de Fábrica Box & Guía de Talles Modal Trigger */}
-        <div className="mt-10 rounded-3xl bg-neutral-900/90 border border-neutral-800 p-6 sm:p-8 2xl:p-10 shadow-xl">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+        {/* Interactive Factory Box Curve Infographic */}
+        <div className="mt-12 rounded-3xl bg-neutral-900/90 border border-neutral-800 p-6 sm:p-8 2xl:p-10 shadow-2xl">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 pb-6 border-b border-neutral-800">
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-primary font-sf-bold text-xs uppercase tracking-wider">
-                <ShieldCheck className="w-4 h-4" />
-                <span>Distribución Oficial de Fábrica</span>
+                <PackageCheck className="w-4 h-4" />
+                <span>Infografía de Caja Cerrada de Fábrica</span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-sf-bold text-white">
-                Curvas Ideales de Numeración (8 y 12 Pares)
+              <h3 className="text-xl sm:text-3xl font-sf-bold text-white">
+                Distribución Ideal de Talles (Cero Clavos de Stock)
               </h3>
               <p className="text-xs sm:text-sm text-neutral-300 max-w-2xl font-sf-regular">
-                Cada caja cerrada viene configurada con las proporciones exactas de venta masiva de fábrica.
+                El 75% del módulo viene concentrado en los talles más vendidos (37, 38 y 39), garantizando rotación total.
               </p>
             </div>
 
-            <button
-              onClick={() => setShowSizeGuideModal(true)}
-              className="px-5 py-3 rounded-2xl bg-neutral-950 hover:bg-neutral-800 text-neutral-200 font-sf-bold text-xs sm:text-sm border border-neutral-700 flex items-center gap-2 shadow-md hover:scale-105 transition-all"
-            >
-              <Ruler className="w-4 h-4 text-primary" />
-              <span>Ver Guía de Talles Oficial</span>
-            </button>
-          </div>
-
-          {/* Curvas Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 pt-6 border-t border-neutral-800">
-            <div className="p-4 rounded-2xl bg-neutral-950 border border-neutral-800 space-y-2">
-              <span className="text-xs font-sf-bold text-primary uppercase tracking-wider block">
-                Módulo de 8 Pares (Ejemplo Dama):
-              </span>
-              <div className="text-sm font-sf-medium text-neutral-200">
-                1/36 — 2/37 — 2/38 — 2/39 — 1/40
+            <div className="flex items-center gap-2.5 flex-wrap">
+              <div className="flex items-center p-1 rounded-xl bg-neutral-950 border border-neutral-800">
+                <button
+                  onClick={() => setActiveCurveTab('8pares')}
+                  className={`px-4 py-2 rounded-lg text-xs font-sf-bold transition-all ${
+                    activeCurveTab === '8pares' ? 'bg-primary text-white shadow-md' : 'text-neutral-400 hover:text-white'
+                  }`}
+                >
+                  Curva 8 Pares
+                </button>
+                <button
+                  onClick={() => setActiveCurveTab('12pares')}
+                  className={`px-4 py-2 rounded-lg text-xs font-sf-bold transition-all ${
+                    activeCurveTab === '12pares' ? 'bg-primary text-white shadow-md' : 'text-neutral-400 hover:text-white'
+                  }`}
+                >
+                  Curva 12 Pares
+                </button>
               </div>
-              <span className="text-[11px] text-neutral-400 block">
-                75% concentrado en los números más demandados de mostrador.
-              </span>
-            </div>
 
-            <div className="p-4 rounded-2xl bg-neutral-950 border border-neutral-800 space-y-2">
-              <span className="text-xs font-sf-bold text-emerald-400 uppercase tracking-wider block">
-                Módulo de 12 Pares (Ejemplo Dama):
-              </span>
-              <div className="text-sm font-sf-medium text-neutral-200">
-                1/35 — 2/36 — 3/37 — 3/38 — 2/39 — 1/40
-              </div>
-              <span className="text-[11px] text-neutral-400 block">
-                Mayor volumen y reposición continua para locales de alto tránsito.
-              </span>
+              <button
+                onClick={() => setShowSizeGuideModal(true)}
+                className="px-5 py-2.5 rounded-xl bg-neutral-950 hover:bg-neutral-800 text-neutral-200 font-sf-bold text-xs border border-neutral-700 flex items-center gap-2 shadow-md hover:scale-105 transition-all"
+              >
+                <Ruler className="w-4 h-4 text-primary" />
+                <span>Guía de Talles</span>
+              </button>
             </div>
           </div>
+
+          {/* Animated Visual Curve Distribution Bars */}
+          <div className="pt-8">
+            <div className="grid grid-cols-5 sm:grid-cols-6 gap-2 sm:gap-4 items-end min-h-[180px]">
+              {currentCurve.map((item, idx) => (
+                <div key={idx} className="flex flex-col items-center gap-2 h-full justify-end">
+                  {item.hot && (
+                    <span className="flex items-center gap-1 text-[9px] font-extrabold text-amber-400 bg-amber-950/80 px-2 py-0.5 rounded-full border border-amber-500/30">
+                      <Flame className="w-2.5 h-2.5" />
+                      <span>TOP</span>
+                    </span>
+                  )}
+                  
+                  <span className="text-xs font-sf-bold text-white">
+                    {item.pairs} {item.pairs === 1 ? 'par' : 'pares'}
+                  </span>
+
+                  {/* Animated Bar */}
+                  <div className="w-full max-w-[60px] bg-neutral-950 rounded-2xl p-1 border border-neutral-800 h-[100px] flex items-end">
+                    <motion.div
+                      key={`${activeCurveTab}-${item.size}`}
+                      initial={{ height: 0 }}
+                      animate={{ height: `${item.percent * 3.2}%` }}
+                      transition={{ duration: 0.6, delay: idx * 0.08, ease: [0.16, 1, 0.3, 1] }}
+                      className={`w-full rounded-xl ${
+                        item.hot ? 'bg-gradient-to-t from-red-600 to-rose-400 shadow-lg shadow-red-600/30' : 'bg-neutral-700'
+                      }`}
+                    />
+                  </div>
+
+                  <span className="text-sm font-sf-bold text-white">
+                    Talle {item.size}
+                  </span>
+                  <span className="text-[10px] text-neutral-400 font-sf-medium">
+                    {item.percent}%
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 p-4 rounded-2xl bg-neutral-950 border border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-neutral-300">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span>Las cajas vienen precintadas de origen por el fabricante con su etiqueta de control de calidad.</span>
+              </div>
+              <span className="font-sf-bold text-primary shrink-0">
+                100% Listo para Exhibir y Vender
+              </span>
+            </div>
+          </div>
+
         </div>
 
       </div>

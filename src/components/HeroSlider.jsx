@@ -8,7 +8,9 @@ import {
   Award, 
   Percent,
   Layers,
-  ShieldCheck
+  ShieldCheck,
+  Truck,
+  CheckCircle2
 } from 'lucide-react';
 import { BANNERS } from '../data/mockData';
 import SplitText from './reactbits/SplitText';
@@ -69,7 +71,7 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
                 alt={`Banner mayorista ${item.title}`}
                 className="w-full h-full object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-black/20 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-black/30 pointer-events-none" />
             </div>
           ))}
 
@@ -121,11 +123,27 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
             </motion.div>
           </AnimatePresence>
 
+          {/* 3 Mobile Glass Badges */}
+          <div className="grid grid-cols-3 gap-1.5 pt-1">
+            <div className="p-2 rounded-xl bg-neutral-900/80 border border-neutral-800 text-center">
+              <span className="text-[9px] font-sf-bold text-white block">Factura A/B</span>
+              <span className="text-[8px] text-neutral-400">Oficial CUIT</span>
+            </div>
+            <div className="p-2 rounded-xl bg-neutral-900/80 border border-neutral-800 text-center">
+              <span className="text-[9px] font-sf-bold text-emerald-400 block">10% Extra</span>
+              <span className="text-[8px] text-neutral-400">Transferencia</span>
+            </div>
+            <div className="p-2 rounded-xl bg-neutral-900/80 border border-neutral-800 text-center">
+              <span className="text-[9px] font-sf-bold text-amber-400 block">Envío Gratis</span>
+              <span className="text-[8px] text-neutral-400">CABA y GBA</span>
+            </div>
+          </div>
+
           {/* Action Button & Slider Controls */}
           <div className="flex items-center justify-between gap-3 pt-2">
             <button
               onClick={() => handleCtaClick(banner.link)}
-              className="flex-1 py-3 px-4 rounded-xl bg-primary hover:bg-primary/90 text-white font-sf-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-primary/25"
+              className="flex-1 py-3.5 px-4 rounded-xl bg-primary hover:bg-primary/90 text-white font-sf-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-primary/25"
             >
               <span>{banner.cta}</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -134,14 +152,14 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
             <div className="flex items-center gap-1.5">
               <button
                 onClick={handlePrev}
-                className="w-9 h-9 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-white active:scale-95"
+                className="w-10 h-10 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-white active:scale-95"
                 aria-label="Anterior"
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
               <button
                 onClick={handleNext}
-                className="w-9 h-9 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-white active:scale-95"
+                className="w-10 h-10 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-white active:scale-95"
                 aria-label="Siguiente"
               >
                 <ChevronRight className="w-4 h-4" />
@@ -152,7 +170,7 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
       </div>
 
       {/* Desktop & iPad Hero Layout (16:9 / 21:9 Widescreen) */}
-      <div className="hidden md:block relative w-full h-[480px] lg:h-[560px] 2xl:h-[640px] 3xl:h-[700px] overflow-hidden">
+      <div className="hidden md:block relative w-full h-[500px] lg:h-[580px] 2xl:h-[660px] 3xl:h-[720px] overflow-hidden">
         {BANNERS.map((item, idx) => (
           <div
             key={item.id}
@@ -165,8 +183,8 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
               alt={`Banner campaña mayorista ${item.title}`}
               className="w-full h-full object-cover object-center"
             />
-            {/* Cinematic Gradient Overlays for Extreme Contrast */}
-            <div className="absolute inset-0 bg-gradient-to-r from-neutral-950/95 via-neutral-950/60 to-transparent pointer-events-none w-3/4" />
+            {/* Cinematic Gradient Overlays for High Contrast */}
+            <div className="absolute inset-0 bg-gradient-to-r from-neutral-950/95 via-neutral-950/65 to-transparent pointer-events-none w-3/4" />
             <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-black/20 pointer-events-none" />
           </div>
         ))}
@@ -175,17 +193,21 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
         <div className="relative z-20 h-full max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-6 2xl:px-12 flex flex-col justify-center">
           <div className="max-w-xl lg:max-w-2xl 2xl:max-w-3xl space-y-6">
             
-            {/* Tag Badge */}
-            <motion.div
-              key={`tag-${banner.id}`}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.4 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/80 backdrop-blur-md border border-white/15 text-white shadow-lg text-xs font-sf-bold uppercase tracking-wider"
-            >
-              <Award className="w-4 h-4 text-primary" />
-              <span>{banner.tag}</span>
-            </motion.div>
+            {/* 3 Top Glass Pills (Certezas Comerciales Inmediatas) */}
+            <div className="flex flex-wrap items-center gap-2.5">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/80 backdrop-blur-md border border-white/15 text-white shadow-lg text-xs font-sf-bold uppercase tracking-wider">
+                <ShieldCheck className="w-3.5 h-3.5 text-primary" />
+                <span>Factura A/B Oficial</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/80 backdrop-blur-md border border-emerald-500/30 text-emerald-400 shadow-lg text-xs font-sf-bold tracking-wider">
+                <Percent className="w-3.5 h-3.5" />
+                <span>10% Extra Transferencia</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/80 backdrop-blur-md border border-amber-500/30 text-amber-300 shadow-lg text-xs font-sf-bold tracking-wider">
+                <Truck className="w-3.5 h-3.5" />
+                <span>Despacho 24/48 hs</span>
+              </div>
+            </div>
 
             {/* Split Title with SF Pro Display */}
             <motion.div
@@ -230,7 +252,7 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
               </div>
             </motion.div>
 
-            {/* CTA Button */}
+            {/* CTA Buttons */}
             <motion.div
               key={`cta-${banner.id}`}
               initial={{ opacity: 0, y: 20 }}
@@ -276,14 +298,14 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
           <div className="flex items-center gap-1 bg-neutral-950/70 backdrop-blur-md p-1 rounded-2xl border border-white/10">
             <button
               onClick={handlePrev}
-              className="w-9 h-9 rounded-xl flex items-center justify-center text-white hover:bg-white/10 transition-colors"
+              className="w-10 h-10 rounded-xl flex items-center justify-center text-white hover:bg-white/10 transition-colors"
               aria-label="Anterior"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={handleNext}
-              className="w-9 h-9 rounded-xl flex items-center justify-center text-white hover:bg-white/10 transition-colors"
+              className="w-10 h-10 rounded-xl flex items-center justify-center text-white hover:bg-white/10 transition-colors"
               aria-label="Siguiente"
             >
               <ChevronRight className="w-5 h-5" />
