@@ -9,12 +9,15 @@ import {
   Mail, 
   MessageCircle, 
   ArrowUp, 
-  FileText,
-  Lock,
-  ExternalLink,
-  Store
+  FileText, 
+  Lock, 
+  ExternalLink, 
+  Store,
+  Layers,
+  Sparkles
 } from 'lucide-react';
 import { COMPANY_INFO, ADVISORS } from '../data/mockData';
+import SpotlightCard from './reactbits/SpotlightCard';
 
 function InstagramIcon({ className = "w-4 h-4" }) {
   return (
@@ -42,40 +45,52 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
   return (
     <footer className="bg-neutral-950 text-neutral-400 border-t border-neutral-800">
       
-      {/* Top Value Banner */}
-      <div className="border-b border-neutral-800 py-10 2xl:py-14 bg-neutral-900/40">
+      {/* Top Value Banner with 3 High Impact B2B Pills (SpotlightCard) */}
+      <div className="border-b border-neutral-800 py-10 2xl:py-14 bg-neutral-900/30">
         <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
-            <div className="flex items-center justify-center md:justify-start gap-4 p-4 rounded-2xl bg-neutral-900 border border-neutral-800">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary border border-primary/20 flex items-center justify-center shrink-0">
-                <ShieldCheck className="w-6 h-6" />
+            {/* Pill 1: Curvas de Fábrica */}
+            <SpotlightCard
+              spotlightColor="rgba(224, 76, 50, 0.16)"
+              className="p-5 rounded-3xl bg-neutral-900/80 border border-neutral-800/90 flex items-center gap-4 hover:border-primary/40 transition-all"
+            >
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary border border-primary/20 flex items-center justify-center shrink-0 shadow-sm">
+                <Layers className="w-6 h-6" />
               </div>
               <div>
-                <h5 className="font-sf-bold text-white text-sm">Venta por Módulos (8/12 Pares)</h5>
-                <p className="text-xs text-neutral-400 font-sf-regular">Exclusivo comerciantes con CUIT.</p>
+                <h5 className="font-sf-bold text-white text-sm">Curvas de Fábrica (8 y 12 Pares)</h5>
+                <p className="text-xs text-neutral-300 font-sf-regular">75% en talles 37 y 38 para rotación total sin clavos.</p>
               </div>
-            </div>
+            </SpotlightCard>
 
-            <div className="flex items-center justify-center md:justify-start gap-4 p-4 rounded-2xl bg-neutral-900 border border-neutral-800">
-              <div className="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center shrink-0">
+            {/* Pill 2: 10% OFF Extra */}
+            <SpotlightCard
+              spotlightColor="rgba(16, 185, 129, 0.16)"
+              className="p-5 rounded-3xl bg-neutral-900/80 border border-neutral-800/90 flex items-center gap-4 hover:border-emerald-500/40 transition-all"
+            >
+              <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center shrink-0 shadow-sm">
                 <Percent className="w-6 h-6" />
               </div>
               <div>
-                <h5 className="font-sf-bold text-white text-sm">10% Adicional en tu Pago</h5>
-                <p className="text-xs text-neutral-400 font-sf-regular">En efectivo, transferencia o depósito.</p>
+                <h5 className="font-sf-bold text-white text-sm">10% OFF Extra Directo</h5>
+                <p className="text-xs text-neutral-300 font-sf-regular">Abonando por transferencia bancaria o efectivo.</p>
               </div>
-            </div>
+            </SpotlightCard>
 
-            <div className="flex items-center justify-center md:justify-start gap-4 p-4 rounded-2xl bg-neutral-900 border border-neutral-800">
-              <div className="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center shrink-0">
+            {/* Pill 3: Despacho Bonificado */}
+            <SpotlightCard
+              spotlightColor="rgba(245, 158, 11, 0.16)"
+              className="p-5 rounded-3xl bg-neutral-900/80 border border-neutral-800/90 flex items-center gap-4 hover:border-amber-500/40 transition-all"
+            >
+              <div className="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center shrink-0 shadow-sm">
                 <Truck className="w-6 h-6" />
               </div>
               <div>
-                <h5 className="font-sf-bold text-white text-sm">Despachos en 24 a 48 hs</h5>
-                <p className="text-xs text-neutral-400 font-sf-regular">Envíos asegurados a todo el país.</p>
+                <h5 className="font-sf-bold text-white text-sm">Despacho Bonificado al Expreso</h5>
+                <p className="text-xs text-neutral-300 font-sf-regular">Traslado gratis para el interior y 100% gratis en CABA/GBA.</p>
               </div>
-            </div>
+            </SpotlightCard>
 
           </div>
         </div>
@@ -85,17 +100,20 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
       <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 py-14 2xl:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           
-          {/* Col 1: Brand Info */}
+          {/* Col 1: Brand Info with High Contrast White Logo */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <img 
-                src="/logos/SkyBlue.svg" 
-                alt="SkyBlue Calzado Mayorista" 
-                className="h-9 w-auto object-contain"
-              />
+              {/* High Contrast Logo Container (White Invert Filter) */}
+              <div className="bg-neutral-900 p-2.5 rounded-2xl border border-neutral-800 shadow-md inline-flex items-center">
+                <img 
+                  src="/logos/SkyBlue.svg" 
+                  alt="SkyBlue Calzado Mayorista" 
+                  className="h-8 w-auto object-contain brightness-0 invert opacity-95 hover:opacity-100 transition-opacity"
+                />
+              </div>
             </div>
 
-            <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed max-w-sm font-sf-regular">
+            <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed max-w-sm font-sf-regular">
               Distribuidor oficial mayorista de calzado y marroquinería en Argentina. Representante oficial de <strong className="text-white">Xti (María Becerra)</strong>, <strong className="text-white">Refresh</strong>, <strong className="text-white">Petite Jolie</strong> y <strong className="text-white">Giulia Domna</strong>.
             </p>
 
@@ -127,7 +145,7 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
                 className="px-3.5 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-sf-bold text-xs flex items-center gap-1.5 shadow-sm transition-all"
               >
                 <Lock className="w-3.5 h-3.5" />
-                <span>Portal B2B</span>
+                <span>Portal B2B (mayoristas.skyblue.com.ar)</span>
               </a>
             </div>
           </div>

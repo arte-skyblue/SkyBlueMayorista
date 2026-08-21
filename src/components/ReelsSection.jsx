@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Sparkles, 
@@ -6,22 +6,17 @@ import {
   Download, 
   ExternalLink,
   X,
-  Play,
   Volume2,
   VolumeX,
   Video,
   ArrowRight
 } from 'lucide-react';
 import { REELS, ADVISORS } from '../data/mockData';
-import ShinyText from './reactbits/ShinyText';
+import DriftWall from './reactbits/DriftWall';
 
 export default function ReelsSection({ onOpenAdvisorModal }) {
   const [activeVideo, setActiveVideo] = useState(null);
-  const [isMuted, setIsMuted] = useState(true);
-
-  // Divide 24 reels into 2 tracks of 12 for high performance
-  const row1 = REELS.slice(0, 12);
-  const row2 = REELS.slice(12, 24);
+  const [isMuted, setIsMuted] = useState(false);
 
   const handleOpenModal = (reel) => {
     setActiveVideo(reel);
@@ -57,97 +52,36 @@ export default function ReelsSection({ onOpenAdvisorModal }) {
           </h2>
 
           <p className="font-sf-medium text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            Videos profesionales listos para usar en tus historias de Instagram, reels y WhatsApp.
+            Videos profesionales listos para usar en tus historias de Instagram, reels y estados de WhatsApp. Multiplicá tus ventas orgánicas sin gastar en producción audiovisual.
           </p>
         </div>
 
-        {/* Dual Track Infinite Video Marquee */}
-        <div className="space-y-4 sm:space-y-6 relative">
-          
-          {/* Side Fades for Smooth Edge Transitions */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-neutral-950 via-neutral-950/80 to-transparent z-20" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-neutral-950 via-neutral-950/80 to-transparent z-20" />
+        {/* DriftWall Component by ReactBits (Continuous Movement Without Hover Pause) */}
+        <div className="w-full">
+          <DriftWall items={REELS} onItemClick={handleOpenModal} />
+        </div>
 
-          {/* Track 1: Normal Direction */}
-          <div className="flex overflow-hidden py-1">
-            <div className="flex gap-4 sm:gap-6 animate-marquee pause-hover">
-              {[...row1, ...row1].map((reel, idx) => (
-                <div
-                  key={`row1-${reel.id}-${idx}`}
-                  onClick={() => handleOpenModal(reel)}
-                  className="w-[140px] sm:w-[190px] 2xl:w-[220px] aspect-[9/16] rounded-2xl sm:rounded-3xl overflow-hidden bg-neutral-900 border border-neutral-800 hover:border-primary transition-all duration-300 group cursor-pointer relative shrink-0 shadow-lg hover:scale-105"
-                >
-                  <video
-                    src={reel.videoUrl}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="metadata"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-transparent to-black/20 group-hover:opacity-60 transition-opacity" />
-                  
-                  <div className="absolute top-2.5 left-2.5">
-                    <span className="text-[9px] font-black uppercase px-2 py-0.5 rounded-full bg-neutral-950/80 border border-white/20 text-white backdrop-blur-md">
-                      {reel.brand}
-                    </span>
-                  </div>
-
-                  <div className="absolute bottom-2.5 left-2.5 right-2.5">
-                    <p className="text-[11px] font-sf-bold text-white line-clamp-1 leading-snug">
-                      {reel.title}
-                    </p>
-                    <span className="text-[9px] text-neutral-400 font-sf-medium flex items-center gap-1 mt-0.5">
-                      <Play className="w-2.5 h-2.5 text-primary fill-primary" />
-                      <span>{reel.views}</span>
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
+        {/* VIP Google Drive Kit CTA */}
+        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-neutral-900/90 border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+          <div className="space-y-1.5 text-center md:text-left">
+            <span className="text-xs font-sf-bold uppercase text-primary tracking-wider">
+              Kit de Marketing Mayorista Incluido
+            </span>
+            <h4 className="text-lg sm:text-2xl font-sf-bold text-white">
+              ¿Querés acceso a la carpeta completa con más de 200 fotos y videos en 4K?
+            </h4>
+            <p className="text-xs sm:text-sm text-neutral-300 font-sf-regular">
+              Solicitá el enlace al Drive VIP exclusivo para comerciantes y zapaterías asociadas.
+            </p>
           </div>
 
-          {/* Track 2: Reverse Direction */}
-          <div className="flex overflow-hidden py-1">
-            <div className="flex gap-4 sm:gap-6 animate-marquee pause-hover" style={{ animationDirection: 'reverse' }}>
-              {[...row2, ...row2].map((reel, idx) => (
-                <div
-                  key={`row2-${reel.id}-${idx}`}
-                  onClick={() => handleOpenModal(reel)}
-                  className="w-[140px] sm:w-[190px] 2xl:w-[220px] aspect-[9/16] rounded-2xl sm:rounded-3xl overflow-hidden bg-neutral-900 border border-neutral-800 hover:border-primary transition-all duration-300 group cursor-pointer relative shrink-0 shadow-lg hover:scale-105"
-                >
-                  <video
-                    src={reel.videoUrl}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="metadata"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-transparent to-black/20 group-hover:opacity-60 transition-opacity" />
-                  
-                  <div className="absolute top-2.5 left-2.5">
-                    <span className="text-[9px] font-black uppercase px-2 py-0.5 rounded-full bg-neutral-950/80 border border-white/20 text-white backdrop-blur-md">
-                      {reel.brand}
-                    </span>
-                  </div>
-
-                  <div className="absolute bottom-2.5 left-2.5 right-2.5">
-                    <p className="text-[11px] font-sf-bold text-white line-clamp-1 leading-snug">
-                      {reel.title}
-                    </p>
-                    <span className="text-[9px] text-neutral-400 font-sf-medium flex items-center gap-1 mt-0.5">
-                      <Play className="w-2.5 h-2.5 text-primary fill-primary" />
-                      <span>{reel.views}</span>
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
+          <button
+            onClick={() => onOpenAdvisorModal ? onOpenAdvisorModal(ADVISORS[2]) : null}
+            className="px-6 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-sf-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-emerald-600/25 shrink-0 hover:scale-105 transition-all"
+          >
+            <Download className="w-4 h-4" />
+            <span>Pedir Acceso al Drive VIP</span>
+          </button>
         </div>
 
       </div>
@@ -160,11 +94,30 @@ export default function ReelsSection({ onOpenAdvisorModal }) {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="relative max-w-sm sm:max-w-md w-full aspect-[9/16] rounded-3xl overflow-hidden bg-neutral-900 border border-neutral-700 shadow-2xl flex flex-col justify-between p-4"
+              transition={{ duration: 0.25 }}
+              className="relative max-w-sm w-full aspect-[9/16] rounded-3xl overflow-hidden bg-neutral-900 border border-neutral-700 shadow-2xl flex flex-col justify-between"
             >
-              {/* Active Video Player */}
+              {/* Close & Sound Buttons */}
+              <div className="absolute top-4 right-4 z-30 flex items-center gap-2">
+                <button
+                  onClick={() => setIsMuted(!isMuted)}
+                  className="w-10 h-10 rounded-full bg-black/60 hover:bg-black/80 backdrop-blur-md text-white flex items-center justify-center border border-white/15 shadow-md"
+                  aria-label={isMuted ? "Activar audio" : "Silenciar audio"}
+                >
+                  {isMuted ? <VolumeX className="w-5 h-5 text-red-400" /> : <Volume2 className="w-5 h-5 text-emerald-400" />}
+                </button>
+                <button
+                  onClick={handleCloseModal}
+                  className="w-10 h-10 rounded-full bg-black/60 hover:bg-black/80 backdrop-blur-md text-white flex items-center justify-center border border-white/15 shadow-md"
+                  aria-label="Cerrar modal"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              {/* Video Player */}
               <video
-                src={activeVideo.videoUrl}
+                src={activeVideo.url}
                 autoPlay
                 loop
                 playsInline
@@ -172,55 +125,30 @@ export default function ReelsSection({ onOpenAdvisorModal }) {
                 className="absolute inset-0 w-full h-full object-cover"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-neutral-950/60 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-black/40 pointer-events-none" />
 
-              {/* Top Controls */}
-              <div className="relative z-10 flex items-center justify-between">
-                <span className="text-xs font-bold px-3 py-1 rounded-full bg-neutral-950/80 backdrop-blur-md text-white border border-white/20">
-                  {activeVideo.brand}
-                </span>
-
-                <div className="flex items-center gap-2">
-                  <button
-                    onClick={() => setIsMuted(!isMuted)}
-                    className="w-9 h-9 rounded-full bg-neutral-950/80 backdrop-blur-md border border-white/20 flex items-center justify-center text-white"
-                    aria-label="Sonido"
-                  >
-                    {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4 text-emerald-400" />}
-                  </button>
-
-                  <button
-                    onClick={handleCloseModal}
-                    className="w-9 h-9 rounded-full bg-neutral-950/80 backdrop-blur-md border border-white/20 flex items-center justify-center text-white"
-                    aria-label="Cerrar"
-                  >
-                    <X className="w-4 h-4" />
-                  </button>
-                </div>
-              </div>
-
-              {/* Bottom Info & WhatsApp CTA */}
-              <div className="relative z-10 space-y-3">
+              {/* Bottom Caption & WhatsApp CTA */}
+              <div className="relative z-20 p-5 mt-auto space-y-3">
                 <div>
-                  <h3 className="text-base sm:text-lg font-sf-bold text-white">
+                  <span className="text-[10px] font-sf-bold uppercase px-2 py-0.5 rounded-full bg-primary text-white w-max block mb-1">
+                    {activeVideo.brand}
+                  </span>
+                  <h4 className="text-base font-sf-bold text-white">
                     {activeVideo.title}
-                  </h3>
-                  <p className="text-xs text-neutral-300 font-sf-regular">
-                    Material en 4K oficial para clientes de SkyBlue Mayorista.
-                  </p>
+                  </h4>
                 </div>
 
-                <a
-                  href={`https://wa.me/5491138916779?text=${encodeURIComponent(`Hola! Quiero pedir este video en 4K para las redes de mi local: ${activeVideo.title} (${activeVideo.brand})`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-sf-bold text-xs flex items-center justify-center gap-2 shadow-lg"
+                <button
+                  onClick={() => {
+                    handleCloseModal();
+                    if (onOpenAdvisorModal) onOpenAdvisorModal(ADVISORS[0]);
+                  }}
+                  className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-sf-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30"
                 >
                   <MessageCircle className="w-4 h-4" />
-                  <span>Pedir este Video en 4K por WhatsApp</span>
-                </a>
+                  <span>Consultar por este Calzado en WhatsApp</span>
+                </button>
               </div>
-
             </motion.div>
           </div>
         )}

@@ -171,39 +171,47 @@ export const BRANDS = [
 export const BANNERS = [
   {
     id: 1,
-    tag: "CAMPAÑA GLOBAL 2026",
+    brand: "Xti",
+    tag: "CALZADO OFICIAL ESPAÑA",
     title: "MARÍA BECERRA × XTI",
-    subtitle: "Colecciones europeas de calzado urbano con demanda masiva garantizada en tu zapatería.",
-    ctaText: "Ver Colección Xti",
-    categoryLink: "marcas",
-    image: "/images/banners/hero-xti.jpg"
+    subtitle: "Calzado urbano europeo con tracción de venta masiva. Módulos de 8 y 12 pares con curva comercial directa de fábrica.",
+    cta: "Ver Módulos Xti",
+    link: "marcas",
+    image: "/images/banners/hero-xti.jpg",
+    accent: "#E04C32"
   },
   {
     id: 2,
-    tag: "LANZAMIENTO SS26",
-    title: "REFRESH CASUAL WEAR",
-    subtitle: "Modelos versátiles y zapatillas de alta rotación para impulsar tus ventas diarias.",
-    ctaText: "Ver Catálogo Refresh",
-    categoryLink: "catalogo",
-    image: "/images/banners/hero-refresh.jpg"
+    brand: "Refresh",
+    tag: "TENDENCIA JOVEN EUROPEA",
+    title: "REFRESH SNEAKERS & CASUAL",
+    subtitle: "Zapatillas ultralivianas y sandalias casual de máxima rotación en mostrador. Margen neto directo de reventa x2.2 a x2.5.",
+    cta: "Ver Módulos Refresh",
+    link: "marcas",
+    image: "/images/banners/hero-refresh.jpg",
+    accent: "#F59E0B"
   },
   {
     id: 3,
-    tag: "TENDENCIA BRASIL",
-    title: "PETITE JOLIE & GIULIA DOMNA",
-    subtitle: "Bolsos en J-Lastic® impermeable y calzado premium en cuero legítimo de exportación.",
-    ctaText: "Ver Marroquinería",
-    categoryLink: "marcas",
-    image: "/images/banners/hero-petite-jolie.jpg"
+    brand: "Petite Jolie",
+    tag: "EXCLUSIVO BRASIL",
+    title: "PETITE JOLIE & J-LASTIC®",
+    subtitle: "Bolsos, carteras y calzado impermeable con su icónico aroma dulce. Compra por impulso asegurada en tu local.",
+    cta: "Ver Módulos Petite Jolie",
+    link: "marcas",
+    image: "/images/banners/hero-petite-jolie.jpg",
+    accent: "#EC4899"
   },
   {
     id: 4,
-    tag: "BENEFICIO FINANCIERO",
-    title: "10% EXTRA & ENVÍOS GRATIS CABA/GBA",
-    subtitle: "Descuento directo por transferencia o efectivo y despacho bonificado a todo el país.",
-    ctaText: "Conocer Condiciones",
-    categoryLink: "condiciones",
-    image: "/images/banners/hero-catalogos.jpg"
+    brand: "SkyBlue",
+    tag: "VENTA DIRECTA CON CUIT",
+    title: "RENTABILIDAD NETA +120%",
+    subtitle: "10% OFF extra por transferencia, Factura A o B oficial y Despacho bonificado en 24 a 48 hs a todo el país.",
+    cta: "Simular Mi Ganancia",
+    link: "beneficios",
+    image: "/images/banners/hero-catalogos.jpg",
+    accent: "#10B981"
   }
 ];
 

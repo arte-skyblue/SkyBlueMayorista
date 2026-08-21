@@ -371,3 +371,25 @@
   animation-play-state: paused;
 }
 
+
+@keyframes drift-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes drift-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-drift-left {
+  width: max-content;
+  animation: 35s linear infinite drift-left;
+  display: flex;
+}
+
+.animate-drift-right {
+  width: max-content;
+  animation: 35s linear infinite drift-right;
+  display: flex;
+}
