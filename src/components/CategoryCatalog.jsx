@@ -46,6 +46,19 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
           <p className="text-muted-foreground text-base sm:text-lg 2xl:text-xl">
             Presentamos una selección de nuestros modelos más vendidos. Para ver el catálogo completo de +300 artículos con precios mayoristas, ingresá con tu cuenta en <span className="font-bold text-primary">mayoristas.skyblue.com.ar</span>.
           </p>
+
+          {/* Micro Commercial Badges */}
+          <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
+            <span className="px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold">
+              ✓ Precios Netos sin IVA (Factura A/B)
+            </span>
+            <span className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 text-xs font-bold">
+              ✓ Curvas Ideales de Fábrica
+            </span>
+            <span className="px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-700 text-xs font-bold">
+              ✓ Envío 100% Gratis en CABA/GBA
+            </span>
+          </div>
         </div>
 
         {/* 5 Main Category Summary Cards */}

@@ -94,9 +94,21 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
                 {modalType === 'xti' ? 'Catálogo Oficial María Becerra × XTI' : 'Solicitar Catálogo Mayorista y Precios'}
               </h3>
 
-              <p className="text-xs sm:text-sm text-muted-foreground">
-                Completá los datos de tu local o showroom para enviarte el catálogo digital y habilitar el <span className="font-bold text-emerald-600">10% de descuento adicional</span> por pago al contado o transferencia.
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                Completá los datos de tu local o showroom para recibir la lista de precios netos (sin IVA) por módulos de 8 y 12 pares, con <span className="font-bold text-emerald-600">10% OFF adicional</span> y <span className="font-bold text-primary">envío gratis en CABA/GBA</span>.
               </p>
+
+              <div className="flex flex-wrap gap-2 pt-1">
+                <span className="px-2.5 py-0.5 rounded-md bg-muted text-[10px] font-bold text-muted-foreground">
+                  ✓ Facturación Oficial A y B
+                </span>
+                <span className="px-2.5 py-0.5 rounded-md bg-muted text-[10px] font-bold text-muted-foreground">
+                  ✓ Curvas de fábrica (8 y 12 pares)
+                </span>
+                <span className="px-2.5 py-0.5 rounded-md bg-muted text-[10px] font-bold text-muted-foreground">
+                  ✓ Envío 100% Gratis CABA/GBA
+                </span>
+              </div>
             </div>
 
             {/* Form */}

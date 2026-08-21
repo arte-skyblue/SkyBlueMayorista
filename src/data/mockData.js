@@ -29,6 +29,21 @@ export const COMPANY_INFO = {
   ],
   defaultDiscount: 10, // 10% adicional abonando en efectivo, transferencia o depósito
   minimumPurchase: "1 módulo (8 o 12 pares) por modelo",
+  shippingPolicy: "Envío 100% bonificado y gratuito en CABA y GBA. Despacho bonificado en 24/48 hs al expreso para el interior.",
+  taxPolicy: "Precios de catálogo netos sin IVA. Facturación obligatoria (Factura A o B oficial) por mercadería importada.",
+  sizeGuideImage: "/assets/images/guia-de-tallas.jpeg",
+  sizeCurves: {
+    curve8: {
+      pairs: 8,
+      breakdown: "1/36 - 2/37 - 2/38 - 2/39 - 1/40",
+      description: "Surtido ideal directo de fábrica concentrado en talles centrales para máxima rotación de mostrador."
+    },
+    curve12: {
+      pairs: 12,
+      breakdown: "1/35 - 2/36 - 3/37 - 3/38 - 2/39 - 1/40",
+      description: "Cobertura completa de numeración con 8 pares concentrados en 37, 38 y 39."
+    }
+  },
   instagram: "@skyblue.mayorista",
   facebook: "SkyBlueCalzadoMayorista",
   email: "ventas@skybluecalzado.com.ar",
@@ -602,21 +617,119 @@ export const EVENTS = [
   }
 ];
 
+export const DRIFT_WALL_ITEMS = [
+  {
+    image: "/assets/images/img_1_68747470733a.jpg",
+    title: "Campaña XTI Oficial",
+    brand: "Xti España",
+    category: "Campaña Dama"
+  },
+  {
+    image: "/assets/images/img_2_68747470733a.jpg",
+    title: "Sandalias Urbanas Confort",
+    brand: "Refresh",
+    category: "Streetwear"
+  },
+  {
+    image: "/assets/images/img_3_68747470733a.jpg",
+    title: "Bolsos J-Lastic® con Fragancia",
+    brand: "Petite Jolie",
+    category: "Marroquinería"
+  },
+  {
+    image: "/assets/images/img_5_68747470733a.jpg",
+    title: "Calzado de Fiesta en Cuero",
+    brand: "Giulia Domna",
+    category: "Alta Gama"
+  },
+  {
+    image: "/assets/images/img_6_68747470733a.jpg",
+    title: "Zapatillas Urbanas Juveniles",
+    brand: "Xti Kids",
+    category: "Infantil"
+  },
+  {
+    image: "/assets/images/img_7_68747470733a.jpg",
+    title: "Mochilas & Bandoleras",
+    brand: "Petite Jolie",
+    category: "Accesorios"
+  },
+  {
+    image: "/assets/images/img_8_68747470733a.jpg",
+    title: "Botas Caña Media Xti",
+    brand: "Xti Oficial",
+    category: "Dama Otoño/Invierno"
+  },
+  {
+    image: "/assets/images/img_9_68747470733a.jpg",
+    title: "Muestrario Showroom Tapiales",
+    brand: "SkyBlue Showroom",
+    category: "Showroom"
+  },
+  {
+    image: "/assets/images/img_10_68747470733a.jpg",
+    title: "Sneakers Mujer Trendy",
+    brand: "Refresh Casual",
+    category: "Urban"
+  },
+  {
+    image: "/assets/images/img_11_68747470733a.jpg",
+    title: "Carteras Estructuradas",
+    brand: "Petite Jolie",
+    category: "Marroquinería"
+  },
+  {
+    image: "/assets/images/img_12_68747470733a.jpg",
+    title: "Sandalias de Vestir Cuero",
+    brand: "Giulia Domna",
+    category: "Fiesta"
+  },
+  {
+    image: "/assets/images/img_13_68747470733a.jpg",
+    title: "Colección María Becerra × XTI",
+    brand: "Xti España",
+    category: "Viral Social"
+  },
+  {
+    image: "/assets/images/img_14_68747470733a.jpg",
+    title: "Zapatillas Livianas Niños",
+    brand: "Xti Kids",
+    category: "Colegial"
+  },
+  {
+    image: "/assets/images/img_15_68747470733a.jpg",
+    title: "Mini Bags & Charms",
+    brand: "Petite Jolie",
+    category: "Impulso"
+  },
+  {
+    image: "/assets/images/img_16_68747470733a.jpg",
+    title: "Zapatos Clásicos de Taco",
+    brand: "Giulia Domna",
+    category: "Elegante"
+  }
+];
+
 export const FAQS = [
   {
-    question: "¿Cuál es el mínimo de compra en calzado?",
-    answer: "El mínimo de compra en calzado es de 1 módulo (8 o 12 pares) por modelo y color. Los módulos vienen con las numeraciones comerciales más vendidas (del 35 al 40 en dama, 39 al 44 en hombre o 28 al 35 en kids). En marroquinería y accesorios manejamos packs surtidos a partir de 4 unidades.",
+    question: "¿Cómo están compuestas las curvas de talles de fábrica?",
+    answer: "Las curvas vienen surtidas de manera ideal directo desde fábrica con concentración en los números de mayor venta para rápida rotación de mostrador: La curva de 8 pares se compone de 1/36 - 2/37 - 2/38 - 2/39 - 1/40 (75% en talles centrales). La curva de 12 pares se compone de 1/35 - 2/36 - 3/37 - 3/38 - 2/39 - 1/40. En nuestro portal podés consultar la Guía de Talles Oficial con medidas en centímetros.",
     category: "minimos"
+  },
+  {
+    question: "¿Cómo son los envíos a CABA, GBA y al interior del país?",
+    answer: "En CABA y Gran Buenos Aires (GBA) el envío es 100% bonificado y gratuito. Para el interior del país, el embalaje reforzado y el flete de traslado hasta la terminal del transporte en CABA/GBA (Vía Cargo, Cruz del Sur, etc.) es 100% bonificado en 24 a 48 hs hábiles (el cliente solo abona el costo del transporte hasta su localidad).",
+    category: "envios"
+  },
+  {
+    question: "¿Los precios incluyen IVA? ¿Emiten factura?",
+    answer: "Los precios de catálogo y plataforma son netos sin IVA. Todas nuestras ventas requieren facturación obligatoria (Factura A o Factura B oficial con CUIT comercial), ya que comercializamos mercadería 100% legal e importada de manera formal por aduana.",
+    category: "precios"
   },
   {
     question: "¿Cuáles son los requisitos para comprar en SkyBlue Mayorista?",
     answer: "Somos distribuidores exclusivamente mayoristas B2B. Para acceder a la lista de precios y compras, solicitamos contar con CUIT comercial, local a la calle, showroom o actividad de reventa activa. El alta es inmediata ingresando en nuestra plataforma B2B (https://mayoristas.skyblue.com.ar/) o contactando a nuestras asesoras por WhatsApp.",
     category: "requisitos"
-  },
-  {
-    question: "¿Por qué no se muestran los precios de los productos en la web pública?",
-    answer: "Para proteger la rentabilidad y el precio de venta al público de nuestros clientes comerciantes, no publicamos listas de precios abiertas. Los comerciantes pueden solicitar su cuenta en https://mayoristas.skyblue.com.ar/ cargando sus datos personales y de empresa para acceder al catálogo completo con precios mayoristas.",
-    category: "precios"
   },
   {
     question: "¿Cómo funciona el 10% de descuento adicional por pago al contado o transferencia?",
@@ -632,11 +745,6 @@ export const FAQS = [
     question: "¿Dónde están ubicados los locales a la calle para compras minoristas?",
     answer: "Nuestros locales comerciales de venta al público minorista están ubicados en: 1) Curapaligüe 1428, Tapiales (Buenos Aires) y 2) Av. Libertad 1190, Cañuelas (Buenos Aires).",
     category: "locales"
-  },
-  {
-    question: "¿Cómo realizan los envíos al interior y cuánto demoran?",
-    answer: "Despachamos de lunes a viernes por el expreso o transporte terrestre de tu preferencia (Vía Cargo, Cruz del Sur, Expreso Luján, etc.). Los pedidos se entregan en el transporte dentro de las 24 a 48 hs hábiles tras confirmarse el pago, y enviamos el remito con número de guía de seguimiento.",
-    category: "envios"
   },
   {
     question: "¿Cómo accedo al material de marketing y fotos de María Becerra para mis redes?",
