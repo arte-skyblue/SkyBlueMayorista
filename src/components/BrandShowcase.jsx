@@ -4,12 +4,9 @@ import {
   Award, 
   Sparkles, 
   Check, 
-  ArrowRight, 
   FileText, 
   MessageCircle,
-  Star,
-  Globe2,
-  Package
+  Globe2
 } from 'lucide-react';
 import { BRANDS, ADVISORS } from '../data/mockData';
 import TiltedCard from './reactbits/TiltedCard';
@@ -76,213 +73,228 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
           </p>
         </div>
 
-        {/* Brand Selector Tabs with Official SVG Logos */}
-        <div className="flex justify-center mb-8 sm:mb-12 overflow-x-auto pb-3 px-2 scrollbar-none">
-          <div className="inline-flex items-center p-1.5 sm:p-2.5 rounded-2xl bg-neutral-900/90 border border-neutral-800 backdrop-blur-xl gap-1.5 sm:gap-4 shadow-2xl shrink-0">
-            {BRANDS.map((brand) => {
-              const isSelected = selectedBrandId === brand.id;
-              const isGiulia = brand.id === 'giulia-domna';
-
-              return (
-                <button
-                  key={brand.id}
-                  onClick={() => setSelectedBrandId(brand.id)}
-                  className={`group relative px-4 sm:px-8 py-3 sm:py-4 rounded-xl transition-all flex items-center justify-center shrink-0 z-10 ${
-                    isSelected
-                      ? 'bg-white/10 shadow-lg border border-white/20'
-                      : 'bg-transparent hover:bg-white/5'
-                  }`}
-                  aria-label={brand.name}
+        {/* Brand Detail Showcase Card with Integrated Top-Right Selector */}
+        <div className="rounded-3xl bg-neutral-900/80 border border-neutral-800 backdrop-blur-2xl overflow-hidden shadow-2xl mb-12 sm:mb-14">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 p-5 sm:p-10 2xl:p-12 items-center">
+            
+            {/* Left Column: Video / Image (3:4 Vertical) */}
+            <div className="lg:col-span-5">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={selectedBrand.id}
+                  initial={{ opacity: 0, scale: 0.98 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.98 }}
+                  transition={{ duration: 0.3 }}
                 >
-                  {isSelected && (
-                    <motion.div
-                      layoutId="active-brand-tab"
-                      className={`absolute inset-0 rounded-xl border shadow-lg -z-10 ${currentTheme.tabActive}`}
-                      transition={{ type: 'spring', stiffness: 450, damping: 35 }}
-                    />
-                  )}
-                  <img
-                    src={brand.logoSvg}
-                    alt={brand.name}
-                    className={`h-8 sm:h-11 2xl:h-12 w-auto max-w-[110px] sm:max-w-[190px] object-contain transition-all duration-300 ${
-                      isSelected
-                        ? isGiulia
-                          ? '[filter:brightness(0)_saturate(100%)_invert(75%)_sepia(45%)_saturate(1200%)_hue-rotate(160deg)_brightness(105%)_contrast(95%)] opacity-100 scale-105 drop-shadow-[0_2px_12px_rgba(56,189,248,0.4)]'
-                          : 'filter-none opacity-100 scale-105 drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]'
-                        : 'brightness-0 invert opacity-75 group-hover:filter-none group-hover:opacity-100 group-hover:scale-105'
-                    }`}
-                  />
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Brand Detail Showcase Card with Video Support & 3D Glare Tilt */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={selectedBrand.id}
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-            className="rounded-3xl bg-neutral-900/80 border border-neutral-800 backdrop-blur-2xl overflow-hidden shadow-2xl mb-12 sm:mb-14"
-          >
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 p-5 sm:p-10 2xl:p-12 items-center">
-              
-              {/* Left Column: Video / Image with React Bits TiltedCard (3D Perspective & Glare) */}
-              <div className="lg:col-span-5">
-                <TiltedCard maxTilt={8} scale={1.02} glare={true} className="rounded-2xl overflow-hidden shadow-2xl">
-                  <div className="relative aspect-[3/4] border border-neutral-700 bg-neutral-950 rounded-2xl overflow-hidden shadow-inner">
-                    {selectedBrand.video ? (
-                      <video
-                        key={selectedBrand.id}
-                        src={selectedBrand.video}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="w-full h-full object-cover"
-                      />
-                    ) : (
-                      <img
-                        src={selectedBrand.image}
-                        alt={`Calzado y marroquinería marca ${selectedBrand.name} venta mayorista en Argentina`}
-                        className="w-full h-full object-cover"
-                      />
-                    )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-neutral-950/10 to-transparent pointer-events-none" />
-                    
-                    {/* Floating Brand Origin Badge */}
-                    <div className="absolute top-4 left-4 bg-neutral-950/80 backdrop-blur-md border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-bold text-white flex items-center gap-2 shadow-md">
-                      <Globe2 className="w-4 h-4 text-primary" />
-                      <span>{selectedBrand.country} • {selectedBrand.origin}</span>
-                    </div>
-
-                    {/* Bottom Highlight with ShinyText */}
-                    <div className="absolute bottom-4 left-4 right-4 space-y-1">
-                      {selectedBrand.id === 'xti' ? (
-                        <div className="bg-gradient-to-r from-red-600/95 to-rose-700/95 backdrop-blur-md p-3.5 rounded-xl border border-red-400/40 text-white shadow-xl">
-                          <div className="flex items-center gap-2 font-black text-xs uppercase tracking-wider">
-                            <Award className="w-4 h-4" />
-                            <span>Campaña Oficial Global</span>
-                          </div>
-                          <p className="font-extrabold text-sm sm:text-base">
-                            <ShinyText text="María Becerra • Embajadora Internacional" speed={3} />
-                          </p>
-                        </div>
-                      ) : selectedBrand.id === 'petite-jolie' ? (
-                        <div className="bg-gradient-to-r from-pink-600/95 to-purple-600/95 backdrop-blur-md p-3.5 rounded-xl border border-pink-400/40 text-white shadow-xl">
-                          <div className="flex items-center gap-2 font-black text-xs uppercase tracking-wider">
-                            <Sparkles className="w-4 h-4" />
-                            <span>Tecnología J-Lastic®</span>
-                          </div>
-                          <p className="font-extrabold text-sm sm:text-base">
-                            <ShinyText text="Aroma dulce icónico y material 100% impermeable" speed={3} />
-                          </p>
-                        </div>
-                      ) : selectedBrand.id === 'giulia-domna' ? (
-                        <div className="bg-gradient-to-r from-sky-700/95 to-neutral-800/95 backdrop-blur-md p-3.5 rounded-xl border border-sky-400/40 text-white shadow-xl">
-                          <div className="flex items-center gap-2 font-black text-xs uppercase tracking-wider text-sky-200">
-                            <Award className="w-4 h-4 text-sky-300" />
-                            <span>Cuero Genuino Brasil</span>
-                          </div>
-                          <p className="font-extrabold text-sm sm:text-base text-white">
-                            <ShinyText text="Calzado boutique de lujo para zapaterías selectas" speed={3} />
-                          </p>
-                        </div>
+                  <TiltedCard className="rounded-2xl overflow-hidden shadow-2xl">
+                    <div className="relative aspect-[3/4] border border-neutral-700 bg-neutral-950 rounded-2xl overflow-hidden shadow-inner">
+                      {selectedBrand.video ? (
+                        <video
+                          key={selectedBrand.id}
+                          src={selectedBrand.video}
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          className="w-full h-full object-cover"
+                        />
                       ) : (
-                        <div className="bg-gradient-to-r from-neutral-800/95 to-neutral-900/95 backdrop-blur-md p-3.5 rounded-xl border border-neutral-700 text-white shadow-xl">
-                          <div className="flex items-center gap-2 font-black text-xs uppercase tracking-wider">
-                            <Sparkles className="w-4 h-4 text-primary" />
-                            <span>Streetwear Español</span>
-                          </div>
-                          <p className="font-extrabold text-sm sm:text-base">
-                            <ShinyText text="Modelos casual wear de altísima rotación semanal" speed={3} />
-                          </p>
-                        </div>
+                        <img
+                          src={selectedBrand.image}
+                          alt={`Calzado y marroquinería marca ${selectedBrand.name} venta mayorista en Argentina`}
+                          className="w-full h-full object-cover"
+                        />
                       )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-neutral-950/10 to-transparent pointer-events-none" />
+                      
+                      {/* Floating Brand Origin Badge */}
+                      <div className="absolute top-4 left-4 bg-neutral-950/80 backdrop-blur-md border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-bold text-white flex items-center gap-2 shadow-md">
+                        <Globe2 className="w-4 h-4 text-primary" />
+                        <span>{selectedBrand.country} • {selectedBrand.origin}</span>
+                      </div>
+
+                      {/* Bottom Highlight on Media */}
+                      <div className="absolute bottom-4 left-4 right-4 space-y-1">
+                        {selectedBrand.id === 'xti' ? (
+                          <div className="bg-gradient-to-r from-red-600/95 to-rose-700/95 backdrop-blur-md p-3.5 rounded-xl border border-red-400/40 text-white shadow-xl">
+                            <div className="flex items-center gap-2 font-black text-xs uppercase tracking-wider">
+                              <Award className="w-4 h-4" />
+                              <span>Campaña Oficial Global</span>
+                            </div>
+                            <p className="font-extrabold text-sm sm:text-base">
+                              <ShinyText text="María Becerra • Embajadora Internacional" speed={3} />
+                            </p>
+                          </div>
+                        ) : selectedBrand.id === 'petite-jolie' ? (
+                          <div className="bg-gradient-to-r from-pink-600/95 to-purple-600/95 backdrop-blur-md p-3.5 rounded-xl border border-pink-400/40 text-white shadow-xl">
+                            <div className="flex items-center gap-2 font-black text-xs uppercase tracking-wider">
+                              <Sparkles className="w-4 h-4" />
+                              <span>Tecnología J-Lastic®</span>
+                            </div>
+                            <p className="font-extrabold text-sm sm:text-base">
+                              <ShinyText text="Aroma dulce icónico y material 100% impermeable" speed={3} />
+                            </p>
+                          </div>
+                        ) : selectedBrand.id === 'giulia-domna' ? (
+                          <div className="bg-gradient-to-r from-sky-700/95 to-neutral-800/95 backdrop-blur-md p-3.5 rounded-xl border border-sky-400/40 text-white shadow-xl">
+                            <div className="flex items-center gap-2 font-black text-xs uppercase tracking-wider text-sky-200">
+                              <Award className="w-4 h-4 text-sky-300" />
+                              <span>Cuero Genuino Brasil</span>
+                            </div>
+                            <p className="font-extrabold text-sm sm:text-base text-white">
+                              <ShinyText text="Calzado boutique de lujo para zapaterías selectas" speed={3} />
+                            </p>
+                          </div>
+                        ) : (
+                          <div className="bg-gradient-to-r from-neutral-800/95 to-neutral-900/95 backdrop-blur-md p-3.5 rounded-xl border border-neutral-700 text-white shadow-xl">
+                            <div className="flex items-center gap-2 font-black text-xs uppercase tracking-wider">
+                              <Sparkles className="w-4 h-4 text-primary" />
+                              <span>Streetwear Español</span>
+                            </div>
+                            <p className="font-extrabold text-sm sm:text-base">
+                              <ShinyText text="Modelos casual wear de altísima rotación semanal" speed={3} />
+                            </p>
+                          </div>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                </TiltedCard>
+                  </TiltedCard>
+                </motion.div>
+              </AnimatePresence>
+            </div>
+
+            {/* Right Column: Brand Selector Tabs at the Top + Brand Copy & USPs */}
+            <div className="lg:col-span-7 space-y-6">
+              
+              {/* Brand Selector Tabs (Integrated inside Right Column) */}
+              <div className="overflow-x-auto pb-1 scrollbar-none">
+                <div className="inline-flex items-center p-1.5 sm:p-2 rounded-2xl bg-neutral-950/90 border border-neutral-800 backdrop-blur-xl gap-1.5 sm:gap-2.5 shadow-xl shrink-0 max-w-full">
+                  {BRANDS.map((brand) => {
+                    const isSelected = selectedBrandId === brand.id;
+                    const isGiulia = brand.id === 'giulia-domna';
+
+                    return (
+                      <button
+                        key={brand.id}
+                        onClick={() => setSelectedBrandId(brand.id)}
+                        className={`group relative px-3 sm:px-6 py-2.5 sm:py-3.5 rounded-xl transition-all flex items-center justify-center shrink-0 z-10 ${
+                          isSelected
+                            ? 'bg-white/10 shadow-md border border-white/20'
+                            : 'bg-transparent hover:bg-white/5'
+                        }`}
+                        aria-label={brand.name}
+                      >
+                        {isSelected && (
+                          <motion.div
+                            layoutId="active-brand-tab"
+                            className={`absolute inset-0 rounded-xl border shadow-md -z-10 ${currentTheme.tabActive}`}
+                            transition={{ type: 'spring', stiffness: 450, damping: 35 }}
+                          />
+                        )}
+                        <img
+                          src={brand.logoSvg}
+                          alt={brand.name}
+                          className={`h-7 sm:h-9 2xl:h-10 w-auto max-w-[80px] sm:max-w-[140px] object-contain transition-all duration-300 ${
+                            isSelected
+                              ? isGiulia
+                                ? '[filter:brightness(0)_saturate(100%)_invert(75%)_sepia(45%)_saturate(1200%)_hue-rotate(160deg)_brightness(105%)_contrast(95%)] opacity-100 scale-105 drop-shadow-[0_2px_12px_rgba(56,189,248,0.4)]'
+                                : 'filter-none opacity-100 scale-105 drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]'
+                              : 'brightness-0 invert opacity-75 group-hover:filter-none group-hover:opacity-100 group-hover:scale-105'
+                          }`}
+                        />
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
 
-              {/* Right Column: Brand Copy & USPs */}
-              <div className="lg:col-span-7 space-y-6">
-                <div>
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className={`text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full border ${currentTheme.badgeBg}`}>
-                      {selectedBrand.badge}
-                    </span>
-                    <span className="text-xs text-neutral-400 font-sf-medium">
-                      Embajadora: <strong className="text-white">{selectedBrand.ambassador}</strong>
-                    </span>
+              {/* Dynamic Brand Information & Actions */}
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={selectedBrand.id}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.25 }}
+                  className="space-y-6"
+                >
+                  <div>
+                    <div className="flex items-center gap-3 mb-2 flex-wrap">
+                      <span className={`text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full border ${currentTheme.badgeBg}`}>
+                        {selectedBrand.badge}
+                      </span>
+                      <span className="text-xs text-neutral-400 font-sf-medium">
+                        Embajadora: <strong className="text-white">{selectedBrand.ambassador}</strong>
+                      </span>
+                    </div>
+
+                    <h3 className="text-2xl sm:text-4xl 2xl:text-5xl font-sf-bold text-white mb-3">
+                      Colección {selectedBrand.name} en Argentina
+                    </h3>
+
+                    <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-sf-regular">
+                      {selectedBrand.description}
+                    </p>
                   </div>
 
-                  <h3 className="text-2xl sm:text-4xl 2xl:text-5xl font-sf-bold text-white mb-3">
-                    Colección {selectedBrand.name} en Argentina
-                  </h3>
+                  {/* Categories Pills */}
+                  <div className="space-y-2">
+                    <span className="text-xs font-bold text-neutral-400 uppercase tracking-wider block">
+                      Líneas disponibles en módulo:
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedBrand.categories.map((cat, idx) => (
+                        <span
+                          key={idx}
+                          className="px-3.5 py-1 rounded-xl bg-neutral-950 border border-neutral-800 text-xs font-medium text-neutral-200 shadow-xs"
+                        >
+                          {cat}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
 
-                  <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-sf-regular">
-                    {selectedBrand.description}
-                  </p>
-                </div>
-
-                {/* Categories Pills */}
-                <div className="space-y-2">
-                  <span className="text-xs font-bold text-neutral-400 uppercase tracking-wider block">
-                    Líneas disponibles en módulo:
-                  </span>
-                  <div className="flex flex-wrap gap-2">
-                    {selectedBrand.categories.map((cat, idx) => (
-                      <span
-                        key={idx}
-                        className="px-3.5 py-1 rounded-xl bg-neutral-950 border border-neutral-800 text-xs font-medium text-neutral-200 shadow-xs"
-                      >
-                        {cat}
-                      </span>
+                  {/* USPs List */}
+                  <div className="space-y-3 pt-1">
+                    {selectedBrand.uspList.map((usp, idx) => (
+                      <div key={idx} className="flex items-start gap-3">
+                        <div className="w-5 h-5 rounded-full bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-400 shrink-0 mt-0.5 shadow-sm">
+                          <Check className="w-3.5 h-3.5" />
+                        </div>
+                        <span className="text-xs sm:text-sm text-neutral-200 font-sf-regular">
+                          {usp}
+                        </span>
+                      </div>
                     ))}
                   </div>
-                </div>
 
-                {/* USPs List */}
-                <div className="space-y-3 pt-2">
-                  {selectedBrand.uspList.map((usp, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-400 shrink-0 mt-0.5 shadow-sm">
-                        <Check className="w-3.5 h-3.5" />
-                      </div>
-                      <span className="text-xs sm:text-sm text-neutral-200 font-sf-regular">
-                        {usp}
-                      </span>
-                    </div>
-                  ))}
-                </div>
+                  {/* Action Buttons */}
+                  <div className="pt-3 flex flex-wrap items-center gap-3">
+                    <button
+                      onClick={() => onOpenModal('xti')}
+                      className="px-6 py-3.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-sf-bold text-xs sm:text-sm shadow-lg shadow-red-600/30 hover:scale-105 transition-all flex items-center gap-2"
+                    >
+                      <FileText className="w-4 h-4" />
+                      <span>Ver Catálogo {selectedBrand.name}</span>
+                    </button>
 
-                {/* Action Buttons */}
-                <div className="pt-4 flex flex-wrap items-center gap-3">
-                  <button
-                    onClick={() => onOpenModal('xti')}
-                    className="px-6 py-3.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-sf-bold text-xs sm:text-sm shadow-lg shadow-red-600/30 hover:scale-105 transition-all flex items-center gap-2"
-                  >
-                    <FileText className="w-4 h-4" />
-                    <span>Ver Catálogo {selectedBrand.name}</span>
-                  </button>
+                    <button
+                      onClick={() => onOpenAdvisorModal ? onOpenAdvisorModal(ADVISORS[0]) : null}
+                      className="px-5 py-3.5 rounded-xl bg-neutral-950 hover:bg-neutral-800 text-neutral-200 font-sf-medium text-xs sm:text-sm border border-neutral-800 hover:border-neutral-700 flex items-center gap-2 transition-colors hover:scale-105"
+                    >
+                      <MessageCircle className="w-4 h-4 text-emerald-400" />
+                      <span>Consultar Disponibilidad</span>
+                    </button>
+                  </div>
 
-                  <button
-                    onClick={() => onOpenAdvisorModal ? onOpenAdvisorModal(ADVISORS[0]) : null}
-                    className="px-5 py-3.5 rounded-xl bg-neutral-900 hover:bg-neutral-800 text-neutral-200 font-sf-medium text-xs sm:text-sm border border-neutral-800 hover:border-neutral-700 flex items-center gap-2 transition-colors hover:scale-105"
-                  >
-                    <MessageCircle className="w-4 h-4 text-emerald-400" />
-                    <span>Consultar Disponibilidad</span>
-                  </button>
-                </div>
-
-              </div>
+                </motion.div>
+              </AnimatePresence>
 
             </div>
-          </motion.div>
-        </AnimatePresence>
+
+          </div>
+        </div>
 
       </div>
     </section>
