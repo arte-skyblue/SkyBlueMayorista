@@ -4,7 +4,7 @@ import {
   Percent, 
   Truck, 
   MapPin, 
-  Clock,
+  Clock, 
   Phone, 
   Mail, 
   MessageCircle, 
@@ -40,40 +40,40 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
   };
 
   return (
-    <footer className="bg-slate-950 text-slate-400 border-t border-slate-800">
+    <footer className="bg-neutral-950 text-neutral-400 border-t border-neutral-800">
       
       {/* Top Value Banner */}
-      <div className="border-b border-slate-800 py-10 2xl:py-14 bg-slate-900/50">
+      <div className="border-b border-neutral-800 py-10 2xl:py-14 bg-neutral-900/40">
         <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
             
-            <div className="flex items-center justify-center md:justify-start gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800">
-              <div className="w-12 h-12 rounded-xl bg-primary/20 text-primary flex items-center justify-center shrink-0">
+            <div className="flex items-center justify-center md:justify-start gap-4 p-4 rounded-2xl bg-neutral-900 border border-neutral-800">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary border border-primary/20 flex items-center justify-center shrink-0">
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
-                <h5 className="font-extrabold text-white text-sm">Venta por Módulos (8/12 Pares)</h5>
-                <p className="text-xs text-slate-400">Exclusivo comerciantes con CUIT.</p>
+                <h5 className="font-sf-bold text-white text-sm">Venta por Módulos (8/12 Pares)</h5>
+                <p className="text-xs text-neutral-400 font-sf-regular">Exclusivo comerciantes con CUIT.</p>
               </div>
             </div>
 
-            <div className="flex items-center justify-center md:justify-start gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800">
-              <div className="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+            <div className="flex items-center justify-center md:justify-start gap-4 p-4 rounded-2xl bg-neutral-900 border border-neutral-800">
+              <div className="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center shrink-0">
                 <Percent className="w-6 h-6" />
               </div>
               <div>
-                <h5 className="font-extrabold text-white text-sm">10% Adicional en tu Pago</h5>
-                <p className="text-xs text-slate-400">En efectivo, transferencia o depósito.</p>
+                <h5 className="font-sf-bold text-white text-sm">10% Adicional en tu Pago</h5>
+                <p className="text-xs text-neutral-400 font-sf-regular">En efectivo, transferencia o depósito.</p>
               </div>
             </div>
 
-            <div className="flex items-center justify-center md:justify-start gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800">
-              <div className="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+            <div className="flex items-center justify-center md:justify-start gap-4 p-4 rounded-2xl bg-neutral-900 border border-neutral-800">
+              <div className="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center shrink-0">
                 <Truck className="w-6 h-6" />
               </div>
               <div>
-                <h5 className="font-extrabold text-white text-sm">Despachos en 24 a 48 hs</h5>
-                <p className="text-xs text-slate-400">Envíos asegurados a todo el país.</p>
+                <h5 className="font-sf-bold text-white text-sm">Despachos en 24 a 48 hs</h5>
+                <p className="text-xs text-neutral-400 font-sf-regular">Envíos asegurados a todo el país.</p>
               </div>
             </div>
 
@@ -91,141 +91,142 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
               <img 
                 src="/logos/SkyBlue.svg" 
                 alt="SkyBlue Calzado Mayorista" 
-                className="h-10 w-auto object-contain"
+                className="h-9 w-auto object-contain"
               />
             </div>
 
-            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
-              Distribuidor oficial mayorista de calzado y marroquinería en Argentina. Representante oficial de <strong className="text-slate-200">Xti (María Becerra)</strong>, <strong className="text-slate-200">Refresh</strong>, <strong className="text-slate-200">Petite Jolie</strong> y <strong className="text-slate-200">Giulia Domna</strong>.
+            <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed max-w-sm font-sf-regular">
+              Distribuidor oficial mayorista de calzado y marroquinería en Argentina. Representante oficial de <strong className="text-white">Xti (María Becerra)</strong>, <strong className="text-white">Refresh</strong>, <strong className="text-white">Petite Jolie</strong> y <strong className="text-white">Giulia Domna</strong>.
             </p>
 
-            <div className="pt-1 text-xs text-slate-400 space-y-1.5">
-              <div>CUIT Comercial: <span className="text-slate-200 font-bold">{COMPANY_INFO.cuit}</span></div>
-              <div className="flex items-start gap-1.5 text-slate-300">
-                <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                <span>Showroom Mayorista: {COMPANY_INFO.showroom.address}</span>
-              </div>
-              <div className="flex items-center gap-1.5 text-emerald-400">
-                <Clock className="w-3.5 h-3.5" />
-                <span>{COMPANY_INFO.showroom.schedule} (Cita previa)</span>
-              </div>
-            </div>
-
-            {/* Social Icons */}
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://instagram.com"
+                href={COMPANY_INFO.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-xl bg-slate-900 hover:bg-pink-600 hover:text-white border border-slate-800 flex items-center justify-center transition-colors"
-                aria-label="Instagram"
+                className="w-9 h-9 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 hover:text-white hover:border-primary transition-colors"
+                aria-label="Instagram Oficial"
               >
                 <InstagramIcon className="w-4 h-4" />
               </a>
+
               <a
-                href="https://facebook.com"
+                href={COMPANY_INFO.facebookUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-xl bg-slate-900 hover:bg-blue-600 hover:text-white border border-slate-800 flex items-center justify-center transition-colors"
-                aria-label="Facebook"
+                className="w-9 h-9 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 hover:text-white hover:border-primary transition-colors"
+                aria-label="Facebook Oficial"
               >
                 <FacebookIcon className="w-4 h-4" />
               </a>
+
               <a
-                href={`https://wa.me/5491138916779`}
+                href={COMPANY_INFO.b2bPlatformUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-xl bg-slate-900 hover:bg-emerald-600 hover:text-white border border-slate-800 flex items-center justify-center transition-colors"
-                aria-label="WhatsApp"
+                className="px-3.5 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-sf-bold text-xs flex items-center gap-1.5 shadow-sm transition-all"
               >
-                <MessageCircle className="w-4 h-4" />
+                <Lock className="w-3.5 h-3.5" />
+                <span>Portal B2B</span>
               </a>
             </div>
           </div>
 
-          {/* Col 2: Marcas Oficiales */}
+          {/* Col 2: Marcas */}
           <div className="space-y-3">
-            <h5 className="font-extrabold text-white text-sm uppercase tracking-wider">
-              Marcas Oficiales
-            </h5>
-            <ul className="space-y-2 text-xs">
-              <li><button onClick={() => setActiveTab('marcas')} className="hover:text-primary text-left transition-colors">Xti España (María Becerra)</button></li>
-              <li><button onClick={() => setActiveTab('marcas')} className="hover:text-primary text-left transition-colors">Refresh Casual Wear</button></li>
-              <li><button onClick={() => setActiveTab('marcas')} className="hover:text-primary text-left transition-colors">Petite Jolie Brasil (J-Lastic®)</button></li>
-              <li><button onClick={() => setActiveTab('marcas')} className="hover:text-primary text-left transition-colors">Giulia Domna (Cuero Legítimo)</button></li>
-              <li><button onClick={() => setActiveTab('catalogo')} className="hover:text-primary text-left transition-colors">XTI Kids Colegial & Urbano</button></li>
-            </ul>
-          </div>
-
-          {/* Col 3: Secciones & B2B */}
-          <div className="space-y-3">
-            <h5 className="font-extrabold text-white text-sm uppercase tracking-wider">
-              Portal Mayorista
-            </h5>
-            <ul className="space-y-2 text-xs">
+            <h6 className="font-sf-bold text-white text-xs uppercase tracking-wider">Marcas Oficiales</h6>
+            <ul className="space-y-2 text-xs font-sf-regular">
               <li>
-                <a
-                  href={COMPANY_INFO.b2bPlatformUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-amber-400 hover:underline font-bold flex items-center gap-1"
-                >
-                  <Lock className="w-3 h-3" />
-                  <span>mayoristas.skyblue.com.ar</span>
-                </a>
+                <button onClick={() => onOpenModal('xti')} className="hover:text-white transition-colors">
+                  Xti España (María Becerra)
+                </button>
               </li>
-              <li><button onClick={() => setActiveTab('catalogo')} className="hover:text-primary text-left transition-colors">Catálogo por Módulos</button></li>
-              <li><button onClick={() => setActiveTab('beneficios')} className="hover:text-primary text-left transition-colors">Calculadora de Ganancia x2.5</button></li>
-              <li><button onClick={() => setActiveTab('showroom')} className="hover:text-primary text-left transition-colors">Showroom Tapiales (1er Piso)</button></li>
-              <li><button onClick={() => setActiveTab('faq')} className="hover:text-primary text-left transition-colors">Preguntas Frecuentes FAQ</button></li>
-              <li><button onClick={() => setActiveTab('blog')} className="hover:text-primary text-left transition-colors">Blog para Zapaterías</button></li>
+              <li>
+                <button onClick={() => onOpenModal('refresh')} className="hover:text-white transition-colors">
+                  Refresh (Casual Wear)
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onOpenModal('petite-jolie')} className="hover:text-white transition-colors">
+                  Petite Jolie (J-Lastic®)
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onOpenModal('giulia-domna')} className="hover:text-white transition-colors">
+                  Giulia Domna (Cuero Brasil)
+                </button>
+              </li>
             </ul>
           </div>
 
-          {/* Col 4: Asesores de Contacto */}
+          {/* Col 3: Navegación */}
           <div className="space-y-3">
-            <h5 className="font-extrabold text-white text-sm uppercase tracking-wider">
-              Asesores Comerciales
-            </h5>
-            <div className="space-y-2.5 text-xs">
-              <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 space-y-0.5">
-                <span className="font-bold text-white block">Juliana (Showroom & Dama)</span>
-                <span className="text-slate-400 block text-[11px]">+54 9 11 3891-6779</span>
-              </div>
+            <h6 className="font-sf-bold text-white text-xs uppercase tracking-wider">Navegación</h6>
+            <ul className="space-y-2 text-xs font-sf-regular">
+              <li>
+                <button onClick={() => setActiveTab('inicio')} className="hover:text-white transition-colors">
+                  Inicio
+                </button>
+              </li>
+              <li>
+                <button onClick={() => setActiveTab('catalogo')} className="hover:text-white transition-colors">
+                  Catálogo Mayorista
+                </button>
+              </li>
+              <li>
+                <button onClick={() => setActiveTab('showroom')} className="hover:text-white transition-colors">
+                  Showroom Tapiales
+                </button>
+              </li>
+              <li>
+                <button onClick={() => setActiveTab('faq')} className="hover:text-white transition-colors">
+                  Preguntas Frecuentes
+                </button>
+              </li>
+              <li>
+                <button onClick={() => setActiveTab('blog')} className="hover:text-white transition-colors">
+                  Blog Mayorista
+                </button>
+              </li>
+            </ul>
+          </div>
 
-              <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 space-y-0.5">
-                <span className="font-bold text-white block">Jesica (Interior & Kids)</span>
-                <span className="text-slate-400 block text-[11px]">+54 9 11 3093-6075</span>
-              </div>
-
-              <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 space-y-0.5">
-                <span className="font-bold text-white block">Marcelino (Cuentas B2B)</span>
-                <span className="text-slate-400 block text-[11px]">+54 9 11 3658-2482</span>
-              </div>
-            </div>
+          {/* Col 4: Contacto */}
+          <div className="space-y-3">
+            <h6 className="font-sf-bold text-white text-xs uppercase tracking-wider">Contacto Mayorista</h6>
+            <ul className="space-y-2.5 text-xs font-sf-regular">
+              <li className="flex items-start gap-2">
+                <MapPin className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                <span>Curapaligüe 1428 (1er Piso), Tapiales, Buenos Aires</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Clock className="w-3.5 h-3.5 text-primary shrink-0" />
+                <span>Lun a Vie de 08:00 a 17:00 hs</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                <span>+54 9 11 3891-6779</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Mail className="w-3.5 h-3.5 text-primary shrink-0" />
+                <span>ventas@skyblue.com.ar</span>
+              </li>
+            </ul>
           </div>
 
         </div>
 
-        {/* Retail Stores Mention */}
-        <div className="pt-6 border-t border-slate-800/80 text-xs text-slate-400 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <Store className="w-4 h-4 text-primary shrink-0" />
-            <span>Locales minoristas a la calle: Curapaligüe 1428 (Tapiales) | Av. Libertad 1190 (Cañuelas)</span>
-          </div>
+        {/* Bottom Bar */}
+        <div className="pt-10 mt-10 border-t border-neutral-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-sf-medium">
+          <p>© {new Date().getFullYear()} SkyBlue Calzado Mayorista. Todos los derechos reservados. Venta exclusiva a comerciantes con CUIT.</p>
 
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1.5 text-slate-400 hover:text-white transition-colors"
+            className="flex items-center gap-1.5 text-neutral-400 hover:text-white transition-colors"
           >
             <span>Volver arriba</span>
-            <ArrowUp className="w-4 h-4" />
+            <ArrowUp className="w-3.5 h-3.5 text-primary" />
           </button>
-        </div>
-
-        {/* Bottom Bar & Copyright */}
-        <div className="pt-6 mt-6 border-t border-slate-900 text-center text-xs text-slate-700">
-          <p>© {new Date().getFullYear()} SkyBlue Calzado Mayorista. Venta exclusiva a comerciantes con CUIT por módulos de 8 o 12 pares.</p>
         </div>
 
       </div>

@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import DotBackground from './reactbits/DotBackground';
 import ShinyText from './reactbits/ShinyText';
+import NumberTicker from './reactbits/NumberTicker';
 import { COMPANY_INFO, ADVISORS } from '../data/mockData';
 
 export default function ProfitCalculator({ onOpenAdvisorModal }) {
@@ -76,7 +77,10 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
                       Inversión Mayorista Estimada:
                     </label>
                     <span className="text-2xl font-sf-bold text-primary">
-                      {formatCurrency(investment)}
+                      <NumberTicker
+                        value={investment}
+                        formatter={(v) => formatCurrency(v)}
+                      />
                     </span>
                   </div>
 
@@ -99,108 +103,123 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
 
                 {/* Multiplier Margins */}
                 <div className="space-y-3">
-                  <label className="text-xs font-sf-bold uppercase text-neutral-300 tracking-wider flex items-center justify-between flex-wrap gap-1">
-                    <span>Margen de Venta al Público:</span>
-                    <span className="text-xs text-amber-400 font-sf-bold whitespace-nowrap">
-                      Multiplicador x{multiplier}
-                    </span>
+                  <label className="text-xs font-sf-bold uppercase text-neutral-300 tracking-wider block">
+                    Markup / Multiplicador de Venta Público:
                   </label>
 
-                  <div className="grid grid-cols-3 gap-2.5">
+                  <div className="grid grid-cols-3 gap-2 sm:gap-3">
                     {[
-                      { val: 2.0, label: "x2.0 (100% markup)", desc: "Rotación rápida" },
-                      { val: 2.2, label: "x2.2 (120% markup)", desc: "Promedio mercado" },
-                      { val: 2.5, label: "x2.5 (150% markup)", desc: "Boutique & Cuero" }
-                    ].map((m) => (
+                      { val: 2.0, label: 'x2.0 (100% Margen)' },
+                      { val: 2.2, label: 'x2.2 (120% Recomendado)' },
+                      { val: 2.5, label: 'x2.5 (150% Premium)' }
+                    ].map((item) => (
                       <button
-                        key={m.val}
-                        onClick={() => setMultiplier(m.val)}
-                        className={`p-3 rounded-2xl border text-center transition-all ${
-                          multiplier === m.val
-                            ? 'bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/30 scale-105'
-                            : 'bg-neutral-950 border-neutral-800 text-neutral-300 hover:border-neutral-700'
+                        key={item.val}
+                        onClick={() => {
+                          setMultiplier(item.val);
+                          handleCalculateConfetti();
+                        }}
+                        className={`p-3 rounded-2xl border text-xs font-sf-bold transition-all text-center flex flex-col items-center justify-center gap-1 ${
+                          multiplier === item.val
+                            ? 'bg-primary text-white border-primary shadow-lg shadow-primary/30 scale-105'
+                            : 'bg-neutral-950/60 text-neutral-300 border-neutral-800 hover:border-neutral-700'
                         }`}
                       >
-                        <div className="font-sf-bold text-xs sm:text-sm">{m.label.split(' ')[0]}</div>
-                        <div className="text-[10px] opacity-80 mt-0.5">{m.desc}</div>
+                        <span className="text-base font-extrabold">{item.val}x</span>
+                        <span className="text-[10px] opacity-80">{item.val === 2.2 ? 'Recomendado' : item.val === 2.0 ? 'Básico' : 'Premium'}</span>
                       </button>
                     ))}
                   </div>
                 </div>
 
-                {/* 10% OFF Toggle */}
-                <div className="p-4 rounded-2xl bg-neutral-950 border border-neutral-800 flex items-center justify-between gap-3">
+                {/* 10% Cash/Transfer Discount Toggle */}
+                <div 
+                  onClick={() => setApplyDiscount(!applyDiscount)}
+                  className={`p-4 rounded-2xl border cursor-pointer transition-all flex items-center justify-between gap-3 ${
+                    applyDiscount 
+                      ? 'bg-emerald-950/40 border-emerald-500/40 shadow-inner' 
+                      : 'bg-neutral-950/40 border-neutral-800 opacity-60'
+                  }`}
+                >
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
-                      <Percent className="w-4 h-4" />
+                    <div className={`w-6 h-6 rounded-lg flex items-center justify-center text-xs font-bold ${
+                      applyDiscount ? 'bg-emerald-500 text-slate-950' : 'bg-neutral-800 text-neutral-400'
+                    }`}>
+                      ✓
                     </div>
                     <div>
-                      <span className="text-xs font-sf-bold text-white block">10% OFF Transferencia / Contado</span>
-                      <p className="text-[11px] text-neutral-400 font-sf-regular">Ahorrás {formatCurrency(discountAmount)} sobre tu compra neta.</p>
+                      <span className="text-xs font-sf-bold text-emerald-300 block">
+                        10% Adicional por Transferencia / Efectivo
+                      </span>
+                      <span className="text-[11px] text-neutral-400">
+                        Ahorrás: {formatCurrency(discountAmount)} en el total
+                      </span>
                     </div>
                   </div>
-
-                  <input
-                    type="checkbox"
-                    checked={applyDiscount}
-                    onChange={(e) => setApplyDiscount(e.target.checked)}
-                    className="w-5 h-5 rounded accent-emerald-500 cursor-pointer"
-                  />
+                  <span className="text-xs font-bold text-emerald-400 bg-emerald-950 px-2 py-0.5 rounded-md border border-emerald-500/30">
+                    -10%
+                  </span>
                 </div>
 
               </div>
 
-              {/* Right Column: Projected Returns Box */}
-              <div className="lg:col-span-6 bg-neutral-950 rounded-3xl p-6 sm:p-8 border border-neutral-800 space-y-6">
-                <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
-                  <span className="text-xs font-sf-bold uppercase text-neutral-400 tracking-wider">
-                    Resultados Financieros Proyectados
+              {/* Right Column: Financial Results */}
+              <div className="lg:col-span-6 bg-neutral-950/80 border border-neutral-800 rounded-3xl p-6 sm:p-8 space-y-6 shadow-xl">
+                <div>
+                  <span className="text-xs font-sf-bold uppercase text-neutral-400 tracking-wider block mb-1">
+                    Ganancia Neta Proyectada:
                   </span>
-                  <button
-                    onClick={handleCalculateConfetti}
-                    className="text-xs font-sf-bold text-primary hover:underline flex items-center gap-1"
-                  >
-                    <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                    <span>Calcular</span>
-                  </button>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center text-xs text-neutral-300 font-sf-regular">
-                    <span>Recaudación Bruta Estimada:</span>
-                    <span className="font-sf-bold text-white text-base">{formatCurrency(estimatedRevenue)}</span>
-                  </div>
-
-                  <div className="flex justify-between items-center text-xs text-neutral-300 font-sf-regular">
-                    <span>Costo Neto de Mercadería (con 10% OFF):</span>
-                    <span className="font-sf-bold text-red-400 text-sm">{formatCurrency(netInvestment)}</span>
-                  </div>
-
-                  <div className="p-5 rounded-2xl bg-gradient-to-r from-emerald-950/40 to-neutral-900 border border-emerald-500/30 space-y-1">
-                    <div className="text-xs font-sf-bold uppercase text-emerald-400 tracking-wider">
-                      Ganancia Neta Estimada para tu Local:
-                    </div>
-                    <div className="text-3xl sm:text-4xl font-sf-bold text-emerald-400">
-                      {formatCurrency(estimatedProfit)}
-                    </div>
-                    <div className="text-[11px] text-emerald-300 font-sf-medium">
-                      Retorno sobre la Inversión (ROI): +{roiPercentage}% en cada curva vendida.
-                    </div>
+                  <div className="text-3xl sm:text-4xl 2xl:text-5xl font-sf-bold text-emerald-400 tracking-tight">
+                    <NumberTicker
+                      value={estimatedProfit}
+                      formatter={(v) => formatCurrency(v)}
+                    />
                   </div>
                 </div>
 
-                {/* WhatsApp Action */}
-                <div className="pt-2">
-                  <a
-                    href={`https://wa.me/${ADVISORS[0].cleanPhone}?text=${encodeURIComponent(defaultWhatsappMessage)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full py-4 px-6 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-sf-bold text-sm shadow-xl shadow-emerald-600/30 hover:scale-105 transition-all flex items-center justify-center gap-2"
-                  >
-                    <MessageCircle className="w-5 h-5 fill-white" />
-                    <span>Pedir Asesoría para este Presupuesto</span>
-                  </a>
+                <div className="grid grid-cols-2 gap-4 py-4 border-y border-neutral-800/80 text-xs">
+                  <div>
+                    <span className="text-neutral-400 block mb-1">Facturación Estimada:</span>
+                    <span className="text-base font-sf-bold text-white">
+                      <NumberTicker
+                        value={estimatedRevenue}
+                        formatter={(v) => formatCurrency(v)}
+                      />
+                    </span>
+                  </div>
+
+                  <div>
+                    <span className="text-neutral-400 block mb-1">Retorno de Inversión (ROI):</span>
+                    <span className="text-base font-sf-bold text-primary">
+                      +<NumberTicker value={Number(roiPercentage)} suffix="%" />
+                    </span>
+                  </div>
                 </div>
+
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-neutral-300">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>Módulos de 8 y 12 pares con curva surtida</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-neutral-300">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>Envíos gratis en CABA/GBA y traslado a expresos</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-neutral-300">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>Fotos y videos oficiales en 4K para tus redes</span>
+                  </div>
+                </div>
+
+                <a
+                  href={`https://wa.me/5491138916779?text=${encodeURIComponent(defaultWhatsappMessage)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-sf-bold text-sm flex items-center justify-center gap-2.5 shadow-lg shadow-emerald-600/30 transition-all hover:scale-105"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  <span>Pedir Asesoramiento con este Cálculo</span>
+                </a>
 
               </div>
 
