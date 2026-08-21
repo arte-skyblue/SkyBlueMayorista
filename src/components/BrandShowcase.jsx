@@ -167,9 +167,9 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
             {/* Right Column: Brand Selector Tabs at the Top + Brand Copy & USPs */}
             <div className="lg:col-span-7 space-y-6">
               
-              {/* Brand Selector Tabs (Integrated inside Right Column) */}
-              <div className="overflow-x-auto pb-1 scrollbar-none">
-                <div className="inline-flex items-center p-1.5 sm:p-2 rounded-2xl bg-neutral-950/90 border border-neutral-800 backdrop-blur-xl gap-1.5 sm:gap-2.5 shadow-xl shrink-0 max-w-full">
+              {/* Brand Selector Tabs (Integrated inside Right Column - Larger & Clearer) */}
+              <div className="w-full">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 p-2 sm:p-2.5 rounded-2xl bg-neutral-950/90 border border-neutral-800 backdrop-blur-xl shadow-xl w-full">
                   {BRANDS.map((brand) => {
                     const isSelected = selectedBrandId === brand.id;
                     const isGiulia = brand.id === 'giulia-domna';
@@ -178,28 +178,28 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
                       <button
                         key={brand.id}
                         onClick={() => setSelectedBrandId(brand.id)}
-                        className={`group relative px-3 sm:px-6 py-2.5 sm:py-3.5 rounded-xl transition-all flex items-center justify-center shrink-0 z-10 ${
+                        className={`group relative px-3 sm:px-4 py-3.5 sm:py-4 2xl:py-5 rounded-xl transition-all flex items-center justify-center z-10 ${
                           isSelected
-                            ? 'bg-white/10 shadow-md border border-white/20'
-                            : 'bg-transparent hover:bg-white/5'
+                            ? 'bg-white/10 shadow-lg border border-white/20'
+                            : 'bg-transparent hover:bg-white/5 border border-transparent'
                         }`}
                         aria-label={brand.name}
                       >
                         {isSelected && (
                           <motion.div
                             layoutId="active-brand-tab"
-                            className={`absolute inset-0 rounded-xl border shadow-md -z-10 ${currentTheme.tabActive}`}
+                            className={`absolute inset-0 rounded-xl border shadow-lg -z-10 ${currentTheme.tabActive}`}
                             transition={{ type: 'spring', stiffness: 450, damping: 35 }}
                           />
                         )}
                         <img
                           src={brand.logoSvg}
                           alt={brand.name}
-                          className={`h-7 sm:h-9 2xl:h-10 w-auto max-w-[80px] sm:max-w-[140px] object-contain transition-all duration-300 ${
+                          className={`h-9 sm:h-11 2xl:h-13 w-auto max-w-[100px] sm:max-w-[140px] 2xl:max-w-[160px] object-contain transition-all duration-300 ${
                             isSelected
                               ? isGiulia
-                                ? '[filter:brightness(0)_saturate(100%)_invert(75%)_sepia(45%)_saturate(1200%)_hue-rotate(160deg)_brightness(105%)_contrast(95%)] opacity-100 scale-105 drop-shadow-[0_2px_12px_rgba(56,189,248,0.4)]'
-                                : 'filter-none opacity-100 scale-105 drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]'
+                                ? '[filter:brightness(0)_saturate(100%)_invert(75%)_sepia(45%)_saturate(1200%)_hue-rotate(160deg)_brightness(105%)_contrast(95%)] opacity-100 scale-105 drop-shadow-[0_2px_14px_rgba(56,189,248,0.45)]'
+                                : 'filter-none opacity-100 scale-105 drop-shadow-[0_2px_12px_rgba(255,255,255,0.3)]'
                               : 'brightness-0 invert opacity-75 group-hover:filter-none group-hover:opacity-100 group-hover:scale-105'
                           }`}
                         />
