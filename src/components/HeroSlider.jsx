@@ -57,7 +57,7 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
       onMouseLeave={() => setIsPaused(false)}
     >
       {/* Mobile Layout (iPhone / Android) */}
-      <div className="flex flex-col md:hidden w-full">
+      <div className="flex flex-col md:hidden w-full pt-16">
         <div className="relative w-full aspect-[4/3] bg-neutral-950 overflow-hidden">
           {BANNERS.map((item, idx) => (
             <div
@@ -170,7 +170,7 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
       </div>
 
       {/* Desktop & iPad Hero Layout (16:9 / 21:9 Widescreen) */}
-      <div className="hidden md:block relative w-full h-[500px] lg:h-[580px] 2xl:h-[660px] 3xl:h-[720px] overflow-hidden">
+      <div className="hidden md:block relative w-full h-[560px] lg:h-[620px] 2xl:h-[700px] 3xl:h-[760px] pt-20 lg:pt-24 overflow-hidden">
         {BANNERS.map((item, idx) => (
           <div
             key={item.id}
