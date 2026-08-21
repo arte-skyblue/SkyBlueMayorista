@@ -41,7 +41,7 @@ export default function App() {
   const currentSeoPage = SEO_PAGES[activeTab] || SEO_PAGES.inicio;
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-['SF_Pro_Display',-apple-system,BlinkMacSystemFont,sans-serif] selection:bg-sky-500 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-background text-foreground font-['SF_Pro_Display',-apple-system,BlinkMacSystemFont,sans-serif] selection:bg-primary selection:text-primary-foreground">
       
       {/* 1. Top Navbar with Tabs & SVG Logo */}
       <Navbar 

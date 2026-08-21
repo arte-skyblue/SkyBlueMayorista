@@ -24,23 +24,23 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
     <section id="marcas" className="py-16 sm:py-24 bg-slate-900 text-white relative overflow-hidden">
       
       {/* Background Glows */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+      <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 relative z-10">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/20 border border-sky-400/30 text-sky-300 text-xs font-extrabold uppercase tracking-wider">
-            <Award className="w-4 h-4 text-sky-400" />
+        <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-12 2xl:mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-primary-foreground text-xs 2xl:text-sm font-extrabold uppercase tracking-wider">
+            <Award className="w-4 h-4 text-primary" />
             <span>Portafolio de Marcas Oficiales</span>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white">
+          <h2 className="text-3xl sm:text-5xl 2xl:text-6xl font-black tracking-tight text-white">
             Marcas Internacionales Representadas por SkyBlue
           </h2>
 
-          <p className="text-slate-300 text-base sm:text-lg">
+          <p className="text-slate-300 text-base sm:text-lg 2xl:text-xl">
             Somos distribuidores mayoristas oficiales en Argentina de firmas globales de calzado y marroquinería de alta rotación.
           </p>
         </div>
@@ -56,7 +56,7 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
                   onClick={() => setSelectedBrandId(brand.id)}
                   className={`px-4 sm:px-6 py-3 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 flex items-center gap-2.5 shrink-0 ${
                     isSelected
-                      ? 'bg-gradient-to-r from-sky-500 to-cyan-500 text-white shadow-lg shadow-sky-500/30 scale-105'
+                      ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/30 scale-105'
                       : 'text-slate-400 hover:text-white hover:bg-slate-700/50'
                   }`}
                 >
@@ -89,7 +89,7 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
                   
                   {/* Floating Brand Origin Badge */}
                   <div className="absolute top-4 left-4 bg-black/75 backdrop-blur-md border border-white/20 px-3.5 py-1.5 rounded-xl text-xs font-bold text-white flex items-center gap-2">
-                    <Globe2 className="w-4 h-4 text-sky-400" />
+                    <Globe2 className="w-4 h-4 text-primary" />
                     <span>{selectedBrand.country} • {selectedBrand.origin}</span>
                   </div>
 
@@ -150,7 +150,7 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
                   <h3 className="text-3xl sm:text-4xl font-black text-white">
                     {selectedBrand.name}
                   </h3>
-                  <span className="bg-sky-500/20 text-sky-300 border border-sky-400/30 text-xs font-black uppercase px-3 py-1 rounded-full">
+                  <span className="bg-primary/20 text-primary-foreground border border-primary/30 text-xs font-black uppercase px-3 py-1 rounded-full">
                     {selectedBrand.badge}
                   </span>
                 </div>
@@ -197,9 +197,9 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
               <div className="pt-3 flex flex-wrap items-center gap-3">
                 <button
                   onClick={() => onOpenModal(selectedBrand.id)}
-                  className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 text-slate-950 font-black text-sm shadow-xl shadow-sky-500/20 hover:scale-[1.02] transition-all flex items-center gap-2"
+                  className="px-6 py-3.5 rounded-xl bg-primary hover:bg-primary/90 text-primary-foreground font-black text-sm shadow-xl shadow-primary/20 hover:scale-[1.02] transition-all flex items-center gap-2"
                 >
-                  <FileText className="w-4 h-4 text-slate-950" />
+                  <FileText className="w-4 h-4 text-primary-foreground" />
                   <span>Pedir Catálogo {selectedBrand.name}</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>

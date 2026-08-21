@@ -39,24 +39,24 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
     <section id="showroom" className="py-16 sm:py-24 bg-slate-900 text-white relative overflow-hidden border-b border-slate-800">
       
       {/* Background glow and subtle dot pattern */}
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-sky-500/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 space-y-16">
+      <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 relative z-10 space-y-16">
         
         {/* Top Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 border-b border-slate-800 pb-10">
-          <div className="space-y-4 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/20 border border-sky-400/30 text-sky-300 text-xs font-extrabold uppercase tracking-wider">
-              <Building2 className="w-4 h-4 text-sky-400" />
+          <div className="space-y-4 max-w-2xl 2xl:max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-primary-foreground text-xs 2xl:text-sm font-extrabold uppercase tracking-wider">
+              <Building2 className="w-4 h-4 text-primary" />
               <span>Showroom Mayorista & Red de Locales</span>
             </div>
 
-            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-5xl 2xl:text-6xl font-black text-white tracking-tight leading-tight">
               Visitanos en Nuestro Showroom B2B de Tapiales
             </h2>
 
-            <p className="text-slate-300 text-base sm:text-lg">
+            <p className="text-slate-300 text-base sm:text-lg 2xl:text-xl">
               Espacio exclusivo para comerciantes, boutiques y zapaterías. Conocé las colecciones de la temporada en persona y armá tus módulos con asesoramiento personalizado.
             </p>
           </div>
@@ -66,9 +66,9 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
               href={`https://wa.me/5491138916779?text=${encodeURIComponent(`Hola Juliana! Quiero agendar una visita al Showroom de SkyBlue en Tapiales (Curapaligüe 1428, 1er piso) para conocer las curvas y modelos de la temporada.`)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-4 rounded-2xl bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 text-slate-950 font-black text-sm sm:text-base shadow-xl shadow-sky-500/20 hover:scale-105 transition-all flex items-center gap-2"
+              className="px-6 py-4 rounded-2xl bg-primary hover:bg-primary/90 text-primary-foreground font-black text-sm sm:text-base shadow-xl shadow-primary/20 hover:scale-105 transition-all flex items-center gap-2"
             >
-              <Calendar className="w-5 h-5 text-slate-950" />
+              <Calendar className="w-5 h-5 text-primary-foreground" />
               <span>Coordinar Cita con Juliana</span>
             </a>
           </div>
@@ -79,9 +79,9 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
           {stats.map((st, i) => (
             <div
               key={i}
-              className="p-5 rounded-2xl bg-slate-950/70 border border-slate-800 hover:border-sky-500/40 transition-colors space-y-1"
+              className="p-5 rounded-2xl bg-slate-950/70 border border-slate-800 hover:border-primary/40 transition-colors space-y-1"
             >
-              <div className="text-2xl sm:text-3xl font-black text-sky-400">
+              <div className="text-2xl sm:text-3xl font-black text-primary">
                 {st.value}
               </div>
               <div className="text-xs font-bold text-white uppercase tracking-wider">
@@ -102,12 +102,12 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
             
             {/* Showroom Tapiales Card */}
             <SpotlightCard
-              spotlightColor="rgba(14, 165, 233, 0.2)"
+              spotlightColor="rgba(224, 76, 50, 0.2)"
               className="p-6 sm:p-7 bg-slate-950/80 border-slate-800 space-y-4"
             >
               <div className="flex items-center justify-between">
-                <span className="bg-sky-500/20 text-sky-300 border border-sky-400/30 text-xs font-black uppercase px-3 py-1 rounded-full flex items-center gap-1.5">
-                  <Building2 className="w-3.5 h-3.5 text-sky-400" />
+                <span className="bg-primary/20 text-primary-foreground border border-primary/30 text-xs font-black uppercase px-3 py-1 rounded-full flex items-center gap-1.5">
+                  <Building2 className="w-3.5 h-3.5 text-primary" />
                   <span>Showroom B2B (1er Piso)</span>
                 </span>
                 <span className="text-xs text-amber-400 font-bold">
@@ -117,7 +117,7 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
 
               <div className="space-y-2">
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-sky-400 shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                   <div>
                     <h3 className="text-base sm:text-lg font-black text-white">
                       {COMPANY_INFO.showroom.address}
@@ -148,7 +148,7 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
                   rel="noopener noreferrer"
                   className="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold flex items-center gap-1.5 transition-colors border border-slate-700"
                 >
-                  <Navigation className="w-3.5 h-3.5 text-sky-400" />
+                  <Navigation className="w-3.5 h-3.5 text-primary" />
                   <span>Cómo Llegar en Google Maps</span>
                 </a>
               </div>
@@ -177,7 +177,7 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
                 const Icon = am.icon;
                 return (
                   <div key={i} className="p-3.5 rounded-xl bg-slate-950/50 border border-slate-800/80 flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-primary/20 text-primary flex items-center justify-center shrink-0">
                       <Icon className="w-4 h-4" />
                     </div>
                     <div>
@@ -202,7 +202,7 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
-                  <span className="text-xs font-black uppercase text-sky-300">Showroom Mayorista</span>
+                  <span className="text-xs font-black uppercase text-primary">Showroom Mayorista</span>
                   <p className="text-sm font-bold text-white">Espacio de exhibición comercial para comerciantes de todo el país</p>
                 </div>
               </div>

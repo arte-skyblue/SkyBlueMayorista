@@ -43,12 +43,12 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
     <footer className="bg-slate-950 text-slate-400 border-t border-slate-800">
       
       {/* Top Value Banner */}
-      <div className="border-b border-slate-800 py-10 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="border-b border-slate-800 py-10 2xl:py-14 bg-slate-900/50">
+        <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
             
             <div className="flex items-center justify-center md:justify-start gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800">
-              <div className="w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-primary/20 text-primary flex items-center justify-center shrink-0">
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
@@ -82,7 +82,7 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
       </div>
 
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14">
+      <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 py-14 2xl:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           
           {/* Col 1: Brand Info */}
@@ -102,7 +102,7 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
             <div className="pt-1 text-xs text-slate-400 space-y-1.5">
               <div>CUIT Comercial: <span className="text-slate-200 font-bold">{COMPANY_INFO.cuit}</span></div>
               <div className="flex items-start gap-1.5 text-slate-300">
-                <MapPin className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                 <span>Showroom Mayorista: {COMPANY_INFO.showroom.address}</span>
               </div>
               <div className="flex items-center gap-1.5 text-emerald-400">
@@ -149,11 +149,11 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
               Marcas Oficiales
             </h5>
             <ul className="space-y-2 text-xs">
-              <li><button onClick={() => setActiveTab('marcas')} className="hover:text-sky-400 text-left transition-colors">Xti España (María Becerra)</button></li>
-              <li><button onClick={() => setActiveTab('marcas')} className="hover:text-sky-400 text-left transition-colors">Refresh Casual Wear</button></li>
-              <li><button onClick={() => setActiveTab('marcas')} className="hover:text-sky-400 text-left transition-colors">Petite Jolie Brasil (J-Lastic®)</button></li>
-              <li><button onClick={() => setActiveTab('marcas')} className="hover:text-sky-400 text-left transition-colors">Giulia Domna (Cuero Legítimo)</button></li>
-              <li><button onClick={() => setActiveTab('catalogo')} className="hover:text-sky-400 text-left transition-colors">XTI Kids Colegial & Urbano</button></li>
+              <li><button onClick={() => setActiveTab('marcas')} className="hover:text-primary text-left transition-colors">Xti España (María Becerra)</button></li>
+              <li><button onClick={() => setActiveTab('marcas')} className="hover:text-primary text-left transition-colors">Refresh Casual Wear</button></li>
+              <li><button onClick={() => setActiveTab('marcas')} className="hover:text-primary text-left transition-colors">Petite Jolie Brasil (J-Lastic®)</button></li>
+              <li><button onClick={() => setActiveTab('marcas')} className="hover:text-primary text-left transition-colors">Giulia Domna (Cuero Legítimo)</button></li>
+              <li><button onClick={() => setActiveTab('catalogo')} className="hover:text-primary text-left transition-colors">XTI Kids Colegial & Urbano</button></li>
             </ul>
           </div>
 
@@ -174,11 +174,11 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
                   <span>mayoristas.skyblue.com.ar</span>
                 </a>
               </li>
-              <li><button onClick={() => setActiveTab('catalogo')} className="hover:text-sky-400 text-left transition-colors">Catálogo por Módulos</button></li>
-              <li><button onClick={() => setActiveTab('beneficios')} className="hover:text-sky-400 text-left transition-colors">Calculadora de Ganancia x2.5</button></li>
-              <li><button onClick={() => setActiveTab('showroom')} className="hover:text-sky-400 text-left transition-colors">Showroom Tapiales (1er Piso)</button></li>
-              <li><button onClick={() => setActiveTab('faq')} className="hover:text-sky-400 text-left transition-colors">Preguntas Frecuentes FAQ</button></li>
-              <li><button onClick={() => setActiveTab('blog')} className="hover:text-sky-400 text-left transition-colors">Blog para Zapaterías</button></li>
+              <li><button onClick={() => setActiveTab('catalogo')} className="hover:text-primary text-left transition-colors">Catálogo por Módulos</button></li>
+              <li><button onClick={() => setActiveTab('beneficios')} className="hover:text-primary text-left transition-colors">Calculadora de Ganancia x2.5</button></li>
+              <li><button onClick={() => setActiveTab('showroom')} className="hover:text-primary text-left transition-colors">Showroom Tapiales (1er Piso)</button></li>
+              <li><button onClick={() => setActiveTab('faq')} className="hover:text-primary text-left transition-colors">Preguntas Frecuentes FAQ</button></li>
+              <li><button onClick={() => setActiveTab('blog')} className="hover:text-primary text-left transition-colors">Blog para Zapaterías</button></li>
             </ul>
           </div>
 
@@ -210,7 +210,7 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
         {/* Retail Stores Mention */}
         <div className="pt-6 border-t border-slate-800/80 text-xs text-slate-400 flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <Store className="w-4 h-4 text-sky-400 shrink-0" />
+            <Store className="w-4 h-4 text-primary shrink-0" />
             <span>Locales minoristas a la calle: Curapaligüe 1428 (Tapiales) | Av. Libertad 1190 (Cañuelas)</span>
           </div>
 

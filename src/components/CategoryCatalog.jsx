@@ -29,22 +29,22 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
     : PRODUCTS_FEATURED.filter((p) => p.category === selectedCategory);
 
   return (
-    <section id="catalogo" className="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section id="catalogo" className="py-16 sm:py-24 2xl:py-28 bg-background border-b border-border">
+      <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-100 border border-sky-200 text-sky-800 text-xs font-extrabold uppercase tracking-wider">
-            <ShoppingBag className="w-4 h-4 text-sky-600" />
+        <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-12 2xl:mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs 2xl:text-sm font-extrabold uppercase tracking-wider">
+            <ShoppingBag className="w-4 h-4 text-primary" />
             <span>Muestrario de Modelos Seleccionados</span>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
+          <h2 className="text-3xl sm:text-5xl 2xl:text-6xl font-black text-foreground tracking-tight">
             Colecciones Mayoristas por Módulos de 8 y 12 Pares
           </h2>
 
-          <p className="text-slate-700 text-base sm:text-lg">
-            Presentamos una selección de nuestros modelos más vendidos. Para ver el catálogo completo de +300 artículos con precios mayoristas, ingresá con tu cuenta en <span className="font-bold text-sky-700">mayoristas.skyblue.com.ar</span>.
+          <p className="text-muted-foreground text-base sm:text-lg 2xl:text-xl">
+            Presentamos una selección de nuestros modelos más vendidos. Para ver el catálogo completo de +300 artículos con precios mayoristas, ingresá con tu cuenta en <span className="font-bold text-primary">mayoristas.skyblue.com.ar</span>.
           </p>
         </div>
 
@@ -56,19 +56,19 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
               onClick={() => setSelectedCategory(cat.id)}
               className={`cursor-pointer group p-3.5 rounded-2xl border transition-all duration-300 flex flex-col justify-between ${
                 selectedCategory === cat.id
-                  ? 'bg-sky-600 text-white border-sky-600 shadow-xl shadow-sky-600/20 scale-[1.02]'
-                  : 'bg-white text-slate-900 border-slate-200 hover:border-sky-300 hover:shadow-md'
+                  ? 'bg-primary text-primary-foreground border-primary shadow-xl shadow-primary/20 scale-[1.02]'
+                  : 'bg-card text-card-foreground border-border hover:border-primary/40 hover:shadow-md'
               }`}
             >
               <div>
-                <div className="aspect-[4/3] rounded-xl overflow-hidden mb-2.5 relative bg-slate-100">
+                <div className="aspect-[4/3] rounded-xl overflow-hidden mb-2.5 relative bg-muted">
                   <img
                     src={cat.image}
                     alt={`Categoría mayorista ${cat.name}`}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <span className={`absolute top-2 right-2 text-[9px] font-black uppercase px-1.5 py-0.5 rounded ${
-                    selectedCategory === cat.id ? 'bg-white text-sky-800' : 'bg-slate-950/80 text-white'
+                    selectedCategory === cat.id ? 'bg-card text-primary font-black' : 'bg-foreground/80 text-background'
                   }`}>
                     {cat.itemCount}
                   </span>
@@ -81,7 +81,7 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
 
               <div className="pt-1.5">
                 <span className={`text-[10px] font-semibold block ${
-                  selectedCategory === cat.id ? 'text-sky-100' : 'text-slate-700'
+                  selectedCategory === cat.id ? 'text-primary-foreground/90' : 'text-muted-foreground'
                 }`}>
                   {cat.moduleInfo}
                 </span>
@@ -91,10 +91,10 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
         </div>
 
         {/* Filter Navigation Bar */}
-        <div className="flex items-center justify-between flex-wrap gap-4 mb-8 pb-4 border-b border-slate-200">
+        <div className="flex items-center justify-between flex-wrap gap-4 mb-8 pb-4 border-b border-border">
           <div className="flex items-center gap-2">
-            <Filter className="w-4 h-4 text-slate-700" />
-            <span className="text-xs font-bold uppercase text-slate-700 tracking-wider">
+            <Filter className="w-4 h-4 text-muted-foreground" />
+            <span className="text-xs font-bold uppercase text-muted-foreground tracking-wider">
               Filtrar por Categoría:
             </span>
           </div>
@@ -106,8 +106,8 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
                 onClick={() => setSelectedCategory(opt.id)}
                 className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
                   selectedCategory === opt.id
-                    ? 'bg-slate-900 text-white shadow-md'
-                    : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
+                    ? 'bg-primary text-primary-foreground shadow-md'
+                    : 'bg-card text-muted-foreground hover:bg-muted border border-border'
                 }`}
               >
                 {opt.name}
@@ -120,10 +120,10 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5">
           {filteredProducts.map((product) => (
             <TiltedCard key={product.id} maxTilt={8} scale={1.01} className="h-full">
-              <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group flex flex-col justify-between h-full">
+              <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-xs hover:shadow-lg hover:border-primary/40 transition-all duration-300 group flex flex-col justify-between h-full">
                 {/* Product Top */}
                 <div>
-                  <div className="relative aspect-square overflow-hidden bg-slate-100">
+                  <div className="relative aspect-square overflow-hidden bg-muted">
                     <img
                       src={product.image}
                       alt={product.altText}
@@ -133,7 +133,7 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
                     
                     {/* Brand Tag */}
                     <div className="absolute top-2 left-2 flex flex-col gap-1 items-start">
-                      <span className="bg-slate-950/90 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded">
+                      <span className="bg-foreground/90 text-background text-[9px] font-black uppercase px-2 py-0.5 rounded">
                         {product.brand}
                       </span>
                     </div>
@@ -146,20 +146,20 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
 
                   {/* Info Content */}
                   <div className="p-3 space-y-2">
-                    <h4 className="font-bold text-xs text-slate-900 group-hover:text-sky-600 transition-colors leading-snug line-clamp-2">
+                    <h4 className="font-bold text-xs text-foreground group-hover:text-primary transition-colors leading-snug line-clamp-2">
                       {product.name}
                     </h4>
 
                     {/* Specs */}
                     <div className="space-y-1 text-[10px]">
-                      <div className="p-1.5 rounded-lg bg-slate-50 border border-slate-100 text-slate-700 flex items-center justify-between">
-                        <span className="font-semibold text-slate-700">Módulo:</span>
-                        <span className="font-bold text-slate-900">{product.module.replace('Módulo ', '')}</span>
+                      <div className="p-1.5 rounded-lg bg-muted border border-border text-foreground flex items-center justify-between">
+                        <span className="font-semibold text-muted-foreground">Módulo:</span>
+                        <span className="font-bold text-foreground">{product.module.replace('Módulo ', '')}</span>
                       </div>
 
-                      <div className="p-1.5 rounded-lg bg-emerald-50 border border-emerald-100 text-emerald-800 flex items-center justify-between">
-                        <span className="font-semibold text-emerald-800">Rentabilidad:</span>
-                        <span className="font-black text-emerald-700">{product.profitMargin}</span>
+                      <div className="p-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 flex items-center justify-between">
+                        <span className="font-semibold text-emerald-700">Rentabilidad:</span>
+                        <span className="font-black text-emerald-600">{product.profitMargin}</span>
                       </div>
                     </div>
                   </div>
@@ -171,7 +171,7 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
                     href={`https://wa.me/5491138916779?text=${encodeURIComponent(`Hola Juliana! Quiero consultar disponibilidad del módulo de: ${product.name} (${product.brand}) para mi local.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-2 px-2.5 rounded-xl bg-slate-900 hover:bg-emerald-600 text-white font-bold text-[10px] sm:text-xs transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm"
+                    className="w-full py-2 px-2.5 rounded-xl bg-foreground hover:bg-emerald-600 text-background hover:text-white font-bold text-[10px] sm:text-xs transition-all duration-300 flex items-center justify-center gap-1.5 shadow-xs"
                     title="Consultar por WhatsApp"
                   >
                     <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
@@ -185,7 +185,7 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
         </div>
 
         {/* B2B Private Platform CTA Banner */}
-        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-sky-700 via-sky-600 to-cyan-600 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-primary text-primary-foreground shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-center md:text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-black uppercase">
               <Lock className="w-3.5 h-3.5" />
@@ -194,7 +194,7 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
             <h4 className="text-xl sm:text-2xl font-black">
               ¿Querés ver el catálogo con todos los precios de fábrica?
             </h4>
-            <p className="text-sky-100 text-xs sm:text-sm max-w-xl">
+            <p className="text-primary-foreground/90 text-xs sm:text-sm max-w-xl">
               Ingresá a <span className="font-bold underline">mayoristas.skyblue.com.ar</span> y solicitá tu cuenta comercial con CUIT para acceder a toda la lista de precios y stock en tiempo real.
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
               href={COMPANY_INFO.b2bPlatformUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3.5 rounded-xl bg-slate-950 hover:bg-slate-900 text-white font-black text-xs sm:text-sm shadow-xl flex items-center gap-2 hover:scale-105 transition-all"
+              className="px-6 py-3.5 rounded-xl bg-foreground hover:bg-foreground/90 text-background font-black text-xs sm:text-sm shadow-xl flex items-center gap-2 hover:scale-105 transition-all"
             >
               <span>Ir a mayoristas.skyblue.com.ar</span>
               <ExternalLink className="w-4 h-4 text-amber-400" />
@@ -212,9 +212,9 @@ export default function CategoryCatalog({ onOpenModal, onOpenAdvisorModal }) {
 
             <button
               onClick={() => onOpenModal('catalogo')}
-              className="px-5 py-3.5 rounded-xl bg-white text-slate-950 hover:bg-slate-100 font-bold text-xs sm:text-sm shadow-lg transition-all flex items-center gap-1.5"
+              className="px-5 py-3.5 rounded-xl bg-card text-card-foreground hover:bg-muted font-bold text-xs sm:text-sm shadow-lg transition-all flex items-center gap-1.5"
             >
-              <FileText className="w-4 h-4 text-sky-600" />
+              <FileText className="w-4 h-4 text-primary" />
               <span>Pedir PDF por WhatsApp</span>
             </button>
           </div>

@@ -25,16 +25,16 @@ export default function ReelsSection({ onOpenAdvisorModal }) {
       {/* Background ambient lighting */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-pink-500/10 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+      <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-8">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/20 border border-pink-400/30 text-pink-300 text-xs font-extrabold uppercase tracking-wider">
+        <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-8 2xl:mb-12">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/20 border border-pink-400/30 text-pink-300 text-xs 2xl:text-sm font-extrabold uppercase tracking-wider">
             <InstagramIcon className="w-4 h-4 text-pink-400" />
             <span>Contenido & Reels en Formato Vertical</span>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+          <h2 className="text-3xl sm:text-5xl 2xl:text-6xl font-black text-white tracking-tight">
             Colecciones en Acción: Reels para tu Negocio
           </h2>
 

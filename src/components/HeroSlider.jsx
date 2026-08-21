@@ -50,18 +50,18 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
             className="w-full h-full object-cover object-center scale-105 transition-transform duration-10000"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-900/60" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-sky-500/20 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/25 via-transparent to-transparent" />
         </div>
       ))}
 
       {/* Content Container */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-14 w-full">
-        <div className="max-w-3xl space-y-5">
+      <div className="relative z-20 max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 py-10 sm:py-14 2xl:py-20 w-full">
+        <div className="max-w-3xl 2xl:max-w-4xl space-y-5 2xl:space-y-7">
           
           {/* Top Tag & Badge */}
           <div className="flex flex-wrap items-center gap-3">
-            <span className="bg-sky-500/20 text-sky-300 border border-sky-400/40 text-xs font-black uppercase px-3 py-1 rounded-full tracking-wider flex items-center gap-1.5 shadow-inner">
-              <Sparkles className="w-3.5 h-3.5 text-sky-400" />
+            <span className="bg-primary/20 text-primary-foreground border border-primary/40 text-xs font-black uppercase px-3 py-1 rounded-full tracking-wider flex items-center gap-1.5 shadow-inner">
+              <Sparkles className="w-3.5 h-3.5 text-primary" />
               <span>{banner.tag}</span>
             </span>
 
@@ -76,7 +76,7 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
               <React.Fragment key={i}>
                 {part}
                 {i < arr.length - 1 && (
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-cyan-300 mx-2">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-foreground mx-2">
                     ×
                   </span>
                 )}
@@ -90,8 +90,8 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
           </p>
 
           {/* Key Feature Highlight */}
-          <div className="p-3.5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 inline-flex items-center gap-3 text-xs sm:text-sm text-sky-200">
-            <ShieldCheck className="w-4 h-4 text-sky-400 shrink-0" />
+          <div className="p-3.5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 inline-flex items-center gap-3 text-xs sm:text-sm text-slate-200">
+            <ShieldCheck className="w-4 h-4 text-primary shrink-0" />
             <span className="font-bold">{banner.highlight}</span>
           </div>
 
@@ -112,7 +112,7 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
                   setActiveTab('catalogo');
                 }
               }}
-              className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 text-slate-950 font-black text-sm shadow-xl shadow-sky-500/25 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2"
+              className="px-6 py-3.5 rounded-xl bg-primary hover:bg-primary/90 text-primary-foreground font-black text-sm shadow-xl shadow-primary/25 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2"
             >
               <span>{banner.ctaText}</span>
               <ArrowRight className="w-4 h-4" />
@@ -166,7 +166,7 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
             onClick={() => setCurrentSlide(idx)}
             className={`h-2 rounded-full transition-all duration-300 ${
               idx === currentSlide 
-                ? 'w-8 bg-gradient-to-r from-sky-400 to-cyan-400' 
+                ? 'w-8 bg-primary' 
                 : 'w-2 bg-white/30 hover:bg-white/50'
             }`}
             aria-label={`Ir al slide ${idx + 1}`}

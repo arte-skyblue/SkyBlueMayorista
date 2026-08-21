@@ -48,18 +48,18 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
     <section id="calculadora" className="py-16 sm:py-24 bg-slate-950 text-white relative overflow-hidden">
       
       {/* React Bits DotBackground integration */}
-      <DotBackground dotColor="rgba(14, 165, 233, 0.15)">
+      <DotBackground dotColor="rgba(224, 76, 50, 0.12)">
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 relative z-10">
           
           {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-extrabold uppercase tracking-wider">
-              <Coins className="w-4 h-4 text-emerald-400" />
+          <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-14 2xl:mb-18">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-primary-foreground text-xs 2xl:text-sm font-extrabold uppercase tracking-wider">
+              <Coins className="w-4 h-4 text-primary" />
               <span>Simulador Interactivo B2B</span>
             </div>
 
-            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+            <h2 className="text-3xl sm:text-5xl 2xl:text-6xl font-black text-white tracking-tight">
               Calculadora de Rentabilidad Mayorista
             </h2>
 
@@ -81,7 +81,7 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
                     <label className="text-xs font-bold uppercase text-slate-300 tracking-wider">
                       Inversión Mayorista Estimada:
                     </label>
-                    <span className="text-xl font-black text-sky-400">
+                    <span className="text-xl font-black text-primary">
                       {formatCurrency(investment)}
                     </span>
                   </div>
@@ -93,7 +93,7 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
                     step="50000"
                     value={investment}
                     onChange={(e) => setInvestment(Number(e.target.value))}
-                    className="w-full h-2.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-400"
+                    className="w-full h-2.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-primary"
                   />
 
                   <div className="flex justify-between text-[11px] text-slate-400 font-semibold">
@@ -121,7 +121,7 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
                         onClick={() => setMultiplier(m.val)}
                         className={`p-3 rounded-xl border text-center transition-all ${
                           multiplier === m.val
-                            ? 'bg-sky-600 border-sky-400 text-white shadow-lg shadow-sky-600/30 scale-105'
+                            ? 'bg-primary border-primary text-primary-foreground shadow-lg shadow-primary/30 scale-105'
                             : 'bg-slate-950/60 border-slate-700 text-slate-300 hover:border-slate-500'
                         }`}
                       >
@@ -162,7 +162,7 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
               </div>
 
               {/* Right Column: Calculated Results Box */}
-              <div className="lg:col-span-6 bg-gradient-to-br from-slate-950 via-slate-900 to-sky-950 p-6 sm:p-8 rounded-3xl border border-sky-500/30 shadow-inner flex flex-col justify-between space-y-6">
+              <div className="lg:col-span-6 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-6 sm:p-8 rounded-3xl border border-primary/30 shadow-inner flex flex-col justify-between space-y-6">
                 
                 <div className="space-y-4">
                   <div className="flex items-center justify-between pb-3 border-b border-slate-800">
@@ -174,7 +174,7 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
 
                   <div className="flex items-center justify-between pb-3 border-b border-slate-800">
                     <span className="text-xs text-slate-400 font-semibold">Facturación Minorista Estimada:</span>
-                    <span className="text-base font-bold text-sky-300">
+                    <span className="text-base font-bold text-primary">
                       {formatCurrency(estimatedRevenue)}
                     </span>
                   </div>

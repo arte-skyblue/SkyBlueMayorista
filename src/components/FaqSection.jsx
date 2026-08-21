@@ -50,23 +50,23 @@ export default function FaqSection({ onOpenAdvisorModal }) {
     <section id="faq" className="py-16 sm:py-24 bg-slate-950 text-white relative overflow-hidden border-b border-slate-800">
       
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-sky-500/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 space-y-12">
+      <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 relative z-10 space-y-12">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/20 border border-sky-400/30 text-sky-300 text-xs font-extrabold uppercase tracking-wider">
-            <HelpCircle className="w-4 h-4 text-sky-400" />
+        <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-primary-foreground text-xs 2xl:text-sm font-extrabold uppercase tracking-wider">
+            <HelpCircle className="w-4 h-4 text-primary" />
             <span>Centro de Ayuda Mayorista B2B</span>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+          <h2 className="text-3xl sm:text-5xl 2xl:text-6xl font-black text-white tracking-tight">
             Preguntas Frecuentes de Zapaterías y Locales
           </h2>
 
-          <p className="text-slate-300 text-base sm:text-lg">
+          <p className="text-slate-300 text-base sm:text-lg 2xl:text-xl">
             Resolvé de forma rápida tus dudas comerciales antes de realizar tu pedido por módulos.
           </p>
 
@@ -78,7 +78,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Buscar por palabra clave: CUIT, 8 pares, María Becerra, Tapiales..."
-              className="w-full pl-12 pr-10 py-3.5 rounded-2xl bg-slate-900/90 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm text-white placeholder:text-slate-500 shadow-inner"
+              className="w-full pl-12 pr-10 py-3.5 rounded-2xl bg-slate-900/90 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-primary text-sm text-white placeholder:text-slate-500 shadow-inner"
             />
             {searchQuery && (
               <button
@@ -110,7 +110,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                   onClick={() => setActiveCategory(cat.id)}
                   className={`w-full p-3.5 rounded-2xl text-left font-bold text-xs sm:text-sm flex items-center justify-between transition-all relative ${
                     isActive
-                      ? 'text-slate-950 font-black shadow-lg shadow-sky-500/20'
+                      ? 'text-primary-foreground font-black shadow-lg shadow-primary/20'
                       : 'text-slate-300 hover:bg-slate-800/80 hover:text-white'
                   }`}
                 >
@@ -118,18 +118,18 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                   {isActive && (
                     <motion.div
                       layoutId="faq-category-rail-indicator"
-                      className="absolute inset-0 bg-gradient-to-r from-sky-400 to-cyan-400 rounded-2xl -z-10"
+                      className="absolute inset-0 bg-primary rounded-2xl -z-10"
                       transition={{ type: 'spring', stiffness: 450, damping: 35 }}
                     />
                   )}
 
                   <div className="flex items-center gap-3">
-                    <Icon className={`w-4 h-4 ${isActive ? 'text-slate-950' : 'text-sky-400'}`} />
+                    <Icon className={`w-4 h-4 ${isActive ? 'text-primary-foreground' : 'text-primary'}`} />
                     <span>{cat.name}</span>
                   </div>
 
                   <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${
-                    isActive ? 'bg-slate-950 text-sky-300' : 'bg-slate-800 text-slate-400'
+                    isActive ? 'bg-slate-950 text-primary' : 'bg-slate-800 text-slate-400'
                   }`}>
                     {cat.count}
                   </span>
@@ -168,7 +168,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                     initial={false}
                     className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
                       isOpen
-                        ? 'bg-slate-900 border-sky-400/70 shadow-xl shadow-sky-500/5'
+                        ? 'bg-slate-900 border-primary/70 shadow-xl shadow-primary/5'
                         : 'bg-slate-900/60 border-slate-800 hover:border-slate-700'
                     }`}
                   >
@@ -179,7 +179,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                     >
                       <div className="flex items-center gap-3 sm:gap-4">
                         <span className={`w-7 h-7 rounded-xl flex items-center justify-center text-xs font-black shrink-0 transition-colors ${
-                          isOpen ? 'bg-sky-500 text-slate-950' : 'bg-slate-800 text-slate-400 group-hover:text-white'
+                          isOpen ? 'bg-primary text-primary-foreground' : 'bg-slate-800 text-slate-400 group-hover:text-white'
                         }`}>
                           {idx + 1 < 10 ? `0${idx + 1}` : idx + 1}
                         </span>
@@ -192,7 +192,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                       </div>
 
                       <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
-                        isOpen ? 'bg-sky-500 text-slate-950 rotate-180' : 'bg-slate-800 text-slate-400 group-hover:bg-slate-700'
+                        isOpen ? 'bg-primary text-primary-foreground rotate-180' : 'bg-slate-800 text-slate-400 group-hover:bg-slate-700'
                       }`}>
                         {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                       </div>

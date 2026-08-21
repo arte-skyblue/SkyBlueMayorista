@@ -99,20 +99,20 @@ export default function SeoHeaderBlock({ pageData, activeTab }) {
   }
 
   return (
-    <div className="bg-gradient-to-b from-slate-900 via-slate-900/95 to-slate-950 text-white border-b border-slate-800 py-6 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto space-y-4">
+    <div className="bg-card text-card-foreground border-b border-border py-6 2xl:py-8 px-4 sm:px-6 2xl:px-12 shadow-xs">
+      <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto space-y-4">
         
         {/* Breadcrumbs */}
-        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-semibold text-slate-400">
-          <span className="hover:text-white transition-colors">SkyBlue Mayorista</span>
-          <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-          <span className="text-sky-400 font-bold uppercase tracking-wider">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs 2xl:text-sm font-semibold text-muted-foreground">
+          <span className="hover:text-foreground transition-colors">SkyBlue Mayorista</span>
+          <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/60" />
+          <span className="text-primary font-bold uppercase tracking-wider">
             {pageData.topicCluster}
           </span>
         </nav>
 
         {/* Semantic H1 */}
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-black text-foreground tracking-tight leading-tight">
           {pageData.h1}
         </h1>
 

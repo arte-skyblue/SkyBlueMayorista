@@ -69,12 +69,12 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className="bg-white rounded-3xl max-w-lg w-full max-h-[92vh] overflow-y-auto p-6 sm:p-8 shadow-2xl border border-slate-200 relative">
+      <div className="bg-card text-card-foreground rounded-3xl max-w-lg w-full max-h-[92vh] overflow-y-auto p-6 sm:p-8 shadow-2xl border border-border relative">
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors"
+          className="absolute top-4 right-4 p-2 rounded-full bg-muted hover:bg-muted/80 text-foreground transition-colors"
           aria-label="Cerrar modal"
         >
           <X className="w-5 h-5" />
@@ -85,16 +85,16 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
             
             {/* Header */}
             <div className="space-y-2">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-black uppercase">
-                <ShieldCheck className="w-4 h-4 text-sky-600" />
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-black uppercase">
+                <ShieldCheck className="w-4 h-4 text-primary" />
                 <span>Alta Mayorista con CUIT</span>
               </div>
 
-              <h3 className="text-2xl font-black text-slate-900">
+              <h3 className="text-2xl font-black text-foreground">
                 {modalType === 'xti' ? 'Catálogo Oficial María Becerra × XTI' : 'Solicitar Catálogo Mayorista y Precios'}
               </h3>
 
-              <p className="text-xs sm:text-sm text-slate-700">
+              <p className="text-xs sm:text-sm text-muted-foreground">
                 Completá los datos de tu local o showroom para enviarte el catálogo digital y habilitar el <span className="font-bold text-emerald-600">10% de descuento adicional</span> por pago al contado o transferencia.
               </p>
             </div>
@@ -104,7 +104,7 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="space-y-1">
-                  <label className="text-xs font-bold text-slate-700 uppercase">
+                  <label className="text-xs font-bold text-foreground uppercase">
                     Nombre y Apellido *
                   </label>
                   <input
@@ -113,12 +113,12 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Ej: Lucía Martínez"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-input border border-border focus:outline-none focus:ring-2 focus:ring-ring text-sm text-foreground"
                   />
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-xs font-bold text-slate-700 uppercase">
+                  <label className="text-xs font-bold text-foreground uppercase">
                     Comercio / Showroom *
                   </label>
                   <input
@@ -127,14 +127,14 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
                     value={formData.businessName}
                     onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
                     placeholder="Ej: Calzados Lucía"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-input border border-border focus:outline-none focus:ring-2 focus:ring-ring text-sm text-foreground"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="space-y-1">
-                  <label className="text-xs font-bold text-slate-700 uppercase">
+                  <label className="text-xs font-bold text-foreground uppercase">
                     CUIT Comercial / DNI *
                   </label>
                   <input
@@ -143,12 +143,12 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
                     value={formData.cuit}
                     onChange={(e) => setFormData({ ...formData, cuit: e.target.value })}
                     placeholder="27-12345678-4"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-input border border-border focus:outline-none focus:ring-2 focus:ring-ring text-sm text-foreground"
                   />
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-xs font-bold text-slate-700 uppercase">
+                  <label className="text-xs font-bold text-foreground uppercase">
                     Ciudad y Provincia *
                   </label>
                   <input
@@ -157,14 +157,14 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
                     value={formData.location}
                     onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                     placeholder="Ej: Rosario, Santa Fe"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-input border border-border focus:outline-none focus:ring-2 focus:ring-ring text-sm text-foreground"
                   />
                 </div>
               </div>
 
               {/* Asesor Selection */}
               <div className="space-y-1.5">
-                <label className="text-xs font-bold text-slate-700 uppercase">
+                <label className="text-xs font-bold text-foreground uppercase">
                   Asesor Comercial de Preferencia:
                 </label>
                 <div className="grid grid-cols-3 gap-2">
@@ -175,8 +175,8 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
                       onClick={() => setFormData({ ...formData, advisor: adv.id })}
                       className={`p-2 rounded-xl border text-left flex flex-col items-center text-center transition-all ${
                         formData.advisor === adv.id
-                          ? 'bg-sky-50 border-sky-500 text-sky-900 font-bold shadow-sm'
-                          : 'bg-slate-50 border-slate-200 text-slate-700 hover:border-slate-300'
+                          ? 'bg-primary/10 border-primary text-primary font-bold shadow-xs'
+                          : 'bg-muted/60 border-border text-muted-foreground hover:border-primary/40'
                       }`}
                     >
                       <img
@@ -193,7 +193,7 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
 
               {/* Category Checkboxes */}
               <div className="space-y-1.5 pt-1">
-                <label className="text-xs font-bold text-slate-700 uppercase block">
+                <label className="text-xs font-bold text-foreground uppercase block">
                   Líneas de Interés:
                 </label>
                 <div className="flex flex-wrap gap-1.5">
@@ -204,8 +204,8 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
                       onClick={() => handleCategoryToggle(cat.id)}
                       className={`px-3 py-1.5 rounded-lg text-xs font-medium border transition-all ${
                         formData.categories.includes(cat.id)
-                          ? 'bg-slate-900 text-white border-slate-900 font-bold'
-                          : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'
+                          ? 'bg-primary text-primary-foreground border-primary font-bold'
+                          : 'bg-muted text-muted-foreground border-border hover:bg-muted/80'
                       }`}
                     >
                       {cat.label}
@@ -230,26 +230,26 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
           </div>
         ) : (
           <div className="py-8 text-center space-y-5 animate-in zoom-in-95 duration-300">
-            <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-inner">
+            <div className="w-16 h-16 rounded-full bg-emerald-500/10 text-emerald-600 flex items-center justify-center mx-auto shadow-inner">
               <CheckCircle2 className="w-10 h-10" />
             </div>
 
             <div className="space-y-2">
-              <h3 className="text-2xl font-black text-slate-900">
+              <h3 className="text-2xl font-black text-foreground">
                 ¡Solicitud Enviada con Éxito!
               </h3>
-              <p className="text-sm text-slate-700 max-w-sm mx-auto">
+              <p className="text-sm text-muted-foreground max-w-sm mx-auto">
                 Se está abriendo WhatsApp para que recibas el catálogo completo y tu <span className="font-bold text-emerald-600">10% de descuento</span> directamente con tu asesor comercial.
               </p>
             </div>
 
-            <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-700">
+            <div className="p-4 rounded-2xl bg-muted/60 border border-border text-xs text-muted-foreground">
               ¿No se abrió automáticamente?{' '}
               <a
                 href={`https://wa.me/5491138916779`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sky-600 font-bold underline"
+                className="text-primary font-bold underline"
               >
                 Hacé clic acá para chatear con Juliana
               </a>
@@ -257,7 +257,7 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
 
             <button
               onClick={onClose}
-              className="px-6 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-bold"
+              className="px-6 py-2.5 rounded-xl bg-foreground text-background text-xs font-bold"
             >
               Cerrar
             </button>
