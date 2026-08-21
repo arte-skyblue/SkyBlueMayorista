@@ -24,10 +24,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
         
         {/* Header */}
         <div className="text-center space-y-4 mb-10 sm:mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary apple-kicker text-[11px]">
-            <HelpCircle className="w-3.5 h-3.5 text-primary" />
-            <span>Centro de Respuestas B2B para Comerciantes</span>
-          </div>
+          
 
           <h2 className="text-3xl sm:text-5xl uppercase tracking-tight apple-headline">
             <span className="font-sf-light-italic text-neutral-400 mr-2">PREGUNTAS</span>

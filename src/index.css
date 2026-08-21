@@ -393,3 +393,25 @@
   animation: 35s linear infinite drift-right;
   display: flex;
 }
+
+@keyframes drift-left-slow {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes drift-right-slow {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-drift-left-slow {
+  width: max-content;
+  animation: 80s linear infinite drift-left-slow;
+  display: flex;
+}
+
+.animate-drift-right-slow {
+  width: max-content;
+  animation: 80s linear infinite drift-right-slow;
+  display: flex;
+}

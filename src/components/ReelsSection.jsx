@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Sparkles, 
-  MessageCircle, 
   Download, 
-  ExternalLink,
-  X,
-  Volume2,
-  VolumeX,
-  Video,
+  X, 
+  Volume2, 
+  VolumeX, 
+  Play, 
+  Pause, 
+  RotateCcw,
+  MessageCircle,
   ArrowRight
 } from 'lucide-react';
 import { REELS, ADVISORS } from '../data/mockData';
@@ -17,15 +17,56 @@ import DriftWall from './reactbits/DriftWall';
 export default function ReelsSection({ onOpenAdvisorModal }) {
   const [activeVideo, setActiveVideo] = useState(null);
   const [isMuted, setIsMuted] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const videoRef = useRef(null);
 
   const handleOpenModal = (reel) => {
     setActiveVideo(reel);
     setIsMuted(false);
+    setIsPlaying(true);
+    setCurrentTime(0);
   };
 
   const handleCloseModal = () => {
     setActiveVideo(null);
     setIsMuted(true);
+  };
+
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+    if (isPlaying) {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
+
+  const handleTimeUpdate = () => {
+    if (!videoRef.current) return;
+    setCurrentTime(videoRef.current.currentTime);
+  };
+
+  const handleLoadedMetadata = () => {
+    if (!videoRef.current) return;
+    setDuration(videoRef.current.duration);
+  };
+
+  const handleSeek = (e) => {
+    if (!videoRef.current) return;
+    const seekTo = parseFloat(e.target.value);
+    videoRef.current.currentTime = seekTo;
+    setCurrentTime(seekTo);
+  };
+
+  const formatTime = (time) => {
+    if (isNaN(time)) return '00:00';
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
   };
 
   return (
@@ -36,14 +77,8 @@ export default function ReelsSection({ onOpenAdvisorModal }) {
 
       <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 relative z-10">
         
-        {/* Header with Specified Typographic Styling */}
+        {/* Header (Without Red Kicker) */}
         <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-12 2xl:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary apple-kicker text-[11px]">
-            <Video className="w-3.5 h-3.5 text-primary" />
-            <span>Material Audiovisual Oficial en 4K</span>
-          </div>
-
-          {/* EXACT REQUESTED TITLE */}
           <h2 className="text-3xl sm:text-5xl 2xl:text-6xl uppercase tracking-tight apple-headline">
             <span className="font-sf-light-italic text-white mr-3">CONTENIDO PARA</span>
             <span className="font-sf-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-amber-400 drop-shadow-[0_0_25px_rgba(239,68,68,0.5)]">
@@ -52,11 +87,11 @@ export default function ReelsSection({ onOpenAdvisorModal }) {
           </h2>
 
           <p className="font-sf-medium text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            Videos profesionales listos para usar en tus historias de Instagram, reels y estados de WhatsApp. Multiplicá tus ventas orgánicas sin gastar en producción audiovisual.
+            Videos profesionales listos para usar en tus historias de Instagram, reels y estados de WhatsApp. Multiplicá tus ventas sin gastar en producción audiovisual.
           </p>
         </div>
 
-        {/* DriftWall Component by ReactBits (Continuous Movement Without Hover Pause) */}
+        {/* DriftWall Component by ReactBits (Fluid 60fps Continuous Motion) */}
         <div className="w-full">
           <DriftWall items={REELS} onItemClick={handleOpenModal} />
         </div>
@@ -86,7 +121,7 @@ export default function ReelsSection({ onOpenAdvisorModal }) {
 
       </div>
 
-      {/* Fullscreen Video Modal Lightbox */}
+      {/* Fullscreen Video Modal Lightbox with Video Player Scrubber Controls */}
       <AnimatePresence>
         {activeVideo && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-xl">
@@ -117,23 +152,68 @@ export default function ReelsSection({ onOpenAdvisorModal }) {
 
               {/* Video Player */}
               <video
-                src={activeVideo.url}
+                ref={videoRef}
+                src={activeVideo.videoUrl || activeVideo.url}
                 autoPlay
                 loop
                 playsInline
                 muted={isMuted}
-                className="absolute inset-0 w-full h-full object-cover"
+                onTimeUpdate={handleTimeUpdate}
+                onLoadedMetadata={handleLoadedMetadata}
+                className="absolute inset-0 w-full h-full object-cover cursor-pointer"
+                onClick={togglePlay}
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-black/40 pointer-events-none" />
 
-              {/* Bottom Caption & WhatsApp CTA */}
-              <div className="relative z-20 p-5 mt-auto space-y-3">
+              {/* Play / Pause Center Overlay Indicator */}
+              {!isPlaying && (
+                <div 
+                  onClick={togglePlay}
+                  className="absolute inset-0 z-20 flex items-center justify-center bg-black/30 cursor-pointer"
+                >
+                  <div className="w-16 h-16 rounded-full bg-primary/90 text-white flex items-center justify-center shadow-2xl backdrop-blur-md">
+                    <Play className="w-7 h-7 fill-white ml-1" />
+                  </div>
+                </div>
+              )}
+
+              {/* Bottom Interactive Controls & Progress Scrubber Bar */}
+              <div className="relative z-30 p-5 mt-auto space-y-3 bg-gradient-to-t from-neutral-950 via-neutral-950/90 to-transparent pt-8">
+                
+                {/* Video Scrubber & Play Controls */}
+                <div className="space-y-1.5">
+                  <div className="flex items-center gap-2.5">
+                    <button
+                      onClick={togglePlay}
+                      className="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 text-white flex items-center justify-center shrink-0 transition-colors"
+                      aria-label={isPlaying ? "Pausar" : "Reproducir"}
+                    >
+                      {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 fill-white" />}
+                    </button>
+
+                    {/* Interactive Scrubber Slider */}
+                    <input
+                      type="range"
+                      min="0"
+                      max={duration || 100}
+                      step="0.1"
+                      value={currentTime}
+                      onChange={handleSeek}
+                      className="w-full h-1.5 bg-white/20 rounded-lg appearance-none cursor-pointer accent-primary"
+                    />
+
+                    <span className="text-[10px] font-sf-bold text-neutral-300 shrink-0">
+                      {formatTime(currentTime)} / {formatTime(duration)}
+                    </span>
+                  </div>
+                </div>
+
                 <div>
                   <span className="text-[10px] font-sf-bold uppercase px-2 py-0.5 rounded-full bg-primary text-white w-max block mb-1">
                     {activeVideo.brand}
                   </span>
-                  <h4 className="text-base font-sf-bold text-white">
+                  <h4 className="text-sm font-sf-bold text-white line-clamp-1">
                     {activeVideo.title}
                   </h4>
                 </div>

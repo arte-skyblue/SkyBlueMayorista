@@ -53,10 +53,7 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-14 2xl:mb-18">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary apple-kicker text-[11px]">
-            <MapPin className="w-3.5 h-3.5 text-primary" />
-            <span>Espacio Mayorista Tapiales</span>
-          </div>
+          
 
           <h2 className="text-3xl sm:text-5xl 2xl:text-6xl uppercase tracking-tight apple-headline">
             <span className="font-sf-light-italic text-neutral-400 mr-2">NUESTRO</span>

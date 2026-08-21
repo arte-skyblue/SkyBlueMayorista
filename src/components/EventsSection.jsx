@@ -25,7 +25,7 @@ export default function EventsSection({ onOpenModal }) {
     <section id="eventos" className="py-16 sm:py-24 2xl:py-28 bg-neutral-950 text-white border-b border-neutral-800 relative overflow-hidden">
       <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12">
         
-        {/* Section Header */}
+        {/* Section Header (Clean Without Red Kicker) */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
           <div className="space-y-3 max-w-3xl">
             <h2 className="text-3xl sm:text-5xl 2xl:text-6xl uppercase tracking-tight apple-headline">
@@ -51,7 +51,7 @@ export default function EventsSection({ onOpenModal }) {
           </div>
         </div>
 
-        {/* Event Grid Layout */}
+        {/* Event Grid Layout with 16:9 Vertical Aspect Ratio */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {EVENTS.map((event) => {
             const media = eventMedia[event.id] || { type: 'image', src: '/images/events/efica.jpg' };
@@ -61,7 +61,8 @@ export default function EventsSection({ onOpenModal }) {
                 <article className="bg-neutral-900/90 hover:bg-neutral-900 rounded-3xl border border-neutral-800 hover:border-primary/40 hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col justify-between h-full group">
                   
                   <div>
-                    <div className="relative aspect-[16/10] overflow-hidden bg-neutral-950">
+                    {/* 16:9 Vertical Ratio (aspect-[9/16]) */}
+                    <div className="relative aspect-[9/16] overflow-hidden bg-neutral-950">
                       {media.type === 'video' ? (
                         <video
                           src={media.src}
@@ -78,16 +79,16 @@ export default function EventsSection({ onOpenModal }) {
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                       )}
-                      <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent pointer-events-none" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-neutral-950/30 to-transparent pointer-events-none" />
                       
                       {/* Badge */}
-                      <div className="absolute top-3 left-3 bg-neutral-950/90 text-white text-[10px] font-sf-bold uppercase px-3 py-1 rounded-full border border-white/20">
+                      <div className="absolute top-4 left-4 bg-neutral-950/90 text-white text-[10px] font-sf-bold uppercase px-3 py-1 rounded-full border border-white/20 shadow-md">
                         {event.badge}
                       </div>
 
                       {/* Stand Tag */}
-                      <div className="absolute bottom-3 left-3 right-3 text-white text-xs font-sf-medium flex items-center gap-1.5">
-                        <Building className="w-3.5 h-3.5 text-primary shrink-0" />
+                      <div className="absolute bottom-4 left-4 right-4 text-white text-xs font-sf-bold flex items-center gap-1.5 bg-neutral-950/70 backdrop-blur-md p-2 rounded-xl border border-white/10">
+                        <Building className="w-4 h-4 text-primary shrink-0" />
                         <span className="truncate">{event.stand}</span>
                       </div>
                     </div>
@@ -99,29 +100,26 @@ export default function EventsSection({ onOpenModal }) {
                         <span>{event.location}</span>
                       </div>
 
-                      <h3 className="font-sf-bold text-lg sm:text-xl text-white group-hover:text-primary transition-colors leading-snug">
+                      <h3 className="font-sf-bold text-lg sm:text-xl text-white leading-snug">
                         {event.title}
                       </h3>
 
-                      <p className="text-xs sm:text-sm text-neutral-300 font-sf-regular leading-relaxed">
+                      <p className="font-sf-regular text-xs text-neutral-300 leading-relaxed">
                         {event.description}
                       </p>
                     </div>
                   </div>
 
-                  <div className="p-6 pt-0 mt-4 border-t border-neutral-800/80 flex items-center justify-between">
-                    <div className="flex items-center gap-1.5 text-xs text-neutral-400 font-sf-medium">
-                      <Calendar className="w-3.5 h-3.5 text-primary" />
-                      <span>{event.date}</span>
+                  <div className="p-6 pt-0">
+                    <div className="pt-4 border-t border-neutral-800 flex items-center justify-between text-xs text-neutral-400 font-sf-medium">
+                      <div className="flex items-center gap-1.5">
+                        <Calendar className="w-3.5 h-3.5 text-neutral-500" />
+                        <span>{event.dates}</span>
+                      </div>
+                      <span className="font-sf-bold text-primary">
+                        Colección Oficial
+                      </span>
                     </div>
-
-                    <button
-                      onClick={() => onOpenModal('eventos')}
-                      className="text-xs font-sf-bold text-primary hover:text-white flex items-center gap-1 transition-colors"
-                    >
-                      <span>Detalles</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </button>
                   </div>
 
                 </article>
