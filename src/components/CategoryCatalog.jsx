@@ -153,19 +153,19 @@ export default function CategoryCatalog({ onOpenModal }) {
                 <TiltedCard className="h-full">
                   <div className="bg-card rounded-3xl border border-border overflow-hidden shadow-xs hover:shadow-xl hover:border-primary/40 transition-all duration-300 group flex flex-col justify-between h-full">
                     
-                    {/* Product Image in 1:1 Square & Badges */}
+                    {/* Product Image in 1:1 Square on Crisp White Background */}
                     <div>
-                      <div className="relative aspect-square overflow-hidden bg-muted">
+                      <div className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-2 border-b border-border/50">
                         <img
                           src={product.image}
                           alt={product.altText}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                         />
                         
                         {/* Brand Tag */}
                         <div className="absolute top-2.5 left-2.5 flex flex-col gap-1 items-start">
-                          <span className="bg-foreground/90 backdrop-blur-md text-background text-[9px] font-black uppercase px-2 py-0.5 rounded-lg shadow-sm">
+                          <span className="bg-neutral-950/90 backdrop-blur-md text-white text-[9px] font-black uppercase px-2.5 py-0.5 rounded-lg shadow-sm border border-white/10">
                             {product.brand}
                           </span>
                         </div>
@@ -177,12 +177,12 @@ export default function CategoryCatalog({ onOpenModal }) {
                         )}
                       </div>
 
-                      {/* Product Title & Module info */}
+                      {/* Product SKU Code & Module info */}
                       <div className="p-3.5 space-y-1">
-                        <h4 className="font-sf-bold text-xs sm:text-sm text-foreground group-hover:text-primary transition-colors leading-snug line-clamp-2">
+                        <h4 className="font-sf-bold text-sm sm:text-base text-foreground group-hover:text-primary transition-colors tracking-wider">
                           {product.name}
                         </h4>
-                        <span className="text-[10px] text-muted-foreground block font-sf-regular">
+                        <span className="text-[11px] text-muted-foreground block font-sf-regular">
                           {product.module}
                         </span>
                       </div>

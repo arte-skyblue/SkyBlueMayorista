@@ -267,451 +267,451 @@ export const PRODUCTS = [
   // --- 1. CALZADO DAMA (8 Modelos: 2 en 'todas' + 6 exclusivos de dama) ---
   {
     id: "dama-01",
-    name: "Sneaker Urbano XTI María Becerra 145035",
+    name: "XTI143760",
     brand: "Xti",
     category: "dama",
     featuredInAll: true,
     module: "Módulo 8 o 12 pares (35 al 40)",
     markup: "Margen x2.2",
-    image: "/images/banners/hero-xti.jpg",
-    altText: "Zapatilla de mujer marca XTI oficial María Becerra"
+    image: "/images/products/XTI143760.jpg",
+    altText: "Calzado mayorista modelo XTI143760"
   },
   {
     id: "dama-02",
-    name: "Sneaker Refresh SS26 Camel 175009",
+    name: "REF175009",
     brand: "Refresh",
     category: "dama",
     featuredInAll: true,
     module: "Módulo 8 o 12 pares (35 al 40)",
     markup: "Margen x2.2",
-    image: "/images/banners/hero-refresh.jpg",
-    altText: "Sneaker Refresh de mujer colección SS26"
+    image: "/images/products/REF175009.jpg",
+    altText: "Calzado mayorista modelo REF175009"
   },
   {
     id: "dama-03",
-    name: "Sandalia Plataforma XTI Be Magic 145066",
+    name: "XTI142553",
     brand: "Xti",
     category: "dama",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (35 al 40)",
     markup: "Margen x2.3",
-    image: "/images/categories/calzado-dama.jpg",
-    altText: "Sandalia plataforma de mujer XTI oficial"
+    image: "/images/products/XTI142553.jpg",
+    altText: "Calzado mayorista modelo XTI142553"
   },
   {
     id: "dama-04",
-    name: "Stiletto en Cuero Legítimo Giulia Domna 872710",
-    brand: "Giulia Domna",
-    category: "dama",
-    featuredInAll: false,
-    module: "Módulo 8 o 12 pares (35 al 40)",
-    markup: "Margen x2.5",
-    image: "/images/categories/calzado-dama.jpg",
-    altText: "Stiletto en cuero legítimo Giulia Domna"
-  },
-  {
-    id: "dama-05",
-    name: "Mocasín Confort Refresh Daily 175110",
-    brand: "Refresh",
-    category: "dama",
-    featuredInAll: false,
-    module: "Módulo 8 o 12 pares (35 al 40)",
-    markup: "Margen x2.2",
-    image: "/images/categories/calzado-dama.jpg",
-    altText: "Mocasín confort Refresh de mujer"
-  },
-  {
-    id: "dama-06",
-    name: "Sandalia de Fiesta en Cuero Giulia Domna 873090",
-    brand: "Giulia Domna",
-    category: "dama",
-    featuredInAll: false,
-    module: "Módulo 8 o 12 pares (35 al 40)",
-    markup: "Margen x2.5",
-    image: "/images/categories/calzado-dama.jpg",
-    altText: "Sandalia de fiesta en cuero legítimo Giulia Domna"
-  },
-  {
-    id: "dama-07",
-    name: "Bota Urbana XTI Fashion Zip 145180",
+    name: "XTI130689",
     brand: "Xti",
     category: "dama",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (35 al 40)",
     markup: "Margen x2.2",
-    image: "/images/categories/calzado-dama.jpg",
-    altText: "Bota urbana XTI para mujer"
+    image: "/images/products/XTI130689.jpg",
+    altText: "Calzado mayorista modelo XTI130689"
   },
   {
-    id: "dama-08",
-    name: "Sneaker Sporty Refresh Beige 175051",
+    id: "dama-05",
+    name: "XTI141807",
+    brand: "Xti",
+    category: "dama",
+    featuredInAll: false,
+    module: "Módulo 8 o 12 pares (35 al 40)",
+    markup: "Margen x2.3",
+    image: "/images/products/XTI141807.jpg",
+    altText: "Calzado mayorista modelo XTI141807"
+  },
+  {
+    id: "dama-06",
+    name: "REF175021",
+    brand: "Refresh",
+    category: "dama",
+    featuredInAll: false,
+    module: "Módulo 8 o 12 pares (35 al 40)",
+    markup: "Margen x2.2",
+    image: "/images/products/REF175021.jpg",
+    altText: "Calzado mayorista modelo REF175021"
+  },
+  {
+    id: "dama-07",
+    name: "REF175051",
     brand: "Refresh",
     category: "dama",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (35 al 40)",
     markup: "Margen x2.1",
-    image: "/images/categories/calzado-dama.jpg",
-    altText: "Zapatilla deportiva casual Refresh para mujer"
+    image: "/images/products/REF175051.jpg",
+    altText: "Calzado mayorista modelo REF175051"
+  },
+  {
+    id: "dama-08",
+    name: "GD016093",
+    brand: "Giulia Domna",
+    category: "dama",
+    featuredInAll: false,
+    module: "Módulo 8 o 12 pares (35 al 40)",
+    markup: "Margen x2.5",
+    image: "/images/products/GD016093.jpg",
+    altText: "Calzado mayorista modelo GD016093"
   },
 
   // --- 2. CALZADO CABALLERO (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
   {
     id: "cab-01",
-    name: "Zapatilla Urbana Refresh Men 175515",
+    name: "REF175515",
     brand: "Refresh",
     category: "caballero",
     featuredInAll: true,
     module: "Módulo 8 o 12 pares (39 al 44)",
     markup: "Margen x2.2",
-    image: "/images/categories/calzado-caballero.jpg",
-    altText: "Calzado urbano para hombre Refresh Men"
+    image: "/images/products/REF175515.jpg",
+    altText: "Calzado hombre mayorista REF175515"
   },
   {
     id: "cab-02",
-    name: "Sneaker Confort XTI Men Sport 142010",
-    brand: "Xti",
+    name: "REF175522",
+    brand: "Refresh",
     category: "caballero",
     featuredInAll: true,
     module: "Módulo 8 o 12 pares (39 al 44)",
     markup: "Margen x2.2",
-    image: "/images/categories/calzado-caballero.jpg",
-    altText: "Sneaker confort para hombre XTI Men"
+    image: "/images/products/REF175522.jpg",
+    altText: "Calzado hombre mayorista REF175522"
   },
   {
     id: "cab-03",
-    name: "Zapato Casual XTI Men Leather Look 142055",
-    brand: "Xti",
+    name: "REF175526",
+    brand: "Refresh",
     category: "caballero",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (39 al 44)",
-    markup: "Margen x2.3",
-    image: "/images/categories/calzado-caballero.jpg",
-    altText: "Zapato casual para hombre XTI Men"
+    markup: "Margen x2.1",
+    image: "/images/products/REF175526.jpg",
+    altText: "Calzado hombre mayorista REF175526"
   },
   {
     id: "cab-04",
-    name: "Zapatilla Skate Refresh Men Street 175580",
-    brand: "Refresh",
-    category: "caballero",
-    featuredInAll: false,
-    module: "Módulo 8 o 12 pares (39 al 44)",
-    markup: "Margen x2.1",
-    image: "/images/categories/calzado-caballero.jpg",
-    altText: "Zapatilla urbana para hombre Refresh"
-  },
-  {
-    id: "cab-05",
-    name: "Mocasín Náutico Refresh Men Confort 175620",
+    name: "REF175538",
     brand: "Refresh",
     category: "caballero",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (39 al 44)",
     markup: "Margen x2.2",
-    image: "/images/categories/calzado-caballero.jpg",
-    altText: "Mocasín náutico confort para hombre"
+    image: "/images/products/REF175538.jpg",
+    altText: "Calzado hombre mayorista REF175538"
+  },
+  {
+    id: "cab-05",
+    name: "REF175549",
+    brand: "Refresh",
+    category: "caballero",
+    featuredInAll: false,
+    module: "Módulo 8 o 12 pares (39 al 44)",
+    markup: "Margen x2.2",
+    image: "/images/products/REF175549.jpg",
+    altText: "Calzado hombre mayorista REF175549"
   },
   {
     id: "cab-06",
-    name: "Bota Urbana XTI Men Chelsea 142110",
-    brand: "Xti",
+    name: "REF175558",
+    brand: "Refresh",
+    category: "caballero",
+    featuredInAll: false,
+    module: "Módulo 8 o 12 pares (39 al 44)",
+    markup: "Margen x2.1",
+    image: "/images/products/REF175558.jpg",
+    altText: "Calzado hombre mayorista REF175558"
+  },
+  {
+    id: "cab-07",
+    name: "REF175664",
+    brand: "Refresh",
+    category: "caballero",
+    featuredInAll: false,
+    module: "Módulo 8 o 12 pares (39 al 44)",
+    markup: "Margen x2.2",
+    image: "/images/products/REF175664.jpg",
+    altText: "Calzado hombre mayorista REF175664"
+  },
+  {
+    id: "cab-08",
+    name: "REF170184",
+    brand: "Refresh",
     category: "caballero",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (39 al 44)",
     markup: "Margen x2.3",
-    image: "/images/categories/calzado-caballero.jpg",
-    altText: "Bota Chelsea para hombre XTI Men"
-  },
-  {
-    id: "cab-07",
-    name: "Sneaker All-Black XTI Men Runner 142145",
-    brand: "Xti",
-    category: "caballero",
-    featuredInAll: false,
-    module: "Módulo 8 o 12 pares (39 al 44)",
-    markup: "Margen x2.2",
-    image: "/images/categories/calzado-caballero.jpg",
-    altText: "Zapatilla runner negra XTI Men"
-  },
-  {
-    id: "cab-08",
-    name: "Zapatilla Sport Confort Refresh Men 175690",
-    brand: "Refresh",
-    category: "caballero",
-    featuredInAll: false,
-    module: "Módulo 8 o 12 pares (39 al 44)",
-    markup: "Margen x2.1",
-    image: "/images/categories/calzado-caballero.jpg",
-    altText: "Zapatilla sport confort Refresh Men"
+    image: "/images/products/REF170184.jpg",
+    altText: "Calzado hombre mayorista REF170184"
   },
 
   // --- 3. CALZADO NIÑOS / XTI KIDS (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
   {
     id: "ninos-01",
-    name: "Zapatilla Luces XTI Kids Magic 150020",
+    name: "XTI151117",
     brand: "Xti",
     category: "ninos",
     featuredInAll: true,
     module: "Módulo 8 o 12 pares (28 al 36)",
     markup: "Margen x2.2",
-    image: "/images/categories/calzado-ninos.jpg",
-    altText: "Zapatilla con luces para niños XTI Kids"
+    image: "/images/products/XTI151117.jpg",
+    altText: "Calzado infantil mayorista XTI151117"
   },
   {
     id: "ninos-02",
-    name: "Sneaker Escolar Reforzado XTI Kids 150085",
+    name: "XTI151385",
     brand: "Xti",
     category: "ninos",
     featuredInAll: true,
     module: "Módulo 8 o 12 pares (28 al 36)",
     markup: "Margen x2.2",
-    image: "/images/categories/calzado-ninos.jpg",
-    altText: "Sneaker escolar reforzado XTI Kids"
+    image: "/images/products/XTI151385.jpg",
+    altText: "Calzado infantil mayorista XTI151385"
   },
   {
     id: "ninos-03",
-    name: "Botita Urbana XTI Kids Glitter 150110",
+    name: "XTI151386",
     brand: "Xti",
     category: "ninos",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (28 al 36)",
     markup: "Margen x2.2",
-    image: "/images/categories/calzado-ninos.jpg",
-    altText: "Botita con glitter para niñas XTI Kids"
+    image: "/images/products/XTI151386.jpg",
+    altText: "Calzado infantil mayorista XTI151386"
   },
   {
     id: "ninos-04",
-    name: "Zapatilla Velcro XTI Kids Play 150145",
+    name: "XTI153009",
     brand: "Xti",
     category: "ninos",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (28 al 36)",
     markup: "Margen x2.1",
-    image: "/images/categories/calzado-ninos.jpg",
-    altText: "Zapatilla con velcro para niños XTI Kids"
+    image: "/images/products/XTI153009.jpg",
+    altText: "Calzado infantil mayorista XTI153009"
   },
   {
     id: "ninos-05",
-    name: "Sandalia Ergonómica XTI Kids Summer 150180",
+    name: "XTI153010",
     brand: "Xti",
     category: "ninos",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (28 al 36)",
     markup: "Margen x2.2",
-    image: "/images/categories/calzado-ninos.jpg",
-    altText: "Sandalia ergonómica para niños XTI Kids"
+    image: "/images/products/XTI153010.jpg",
+    altText: "Calzado infantil mayorista XTI153010"
   },
   {
     id: "ninos-06",
-    name: "Sneaker Deportivo XTI Kids Runner 150210",
+    name: "XTI153025",
     brand: "Xti",
     category: "ninos",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (28 al 36)",
     markup: "Margen x2.2",
-    image: "/images/categories/calzado-ninos.jpg",
-    altText: "Zapatilla deportiva para niños XTI Kids"
+    image: "/images/products/XTI153025.jpg",
+    altText: "Calzado infantil mayorista XTI153025"
   },
   {
     id: "ninos-07",
-    name: "Botín Fashion XTI Kids Warm 150240",
+    name: "XTI153032",
     brand: "Xti",
     category: "ninos",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (28 al 36)",
     markup: "Margen x2.3",
-    image: "/images/categories/calzado-ninos.jpg",
-    altText: "Botín abrigado para niños XTI Kids"
+    image: "/images/products/XTI153032.jpg",
+    altText: "Calzado infantil mayorista XTI153032"
   },
   {
     id: "ninos-08",
-    name: "Zapatilla Lona XTI Kids Casual 150275",
+    name: "XTI153038",
     brand: "Xti",
     category: "ninos",
     featuredInAll: false,
     module: "Módulo 8 o 12 pares (28 al 36)",
     markup: "Margen x2.1",
-    image: "/images/categories/calzado-ninos.jpg",
-    altText: "Zapatilla de lona liviana para niños XTI Kids"
+    image: "/images/products/XTI153038.jpg",
+    altText: "Calzado infantil mayorista XTI153038"
   },
 
   // --- 4. MARROQUINERÍA & BOLSOS (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
   {
     id: "marroq-01",
-    name: "Bolso Petite Jolie Bloom J-Lastic®",
-    brand: "Petite Jolie",
+    name: "XTI184203",
+    brand: "Xti",
     category: "marroquineria",
     featuredInAll: true,
     module: "Pack 4 unidades surtidas",
     markup: "Margen x2.4",
-    image: "/images/banners/hero-petite-jolie.jpg",
-    altText: "Bolso estructurado Petite Jolie material J-Lastic"
+    image: "/images/products/XTI184203.jpg",
+    altText: "Marroquinería mayorista XTI184203"
   },
   {
     id: "marroq-02",
-    name: "Cartera Bandolera Petite Jolie Daily",
-    brand: "Petite Jolie",
+    name: "XTI184205",
+    brand: "Xti",
     category: "marroquineria",
     featuredInAll: true,
     module: "Pack 4 unidades surtidas",
     markup: "Margen x2.3",
-    image: "/images/categories/marroquineria-bolsos.jpg",
-    altText: "Bandolera urbana Petite Jolie impermeable"
+    image: "/images/products/XTI184205.jpg",
+    altText: "Marroquinería mayorista XTI184205"
   },
   {
     id: "marroq-03",
-    name: "Mochila Urbana Petite Jolie Kit J-Lastic®",
-    brand: "Petite Jolie",
+    name: "XTI184219",
+    brand: "Xti",
     category: "marroquineria",
     featuredInAll: false,
     module: "Pack 4 unidades surtidas",
     markup: "Margen x2.4",
-    image: "/images/categories/marroquineria-bolsos.jpg",
-    altText: "Mochila urbana Petite Jolie impermeable"
+    image: "/images/products/XTI184219.jpg",
+    altText: "Marroquinería mayorista XTI184219"
   },
   {
     id: "marroq-04",
-    name: "Tote Bag Impermeable Petite Jolie Love",
-    brand: "Petite Jolie",
+    name: "XTI184227",
+    brand: "Xti",
     category: "marroquineria",
     featuredInAll: false,
     module: "Pack 4 unidades surtidas",
     markup: "Margen x2.3",
-    image: "/images/categories/marroquineria-bolsos.jpg",
-    altText: "Tote bag Petite Jolie lavable"
+    image: "/images/products/XTI184227.jpg",
+    altText: "Marroquinería mayorista XTI184227"
   },
   {
     id: "marroq-05",
-    name: "Bandolera Mini Bag XTI Bags Chic",
+    name: "XTI184241",
     brand: "Xti",
     category: "marroquineria",
     featuredInAll: false,
     module: "Pack 4 unidades surtidas",
     markup: "Margen x2.3",
-    image: "/images/categories/marroquineria-bolsos.jpg",
-    altText: "Mini bag bandolera XTI Bags"
+    image: "/images/products/XTI184241.jpg",
+    altText: "Marroquinería mayorista XTI184241"
   },
   {
     id: "marroq-06",
-    name: "Cartera Estructurada Petite Jolie Elegance",
-    brand: "Petite Jolie",
+    name: "XTI184335",
+    brand: "Xti",
     category: "marroquineria",
     featuredInAll: false,
     module: "Pack 4 unidades surtidas",
     markup: "Margen x2.4",
-    image: "/images/categories/marroquineria-bolsos.jpg",
-    altText: "Cartera de mano estructurada Petite Jolie"
+    image: "/images/products/XTI184335.jpg",
+    altText: "Marroquinería mayorista XTI184335"
   },
   {
     id: "marroq-07",
-    name: "Bolsón Shopping XTI Bags European",
+    name: "XTI184340",
     brand: "Xti",
     category: "marroquineria",
     featuredInAll: false,
     module: "Pack 4 unidades surtidas",
     markup: "Margen x2.2",
-    image: "/images/categories/marroquineria-bolsos.jpg",
-    altText: "Bolso shopping amplio XTI Bags"
+    image: "/images/products/XTI184340.jpg",
+    altText: "Marroquinería mayorista XTI184340"
   },
   {
     id: "marroq-08",
-    name: "Cartera de Hombro Petite Jolie Sweet",
-    brand: "Petite Jolie",
+    name: "XTI184344",
+    brand: "Xti",
     category: "marroquineria",
     featuredInAll: false,
     module: "Pack 4 unidades surtidas",
     markup: "Margen x2.3",
-    image: "/images/categories/marroquineria-bolsos.jpg",
-    altText: "Cartera de hombro con fragancia Petite Jolie"
+    image: "/images/products/XTI184344.jpg",
+    altText: "Marroquinería mayorista XTI184344"
   },
 
-  // --- 5. ACCESORIOS & CHARMS (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
+  // --- 5. ACCESORIOS & COMPLEMENTOS (8 Modelos: 2 en 'todas' + 6 exclusivos) ---
   {
     id: "acc-01",
-    name: "Charms Coleccionables Petite Jolie Pack x12",
-    brand: "Petite Jolie",
+    name: "XTI184424",
+    brand: "Xti",
     category: "accesorios",
     featuredInAll: true,
-    module: "Exhibidor docena surtida",
+    module: "Pack 6 unidades surtidas",
     markup: "Margen x2.5",
-    image: "/images/categories/accesorios-charms.jpg",
-    altText: "Charms coleccionables Petite Jolie para calzado y carteras"
+    image: "/images/products/XTI184424.jpg",
+    altText: "Accesorio mayorista XTI184424"
   },
   {
     id: "acc-02",
-    name: "Billetera Compacta Petite Jolie Pocket",
-    brand: "Petite Jolie",
+    name: "XTI184429",
+    brand: "Xti",
     category: "accesorios",
     featuredInAll: true,
     module: "Pack 6 unidades surtidas",
     markup: "Margen x2.3",
-    image: "/images/categories/accesorios-charms.jpg",
-    altText: "Billetera compacta impermeable Petite Jolie"
+    image: "/images/products/XTI184429.jpg",
+    altText: "Accesorio mayorista XTI184429"
   },
   {
     id: "acc-03",
-    name: "Neceser Impermeable Petite Jolie Travel",
-    brand: "Petite Jolie",
+    name: "XTI184446",
+    brand: "Xti",
     category: "accesorios",
     featuredInAll: false,
     module: "Pack 6 unidades surtidas",
     markup: "Margen x2.4",
-    image: "/images/categories/accesorios-charms.jpg",
-    altText: "Neceser impermeable de viaje Petite Jolie"
+    image: "/images/products/XTI184446.jpg",
+    altText: "Accesorio mayorista XTI184446"
   },
   {
     id: "acc-04",
-    name: "Portacosméticos Petite Jolie Beauty",
-    brand: "Petite Jolie",
+    name: "XTI184453",
+    brand: "Xti",
     category: "accesorios",
     featuredInAll: false,
     module: "Pack 6 unidades surtidas",
     markup: "Margen x2.3",
-    image: "/images/categories/accesorios-charms.jpg",
-    altText: "Portacosméticos lavable Petite Jolie"
+    image: "/images/products/XTI184453.jpg",
+    altText: "Accesorio mayorista XTI184453"
   },
   {
     id: "acc-05",
-    name: "Billetera Grande con Cierre XTI Accessories",
+    name: "XTI184459",
     brand: "Xti",
     category: "accesorios",
     featuredInAll: false,
     module: "Pack 6 unidades surtidas",
     markup: "Margen x2.2",
-    image: "/images/categories/accesorios-charms.jpg",
-    altText: "Billetera con cierre perimetral XTI"
+    image: "/images/products/XTI184459.jpg",
+    altText: "Accesorio mayorista XTI184459"
   },
   {
     id: "acc-06",
-    name: "Llaveros Icon Petite Jolie Heart",
-    brand: "Petite Jolie",
+    name: "XTI184482",
+    brand: "Xti",
     category: "accesorios",
     featuredInAll: false,
-    module: "Exhibidor docena surtida",
+    module: "Pack 6 unidades surtidas",
     markup: "Margen x2.5",
-    image: "/images/categories/accesorios-charms.jpg",
-    altText: "Llaveros coleccionables en J-Lastic"
+    image: "/images/products/XTI184482.jpg",
+    altText: "Accesorio mayorista XTI184482"
   },
   {
     id: "acc-07",
-    name: "Porta Celular Bandolera Petite Jolie Phone",
-    brand: "Petite Jolie",
+    name: "XTI184484",
+    brand: "Xti",
     category: "accesorios",
     featuredInAll: false,
     module: "Pack 6 unidades surtidas",
     markup: "Margen x2.4",
-    image: "/images/categories/accesorios-charms.jpg",
-    altText: "Porta celular impermeable con correa"
+    image: "/images/products/XTI184484.jpg",
+    altText: "Accesorio mayorista XTI184484"
   },
   {
     id: "acc-08",
-    name: "Exhibidor de Mostrador Charms SkyBlue",
-    brand: "SkyBlue",
+    name: "XTI184504",
+    brand: "Xti",
     category: "accesorios",
     featuredInAll: false,
-    module: "Exhibidor x24 unidades",
+    module: "Pack 6 unidades surtidas",
     markup: "Margen x2.5",
-    image: "/images/categories/accesorios-charms.jpg",
-    altText: "Exhibidor de mostrador para venta por impulso"
+    image: "/images/products/XTI184504.jpg",
+    altText: "Accesorio mayorista XTI184504"
   }
 ];
 
