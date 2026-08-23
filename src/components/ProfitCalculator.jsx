@@ -149,15 +149,15 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
                     </div>
                     <div>
                       <span className="text-xs font-sf-bold text-emerald-300 block">
-                        10% Adicional por Transferencia / Efectivo
+                        10% OFF en tu primer compra (o transferencia)
                       </span>
                       <span className="text-[11px] text-neutral-400">
-                        Ahorrás: {formatCurrency(discountAmount)} en el total
+                        Ahorrás: {formatCurrency(discountAmount)} en tu liquidación
                       </span>
                     </div>
                   </div>
                   <span className="text-xs font-bold text-emerald-400 bg-emerald-950 px-2 py-0.5 rounded-md border border-emerald-500/30">
-                    -10%
+                    -10% OFF
                   </span>
                 </div>
 

@@ -25,37 +25,37 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
   const conditions = [
     {
       icon: Building2,
-      tag: "EXCLUSIVO B2B",
-      title: "Precios Sin IVA + Factura A/B",
-      description: "Precios de catálogo netos sin IVA. Todas las ventas requieren facturación obligatoria (Factura A o B oficial con CUIT), garantizando mercadería 100% importada legalmente por aduana.",
+      tag: "FACTURACIÓN",
+      title: "Factura A/B con CUIT",
+      description: "Precios de catálogo netos sin IVA. Todas las ventas cuentan con facturación oficial (Factura A o B con CUIT), garantizando mercadería 100% legal e importada formalmente por aduana.",
       highlight: "Facturación oficial con CUIT comercial",
-      badgeColor: "bg-primary/10 text-primary border-primary/20",
+      badgeColor: "bg-white/10 text-white border-white/20",
       spotlight: "rgba(224, 76, 50, 0.16)"
     },
     {
       icon: Layers,
       tag: "SURTIDO DE FÁBRICA",
-      title: "Módulos de 8 y 12 Pares",
-      description: "Curvas surtidas de manera ideal directo de fábrica con 75% de concentración en talles centrales (37 y 38 en dama) para rápida rotación de mostrador y cero clavos de stock.",
+      title: "Curvas de 8 y 12 Pares",
+      description: "Curvas surtidas de manera ideal directo de fábrica con 75% de concentración en talles centrales (37 y 38 en dama) para rápida rotación de mostrador y cero remanentes.",
       highlight: "Curvas balanceadas de alta rotación",
-      badgeColor: "bg-neutral-900 text-white border-neutral-700",
+      badgeColor: "bg-primary/10 text-primary border-primary/20",
       spotlight: "rgba(224, 76, 50, 0.16)"
     },
     {
       icon: Percent,
-      tag: "PAGO Y CONDICIONES",
-      title: "10% Adicional en tu Pago",
-      description: "Abonando en efectivo en showroom, mediante transferencia bancaria inmediata o depósito, aplicás un 10% de descuento adicional sobre la liquidación neta de tu compra.",
-      highlight: "Aumenta directo tu margen de ganancia",
+      tag: "BIENVENIDA MAYORISTA",
+      title: "10% OFF En tu primer compra",
+      description: "Disfrutá de un 10% OFF directo en tu primer pedido por módulos. Además, mantenés un 10% adicional permanente abonando por transferencia o efectivo en showroom.",
+      highlight: "10% OFF de bienvenida + pago ágil",
       badgeColor: "bg-emerald-950/60 text-emerald-300 border-emerald-500/30",
       spotlight: "rgba(16, 185, 129, 0.16)"
     },
     {
       icon: Truck,
       tag: "LOGÍSTICA FEDERAL",
-      title: "Envío Gratis en CABA y GBA",
-      description: "Entrega 100% bonificada y gratuita en CABA y Gran Buenos Aires. Para el interior: embalaje y traslado sin cargo hasta tu expreso de confianza (Vía Cargo, Cruz del Sur, etc.) en 24 a 48 hs.",
-      highlight: "Despacho bonificado hasta tu transporte",
+      title: "Envíos a todo el país",
+      description: "Entrega 100% bonificada en CABA y Gran Buenos Aires. Para el interior: embalaje y traslado sin cargo hasta tu expreso de confianza (Vía Cargo, Cruz del Sur, etc.) en 24 a 48 hs.",
+      highlight: "Despacho bonificado en 24 a 48 hs",
       badgeColor: "bg-amber-950/60 text-amber-300 border-amber-500/30",
       spotlight: "rgba(245, 158, 11, 0.16)"
     }

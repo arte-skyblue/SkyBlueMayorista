@@ -1,5 +1,14 @@
 // Data source for SkyBlue Calzado Mayorista B2B Portal
 
+export const COMMERCIAL_PILLARS_TEXT = "Factura A/B • Curvas de 8 y 12 pares • 10% OFF En tu primer compra • Envíos a todo el país";
+
+export const COMMERCIAL_PILLARS_ITEMS = [
+  { id: "factura", title: "Factura A/B", subtitle: "Oficial con CUIT", color: "text-white" },
+  { id: "curvas", title: "Curvas de 8 y 12 pares", subtitle: "Directo de Fábrica", color: "text-primary" },
+  { id: "descuento", title: "10% OFF", subtitle: "En tu primer compra", color: "text-emerald-400" },
+  { id: "envios", title: "Envíos a todo el país", subtitle: "Despacho en 24/48 hs", color: "text-amber-400" }
+];
+
 export const COMPANY_INFO = {
   name: "SkyBlue Calzado Mayorista",
   slogan: "Distribuidor Oficial B2B de Calzado y Marroquinería Internacional",
@@ -13,24 +22,10 @@ export const COMPANY_INFO = {
     requirement: "Cita previa obligatoria coordinada por WhatsApp con Juliana",
     googleMapsQuery: "Curapaligüe 1428, Tapiales, Buenos Aires"
   },
-  retailStores: [
-    {
-      name: "Local Minorista Tapiales",
-      address: "Curapaligüe 1428, Tapiales (Buenos Aires)",
-      type: "Venta al Público Minorista",
-      city: "Tapiales"
-    },
-    {
-      name: "Local Minorista Cañuelas",
-      address: "Av. Libertad 1190, Cañuelas (Buenos Aires)",
-      type: "Venta al Público Minorista",
-      city: "Cañuelas"
-    }
-  ],
-  defaultDiscount: 10, // 10% adicional abonando en efectivo, transferencia o depósito
+  defaultDiscount: 10, // 10% OFF en tu primer compra o abonando por transferencia/depósito
   minimumPurchase: "1 módulo (8 o 12 pares) por modelo",
-  shippingPolicy: "Envío 100% bonificado y gratuito en CABA y GBA. Despacho bonificado en 24/48 hs al expreso para el interior.",
-  taxPolicy: "Precios de catálogo netos sin IVA. Facturación obligatoria (Factura A o B oficial con CUIT) por mercadería importada legalmente.",
+  shippingPolicy: "Envío 100% bonificado en CABA y GBA. Despacho bonificado en 24/48 hs al expreso para todo el país.",
+  taxPolicy: "Precios de catálogo netos sin IVA. Facturación oficial obligatoria (Factura A o B con CUIT).",
   sizeGuideImage: "/assets/images/guia-de-tallas.jpeg",
   sizeCurves: {
     curve8: {
@@ -740,14 +735,14 @@ export const BENEFITS = [
   {
     id: "descuento",
     icon: "Percent",
-    title: "10% Adicional en tu Pago",
-    subtitle: "Beneficio Financiero Mayorista",
-    description: "Ahorro del 10% adicional abonando en efectivo, transferencia bancaria o depósito, aplicable sobre la liquidación de tu pedido."
+    title: "10% OFF En tu primer compra",
+    subtitle: "Beneficio de Bienvenida Mayorista",
+    description: "Ahorro del 10% OFF exclusivo en tu primera orden mayorista por módulos (y en compras continuas abonando por transferencia o efectivo)."
   },
   {
     id: "logistica",
     icon: "Truck",
-    title: "Envíos Gratis CABA/GBA & 24/48hs Interior",
+    title: "Envíos a todo el país",
     subtitle: "Logística Bonificada y Asegurada",
     description: "Envío 100% gratuito en CABA y GBA. Despacho bonificado en 24 a 48 hs al expreso de tu elección para todo el país."
   },
@@ -841,28 +836,31 @@ export const DRIFT_WALL_ITEMS = [
 export const EVENTS = [
   {
     id: "efica",
-    title: "Exposición EFICA 114",
+    title: "Exposición EFICA — Costa Salguero, CABA",
     location: "Centro Costa Salguero, CABA",
-    date: "Edición Anterior",
-    badge: "Evento Finalizado",
+    date: "Próxima Temporada",
+    dates: "Stand Central SkyBlue",
+    badge: "Próxima Edición",
     description: "Presentación oficial de las nuevas colecciones mayoristas de Xti, Refresh, Petite Jolie y Giulia Domna ante comerciantes de todo el país.",
     stand: "Stand Principal SkyBlue - Pabellón A"
   },
   {
     id: "exical",
-    title: "Feria EXICAL Córdoba",
+    title: "Feria EXICAL Córdoba — Centro de Convenciones",
     location: "Centro de Convenciones Córdoba",
-    date: "Edición Anterior",
-    badge: "Evento Finalizado",
+    date: "Próxima Temporada",
+    dates: "Stand Confirmado",
+    badge: "Stand Confirmado",
     description: "Encuentro comercial con zapaterías y boutiques de Córdoba, Santa Fe, Cuyo y el NOA para pedidos por módulos de 8 y 12 pares.",
     stand: "Stand SkyBlue Marcas Oficiales"
   },
   {
     id: "gira-norte",
-    title: "Showrooms Itinerantes Interior",
+    title: "Giras Comerciales Interior & Showrooms Itinerantes",
     location: "Tucumán, Salta, Rosario & Mendoza",
-    date: "Fechas Programadas de Gira",
-    badge: "Gira Exclusiva",
+    date: "Agendando Visitas",
+    dates: "Encuentros Semanales",
+    badge: "Gira Activa",
     description: "Nuestros asesores comerciales viajan a las principales plazas del interior con muestrarios completos para que armes tus pedidos sin viajar.",
     stand: "Salones de Eventos Hoteleros"
   }
@@ -890,8 +888,8 @@ export const FAQS = [
     category: "requisitos"
   },
   {
-    question: "¿Cómo funciona el 10% de descuento adicional por pago al contado o transferencia?",
-    answer: "Si abonas tu pedido mayorista en efectivo en nuestro showroom de Tapiales, mediante transferencia bancaria o depósito bancario, se aplica un 10% de descuento adicional sobre la liquidación neta de tu compra, aumentando de inmediato tu margen de ganancia neta.",
+    question: "¿Cómo accedo al 10% OFF en mi primer compra y descuentos adicionales?",
+    answer: "En tu primer compra mayorista por módulos accedés de inmediato a un 10% OFF de bienvenida. Además, en compras continuas mantenés un 10% de descuento adicional abonando mediante transferencia bancaria, depósito o efectivo en showroom, maximizando tu rentabilidad neta.",
     category: "pagos"
   },
   {
@@ -900,9 +898,9 @@ export const FAQS = [
     category: "showroom"
   },
   {
-    question: "¿Dónde están ubicados los locales a la calle para compras minoristas?",
-    answer: "Nuestros locales comerciales de venta al público minorista están ubicados en: 1) Curapaligüe 1428, Tapiales (Buenos Aires) y 2) Av. Libertad 1190, Cañuelas (Buenos Aires).",
-    category: "locales"
+    question: "¿Cómo funciona la reposición de stock para mantener surtido mi local?",
+    answer: "Contamos con stock permanente en nuestro depósito central de Tapiales. Podés realizar reposiciones continuas por módulo de 8 o 12 pares de los modelos de mayor rotación sin mínimos excesivos de compra global, coordinando el despacho en 24 a 48 hs con tu asesora asignada.",
+    category: "stock"
   },
   {
     question: "¿Cómo accedo al material de marketing y fotos de María Becerra para mis redes?",

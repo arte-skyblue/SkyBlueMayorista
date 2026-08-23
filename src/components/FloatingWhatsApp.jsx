@@ -123,8 +123,28 @@ export default function FloatingWhatsApp() {
 
             {/* Advisors List */}
             <div className="p-4 sm:p-5 space-y-2.5 max-h-[310px] overflow-y-auto custom-scrollbar">
-              <span className="text-[10px] font-sf-bold text-neutral-500 uppercase tracking-wider block mb-1">
-                Elegí con quién hablar:
+              
+              {/* Opción Rápida Directa */}
+              <a
+                href={`https://wa.me/5491138916779?text=${encodeURIComponent(`Hola! Quiero consultar listas de precios mayoristas, catálogos en PDF y condiciones para mi local/showroom.`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-between shadow-md transition-all group"
+              >
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-xl bg-white/20 flex items-center justify-center text-white">
+                    <MessageCircle className="w-4 h-4 fill-white" />
+                  </div>
+                  <div>
+                    <span className="font-sf-bold text-xs block leading-tight">Atención Comercial Inmediata</span>
+                    <span className="text-[10px] text-emerald-100 font-sf-medium">Catálogo general y cotizaciones</span>
+                  </div>
+                </div>
+                <ChevronRight className="w-4 h-4 text-emerald-200 group-hover:translate-x-0.5 transition-transform" />
+              </a>
+
+              <span className="text-[10px] font-sf-bold text-neutral-500 uppercase tracking-wider block pt-1 mb-1">
+                O elegí una asesora directa:
               </span>
 
               {ADVISORS.map((advisor) => (
@@ -178,10 +198,10 @@ export default function FloatingWhatsApp() {
             <div className="p-3 sm:p-3.5 bg-neutral-50 border-t border-neutral-100 flex items-center justify-between text-[10px] text-neutral-700 font-sf-medium">
               <div className="flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                <span>Mínimo 1 módulo (8 o 12 pares) con CUIT</span>
+                <span>Factura A/B • Curvas 8 y 12 pares</span>
               </div>
               <span className="font-sf-bold text-emerald-700">
-                10% OFF Efectivo
+                10% OFF 1ra Compra
               </span>
             </div>
 

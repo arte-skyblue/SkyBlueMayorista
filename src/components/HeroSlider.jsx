@@ -123,19 +123,23 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
             </motion.div>
           </AnimatePresence>
 
-          {/* 3 Mobile Glass Badges */}
-          <div className="grid grid-cols-3 gap-1.5 pt-1">
+          {/* 4 Mobile Glass Badges / Franja */}
+          <div className="grid grid-cols-2 gap-1.5 pt-1">
             <div className="p-2 rounded-xl bg-neutral-900/80 border border-neutral-800 text-center">
               <span className="text-[9px] font-sf-bold text-white block">Factura A/B</span>
-              <span className="text-[8px] text-neutral-400">Oficial CUIT</span>
+              <span className="text-[8px] text-neutral-400">Oficial con CUIT</span>
             </div>
             <div className="p-2 rounded-xl bg-neutral-900/80 border border-neutral-800 text-center">
-              <span className="text-[9px] font-sf-bold text-emerald-400 block">10% Extra</span>
-              <span className="text-[8px] text-neutral-400">Transferencia</span>
+              <span className="text-[9px] font-sf-bold text-primary block">Curvas 8 y 12</span>
+              <span className="text-[8px] text-neutral-400">De 8 y 12 pares</span>
             </div>
             <div className="p-2 rounded-xl bg-neutral-900/80 border border-neutral-800 text-center">
-              <span className="text-[9px] font-sf-bold text-amber-400 block">Envío Gratis</span>
-              <span className="text-[8px] text-neutral-400">CABA y GBA</span>
+              <span className="text-[9px] font-sf-bold text-emerald-400 block">10% OFF</span>
+              <span className="text-[8px] text-neutral-400">En tu primer compra</span>
+            </div>
+            <div className="p-2 rounded-xl bg-neutral-900/80 border border-neutral-800 text-center">
+              <span className="text-[9px] font-sf-bold text-amber-400 block">Envíos a todo el país</span>
+              <span className="text-[8px] text-neutral-400">Despacho 24/48hs</span>
             </div>
           </div>
 
@@ -193,19 +197,23 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
         <div className="relative z-20 h-full max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-6 2xl:px-12 flex flex-col justify-center">
           <div className="max-w-xl lg:max-w-2xl 2xl:max-w-3xl space-y-6">
             
-            {/* 3 Top Glass Pills (Certezas Comerciales Inmediatas) */}
-            <div className="flex flex-wrap items-center gap-2.5">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/80 backdrop-blur-md border border-white/15 text-white shadow-lg text-xs font-sf-bold uppercase tracking-wider">
-                <ShieldCheck className="w-3.5 h-3.5 text-primary" />
-                <span>Factura A/B Oficial</span>
+            {/* 4 Top Glass Pills (Certezas Comerciales Inmediatas) */}
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-900/80 backdrop-blur-md border border-white/15 text-white shadow-md text-xs font-sf-bold">
+                <ShieldCheck className="w-3.5 h-3.5 text-white" />
+                <span>Factura A/B</span>
               </div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/80 backdrop-blur-md border border-emerald-500/30 text-emerald-400 shadow-lg text-xs font-sf-bold tracking-wider">
-                <Percent className="w-3.5 h-3.5" />
-                <span>10% Extra Transferencia</span>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-900/80 backdrop-blur-md border border-primary/30 text-primary shadow-md text-xs font-sf-bold">
+                <Layers className="w-3.5 h-3.5 text-primary" />
+                <span>Curvas de 8 y 12 pares</span>
               </div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/80 backdrop-blur-md border border-amber-500/30 text-amber-300 shadow-lg text-xs font-sf-bold tracking-wider">
-                <Truck className="w-3.5 h-3.5" />
-                <span>Despacho 24/48 hs</span>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-900/80 backdrop-blur-md border border-emerald-500/30 text-emerald-400 shadow-md text-xs font-sf-bold">
+                <Percent className="w-3.5 h-3.5 text-emerald-400" />
+                <span>10% OFF En tu primer compra</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-900/80 backdrop-blur-md border border-amber-500/30 text-amber-300 shadow-md text-xs font-sf-bold">
+                <Truck className="w-3.5 h-3.5 text-amber-300" />
+                <span>Envíos a todo el país</span>
               </div>
             </div>
 
@@ -313,6 +321,21 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
           </div>
         </div>
 
+      </div>
+
+      {/* Global Commercial Pillars Franja Banner */}
+      <div className="w-full bg-neutral-900/95 border-t border-neutral-800/90 py-3 px-4 overflow-hidden shadow-inner">
+        <div className="max-w-7xl mx-auto flex items-center justify-center text-center">
+          <p className="text-xs sm:text-sm font-sf-bold text-neutral-200 tracking-wide flex items-center justify-center gap-2 flex-wrap">
+            <span className="text-white font-extrabold">Factura A/B</span>
+            <span className="text-primary font-black">•</span>
+            <span className="text-primary font-bold">Curvas de 8 y 12 pares</span>
+            <span className="text-primary font-black">•</span>
+            <span className="text-emerald-400 font-extrabold">10% OFF En tu primer compra</span>
+            <span className="text-primary font-black">•</span>
+            <span className="text-amber-300 font-bold">Envíos a todo el país</span>
+          </p>
+        </div>
       </div>
     </section>
   );

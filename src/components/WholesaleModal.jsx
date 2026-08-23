@@ -109,18 +109,21 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
               </h3>
 
               <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-sf-regular">
-                Recibí en WhatsApp los catálogos en PDF con listas de precios de fábrica, curvas por módulos cerrados y el <span className="text-amber-400 font-sf-bold">10% de descuento adicional</span> en tu primera compra.
+                Recibí en WhatsApp los catálogos en PDF con listas de precios de fábrica, curvas por módulos cerrados y el <span className="text-emerald-400 font-sf-bold">10% OFF en tu primer compra</span>.
               </p>
 
               {/* Micro Trust Pills */}
-              <div className="flex flex-wrap gap-1.5 pt-1 text-[10px] font-sf-medium text-neutral-300">
-                <span className="px-2.5 py-0.5 rounded-lg bg-neutral-900 border border-neutral-800">
-                  ✓ Factura A / B
+              <div className="flex flex-wrap gap-1.5 pt-1 text-[10px] font-sf-medium">
+                <span className="px-2.5 py-0.5 rounded-lg bg-neutral-900 border border-neutral-800 text-white font-sf-bold">
+                  ✓ Factura A/B
                 </span>
-                <span className="px-2.5 py-0.5 rounded-lg bg-neutral-900 border border-neutral-800">
-                  ✓ Módulos de 8 y 12 pares
+                <span className="px-2.5 py-0.5 rounded-lg bg-neutral-900 border border-neutral-800 text-primary font-sf-bold">
+                  ✓ Curvas de 8 y 12 pares
                 </span>
-                <span className="px-2.5 py-0.5 rounded-lg bg-neutral-900 border border-neutral-800">
+                <span className="px-2.5 py-0.5 rounded-lg bg-neutral-900 border border-neutral-800 text-emerald-300 font-sf-bold">
+                  ✓ 10% OFF En tu primer compra
+                </span>
+                <span className="px-2.5 py-0.5 rounded-lg bg-neutral-900 border border-neutral-800 text-amber-300 font-sf-bold">
                   ✓ Envíos a todo el país
                 </span>
               </div>

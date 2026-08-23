@@ -121,16 +121,20 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
 
               <ul className="space-y-2.5 text-xs text-neutral-300 font-sf-regular pt-1">
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0 mt-1.5" />
-                  <span><strong>Módulos de 8/12 pares:</strong> 75% en talles 37 y 38 para rotación total sin clavos.</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-white shrink-0 mt-1.5" />
+                  <span><strong>Factura A/B:</strong> Facturación oficial obligatoria con CUIT.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-1.5" />
+                  <span><strong>Curvas de 8 y 12 pares:</strong> Concentración 75% en talles centrales.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0 mt-1.5" />
-                  <span><strong>10% OFF Extra Directo:</strong> Abonando por transferencia o efectivo.</span>
+                  <span><strong>10% OFF En tu primer compra:</strong> Y compras con transferencia.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0 mt-1.5" />
-                  <span><strong>Despacho Bonificado:</strong> Traslado sin cargo al expreso en 24 a 48 hs.</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0 mt-1.5" />
+                  <span><strong>Envíos a todo el país:</strong> Despacho bonificado en 24 a 48 hs.</span>
                 </li>
               </ul>
             </div>

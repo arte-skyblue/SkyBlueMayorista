@@ -42,17 +42,19 @@ export default function CategoryCatalog({ onOpenModal }) {
           <p className="font-sf-medium text-muted-foreground text-base sm:text-lg 2xl:text-xl apple-subheadline">
             Modelos de alta rotación comercial con stock permanente y despacho inmediato por curva cerrada.
           </p>
-
-          {/* Trust Badges */}
+          {/* Trust Badges - Franja Comercial */}
           <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+            <span className="px-3.5 py-1 rounded-full bg-neutral-900 border border-neutral-700 text-white text-xs font-sf-bold">
+              ✓ Factura A/B
+            </span>
             <span className="px-3.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-sf-bold">
-              ✓ Precios Netos de Fábrica sin IVA
+              ✓ Curvas de 8 y 12 pares
             </span>
             <span className="px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 text-xs font-sf-bold">
-              ✓ Módulos Cerrados de 8 y 12 Pares
+              ✓ 10% OFF En tu primer compra
             </span>
             <span className="px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-600 text-xs font-sf-bold">
-              ✓ 10% Descuento Adicional en tu Pago
+              ✓ Envíos a todo el país
             </span>
           </div>
         </div>
@@ -99,49 +101,39 @@ export default function CategoryCatalog({ onOpenModal }) {
           ))}
         </div>
 
-        {/* Filter Navigation Bar */}
-        <div className="flex items-center justify-between flex-wrap gap-4 mb-8 pb-4 border-b border-border">
-          <div className="flex items-center gap-2">
-            <Filter className="w-4 h-4 text-primary" />
-            <span className="text-xs font-sf-bold uppercase text-foreground tracking-wider">
-              {selectedCategory === 'todas' ? 'Mostrando Selección Top 10:' : `Mostrando Categoría (${filteredProducts.length} modelos):`}
-            </span>
-          </div>
-
-          <div className="flex flex-wrap gap-2">
-            {filterOptions.map((opt) => {
-              const isSelected = selectedCategory === opt.id;
+        {/* Category Horizontal Filter Pills */}
+        <div className="flex justify-center mb-8 overflow-x-auto pb-2 px-2 no-scrollbar">
+          <div className="inline-flex items-center p-1.5 rounded-2xl bg-muted/60 border border-border gap-1.5 shrink-0 shadow-inner">
+            {filterOptions.map((tab) => {
+              const isActive = selectedCategory === tab.id;
               return (
                 <button
-                  key={opt.id}
-                  onClick={() => setSelectedCategory(opt.id)}
-                  className={`relative px-4 py-2 rounded-xl text-xs font-sf-medium transition-colors z-10 ${
-                    isSelected
-                      ? 'text-primary-foreground font-sf-bold'
-                      : 'text-muted-foreground hover:text-foreground bg-card border border-border hover:bg-muted'
+                  key={tab.id}
+                  onClick={() => setSelectedCategory(tab.id)}
+                  className={`px-4 py-2 rounded-xl text-xs font-sf-bold transition-all shrink-0 ${
+                    isActive
+                      ? 'bg-primary text-primary-foreground shadow-md'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-card/60'
                   }`}
                 >
-                  {isSelected && (
-                    <motion.div
-                      layoutId="active-catalog-filter"
-                      className="absolute inset-0 bg-primary rounded-xl shadow-md shadow-primary/25 -z-10"
-                      transition={{ type: 'spring', stiffness: 450, damping: 35 }}
-                    />
-                  )}
-                  <span>{opt.name}</span>
+                  {tab.name}
                 </button>
               );
             })}
           </div>
         </div>
 
-        {/* Products Grid (10 on 'todas', 8 on specific category) */}
+        {/* Products Grid (Exact 10 in 'todas' / 8 in specific category) */}
         <motion.div 
           layout
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 gap-4"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
         >
-          <AnimatePresence mode="popLayout">
-            {filteredProducts.map((product) => (
+          <AnimatePresence>
+            {filteredProducts.map((product) => {
+              const estPrice = product.category === 'marroquineria' ? '$ 26.500' : product.category === 'ninos' ? '$ 24.500' : product.category === 'accesorios' ? '$ 12.500' : product.category === 'caballero' ? '$ 31.500' : '$ 34.500';
+              const estBox = product.category === 'marroquineria' ? 'Pack x4: $ 106.000' : product.category === 'accesorios' ? 'Pack x6: $ 75.000' : 'Caja 8 pares: Desde $ 276.000';
+
+              return (
               <motion.div
                 layout
                 key={product.id}
@@ -178,20 +170,34 @@ export default function CategoryCatalog({ onOpenModal }) {
                       </div>
 
                       {/* Product SKU Code & Module info */}
-                      <div className="p-3.5 space-y-1">
-                        <h4 className="font-sf-bold text-sm sm:text-base text-foreground group-hover:text-primary transition-colors tracking-wider">
-                          {product.name}
-                        </h4>
+                      <div className="p-3.5 space-y-1.5">
+                        <div className="flex items-center justify-between">
+                          <h4 className="font-sf-bold text-sm sm:text-base text-foreground group-hover:text-primary transition-colors tracking-wider">
+                            {product.name}
+                          </h4>
+                          <span className="text-[10px] font-sf-bold text-emerald-600 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
+                            {product.markup || 'Margen x2.2'}
+                          </span>
+                        </div>
                         <span className="text-[11px] text-muted-foreground block font-sf-regular">
                           {product.module}
                         </span>
+
+                        {/* Price Reference */}
+                        <div className="bg-muted/40 p-2 rounded-xl border border-border/60 text-xs flex items-center justify-between">
+                          <div>
+                            <span className="font-sf-bold text-foreground block">{estPrice}</span>
+                            <span className="text-[9px] text-muted-foreground">neto/par</span>
+                          </div>
+                          <span className="text-[10px] font-sf-bold text-amber-600">{estBox}</span>
+                        </div>
                       </div>
                     </div>
 
                     {/* Bottom Card Actions: Consultar por este producto */}
                     <div className="p-3.5 pt-0">
                       <a
-                        href={`https://wa.me/5491138916779?text=${encodeURIComponent(`Hola Juliana! Quiero consultar disponibilidad mayorista del modelo: ${product.name} (${product.brand}) para mi negocio.`)}`}
+                        href={`https://wa.me/5491138916779?text=${encodeURIComponent(`Hola Juliana! Quiero consultar disponibilidad y cotización mayorista del modelo: ${product.name} (${product.brand} - Ref: ${estPrice}/par - ${product.module}) para mi negocio.`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full py-2.5 px-3 rounded-xl bg-foreground hover:bg-emerald-600 text-background hover:text-white font-sf-bold text-[10px] sm:text-xs transition-all duration-300 flex items-center justify-center gap-1.5 shadow-xs"
@@ -205,7 +211,8 @@ export default function CategoryCatalog({ onOpenModal }) {
                   </div>
                 </TiltedCard>
               </motion.div>
-            ))}
+            );
+            })}
           </AnimatePresence>
         </motion.div>
 
