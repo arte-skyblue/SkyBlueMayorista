@@ -70,7 +70,7 @@ export default function ReelsSection({ onOpenAdvisorModal }) {
   };
 
   return (
-    <section id="redes" className="py-16 sm:py-24 2xl:py-28 bg-neutral-950 text-white relative overflow-hidden border-b border-neutral-800 select-none">
+    <section id="redes" className="py-16 sm:py-24 2xl:py-28 bg-slate-50 dark:bg-neutral-950 text-slate-900 dark:text-white relative overflow-hidden border-b border-slate-200 dark:border-neutral-800 select-none transition-colors duration-300">
       
       {/* Background Ambience Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-red-600/10 blur-[160px] rounded-full pointer-events-none" />
@@ -80,13 +80,13 @@ export default function ReelsSection({ onOpenAdvisorModal }) {
         {/* Header (Without Red Kicker) */}
         <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-12 2xl:mb-16">
           <h2 className="text-3xl sm:text-5xl 2xl:text-6xl uppercase tracking-tight apple-headline">
-            <span className="font-sf-light-italic text-white mr-3">CONTENIDO PARA</span>
-            <span className="font-sf-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-amber-400 drop-shadow-[0_0_25px_rgba(239,68,68,0.5)]">
+            <span className="font-sf-light-italic text-slate-900 dark:text-white mr-3">CONTENIDO PARA</span>
+            <span className="font-sf-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-amber-500 drop-shadow-[0_0_25px_rgba(239,68,68,0.35)]">
               TUS REDES
             </span>
           </h2>
 
-          <p className="font-sf-medium text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
+          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
             Videos profesionales listos para usar en tus historias de Instagram, reels y estados de WhatsApp. Multiplicá tus ventas sin gastar en producción audiovisual.
           </p>
         </div>
@@ -97,18 +97,19 @@ export default function ReelsSection({ onOpenAdvisorModal }) {
         </div>
 
         {/* VIP Google Drive Kit CTA */}
-        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-neutral-900/90 border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-white/95 dark:bg-neutral-900/90 border border-slate-200/90 dark:border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl transition-colors duration-300">
           <div className="space-y-1.5 text-center md:text-left">
             <span className="text-xs font-sf-bold uppercase text-primary tracking-wider">
               Kit de Marketing Mayorista Incluido
             </span>
-            <h4 className="text-lg sm:text-2xl font-sf-bold text-white">
+            <h4 className="text-lg sm:text-2xl font-sf-bold text-slate-900 dark:text-white">
               ¿Querés acceso a la carpeta completa con más de 200 fotos y videos en 4K?
             </h4>
-            <p className="text-xs sm:text-sm text-neutral-300 font-sf-regular">
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-neutral-300 font-sf-regular">
               Solicitá el enlace al Drive VIP exclusivo para comerciantes y zapaterías asociadas.
             </p>
           </div>
+
 
           <button
             onClick={() => onOpenAdvisorModal ? onOpenAdvisorModal(ADVISORS[2]) : null}

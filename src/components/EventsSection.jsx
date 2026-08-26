@@ -22,18 +22,18 @@ export default function EventsSection({ onOpenModal }) {
   };
 
   return (
-    <section id="eventos" className="py-16 sm:py-24 2xl:py-28 bg-neutral-950 text-white border-b border-neutral-800 relative overflow-hidden">
+    <section id="eventos" className="py-16 sm:py-24 2xl:py-28 bg-slate-50 dark:bg-neutral-950 text-slate-900 dark:text-white border-b border-slate-200 dark:border-neutral-800 relative overflow-hidden transition-colors duration-300">
       <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12">
         
         {/* Section Header (Clean Without Red Kicker) */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
           <div className="space-y-3 max-w-3xl">
             <h2 className="text-3xl sm:text-5xl 2xl:text-6xl uppercase tracking-tight apple-headline">
-              <span className="font-sf-light-italic text-neutral-400 mr-2">FERIAS Y</span>
-              <span className="font-sf-bold text-white">EVENTOS</span>
+              <span className="font-sf-light-italic text-slate-500 dark:text-neutral-400 mr-2">FERIAS Y</span>
+              <span className="font-sf-bold text-slate-900 dark:text-white">EVENTOS</span>
             </h2>
 
-            <p className="font-sf-medium text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
+            <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
               Presentamos las colecciones de calzado oficial en las exposiciones y ferias más importantes de Argentina.
             </p>
           </div>
@@ -43,9 +43,9 @@ export default function EventsSection({ onOpenModal }) {
               href="https://wa.me/5491138916779?text=Hola!%20Quiero%20coordinar%20un%20encuentro%20comercial%20en%20el%20stand%20de%20SkyBlue%20en%20la%20pr%C3%B3xima%20feria."
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3.5 rounded-2xl bg-neutral-900 hover:bg-neutral-800 text-white font-sf-bold text-xs sm:text-sm flex items-center gap-2 border border-neutral-700 shadow-md transition-all hover:scale-105"
+              className="px-5 py-3.5 rounded-2xl bg-slate-100 hover:bg-slate-200 dark:bg-neutral-900 dark:hover:bg-neutral-800 text-slate-900 dark:text-white font-sf-bold text-xs sm:text-sm flex items-center gap-2 border border-slate-300 dark:border-neutral-700 shadow-sm transition-all hover:scale-105"
             >
-              <MessageCircle className="w-4 h-4 text-emerald-400" />
+              <MessageCircle className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
               <span>Agendar Reunión en Stand</span>
             </a>
           </div>
@@ -58,7 +58,7 @@ export default function EventsSection({ onOpenModal }) {
 
             return (
               <TiltedCard key={event.id} maxTilt={6} scale={1.01} className="h-full">
-                <article className="bg-neutral-900/90 hover:bg-neutral-900 rounded-3xl border border-neutral-800 hover:border-primary/40 hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col justify-between h-full group">
+                <article className="bg-white/95 dark:bg-neutral-900/90 hover:bg-white dark:hover:bg-neutral-900 rounded-3xl border border-slate-200/90 dark:border-neutral-800 hover:border-primary/40 hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col justify-between h-full group">
                   
                   <div>
                     {/* 3:4 Vertical Ratio (aspect-[3/4]) */}
@@ -100,20 +100,20 @@ export default function EventsSection({ onOpenModal }) {
                         <span>{event.location}</span>
                       </div>
 
-                      <h3 className="font-sf-bold text-lg sm:text-xl text-white leading-snug">
+                      <h3 className="font-sf-bold text-lg sm:text-xl text-slate-900 dark:text-white leading-snug">
                         {event.title}
                       </h3>
 
-                      <p className="font-sf-regular text-xs text-neutral-300 leading-relaxed">
+                      <p className="font-sf-regular text-xs text-slate-600 dark:text-neutral-300 leading-relaxed">
                         {event.description}
                       </p>
                     </div>
                   </div>
 
                   <div className="p-6 pt-0">
-                    <div className="pt-4 border-t border-neutral-800 flex items-center justify-between text-xs text-neutral-400 font-sf-medium">
+                    <div className="pt-4 border-t border-slate-200 dark:border-neutral-800 flex items-center justify-between text-xs text-slate-500 dark:text-neutral-400 font-sf-medium">
                       <div className="flex items-center gap-1.5">
-                        <Calendar className="w-3.5 h-3.5 text-neutral-500" />
+                        <Calendar className="w-3.5 h-3.5 text-slate-400 dark:text-neutral-500" />
                         <span>{event.dates}</span>
                       </div>
                       <span className="font-sf-bold text-primary">
@@ -132,3 +132,4 @@ export default function EventsSection({ onOpenModal }) {
     </section>
   );
 }
+

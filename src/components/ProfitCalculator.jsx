@@ -16,11 +16,13 @@ import DotBackground from './reactbits/DotBackground';
 import ShinyText from './reactbits/ShinyText';
 import NumberTicker from './reactbits/NumberTicker';
 import { COMPANY_INFO, ADVISORS } from '../data/mockData';
+import { useTheme } from '../context/ThemeContext';
 
 export default function ProfitCalculator({ onOpenAdvisorModal }) {
   const [investment, setInvestment] = useState(800000);
   const [multiplier, setMultiplier] = useState(2.2);
   const [applyDiscount, setApplyDiscount] = useState(true);
+  const { isDark } = useTheme();
 
   const discountAmount = investment * (applyDiscount ? 0.10 : 0);
   const netInvestment = investment - discountAmount;
@@ -47,24 +49,24 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
   const defaultWhatsappMessage = `Hola! Estuve calculando en la web de SkyBlue un pedido mayorista de ${formatCurrency(investment)} con margen x${multiplier} (Ganancia estimada: ${formatCurrency(estimatedProfit)}). Quiero que me asesoren para armar mi compra por módulos.`;
 
   return (
-    <section id="calculadora" className="py-16 sm:py-24 2xl:py-28 bg-neutral-950 text-white relative overflow-hidden border-b border-neutral-800">
-      <DotBackground dotColor="rgba(224, 76, 50, 0.14)">
+    <section id="calculadora" className="py-16 sm:py-24 2xl:py-28 bg-slate-50 dark:bg-neutral-950 text-slate-900 dark:text-white relative overflow-hidden border-b border-slate-200 dark:border-neutral-800 transition-colors duration-300">
+      <DotBackground dotColor={isDark ? "rgba(224, 76, 50, 0.14)" : "rgba(224, 76, 50, 0.08)"}>
         <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 relative z-10">
           
           {/* Section Header */}
           <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-14 2xl:mb-18">
             <h2 className="text-3xl sm:text-5xl 2xl:text-6xl uppercase tracking-tight apple-headline">
-              <span className="font-sf-light-italic text-neutral-400 mr-2">SIMULADOR DE</span>
-              <span className="font-sf-bold text-white">RENTABILIDAD</span>
+              <span className="font-sf-light-italic text-slate-500 dark:text-neutral-400 mr-2">SIMULADOR DE</span>
+              <span className="font-sf-bold text-slate-900 dark:text-white">RENTABILIDAD</span>
             </h2>
 
-            <p className="font-sf-medium text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
+            <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
               Calculá la rentabilidad neta de tu compra mayorista con márgenes proyectados de x2.0 a x2.5
             </p>
           </div>
 
           {/* Calculator Card */}
-          <div className="max-w-4xl 2xl:max-w-5xl mx-auto rounded-3xl bg-neutral-900/90 border border-neutral-700/80 p-6 sm:p-10 2xl:p-12 shadow-2xl backdrop-blur-2xl">
+          <div className="max-w-4xl 2xl:max-w-5xl mx-auto rounded-3xl bg-white/95 dark:bg-neutral-900/90 border border-slate-200/90 dark:border-neutral-700/80 p-6 sm:p-10 2xl:p-12 shadow-xl dark:shadow-2xl backdrop-blur-2xl transition-colors duration-300">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               
               {/* Left Column: Sliders and Inputs */}
@@ -73,7 +75,7 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
                 {/* Investment Slider */}
                 <div className="space-y-3.5">
                   <div className="flex items-center justify-between">
-                    <label className="text-xs font-sf-bold uppercase text-neutral-300 tracking-wider">
+                    <label className="text-xs font-sf-bold uppercase text-slate-700 dark:text-neutral-300 tracking-wider">
                       Inversión Mayorista Estimada:
                     </label>
                     <span className="text-2xl font-sf-bold text-primary">
@@ -91,10 +93,10 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
                     step="50000"
                     value={investment}
                     onChange={(e) => setInvestment(Number(e.target.value))}
-                    className="w-full h-3 bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-primary"
+                    className="w-full h-3 bg-slate-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-primary"
                   />
 
-                  <div className="flex justify-between text-[11px] text-neutral-400 font-sf-medium">
+                  <div className="flex justify-between text-[11px] text-slate-500 dark:text-neutral-400 font-sf-medium">
                     <span>$ 200.000 (Mínimo)</span>
                     <span>$ 2.500.000</span>
                     <span>$ 5.000.000+</span>
@@ -103,7 +105,7 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
 
                 {/* Multiplier Margins */}
                 <div className="space-y-3">
-                  <label className="text-xs font-sf-bold uppercase text-neutral-300 tracking-wider block">
+                  <label className="text-xs font-sf-bold uppercase text-slate-700 dark:text-neutral-300 tracking-wider block">
                     Markup / Multiplicador de Venta Público:
                   </label>
 
@@ -122,7 +124,7 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
                         className={`p-3 rounded-2xl border text-xs font-sf-bold transition-all text-center flex flex-col items-center justify-center gap-1 ${
                           multiplier === item.val
                             ? 'bg-primary text-white border-primary shadow-lg shadow-primary/30 scale-105'
-                            : 'bg-neutral-950/60 text-neutral-300 border-neutral-800 hover:border-neutral-700'
+                            : 'bg-slate-100 dark:bg-neutral-950/60 text-slate-700 dark:text-neutral-300 border-slate-200 dark:border-neutral-800 hover:border-slate-300 dark:hover:border-neutral-700'
                         }`}
                       >
                         <span className="text-base font-extrabold">{item.val}x</span>
@@ -137,26 +139,26 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
                   onClick={() => setApplyDiscount(!applyDiscount)}
                   className={`p-4 rounded-2xl border cursor-pointer transition-all flex items-center justify-between gap-3 ${
                     applyDiscount 
-                      ? 'bg-emerald-950/40 border-emerald-500/40 shadow-inner' 
-                      : 'bg-neutral-950/40 border-neutral-800 opacity-60'
+                      ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-400/60 dark:border-emerald-500/40 shadow-xs dark:shadow-inner' 
+                      : 'bg-slate-100 dark:bg-neutral-950/40 border-slate-200 dark:border-neutral-800 opacity-60'
                   }`}
                 >
                   <div className="flex items-center gap-3">
                     <div className={`w-6 h-6 rounded-lg flex items-center justify-center text-xs font-bold ${
-                      applyDiscount ? 'bg-emerald-500 text-slate-950' : 'bg-neutral-800 text-neutral-400'
+                      applyDiscount ? 'bg-emerald-500 text-white' : 'bg-slate-300 dark:bg-neutral-800 text-slate-600 dark:text-neutral-400'
                     }`}>
                       ✓
                     </div>
                     <div>
-                      <span className="text-xs font-sf-bold text-emerald-300 block">
+                      <span className="text-xs font-sf-bold text-emerald-700 dark:text-emerald-300 block">
                         10% OFF en tu primer compra (o transferencia)
                       </span>
-                      <span className="text-[11px] text-neutral-400">
+                      <span className="text-[11px] text-slate-500 dark:text-neutral-400">
                         Ahorrás: {formatCurrency(discountAmount)} en tu liquidación
                       </span>
                     </div>
                   </div>
-                  <span className="text-xs font-bold text-emerald-400 bg-emerald-950 px-2 py-0.5 rounded-md border border-emerald-500/30">
+                  <span className="text-xs font-bold text-emerald-700 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950 px-2 py-0.5 rounded-md border border-emerald-300 dark:border-emerald-500/30">
                     -10% OFF
                   </span>
                 </div>
@@ -164,12 +166,12 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
               </div>
 
               {/* Right Column: Financial Results */}
-              <div className="lg:col-span-6 bg-neutral-950/80 border border-neutral-800 rounded-3xl p-6 sm:p-8 space-y-6 shadow-xl">
+              <div className="lg:col-span-6 bg-slate-100/90 dark:bg-neutral-950/80 border border-slate-200 dark:border-neutral-800 rounded-3xl p-6 sm:p-8 space-y-6 shadow-sm dark:shadow-xl transition-colors duration-300">
                 <div>
-                  <span className="text-xs font-sf-bold uppercase text-neutral-400 tracking-wider block mb-1">
+                  <span className="text-xs font-sf-bold uppercase text-slate-500 dark:text-neutral-400 tracking-wider block mb-1">
                     Ganancia Neta Proyectada:
                   </span>
-                  <div className="text-3xl sm:text-4xl 2xl:text-5xl font-sf-bold text-emerald-400 tracking-tight">
+                  <div className="text-3xl sm:text-4xl 2xl:text-5xl font-sf-bold text-emerald-600 dark:text-emerald-400 tracking-tight">
                     <NumberTicker
                       value={estimatedProfit}
                       formatter={(v) => formatCurrency(v)}
@@ -177,10 +179,10 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 py-4 border-y border-neutral-800/80 text-xs">
+                <div className="grid grid-cols-2 gap-4 py-4 border-y border-slate-200 dark:border-neutral-800/80 text-xs">
                   <div>
-                    <span className="text-neutral-400 block mb-1">Facturación Estimada:</span>
-                    <span className="text-base font-sf-bold text-white">
+                    <span className="text-slate-500 dark:text-neutral-400 block mb-1">Facturación Estimada:</span>
+                    <span className="text-base font-sf-bold text-slate-900 dark:text-white">
                       <NumberTicker
                         value={estimatedRevenue}
                         formatter={(v) => formatCurrency(v)}
@@ -189,7 +191,7 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
                   </div>
 
                   <div>
-                    <span className="text-neutral-400 block mb-1">Retorno de Inversión (ROI):</span>
+                    <span className="text-slate-500 dark:text-neutral-400 block mb-1">Retorno de Inversión (ROI):</span>
                     <span className="text-base font-sf-bold text-primary">
                       +<NumberTicker value={Number(roiPercentage)} suffix="%" />
                     </span>
@@ -197,16 +199,16 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
                 </div>
 
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-neutral-300">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <div className="flex items-center gap-2 text-xs text-slate-700 dark:text-neutral-300">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
                     <span>Módulos de 8 y 12 pares con curva surtida</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-neutral-300">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <div className="flex items-center gap-2 text-xs text-slate-700 dark:text-neutral-300">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
                     <span>Envíos gratis en CABA/GBA y traslado a expresos</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-neutral-300">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <div className="flex items-center gap-2 text-xs text-slate-700 dark:text-neutral-300">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
                     <span>Fotos y videos oficiales en 4K para tus redes</span>
                   </div>
                 </div>
@@ -231,3 +233,4 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
     </section>
   );
 }
+

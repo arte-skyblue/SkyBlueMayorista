@@ -40,7 +40,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
   });
 
   return (
-    <section id="faq" className="py-16 sm:py-24 2xl:py-28 bg-neutral-950 text-white relative overflow-hidden border-b border-neutral-800">
+    <section id="faq" className="py-16 sm:py-24 2xl:py-28 bg-slate-50 dark:bg-neutral-950 text-slate-900 dark:text-white relative overflow-hidden border-b border-slate-200 dark:border-neutral-800 transition-colors duration-300">
       
       {/* Background Subtle Atmospheric Glow */}
       <div className="absolute top-1/4 right-10 w-[500px] h-[500px] bg-primary/10 blur-[160px] rounded-full pointer-events-none" />
@@ -52,25 +52,25 @@ export default function FaqSection({ onOpenAdvisorModal }) {
           
           {/* Left Column (Sticky Sidebar - ReactBits FAQ-2 pattern) */}
           <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-28">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-neutral-300 text-[11px] font-sf-bold shadow-xs">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-200/80 dark:bg-white/5 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-neutral-300 text-[11px] font-sf-bold shadow-xs">
               <HelpCircle className="w-3.5 h-3.5 text-primary" />
               <span>Centro de Ayuda Mayorista</span>
             </div>
 
             <div className="space-y-3">
               <h2 className="text-3xl sm:text-5xl uppercase tracking-tight apple-headline">
-                <span className="font-sf-light-italic text-neutral-400 mr-2">PREGUNTAS</span>
-                <span className="font-sf-bold text-white">FRECUENTES</span>
+                <span className="font-sf-light-italic text-slate-500 dark:text-neutral-400 mr-2">PREGUNTAS</span>
+                <span className="font-sf-bold text-slate-900 dark:text-white">FRECUENTES</span>
               </h2>
 
-              <p className="font-sf-regular text-neutral-300 text-sm sm:text-base leading-relaxed">
+              <p className="font-sf-regular text-slate-600 dark:text-neutral-300 text-sm sm:text-base leading-relaxed">
                 Todo lo que necesitás saber sobre compras por curva, facturación oficial con CUIT, traslados bonificados al expreso y rentabilidad garantizada.
               </p>
             </div>
 
             {/* Quick Category Filter Pills */}
             <div className="space-y-2 pt-2">
-              <span className="text-[11px] font-sf-bold text-neutral-400 uppercase tracking-wider block">
+              <span className="text-[11px] font-sf-bold text-slate-500 dark:text-neutral-400 uppercase tracking-wider block">
                 Filtrar por tema:
               </span>
               <div className="flex flex-wrap gap-2">
@@ -86,7 +86,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                       className={`px-3.5 py-1.5 rounded-xl text-xs font-sf-medium transition-all ${
                         isSelected
                           ? 'bg-primary text-white font-sf-bold shadow-md shadow-primary/25 scale-105'
-                          : 'bg-neutral-900/80 text-neutral-400 hover:text-white border border-neutral-800 hover:border-neutral-700'
+                          : 'bg-slate-100 dark:bg-neutral-900/80 text-slate-600 dark:text-neutral-400 hover:text-slate-950 dark:hover:text-white border border-slate-200 dark:border-neutral-800 hover:border-slate-300 dark:hover:border-neutral-700'
                       }`}
                     >
                       {cat.label}
@@ -99,7 +99,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
             {/* Advisor Help Card */}
             <SpotlightCard
               spotlightColor="rgba(16, 185, 129, 0.15)"
-              className="p-5 rounded-3xl bg-neutral-900/90 border border-neutral-800 space-y-4 shadow-xl"
+              className="p-5 rounded-3xl bg-white/95 dark:bg-neutral-900/90 border border-slate-200/90 dark:border-neutral-800 space-y-4 shadow-xl transition-colors duration-300"
             >
               <div className="flex items-center gap-3.5">
                 <div className="relative shrink-0">
@@ -108,11 +108,11 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                     alt={ADVISORS[0].name}
                     className="w-12 h-12 rounded-full object-cover border-2 border-emerald-500/40"
                   />
-                  <span className="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-500 border-2 border-neutral-950" />
+                  <span className="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-500 border-2 border-white dark:border-neutral-950" />
                 </div>
                 <div>
-                  <h4 className="font-sf-bold text-sm text-white">¿Tenés una consulta puntual?</h4>
-                  <p className="text-xs text-neutral-400 font-sf-regular">Juliana está en línea para responderte.</p>
+                  <h4 className="font-sf-bold text-sm text-slate-900 dark:text-white">¿Tenés una consulta puntual?</h4>
+                  <p className="text-xs text-slate-500 dark:text-neutral-400 font-sf-regular">Juliana está en línea para responderte.</p>
                 </div>
               </div>
 
@@ -133,7 +133,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
             
             {/* Search Bar with Crisp Glassmorphism */}
             <div className="relative mb-6">
-              <Search className="w-4 h-4 text-neutral-400 absolute left-4 top-1/2 -translate-y-1/2" />
+              <Search className="w-4 h-4 text-slate-400 dark:text-neutral-400 absolute left-4 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
                 placeholder="Buscar duda (ej: envíos, curvas, factura, CUIT, 10% off)..."
@@ -142,7 +142,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                   setSearchQuery(e.target.value);
                   setOpenIndex(0);
                 }}
-                className="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-neutral-900/90 border border-neutral-800 text-white placeholder-neutral-500 text-xs sm:text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-lg transition-all"
+                className="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white/90 dark:bg-neutral-900/90 border border-slate-200 dark:border-neutral-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-neutral-500 text-xs sm:text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm dark:shadow-lg transition-all"
               />
             </div>
 
@@ -158,8 +158,8 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                       key={idx}
                       className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
                         isOpen
-                          ? 'bg-neutral-900 border-primary/50 shadow-xl shadow-primary/10'
-                          : 'bg-neutral-900/60 hover:bg-neutral-900/90 border-neutral-800/80 hover:border-neutral-700'
+                          ? 'bg-white dark:bg-neutral-900 border-primary/50 shadow-lg dark:shadow-xl shadow-primary/10'
+                          : 'bg-white/80 dark:bg-neutral-900/60 hover:bg-white dark:hover:bg-neutral-900/90 border-slate-200 dark:border-neutral-800/80 hover:border-slate-300 dark:hover:border-neutral-700'
                       }`}
                     >
                       <button
@@ -169,11 +169,11 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                       >
                         <div className="flex items-start sm:items-center gap-3.5 pr-2">
                           <span className={`text-xs font-sf-bold px-2 py-0.5 rounded-md shrink-0 mt-0.5 sm:mt-0 ${
-                            isOpen ? 'bg-primary text-white' : 'bg-neutral-950 text-neutral-400 border border-neutral-800'
+                            isOpen ? 'bg-primary text-white' : 'bg-slate-100 dark:bg-neutral-950 text-slate-600 dark:text-neutral-400 border border-slate-200 dark:border-neutral-800'
                           }`}>
                             0{idx + 1}
                           </span>
-                          <span className="font-sf-bold text-sm sm:text-base text-white group-hover:text-primary transition-colors leading-snug">
+                          <span className="font-sf-bold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-primary transition-colors leading-snug">
                             {faq.question}
                           </span>
                         </div>
@@ -182,7 +182,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                         <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${
                           isOpen 
                             ? 'bg-primary text-white rotate-45 shadow-md shadow-primary/30' 
-                            : 'bg-neutral-950 text-neutral-400 border border-neutral-800 group-hover:border-neutral-600 group-hover:text-white'
+                            : 'bg-slate-100 dark:bg-neutral-950 text-slate-600 dark:text-neutral-400 border border-slate-200 dark:border-neutral-800 group-hover:border-slate-400 dark:group-hover:border-neutral-600 group-hover:text-slate-900 dark:group-hover:text-white'
                         }`}>
                           <Plus className="w-4 h-4" />
                         </div>
@@ -196,7 +196,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                             exit={{ height: 0, opacity: 0 }}
                             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
                           >
-                            <div className="px-5 sm:px-6 pb-6 pt-1 text-xs sm:text-sm text-neutral-300 font-sf-regular leading-relaxed border-t border-neutral-800/60 mt-1">
+                            <div className="px-5 sm:px-6 pb-6 pt-1 text-xs sm:text-sm text-slate-600 dark:text-neutral-300 font-sf-regular leading-relaxed border-t border-slate-200 dark:border-neutral-800/60 mt-1">
                               <p>{faq.answer}</p>
                             </div>
                           </motion.div>
@@ -206,7 +206,7 @@ export default function FaqSection({ onOpenAdvisorModal }) {
                   );
                 })
               ) : (
-                <div className="p-8 text-center bg-neutral-900/50 rounded-2xl border border-neutral-800 text-neutral-400 text-sm">
+                <div className="p-8 text-center bg-slate-100/50 dark:bg-neutral-900/50 rounded-2xl border border-slate-200 dark:border-neutral-800 text-slate-500 dark:text-neutral-400 text-sm">
                   No se encontraron preguntas con el término "{searchQuery}". Podés consultarle directamente a un asesor en el botón de la izquierda.
                 </div>
               )}
@@ -220,3 +220,4 @@ export default function FaqSection({ onOpenAdvisorModal }) {
     </section>
   );
 }
+

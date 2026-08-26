@@ -29,24 +29,25 @@ export default function CategoryCatalog({ onOpenModal }) {
     : PRODUCTS.filter((p) => p.category === selectedCategory);
 
   return (
-    <section id="catalogo" className="py-16 sm:py-24 2xl:py-28 bg-background border-b border-border">
+    <section id="catalogo" className="py-16 sm:py-24 2xl:py-28 bg-slate-50 dark:bg-neutral-950 border-b border-slate-200 dark:border-neutral-800 transition-colors duration-300">
       <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-12 2xl:mb-16">
           <h2 className="text-3xl sm:text-5xl 2xl:text-6xl uppercase tracking-tight apple-headline">
-            <span className="font-sf-light-italic text-muted-foreground mr-2">TIPOS DE</span>
-            <span className="font-sf-bold text-foreground">PRODUCTO</span>
+            <span className="font-sf-light-italic text-slate-500 dark:text-neutral-400 mr-2">TIPOS DE</span>
+            <span className="font-sf-bold text-slate-900 dark:text-white">PRODUCTO</span>
           </h2>
 
-          <p className="font-sf-medium text-muted-foreground text-base sm:text-lg 2xl:text-xl apple-subheadline">
+          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
             Modelos de alta rotación comercial con stock permanente y despacho inmediato por curva cerrada.
           </p>
           {/* Trust Badges - Franja Comercial */}
           <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
-            <span className="px-3.5 py-1 rounded-full bg-neutral-900 border border-neutral-700 text-white text-xs font-sf-bold">
+            <span className="px-3.5 py-1 rounded-full bg-slate-900 dark:bg-neutral-900 border border-slate-700 dark:border-neutral-700 text-white text-xs font-sf-bold shadow-xs">
               ✓ Factura A/B
             </span>
+
             <span className="px-3.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-sf-bold">
               ✓ Curvas de 8 y 12 pares
             </span>
@@ -200,7 +201,7 @@ export default function CategoryCatalog({ onOpenModal }) {
                         href={`https://wa.me/5491138916779?text=${encodeURIComponent(`Hola Juliana! Quiero consultar disponibilidad y cotización mayorista del modelo: ${product.name} (${product.brand} - Ref: ${estPrice}/par - ${product.module}) para mi negocio.`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full py-2.5 px-3 rounded-xl bg-foreground hover:bg-emerald-600 text-background hover:text-white font-sf-bold text-[10px] sm:text-xs transition-all duration-300 flex items-center justify-center gap-1.5 shadow-xs"
+                        className="w-full py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-emerald-600 dark:bg-foreground dark:hover:bg-emerald-600 text-white dark:text-background dark:hover:text-white font-sf-bold text-[10px] sm:text-xs transition-all duration-300 flex items-center justify-center gap-1.5 shadow-xs"
                         title="Consultar por WhatsApp"
                       >
                         <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />

@@ -1,7 +1,10 @@
 import React from 'react';
 import { BRANDS } from '../../data/mockData';
+import { useTheme } from '../../context/ThemeContext';
 
 export default function BrandMarquee() {
+  const { isDark } = useTheme();
+
   const logos = [
     { name: 'XTI España', file: '/logos/Xti.svg', tag: 'María Becerra' },
     { name: 'Refresh Casual', file: '/logos/Refresh.svg', tag: 'Streetwear' },
@@ -11,10 +14,10 @@ export default function BrandMarquee() {
   ];
 
   return (
-    <div className="w-full py-6 bg-slate-950 border-y border-slate-800/80 overflow-hidden relative">
+    <div className="w-full py-6 bg-slate-100 dark:bg-slate-950 border-y border-slate-200 dark:border-slate-800/80 overflow-hidden relative transition-colors duration-300">
       {/* Side Fade Gradients */}
-      <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-slate-950 to-transparent z-10" />
-      <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-slate-950 to-transparent z-10" />
+      <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-slate-100 dark:from-slate-950 to-transparent z-10" />
+      <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-slate-100 dark:from-slate-950 to-transparent z-10" />
 
       {/* Infinite Marquee Track */}
       <div className="animate-marquee flex items-center gap-12 sm:gap-20">
@@ -26,9 +29,13 @@ export default function BrandMarquee() {
             <img
               src={item.file}
               alt={item.name}
-              className="h-7 sm:h-9 w-auto object-contain filter invert brightness-200 group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
+              className={`h-7 sm:h-9 w-auto object-contain transition-all duration-300 ${
+                isDark
+                  ? 'filter invert brightness-200 group-hover:brightness-100 group-hover:invert-0'
+                  : 'brightness-0 opacity-70 group-hover:opacity-100 group-hover:filter-none'
+              }`}
             />
-            <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-slate-800/80 border border-slate-700 text-[10px] font-black uppercase text-sky-300 tracking-wider">
+            <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-[10px] font-black uppercase text-slate-800 dark:text-sky-300 tracking-wider shadow-xs">
               {item.tag}
             </span>
           </div>
@@ -37,3 +44,4 @@ export default function BrandMarquee() {
     </div>
   );
 }
+

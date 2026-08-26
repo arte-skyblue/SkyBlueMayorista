@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import SeoHeaderBlock from './components/SeoHeaderBlock';
 import HeroSlider from './components/HeroSlider';
@@ -18,13 +18,53 @@ import WholesaleModal from './components/WholesaleModal';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Footer from './components/Footer';
 import { ADVISORS, SEO_PAGES } from './data/mockData';
+import { ErpApp } from './erp/ErpApp';
+import { LayoutDashboard, ExternalLink, Globe } from 'lucide-react';
 
 export default function App() {
+  // Check if current URL is directly /erp or ?mode=erp
+  const isDirectErpUrl = () => {
+    return (
+      window.location.pathname.startsWith('/erp') ||
+      window.location.search.includes('mode=erp') ||
+      window.location.search.includes('view=erp') ||
+      window.location.hash.includes('erp')
+    );
+  };
+
+  const [viewMode, setViewMode] = useState(isDirectErpUrl() ? 'erp' : 'web');
   const [activeTab, setActiveTab] = useState('inicio');
   const [modalState, setModalState] = useState({
     isOpen: false,
     type: 'general',
   });
+
+  // Sync browser URL when switching viewMode
+  useEffect(() => {
+    const handlePopState = () => {
+      setViewMode(isDirectErpUrl() ? 'erp' : 'web');
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const handleOpenErp = (inNewTab = false) => {
+    if (inNewTab) {
+      window.open('/erp', '_blank');
+    } else {
+      window.history.pushState({}, '', '/erp');
+      setViewMode('erp');
+    }
+  };
+
+  const handleExitToWeb = (inNewTab = false) => {
+    if (inNewTab) {
+      window.open('/', '_blank');
+    } else {
+      window.history.pushState({}, '', '/');
+      setViewMode('web');
+    }
+  };
 
   const handleOpenModal = (type = 'general') => {
     setModalState({ isOpen: true, type });
@@ -40,8 +80,18 @@ export default function App() {
 
   const currentPageData = SEO_PAGES[activeTab] || SEO_PAGES.inicio;
 
+  // Standalone ERP View Mode
+  if (viewMode === 'erp') {
+    return (
+      <div className="min-h-screen bg-slate-950">
+        <ErpApp onExitToWeb={() => handleExitToWeb(false)} />
+      </div>
+    );
+  }
+
+  // Wholesale Web View Mode
   return (
-    <div className="min-h-screen bg-neutral-950 text-white flex flex-col font-sans selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-neutral-950 dark:text-white flex flex-col font-sans selection:bg-primary selection:text-white relative transition-colors duration-300">
       {/* Dynamic SEO Meta & Schema Block */}
       <SeoHeaderBlock pageData={currentPageData} activeTab={activeTab} />
 
@@ -49,8 +99,8 @@ export default function App() {
       <Navbar 
         activeTab={activeTab} 
         setActiveTab={setActiveTab} 
-        onOpenModal={handleOpenModal}
-        onOpenAdvisorModal={handleOpenAdvisorModal}
+        onOpenModal={handleOpenModal} 
+        onOpenAdvisorModal={handleOpenAdvisorModal} 
       />
 
       {/* Main Content Area with High Conversion B2B Funnel Order */}

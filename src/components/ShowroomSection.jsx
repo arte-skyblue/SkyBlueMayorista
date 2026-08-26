@@ -48,19 +48,17 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
   const defaultWhatsappMessage = "Hola! Quiero coordinar una visita con cita previa al Showroom de Tapiales para ver las colecciones de calzado mayorista.";
 
   return (
-    <section id="showroom" className="py-16 sm:py-24 2xl:py-28 bg-neutral-950 text-white relative overflow-hidden border-b border-neutral-800">
+    <section id="showroom" className="py-16 sm:py-24 2xl:py-28 bg-slate-50 dark:bg-neutral-950 text-slate-900 dark:text-white relative overflow-hidden border-b border-slate-200 dark:border-neutral-800 transition-colors duration-300">
       <div className="max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-4 sm:px-6 2xl:px-12 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto space-y-4 mb-14 2xl:mb-18">
-          
-
           <h2 className="text-3xl sm:text-5xl 2xl:text-6xl uppercase tracking-tight apple-headline">
-            <span className="font-sf-light-italic text-neutral-400 mr-2">NUESTRO</span>
-            <span className="font-sf-bold text-white">SHOWROOM</span>
+            <span className="font-sf-light-italic text-slate-500 dark:text-neutral-400 mr-2">NUESTRO</span>
+            <span className="font-sf-bold text-slate-900 dark:text-white">SHOWROOM</span>
           </h2>
 
-          <p className="font-sf-medium text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
+          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
             Vení a conocer las colecciones completas, probar calces y recibir atención personalizada para tu comercio.
           </p>
         </div>
@@ -70,7 +68,7 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
           {showroomPhotos.map((photo, idx) => (
             <div
               key={idx}
-              className={`group relative rounded-3xl overflow-hidden border border-neutral-800 bg-neutral-900 shadow-2xl ${photo.span}`}
+              className={`group relative rounded-3xl overflow-hidden border border-slate-200 dark:border-neutral-800 bg-slate-200 dark:bg-neutral-900 shadow-xl dark:shadow-2xl ${photo.span}`}
             >
               <img
                 src={photo.src}
@@ -95,34 +93,34 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
         </div>
 
         {/* Showroom Details & Coordinates */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-neutral-900/80 border border-neutral-800 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-md">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white/95 dark:bg-neutral-900/80 border border-slate-200/90 dark:border-neutral-800 rounded-3xl p-6 sm:p-10 shadow-xl dark:shadow-2xl backdrop-blur-md transition-colors duration-300">
           <div className="lg:col-span-7 space-y-6">
             <div>
               <span className="text-xs font-sf-bold text-primary uppercase tracking-wider block mb-2">
                 Atención Exclusiva para Comerciantes
               </span>
-              <h3 className="text-2xl sm:text-3xl font-sf-bold text-white mb-3">
+              <h3 className="text-2xl sm:text-3xl font-sf-bold text-slate-900 dark:text-white mb-3">
                 Curapaligüe 1428 (1er Piso) — Tapiales, Bs. As.
               </h3>
-              <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-sf-regular">
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-neutral-300 leading-relaxed font-sf-regular">
                 Ubicado en zona estratégica con fácil acceso desde autopista Riccheri y General Paz. Contamos con estacionamiento exclusivo y muestrarios completos de cada temporada.
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-sf-medium">
-              <div className="p-4 rounded-2xl bg-neutral-950 border border-neutral-800 flex items-center gap-3">
+              <div className="p-4 rounded-2xl bg-slate-100 dark:bg-neutral-950 border border-slate-200 dark:border-neutral-800 flex items-center gap-3">
                 <Clock className="w-5 h-5 text-primary shrink-0" />
                 <div>
-                  <span className="text-white font-bold block">Horario de Atención:</span>
-                  <span className="text-neutral-400">Lunes a Viernes de 08:00 a 17:00 hs</span>
+                  <span className="text-slate-900 dark:text-white font-bold block">Horario de Atención:</span>
+                  <span className="text-slate-500 dark:text-neutral-400">Lunes a Viernes de 08:00 a 17:00 hs</span>
                 </div>
               </div>
 
-              <div className="p-4 rounded-2xl bg-neutral-950 border border-neutral-800 flex items-center gap-3">
-                <Calendar className="w-5 h-5 text-emerald-400 shrink-0" />
+              <div className="p-4 rounded-2xl bg-slate-100 dark:bg-neutral-950 border border-slate-200 dark:border-neutral-800 flex items-center gap-3">
+                <Calendar className="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0" />
                 <div>
-                  <span className="text-white font-bold block">Modalidad de Visita:</span>
-                  <span className="text-neutral-400">Con cita previa coordinada</span>
+                  <span className="text-slate-900 dark:text-white font-bold block">Modalidad de Visita:</span>
+                  <span className="text-slate-500 dark:text-neutral-400">Con cita previa coordinada</span>
                 </div>
               </div>
             </div>
@@ -142,7 +140,7 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
                 href={COMPANY_INFO.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-3.5 rounded-xl bg-neutral-950 hover:bg-neutral-800 text-neutral-200 font-sf-medium text-xs sm:text-sm border border-neutral-700 flex items-center gap-2 transition-all hover:scale-105"
+                className="px-5 py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-neutral-950 dark:hover:bg-neutral-800 text-slate-800 dark:text-neutral-200 font-sf-medium text-xs sm:text-sm border border-slate-300 dark:border-neutral-700 flex items-center gap-2 transition-all hover:scale-105 shadow-xs"
               >
                 <MapPin className="w-4 h-4 text-primary" />
                 <span>Abrir en Google Maps</span>
@@ -155,14 +153,14 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
             {amenities.map((item, idx) => {
               const Icon = item.icon;
               return (
-                <div key={idx} className="p-4 rounded-2xl bg-neutral-950 border border-neutral-800 space-y-2">
+                <div key={idx} className="p-4 rounded-2xl bg-slate-100/80 dark:bg-neutral-950 border border-slate-200 dark:border-neutral-800 space-y-2">
                   <div className="w-9 h-9 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
                     <Icon className="w-4 h-4" />
                   </div>
-                  <h4 className="font-sf-bold text-xs text-white leading-tight">
+                  <h4 className="font-sf-bold text-xs text-slate-900 dark:text-white leading-tight">
                     {item.title}
                   </h4>
-                  <p className="text-[11px] text-neutral-400 font-sf-regular leading-snug">
+                  <p className="text-[11px] text-slate-600 dark:text-neutral-400 font-sf-regular leading-snug">
                     {item.desc}
                   </p>
                 </div>
@@ -175,3 +173,4 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
     </section>
   );
 }
+

@@ -30,7 +30,7 @@ export default function MobileBottomDock({ activeTab, setActiveTab, onOpenModal,
         initial={{ y: 30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        className="pointer-events-auto flex items-center justify-between gap-1 p-1.5 rounded-full bg-neutral-950/90 backdrop-blur-2xl border border-white/15 shadow-2xl shadow-black/80 max-w-sm w-full"
+        className="pointer-events-auto flex items-center justify-between gap-1 p-1.5 rounded-full bg-white/90 dark:bg-neutral-950/90 backdrop-blur-2xl border border-slate-200/90 dark:border-white/15 shadow-2xl shadow-neutral-950/20 dark:shadow-black/80 max-w-sm w-full transition-colors duration-300"
       >
         {/* Navigation Tabs */}
         <div className="flex items-center gap-0.5 flex-1 justify-around">
@@ -44,18 +44,18 @@ export default function MobileBottomDock({ activeTab, setActiveTab, onOpenModal,
                 onClick={() => handleTabClick(item.id)}
                 whileTap={{ scale: 0.88 }}
                 className={`relative flex flex-col items-center justify-center py-1.5 px-2.5 rounded-full transition-colors ${
-                  isActive ? 'text-primary font-bold' : 'text-neutral-400 hover:text-white'
+                  isActive ? 'text-primary font-bold' : 'text-slate-500 dark:text-neutral-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
                 aria-label={item.name}
               >
                 {isActive && (
                   <motion.div
                     layoutId="mobile-dock-active-pill"
-                    className="absolute inset-0 bg-white/10 rounded-full -z-10 border border-white/10 shadow-xs"
+                    className="absolute inset-0 bg-slate-100 dark:bg-white/10 rounded-full -z-10 border border-slate-200 dark:border-white/10 shadow-xs"
                     transition={{ type: 'spring', stiffness: 450, damping: 35 }}
                   />
                 )}
-                <Icon className={`w-4 h-4 ${isActive ? 'text-primary' : 'text-neutral-400'}`} />
+                <Icon className={`w-4 h-4 ${isActive ? 'text-primary' : 'text-slate-400 dark:text-neutral-400'}`} />
                 <span className="text-[9px] font-sf-medium tracking-tight mt-0.5">
                   {item.name}
                 </span>
@@ -79,3 +79,4 @@ export default function MobileBottomDock({ activeTab, setActiveTab, onOpenModal,
     </div>
   );
 }
+

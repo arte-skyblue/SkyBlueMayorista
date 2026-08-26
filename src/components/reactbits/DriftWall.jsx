@@ -11,9 +11,10 @@ export default function DriftWall({ items = [], onItemClick }) {
 
   return (
     <div className="relative w-full overflow-hidden py-4 space-y-6 [perspective:1200px]">
-      {/* Gradient Mask Overlays for Smooth Fade Edges */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-neutral-950 via-neutral-950/80 to-transparent z-20" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-neutral-950 via-neutral-950/80 to-transparent z-20" />
+      {/* Gradient Mask Overlays for Smooth Fade Edges (Adaptive Light / Dark) */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-20 sm:w-44 bg-gradient-to-r from-slate-50 via-slate-50/85 to-transparent dark:from-neutral-950 dark:via-neutral-950/80 dark:to-transparent z-20" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-20 sm:w-44 bg-gradient-to-l from-slate-50 via-slate-50/85 to-transparent dark:from-neutral-950 dark:via-neutral-950/80 dark:to-transparent z-20" />
+
 
       {/* Row 1: Slow & Smooth Drift to the left WITHOUT hover pause */}
       <div className="flex w-max animate-drift-left-slow gap-4 sm:gap-6 will-change-transform">
