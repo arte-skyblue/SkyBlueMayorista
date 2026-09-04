@@ -21,7 +21,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenModal, onOpenAdv
     { id: 'inicio', name: 'Inicio' },
     { id: 'marcas', name: 'Marcas' },
     { id: 'catalogo', name: 'Catálogo' },
-    { id: 'beneficios', name: 'Rentabilidad' },
+    { id: 'beneficios', name: 'Simular Ganancias' },
     { id: 'showroom', name: 'Showroom' },
     { id: 'faq', name: 'FAQ' },
     { id: 'blog', name: 'Blog' },

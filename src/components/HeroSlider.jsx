@@ -123,23 +123,19 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
             </motion.div>
           </AnimatePresence>
 
-          {/* 4 Mobile Glass Badges / Franja */}
-          <div className="grid grid-cols-2 gap-1.5 pt-1">
+          {/* 3 Mobile Glass Badges */}
+          <div className="grid grid-cols-3 gap-1.5 pt-1">
             <div className="p-2 rounded-xl bg-slate-50 dark:bg-neutral-900/80 border border-slate-200 dark:border-neutral-800 text-center">
-              <span className="text-[9px] font-sf-bold text-slate-900 dark:text-white block">Factura A/B</span>
-              <span className="text-[8px] text-slate-500 dark:text-neutral-400">Oficial con CUIT</span>
+              <span className="text-[9px] font-sf-bold text-slate-900 dark:text-white block">Distribuidor Oficial</span>
+              <span className="text-[8px] text-slate-500 dark:text-neutral-400">Facturación A/B y Aduana</span>
             </div>
             <div className="p-2 rounded-xl bg-slate-50 dark:bg-neutral-900/80 border border-slate-200 dark:border-neutral-800 text-center">
-              <span className="text-[9px] font-sf-bold text-primary block">Curvas 8 y 12</span>
-              <span className="text-[8px] text-slate-500 dark:text-neutral-400">De 8 y 12 pares</span>
+              <span className="text-[9px] font-sf-bold text-emerald-600 dark:text-emerald-400 block">10% OFF 1ra Compra</span>
+              <span className="text-[8px] text-slate-500 dark:text-neutral-400">Transferencia / Efectivo</span>
             </div>
             <div className="p-2 rounded-xl bg-slate-50 dark:bg-neutral-900/80 border border-slate-200 dark:border-neutral-800 text-center">
-              <span className="text-[9px] font-sf-bold text-emerald-600 dark:text-emerald-400 block">10% OFF</span>
-              <span className="text-[8px] text-slate-500 dark:text-neutral-400">En tu primer compra</span>
-            </div>
-            <div className="p-2 rounded-xl bg-slate-50 dark:bg-neutral-900/80 border border-slate-200 dark:border-neutral-800 text-center">
-              <span className="text-[9px] font-sf-bold text-amber-600 dark:text-amber-400 block">Envíos a todo el país</span>
-              <span className="text-[8px] text-slate-500 dark:text-neutral-400">Despacho 24/48hs</span>
+              <span className="text-[9px] font-sf-bold text-amber-600 dark:text-amber-400 block">Envío Gratis CABA/GBA</span>
+              <span className="text-[8px] text-slate-500 dark:text-neutral-400">Despacho 24/48 hs</span>
             </div>
           </div>
 
@@ -198,23 +194,19 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
         <div className="relative z-20 h-full max-w-7xl 2xl:max-w-[1720px] 3xl:max-w-[1800px] mx-auto px-6 2xl:px-12 flex flex-col justify-center">
           <div className="max-w-xl lg:max-w-2xl 2xl:max-w-3xl space-y-6">
             
-            {/* 4 Top Glass Pills (Certezas Comerciales Inmediatas) */}
+            {/* 3 Top Glass Pills (Certezas Comerciales Inmediatas) */}
             <div className="flex flex-wrap items-center gap-2">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 dark:bg-neutral-900/80 backdrop-blur-md border border-slate-200/90 dark:border-white/15 text-slate-800 dark:text-white shadow-md text-xs font-sf-bold">
                 <ShieldCheck className="w-3.5 h-3.5 text-primary" />
-                <span>Factura A/B</span>
-              </div>
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 dark:bg-neutral-900/80 backdrop-blur-md border border-primary/30 text-primary shadow-md text-xs font-sf-bold">
-                <Layers className="w-3.5 h-3.5 text-primary" />
-                <span>Curvas de 8 y 12 pares</span>
+                <span>Distribuidor Oficial • Facturación A/B y Aduana</span>
               </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 dark:bg-neutral-900/80 backdrop-blur-md border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 shadow-md text-xs font-sf-bold">
                 <Percent className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                <span>10% OFF En tu primer compra</span>
+                <span>10% OFF en tu primer compra • Transferencia / Efectivo</span>
               </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 dark:bg-neutral-900/80 backdrop-blur-md border border-amber-500/30 text-amber-600 dark:text-amber-300 shadow-md text-xs font-sf-bold">
                 <Truck className="w-3.5 h-3.5 text-amber-600 dark:text-amber-300" />
-                <span>Envíos a todo el país</span>
+                <span>Envío Gratis CABA/GBA • Despacho 24/48 hs</span>
               </div>
             </div>
 

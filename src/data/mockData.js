@@ -167,10 +167,10 @@ export const BANNERS = [
   {
     id: 1,
     brand: "Xti",
-    tag: "CALZADO OFICIAL ESPAÑA",
+    tag: "ALTA ROTACIÓN GARANTIZADA",
     title: "MARÍA BECERRA × XTI",
-    subtitle: "Calzado urbano europeo con tracción de venta masiva. Módulos de 8 y 12 pares con curva comercial directa de fábrica.",
-    cta: "Ver Módulos Xti",
+    subtitle: "El calzado que tus clientas buscan!. Módulos de 8 y 12 pares listos para duplicar tu inversión.",
+    cta: "Pedir Lista de Precios Xti",
     link: "marcas",
     image: "/images/banners/banner1-xti.png",
     accent: "#E04C32"
