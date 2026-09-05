@@ -26,3 +26,5 @@ dist-ssr
 # Material y accesos de trabajo local
 MATERIAL_DE_LA_WEB/
 data/images/
+.env
+.env.*
