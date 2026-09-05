@@ -236,13 +236,24 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
         <div className="pt-8 border-t border-slate-200 dark:border-neutral-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-neutral-400 font-sf-medium">
           <p>© {new Date().getFullYear()} SkyBlue Calzado Mayorista. Todos los derechos reservados. Venta exclusiva a comerciantes con CUIT.</p>
 
-          <button
-            onClick={scrollToTop}
-            className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 text-slate-700 dark:text-neutral-300 hover:text-slate-950 dark:hover:text-white hover:border-primary transition-all text-xs shadow-xs"
-          >
-            <span>Volver arriba</span>
-            <ArrowUp className="w-3.5 h-3.5 text-primary" />
-          </button>
+          <div className="flex items-center gap-3">
+            <a
+              href="/?mode=ai-studio"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900 text-cyan-400 hover:text-cyan-300 border border-cyan-500/30 transition text-xs font-mono shadow-xs"
+              title="Acceso Privado al Centro de Agentes SkyBlue"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+              <span>AI Studio</span>
+            </a>
+
+            <button
+              onClick={scrollToTop}
+              className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 text-slate-700 dark:text-neutral-300 hover:text-slate-950 dark:hover:text-white hover:border-primary transition-all text-xs shadow-xs"
+            >
+              <span>Volver arriba</span>
+              <ArrowUp className="w-3.5 h-3.5 text-primary" />
+            </button>
+          </div>
         </div>
 
       </div>

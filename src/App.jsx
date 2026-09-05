@@ -19,20 +19,24 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Footer from './components/Footer';
 import { ADVISORS, SEO_PAGES } from './data/mockData';
 import { ErpApp } from './erp/ErpApp';
+import { AiStudioApp } from './components/AiStudioApp';
 import { LayoutDashboard, ExternalLink, Globe } from 'lucide-react';
 
 export default function App() {
-  // Check if current URL is directly /erp or ?mode=erp
-  const isDirectErpUrl = () => {
-    return (
-      window.location.pathname.startsWith('/erp') ||
-      window.location.search.includes('mode=erp') ||
-      window.location.search.includes('view=erp') ||
-      window.location.hash.includes('erp')
-    );
+  const getInitialViewMode = () => {
+    const search = window.location.search;
+    const path = window.location.pathname;
+    const hash = window.location.hash;
+    if (path.startsWith('/ai-studio') || search.includes('mode=ai-studio') || search.includes('view=ai-studio') || hash.includes('ai-studio')) {
+      return 'ai-studio';
+    }
+    if (path.startsWith('/erp') || search.includes('mode=erp') || search.includes('view=erp') || hash.includes('erp')) {
+      return 'erp';
+    }
+    return 'web';
   };
 
-  const [viewMode, setViewMode] = useState(isDirectErpUrl() ? 'erp' : 'web');
+  const [viewMode, setViewMode] = useState(getInitialViewMode());
   const [activeTab, setActiveTab] = useState('inicio');
   const [modalState, setModalState] = useState({
     isOpen: false,
@@ -42,7 +46,7 @@ export default function App() {
   // Sync browser URL when switching viewMode
   useEffect(() => {
     const handlePopState = () => {
-      setViewMode(isDirectErpUrl() ? 'erp' : 'web');
+      setViewMode(getInitialViewMode());
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
@@ -54,6 +58,15 @@ export default function App() {
     } else {
       window.history.pushState({}, '', '/erp');
       setViewMode('erp');
+    }
+  };
+
+  const handleOpenAiStudio = (inNewTab = false) => {
+    if (inNewTab) {
+      window.open('/?mode=ai-studio', '_blank');
+    } else {
+      window.history.pushState({}, '', '/?mode=ai-studio');
+      setViewMode('ai-studio');
     }
   };
 
@@ -79,6 +92,13 @@ export default function App() {
   };
 
   const currentPageData = SEO_PAGES[activeTab] || SEO_PAGES.inicio;
+
+  // Standalone AI Studio View Mode
+  if (viewMode === 'ai-studio') {
+    return (
+      <AiStudioApp onExitToWeb={() => handleExitToWeb(false)} />
+    );
+  }
 
   // Standalone ERP View Mode
   if (viewMode === 'erp') {
