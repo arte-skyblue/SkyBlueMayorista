@@ -238,6 +238,16 @@ export default function Footer({ onOpenModal, onOpenAdvisorModal, setActiveTab }
 
           <div className="flex items-center gap-3">
             <a
+              href="/catalogo_editable.html"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-sky-950 text-sky-400 hover:text-sky-300 border border-sky-500/30 transition text-xs font-mono shadow-xs"
+              title="Catálogo Mayorista Editable & Canva Export"
+            >
+              <span>Catálogo Editable</span>
+            </a>
+
+            <a
               href="/?mode=ai-studio"
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900 text-cyan-400 hover:text-cyan-300 border border-cyan-500/30 transition text-xs font-mono shadow-xs"
               title="Acceso Privado al Centro de Agentes SkyBlue"

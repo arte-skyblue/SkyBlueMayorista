@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Mayorista Editable - SkyBlue</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    [contenteditable="true"] {
+      transition: all 0.2s ease;
+      outline: 1px dashed transparent;
+      border-radius: 4px;
+      padding: 1px 4px;
+    }
+    .edit-mode [contenteditable="true"] {
+      outline: 1px dashed #38bdf8;
+      background-color: rgba(56, 189, 248, 0.05);
+    }
+    .edit-mode [contenteditable="true"]:hover {
+      background-color: rgba(56, 189, 248, 0.15);
+    }
+    .edit-mode [contenteditable="true"]:focus {
+      outline: 2px solid #0284c7;
+      background-color: #ffffff;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.2);
+    }
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      body {
+        background: white !important;
+        color: black !important;
+      }
+      .page-break {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen">
+
+  <!-- Header Superior Comercial -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-xs no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-cyan-400 flex items-center justify-center text-white font-extrabold text-xl shadow-sm">
+          SB
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-lg font-bold text-slate-900 leading-tight">SkyBlue Mayorista</h1>
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-cyan-50 text-cyan-700 border border-cyan-200/60">Catálogo Interactivo</span>
+          </div>
+          <p class="text-xs text-slate-500">Mínimo: 6 unidades surtidas • Descuento 1ra compra en efectivo/transferencia</p>
+        </div>
+      </div>
+
+      <!-- Barra de Acciones y Exportaciones -->
+      <div class="flex items-center flex-wrap gap-2.5">
+        <button id="toggleEditBtn" onclick="toggleEditMode()" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+          <span id="editBtnText">Activar Modo Edición</span>
+        </button>
+
+        <button onclick="saveChanges()" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 text-white hover:bg-emerald-700 transition shadow-xs flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <span>Guardar Cambios</span>
+        </button>
+
+        <button onclick="exportToCanvaCSV()" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 hover:bg-indigo-100 transition flex items-center gap-1.5" title="Descargar CSV para importar en Canva">
+          <svg class="w-3.5 h-3.5 text-indigo-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5v-3h3l-4-5-4 5h3v3h2z"/></svg>
+          <span>Exportar a Canva (CSV)</span>
+        </button>
+
+        <button onclick="window.print()" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-white hover:bg-slate-900 transition flex items-center gap-1.5 shadow-xs">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+          <span>Imprimir / PDF</span>
+        </button>
+
+        <a href="https://wa.me/5491138916779" target="_blank" class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-emerald-500 text-white hover:bg-emerald-600 transition flex items-center gap-1.5 shadow-xs">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.58 1.849.919 2.796.919h.005c3.181 0 5.767-2.586 5.768-5.766.001-3.181-2.586-5.766-5.773-5.766zm9.969 5.766c0 5.495-4.474 9.969-9.969 9.969-1.748 0-3.385-.453-4.816-1.246l-5.215 1.369 1.393-5.093c-.888-1.492-1.393-3.238-1.393-5.099 0-5.495 4.474-9.969 9.969-9.969 5.495 0 9.969 4.474 9.969 9.969z"/></svg>
+          <span>WhatsApp Ventas</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra de Filtros y Calculadora de Márgenes -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 no-print">
+    <div class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/80 shadow-xs flex flex-wrap items-center justify-between gap-4">
+      
+      <!-- Buscador y Filtro Marca -->
+      <div class="flex items-center flex-wrap gap-3 flex-1 min-w-[280px]">
+        <div class="relative flex-1 min-w-[200px]">
+          <svg class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          <input type="text" id="searchInput" oninput="filterProducts()" placeholder="Buscar por SKU, modelo o color..." class="w-full pl-9 pr-3 py-2 text-xs rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:outline-hidden focus:ring-2 focus:ring-sky-500">
+        </div>
+
+        <div class="flex items-center gap-1.5 bg-slate-100 p-1 rounded-xl">
+          <button onclick="setBrandFilter('ALL')" class="brand-tab active px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 bg-white shadow-xs transition" data-brand="ALL">Todos</button>
+          <button onclick="setBrandFilter('XTI')" class="brand-tab px-3 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition" data-brand="XTI">XTI</button>
+          <button onclick="setBrandFilter('REFRESH')" class="brand-tab px-3 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition" data-brand="REFRESH">REFRESH</button>
+        </div>
+      </div>
+
+      <!-- Calculadora Dinámica de Margen -->
+      <div class="flex items-center gap-3 bg-sky-50/60 border border-sky-100 px-4 py-2 rounded-xl">
+        <div class="text-left">
+          <div class="text-[11px] font-bold text-sky-900 uppercase tracking-wide">Margen de Reventa (PVP)</div>
+          <div class="text-xs text-sky-700">Multiplicador automático para revendedoras</div>
+        </div>
+        <div class="flex items-center gap-1">
+          <button onclick="setMargin(80)" class="margin-btn px-2.5 py-1 text-xs font-bold rounded-lg border border-sky-200 bg-white text-sky-700 hover:bg-sky-100 transition" data-margin="80">+80%</button>
+          <button onclick="setMargin(100)" class="margin-btn active px-2.5 py-1 text-xs font-bold rounded-lg border border-sky-500 bg-sky-600 text-white transition shadow-xs" data-margin="100">+100%</button>
+          <button onclick="setMargin(120)" class="margin-btn px-2.5 py-1 text-xs font-bold rounded-lg border border-sky-200 bg-white text-sky-700 hover:bg-sky-100 transition" data-margin="120">+120%</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Banner Imprimible de Presentación -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+    <div class="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-md border border-slate-800">
+      <div class="space-y-2 text-center md:text-left">
+        <span class="text-xs font-extrabold uppercase tracking-widest px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">Lanzamiento Temporada 2026</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Catálogo Oficial de Calzado y Moda</h2>
+        <p class="text-sm text-slate-300 max-w-xl">Modelos seleccionados en stock inmediato con precios directos de fábrica. Mínimo de solo 6 unidades surtidas para que armes tu pedido a medida.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
+        <div class="text-center sm:text-right bg-white/5 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/10 w-full sm:w-auto">
+          <div class="text-xs text-cyan-300 font-semibold">Pedidos y Consultas</div>
+          <div class="text-base font-mono font-bold">+54 9 11 3891-6779</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid de Fotoproductos Editables -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+      <!-- Los productos se inyectan dinámicamente -->
+    </div>
+  </main>
+
+  <script>
+    // Dataset Inicial de los 19 Fotoproductos
+    let products = [
+      { id: 1, sku: "14417001", brand: "XTI", title: "Zapatilla Urbana Retro Gamuzada", category: "Calzado Urbano", wholesalePrice: 38500, color: "Beige / Verde / Suela Caramelo", image: "catalog-marroquineria/14417001.jpg" },
+      { id: 2, sku: "14417006", brand: "XTI", title: "Zapatilla Urbana Retro Gamuzada V2", category: "Calzado Urbano", wholesalePrice: 38500, color: "Marfil / Arena / Suela Caramelo", image: "catalog-marroquineria/14417006.jpg" },
+      { id: 3, sku: "14426401", brand: "XTI", title: "Zapatilla Confort Classic", category: "Calzado Urbano", wholesalePrice: 36900, color: "Blanco / Gris Neutro", image: "catalog-marroquineria/14426401.jpg" },
+      { id: 4, sku: "14615603", brand: "XTI", title: "Zapatilla Sporty Chic Mesh", category: "Zapatilla Moda", wholesalePrice: 42000, color: "Tostado / Cobre / Malla", image: "catalog-marroquineria/14615603.jpg" },
+      { id: 5, sku: "14615701", brand: "XTI", title: "Zapatilla Confort Running Chic", category: "Zapatilla Moda", wholesalePrice: 39500, color: "Gris Plata / Blanco", image: "catalog-marroquineria/14615701.jpg" },
+      { id: 6, sku: "14615703", brand: "XTI", title: "Zapatilla Confort Running Chic V2", category: "Zapatilla Moda", wholesalePrice: 39500, color: "Camel / Dorado Suave", image: "catalog-marroquineria/14615703.jpg" },
+      { id: 7, sku: "14621802", brand: "REFRESH", title: "Zapatilla Urbana Plataforma", category: "Calzado Urbano", wholesalePrice: 35800, color: "Blanco / Pasteles", image: "catalog-marroquineria/14621802.jpg" },
+      { id: 8, sku: "14621803", brand: "REFRESH", title: "Zapatilla Urbana Plataforma V2", category: "Calzado Urbano", wholesalePrice: 35800, color: "Beige / Nude", image: "catalog-marroquineria/14621803.jpg" },
+      { id: 9, sku: "14629201", brand: "REFRESH", title: "Sneaker Casual Street", category: "Calzado Urbano", wholesalePrice: 34000, color: "Negro / Suela Blanca", image: "catalog-marroquineria/14629201.jpg" },
+      { id: 10, sku: "14629202", brand: "REFRESH", title: "Sneaker Casual Street V2", category: "Calzado Urbano", wholesalePrice: 34000, color: "Blanco Total", image: "catalog-marroquineria/14629202.jpg" },
+      { id: 11, sku: "14637602", brand: "REFRESH", title: "Sandalia Confort Anatómica", category: "Sandalias", wholesalePrice: 29900, color: "Cuero Suela / Hebilla Plata", image: "catalog-marroquineria/14637602.jpg" },
+      { id: 12, sku: "14640001", brand: "XTI", title: "Sandalia Tira Fina Minimalista", category: "Fiesta / Vestir", wholesalePrice: 32500, color: "Dorado Metalizado", image: "catalog-marroquineria/14640001.jpg" },
+      { id: 13, sku: "14640002", brand: "XTI", title: "Sandalia Tira Fina Minimalista V2", category: "Fiesta / Vestir", wholesalePrice: 32500, color: "Plata Metalizado", image: "catalog-marroquineria/14640002.jpg" },
+      { id: 14, sku: "14640003", brand: "XTI", title: "Sandalia Tira Fina Minimalista V3", category: "Fiesta / Vestir", wholesalePrice: 32500, color: "Negro Clásico", image: "catalog-marroquineria/14640003.jpg" },
+      { id: 15, sku: "14641801", brand: "REFRESH", title: "Sandalia Taco Bloque Verano", category: "Sandalias", wholesalePrice: 33800, color: "Nude / Hebilla Dorada", image: "catalog-marroquineria/14641801.jpg" },
+      { id: 16, sku: "14641802", brand: "REFRESH", title: "Sandalia Taco Bloque Verano V2", category: "Sandalias", wholesalePrice: 33800, color: "Negro Charol", image: "catalog-marroquineria/14641802.jpg" },
+      { id: 17, sku: "14644202", brand: "XTI", title: "Zapato Taco T-Strap Charol", category: "Fiesta / Vestir", wholesalePrice: 41500, color: "Negro Charol / Dije Oro", image: "catalog-marroquineria/14644202.jpg" },
+      { id: 18, sku: "17610003", brand: "XTI", title: "Bota Corta / Calzado Tendencia", category: "Temporada", wholesalePrice: 46000, color: "Suela / Camel", image: "catalog-marroquineria/17610003.jpg" },
+      { id: 19, sku: "17610004", brand: "XTI", title: "Bota Corta / Calzado Tendencia V2", category: "Temporada", wholesalePrice: 46000, color: "Negro Mate", image: "catalog-marroquineria/17610004.jpg" }
+    ];
+
+    let currentMargin = 100;
+    let currentBrand = 'ALL';
+    let isEditMode = false;
+
+    // Cargar del localStorage si existe versión editada
+    const saved = localStorage.getItem('skyblue_catalog_products');
+    if (saved) {
+      try {
+        products = JSON.parse(saved);
+      } catch (e) {
+        console.error("Error al cargar productos guardados", e);
+      }
+    }
+
+    function formatCurrency(val) {
+      return "$ " + Number(val).toLocaleString('es-AR');
+    }
+
+    function calculatePVP(wholesale) {
+      return Math.round(wholesale * (1 + currentMargin / 100));
+    }
+
+    function renderProducts() {
+      const grid = document.getElementById('productsGrid');
+      const search = document.getElementById('searchInput').value.toLowerCase().trim();
+
+      const filtered = products.filter(p => {
+        const matchesBrand = currentBrand === 'ALL' || p.brand.toUpperCase() === currentBrand;
+        const matchesSearch = !search || 
+          p.sku.toLowerCase().includes(search) || 
+          p.title.toLowerCase().includes(search) || 
+          p.color.toLowerCase().includes(search);
+        return matchesBrand && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="col-span-full py-12 text-center text-slate-400 font-medium">No se encontraron productos con esos filtros.</div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(p => {
+        const pvp = calculatePVP(p.wholesalePrice);
+        const ganancia = pvp - p.wholesalePrice;
+        const waText = encodeURIComponent(`Hola! Quiero consultar disponibilidad y precio mayorista del SKU ${p.sku} (${p.title})`);
+
+        return `
+          <div class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-md transition flex flex-col page-break" data-id="${p.id}">
+            <!-- Imagen Fotoproducto -->
+            <div class="relative bg-white p-4 flex items-center justify-center border-b border-slate-100 aspect-square overflow-hidden group">
+              <img src="${p.image}" alt="${p.title}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="this.src='https://via.placeholder.com/400?text=Foto+Producto'">
+              
+              <!-- Badges Superiores -->
+              <div class="absolute top-3 left-3 flex flex-col gap-1">
+                <span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold tracking-wider uppercase bg-slate-900 text-white" contenteditable="true" onblur="updateField(${p.id}, 'brand', this.innerText)">${p.brand}</span>
+              </div>
+
+              <div class="absolute top-3 right-3">
+                <span class="px-2 py-0.5 rounded-md text-[11px] font-mono font-bold bg-sky-50 text-sky-700 border border-sky-200/80" contenteditable="true" onblur="updateField(${p.id}, 'sku', this.innerText)">${p.sku}</span>
+              </div>
+            </div>
+
+            <!-- Datos del Producto -->
+            <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+              <div>
+                <div class="text-[11px] font-bold text-cyan-600 uppercase tracking-wide" contenteditable="true" onblur="updateField(${p.id}, 'category', this.innerText)">${p.category}</div>
+                <h3 class="text-sm font-bold text-slate-900 line-clamp-1 mt-0.5" contenteditable="true" onblur="updateField(${p.id}, 'title', this.innerText)">${p.title}</h3>
+                <p class="text-xs text-slate-500 mt-1 line-clamp-1 flex items-center gap-1">
+                  <span class="w-2 h-2 rounded-full bg-slate-300 shrink-0"></span>
+                  <span contenteditable="true" onblur="updateField(${p.id}, 'color', this.innerText)">${p.color}</span>
+                </p>
+              </div>
+
+              <!-- Bloque de Precios y Ganancia -->
+              <div class="pt-2 border-t border-slate-100 space-y-2">
+                <div class="flex items-baseline justify-between">
+                  <span class="text-xs text-slate-500 font-medium">Mayorista:</span>
+                  <span class="text-base font-extrabold text-slate-900 font-mono" contenteditable="true" onblur="updatePrice(${p.id}, this.innerText)">${formatCurrency(p.wholesalePrice)}</span>
+                </div>
+
+                <div class="flex items-center justify-between text-xs bg-slate-50 px-2.5 py-1.5 rounded-xl border border-slate-200/60">
+                  <span class="text-slate-600">PVP Sugerido:</span>
+                  <span class="font-bold text-sky-700 font-mono">${formatCurrency(pvp)}</span>
+                </div>
+
+                <div class="text-[11px] font-semibold text-emerald-600 flex items-center justify-between px-1">
+                  <span>Ganancia estimada:</span>
+                  <span class="font-bold font-mono">+${formatCurrency(ganancia)}</span>
+                </div>
+
+                <a href="https://wa.me/5491138916779?text=${waText}" target="_blank" class="w-full mt-2 py-2 px-3 rounded-xl bg-slate-900 text-white hover:bg-sky-600 transition flex items-center justify-center gap-1.5 text-xs font-bold no-print shadow-xs">
+                  <span>Pedir por WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function updateField(id, field, value) {
+      const prod = products.find(p => p.id === id);
+      if (prod) {
+        prod[field] = value.trim();
+      }
+    }
+
+    function updatePrice(id, textValue) {
+      const prod = products.find(p => p.id === id);
+      if (prod) {
+        const clean = textValue.replace(/[^0-9]/g, '');
+        if (clean) {
+          prod.wholesalePrice = Number(clean);
+          renderProducts();
+        }
+      }
+    }
+
+    function toggleEditMode() {
+      isEditMode = !isEditMode;
+      document.body.classList.toggle('edit-mode', isEditMode);
+      document.getElementById('editBtnText').innerText = isEditMode ? "Desactivar Modo Edición" : "Activar Modo Edición";
+      document.getElementById('toggleEditBtn').classList.toggle('bg-amber-100', isEditMode);
+      document.getElementById('toggleEditBtn').classList.toggle('text-amber-800', isEditMode);
+    }
+
+    function setMargin(margin) {
+      currentMargin = margin;
+      document.querySelectorAll('.margin-btn').forEach(b => {
+        if (Number(b.dataset.margin) === margin) {
+          b.className = "margin-btn active px-2.5 py-1 text-xs font-bold rounded-lg border border-sky-500 bg-sky-600 text-white transition shadow-xs";
+        } else {
+          b.className = "margin-btn px-2.5 py-1 text-xs font-bold rounded-lg border border-sky-200 bg-white text-sky-700 hover:bg-sky-100 transition";
+        }
+      });
+      renderProducts();
+    }
+
+    function setBrandFilter(brand) {
+      currentBrand = brand;
+      document.querySelectorAll('.brand-tab').forEach(b => {
+        if (b.dataset.brand === brand) {
+          b.className = "brand-tab active px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 bg-white shadow-xs transition";
+        } else {
+          b.className = "brand-tab px-3 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition";
+        }
+      });
+      renderProducts();
+    }
+
+    function filterProducts() {
+      renderProducts();
+    }
+
+    function saveChanges() {
+      localStorage.setItem('skyblue_catalog_products', JSON.stringify(products));
+      alert("¡Cambios guardados con éxito en este navegador!");
+    }
+
+    function exportToCanvaCSV() {
+      let csv = "SKU,TITULO,MARCA,CATEGORIA,PRECIO_MAYORISTA,PRECIO_PVP_SUGERIDO,MARGEN_GANANCIA,COLOR,IMAGEN,WHATSAPP_LINK\n";
+      products.forEach(p => {
+        const pvp = calculatePVP(p.wholesalePrice);
+        const waLink = `https://wa.me/5491138916779?text=Hola!%20Quiero%20consultar%20por%20SKU%20${p.sku}`;
+        csv += `"${p.sku}","${p.title}","${p.brand}","${p.category}","${formatCurrency(p.wholesalePrice)}","${formatCurrency(pvp)}","+${currentMargin}%","${p.color}","${p.image}","${waLink}"\n`;
+      });
+
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.setAttribute("href", url);
+      link.setAttribute("download", `catalogo_canva_skyblue_${Date.now()}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    // Render Inicial
+    renderProducts();
+  </script>
+</body>
+</html>
