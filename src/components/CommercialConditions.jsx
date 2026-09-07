@@ -17,11 +17,28 @@ import {
 } from 'lucide-react';
 import { COMPANY_INFO, ADVISORS } from '../data/mockData';
 import SpotlightCard from './reactbits/SpotlightCard';
-import { useTheme } from '../context/ThemeContext';
+// Elegant Woman Shoe (High Heel / Stiletto) SVG Icon
+function WomanShoeIcon({ className = "w-5 h-5" }) {
+  return (
+    <svg viewBox="0 0 256 256" fill="currentColor" className={className} aria-label="Zapato de mujer">
+      <path d="M216,144a8,8,0,0,0-8,8v48a8,8,0,0,0,16,0V152A8,8,0,0,0,216,144ZM32,168a8,8,0,0,0,8,8h75.78l33.68-47.16A56.24,56.24,0,0,1,192,104a8,8,0,0,0,8-8V80a8,8,0,0,0-13.66-5.66l-50.62,50.63a40.16,40.16,0,0,0-8.26,13.23L108.22,160H40A8,8,0,0,0,32,168Z" />
+    </svg>
+  );
+}
+
+// Elegant Woman Boot / Ankle Boot SVG Icon
+function WomanBootIcon({ className = "w-5 h-5" }) {
+  return (
+    <svg viewBox="0 0 256 256" fill="currentColor" className={className} aria-label="Bota de mujer">
+      <path d="M224,184V144a8,8,0,0,0-2.48-5.81L168,84.69V40a8,8,0,0,0-8-8H88a8,8,0,0,0-8,8V184a24,24,0,0,0,24,24H200a24,24,0,0,0,24-24Zm-16,8H104a8,8,0,0,1-8-8V48h56V88a8,8,0,0,0,2.34,5.66l51.66,51.65V184A8,8,0,0,1,208,192Z" />
+    </svg>
+  );
+}
 
 export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }) {
   const [showSizeGuideModal, setShowSizeGuideModal] = useState(false);
-  const [activeCurveTab, setActiveCurveTab] = useState('8pares');
+  const [activeCurveTab, setActiveCurveTab] = useState('12pares'); // 12 pares por defecto
+  const [footwearIconType, setFootwearIconType] = useState('zapato'); // 'zapato' or 'bota'
   const { isDark } = useTheme();
 
   const conditions = [
@@ -81,7 +98,7 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
     { size: '40', pairs: 1, percent: 8.3, hot: false }
   ];
 
-  const currentCurve = activeCurveTab === '8pares' ? curve8 : curve12;
+  const currentCurve = activeCurveTab === '12pares' ? curve12 : curve8;
 
   return (
     <section id="condiciones" className="py-16 sm:py-20 2xl:py-28 bg-slate-50 dark:bg-neutral-950 text-slate-900 dark:text-white border-b border-slate-200 dark:border-neutral-800 relative transition-colors duration-300">
@@ -139,7 +156,7 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
           })}
         </div>
 
-        {/* Interactive Factory Box Curve Infographic */}
+        {/* Interactive Factory Box Curve Infographic with Shoes & Boots Representation */}
         <div className="mt-12 rounded-3xl bg-white/95 dark:bg-neutral-900/90 border border-slate-200/90 dark:border-neutral-800 p-6 sm:p-8 2xl:p-10 shadow-xl dark:shadow-2xl transition-colors duration-300">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 pb-6 border-b border-slate-200 dark:border-neutral-800">
             <div className="space-y-2">
@@ -156,28 +173,63 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
             </div>
 
             <div className="flex items-center gap-2.5 flex-wrap">
-              <div className="flex items-center p-1 rounded-xl bg-slate-100 dark:bg-neutral-950 border border-slate-200 dark:border-neutral-800">
+              {/* Curve Selector: 12 Pares (Default) / 8 Pares */}
+              <div className="flex items-center p-1 rounded-xl bg-slate-100 dark:bg-neutral-950 border border-slate-200 dark:border-neutral-800 shadow-xs">
+                <button
+                  onClick={() => setActiveCurveTab('12pares')}
+                  className={`px-3.5 sm:px-4 py-2 rounded-lg text-xs font-sf-bold transition-all flex items-center gap-1.5 ${
+                    activeCurveTab === '12pares'
+                      ? 'bg-primary text-white shadow-md'
+                      : 'text-slate-600 dark:text-neutral-400 hover:text-slate-950 dark:hover:text-white'
+                  }`}
+                >
+                  <span>Curva 12 Pares</span>
+                  <span className="text-[10px] opacity-85 hidden sm:inline">(Por Defecto)</span>
+                </button>
                 <button
                   onClick={() => setActiveCurveTab('8pares')}
-                  className={`px-4 py-2 rounded-lg text-xs font-sf-bold transition-all ${
-                    activeCurveTab === '8pares' ? 'bg-primary text-white shadow-md' : 'text-slate-600 dark:text-neutral-400 hover:text-slate-950 dark:hover:text-white'
+                  className={`px-3.5 sm:px-4 py-2 rounded-lg text-xs font-sf-bold transition-all ${
+                    activeCurveTab === '8pares'
+                      ? 'bg-primary text-white shadow-md'
+                      : 'text-slate-600 dark:text-neutral-400 hover:text-slate-950 dark:hover:text-white'
                   }`}
                 >
                   Curva 8 Pares
                 </button>
+              </div>
+
+              {/* Shoe / Boot Icon Mode Switcher */}
+              <div className="flex items-center p-1 rounded-xl bg-slate-100 dark:bg-neutral-950 border border-slate-200 dark:border-neutral-800 shadow-xs">
                 <button
-                  onClick={() => setActiveCurveTab('12pares')}
-                  className={`px-4 py-2 rounded-lg text-xs font-sf-bold transition-all ${
-                    activeCurveTab === '12pares' ? 'bg-primary text-white shadow-md' : 'text-slate-600 dark:text-neutral-400 hover:text-slate-950 dark:hover:text-white'
+                  onClick={() => setFootwearIconType('zapato')}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-sf-bold transition-all flex items-center gap-1.5 ${
+                    footwearIconType === 'zapato'
+                      ? 'bg-white dark:bg-neutral-800 text-slate-900 dark:text-white shadow-xs border border-slate-300/80 dark:border-neutral-700'
+                      : 'text-slate-500 dark:text-neutral-400 hover:text-slate-900 dark:hover:text-white'
                   }`}
+                  title="Representar con Zapatos de Mujer (Stilettos / Pumps)"
                 >
-                  Curva 12 Pares
+                  <WomanShoeIcon className="w-4 h-4 text-red-500" />
+                  <span className="hidden sm:inline">Zapato</span>
+                </button>
+                <button
+                  onClick={() => setFootwearIconType('bota')}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-sf-bold transition-all flex items-center gap-1.5 ${
+                    footwearIconType === 'bota'
+                      ? 'bg-white dark:bg-neutral-800 text-slate-900 dark:text-white shadow-xs border border-slate-300/80 dark:border-neutral-700'
+                      : 'text-slate-500 dark:text-neutral-400 hover:text-slate-900 dark:hover:text-white'
+                  }`}
+                  title="Representar con Botas de Mujer (Botinetas / Botas)"
+                >
+                  <WomanBootIcon className="w-4 h-4 text-amber-500" />
+                  <span className="hidden sm:inline">Bota</span>
                 </button>
               </div>
 
+              {/* Guía de Talles Button */}
               <button
                 onClick={() => setShowSizeGuideModal(true)}
-                className="px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-neutral-950 dark:hover:bg-neutral-800 text-slate-800 dark:text-neutral-200 font-sf-bold text-xs border border-slate-300 dark:border-neutral-700 flex items-center gap-2 shadow-sm hover:scale-105 transition-all"
+                className="px-4 sm:px-5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-neutral-950 dark:hover:bg-neutral-800 text-slate-800 dark:text-neutral-200 font-sf-bold text-xs border border-slate-300 dark:border-neutral-700 flex items-center gap-2 shadow-xs hover:scale-105 transition-all"
               >
                 <Ruler className="w-4 h-4 text-primary" />
                 <span>Guía de Talles</span>
@@ -185,52 +237,98 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
             </div>
           </div>
 
-          {/* Animated Visual Curve Distribution Bars */}
+          {/* Animated Visual Curve Distribution With Real Shoe/Boot Stacks */}
           <div className="pt-8">
-            <div className="grid grid-cols-5 sm:grid-cols-6 gap-2 sm:gap-4 items-end min-h-[180px]">
+            <div className="grid grid-cols-5 sm:grid-cols-6 gap-2.5 sm:gap-4 items-end min-h-[220px]">
               {currentCurve.map((item, idx) => (
-                <div key={idx} className="flex flex-col items-center gap-2 h-full justify-end">
-                  {item.hot && (
-                    <span className="flex items-center gap-1 text-[9px] font-extrabold text-amber-600 dark:text-amber-400 bg-amber-100 dark:bg-amber-950/80 px-2 py-0.5 rounded-full border border-amber-300 dark:border-amber-500/30">
-                      <Flame className="w-2.5 h-2.5" />
-                      <span>TOP</span>
-                    </span>
-                  )}
+                <div key={`${activeCurveTab}-${item.size}`} className="flex flex-col items-center gap-2.5 h-full justify-end group">
+                  {/* Top Badge (TOP SALIDA) */}
+                  <div className="h-6 flex items-center">
+                    {item.hot ? (
+                      <span className="inline-flex items-center gap-1 text-[9px] sm:text-[10px] font-extrabold text-red-600 dark:text-red-400 bg-red-100 dark:bg-red-950/80 px-2 py-0.5 rounded-full border border-red-300 dark:border-red-500/30 shadow-xs">
+                        <Flame className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-red-500 animate-pulse" />
+                        <span className="tracking-tight">TOP SALIDA</span>
+                      </span>
+                    ) : (
+                      <span className="text-[10px] text-slate-400 dark:text-neutral-500 font-sf-medium">
+                        Curva base
+                      </span>
+                    )}
+                  </div>
                   
-                  <span className="text-xs font-sf-bold text-slate-900 dark:text-white">
+                  {/* Quantity of Pairs */}
+                  <span className={`text-xs sm:text-sm font-sf-bold ${
+                    item.hot ? 'text-primary font-black' : 'text-slate-900 dark:text-white'
+                  }`}>
                     {item.pairs} {item.pairs === 1 ? 'par' : 'pares'}
                   </span>
 
-                  {/* Animated Bar */}
-                  <div className="w-full max-w-[60px] bg-slate-100 dark:bg-neutral-950 rounded-2xl p-1 border border-slate-200 dark:border-neutral-800 h-[100px] flex items-end">
-                    <motion.div
-                      key={`${activeCurveTab}-${item.size}`}
-                      initial={{ height: 0 }}
-                      animate={{ height: `${item.percent * 3.2}%` }}
-                      transition={{ duration: 0.6, delay: idx * 0.08, ease: [0.16, 1, 0.3, 1] }}
-                      className={`w-full rounded-xl ${
-                        item.hot ? 'bg-gradient-to-t from-red-600 to-rose-400 shadow-lg shadow-red-600/30' : 'bg-slate-300 dark:bg-neutral-700'
-                      }`}
-                    />
+                  {/* Vertical Shoe / Boot Rack Container */}
+                  <div className={`w-full max-w-[80px] sm:max-w-[96px] rounded-2xl p-1.5 sm:p-2 border flex flex-col justify-end gap-1.5 min-h-[155px] sm:min-h-[175px] transition-all duration-300 ${
+                    item.hot 
+                      ? 'bg-gradient-to-t from-red-500/10 via-rose-500/5 to-transparent border-red-500/30 dark:border-red-500/40 shadow-lg shadow-red-500/10 group-hover:border-red-500 group-hover:scale-105' 
+                      : 'bg-slate-100/80 dark:bg-neutral-950/80 border-slate-200 dark:border-neutral-800 group-hover:border-slate-300 dark:group-hover:border-neutral-700'
+                  }`}>
+                    {/* Stack of Shoe / Boot icons: 1, 2 or 3 pairs stacked */}
+                    {Array.from({ length: item.pairs }).map((_, pairIdx) => (
+                      <motion.div
+                        key={`${activeCurveTab}-${item.size}-${pairIdx}`}
+                        initial={{ opacity: 0, scale: 0.5, y: 12 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        transition={{ 
+                          duration: 0.35, 
+                          delay: idx * 0.05 + pairIdx * 0.08,
+                          type: 'spring',
+                          stiffness: 400,
+                          damping: 24 
+                        }}
+                        className={`py-1.5 sm:py-2 px-1 rounded-xl flex items-center justify-center gap-1 transition-all ${
+                          item.hot
+                            ? 'bg-white/95 dark:bg-neutral-900/90 text-red-600 dark:text-red-400 border border-red-400/40 shadow-sm shadow-red-500/20'
+                            : 'bg-white/90 dark:bg-neutral-900/80 text-slate-700 dark:text-neutral-300 border border-slate-200 dark:border-neutral-800 shadow-xs'
+                        }`}
+                        title={`Par ${pairIdx + 1} de ${item.pairs} en talle ${item.size}`}
+                      >
+                        {footwearIconType === 'zapato' ? (
+                          <WomanShoeIcon className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:scale-110" />
+                        ) : (
+                          <WomanBootIcon className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:scale-110" />
+                        )}
+                        <span className="text-[9px] font-sf-bold text-slate-500 dark:text-neutral-400 hidden sm:inline">
+                          #{pairIdx + 1}
+                        </span>
+                      </motion.div>
+                    ))}
                   </div>
 
-                  <span className="text-sm font-sf-bold text-slate-900 dark:text-white">
-                    Talle {item.size}
-                  </span>
-                  <span className="text-[10px] text-slate-500 dark:text-neutral-400 font-sf-medium">
-                    {item.percent}%
-                  </span>
+                  {/* Size Label & Percentage */}
+                  <div className="text-center pt-1">
+                    <span className="text-sm sm:text-base font-sf-bold text-slate-900 dark:text-white block">
+                      Talle {item.size}
+                    </span>
+                    <span className={`text-[10px] sm:text-xs font-sf-bold block ${
+                      item.hot ? 'text-primary' : 'text-slate-500 dark:text-neutral-400'
+                    }`}>
+                      {item.percent}%
+                    </span>
+                  </div>
                 </div>
               ))}
             </div>
 
+            {/* Bottom Insight Bar */}
             <div className="mt-8 p-4 rounded-2xl bg-slate-100 dark:bg-neutral-950 border border-slate-200 dark:border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-700 dark:text-neutral-300">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                <span>Las cajas vienen precintadas de origen por el fabricante con su etiqueta de control de calidad.</span>
+                <span>
+                  {activeCurveTab === '12pares' 
+                    ? 'Curva oficial de 12 pares: 8 de los 12 pares (67%) se concentran en talles centrales (37, 38 y 39).' 
+                    : 'Curva oficial de 8 pares: 6 de los 8 pares (75%) se concentran en talles centrales (37, 38 y 39).'}
+                </span>
               </div>
-              <span className="font-sf-bold text-primary shrink-0">
-                100% Listo para Exhibir y Vender
+              <span className="font-sf-bold text-primary shrink-0 flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>100% Salida Pareja • Cero Remanentes</span>
               </span>
             </div>
           </div>
