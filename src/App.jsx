@@ -183,10 +183,15 @@ export default function App() {
               onOpenModal={handleOpenModal} 
             />
 
-            {/* 11. Human Commercial Advisors: Juliana, Jesica & Marcelino */}
+            {/* 11. Blog & B2B Footwear Strategy Insights */}
+            <BlogSection 
+              onOpenModal={handleOpenModal} 
+            />
+
+            {/* 12. Human Commercial Advisors: Juliana, Jesica & Marcelino */}
             <AdvisorsHub />
 
-            {/* 12. Quick FAQ Accordion with Live Search */}
+            {/* 13. Quick FAQ Accordion with Live Search */}
             <FaqSection 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
@@ -266,7 +271,7 @@ export default function App() {
 
         {activeTab === 'blog' && (
           <div className="space-y-12 py-8">
-            <BlogSection />
+            <BlogSection onOpenModal={handleOpenModal} />
             <AdvisorsHub />
           </div>
         )}

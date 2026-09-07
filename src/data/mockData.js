@@ -750,35 +750,123 @@ export const BLOG_POSTS = [
   {
     id: 1,
     slug: "impacto-maria-becerra-xti-zapaterias",
-    title: "Cómo la imagen de María Becerra con Xti potencia las ventas de tu zapatería",
-    excerpt: "Estrategias de vidriera, marketing digital local y colocación de producto para capitalizar la campaña internacional de Xti España en tu negocio.",
-    date: "18 Agosto 2026",
-    readTime: "4 min de lectura",
-    category: "Marketing B2B",
+    title: "El fenómeno María Becerra × Xti: Cómo capitalizar una campaña de +28M en la vidriera de tu zapatería",
+    excerpt: "Estrategias prácticas de vidriera, colocación de producto en salón y marketing local para transformar la tracción pop de María Becerra en ventas directas de mostrador.",
+    date: "28 Agosto 2026",
+    readTime: "5 min de lectura",
+    category: "Estrategias de Venta",
     image: "/images/banners/hero-xti.jpg",
-    altText: "Vidriera de zapatería exhibiendo calzado Xti con imagen de María Becerra"
+    altText: "Vidriera de zapatería exhibiendo calzado Xti con imagen oficial de María Becerra",
+    author: "Equipo Comercial SkyBlue",
+    sections: [
+      {
+        heading: "El poder de la demanda espontánea ('Efecto Pull')",
+        paragraphs: [
+          "En el comercio minorista tradicional de calzado, gran parte del esfuerzo suele destinarse a convencer a una clienta indecisa que ingresó sin un objetivo claro. Sin embargo, cuando una marca cuenta con una embajadora global del calibre de María Becerra (+28 millones de seguidores e indiscutible referente de estilo en Argentina), la dinámica comercial cambia por completo: la clienta ya entra al local buscando específicamente los modelos que vio en las redes y videoclips de la cantante.",
+          "Este fenómeno, conocido en el retail moderno como 'demanda pull', reduce a cero la resistencia al precio y acorta el tiempo de decisión de compra en el salón de ventas a menos de 4 minutos."
+        ]
+      },
+      {
+        heading: "3 Claves para potenciar la vidriera de tu local",
+        paragraphs: [
+          "1. Exhibí siempre el talle 37 en punto focal: El talle 37 es el estándar estético de exhibición en calzado femenino europeo; preserva las proporciones exactas de la horma y es la numeración con mayor demanda inmediata para probar en el acto.",
+          "2. Utilizá material publicitario oficial de alta resolución (Google Drive VIP): No improvises fotos caseras con el celular bajo luz artificial amarilla. Como cliente mayorista de SkyBlue, tu asesora te da acceso directo a fotografías oficiales de estudio en 4K y videos verticales para proyectar en pantallas o imprimir cartelería de vidriera.",
+          "3. Agrupá por ocasión de uso: Separá los sneakers urbanos con detalles metalizados para uso diario de los stilettos de taco fino para noche. La clienta que busca renovar su calzado suele sumar un par urbano si lo ve combinado con carteras Petite Jolie en la misma tarima."
+        ]
+      },
+      {
+        heading: "La matemática de la rentabilidad",
+        paragraphs: [
+          "Al adquirir los módulos cerrados de 8 o 12 pares de Xti a precio directo de distribuidor oficial, tu zapatería trabaja con un markup promedio de x2.0 a x2.2 sobre el costo neto. Además, al abonar mediante transferencia o efectivo se activa un 10% de descuento directo, lo cual amortiza por completo el costo del flete o transporte hacia cualquier punto del país."
+        ]
+      }
+    ],
+    takeaways: [
+      "Las clientas entran preguntando por el modelo que usa María Becerra: tener stock físico garantiza el cierre.",
+      "Aprovechá las gráficas y videos oficiales del Drive VIP para tus estados de WhatsApp e Instagram.",
+      "Curvas de origen con calce europeo preciso: reducen las devoluciones y cambios de talle en el mostrador."
+    ]
   },
   {
     id: 2,
     slug: "gestion-modulos-curvas-calzado-sin-sobrantes",
-    title: "5 Claves para gestionar módulos de calzado de 8 y 12 pares sin quedarte con pares clavados",
-    excerpt: "Aprende a balancear la compra de numeraciones centrales (37-38-39) y organizar promociones cruzadas con accesorios Petite Jolie.",
-    date: "12 Agosto 2026",
-    readTime: "5 min de lectura",
-    category: "Gestión Comercial",
+    title: "La fórmula de la Curva Inteligente (8 y 12 pares): Cómo erradicar los 'clavos de stock' en talles extremos",
+    excerpt: "Guía técnica para comerciantes: cómo recuperar el 100% de la inversión con los primeros 6 pares y transformar los números centrales (37, 38 y 39) en liquidez inmediata.",
+    date: "22 Agosto 2026",
+    readTime: "6 min de lectura",
+    category: "Gestión de Stock & Finanzas",
     image: "/images/banners/hero-catalogos.jpg",
-    altText: "Organización de cajas de calzado por curva y módulo en depósito mayorista"
+    altText: "Organización de cajas de calzado por curva y módulo en depósito mayorista",
+    author: "Dirección de Operaciones SkyBlue",
+    sections: [
+      {
+        heading: "La trampa de las compras desbalanceadas",
+        paragraphs: [
+          "Uno de los principales motivos por los que muchas zapaterías y showrooms ven resentida su liquidez a fin de temporada es la acumulación de remanentes ('pares clavados') en numeraciones marginales como el 35 o el 40. Cuando un comerciante compra curvas parejas (por ejemplo, 2 pares de cada número), inexorablemente vende primero los talles 37 y 38 en las dos primeras semanas y luego se ve forzado a liquidar los extremos al costo o bajo costo para recuperar algo de dinero.",
+          "La rentabilidad real no se mide en el porcentaje teórico marcado en la etiqueta, sino en la velocidad con la que ese módulo se transforma en dinero en el banco."
+        ]
+      },
+      {
+        heading: "La Curva SkyBlue: Concentración del 67% al 75% en talles de alta salida",
+        paragraphs: [
+          "En SkyBlue diseñamos nuestros módulos de fábrica bajo un estudio estadístico del pie de la mujer argentina:",
+          "• Módulo de 12 Pares: 1 par en 35 (8.3%), 2 pares en 36 (16.7%), 3 pares en 37 (25%), 3 pares en 38 (25%), 2 pares en 39 (16.7%) y 1 par en 40 (8.3%). Es decir, 8 de los 12 pares (67%) se concentran en el corazón de la demanda.",
+          "• Módulo de 8 Pares: 1 par en 36, 3 pares en 37, 3 pares en 38 y 1 par en 39. ¡Un 75% de concentración pura en los talles que más se venden!",
+          "Esto significa que al vender únicamente los talles 37 y 38 ya recuperaste el 100% del costo total de la caja. Los pares restantes representan ganancia neta líquida sin riesgo financiero."
+        ]
+      },
+      {
+        heading: "Estrategia para el depósito y equipo de ventas",
+        paragraphs: [
+          "Instruí a tus vendedoras para que lleven control diario de los números disponibles en mostrador. Cuando quede solo el talle 36 o 39, sugerí probarlo con medias técnicas o plantillas anatómicas: muchas clientas que calzan 36.5 o 37 acceden cómodamente gracias a las hormas flexibles de origen europeo y brasileño."
+        ]
+      }
+    ],
+    takeaways: [
+      "Recuperación total del capital con los primeros 5 a 6 pares vendidos.",
+      "Cajas precintadas de fábrica con rotulación clara de CUIT, origen y trazabilidad aduanera.",
+      "Rotación promedio estimada del módulo completo: 15 a 21 días en salón comercial activo."
+    ]
   },
   {
     id: 3,
     slug: "marroquineria-jlastic-petite-jolie-rentabilidad",
-    title: "Marroquinería en J-Lastic®: Por qué Petite Jolie es el producto estrella de impulso",
-    excerpt: "Análisis del comportamiento del consumidor ante productos impermeables, coleccionables y aromáticos para maximizar el ticket promedio en caja.",
-    date: "05 Agosto 2026",
-    readTime: "3 min de lectura",
-    category: "Tendencias",
+    title: "J-Lastic® y Aroma Inconfundible: Por qué Petite Jolie es el imán de venta cruzada que dispara el ticket promedio",
+    excerpt: "Descubrí cómo los bolsos, bandoleras y calzado 100% impermeable en PVC patentado generan compras por impulso en caja y perfuman tu local.",
+    date: "15 Agosto 2026",
+    readTime: "4 min de lectura",
+    category: "Tendencias & Cross-Selling",
     image: "/images/banners/hero-petite-jolie.jpg",
-    altText: "Bolsos y carteras Petite Jolie exhibidos en tienda de moda"
+    altText: "Bolsos y carteras Petite Jolie exhibidos en salón comercial con colores vibrantes",
+    author: "Especialistas en Marroquinería SkyBlue",
+    sections: [
+      {
+        heading: "¿Qué es el J-Lastic® y por qué revoluciona las zapaterías?",
+        paragraphs: [
+          "Petite Jolie no es una marca más de marroquinería: es un concepto de moda registrado internacionalmente. Su materia prima exclusiva, el J-Lastic®, es un compuesto de PVC de ingeniería brasileña 100% reciclable, impermeable y de altísima durabilidad que no se cuartea, no absorbe manchas y se limpia simplemente con un paño húmedo o agua y jabón neutro.",
+          "Para los días de lluvia, escapadas de fin de semana, playa o la rutina diaria de la mujer dinámica, un bolso o cartera en J-Lastic® ofrece una practicidad que el cuero sintético o la tela jamás pueden igualar."
+        ]
+      },
+      {
+        heading: "El secreto del marketing olfativo en tu negocio",
+        paragraphs: [
+          "Uno de los atributos más impactantes de Petite Jolie es su aroma dulce icónico (esencia de tutti-frutti) infusionado directamente en la matriz del polímero durante la inyección. Al abrir una caja de Petite Jolie en tu local, la fragancia se dispersa naturalmente en el ambiente.",
+          "Los estudios de neuro-marketing en retail confirman que las tiendas con identidad olfativa placentera aumentan el tiempo de permanencia del cliente en un 18% y predisponen positivamente a la compra por impulso."
+        ]
+      },
+      {
+        heading: "Técnica de colocación junto al punto de cobro (Cross-Selling)",
+        paragraphs: [
+          "El error más común es esconder las carteras al fondo del local. La estrategia de máxima rentabilidad consiste en armar una 'isla de color' o torre exhibidora de bandoleras, billeteras y charms coleccionables justo al lado de la caja registradora.",
+          "Cuando una clienta ya decidió llevarse un par de calzado de $70.000 a $95.000, ofrecerle una bandolera Petite Jolie a tono por un valor accesible eleva el ticket promedio entre un 35% y un 45% con cero esfuerzo adicional de ventas."
+        ]
+      }
+    ],
+    takeaways: [
+      "100% Impermeable y lavable: la aliada indiscutida para la temporada primavera-verano.",
+      "Aroma característico que despierta la recordación de marca y fideliza a la clientela.",
+      "Excelente producto para armar combos 'Calzado + Cartera a juego' en fechas especiales (Día de la Madre, Navidad)."
+    ]
   }
 ];
 
