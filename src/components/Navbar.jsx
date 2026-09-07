@@ -15,6 +15,21 @@ import {
 import { COMPANY_INFO, BRANDS } from '../data/mockData';
 import { useTheme } from '../context/ThemeContext';
 
+const getBrandLogo = (brandId) => {
+  switch (brandId) {
+    case 'xti':
+      return '/logos/Xti.svg';
+    case 'refresh':
+      return '/logos/Refresh.svg';
+    case 'petite-jolie':
+      return '/logos/Petite jolie.svg';
+    case 'giulia-domna':
+      return '/logos/Giulina domna Horizontal.svg';
+    default:
+      return '/logos/SkyBlue.svg';
+  }
+};
+
 export default function Navbar({ activeTab, setActiveTab, onOpenModal, onOpenAdvisorModal, onOpenErp }) {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -162,8 +177,12 @@ export default function Navbar({ activeTab, setActiveTab, onOpenModal, onOpenAdv
                                 transition={{ duration: 0.2, delay: idx * 0.04 }}
                                 className="w-full text-left flex items-start gap-3 rounded-xl p-2.5 transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-900 group"
                               >
-                                <div className="w-8 h-8 rounded-lg bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-105 transition-transform">
-                                  <span className="text-xs">{b.id === 'xti' || b.id === 'refresh' ? '🇪🇸' : '🇧🇷'}</span>
+                                <div className="w-10 h-8 rounded-lg bg-white border border-neutral-200 dark:border-neutral-700/80 flex items-center justify-center p-1 shrink-0 mt-0.5 group-hover:scale-105 transition-transform shadow-2xs">
+                                  <img 
+                                    src={getBrandLogo(b.id)} 
+                                    alt={`Logo ${b.name}`} 
+                                    className="w-full h-full object-contain" 
+                                  />
                                 </div>
                                 <div className="flex-1 min-w-0">
                                   <div className="flex items-center justify-between gap-1">
@@ -339,11 +358,16 @@ export default function Navbar({ activeTab, setActiveTab, onOpenModal, onOpenAdv
                             <button
                               key={b.id}
                               onClick={() => handleBrandClick(b.id)}
-                              className="w-full text-left flex items-center justify-between py-2.5 px-3 rounded-xl bg-neutral-50 dark:bg-neutral-900 border border-neutral-200/60 dark:border-neutral-800 text-sm font-sf-bold text-neutral-800 dark:text-neutral-200"
+                              className="w-full text-left flex items-center justify-between py-2.5 px-3 rounded-xl bg-neutral-50 dark:bg-neutral-900 border border-neutral-200/60 dark:border-neutral-800 text-sm font-sf-bold text-neutral-800 dark:text-neutral-200 group"
                             >
-                              <span>{b.name}</span>
+                              <div className="flex items-center gap-2.5">
+                                <div className="w-8 h-6 rounded-md bg-white border border-neutral-200 dark:border-neutral-700 flex items-center justify-center p-0.5 shrink-0 shadow-2xs">
+                                  <img src={getBrandLogo(b.id)} alt={b.name} className="w-full h-full object-contain" />
+                                </div>
+                                <span>{b.name}</span>
+                              </div>
                               <span className="text-xs text-neutral-400 font-sf-medium">
-                                {b.id === 'xti' ? '🇪🇸 María Becerra' : b.id === 'refresh' ? '🇪🇸 Mar Lucas' : b.id === 'petite-jolie' ? '🇧🇷 J-Lastic' : '🇧🇷 Cuero'}
+                                {b.id === 'xti' ? 'María Becerra' : b.id === 'refresh' ? 'Mar Lucas' : b.id === 'petite-jolie' ? 'J-Lastic' : 'Cuero'}
                               </span>
                             </button>
                           ))}

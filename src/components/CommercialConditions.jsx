@@ -19,20 +19,16 @@ import {
 import { COMPANY_INFO, ADVISORS } from '../data/mockData';
 import SpotlightCard from './reactbits/SpotlightCard';
 import { useTheme } from '../context/ThemeContext';
-// Elegant Woman Shoe (High Heel / Stiletto) SVG Icon
-function WomanShoeIcon({ className = "w-5 h-5" }) {
+// Official Boots SVG Icon from project (boots.svg)
+function BootsPairIcon({ className = "w-5 h-5" }) {
   return (
-    <svg viewBox="0 0 256 256" fill="currentColor" className={className} aria-label="Zapato de mujer">
-      <path d="M216,144a8,8,0,0,0-8,8v48a8,8,0,0,0,16,0V152A8,8,0,0,0,216,144ZM32,168a8,8,0,0,0,8,8h75.78l33.68-47.16A56.24,56.24,0,0,1,192,104a8,8,0,0,0,8-8V80a8,8,0,0,0-13.66-5.66l-50.62,50.63a40.16,40.16,0,0,0-8.26,13.23L108.22,160H40A8,8,0,0,0,32,168Z" />
-    </svg>
-  );
-}
-
-// Elegant Woman Boot / Ankle Boot SVG Icon
-function WomanBootIcon({ className = "w-5 h-5" }) {
-  return (
-    <svg viewBox="0 0 256 256" fill="currentColor" className={className} aria-label="Bota de mujer">
-      <path d="M224,184V144a8,8,0,0,0-2.48-5.81L168,84.69V40a8,8,0,0,0-8-8H88a8,8,0,0,0-8,8V184a24,24,0,0,0,24,24H200a24,24,0,0,0,24-24Zm-16,8H104a8,8,0,0,1-8-8V48h56V88a8,8,0,0,0,2.34,5.66l51.66,51.65V184A8,8,0,0,1,208,192Z" />
+    <svg viewBox="0 0 383.4 365.5" fill="currentColor" className={className} aria-label="Par de calzado">
+      <path d="M383.3,197.9v47.9c-1.5,4.1-3.9,7.6-7.9,10.1l-12.7,25v74.4c0,5.6-4.8,10.2-10.2,10.2h-14.8c-5.6,0-10.2-4.8-10.2-10.4v-61.2s-10.4-9.7-10.4-9.7c-10.2,7.7-19.3,16.6-27.6,26.6l-36.3,43.8c-5.9,7.1-14.9,10.9-24.2,10.9h-120.3c-13.7,0-22-12.4-21.4-25.2s1.7-14.2,8.5-18.2l78.4-46.5,33.7-32.3c2.4-2.3,6.1-2.1,8.2.2s1.8,5.4-.2,7.8l-34.8,33.4-79,47h126.4c0,.1,37.2-44.8,37.2-44.8,21.9-26,49.7-45.3,81.7-56.9l24.8-8.2v-17.3c0-7.2-1.7-14.1-5-20.5s-3.9-9.9-3.9-15.6l.3-95.9c0-3.5,3.1-5.5,6-5.4s5.3,2,5.3,5.2l-.2,96.2c0,4,1,7.3,2.8,10.6,3.1,6.1,4.6,12.3,6.1,18.8ZM229.4,354.3c6.9,0,12.3-3.2,16.3-8l35.9-43.5c16.8-20.3,37.5-36.2,61.6-46.9,8.8-3.9,17.2-6.6,26.3-9.8,1.4-.5,2.7-2.5,2.7-3.8v-8.6s-18.4,6-18.4,6c-31,10.1-58.3,28.8-79.1,54l-37,44.7c-2.3,2.7-4.9,4.7-8.7,4.7H98.9c-.2,6.3,4.4,11.2,10.8,11.2h119.7ZM351.5,354v-72c.1-1.9.5-4.6,1.2-6.1l7.1-14.4c-12.3,4.1-22.9,9.6-33.2,16.1l12.2,11.7v65s12.8-.3,12.8-.3Z"/>
+      <path d="M21.7,354.2h52.5c3.3,0,5.4,2.3,5.7,5.3s-1.9,5.9-5.1,5.9H21.2c-13.2-.1-22.5-12.4-21-25.2-.5-7,1.8-14.4,8.2-18.1l78.4-46.5,68.7-66.1c1.6-1.6,2.7-4.3,2.7-6.6v-81.7c0-3.6,2.5-5.8,5.6-5.9s5.7,2.3,5.7,5.9v81.6c0,5.9-2.2,10.9-6.4,14.9l-69.1,66.5-79.4,47.2h56c3.2.1,5.5,2.3,5.8,5.3s-1.9,6-5.3,6H11.4c-.1,5.8,4.1,11.2,10.3,11.2Z"/>
+      <path d="M256.9,201.8c0,6.1-1.6,11.4-5.6,15.3l-17.9,17.3c-2.5,2.4-6.2,2.4-8.3,0s-1.8-6,.7-8.4l16.5-15.8c1.8-1.8,3.4-4.3,3.4-7.3l-.2-161.7c0-9.4-3-17.8-3.8-27.2S245.6,0,253.4,0h111.2c6.1,0,10.4,4.2,10.4,10.3v38.7c-.1,3.4-3.6,5.6-6.1,5.3-3.6-.3-5.3-3-5.3-6.5V11.3c0,0-110.8,0-110.8,0l3.9,29.1.2,161.4Z"/>
+      <path d="M169,39.9l.4,56.6c0,3.3-2.2,5.8-5,6.1s-6.2-1.8-6.2-5.4l-.4-56.2c0-9.3-2.6-17.8-3.7-27S158.2,0,165.7,0h60.3c3,0,5,3.2,5.1,5.4s-2.2,5.8-5.7,5.8h-60.1s3.8,28.7,3.8,28.7Z"/>
+      <path className="fill-white dark:fill-neutral-900" d="M229.4,354.3h-119.7c-6.3,0-11-5-10.8-11.2h130.1c3.9,0,6.5-2,8.7-4.7l37-44.7c20.9-25.2,48.1-43.9,79.1-54l18.3-6v8.6c0,1.3-1.3,3.3-2.7,3.8-9.1,3.2-17.5,5.9-26.3,9.8-24.1,10.7-44.8,26.6-61.6,46.9l-35.9,43.5c-3.9,4.8-9.4,8-16.3,8Z"/>
+      <path className="fill-white dark:fill-neutral-900" d="M351.5,354l-12.8.3v-65s-12.2-11.7-12.2-11.7c10.3-6.5,20.9-12,33.2-16.1l-7.1,14.4c-.7,1.4-1.1,4.2-1.2,6.1v72Z"/>
     </svg>
   );
 }
@@ -40,7 +36,6 @@ function WomanBootIcon({ className = "w-5 h-5" }) {
 export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }) {
   const [showSizeGuideModal, setShowSizeGuideModal] = useState(false);
   const [activeCurveTab, setActiveCurveTab] = useState('12pares'); // 12 pares por defecto
-  const [footwearIconType, setFootwearIconType] = useState('zapato'); // 'zapato' or 'bota'
   const { isDark } = useTheme();
 
   const conditions = [
@@ -200,34 +195,6 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
                 </button>
               </div>
 
-              {/* Shoe / Boot Icon Mode Switcher */}
-              <div className="flex items-center p-1 rounded-xl bg-slate-100 dark:bg-neutral-950 border border-slate-200 dark:border-neutral-800 shadow-xs">
-                <button
-                  onClick={() => setFootwearIconType('zapato')}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-sf-bold transition-all flex items-center gap-1.5 ${
-                    footwearIconType === 'zapato'
-                      ? 'bg-white dark:bg-neutral-800 text-slate-900 dark:text-white shadow-xs border border-slate-300/80 dark:border-neutral-700'
-                      : 'text-slate-500 dark:text-neutral-400 hover:text-slate-900 dark:hover:text-white'
-                  }`}
-                  title="Representar con Zapatos de Mujer (Stilettos / Pumps)"
-                >
-                  <WomanShoeIcon className="w-4 h-4 text-red-500" />
-                  <span className="hidden sm:inline">Zapato</span>
-                </button>
-                <button
-                  onClick={() => setFootwearIconType('bota')}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-sf-bold transition-all flex items-center gap-1.5 ${
-                    footwearIconType === 'bota'
-                      ? 'bg-white dark:bg-neutral-800 text-slate-900 dark:text-white shadow-xs border border-slate-300/80 dark:border-neutral-700'
-                      : 'text-slate-500 dark:text-neutral-400 hover:text-slate-900 dark:hover:text-white'
-                  }`}
-                  title="Representar con Botas de Mujer (Botinetas / Botas)"
-                >
-                  <WomanBootIcon className="w-4 h-4 text-amber-500" />
-                  <span className="hidden sm:inline">Bota</span>
-                </button>
-              </div>
-
               {/* Guía de Talles Button */}
               <button
                 onClick={() => setShowSizeGuideModal(true)}
@@ -291,11 +258,7 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
                         }`}
                         title={`Par ${pairIdx + 1} de ${item.pairs} en talle ${item.size}`}
                       >
-                        {footwearIconType === 'zapato' ? (
-                          <WomanShoeIcon className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:scale-110" />
-                        ) : (
-                          <WomanBootIcon className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:scale-110" />
-                        )}
+                        <BootsPairIcon className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:scale-110" />
                         <span className="text-[9px] font-sf-bold text-slate-500 dark:text-neutral-400 hidden sm:inline">
                           #{pairIdx + 1}
                         </span>
