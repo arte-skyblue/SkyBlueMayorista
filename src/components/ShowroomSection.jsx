@@ -100,10 +100,10 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
                 Atención Exclusiva para Comerciantes
               </span>
               <h3 className="text-2xl sm:text-3xl font-sf-bold text-slate-900 dark:text-white mb-3">
-                Curapaligüe 1428 (1er Piso) — Tapiales, Bs. As.
+                Showroom Mayorista en Tapiales: Muestrarios y Retiro en el Acto
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 dark:text-neutral-300 leading-relaxed font-sf-regular">
-                Ubicado en zona estratégica con fácil acceso desde autopista Riccheri y General Paz. Contamos con estacionamiento exclusivo y muestrarios completos de cada temporada.
+                Espacio exclusivo con cita previa para dueños de zapaterías y showrooms. Más de 300 muestras de calzado europeo y brasileño en exhibición.
               </p>
             </div>
 
@@ -133,7 +133,7 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
                 className="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-sf-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-emerald-600/30 transition-all hover:scale-105"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Agendar Cita con Juliana</span>
+                <span>Reservar Cita por WhatsApp</span>
               </a>
 
               <a

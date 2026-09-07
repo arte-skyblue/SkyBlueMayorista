@@ -47,7 +47,7 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
       icon: Percent,
       tag: "BIENVENIDA MAYORISTA",
       title: "10% OFF En tu primer compra",
-      description: "Disfrutá de un 10% OFF directo en tu primer pedido por módulos. Además, mantenés un 10% adicional permanente abonando por transferencia o efectivo en showroom.",
+      description: "Aboná por transferencia o efectivo y obtené un 10% de descuento directo en tu factura, sumando ganancia líquida a tu negocio.",
       highlight: "10% OFF de bienvenida + pago ágil",
       badgeColor: "bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-500/30",
       spotlight: isDark ? "rgba(16, 185, 129, 0.16)" : "rgba(16, 185, 129, 0.08)"
@@ -95,7 +95,7 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
           </h2>
 
           <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            En <span className="font-bold text-slate-900 dark:text-white">SkyBlue Calzado Mayorista</span> establecemos reglas claras: venta por módulos surtidos de fábrica, precios netos protegidos y logística bonificada.
+            Comprá con reglas claras: curvas de fábrica balanceadas para no quedarte con pares clavados, 10% OFF por transferencia y flete bonificado.
           </p>
         </div>
 
@@ -151,7 +151,7 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
                 Distribución Ideal de Talles (Cero Clavos de Stock)
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 dark:text-neutral-300 max-w-2xl font-sf-regular">
-                El 75% del módulo viene concentrado en los talles más vendidos (37, 38 y 39), garantizando rotación total.
+                El módulo viene cargado en los números centrales para que vendas la caja entera de forma pareja y recuperes tu dinero rápido.
               </p>
             </div>
 

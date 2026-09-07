@@ -93,15 +93,13 @@ export const BRANDS = [
     ambassador: "María Becerra",
     logoSvg: "/logos/Xti - maria becerra.svg",
     video: "/videos/brands/xti.mp4",
-    description: "Marca líder internacional de calzado urbano y diseño contemporáneo. Con María Becerra como embajadora oficial, Xti tracciona clientas de forma masiva a zapaterías y showrooms de todo el país.",
+    description: "Calzado urbano europeo con demanda masiva garantizada. Las clientas entran a tu negocio buscando los modelos que usa María Becerra en su campaña internacional.",
     categories: ["Calzado de Dama", "Calzado de Caballero", "XTI Kids", "Marroquinería"],
-    badge: "María Becerra Oficial",
+    badge: "María Becerra • Imagen Global Oficial SS26",
     image: "/images/banners/hero-xti.jpg",
     uspList: [
-      "Embajadora oficial de marca: María Becerra",
-      "Venta por módulo de 8 o 12 pares balanceados",
-      "Confección europea con suelas antideslizantes y calce anatómico",
-      "Material gráfico oficial provisto para vidrieras y redes"
+      "Campaña oficial con María Becerra (+28M seguidores)",
+      "Hormas con excelente calce y confort para cero devoluciones en tu local"
     ]
   },
   {
@@ -109,18 +107,16 @@ export const BRANDS = [
     name: "Refresh",
     country: "España 🇪🇸",
     origin: "Casual Wear & Street Style",
-    ambassador: "Línea Juvenil",
+    ambassador: "Mar Lucas",
     logoSvg: "/logos/Refresh - Mar lucas.svg",
     video: "/videos/brands/refresh.mp4",
-    description: "La marca joven española de referencia. Modelos versátiles, zapatillas livianas, calzado de media estación y sandalias que garantizan una rotación continua en escaparate.",
+    description: "Una marca para un público auténtico y libre. Calzado casual wear versátil con suelas acolchadas y compromiso sustentable.",
     categories: ["Calzado Femenino", "Zapatillas Urbanas", "Sandalias Casual"],
-    badge: "Alta Rotación",
+    badge: "Mar Lucas • Colección Joven & Streetwear España",
     image: "/images/banners/hero-refresh.jpg",
     uspList: [
-      "Calzado ultraliviano de uso cotidiano",
-      "Excelente relación margen-rotación minorista",
-      "Modelos street chic ideales para vidriera",
-      "Módulos accesibles para rápida reposición"
+      "Zapatillas livianas de uso diario: el producto que rota todos los días",
+      "Margen x2.2 a x2.5 asegurado para tu zapatería"
     ]
   },
   {
@@ -131,15 +127,12 @@ export const BRANDS = [
     ambassador: "Diseño & Aroma Icónico",
     logoSvg: "/logos/Petite jolie.svg",
     video: "/videos/brands/petite-jolie.mp4",
-    description: "Marca icónica de Brasil famosa por su tecnología exclusiva en J-Lastic® (PVC patentado), colores intensos, resistencia al agua y su característica fragancia que genera atracción inmediata en el punto de venta.",
+    description: "Bolsos y calzado en J-Lastic® 100% lavables e impermeables. Su aroma dulce inconfundible perfuma tu local y convierte a Petite Jolie en el producto de compra por impulso más rentable.",
     categories: ["Carteras & Bolsos", "Mochilas & Bandoleras", "Calzado Dama", "Charms Coleccionables"],
-    badge: "Aroma & J-Lastic®",
+    badge: "El Imán de Ventas en Caja • 100% Impermeable",
     image: "/images/banners/hero-petite-jolie.jpg",
     uspList: [
-      "Material exclusivo J-Lastic® impermeable y lavable",
-      "Fragancia dulce inconfundible en cada producto",
-      "Línea de charms y accesorios de venta por impulso",
-      "Carteras estructuradas de alto valor percibido"
+      "100% Impermeable y lavable: 100% Ideal para la playa."
     ]
   },
   {
@@ -150,15 +143,13 @@ export const BRANDS = [
     ambassador: "Línea Sofisticada",
     logoSvg: "/logos/Giulina domna Horizontal.svg",
     video: "/videos/brands/giulia-domna.mp4",
-    description: "Línea brasileña de calzado de lujo y diseño refinado. Confeccionada con cueros seleccionados, texturas nobles y detalles de alta costura pensados para boutiques y zapaterías de segmento medio-alto.",
+    description: "Zapatos y sandalias en cuero vacuno legítimo. La marca ideal si buscás elevar el ticket promedio de tu negocio con calzado de alta gama y máxima ganancia por par.",
     categories: ["Calzado en Cuero", "Sandalias de Fiesta", "Zapatos de Vestir"],
-    badge: "Cuero & Elegancia",
+    badge: "Calzado boutique de lujo para zapaterías selectas",
     image: "/images/placeholder.svg",
     uspList: [
-      "Confección en cuero legítimo de exportación",
-      "Diseños elegantes con herrajes de alta gama",
-      "Plantillas confort acolchadas de densidad superior",
-      "Margen premium para zapaterías boutique"
+      "Cuero legítimo y terminaciones de lujo para clientas exigentes",
+      "Plantillas con buen confort de alta densidad para un calce premium"
     ]
   }
 ];
@@ -169,7 +160,7 @@ export const BANNERS = [
     brand: "Xti",
     tag: "ALTA ROTACIÓN GARANTIZADA",
     title: "MARÍA BECERRA × XTI",
-    subtitle: "El calzado que tus clientas buscan!. Módulos de 8 y 12 pares listos para duplicar tu inversión.",
+    subtitle: "El calzado que tus clientas buscan!\nMódulos de 8 y 12 pares listos para duplicar tu inversión.",
     cta: "Pedir Lista de Precios Xti",
     link: "marcas",
     image: "/images/banners/banner1-xti.png",

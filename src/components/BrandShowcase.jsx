@@ -125,7 +125,7 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
                               <span>Campaña Oficial Global</span>
                             </div>
                             <p className="font-extrabold text-sm sm:text-base">
-                              <ShinyText text="María Becerra • Embajadora Internacional" speed={3} />
+                              <ShinyText text="María Becerra • Imagen Global Oficial SS26" speed={3} />
                             </p>
                           </div>
                         ) : selectedBrand.id === 'petite-jolie' ? (
@@ -135,7 +135,7 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
                               <span>Tecnología J-Lastic®</span>
                             </div>
                             <p className="font-extrabold text-sm sm:text-base">
-                              <ShinyText text="Aroma dulce icónico y material 100% impermeable" speed={3} />
+                              <ShinyText text="El Imán de Ventas en Caja • 100% Impermeable" speed={3} />
                             </p>
                           </div>
                         ) : selectedBrand.id === 'giulia-domna' ? (
@@ -155,7 +155,7 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
                               <span>Streetwear Español</span>
                             </div>
                             <p className="font-extrabold text-sm sm:text-base">
-                              <ShinyText text="Modelos casual wear de altísima rotación semanal" speed={3} />
+                              <ShinyText text="Mar Lucas • Colección Joven & Streetwear España" speed={3} />
                             </p>
                           </div>
                         )}

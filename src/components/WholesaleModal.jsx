@@ -109,7 +109,7 @@ export default function WholesaleModal({ isOpen, onClose, modalType }) {
               </h3>
 
               <p className="text-xs sm:text-sm text-slate-600 dark:text-neutral-300 leading-relaxed font-sf-regular">
-                Recibí en WhatsApp los catálogos en PDF con listas de precios de fábrica, curvas por módulos cerrados y el <span className="text-emerald-600 dark:text-emerald-400 font-sf-bold">10% OFF en tu primer compra</span>.
+                Ingresá los datos de tu comercio para recibir las listas de precios oficiales, disponibilidad de stock y atención personalizada.
               </p>
 
               {/* Micro Trust Pills */}

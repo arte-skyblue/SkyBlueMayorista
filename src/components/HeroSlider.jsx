@@ -127,15 +127,12 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
           <div className="grid grid-cols-3 gap-1.5 pt-1">
             <div className="p-2 rounded-xl bg-slate-50 dark:bg-neutral-900/80 border border-slate-200 dark:border-neutral-800 text-center">
               <span className="text-[9px] font-sf-bold text-slate-900 dark:text-white block">Distribuidor Oficial</span>
-              <span className="text-[8px] text-slate-500 dark:text-neutral-400">Facturación A/B y Aduana</span>
             </div>
             <div className="p-2 rounded-xl bg-slate-50 dark:bg-neutral-900/80 border border-slate-200 dark:border-neutral-800 text-center">
-              <span className="text-[9px] font-sf-bold text-emerald-600 dark:text-emerald-400 block">10% OFF 1ra Compra</span>
-              <span className="text-[8px] text-slate-500 dark:text-neutral-400">Transferencia / Efectivo</span>
+              <span className="text-[9px] font-sf-bold text-emerald-600 dark:text-emerald-400 block">10% OFF en tu primer compra</span>
             </div>
             <div className="p-2 rounded-xl bg-slate-50 dark:bg-neutral-900/80 border border-slate-200 dark:border-neutral-800 text-center">
               <span className="text-[9px] font-sf-bold text-amber-600 dark:text-amber-400 block">Envío Gratis CABA/GBA</span>
-              <span className="text-[8px] text-slate-500 dark:text-neutral-400">Despacho 24/48 hs</span>
             </div>
           </div>
 
@@ -198,15 +195,15 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
             <div className="flex flex-wrap items-center gap-2">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 dark:bg-neutral-900/80 backdrop-blur-md border border-slate-200/90 dark:border-white/15 text-slate-800 dark:text-white shadow-md text-xs font-sf-bold">
                 <ShieldCheck className="w-3.5 h-3.5 text-primary" />
-                <span>Distribuidor Oficial • Facturación A/B y Aduana</span>
+                <span>Distribuidor Oficial</span>
               </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 dark:bg-neutral-900/80 backdrop-blur-md border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 shadow-md text-xs font-sf-bold">
                 <Percent className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                <span>10% OFF en tu primer compra • Transferencia / Efectivo</span>
+                <span>10% OFF en tu primer compra</span>
               </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 dark:bg-neutral-900/80 backdrop-blur-md border border-amber-500/30 text-amber-600 dark:text-amber-300 shadow-md text-xs font-sf-bold">
                 <Truck className="w-3.5 h-3.5 text-amber-600 dark:text-amber-300" />
-                <span>Envío Gratis CABA/GBA • Despacho 24/48 hs</span>
+                <span>Envío Gratis CABA/GBA</span>
               </div>
             </div>
 
