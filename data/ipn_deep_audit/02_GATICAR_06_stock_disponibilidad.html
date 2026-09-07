@@ -1,0 +1,2128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" class="k-webkit k-webkit151"><head>
+	<title>
+		 Detalle de disponibilidad de productos :: iPN - ERP Cloud SaaS
+	</title><link rel="shortcut icon" href="https://app.ipn.com.ar/system/images/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="https://app.ipn.com.ar/system/images/favicon.ico" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link href="https://app.ipn.com.ar/system/style/kendoUI/kendo.default-main.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://app.ipn.com.ar/system/style/style.css?build=202608211036">
+	<link rel="stylesheet" type="text/css" href="https://app.ipn.com.ar/system/files/jquery.autocomplete.css?build=202608211036">
+    <link href="https://app.ipn.com.ar/system/style/prism.css" rel="stylesheet">
+	<!--Styles calendar-->
+    <link rel="stylesheet" type="text/css" href="https://app.ipn.com.ar/system/style/bootstrap-datetimepicker-standalone.css?build=202608211036">
+    <link rel="stylesheet" type="text/css" href="https://app.ipn.com.ar/system/style/bootstrap-datetimepicker.min.css?build=202608211036">
+    <!--/Styles calendar-->
+    
+    <script type="text/javascript" crossorigin="anonymous" async="" src="https://us-assets.i.posthog.com/static/array.js"></script><script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/js/jquery-migrate-1.4.1.js"></script>
+
+	<script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/core/coreFunctions.js?build=202608211036"></script>
+	<script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/core/validation.js?build=202608211036"></script>
+	<script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/core/calendarPopUp.js"></script>
+    <!-- <script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/core/jquery-latest.pack.js?build=202608211036"></script> -->
+    <script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/core/attributeSearch.js?build=202608211036"></script>
+    <script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/core/jquery.autocomplete.v1.2.js?build=202608211036"></script>
+
+    <!--Scripts calendar-->
+    <script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/core/jquery.mask.js?build=202608211036"></script>
+    <script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/js/moment.min.js?build=202608211036"></script>
+    <script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/js/bootstrap-datetimepicker.min.js?build=202608211036"></script>
+    <script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/js/moment-2.10.6-es.js"></script>
+    <!--/Scripts calendar-->
+
+    <script src="https://kendo.cdn.telerik.com/2022.3.1109/js/kendo.all.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/js/kendoUI/jszip.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/js/prism.js" data-manual=""></script>
+
+    <!-- Búsqueda por atributos -->
+	<script type="text/javascript" language="javascript">
+		var _IL_CustomerID     = '310';
+		var _companyID         = '2';
+		var _accountID         = '1';
+		var _username 		   = '46792-juli';
+		var _userGUID          = 'C8BC4F32-631A-45BE-88A3-5F82A5FE5C37';
+        var _userID            = '7711';
+		var _bIsDevMode		   = false;
+		var useAutocompleteAPI = true;
+        var apiUrl             = 'https://api.ipn.com.ar/';
+
+	</script>
+	<script type="text/javascript" language="javascript" src="https://app.ipn.com.ar/system/core/jquery.autocomplete.v1.4.11.js?build=202608211036"></script>
+	<!-- /Búsqueda por atributos -->
+
+	<script type="text/javascript">
+	    var groupByCustomer = 0;
+	    var _sSystemPath    = 'https://app.ipn.com.ar/system';
+	    var isPromotionSearch = false;
+        var isPromotionDetails = false;
+
+	    $(document).ready(function () {
+	    	/* Calendar */
+            $('#datePickerFrom').datetimepicker();
+            $('#datePickerTo').datetimepicker();
+
+            $('#datePickerFrom').data("DateTimePicker").maxDate(moment($("#DateTo").val(),"DD-MM-YYYY"));
+            $('#datePickerTo').data("DateTimePicker").minDate(moment($("#DateFrom").val(),"DD-MM-YYYY"));
+
+            $("#datePickerFrom").on("dp.change", function (e) {
+                $('#datePickerTo').data("DateTimePicker").minDate(e.date);
+                $('#datePickerFrom').data("DateTimePicker").hide();
+            });
+
+            $("#datePickerTo").on("dp.change", function (e) {
+                $('#datePickerFrom').data("DateTimePicker").maxDate(e.date);
+                $('#datePickerTo').data("DateTimePicker").hide();
+            });
+
+            $("#datePickerFrom").on("dp.error", function (e) {
+                $("#DateFrom").val("23/08/2026");
+                $('#datePickerFrom').data("DateTimePicker").hide();
+            });
+
+
+            $('#dateRequestDueDateTo').datetimepicker();
+            
+            $("#dateRequestDueDateTo").on("dp.change", function (e) {
+                $('#dateRequestDueDateTo').data("DateTimePicker").hide();
+            });
+            /* /Calendar */
+
+	        minifyReport();
+
+	        $("[name='productsType']").change(function() {
+	            if($("[name='productsType']:checked").val() == 2) { //Si se selecciona "a producir", mostramos tablas donde haya al menos un td de totales negativo
+	                var avbQty = 0, //Cantidad disponible en stock
+                        resQty = 0, //Cantidad reservada
+                        prdQty = 0, //Cantidad en rueda de producción
+                        reqQty = 0, //Cantidad pedida
+                        minQty = 0, //Cantidad stock min
+                        totalQty = 0;
+	                $(".grilla").hide();
+	                $("[name='mPIDandColorTotals']").each(function () {
+	                    if($(this).text() < 0)
+	                        $(this).parents("table").attr("toProduce", 1).show();
+	                });
+	                $("[name='avbQty']:visible").each(function () {
+	                    if (!(isNaN(parseInt($(this).text()))))
+	                        avbQty = avbQty + parseInt($(this).text());
+	                });
+	                $("[name='prdQty']:visible").each(function () {
+	                    if (!(isNaN(parseInt($(this).text()))))
+	                        prdQty = prdQty + parseInt($(this).text());
+	                });
+	                $("[name='reqQty']:visible").each(function () {
+	                    if (!(isNaN(parseInt($(this).text()))))
+	                        reqQty = reqQty + parseInt($(this).text());
+	                });
+	                $("[name='resQty']:visible").each(function () {
+	                    if (!(isNaN(parseInt($(this).text()))))
+	                        resQty = resQty + parseInt($(this).text());
+	                });
+	                $("[name='minQty']:visible").each(function () {
+	                    if (!(isNaN(parseInt($(this).text()))))
+	                        minQty = minQty + parseInt($(this).text());
+	                });
+	                
+	                totalQty = avbQty + prdQty - reqQty;
+	                $("#avbQty").text(avbQty);
+	                $("#reservedQty").text(resQty);
+	                $("#prdQty").text(prdQty);
+	                $("#reqQty").text(reqQty);
+	                $("#minQty").text(minQty);
+	                var totalQtyColor = totalQty < 0 ? "red" : "green";
+                    //IPV 2015-11-26: Chequeamos que el elemento exista, ya que se puede dar que la búsqueda no arroje resultados y no se cree el elemento
+	                if($("#totalQty").length > 0)
+	                    $("#totalQty").text(totalQty).css("color", totalQtyColor);
+	            } else {
+	                $(".grilla, .grilla_financiera").show();
+	                $("#avbQty").text($("#avbQty").attr("realQty"));
+	                $("#reservedQty").text($("#reservedQty").attr("realQty"));
+	                $("#prdQty").text($("#prdQty").attr("realQty"));
+	                $("#reqQty").text($("#reqQty").attr("realQty"));
+	                $("#minQty").text($("#minQty").attr("realQty"));
+	                if (groupByCustomer == 0){
+	                    //IPV 2015-11-26: Chequeamos que el elemento exista, ya que se puede dar que la búsqueda no arroje resultados y no se cree el elemento
+	                    if($("#totalQty").length > 0)
+	                        $("#totalQty").text($("#totalQty").attr("realQty")).css("color", $("#totalQty").attr("color"));
+	                }
+	            }
+	        });
+
+            if (useAutocompleteAPI && !_bIsDevMode){
+				$("#customerName").devbridgeAutocomplete({
+					width: 260,
+					minChars: 4,              
+					deferRequestBy: 300,
+					lookup: function (query, done){
+						_userGUID = _userGUID.replace("{", "").replace("}", "");
+
+						var token = _username + ":" + _userGUID + "@user_login";
+						var authToken = btoa(token);
+
+						$.ajax({
+							url: apiUrl + "v2/erp/customers/autocomplete?company_id=" + _companyID + "&account_id=" + _accountID + "&search_term=" + query,
+							type: 'GET',
+							beforeSend: function(xhr) {
+								xhr.setRequestHeader("Authorization", "Bearer " + authToken)
+								xhr.setRequestHeader("X-User-Agent", userAgentHeader)
+							},
+							dataType: 'json',
+							async: true,
+							success: function(data){
+								var customers = [];
+
+								$.each(data.Response.Results, function( key, val) {
+									customers.push({ value: val.CompanyName + " " + val.CustomerCUIT + " <br/> (" + val.CustomerCode + ") " + val.CustomerName, data: val.CustomerID, name: val.CustomerName });
+								});
+			
+								var result = {
+									suggestions: customers
+								};
+
+								done(result);
+							},
+                            error: function(xhr, status, errorDesc){
+                                if(xhr.status != 0){
+                                    let bodyProcessedText;
+                                    switch(xhr.status){
+                                        case 401:
+                                            bodyProcessedText = JSON.stringify(JSON.parse(`{"Error":"Unauthorized","Status":"401"}`), null, "\t");
+                                            break;
+                                        case 404:
+                                            bodyProcessedText = JSON.stringify(JSON.parse(`{"Error":"Not Found","Status":"404"}`), null, "\t");
+                                            break;
+                                        default:
+                                            bodyProcessedText = JSON.stringify(xhr.responseJSON, null, "\t");
+                                    }
+                                    $("#codeBody").html(Prism.highlight(bodyProcessedText, Prism.languages.json, 'json'));
+                                    let dialog = $("#autocompleteErrorAlert").data("kendoDialog");
+                                    dialog.open();
+
+                                    let errorInfo = {
+                                        IL_CustomerID: _IL_CustomerID,
+                                        companyID: _companyID,
+                                        userID: _userID,
+                                        query: query,
+                                        file: "reports/productsAvailability/default.asp",
+                                        status: xhr.status,
+                                        response: xhr.responseJSON
+                                    }
+
+                                    $.ajax({
+                                        type: "POST",
+                                        contentType: "application/json",
+                                        url: apiUrl + "v2/erp/error-log",
+                                        async: true,
+                                        data: JSON.stringify(errorInfo),
+                                        beforeSend: function(xhr) {
+                                        	xhr.setRequestHeader("X-User-Agent", userAgentHeader)
+                                        }
+                                    });
+                                }
+                            }
+						})
+					},
+					onSelect: function (result) {
+						if (result) {
+							$("#formerCustomerName").val(result.name);
+							$("#customerName").val(result.name);
+							$("#customerID").val(result.data);
+						} else
+							return false;
+					}
+				});
+				
+				$("#customerName").blur(() =>{
+					if($("#customerName").val().length == 0){
+						$("#customerID").val(0);
+						$("#formerCustomerName").val("");
+					}
+					if($("#customerName").val().length != 0 && $("#formerCustomerName").val() != $("#customerName").val()){
+						$("#customerName").val($("#formerCustomerName").val())
+					}
+				});
+			}
+            else{
+                $("#customerName").autocomplete("ws/ws.asp",{
+                    width: 260,
+                    scroll: true,
+                    scrollHeight: 220,
+                    matchContains: true,
+                    minChars: 2,              
+                    delay: 400,
+                    extraParams: {doAction: 1},
+                    formatItem: "{companyName}&nbsp;{customerCUIT}<br/>({customerCode}) {customerName}",
+                    onItemSelect: function (li) {
+                        if (li && li.elementData)
+                            $("#customerID").val(li.elementData.customerID);
+                        else
+                            return false;
+                    }
+                });
+            }
+
+            $("#autocompleteErrorAlert").kendoDialog({
+                width: 600,
+                title: "Ha ocurrido un error. Esta situación será notificada al equipo técnico.",
+                visible: false
+            }).data("kendoDialog");
+
+	        $("#productDesc").autocomplete("ws/ws.asp", {
+	            width: 260,
+	            scroll: true,
+	            scrollHeight: 220,
+	            matchContains: true,
+	            minChars: 2,
+	            delay: 400,
+	            extraParams: { doAction: 2 },
+	            formatItem: "[{productDesc}] {descriptionWOCode}<br />{productTypeDesc}&nbsp;({productCategoryDesc})&nbsp;{materialName}<br/>{seasonName}&nbsp;-&nbsp;{lineName}",
+	            onItemSelect: function (li) {
+	                if (li && li.elementData) {
+	                    $("#masterPID").val(li.elementData.masterPID);
+	                    $("#productDesc").val("[" + li.elementData.productDesc + "]");
+	                } else
+	                    return false;
+	            }
+	        });
+
+	        $("[name='viewType']").click(function () {
+	            if ($(this).val() == 0)
+	                $("#requestsType, #productsType, #extraFilters").show();
+	            else {
+	                $("#groupByCustomer, #displayReservation, #minifiedView").attr("checked", false);
+	                minifyReport();
+	                if ($(this).val() == 1) {
+	                    $("#requestsType").show();
+	                    $("#productsType, #extraFilters").hide();
+	                } else
+	                    $("#requestsType, #productsType, #extraFilters").hide();
+	        }
+	        });
+
+	        $("#minifiedView").change(function(){
+	            minifyReport();
+	        });
+
+            /* ML 15/09/2015 :: Quito el onclick que tiene el button en el include de attrSearch, lo quito ya que tengo que volver a poner el action del form apuntando a default ya que ahora también postea a reportXLS */
+	        $("#SearchBtn").removeAttr("onclick");
+
+	        $("#SearchBtn").click(function(){
+	            if ($("#attributeID").val() != 0 && $("#attributeID").length > 0) {
+	                alert("Para realizar una b\u00fasqueda por atributos, debe agregarlo a los filtros haciendo click sobre el \u00edcono de 'Agregar atributo a filtros' a la izquierda del bot\u00f3n 'Buscar'");
+	                return false;
+	            }
+	            $("#SearchBtn").attr({class: "btnDisabled", disabled: true}).val("Buscando...");
+	            $("#frmSalesByEmployeeAndProduct").attr("action", "default.asp").submit();
+	        });
+	    
+			$("[name=tab]").click(function(){
+			    $("[name=tab]").removeClass();
+			    $(this).addClass("active");
+			    $('[tab]').hide();
+			    $("[tab='" + $(this).attr("id") + "']").show();
+                
+                $("[tab='attributeSearch']").show()
+			});
+
+			$("#checkAllStores").click(function(){
+			    checkAll('checkAllStores', 'requestStoreIDStr');
+			});
+
+			$("[name='requestStoreIDStr']").click(function(){
+			    verifyCheckedInputs('checkAllStores', 'requestStoreIDStr');
+			});
+
+			$("#checkAllStockStores").click(function(){
+			    checkAll('checkAllStockStores', 'stockStoreIDStr');
+			});
+			
+			$("[name='stockStoreIDStr']").click(function(){
+			    verifyCheckedInputs('checkAllStockStores', 'stockStoreIDStr');
+			});
+	    });
+
+	    function minifyReport() {
+	        if($("#minifiedView").is(":checked"))
+	            $(".grilla tr[minifiedview!=1], th[minifiedview=0]").hide();
+	        else
+	            $(".grilla tr[minifiedview!=1], th[minifiedview=0]").show();
+	    }
+
+	    function doReport() {
+	        var queryString;
+	        queryString = 'dateFromChr=24/07/2026&dateToChr=23/08/2026&requestsType=0&conditionType=0&groupByCustomer=0&displayProduction=0'
+
+	        if($("[name='productsType']:checked").val() == 2) {
+	            var masterPIDtoProduce = "",
+                    colorIDtoProduce = "";
+	            $(".grilla[toproduce='1']").each( function() {
+	                masterPIDtoProduce += $(this).attr("masterPID") + ", ";
+	                colorIDtoProduce += $(this).attr("colorID") + ", ";
+	            });
+	            $("#colorIDtoProduce").val(colorIDtoProduce);
+	            $("#masterPIDtoProduce").val(masterPIDtoProduce);
+	            //queryString += "&productsType=2&masterPIDtoProduce=" + masterPIDtoProduce + "&colorIDtoProduce=" + colorIDtoProduce
+	        }
+
+	        /* ML 15/08/2015 :: Comento la lógica para mandar los parámetros por queryString #22137 - No exporta a excel
+            
+                queryString += '&attrIDToFilterStr=0&attrValueToFilterStr=';
+            
+
+             queryString += '&requestNumberChr=';
+             queryString += '&referenceOrderNumber=';
+             queryString += '&requestDueDateTo=';
+             
+	        //window.open('reportXLS.asp?' + queryString);*/
+
+             $("#frmSalesByEmployeeAndProduct").attr("action","reportXLS.asp").submit();
+	    }
+
+	    function checkIfValid(){
+		    if($("input:checkbox:checked[name='requestStoreIDStr']").length == 0){
+		        alert("Para realizar la búsqueda debe seleccionar al menos una sucursal de pedidos.");
+    			$("#SearchBtn").removeAttr("class");
+    			$("#SearchBtn").removeAttr("disabled");
+    			$("#SearchBtn").attr("class", "btnAzul");
+    			$("#SearchBtn").val("Buscar");
+		        return false;
+		    }
+
+		    if($("input:checkbox:checked[name='stockStoreIDStr']").length == 0){
+		        alert("Para realizar la búsqueda debe seleccionar al menos una sucursal de stock.");
+    			$("#SearchBtn").removeAttr("class");
+    			$("#SearchBtn").removeAttr("disabled");
+    			$("#SearchBtn").attr("class", "btnAzul");
+    			$("#SearchBtn").val("Buscar");
+		        return false;
+		    }
+	    }
+
+		function verifyCheckedInputs(checkAllID, checkBoxID){
+		    var bHasUnchecked = false;
+		    $("[name='" + checkBoxID + "']").each(function(){
+		        if(!$(this).is(":checked"))
+		            bHasUnchecked = true;
+		    });
+
+		    if(bHasUnchecked)
+		        $("#" + checkAllID).prop('checked', false);
+		    else
+		        $("#" + checkAllID).prop('checked', true);
+		}
+
+		function checkAll(checkID, strID){
+			//alert("checkID: " + checkID + " strID: " + strID);
+		    if($("#" + checkID).is(':checked'))
+		        $("input:checkbox[name='" + strID + "']").prop('checked', true);
+		    else
+		        $("input:checkbox[name='" + strID + "']").prop('checked', false);
+		}
+	</script>
+    <style>
+        .customerHref {text-decoration:none;color:#365ABA;font-size:1.25em;font-weight:bold;}
+        .customerHref:hover {text-decoration:underline;}
+    </style>
+<script src="https://app.ipn.com.ar/system/js/sentry.min.js" crossorigin="anonymous"></script><script type="text/javascript" crossorigin="anonymous" src="https://us-assets.i.posthog.com/static/1.418.10/web-vitals.js"></script><script type="text/javascript" crossorigin="anonymous" src="https://us-assets.i.posthog.com/static/1.418.10/exception-autocapture.js"></script><script type="text/javascript" crossorigin="anonymous" src="https://us-assets.i.posthog.com/array/phc_ndp4qixgWxW3LGvyQGgnvvt2UVREKGphTKMyCDvSoZdr/config.js"></script><script type="text/javascript" crossorigin="anonymous" src="https://us-assets.i.posthog.com/static/1.418.10/surveys.js"></script></head>
+<body>
+    
+	<form name="frmSalesByEmployeeAndProduct" id="frmSalesByEmployeeAndProduct" method="post" onsubmit="javascript:return checkIfValid();">
+		<input type="hidden" id="doAction" name="doAction" value="1">
+        <input type="hidden" name="masterPIDtoProduce" id="masterPIDtoProduce" value="">
+        <input type="hidden" name="colorIDtoProduce" id="colorIDtoProduce" value="">
+        <input type="hidden" name="storeIDToFilter" id="storeIDToFilter" value="0">
+        <div class="wraper">
+			
+<link rel="stylesheet" type="text/css" href="https://app.ipn.com.ar/system/style/print.css?build=202608211036" media="print"> 
+
+
+   <link rel="stylesheet" type="text/css" href="https://app.ipn.com.ar/system/include/menu3.css?build=202608211036"> 
+
+
+<link rel="manifest" href="https://app.ipn.com.ar/system/include/src/manifest.json">
+<style type="text/css">@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/symbols/400/normal.woff2);unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/greek/400/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/greek-ext/400/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/math/400/normal.woff2);unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/cyrillic-ext/300/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/latin/300/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/cyrillic/300/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/latin-ext/300/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/vietnamese/300/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/greek/300/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/greek-ext/300/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/symbols/300/normal.woff2);unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/math/300/normal.woff2);unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/vietnamese/700/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/greek-ext/700/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/math/700/normal.woff2);unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/cyrillic/700/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/greek/700/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/cyrillic-ext/700/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/symbols/700/normal.woff2);unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/latin/700/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/latin-ext/700/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+<style type="text/css">@font-face {font-family:'Ubuntu';font-style:normal;font-weight:400;src:url(/cf-fonts/s/ubuntu/5.2.8/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:400;src:url(/cf-fonts/s/ubuntu/5.2.8/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:400;src:url(/cf-fonts/s/ubuntu/5.2.8/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:400;src:url(/cf-fonts/s/ubuntu/5.2.8/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:400;src:url(/cf-fonts/s/ubuntu/5.2.8/greek-ext/400/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:400;src:url(/cf-fonts/s/ubuntu/5.2.8/greek/400/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(/cf-fonts/s/ubuntu/5.2.8/cyrillic/700/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(/cf-fonts/s/ubuntu/5.2.8/latin-ext/700/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(/cf-fonts/s/ubuntu/5.2.8/cyrillic-ext/700/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(/cf-fonts/s/ubuntu/5.2.8/greek/700/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(/cf-fonts/s/ubuntu/5.2.8/greek-ext/700/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(/cf-fonts/s/ubuntu/5.2.8/latin/700/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+<script type="text/javascript" src="https://app.ipn.com.ar/system/js/mainMenu.js"></script>
+<link rel="apple-touch-icon" sizes="24x24" href="https://app.ipn.com.ar/system/images/infinito-solo-logo-24.png?build=202608211036">
+<link rel="apple-touch-icon" sizes="48x48" href="https://app.ipn.com.ar/system/images/infinito-solo-logo-48.png?build=202608211036">
+<link rel="apple-touch-icon" sizes="96x96" href="https://app.ipn.com.ar/system/images/infinito-solo-logo-96.png?build=202608211036">
+<link rel="apple-touch-icon" sizes="144x144" href="https://app.ipn.com.ar/system/images/infinito-solo-logo-144.png?build=202608211036">
+<link rel="apple-touch-icon" sizes="512x512" href="https://app.ipn.com.ar/system/images/infinito-solo-logo.png?build=202608211036">
+<meta name="apple-mobile-web-app-title" content="iPN">
+<meta name="apple-mobile-web-app-capable" content="yes"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="#080708">
+<meta name="theme-color" content="#080708">
+<meta name="msapplication-navbutton-color" content="#080708">
+<meta name="theme-color" content="#2e6296">
+<style>
+    :root{
+        --fgrd: #080708;
+        --sfrgnd: #b0aab0;
+    }
+/* Nuevo menu */
+
+      .exo-menu {background-color: #080708 !important;}
+      .exo-menu li a {background-color: #080708 !important;}
+      .flyout-right ul>li>a ,
+      .flyout-left ul>li>a,
+      .flyout-mega-wrap,
+      .mega-menu{    background-color: #080708 !important; }
+   
+      .exo-menu > li:hover {background-color: #fa4b73 !important;}
+      .exo-menu li a:hover {background-color: #fa4b73 !important;}
+      h4.row.mega-title { background-color: #fa4b73 !important; 
+                           border-bottom: 1px solid #fa4b73!important;}
+   
+      .exo-menu > li {border-right: solid 1px #b0aab0 !important;}
+      .exo-menu > li > ul > li {border-top: solid 1px #b0aab0 !important;}
+      .exo-menu > li > ul > li ul > li {border-top: solid 1px #b0aab0 !important;}
+   
+      .exo-menu a {color: #f0e8f0!important}
+      .exo-menu > li > a {color: #f0e8f0!important}
+      .exo-menu a:hover {color: #f0e8f0!important}
+      .exo-menu > li > ul > li > a {color: #f0e8f0!important}
+      .exo-menu > li > ul > li:hover > a {color: #f0e8f0!important}
+      .exo-menu > li > ul > li ul > li:hover > a {color: #f0e8f0!important}
+      .exo-menu > li > ul > li ul > li > a  {color: #f0e8f0!important} 
+      .newContent a, .newContent a:hover, .newContent a.active, .newContent a:active, .newContent a:visited, .newContent a:focus{ color:#f0e8f0!important;}
+      .newContent a, .newContent a:visited, .newContent a:hover, .newContent a:active {color:#f0e8f0!important; outline : none;}  
+   
+/*End nuevo menu*/
+</style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/basic/jquery.qtip.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js" integrity="sha512-BxJRFdTKV85fhFUw+olPr0B+UEzk8FTLxRB7dAdhoQ7SXmwMECj1I4BlSmZfeoSfy0OVA8xFLTDyObu3Nv1FoQ==" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {    
+         
+
+        //Seteo de favicon
+        var faviconTag1 = '<link rel="icon" href="https://app.ipn.com.ar/system/images/favicon.ico" type="image/x-icon">';
+    var faviconTag2 = '<link rel="shortcut icon" href="https://app.ipn.com.ar/system/images/favicon.ico" type="image/x-icon">';
+    $("title").after(faviconTag2).after(faviconTag2);
+
+    // Oculto el div de Opciones del menú
+    $("#boxOptionHeader").hide();
+
+    // Muestro/Oculto el div de Opciones del menú
+    $(document).mouseup(function (e) {
+        var container = $("#boxOptionHeader");
+        var container2 = $("#lnkOption");
+        if (!container.is(e.target) && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            if (container2.is(e.target)) {
+                if ($("#boxOptionHeader").css('display') == 'none') {
+                    $("#boxOptionHeader").show();
+                }
+                //
+                else {
+                    $("#boxOptionHeader").hide();
+                }
+            } else {
+                container.hide();
+            }
+        }
+    });
+
+        
+    });
+</script>
+<script type="text/javascript">
+    var systemFolder = 'https://app.ipn.com.ar/system';
+</script>
+<div class="contentFixed">
+    <!--HEADER-->
+    
+    <div class="contentHeader" style="border-bottom:none;">
+        <div class="content">            
+            
+                    <img class="logoHeader" src="https://app.ipn.com.ar/system/images/logos/customization/310_219.jpg?rnd=202608211036" alt="iPN" title="iPN" style="max-height:44px;">
+                
+            <table cellpadding="0" cellspacing="0" class="tblHeaderOption" style="height:100%;">
+                <tbody><tr>
+                    <td>
+                        
+                        <img id="companyCountryFlag" src="https://app.ipn.com.ar/system/images/icons/32/Argentina.png">
+                    </td>
+                    <td style="text-align:right">
+                        
+                            <a title="GATICAR">
+                            GATICAR
+                                </a>
+                        
+                            [46792-juli]<br> 
+                    </td>
+                    <td style="padding-left:0px;">
+                        <div class="cursorPointer" title="Más opciones">
+                            <img width="24px" height="24px" id="lnkOption" src="https://app.ipn.com.ar/system/images/icons/24/icon_0004.png" alt="Opciones">
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+            <br class="cb">
+            <!--OPTION-->
+            <div class="boxOptionHeader" id="boxOptionHeader" style="display: none;">
+
+                <img class="arrowBox" src="https://app.ipn.com.ar/system/images/misc/img-arrowBox.png" alt="^">
+
+                <div class="accountInfo" style="width: 100%; padding: 1rem 1.5rem;">
+                    <div class="fl" style="display: flex; align-items: center; width: 100%">
+                        <div style="margin-right:2rem;">
+                        <b>juliana avalos</b> <br>
+                        [adminitrativo]<br>
+                        Código de soporte: #07711
+                        </div>
+                        <a class="buttonBlue" href="https://app.ipn.com.ar/myAccount.asp?tab=1" style="min-width: 76px;">
+                            Mi cuenta
+                        </a>
+                    </div>
+                    <br class="cb">
+                </div>
+                <br>
+
+                <div id="divModules">
+                    
+                    <a class="modules" style="text-decoration:none;" href="https://app.ipn.com.ar/adminPanel.asp">
+                        <img src="https://app.ipn.com.ar/system/images/icons/32/icon_0009.png" alt="Panel de administración">
+                        <br>
+                        <span>Panel de administración</span>
+                    </a>
+                    
+                        <a class="modules" style="text-decoration:none;" href="https://app.ipn.com.ar/techSupport/default.asp">
+                            <img src="https://app.ipn.com.ar/system/images/icons/32/icon_0289.png" alt="Mesa de ayuda">
+                            <br>
+                            <span>Mesa de ayuda</span>
+                        </a>
+                
+
+                    <a class="modules" style="text-decoration:none;" href="../../services/login/zendesk.asp?stockType=1" target="_blank">
+                        <img src="https://app.ipn.com.ar/system/images/icons/32/iPN-University-logo.png" alt="iPN University" width="55.5px" height="30px">
+                        <br>
+                        <span>iPN <br>University</span>
+                    </a>
+                    
+                    <a class="modules" style="text-decoration:none;" href="https://app.ipn.com.ar/messages.asp" title="Ud. no tiene mensajes nuevos">
+                        
+                        <img width="32px" height="32px" src="https://app.ipn.com.ar/system/images/icons/24/messages.png" alt="Mensajes">
+                        
+                        <br>
+                        <span>Mensajes</span>
+                    </a>
+                    
+                </div>
+                <br class="cb">
+
+                <div class="optionHeaderFoot">
+                    <div>
+                        
+                        <a class="buttonGray" href="https://app.ipn.com.ar/defaultSelectedCompany.asp">Cambiar de razón social</a>
+                        <a class="buttonGray" href="https://app.ipn.com.ar/logout.asp">Cerrar sesión</a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+          
+            <div class="newContent">	 
+                <ul class="exo-menu" style="padding:2px 30px 0px 3%;">
+                
+                    <li class="drop-down">
+
+                        <a href="#">
+                            
+                            Configuración
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Stock<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/productType/default.asp">
+                            
+                            Tipos de Productos
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/control/category/default.asp">
+                            
+                            Categorías de  Productos
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/trademarks/default.asp">
+                            
+                            Marcas
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/tasks/default.asp">
+                            
+                            Tareas
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/default.asp?moduleID=33">
+                            
+                            Materiales
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/colors/default.asp">
+                            
+                            Colores
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/default.asp?moduleID=35">
+                            
+                            Líneas
+                        </a>
+                        
+        </li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Administración<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/checkbook/default.asp">
+                            
+                            Chequeras
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/paymentMethod/default.asp">
+                            
+                            Métodos de cobro
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/productsPriceLists/default.asp">
+                            
+                            Listas de precios de productos
+                        </a>
+                        
+        </li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Gestión<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/default.asp?moduleID=95">
+                            
+                            Tipos de proveedores
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/subProviderType/default.asp">
+                            
+                            Sub-tipos de proveedores
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/default.asp?moduleID=450">
+                            
+                            Grupo de empleados
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/expensesConcept/default.asp">
+                            
+                            Tipos de Gastos
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/subExpensesConcept/default.asp">
+                            
+                            Sub-tipo de gastos
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/commercialConditions/default.asp">
+                            
+                            Condiciones comerciales
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/bankConcepts/default.asp">
+                            
+                            Conceptos bancarios
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/default.asp?moduleID=101">
+                            
+                            Jerarquías de empleados
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/transport/default.asp">
+                            
+                            Transportes
+                        </a>
+                        
+        </li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Impuestos<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/IIBBActivities/default.asp">
+                            
+                            Actividades de IIBB
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/companies/default.asp">
+                            
+                            Razones sociales
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/accountingPeriodList.asp">
+                            
+                            Periodos de gestión/impositivos
+                        </a>
+                        
+        </li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Sistema<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/businessRules/default.asp">
+                            
+                            Configuración avanzada
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/stores/default.asp">
+                            
+                            Sucursales
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/taskScheduler/default.asp">
+                            
+                            Tareas programadas
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/electronicInvoiceList.asp">
+                            
+                            Comprobantes elec. pend. de autorización
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/importation/default.asp">
+                            
+                            Importaciones
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/productVisualization/details.asp">
+                            
+                            Visualización de productos
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/configuration/emailnotifications/default.asp">
+                            
+                            Notificaciones programadas
+                        </a>
+                        
+        </li></ul></li></ul></li>
+                    <li class="drop-down">
+
+                        <a href="#">
+                            
+                            Inventario
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Stock<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/control/stockAvailable/stockByStoreProviderAndProduct.asp">
+                            
+                            Stock disponible
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/control/products/default.asp">
+                            
+                            Productos
+                        </a>
+                        
+        </li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Gestión<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/control/stockTracking/default.asp">
+                            
+                            Envíos de mercadería
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/control/salesRemito/default.asp">
+                            
+                            Remitos
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/control/stockCommitted/default.asp">
+                            
+                            Stock comprometido
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/control/purchasesRefer/default.asp">
+                            
+                            Remitos de compra
+                        </a>
+                        
+        </li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Control de stock<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/control/stockSummary/filter.asp">
+                            
+                            Manual
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/control/stockSummary/projects.asp">
+                            
+                            Con colector de datos
+                        </a>
+                        
+        </li></ul></li></ul></li>
+                    <li class="drop-down">
+
+                        <a href="#">
+                            
+                            Panel de administración
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/defaultSelectedStore.asp?isIPV=0">
+                            
+                            PANEL DE CONTROL DE ADMINISTRACION
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Compras<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/providers/default.asp">
+                            
+                            Proveedores
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/expenses/default.asp">
+                            
+                            Gastos
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/purchasesOrder/default.asp">
+                            
+                            Órdenes de compra
+                        </a>
+                        
+        </li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Ventas<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/customers/default.asp">
+                            
+                            Clientes
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/customers/productRequest/default.asp">
+                            
+                            Pedidos
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/customers/devolutions/default.asp">
+                            
+                            Devoluciones
+                        </a>
+                        
+        </li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Tesorería<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/paymentSources/default.asp">
+                            
+                            Fondos
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/checks/default.asp">
+                            
+                            Cheques
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/coupons/default.asp">
+                            
+                            Liquidación de cupones de tarjetas
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/documents/default.asp">
+                            
+                            Documentos
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/coupons/cashflow/default.asp">
+                            
+                            Proyección de acreditaciones de tarjetas
+                        </a>
+                        
+        </li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Gestión<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/employees/default.asp">
+                            
+                            Empleados
+                        </a>
+                        
+        </li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Impuestos<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/purchasesBook.asp">
+                            
+                            Subdiario IVA Compras
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/purchasesBookResume.asp">
+                            
+                            Resumen IVA Compras
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/salesBook.asp">
+                            
+                            Subdiario IVA Ventas
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/salesBookResume.asp">
+                            
+                            Resumen IVA Ventas
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Padrones
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/perceptionsRetentions.asp?displayType=0">
+                            
+                            Listado de Percepciones
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/perceptionsRetentions.asp?displayType=1">
+                            
+                            Listado de Retenciones
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/agreementResume.asp">
+                            
+                            Reporte para declaración jurada mensual de IIBB
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/exportTXT.asp">
+                            
+                            Interfaces para aplicativos
+                        </a>
+                        
+        </li></ul></li></ul></li>
+                    <li class="drop-down">
+
+                        <a href="#">
+                            
+                            Reportes
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Administración<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Compras<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Compras<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/purchasesList.asp">
+                            
+                            Listado de compras y gastos
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/purchasesListByProvider.asp">
+                            
+                            Listado de compras y gastos por proveedor
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/purchasesListByType.asp">
+                            
+                            Detalle de compras y gastos por tipo y sub-tipo
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/purchases.asp">
+                            
+                            Compras por mes y proveedor
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/providersPurchasedItems.asp">
+                            
+                            Reporte de artículos comprados por proveedor
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/purchasesDetails.asp">
+                            
+                            Detalle de compras realizadas
+                        </a>
+                        
+        </li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Gestion<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/providersBalance.asp">
+                            
+                            Reporte de saldos de proveedores por fecha
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/paymentsResume.asp">
+                            
+                            Reporte de pagos realizados
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/purchasePendingInvoices.asp">
+                            
+                            Comprobantes pendientes de pago
+                        </a>
+                        
+        </li></ul></li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Ventas<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Gestión<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/customersBalance.asp">
+                            
+                            Reporte de saldos de clientes por fecha
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/incomeResume.asp">
+                            
+                            Reporte de cobranzas realizadas
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/reports/customerAcctRescBySalesMan/default.asp">
+                            
+                            Extracto de ctas. ctes. por vendedor
+                        </a>
+                        
+        </li></ul></li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Tesorería<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/checksReport.asp">
+                            
+                            Reporte de estado de cheques por fecha
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/reports/dailyPaymentSourcesMovements/default.asp">
+                            
+                            Movimiento diario de fondos
+                        </a>
+                        
+        </li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Gestión<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/transactionsByDay.asp">
+                            
+                            Detalle de transacciones diarias
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/reports/employeeAcctResc/default.asp">
+                            
+                            Reporte de transacciones de empleados
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/reports/acctRescAdjustsReport/default.asp">
+                            
+                            Reporte de ajustes de cta. cte.
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/reports/employeeStockWidthdrawal/default.asp">
+                            
+                            Reporte de retiros de mercadería de empleados
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/admin/accounting/creditCardResumeReport/default.asp">
+                            
+                            Reporte de liquidación de tarjetas
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/reports/productsPriceListChanges/default.asp">
+                            
+                            Historial de cambio de precios
+                        </a>
+                        
+        </li></ul></li></ul></li>
+                    <li class="flyout-right">
+
+                        <a href="#">
+                            
+                            Inventario<img src="https://app.ipn.com.ar/system/images/misc/arrowMenu.png" style="position:absolute;right:10px;top:8px;">
+                        </a>
+                        
+        <ul class="drop-down-ul animated fadeIn">
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/reports/stockReports/stockLogOperations.asp">
+                            
+                            Reporte de operaciones de stock
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/reports/stockReports/stockLogOperationsGroup.asp">
+                            
+                            Reporte agrupado de operaciones de stock
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/reports/stockReports/valuedStockByDate.asp">
+                            
+                            Stock valorizado por fecha
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/reports/productsAvailability/default.asp">
+                            
+                            Detalle de disponibilidad de productos
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/reports/stockReplacement/default.asp">
+                            
+                            Reposición por venta
+                        </a>
+                        
+        </li>
+                    <li class="flyout-right">
+
+                        <a href="https://app.ipn.com.ar/reports/stockRotation/default.asp">
+                            
+                            Rotación
+                        </a>
+                        
+        </li></ul></li></ul></li></ul>         
+                
+            </div>    
+        
+</div>
+
+
+<noscript>
+    <meta HTTP-EQUIV="REFRESH" content="0; url=https://app.ipn.com.ar/logout.asp">      
+</noscript>
+
+
+
+<!--CONTENT-->
+<div class="newMainContent">
+    
+
+<script>
+    var currentModuleName = 'Detalle de disponibilidad de productos';
+    var userAgentHeader = 'iPN PRD';
+    if (currentModuleName) {
+        userAgentHeader = userAgentHeader + ' - ' + currentModuleName;
+    }
+</script>
+			<div class="content">
+				
+				<!--Encabezado-->
+				<div class="encabezado">
+					<img alt="Detalle de disponibilidad de productos" src="https://app.ipn.com.ar/system/images/icons/32/icon_0301.png">
+					<h2>Detalle de disponibilidad de productos</h2>
+                    
+				</div>
+				<!--/Encabezado-->
+				<br style="clear:both">
+				<br>
+
+                <div class="tab_cnt_principal" style="width:100%;">
+                    <a id="generalFilters" name="tab" class="active">General</a>
+                    <a id="requestStoresFilters" name="tab">Sucursales de pedidos</a>
+                    <a id="stockStoresFilters" name="tab">Sucursales de stock</a>
+                </div>
+				<!--Busqueda-->
+				<div class="cnt_principal">
+                <fieldset class="busqueda" style="border: 0px;">
+					<table cellspacing="0" cellpadding="0">
+                        <!--ZONA GENERAL-->
+						<tbody><tr tab="generalFilters">
+							<td>
+								Fecha:
+							</td>
+                            <!--Calendar-->
+                            <td>
+                                <div style="float: left;">
+                                    <div style="float: left;">
+                                        <div class="input-group date" id="datePickerFrom" name="datePickerFrom" style="position: relative;">
+                                            <input type="text" class="datePickerContent" value="24/07/2026" id="DateFrom" name="dateFromChr" style="width: 70px!important;" onkeydown="return numericKeyDown(event,this.id);" maxlength="10">
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div style="float: right; padding-left: 10px">
+                                        <div class="input-group date" id="datePickerTo" name="datePickerTo" style="position: relative;"> 
+                                            <input type="text" class="datePickerContent" value="23/08/2026" id="DateTo" name="dateToChr" style="width: 70px!important;" onkeydown="return numericKeyDown(event,this.id);" maxlength="10">
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <!--/Calendar-->
+                            <td><img src="https://app.ipn.com.ar/system/images/misc/divider.gif" alt="|"></td>
+                            <td>Temporada:</td>
+                            <td>
+                                <select class="" id="seasonID" name="seasonID" tabindex="3" autocomplete="off" onchange="$('#seasonName').val($('#seasonID option:selected').text());"><option value="0">[ Seleccione ]</option><option value="59">Verano 28</option><option value="58">Invierno 28</option><option value="57">Invierno 27</option><option value="56">Verano 27</option><option value="55">Invierno 26</option><option value="54">Verano 26</option><option value="53">Invierno 25</option><option value="52">Verano 25</option><option value="51">Invierno 24</option><option value="50">Verano 24</option><option value="49">Invierno 23</option><option value="48">Verano 23</option><option value="47">Invierno 22</option><option value="46">Verano 22</option><option value="45">Invierno 21</option><option value="44">Verano 21</option><option value="43">Invierno 20</option><option value="42">Verano 20</option><option value="41">Invierno 19</option><option value="40">Verano 19</option><option value="39">Invierno 18</option><option value="38">Verano 18</option><option value="37">Invierno 17</option><option value="36">Verano 17</option><option value="35">Invierno 16</option><option value="34">Verano 16</option><option value="33">Invierno 15</option><option value="32">Verano 15</option><option value="31">Invierno 14</option><option value="30">Verano 14</option><option value="29">Invierno 13</option><option value="28">Verano 13</option><option value="27">Invierno 12</option><option value="26">Verano 12</option><option value="25">Invierno 11</option><option value="24">Verano 11</option><option value="17">Invierno 10</option><option value="16">Verano 10</option><option value="15">Invierno 09</option><option value="14">Verano 09</option><option value="13">Invierno 08</option><option value="4">Verano 08</option><option value="2">Invierno 07</option><option value="1">Verano 07</option><option value="12">Invierno 06</option><option value="11">Verano 06</option><option value="10">Invierno 05</option><option value="9">Verano 05</option><option value="8">Invierno 04</option><option value="7">Verano 04</option><option value="6">Invierno 03</option><option value="5">Verano 03</option><option value="23">Invierno 02</option><option value="22">Verano 02</option><option value="21">Invierno 01</option><option value="20">Verano 01</option><option value="19">Invierno 00</option><option value="18">Verano 00</option><option value="3">Todo el año</option></select>
+                                <input type="hidden" id="seasonName" name="seasonName">
+                            </td>
+                            <td><img src="https://app.ipn.com.ar/system/images/misc/divider.gif" alt="|"></td>
+                            <td>Nº de pedido:</td>
+                            <td><input type="text" style="width:174px;" id="requestNumberChr" name="requestNumberChr" value="" maxlength="25">
+                            </td>
+						</tr>
+                        <tr tab="generalFilters">
+                            <td>Estado de autorización:</td>
+                            <td>
+                                <select name="approvalStatusID" tabindex="6">
+                                    <option value="0">[Seleccione]</option>
+                                    <option value="1">Pendiente de autorización</option>
+                                    <option value="2">Autorizado</option>
+                                    <option value="3">Rechazado</option>
+                                </select>
+                            </td>
+                            <td><img src="https://app.ipn.com.ar/system/images/misc/divider.gif" alt="|"></td>
+                            <td>Vendedor:</td>
+                            <td>
+                                <select class="" id="employeeID" name="employeeID" tabindex="7" autocomplete="off" onchange="$('#salesManName').val($('#employeeID option:selected').text());"><option value="0">[Seleccione]</option><option value="15">15 - Bernoco, Carla</option><option value="56">56 - Calafayan, German</option><option value="43">43 - fierro, pablo andres</option><option value="40">40 - garau, guillermo</option><option value="59">59 - Grasso, Daniel</option><option value="57">57 - Rodriguez, Maximiliano   pachi</option></select>
+                                <input type="hidden" id="salesManName" name="salesManName" value="">
+                            </td>
+                            <td><img src="https://app.ipn.com.ar/system/images/misc/divider.gif" alt="|"></td>
+                            <td>Nº de OC:</td>
+                            <td><input type="text" style="width:174px;" id="referenceOrderNumber" name="referenceOrderNumber" value="" maxlength="15">
+                            </td>
+                        </tr>   
+                        <tr tab="generalFilters">
+                            <td>Cliente:</td>
+                            <td><input type="text" style="width:174px;" tabindex="5" id="customerName" name="customerName" value="" autocomplete="off">
+                                <input type="hidden" value="" id="formerCustomerName" name="formerCustomerName">
+                                <input type="hidden" id="customerID" name="customerID" value="0">
+                            </td>
+                            <td><img src="https://app.ipn.com.ar/system/images/misc/divider.gif" alt="|"></td>
+							<td>
+								Vencimiento pedido:
+							</td>
+							<!--Calendar-->
+                            <td>
+                                <div style="float: left;">
+                                    <div style="float: left;">
+                                        <div class="input-group date" id="dateRequestDueDateTo" name="dateRequestDueDateTo" style="position: relative;">
+                                            <input type="text" class="datePickerContent" value="" id="requestDueDateTo" name="requestDueDateTo" style="width: 70px!important;" onkeydown="return numericKeyDown(event,this.id);" maxlength="10">
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <!--/Calendar-->
+                        </tr>
+                        <tr tab="generalFilters">
+                            <td>Producto:</td>
+                            <td>
+                                <input type="text" id="productDesc" name="productDesc" value="" autocomplete="off" class="ac_input">
+                                <input type="hidden" id="masterPID" name="masterPID" value="0">
+                            </td>
+                            <td><img src="https://app.ipn.com.ar/system/images/misc/divider.gif" alt="|"></td>
+                            <td>Marca:</td>
+                            <td>
+                                <select class="" id="trademarkID" name="trademarkID" tabindex="6" autocomplete="off" onchange="$('#tradeMarkName').val($('#trademarkID option:selected').text());"><option value="0">[ Seleccione ]</option><option value="6">47 STREET</option><option value="27">ACTIVE by RINGO</option><option value="3">ATOMIK</option><option value="33">BIBI</option><option value="3590">BOAONDA</option><option value="25">BOTANGUITA</option><option value="9">CARTIER</option><option value="17">CITTADINA</option><option value="14">CONVERSE</option><option value="13">COOLPINK</option><option value="22">FERLI</option><option value="18">FOOTY</option><option value="3591">FRAGOLA</option><option value="3617">GIULIA DOMNA</option><option value="4">GUMMI</option><option value="7">HARENNA</option><option value="28">HIPERFLEX</option><option value="12">IVANS</option><option value="21">JAGUAR</option><option value="30">JUANITA JO</option><option value="10">JUSTA OSADIA</option><option value="35">KLIN</option><option value="2">LADY STORK</option><option value="8">MANGO</option><option value="11">MASSIMO CHIESA</option><option value="34">MINI-PE</option><option value="3592">MODARE</option><option value="24">NESK</option><option value="29">PETITE JOLIE</option><option value="31">PICADILLY</option><option value="3816">REFRESH</option><option value="26">RINGO</option><option value="15">ROMINA BONINI</option><option value="16">SANTA CLARA</option><option value="32">SAVAGE</option><option value="20">SBW</option><option value="19">SEAWALK</option><option value="3601">SKORA</option><option value="1">SKY BLUE</option><option value="23">STORK MAN</option><option value="36">TREME</option><option value="5">VIAMO</option><option value="3595">VIZZANO</option><option value="3707">Xti by Sky Blue</option></select>
+                                <input type="hidden" id="tradeMarkName" name="tradeMarkName">
+                            </td>
+                            
+                            <td><img alt="|" src="https://app.ipn.com.ar/system/images/misc/divider.gif"></td>
+                            <td>Linea:</td>
+                            <td>
+                                <select class="searchCombo" id="lineID" name="lineID" tabindex="" autocomplete="off" onchange="$('#lineDesc').val($('#lineID option:selected').text());"><option value="0">[ Seleccione ]</option><option value="2">Brillo</option><option value="1">Genérica</option></select>
+                                <input type="hidden" id="lineDesc" name="lineDesc">
+                            </td>
+                        </tr>
+                        <!--FIN ZONA GENERAL-->
+                        <!--ZONA SUCURSALES DE PEDIDOS-->
+                        <tr style="display:none;" tab="requestStoresFilters">
+                            <td>
+                                A continuación seleccione las sucursales de pedidos que desea filtrar:
+                                <br style="clear:both">
+                                <br style="clear:both">
+                            </td>
+                            </tr>
+                            <tr tab="requestStoresFilters" style="display:none;">
+                                <td>
+                                    <input type="checkbox" value="1" id="checkAllStores" name="checkAllStores" checked="checked"><label for="checkAllStores">&nbsp;Todas</label>
+                                    <br style="clear:both">
+                                    <br style="clear:both">
+							    </td>
+                        
+                        </tr>
+                        <!--FIN ZONA SUCURSALES DE PEDIDOS-->
+                        <!--ZONA SUCURSALES DE STOCK-->
+                        <tr style="display:none;" tab="stockStoresFilters">
+                            <td>
+                                A continuación seleccione las sucursales de stock que desea filtrar:
+                                <br style="clear:both">
+                                <br style="clear:both">
+                            </td>
+                            </tr>
+                            <tr tab="stockStoresFilters" style="display:none;">
+                                <td>
+                                    <input type="checkbox" value="1" id="checkAllStockStores" name="checkAllStockStores" checked="checked"><label for="checkAllStockStores">&nbsp;Todas</label>
+                                    <br style="clear:both">
+                                    <br style="clear:both">
+							    </td>
+                        </tr><tr tab="stockStoresFilters" style="display:none;"></tr><tr tab="stockStoresFilters" style="display:none;"><td><b>Venta al público</b></td></tr>
+                                               <tr><td tab="stockStoresFilters" style="display:none;">
+                                                    <div style="width: 300px; float: left;">
+                                
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 
+                                                        <input type="checkbox" value="5" name="stockStoreIDStr" id="stockStore_5" checked="checked"><label for="stockStore_5">&nbsp;SBW CANNING</label>
+                                                    </div>
+                                                </td> 
+                                            </tr><tr tab="stockStoresFilters" style="display:none;"><td><br><b>Oficina comercial</b></td></tr>
+                                               <tr><td tab="stockStoresFilters" style="display:none;">
+                                                    <div style="width: 300px; float: left;">
+                                
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 
+                                                        <input type="checkbox" value="6" name="stockStoreIDStr" id="stockStore_6" checked="checked"><label for="stockStore_6">&nbsp;ADMIN GATICAR</label>
+                                                    </div>
+                                                </td> 
+                                            </tr>
+                        
+                        <!--FIN ZONA SUCURSALES DE STOCK-->
+					</tbody></table>
+				</fieldset>
+				</div>
+                <br>
+                <fieldset class="busqueda">
+					<legend><b>Vista</b></legend>
+					<table cellspacing="0" cellpadding="0">
+						<tbody><tr>
+                            <td colspan="3">
+								<div class="fl">
+									<input type="radio" id="viewType_Group" name="viewType" value="0" checked="checked">&nbsp;<label for="viewType_Group">Agrupada por producto</label>&nbsp;&nbsp;
+									<input type="radio" id="viewType_DetailsByRequest" name="viewType" value="1">&nbsp;<label for="viewType_DetailsByRequest">Detallada por pedido y producto</label>&nbsp;&nbsp;
+									<input type="radio" id="viewType_DetailsByReservation" name="viewType" value="2">&nbsp;<label for="viewType_DetailsByReservation">Detallada por reserva y producto</label>&nbsp;&nbsp;
+                                </div>
+							</td>
+                            
+						</tr>
+                        <tr>
+                            <td>
+                                <ul id="requestsType" style="list-style-type: none;">
+                                    Ver pedidos:
+                                    <li>
+                                        <input type="radio" id="requestsType_1" name="requestsType" value="1" checked="checked">
+                                        <label for="requestsType_1">Pendientes</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="requestsType_2" name="requestsType" value="2">
+                                        <label for="requestsType_2">Pedidos</label>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul id="productsType" style="list-style-type: none;">
+                                    Ver productos:
+                                    <li>
+                                        <input type="radio" id="productsType_1" name="productsType" value="1" checked="checked">
+                                        <label for="productsType_1">Todos</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="productsType_2" name="productsType" value="2">
+                                        <label for="productsType_2">A producir</label>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                
+                                <ul id="extraFilters" style="list-style-type: none;">
+                                    <li><input type="checkbox" value="1" id="groupByCustomer" name="groupByCustomer"> <label for="groupByCustomer">Agrupado por cliente</label></li>
+                                    <li><input type="checkbox" value="1" id="displayMinStock" name="displayMinStock"> <label for="displayMinStock">Con stock mínimo</label></li>
+                                    <li><input type="checkbox" value="1" id="displayReservation" name="displayReservation" checked="checked"> <label for="displayReservation">Con reservas</label></li>
+                                    <li><input type="checkbox" value="1" id="minifiedView" name="minifiedView"> <label for="minifiedView">Vista reducida</label></li>
+                                    <li><input type="checkbox" value="1" id="displayProduction" name="displayProduction" checked="checked"> <label for="displayProduction">Con producción</label></li>
+                                </ul>
+                            </td>
+                            
+                        </tr>
+					</tbody></table>
+				</fieldset>
+                <input type="button" id="SearchBtn" name="SearchBtn" class="btnAzul" style="margin:10px 0" value="Buscar">
+                <br class="cb">
+				<!--/Busqueda-->
+            
+                <div class="msjInfo">
+		            Seleccione los filtros que desee aplicar y haga clic en "Buscar" para mostrar resultados.
+	            </div>
+                
+			</div>
+		</div>
+		</div>
+
+
+	<div class="cntPrint">
+		<div class="left">Impresión generada por iPN.</div>
+		<div class="right">v 2.4.0.6</div>
+	</div>
+
+	<br>
+
+	    
+
+	
+
+	<div class="contentFooter px-2">
+        
+              <div class="fl">
+                    <a class="text-decoration" href="https://ipn.com.ar/legal/terminos?utm_source=app_ipn&amp;utm_medium=internal&amp;utm_campaign=ecosistema_ipn&amp;utm_content=ipn_app_footer&amp;utm_term=footer" target="_blank">Términos y condiciones</a>
+                    y de las
+                    <a class="text-decoration" href="https://ipn.com.ar/legal/privacidad?utm_source=app_ipn&amp;utm_medium=internal&amp;utm_campaign=ecosistema_ipn&amp;utm_content=ipn_app_footer&amp;utm_term=footer" target="_blank">Políticas de privacidad</a>
+                    de
+                    <a class="text-decoration" href="https://www.ipn.com.ar/?utm_source=app_ipn&amp;utm_medium=internal&amp;utm_campaign=ecosistema_ipn&amp;utm_content=ipn_app_footer&amp;utm_term=footer" target="_blank">infiniteLoop S.A.</a>
+                </div>
+                
+                <div class="fr" width="150px" style="text-align:right; width:100%;">
+                    
+                        <a class="text-decoration" href="https://app.ipn.com.ar/usersLog.asp" target="_blank" rel="noopener noreferrer">Última actividad de la cuenta</a>
+                    <br><br>
+                    
+                    Copyright © 2005 - 2026 <a href="https://www.ipn.com.ar/?utm_source=app_ipn&amp;utm_medium=internal&amp;utm_campaign=ecosistema_ipn&amp;utm_content=ipn_app_footer&amp;utm_term=footer" target="_blank">infiniteLoop S.A.</a> | iPN - Versión 2.4.0.6
+                </div>
+			</div>
+            
+
+			
+		
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($("form").length > 0) {
+            $("form").submit(function (event) {
+                if ($("input[name=userSessionGUID]").length == 0) {
+                    var inputToAppend = $("<input />");
+                    inputToAppend.attr({
+                        type: "hidden",
+                        name: "userSessionGUID",
+                        value: "{F965E1DF-7723-4DE3-B648-5416E3816A30}"
+                    });
+
+                    $(this).append(inputToAppend);
+                }
+            });
+        }
+    });
+
+</script>
+
+
+<style type="text/css">
+    .buttonBlue{
+        background-color: #080708!important ;
+        border: 1px solid#080708!important ; 
+        text-shadow: 1px 1px 1px grey;       
+    }
+    .btnAzul, .btn { 
+        background-color: #080708 ;
+        border-bottom: 1px solid#080708 ;
+        text-shadow: 1px 1px 1px grey;
+    }
+    .accDisp, .accDisp_sin_navegacion {
+        background-color: #080708 ;
+    }
+    .accDisp ul#menuAD, .accDisp_sin_navegacion ul#menuAD {
+        background-color: #080708 ;
+        border-top: 1px solid #080708;
+    }   
+    .dropdown-menu:not(.dropdown-menu-no-color, .bootstrap-datetimepicker-widget){
+        background-color: #080708!important ;
+        border: 1px solid#080708!important ; 
+
+    }
+</style>
+
+<style type="text/css">
+    .buttonBlue:hover { 
+        background-color: #fa4b73!important;
+    }
+    .btnAzul:hover, .btn:hover { 
+        background-color: #fa4b73 !important;
+    }
+    .accDisp:hover, .accDisp_sin_navegacion:hover, .dropdown-menu:not(.dropdown-menu-no-color, .bootstrap-datetimepicker-widget) .dropdown-item:hover {
+        background-color: #fa4b73 !important;
+    }
+    .accDisp ul#menuAD li:hover, .accDisp_sin_navegacion ul#menuAD li:hover {
+        background-color: #fa4b73;
+    }
+</style>
+
+<style type="text/css">
+    .buttonBlue { 
+        color: #f0e8f0!important ;
+    }
+    .btnAzul, .btn { 
+        color: #f0e8f0 !important;
+    }
+    .btnAzul:hover { 
+        color: #f0e8f0 ;
+    }
+    .accDisp ul#menuAD, .accDisp_sin_navegacion ul#menuAD {
+        color: #f0e8f0 ;
+    }
+    .accDisp ul#menuAD li:hover, .accDisp_sin_navegacion ul#menuAD li:hover {
+        color: #f0e8f0 ;
+    }
+    .accDisp span.btnAD, .accDisp_sin_navegacion span.btnAD {
+        color: #f0e8f0 ;
+    } 
+    .accDisp ul#menuAD li a, .accDisp_sin_navegacion ul#menuAD li a{
+        color: #f0e8f0 !important;
+    }
+
+    .dropdown-menu:not(.dropdown-menu-no-color):not(.bootstrap-datetimepicker-widget), .dropdown-menu:not(.dropdown-menu-no-color):not(.bootstrap-datetimepicker-widget) a{
+        color: #f0e8f0 !important;
+
+    }
+</style>
+     
+
+<script type="text/javascript">
+(function () {
+    if (window.__SENTRY_LOADED__) return;
+    window.__SENTRY_LOADED__ = true;
+
+    // AV: 2026-07-21: PostHog 019f8121 — TypeError createPolicy "default" already exists.
+    // Nuestro repo no llama createPolicy; Sentry loader trae browser.sentry-cdn.com/bundle.min.js
+    // y/o extensiones crean policy "default". Un segundo createPolicy("default") tira TypeError
+    // (stack Unknown Source). Hacemos "default" idempotente ANTES de cargar el bundle.
+    (function () {
+        if (window.__IPN_TT_DEFAULT_PATCHED__) { return; }
+        var tt = window.trustedTypes;
+        if (!tt || typeof tt.createPolicy !== "function") { return; }
+        window.__IPN_TT_DEFAULT_PATCHED__ = true;
+        var orig = tt.createPolicy.bind(tt);
+        tt.createPolicy = function (name, rules) {
+            try {
+                return orig(name, rules);
+            } catch (e) {
+                var msg = (e && e.message) ? String(e.message) : String(e);
+                if (name === "default" && /already exists/i.test(msg)) {
+                    if (tt.defaultPolicy) { return tt.defaultPolicy; }
+                    return {
+                        name: "default",
+                        createHTML: function (s) { return s; },
+                        createScript: function (s) { return s; },
+                        createScriptURL: function (s) { return s; }
+                    };
+                }
+                throw e;
+            }
+        };
+    })();
+
+    //levantamos Sentry
+    var s = document.createElement("script");
+    s.src = "https://app.ipn.com.ar/system/js/sentry.min.js";
+    s.crossOrigin = "anonymous";
+
+    s.onload = function () {
+        if (!window.Sentry) return;
+
+        Sentry.init({
+            tracesSampleRate: 0, //monitorea performance, timings, spans, tracing, no hace falta para nuestro uso
+            replaysSessionSampleRate: 0, // graba mouse, clicks, inputs etc, tampoco lo queremos
+            replaysOnErrorSampleRate: 0, // por lo que lei, esto graba un frame cuando ocurre un error, tampoco aplica, muy pesado
+            // AV: 2026-07-21: mismo PostHog 019f8121 — no reportar duplicado de policy default
+            // AV: 2026-07-28: JAVASCRIPT-7B — "Script error." / ErrorEvent sin stack (CDN cross-origin).
+            // Alineado con ipnPosthogBeforeSend / pie_secure.
+            ignoreErrors: [
+                /Policy with name ["']default["'] already exists/i,
+                /^Script error\.?$/,
+                /^ErrorEvent$/i,
+                /ErrorEvent ['"]?captured as exception/i,
+                /Non-Error (exception|promise rejection) captured with keys/i,
+                /captured as exception with keys:\s*isTrusted/i,
+                // AV: 2026-07-28: JAVASCRIPT-7C — "Error: Aa" en salesOrder/default.asp (CETROGAR).
+                // AV: 2026-07-28: JAVASCRIPT-7F — "Error: fa" en salesOrder/details.asp (CETROGAR).
+                // AV: 2026-07-31: JAVASCRIPT-7P — "Error: fa" en salesPoint/dashBoard/default.asp (CETROGAR).
+                // No existe throw "Aa"/"fa" en iPN ni en Kendo/Prism/jQuery locales: ruido de
+                // extensión/tercero sin stack accionable. No filtrar mensajes largos.
+                /^Aa$/,
+                /^Error:\s*Aa$/i,
+                /^fa$/,
+                /^Error:\s*fa$/i,
+                // AV: 2026-08-03: JAVASCRIPT-7Y — PostHog uuidv7 (browser-common) RangeError
+                // "invalid field value" si Date.now/RNG se rompen (polyfill/extensión; posthog-js#710).
+                // Stack 100% SDK; no hay throw en itemsModule/default.asp ni scripts de la página.
+                /^invalid field value$/i,
+                /RangeError:\s*invalid field value/i
+            ],
+            denyUrls: [
+                /^chrome-extension:\/\//i,
+                /^moz-extension:\/\//i,
+                /^safari-extension:\/\//i
+            ],
+            beforeSend: function (event) {
+                try {
+                    var msg = String((event && event.message) || "");
+                    var vals = (event && event.exception && event.exception.values) || [];
+                    var ex0 = vals.length ? vals[0] : null;
+                    var exType = String((ex0 && ex0.type) || "");
+                    var exVal = String((ex0 && ex0.value) || "");
+                    var blob = msg + "\n" + exType + "\n" + exVal;
+                    if (/Policy with name ["']default["'] already exists/i.test(blob) ||
+                        /\bScript error\.?\b/i.test(blob) ||
+                        /^ErrorEvent$/i.test(exType) ||
+                        /ErrorEvent captured as/i.test(blob) ||
+                        /Non-Error (exception|promise rejection) captured with keys/i.test(blob) ||
+                        /captured as exception with keys:\s*isTrusted/i.test(blob) ||
+                        /^Aa$/i.test(exVal.trim()) ||
+                        /^Error:\s*Aa$/i.test(msg.trim()) ||
+                        /^Error:\s*Aa$/i.test(exVal.trim()) ||
+                        // AV: 2026-07-28: JAVASCRIPT-7F — mismo drop que Aa para "Error: fa".
+                        // AV: 2026-07-31: JAVASCRIPT-7P — misma firma en salesPoint/dashBoard/default.asp.
+                        /^fa$/i.test(exVal.trim()) ||
+                        /^Error:\s*fa$/i.test(msg.trim()) ||
+                        /^Error:\s*fa$/i.test(exVal.trim()) ||
+                        // AV: 2026-08-03: JAVASCRIPT-7Y — drop PostHog uuidv7 RangeError.
+                        (/^RangeError$/i.test(exType) && /^invalid field value$/i.test(exVal.trim())) ||
+                        /RangeError:\s*invalid field value/i.test(msg) ||
+                        /^invalid field value$/i.test(exVal.trim())) {
+                        return null;
+                    }
+                } catch (e) { /* no bloquear envío por fallo del filtro */ }
+                return event;
+            }
+        });
+
+        // en este onLoad entra cuando captura algun error 
+        Sentry.onLoad(function () {
+            var scope = Sentry.getCurrentScope();
+
+            scope.setContext("Page", {
+                url: window.location.href
+            });
+
+            scope.setUser({
+                id: 7711
+            });
+
+            // aca logueamos toda la info del contexto del il_customer/user logueado
+            scope.setContext("IL_Customer", {"IL_CustomerID":310,"companyID":2,"userID":7711,"accountID":1,"accessType":2,"storeID":0,"stockType":1,"stockTypeDesc":"Productos","isFranchise":false,"companyCountryID":1,"companyCurrencyID":1});
+
+            // seteamos los tags para luego filtrar en la web de Sentry
+            scope.setTag("il_customer_id", "310");
+            scope.setTag("company_id", "2");
+            scope.setTag("access_type", "2");   
+            scope.setTag("app_domain", window.location.hostname);       
+        });
+    };
+
+    (document.head || document.body).appendChild(s);
+})();
+</script>
+
+
+<script type="text/javascript">
+(function () {
+    if (window.__POSTHOG_LOADED__) return;
+    window.__POSTHOG_LOADED__ = true;
+
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="Ji Yi init fn mn Ur pn bn cn capture calculateEventProperties Sn register register_once register_for_session unregister unregister_for_session Tn getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync Mn identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset shutdown setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty Cn xn createPersonProfile setInternalOrTestUser In hn Pn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing debug Vr Rt getPageViewId captureTraceFeedback captureTraceMetric an".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+
+    // AV: 2026-07-25: PostHog 019f81d1 — ErrorEvent/isTrusted (ruido SDK, no bug app).
+    // AV: 2026-07-21: PostHog 019f8121 — drop createPolicy default already exists.
+    // El filtro existía en master pero before_send se perdió del init al sumar capture_exceptions.
+    function ipnPosthogBeforeSend(event) {
+        if (!event || event.event !== "$exception") { return event; }
+        var props = event.properties || {};
+        var list = props["$exception_list"] || [];
+        var ex = list.length ? list[0] : null;
+        var type = String((ex && ex.type) || props["$exception_type"] || "");
+        var value = String((ex && ex.value) || props["$exception_message"] || "");
+		if (/Policy with name ["']default["'] already exists/i.test(value) ||
+			/^ErrorEvent$/i.test(type) ||
+			/ErrorEvent captured as/i.test(value) ||
+			/captured as exception with keys:\s*isTrusted/i.test(value) ||
+			/Non-Error exception captured with keys/i.test(value) ||
+			value === "Script error." || value === "Script error" ||
+			// AV: 2026-07-28: JAVASCRIPT-7C / 7F — mismo drop que Sentry para "Error: Aa" / "Error: fa".
+			// AV: 2026-07-31: JAVASCRIPT-7P — misma firma en salesPoint/dashBoard/default.asp.
+			value === "Aa" || /^Error:\s*Aa$/i.test(value) ||
+			value === "fa" || /^Error:\s*fa$/i.test(value) ||
+			// AV: 2026-08-03: JAVASCRIPT-7Y — mismo drop que Sentry para PostHog uuidv7.
+			(/^RangeError$/i.test(type) && /^invalid field value$/i.test(value.trim())) ||
+			/^invalid field value$/i.test(value.trim()) ||
+			/RangeError:\s*invalid field value/i.test(value)) {
+			return null;
+		}
+        return event;
+    }
+
+    posthog.init("phc_ndp4qixgWxW3LGvyQGgnvvt2UVREKGphTKMyCDvSoZdr", {
+        api_host: "https://us.i.posthog.com",
+        defaults: "2026-05-30",
+        person_profiles: "identified_only",
+        // AV: 2026-07-21: Sentry RangeError Maximum call stack size exceeded en iOS
+        // (Chrome Mobile) sobre pantallas pesadas (ej. admin/customers/details.asp).
+        // autocapture camina el DOM y en WebKit el stack es más chico → overflow.
+        autocapture: false,
+        capture_pageview: true,
+        disable_session_recording: true,
+        // AV: 2026-07-25: PostHog 019f81d1 — re-cablear before_send (se había perdido del init).
+        before_send: ipnPosthogBeforeSend,
+        capture_exceptions: {
+            capture_unhandled_errors: true,
+            capture_unhandled_rejections: true,
+            capture_console_errors: false
+        }
+    });
+
+    posthog.identify("7711");
+    posthog.group("company", "310");
+    posthog.register({
+        il_customer_id: 310,
+        company_id: 2,
+        access_type: 2,
+        module_id: 324,
+        store_id: 0,
+        app_area: "erp",
+        app_domain: window.location.hostname
+    });
+})();
+</script>
+
+		<div id="calendar" class="calendario"></div>
+	</form>
+
+<div class="ac_results" style="position: absolute; display: none; width: 260px; max-height: 300px; z-index: 9999;"></div><div class="k-widget k-window k-dialog" role="dialog" aria-labelledby="c44ebfbf-502e-4ed5-ba20-1e50dce8d697_title" style="width: 600px; display: none;"><div class="k-window-titlebar k-dialog-titlebar k-hstack" id="c44ebfbf-502e-4ed5-ba20-1e50dce8d697_title"><span class="k-window-title k-dialog-title">Ha ocurrido un error. Esta situación será notificada al equipo técnico.</span><div class="k-window-actions k-dialog-actions k-hstack"><a role="button" href="#" class="k-button k-button-md k-rounded-md k-button-flat k-button-flat-base k-icon-button k-window-action k-dialog-action k-dialog-close" title="Close" aria-label="Close" tabindex="0"><span class="k-button-icon k-icon k-i-close"></span></a></div></div><div id="autocompleteErrorAlert" data-role="dialog" class="k-window-content k-dialog-content" tabindex="0">
+		<pre id="txtBody" class="preArea"><code class="language-json" id="codeBody"></code></pre>
+	</div></div><div class="ac_results" style="display: none; position: absolute; width: 260px;"></div></body></html>

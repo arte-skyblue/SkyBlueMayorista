@@ -1,0 +1,600 @@
+[
+  {
+    "tag": "input",
+    "name": "exportMode",
+    "id": "exportModeScreen",
+    "type": "radio",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "exportMode",
+    "id": "exportModeDirect",
+    "type": "radio",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportType",
+    "id": "chkExportType1",
+    "type": "radio",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportType",
+    "id": "chkExportType3",
+    "type": "radio",
+    "value": "3"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportType",
+    "id": "chkExportType6",
+    "type": "radio",
+    "value": "6"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportType",
+    "id": "chkExportType10",
+    "type": "radio",
+    "value": "10"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportType",
+    "id": "chkExportType7",
+    "type": "radio",
+    "value": "7"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportType",
+    "id": "chkExportType2",
+    "type": "radio",
+    "value": "2"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportType",
+    "id": "chkExportType4",
+    "type": "radio",
+    "value": "4"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportType",
+    "id": "chkExportType5",
+    "type": "radio",
+    "value": "5"
+  },
+  {
+    "tag": "input",
+    "name": "importationType",
+    "id": "ImportationTypeEditStock",
+    "type": "radio",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "importationType",
+    "id": "ImportationTypeReplenishment",
+    "type": "radio",
+    "value": "2"
+  },
+  {
+    "tag": "input",
+    "name": "exportMode",
+    "id": "exportModeTask",
+    "type": "radio",
+    "value": "2"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportTypeTask",
+    "id": "chkExportTypeTask1",
+    "type": "radio",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportTypeTask",
+    "id": "chkExportTypeTask3",
+    "type": "radio",
+    "value": "3"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportTypeTask",
+    "id": "chkExportTypeTask6",
+    "type": "radio",
+    "value": "6"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportTypeTask",
+    "id": "chkExportTypeTask10",
+    "type": "radio",
+    "value": "10"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportTypeTask",
+    "id": "chkExportTypeTask7",
+    "type": "radio",
+    "value": "7"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportTypeTask",
+    "id": "chkExportTypeTask2",
+    "type": "radio",
+    "value": "2"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportTypeTask",
+    "id": "chkExportTypeTask4",
+    "type": "radio",
+    "value": "4"
+  },
+  {
+    "tag": "input",
+    "name": "chkExportTypeTask",
+    "id": "chkExportTypeTask5",
+    "type": "radio",
+    "value": "5"
+  },
+  {
+    "tag": "input",
+    "name": "importationTypeTask",
+    "id": "ImportationTypeEditStockTask",
+    "type": "radio",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "importationTypeTask",
+    "id": "ImportationTypeReplenishmentTask",
+    "type": "radio",
+    "value": "2"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "",
+    "type": "button",
+    "value": "Cerrar"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "btn_confirm",
+    "type": "button",
+    "value": "Generar"
+  },
+  {
+    "tag": "input",
+    "name": "doAction",
+    "id": "doAction",
+    "type": "hidden",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "productDesc",
+    "id": "productDesc",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "providerDesc",
+    "id": "providerDesc",
+    "type": "hidden",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "seasonDesc",
+    "id": "seasonDesc",
+    "type": "hidden",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "searchType",
+    "id": "equalSearch",
+    "type": "radio",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "searchType",
+    "id": "likeSearch",
+    "type": "radio",
+    "value": "2"
+  },
+  {
+    "tag": "input",
+    "name": "masterPIDToFilter",
+    "id": "masterPIDToFilter",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "productTypeDesc",
+    "id": "productTypeDesc",
+    "type": "hidden",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "materialDesc",
+    "id": "materialDesc",
+    "type": "hidden",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "displayOnlyStock",
+    "id": "displayOnlyStock",
+    "type": "checkbox",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "displayOnlyImported",
+    "id": "displayOnlyImported",
+    "type": "hidden",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "chkAllStores",
+    "id": "chkAllStores",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "storeCompany",
+    "id": "storeCompanyID_1",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "storeType",
+    "id": "storeType_1",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "storeIDToFilterStr",
+    "id": "storeIDToFilter_1",
+    "type": "checkbox",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "storeIDToFilterStr",
+    "id": "storeIDToFilter_9",
+    "type": "checkbox",
+    "value": "9"
+  },
+  {
+    "tag": "input",
+    "name": "storeType",
+    "id": "storeType_2",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "storeIDToFilterStr",
+    "id": "storeIDToFilter_3",
+    "type": "checkbox",
+    "value": "3"
+  },
+  {
+    "tag": "input",
+    "name": "storeType",
+    "id": "storeType_12",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "storeIDToFilterStr",
+    "id": "storeIDToFilter_10",
+    "type": "checkbox",
+    "value": "10"
+  },
+  {
+    "tag": "input",
+    "name": "storeCompany",
+    "id": "storeCompanyID_2",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "storeType",
+    "id": "storeType_1",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "storeIDToFilterStr",
+    "id": "storeIDToFilter_5",
+    "type": "checkbox",
+    "value": "5"
+  },
+  {
+    "tag": "input",
+    "name": "storeType",
+    "id": "storeType_2",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "storeIDToFilterStr",
+    "id": "storeIDToFilter_6",
+    "type": "checkbox",
+    "value": "6"
+  },
+  {
+    "tag": "input",
+    "name": "B2BstoreIDToFilter",
+    "id": "B2BstoreIDToFilter",
+    "type": "hidden",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "statusFilterAll",
+    "id": "statusFilterAll",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "statusFilterActived",
+    "id": "statusFilterActivedLbl",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "statusFilterPending",
+    "id": "statusFilterPendingLbl",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "statusFilterNoActivated",
+    "id": "statusFilterNoActivatedLbl",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "statusFilterPaused",
+    "id": "statusFilterPausedLbl",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "statusFilterProgramming",
+    "id": "statusFilterProgrammingLbl",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "statusFinished",
+    "id": "statusFinishedLbl",
+    "type": "checkbox",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "btnSearch",
+    "type": "button",
+    "value": "Buscar"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "storeID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "storeID2",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "storeIDTask",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "storeID2Task",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "providerID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "trademarkID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "seasonID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "productTypeID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "materialID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "lineID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "displayOnlyB2B",
+    "optionsCount": 3,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      },
+      {
+        "value": "1",
+        "text": "Publicado en iB2B"
+      },
+      {
+        "value": "2",
+        "text": "Sin publicar en iB2B"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "displayProductsAssociates",
+    "optionsCount": 3,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      },
+      {
+        "value": "1",
+        "text": "Publicado en MeLi"
+      },
+      {
+        "value": "2",
+        "text": "Sin publicar en Meli"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "displayOnlyTDN",
+    "optionsCount": 3,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      },
+      {
+        "value": "1",
+        "text": "Publicado en TDN"
+      },
+      {
+        "value": "2",
+        "text": "Sin publicar en TDN"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "TDNstoreIDToFilter",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  }
+]

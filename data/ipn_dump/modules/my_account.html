@@ -1,0 +1,927 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>
+		Mi cuenta :: iPN - ERP Cloud SaaS
+	</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	
+	<script src="https://code.jquery.com/jquery-4.0.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://app.ipn.com.ar/system/core/coreFunctionsv2.js?build=202608211036"></script>
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
+	<script type="text/javascript">
+        var coupon = '0';
+
+        function openPasswordPopUp() {
+            iPNpopup(1, 'iPNpopUpDivBootstrap');
+            $('#newPassword').trigger('focus');
+        }
+
+        $(function () {
+            setTimeout(function () { $(".ipn-notice--success.is-auto-hide").slideUp() }, 3500);
+            $(".ipn-notice__close").on("click", function () {
+                var el = this.closest ? this.closest(".ipn-notice") : this.parentNode;
+                if (!el) return;
+                el.classList.add("is-dismissing");
+                setTimeout(function () {
+                    if (el && el.parentNode) el.parentNode.removeChild(el);
+                }, 280);
+            });
+
+            //Selector de tabs — IDs tabN / cntTabN preservados
+            $(".ipn-tabs a[id^=tab]").on("click", function (e) {
+                e.preventDefault();
+                $(".ipn-tabs a[id^=tab]").removeClass("active is-active");
+                $("div[id^='cntTab']").hide();
+                $(this).addClass("active is-active");
+                $("#cntTab" + $(this)[0].id.substr(3, 1)).show();
+
+                //Cuando hago click en el tab de cuenta de usuario, aparece Editar + Cambiar contraseña.
+                if ($(this).attr("id") == "tab1") {
+                    $('#lnkEditUser, #lnkEditPw').show();
+                } else {
+                    $('#lnkEditUser, #lnkEditPw').hide();
+                }
+
+                //Cuando hago click en el tab de cuenta de Cta. cte. con franquiciante, aparece el botón de lista de compras.
+                if ($(this).attr("id") == "tab5") {
+                    $('#lnkListUser').show();
+                } else {
+                    $('#lnkListUser').hide();
+                }
+            });
+
+            if (coupon != "0") {
+                $("#tab4").trigger("click");
+            }
+
+            $("#tab0").trigger("click");
+
+            var password = document.getElementById("newPassword");
+            var confirm_password = document.getElementById("newPassword2");
+            function validatePassword() {
+                if (password && confirm_password) {
+                    if (password.value != confirm_password.value) {
+                        confirm_password.setCustomValidity("Las contrase\u00f1as no coinciden");
+                    } else {
+                        confirm_password.setCustomValidity('');
+                    }
+                }
+            }
+            if (password && confirm_password) {
+                password.onchange = validatePassword;
+                confirm_password.onkeyup = validatePassword;
+            }
+
+            $("#lnkEditPw").on("click", function () { openPasswordPopUp(); });
+
+            $("#savePassword").on("click", function () {
+                var $btn = $(this);
+                ipnConfirm({
+                    title: "Actualizar contrase\u00f1a",
+                    message: "\u00bfEst\u00e1 seguro que desea actualizar la contrase\u00f1a del usuario?",
+                    confirmText: "Actualizar",
+                    cancelText: "Cancelar",
+                    icon: "lock"
+                }).then(function (ok) {
+                    if (!ok) return;
+
+                    var newPassword = $("#newPassword").val();
+                    var newPassword2 = $("#newPassword2").val();
+
+                    if (newPassword == '' || newPassword2 == '') {
+                        ipnAlert({ title: "Dato requerido", message: "Por favor complete todos los campos.", confirmText: "Entendido", icon: "error" });
+                        return;
+                    }
+                    if (newPassword != newPassword2) {
+                        ipnAlert({ title: "Contrase\u00f1a", message: "Las contrase\u00f1as no coinciden.", confirmText: "Entendido", icon: "error" });
+                        return;
+                    }
+                    if (newPassword == '1234' || newPassword == '12345' || newPassword == '123456' || newPassword == 'Abcd1234') {
+                        ipnAlert({ title: "Contrase\u00f1a", message: "La contrase\u00f1a elegida no es v\u00e1lida.", confirmText: "Entendido", icon: "error" });
+                        return;
+                    }
+                    if (newPassword.length < 4) {
+                        ipnAlert({ title: "Contrase\u00f1a", message: "La contrase\u00f1a no puede tener menos de cuatro caracteres.", confirmText: "Entendido", icon: "error" });
+                        return;
+                    }
+
+                    $btn.addClass("is-loading");
+                    $.ajax({
+                        url: 'secure/ws/securityWS.asp',
+                        type: "POST",
+                        dataType: "json",
+                        data: {
+                            doAction: '7',
+                            newPassword: newPassword,
+                            userIDToFilter: 7711
+                        },
+                        success: function (data) {
+                            $btn.removeClass("is-loading");
+                            if (data == "1") {
+                                iPNpopupClose('iPNpopUpDivBootstrap');
+                                $("#newPassword").val("");
+                                $("#newPassword2").val("");
+                                window.location.href = "myAccount.asp?tab=1&success=4";
+                            } else {
+                                $("#errorDescPw").html('No se pudo actualizar la contrase\u00f1a.');
+                                $("#msjErrorPw").show();
+                            }
+                        },
+                        error: function () {
+                            $btn.removeClass("is-loading");
+                            $("#errorDescPw").html('No se pudo actualizar la contrase\u00f1a.');
+                            $("#msjErrorPw").show();
+                        }
+                    });
+                });
+            });
+        });
+        window.addEventListener('load', function () {
+
+            const googleApiKey = $('#googleApiKey').val();
+			if (!googleApiKey) {
+					return; 
+			}
+
+            window.client = google.accounts.oauth2.initTokenClient({
+                client_id: googleApiKey,
+                scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email',
+                callback: useGoogleIdTokenForAuth
+            });
+        });
+        async function useGoogleIdTokenForAuth(response) {
+            try {
+                var url = "https://www.googleapis.com/oauth2/v3/userinfo?access_token=" + response.access_token;
+                $.ajax({
+                    url: url,
+                    dataType: 'json',
+                    success: function (data) {
+                        console.log("ins")
+                        if (data.email && data.sub > 0 && data.given_name && data.family_name) {
+                            var postData = { googleEmail: data.email, googleAccountID: data.sub, doAction: 7 };
+                            registerIdToken(postData);
+                        }
+
+                    }
+                });
+            } catch (e) {
+                console.log(e);
+            }
+        }
+        function registerIdToken(postData) {
+            $.ajax({
+                url: '/users/ws/ws.asp',
+                dataType: 'json',
+                data: postData,
+                success: function (data) {
+                    if (data.bResult == 1) {
+                        $("#msjDivSuccess").show();
+                        $("#succesText").html("El usuario fue vinculado con la cuenta de Google exitosamente.");
+                        $("#msjError").hide();
+                        $("#googleEmail").html(data.googleEmail)
+                        $("#linkGoogleAccount")
+                            .attr("Title", "Vincular otra cuenta")
+                            .attr("alt", "Vincular otra cuenta");
+                        $("#unlinkGoogleAccount").show();
+                    }
+                    else {
+                        $("#msjError").html(data.errorDesc);
+                        $("#msjError").show();
+                    }
+
+                }
+            });
+        }
+        function unlinkUser() {
+            ipnConfirm({
+                title: "Desvincular Google",
+                message: "\u00bfDesea desasociar su usuario con la cuenta de Google?",
+                confirmText: "Desvincular",
+                cancelText: "Cancelar",
+                icon: "link_off"
+            }).then(function (ok) {
+                if (!ok) return;
+                $.ajax({
+                    url: '/users/ws/ws.asp',
+                    dataType: 'json',
+                    data: { doAction: 8 },
+                    success: function (data) {
+                        if (data.bResult == 1) {
+                            $("#msjDivSuccess").show();
+                            $("#succesText").html("El usuario fue desvinculado exitosamente.");
+                            $("#msjError").hide();
+                            $("#googleEmail").html("No vinculado");
+                            $("#linkGoogleAccount")
+                                .attr("Title", "Vincular cuenta")
+                                .attr("alt", "Vincular cuenta");
+                            $("#unlinkGoogleAccount").hide();
+                        }
+                        else {
+                            $("#msjError").html(data.errorDesc);
+                            $("#msjError").show();
+                        }
+                    }
+                });
+            });
+        }
+
+    </script>
+</head>
+<body class="ipn2">
+	
+
+
+
+<style type="text/css">@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}</style>
+<style type="text/css">@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link rel="stylesheet" type="text/css" href="https://app.ipn.com.ar/system/style/iPN2.css?build=202608211036">
+<script type="text/javascript">var systemFolder = 'https://app.ipn.com.ar/system';</script>
+<script type="text/javascript" src="https://app.ipn.com.ar/system/js/ipn-dialog.js?build=202608211036"></script>
+<script type="text/javascript" src="https://app.ipn.com.ar/system/js/ipn-user-menu.js?build=202608211036"></script>
+
+
+<div class="wraper ipn-ap-wrap" style="--ipn-header-bg:#000000;--ipn-header-fg:#ffffff;--ipn-header-muted:#aebbd4;--ipn-header-border:rgba(255,255,255,.55);--ipn-header-avatar:#2f6bb5;--ipn-brand:#000000;--ipn-brand-hover:#707070;--ipn-brand-fg:#ffffff;">
+<div class="main_content ipn-ap">
+<header class="ipn-ap-topbar" role="banner">
+	<div class="ipn-ap-topbar__inner">
+		<a class="ipn-ap-topbar__brand" href="https://app.ipn.com.ar/adminPanel.asp" title="Panel de administraci&oacute;n">
+			<img class="ipn-ap-topbar__logo" alt="iPN" src="https://app.ipn.com.ar/system/images/logos/customization/310_335.jpg?rnd=202608211036" />
+		</a>
+		
+		<div class="ipn-ap-topbar__account">
+			
+			<button type="button" class="ipn-user-menu-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="ipnUserMenu" title="Men&uacute; de usuario">
+				<span class="ipn-ap-topbar__identity">
+					<span class="ipn-ap-topbar__name" title="avalos, juliana">avalos, juliana</span>
+					<span class="ipn-ap-topbar__role">46792-juli - Administrador de cuenta</span>
+				</span>
+				<span class="ipn-ap-topbar__avatar" aria-hidden="true">JA</span>
+			</button>
+			
+<div class="ipn-user-menu" id="ipnUserMenu" role="menu" aria-hidden="true" hidden>
+	<div class="ipn-user-menu__identity">
+		<div class="ipn-user-menu__avatar" aria-hidden="true">JA</div>
+		<div class="ipn-user-menu__who">
+			<div class="ipn-user-menu__who-name">avalos, juliana</div>
+			<div class="ipn-user-menu__who-role">46792-juli - adminitrativo</div>
+			<div class="ipn-user-menu__who-code">C&oacute;digo de soporte: <span class="ipn-mono">#07711</span></div>
+		</div>
+	</div>
+
+	<div class="ipn-user-menu__primary">
+		<a class="ipn-user-menu__btn-account" href="https://app.ipn.com.ar/myAccount.asp?tab=1" role="menuitem">
+			<span class="material-symbols-rounded" aria-hidden="true">person</span>
+			Mi cuenta
+		</a>
+	</div>
+
+	<nav class="ipn-user-menu__nav" aria-label="Accesos de cuenta">
+		<a class="ipn-user-menu__item" href="https://app.ipn.com.ar/adminPanel.asp" role="menuitem">
+			<span class="ipn-user-menu__item-icon ipn-user-menu__item-icon--blue" aria-hidden="true"><span class="material-symbols-rounded">apartment</span></span>
+			<span class="ipn-user-menu__item-label">Panel de administraci&oacute;n</span>
+			<span class="material-symbols-rounded ipn-user-menu__item-arrow" aria-hidden="true">chevron_right</span>
+		</a>
+
+		
+		<a class="ipn-user-menu__item" href="https://app.ipn.com.ar/techSupport/default.asp" role="menuitem">
+			<span class="ipn-user-menu__item-icon ipn-user-menu__item-icon--teal" aria-hidden="true"><span class="material-symbols-rounded">support_agent</span></span>
+			<span class="ipn-user-menu__item-label">Mesa de ayuda</span>
+			<span class="material-symbols-rounded ipn-user-menu__item-arrow" aria-hidden="true">chevron_right</span>
+		</a>
+		
+
+		<a class="ipn-user-menu__item" href="https://app.ipn.com.ar/services/login/zendesk.asp?stockType=1" target="_blank" rel="noopener noreferrer" role="menuitem">
+			<span class="ipn-user-menu__item-icon ipn-user-menu__item-icon--violet" aria-hidden="true"><span class="material-symbols-rounded">school</span></span>
+			<span class="ipn-user-menu__item-label">iPN University</span>
+			<span class="material-symbols-rounded ipn-user-menu__item-arrow" aria-hidden="true">chevron_right</span>
+		</a>
+
+		
+		<a class="ipn-user-menu__item" href="https://app.ipn.com.ar/messages.asp" role="menuitem" title="Mensajes">
+			<span class="ipn-user-menu__item-icon ipn-user-menu__item-icon--amber" aria-hidden="true"><span class="material-symbols-rounded">mail</span></span>
+			<span class="ipn-user-menu__item-label">Mensajes</span>
+			<span class="material-symbols-rounded ipn-user-menu__item-arrow" aria-hidden="true">chevron_right</span>
+		</a>
+		
+	</nav>
+
+	<div class="ipn-user-menu__actions">
+		
+		<a class="ipn-user-menu__btn-action" href="https://app.ipn.com.ar/defaultSelectedCompany.asp" role="menuitem">
+			<span class="material-symbols-rounded" aria-hidden="true">apartment</span>
+			Seleccionar RS
+		</a>
+		<a class="ipn-user-menu__btn-action" href="https://app.ipn.com.ar/logout.asp" role="menuitem">
+			<span class="material-symbols-rounded" aria-hidden="true">logout</span>
+			Cerrar sesi&oacute;n
+		</a>
+	</div>
+</div>
+
+		</div>
+	</div>
+</header>
+
+	<div id="iPNpopUpDivBootstrap" class="iPNpopUpDiv ipn-my-account-pw">
+		<div class="ipn-my-account-pw__head">
+			<div class="ipn-my-account-pw__icon" aria-hidden="true">
+				<span class="material-symbols-rounded">lock</span>
+			</div>
+			<div>
+				<h2 class="ipn-my-account-pw__title">Cambiar contrase&ntilde;a</h2>
+				<p class="ipn-my-account-pw__sub">Ingrese la nueva contrase&ntilde;a del usuario.</p>
+			</div>
+		</div>
+		<div class="ipn-my-account-pw__body">
+			<div class="ipn-notice ipn-notice--warning" id="msjErrorPw" style="display:none;" role="alert">
+				<span class="material-symbols-rounded ipn-notice__icon" aria-hidden="true">warning</span>
+				<div class="ipn-notice__body" id="errorDescPw"></div>
+				<button type="button" class="ipn-notice__close" aria-label="Cerrar" onclick="$('#msjErrorPw').hide();">
+					<span class="material-symbols-rounded" aria-hidden="true">close</span>
+				</button>
+			</div>
+			<div class="ipn-form-grid ipn-form-grid--2">
+				<div class="ipn-field ipn-field--full">
+					<label class="ipn-label" for="newPassword">Nueva contrase&ntilde;a <span class="ipn-req">*</span></label>
+					<input class="ipn-input" type="password" maxlength="20" name="newPassword" id="newPassword" tabindex="10" autocomplete="new-password" />
+				</div>
+				<div class="ipn-field ipn-field--full">
+					<label class="ipn-label" for="newPassword2">Repita la contrase&ntilde;a <span class="ipn-req">*</span></label>
+					<input class="ipn-input" type="password" maxlength="20" name="newPassword2" id="newPassword2" tabindex="11" autocomplete="new-password" />
+				</div>
+			</div>
+		</div>
+		<div class="ipn-my-account-pw__actions">
+			<button type="button" class="ipn-btn ipn-btn--secondary" id="editCancelBtn" onclick="iPNpopupClose('iPNpopUpDivBootstrap');">Cancelar</button>
+			<button type="button" id="savePassword" class="ipn-btn ipn-btn--primary">
+				<span class="material-symbols-rounded" aria-hidden="true">save</span>
+				Guardar
+			</button>
+		</div>
+	</div>
+
+	<div class="ipn-ap__body ipn-my-account">
+			
+
+		<nav class="ipn-breadcrumb" aria-label="Navegaci&oacute;n">
+			<a href="https://app.ipn.com.ar/adminPanel.asp">Panel de administraci&oacute;n</a>
+			<span class="material-symbols-rounded" aria-hidden="true">chevron_right</span>
+			<b>Mi cuenta</b>
+		</nav>
+
+		<div class="ipn-page-head">
+			<div class="ipn-page-head__icon" aria-hidden="true">
+				<span class="material-symbols-rounded">person</span>
+			</div>
+			<div class="ipn-page-head__text">
+				<h1 class="ipn-page-title">Mi cuenta</h1>
+				<div class="ipn-page-subtitle">Datos personales, empresa, soluciones y estado de cuenta.</div>
+			</div>
+			<div class="ipn-page-head__actions">
+				<a class="ipn-btn ipn-btn--primary" id="lnkEditUser" href="myAccountEdit.asp">
+					<span class="material-symbols-rounded" aria-hidden="true">edit</span>
+					Editar
+				</a>
+				<button type="button" class="ipn-btn ipn-btn--secondary" id="lnkEditPw">
+					<span class="material-symbols-rounded" aria-hidden="true">lock_reset</span>
+					Cambiar contrase&ntilde;a
+				</button>
+				<a class="ipn-btn ipn-btn--secondary" id="lnkListUser" href="salesListFranchise.asp" style="display:none;">
+					<span class="material-symbols-rounded" aria-hidden="true">receipt_long</span>
+					Listado de compras
+				</a>
+			</div>
+		</div>
+
+			<!-- Mensaje de confirmación -->
+			<div id="msjDivSuccess" class="ipn-notice ipn-notice--success is-auto-hide" style="display:none;" role="status">
+				<span class="material-symbols-rounded ipn-notice__icon" aria-hidden="true">check_circle</span>
+				<div class="ipn-notice__body" id="succesText"></div>
+				<button type="button" class="ipn-notice__close" aria-label="Cerrar">
+					<span class="material-symbols-rounded" aria-hidden="true">close</span>
+				</button>
+			</div>
+			<div id="msjError" class="ipn-notice ipn-notice--danger" style="display:none;" role="alert">
+				<span class="material-symbols-rounded ipn-notice__icon" aria-hidden="true">error</span>
+				<div class="ipn-notice__body">No se ha podido editar el usuario.</div>
+				<button type="button" class="ipn-notice__close" aria-label="Cerrar">
+					<span class="material-symbols-rounded" aria-hidden="true">close</span>
+				</button>
+			</div>
+			
+			<!--/Mensaje de confirmación -->
+
+			<div class="ipn-card">
+			<div class="ipn-tabs" role="tablist">
+					<a href="#" id="tab1" class="ipn-tabs__item active is-active" role="tab" name="tab">Datos personales</a>
+					<a href="#" id="tab2" class="ipn-tabs__item" role="tab" name="tab">Datos de la empresa</a>
+					<a href="#" id="tab3" class="ipn-tabs__item" role="tab" name="tab">Soluciones disponibles</a>
+			
+					<a href="#" id="tab4" class="ipn-tabs__item" role="tab" name="tab">Estado de cuenta</a>
+			
+					<a href="#" id="tab6" class="ipn-tabs__item" role="tab" name="tab">&Uacute;ltima actividad</a>
+					
+			</div>
+				<div class="ipn-card__body">
+					<div id="cntTab1">
+						<h2 class="ipn-sec-title">Detalles de la cuenta</h2>
+						<div class="ipn-kv-grid" id="tableBody">
+
+							<div class="ipn-kv">
+								<span class="ipn-kv__label">Nombre de usuario</span>
+								<div class="ipn-kv__value">
+									46792-juli
+								</div>
+							</div>
+							<div class="ipn-kv">
+								<span class="ipn-kv__label">Nombre</span>
+								<div class="ipn-kv__value">
+									juliana
+								</div>
+							</div>
+							
+							<div class="ipn-kv">
+								<span class="ipn-kv__label">Apellido</span>
+								<div class="ipn-kv__value">
+									avalos
+								</div>
+							</div>
+							<div class="ipn-kv">
+								<span class="ipn-kv__label">Cargo</span>
+								<div class="ipn-kv__value">
+									adminitrativo
+								</div>
+							</div>
+							<div class="ipn-kv">
+								<span class="ipn-kv__label">Tipo de acceso</span>
+								<div class="ipn-kv__value">
+									Administrador de cuenta
+								</div>
+							</div>
+							<div class="ipn-kv">
+								<span class="ipn-kv__label">Email</span>
+								<div class="ipn-kv__value">
+									<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b4d0d5daddd1d8d3c6d5c7c7dbf4c7dfcdd6d8c1d19ad7dbd99ad5c6">[email&#160;protected]</a>
+								</div>
+							</div>
+							<div class="ipn-kv">
+								<span class="ipn-kv__label">Tel&eacute;fono</span>
+								<div class="ipn-kv__value">
+									44623984
+								</div>
+							</div>
+							<div class="ipn-kv">
+								<span class="ipn-kv__label">Sucursal asignada</span>
+								<div class="ipn-kv__value">
+									< No disponible >
+								</div>
+							</div>
+
+						
+
+						</div>
+					</div>
+					
+					<div id="cntTab2" style="display:none">
+						<h2 class="ipn-sec-title">Datos de la empresa</h2>
+						<div class="ipn-kv-grid">
+
+						<div class="ipn-kv">
+							<span class="ipn-kv__label">Grupo de empresas</span>
+							<div class="ipn-kv__value">
+								SKY BLUE
+							</div>
+						</div>
+						<div class="ipn-kv">
+							<span class="ipn-kv__label">Persona de contacto</span>
+							<div class="ipn-kv__value">
+								Grasso, Daniel
+							</div>
+						</div>
+						<div class="ipn-kv">
+							<span class="ipn-kv__label">Fecha de activaci&oacute;n</span>
+							<div class="ipn-kv__value">
+								18/12/2019
+							</div>
+						</div>
+                        
+						<div class="ipn-kv ipn-kv--full">
+							<span class="ipn-kv__label">Estado del contrato</span>
+							<div class="ipn-kv__value">
+								<div class="ipn-my-account__toc-row">
+                                
+									<span class="ipn-badge ipn-badge--warning">Sin firmar</span>
+									<a class="ipn-btn ipn-btn--secondary ipn-btn--sm" href="updateToc.asp">
+										<span class="material-symbols-rounded" aria-hidden="true">draw</span>
+										Firmar contrato
+									</a>
+                                
+								</div>
+							</div>
+                        </div>
+						</div>
+					</div>
+
+					<div id="cntTab3" style="display:none">
+						
+						<h2 class="ipn-sec-title">Soluciones disponibles</h2>
+						<div class="ipn-my-account__apps">
+								<a class="ipn-my-account__app" href="https://ipn.com.ar/sistema-de-control-de-produccion" target="_blank" rel="noopener noreferrer" title="Click para ver los detalles">
+										<img class="ipn-my-account__app-img" alt="MRP" src="https://app.ipn.com.ar/system/images/bootstrapIcons/MRP-icon.png" />
+										<span class="ipn-my-account__app-title">MRP | Sistema de Control de producci&oacute;n</span>
+								</a>
+								<a class="ipn-my-account__app" href="https://ipn.com.ar/sistema-de-gestion-empresarial" target="_blank" rel="noopener noreferrer" title="Click para ver los detalles">
+										<img class="ipn-my-account__app-img" alt="ERP" src="https://app.ipn.com.ar/system/images/bootstrapIcons/ERP-icon.png" />
+										<span class="ipn-my-account__app-title">ERP | Sistema de gesti&oacute;n empresarial</span>
+								</a>
+								<a class="ipn-my-account__app" href="https://ipn.com.ar/puntos-de-venta" target="_blank" rel="noopener noreferrer" title="Click para ver los detalles">
+										<img class="ipn-my-account__app-img" alt="POS" src="https://app.ipn.com.ar/system/images/bootstrapIcons/POS.png" />
+										<span class="ipn-my-account__app-title">POS | Puntos de venta</span>
+								</a>
+								<a class="ipn-my-account__app is-disabled" href="https://ipn.com.ar/e-commerce" target="_blank" rel="noopener noreferrer" title="Click para ver los detalles">
+										<img class="ipn-my-account__app-img" alt="B2C" src="https://app.ipn.com.ar/system/images/bootstrapIcons/iB2C-icon.png" />
+										<span class="ipn-my-account__app-title">B2C | E-commerce 360&deg;</span>
+								</a>
+								<a class="ipn-my-account__app" href="https://ipn.com.ar/plataforma-web-de-ventas-mayoristas" target="_blank" rel="noopener noreferrer" title="Click para ver los detalles">
+										<img class="ipn-my-account__app-img" alt="B2B" src="https://app.ipn.com.ar/system/images/bootstrapIcons/iB2B.png" />
+										<span class="ipn-my-account__app-title">B2B | Plataforma web de ventas mayoristas</span>
+								</a>
+								<div class="ipn-my-account__app is-disabled" title="Click para ver los detalles">
+										<img class="ipn-my-account__app-img" alt="iPN API" src="https://content.ipn.com.ar/Repository/74/5/resources/images/iPN-API-image-transparente.png" />
+										<span class="ipn-my-account__app-title">iPN API</span>
+								</div>
+								<a class="ipn-my-account__app" href="https://ipn.com.ar/e-commerce" target="_blank" rel="noopener noreferrer" title="Click para ver los detalles">
+										<img class="ipn-my-account__app-img" alt="Mercado Libre" src="https://app.ipn.com.ar/system/images/bootstrapIcons/ML-icon.png" />
+										<span class="ipn-my-account__app-title">Integraci&oacute;n con Mercado Libre</span>
+								</a>
+								<a class="ipn-my-account__app" href="https://ipn.com.ar/e-commerce" target="_blank" rel="noopener noreferrer" title="Click para ver los detalles">
+										<img class="ipn-my-account__app-img" alt="Mercado Shops" src="https://app.ipn.com.ar/system/images/bootstrapIcons/MS-icon.png" />
+										<span class="ipn-my-account__app-title">Integraci&oacute;n con Mercado Shops</span>
+								</a>
+								
+								<a class="ipn-my-account__app" href="https://ipn.com.ar/e-commerce" target="_blank" rel="noopener noreferrer" title="Click para ver los detalles">
+										<img class="ipn-my-account__app-img" alt="TiendaNube" src="https://app.ipn.com.ar/system/images/bootstrapIcons/TN-icon.png" />
+										<span class="ipn-my-account__app-title">Integraci&oacute;n con Tienda Nube</span>
+								</a>
+								<a class="ipn-my-account__app" href="https://ipn.com.ar/e-commerce" target="_blank" rel="noopener noreferrer" title="Click para ver los detalles">
+										<img class="ipn-my-account__app-img" alt="Provincia compras" src="https://content.ipn.com.ar/Repository/74/5/resources/images/Soluciones-prov-compras.png" />
+										<span class="ipn-my-account__app-title">Integraci&oacute;n con Provincia compras</span>
+								</a>
+						</div>
+						
+					</div>
+					<div id="cntTab4" style="display:none">
+						
+						    <h2 class="ipn-sec-title">SKY BLUE - Estado de cuenta</h2>
+								<div class="ipn-table-wrap">
+									<table class="ipn-table">
+													<thead>
+													<tr>
+														<th>Razón social</th>
+														<th>Ciclo de facturación</th>
+														<th>Método de pago</th>
+														<th class="ipn-num">Saldo</th>
+													</tr>
+													</thead>
+													<tbody>
+													
+															<tr>
+																<td><strong>DANIEL ALEJANDRO GRASSO</strong></td>
+																<td>Mes adelantado</td>
+																<td>CBU Santander Río</td>
+																<td class="ipn-num">
+																	<a title="Visualizar la cuenta corriente"  href="billingDetails.asp?IL_Customer_GUID=637A9372-BF98-4555-9034-FD2BAF034F07&customerID=443352&filterCompanyID=1&totalAmt=&customerName=DANIEL ALEJANDRO GRASSO">
+																		$&nbsp;0,00
+																	</a>
+																</td>
+															</tr>
+														
+															<tr>
+																<td><strong>DANIEL ALEJANDRO GRASSO</strong></td>
+																<td>Mes adelantado</td>
+																<td>CBU Santander Río</td>
+																<td class="ipn-num">
+																	<a title="Visualizar la cuenta corriente"  href="billingDetails.asp?IL_Customer_GUID=637A9372-BF98-4555-9034-FD2BAF034F07&customerID=443352&filterCompanyID=2&totalAmt=&customerName=DANIEL ALEJANDRO GRASSO">
+																		$&nbsp;0,00
+																	</a>
+																</td>
+															</tr>
+														
+													</tbody>
+													<tfoot>
+													<tr>
+														<th colspan="3" class="ipn-my-account__total-lbl">Total</th>
+														<th class="ipn-num">$&nbsp;0,00</th>
+													</tr>
+													</tfoot>
+												</table>
+								</div>
+									<div class="ipn-my-account__cbu">
+											<a class="ipn-btn ipn-btn--secondary" target="_blank" rel="noopener noreferrer" href="https://app.ipn.com.ar/iPN_CBU.pdf">
+												<span class="material-symbols-rounded" aria-hidden="true">download</span>
+												Descargar datos del CBU
+											</a>
+									</div>
+								
+					</div>
+					
+					
+					<div id="cntTab6" style="display:none">
+						<h2 class="ipn-sec-title">&Uacute;ltima actividad</h2>
+						<p class="ipn-my-account__activity-lead">Actividad reciente de la cuenta <strong>46792-juli</strong> &mdash; IP actual: 246.132.19.172</p>
+						
+						<div class="ipn-table-wrap">
+							<table class="ipn-table">
+								<thead>
+									<tr>
+										<th>Tipo de acceso<br />(Navegador, m&oacute;vil, etc.)</th>
+										<th>Detalles</th>
+										<th>Direcci&oacute;n IP</th>
+										<th>Fecha/Hora</th>
+									</tr>
+								</thead>
+								<tbody>
+								
+									<tr>
+										<td>Chrome</td>
+										<td class="ipn-my-account__ua">Chrome</td>
+										<td>246.132.19.172</td>
+										<td>22/08/2026 22:54:14</td>
+									</tr>
+								
+									<tr>
+										<td>Chrome</td>
+										<td class="ipn-my-account__ua">Chrome</td>
+										<td>246.132.19.172</td>
+										<td>22/08/2026 22:52:41</td>
+									</tr>
+								
+									<tr>
+										<td>Chrome</td>
+										<td class="ipn-my-account__ua">Chrome</td>
+										<td>246.132.19.172</td>
+										<td>22/08/2026 22:51:11</td>
+									</tr>
+								
+									<tr>
+										<td>Chrome</td>
+										<td class="ipn-my-account__ua">Chrome</td>
+										<td>246.132.19.172</td>
+										<td>22/08/2026 22:50:35</td>
+									</tr>
+								
+									<tr>
+										<td>Chrome</td>
+										<td class="ipn-my-account__ua">Chrome</td>
+										<td>246.132.19.172</td>
+										<td>22/08/2026 22:49:25</td>
+									</tr>
+								
+									<tr>
+										<td>Chrome</td>
+										<td class="ipn-my-account__ua">Chrome</td>
+										<td>246.132.19.172</td>
+										<td>22/08/2026 22:49:01</td>
+									</tr>
+								
+									<tr>
+										<td>Chrome</td>
+										<td class="ipn-my-account__ua">Chrome</td>
+										<td>246.132.19.172</td>
+										<td>22/08/2026 22:47:13</td>
+									</tr>
+								
+									<tr>
+										<td>Chrome</td>
+										<td class="ipn-my-account__ua">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36</td>
+										<td>246.132.19.172</td>
+										<td>22/08/2026 22:46:26</td>
+									</tr>
+								
+									<tr>
+										<td>Chrome</td>
+										<td class="ipn-my-account__ua">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36</td>
+										<td>247.216.103.82</td>
+										<td>21/08/2026 13:26:53</td>
+									</tr>
+								
+									<tr>
+										<td>Chrome</td>
+										<td class="ipn-my-account__ua">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36</td>
+										<td>186.22.225.2</td>
+										<td>21/08/2026 02:47:27</td>
+									</tr>
+								
+								</tbody>
+							</table>
+						</div>
+						
+					</div>
+
+					
+				</div>
+			</div>
+			
+	</div>
+	
+</div>
+
+<footer class="ipn-ap-footer" role="contentinfo">
+	<div class="ipn-ap-footer__inner">
+		
+		<div class="ipn-ap-footer__row">
+			<div class="ipn-ap-footer__brand">
+				<span class="ipn-ap-footer__product">iPN ERP Cloud</span>
+				
+				<span class="ipn-ap-footer__copy">&copy; 2005&ndash;2026 infiniteLoop S.A.</span>
+				<span class="ipn-ap-footer__sep" aria-hidden="true">&middot;</span>
+				<a class="ipn-ap-footer__link" href="https://ipn.com.ar/legal/terminos?utm_source=app_ipn&utm_medium=internal&utm_campaign=ecosistema_ipn&utm_content=ipn_app_footer&utm_term=footer" target="_blank" rel="noopener noreferrer">T&eacute;rminos y condiciones</a>
+				<span class="ipn-ap-footer__sep" aria-hidden="true">&middot;</span>
+				<a class="ipn-ap-footer__link" href="https://ipn.com.ar/legal/privacidad?utm_source=app_ipn&utm_medium=internal&utm_campaign=ecosistema_ipn&utm_content=ipn_app_footer&utm_term=footer" target="_blank" rel="noopener noreferrer">Pol&iacute;ticas de privacidad</a>
+			</div>
+			<div class="ipn-ap-footer__meta">
+				<span class="ipn-ap-footer__build">v2.4.0.6 &middot; build 202608211036</span>
+			</div>
+		</div>
+		
+	</div>
+</footer>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+/* AV: 2026-07-20: userSessionGUID en forms (mismo patrón pie.asp; jQuery 4 .on) */
+$(function () {
+	if ($("form").length > 0) {
+		$("form").on("submit", function () {
+			if ($("input[name=userSessionGUID]").length === 0) {
+				$("<input>").attr({
+					type: "hidden",
+					name: "userSessionGUID",
+					value: "{BCBA87F4-791A-49FC-9ABA-E2A2802475E5}"
+				}).appendTo(this);
+			}
+		});
+	}
+});
+</script>
+
+
+<script type="text/javascript">
+(function () {
+	if (window.__SENTRY_LOADED__) return;
+	window.__SENTRY_LOADED__ = true;
+	var s = document.createElement("script");
+	s.src = "https://app.ipn.com.ar/system/js/sentry.min.js";
+	s.crossOrigin = "anonymous";
+	s.onload = function () {
+		if (!window.Sentry) return;
+		Sentry.init({
+			tracesSampleRate: 0,
+			replaysSessionSampleRate: 0,
+			replaysOnErrorSampleRate: 0,
+			// AV: 2026-07-28: JAVASCRIPT-7B — "Script error." / ErrorEvent sin stack (CDN cross-origin).
+			// Alineado con pie.asp / pie_secure / ipnPosthogBeforeSend.
+			ignoreErrors: [
+				/Policy with name ["']default["'] already exists/i,
+				/^Script error\.?$/,
+				/^ErrorEvent$/i,
+				/ErrorEvent ['"]?captured as exception/i,
+				/Non-Error (exception|promise rejection) captured with keys/i,
+				/captured as exception with keys:\s*isTrusted/i,
+				// AV: 2026-07-28: JAVASCRIPT-7C — "Error: Aa" (ruido extensión/tercero; no hay throw en iPN).
+				// AV: 2026-07-28: JAVASCRIPT-7F — "Error: fa" (mismo patrón; salesOrder/details.asp).
+				// AV: 2026-07-31: JAVASCRIPT-7P — "Error: fa" (mismo patrón; salesPoint/dashBoard/default.asp).
+				/^Aa$/,
+				/^Error:\s*Aa$/i,
+				/^fa$/,
+				/^Error:\s*fa$/i,
+				// AV: 2026-08-03: JAVASCRIPT-7Y — PostHog uuidv7 RangeError "invalid field value"
+				// (browser-common; polyfill/extensión Date.now/RNG — posthog-js#710).
+				/^invalid field value$/i,
+				/RangeError:\s*invalid field value/i
+			],
+			denyUrls: [
+				/^chrome-extension:\/\//i,
+				/^moz-extension:\/\//i,
+				/^safari-extension:\/\//i
+			],
+			beforeSend: function (event) {
+				try {
+					var msg = String((event && event.message) || "");
+					var vals = (event && event.exception && event.exception.values) || [];
+					var ex0 = vals.length ? vals[0] : null;
+					var exType = String((ex0 && ex0.type) || "");
+					var exVal = String((ex0 && ex0.value) || "");
+					var blob = msg + "\n" + exType + "\n" + exVal;
+					if (/Policy with name ["']default["'] already exists/i.test(blob) ||
+						/\bScript error\.?\b/i.test(blob) ||
+						/^ErrorEvent$/i.test(exType) ||
+						/ErrorEvent captured as/i.test(blob) ||
+						/Non-Error (exception|promise rejection) captured with keys/i.test(blob) ||
+						/captured as exception with keys:\s*isTrusted/i.test(blob) ||
+						/^Aa$/i.test(exVal.trim()) ||
+						/^Error:\s*Aa$/i.test(msg.trim()) ||
+						/^Error:\s*Aa$/i.test(exVal.trim()) ||
+						// AV: 2026-07-28: JAVASCRIPT-7F — mismo drop que Aa para "Error: fa".
+						// AV: 2026-07-31: JAVASCRIPT-7P — misma firma en salesPoint/dashBoard/default.asp.
+						/^fa$/i.test(exVal.trim()) ||
+						/^Error:\s*fa$/i.test(msg.trim()) ||
+						/^Error:\s*fa$/i.test(exVal.trim()) ||
+						// AV: 2026-08-03: JAVASCRIPT-7Y — drop PostHog uuidv7 RangeError.
+						(/^RangeError$/i.test(exType) && /^invalid field value$/i.test(exVal.trim())) ||
+						/RangeError:\s*invalid field value/i.test(msg) ||
+						/^invalid field value$/i.test(exVal.trim())) {
+						return null;
+					}
+				} catch (e) { /* no bloquear envío por fallo del filtro */ }
+				return event;
+			}
+		});
+		Sentry.onLoad(function () {
+			var scope = Sentry.getCurrentScope();
+			scope.setContext("Page", { url: window.location.href });
+			scope.setUser({ id: 7711 });
+			scope.setContext("IL_Customer", {"IL_CustomerID":310,"companyID":1,"userID":7711,"accountID":1,"accessType":2});
+			scope.setTag("il_customer_id", "310");
+			scope.setTag("company_id", "1");
+			scope.setTag("access_type", "2");
+			scope.setTag("app_area", "adminPanel");
+			scope.setTag("app_domain", window.location.hostname);
+		});
+	};
+	(document.head || document.body).appendChild(s);
+})();
+</script>
+
+<script type="text/javascript">
+(function () {
+	if (window.__POSTHOG_LOADED__) return;
+	window.__POSTHOG_LOADED__ = true;
+
+	!function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="Ji Yi init fn mn Ur pn bn cn capture calculateEventProperties Sn register register_once register_for_session unregister unregister_for_session Tn getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync Mn identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset shutdown setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty Cn xn createPersonProfile setInternalOrTestUser In hn Pn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing debug Vr Rt getPageViewId captureTraceFeedback captureTraceMetric an".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+
+	// AV: 2026-07-25: PostHog 019f81d1 — ErrorEvent/isTrusted; 019f8501 — alinear con pie.asp.
+	function ipnPosthogBeforeSend(event) {
+		if (!event || event.event !== "$exception") { return event; }
+		var props = event.properties || {};
+		var list = props["$exception_list"] || [];
+		var ex = list.length ? list[0] : null;
+		var type = String((ex && ex.type) || props["$exception_type"] || "");
+		var value = String((ex && ex.value) || props["$exception_message"] || "");
+		if (/Policy with name ["']default["'] already exists/i.test(value) ||
+			/^ErrorEvent$/i.test(type) ||
+			/ErrorEvent captured as/i.test(value) ||
+			/captured as exception with keys:\s*isTrusted/i.test(value) ||
+			/Non-Error exception captured with keys/i.test(value) ||
+			value === "Script error." || value === "Script error" ||
+			// AV: 2026-07-28: JAVASCRIPT-7C / 7F — mismo drop que Sentry para "Error: Aa" / "Error: fa".
+			// AV: 2026-07-31: JAVASCRIPT-7P — misma firma en salesPoint/dashBoard/default.asp.
+			value === "Aa" || /^Error:\s*Aa$/i.test(value) ||
+			value === "fa" || /^Error:\s*fa$/i.test(value) ||
+			// AV: 2026-08-03: JAVASCRIPT-7Y — mismo drop que Sentry para PostHog uuidv7.
+			(/^RangeError$/i.test(type) && /^invalid field value$/i.test(value.trim())) ||
+			/^invalid field value$/i.test(value.trim()) ||
+			/RangeError:\s*invalid field value/i.test(value)) {
+			return null;
+		}
+		return event;
+	}
+
+	// AV: 2026-07-20: Error Tracking — captura de excepciones no manejadas
+	posthog.init("phc_ndp4qixgWxW3LGvyQGgnvvt2UVREKGphTKMyCDvSoZdr", {
+		api_host: "https://us.i.posthog.com",
+		defaults: "2026-05-30",
+		person_profiles: "identified_only",
+		// AV: 2026-07-25: PostHog 019f8501 — autocapture:true quedó solo en adminPanel/secure
+		// tras el fix de pie.asp (450cc82); en DOM pesados (iOS/WebKit) → RangeError stack.
+		autocapture: false,
+		capture_pageview: true,
+		disable_session_recording: true,
+		before_send: ipnPosthogBeforeSend,
+		capture_exceptions: {
+			capture_unhandled_errors: true,
+			capture_unhandled_rejections: true,
+			capture_console_errors: false
+		}
+	});
+
+	posthog.identify("7711");
+	posthog.group("company", "310");
+	posthog.register({
+		il_customer_id: 310,
+		company_id: 1,
+		access_type: 2,
+		module_id: 1,
+		store_id: 0,
+		app_area: "adminPanel",
+		app_domain: window.location.hostname
+	});
+})();
+</script>
+
+</body>
+</html>

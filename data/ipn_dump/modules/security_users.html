@@ -1,0 +1,940 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Usuarios y permisos :: iPN - ERP Cloud SaaS</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css" />
+	<script src="https://code.jquery.com/jquery-4.0.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://app.ipn.com.ar/system/core/coreFunctionsv2.js?build=202608211036"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://app.ipn.com.ar/system/js/stupidtable2.1.min.js?build=202608211036"></script>
+	<script type="text/javascript" src="https://unpkg.com/@popperjs/core@2"></script>
+	<script type="text/javascript" src="https://unpkg.com/tippy.js@6"></script>
+
+	<script language="javascript" type="text/javascript">
+		const sTaskSchedulerGenericHandlerPath = 'https://app.ipn.com.ar/TaskSchedulerGenericHandler/';
+		let reportRecordsQty = 0;
+
+		$(document).ready(function () {
+			
+
+			if ($("#usersResult").length) {
+				$("#usersResult").stupidtable();
+			}
+
+			tippy("[data-tippy-content]", { allowHTML: false, delay: [200, 0] });
+
+			$(".js-do-search").on("click", function () {
+				exportPopup(true);
+			});
+
+			$("#frmCustomerSearch input").on("keypress", function (e) {
+				if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+					$(".js-do-search").first().trigger("click");
+					return false;
+				}
+				return true;
+			});
+
+			// AV: 2026-07-22: ComboBoxProfiles sin filas no emite <select>; dejamos fallback usable.
+			if ($("#profileFilterField").length && !$("#profileIDToFilter").length) {
+				$("#profileComboWrap").html(
+					"<select id='profileIDToFilter' name='profileIDToFilter' class='ipn-select'>" +
+					"<option value='0'>[ Seleccione ]</option>" +
+					"<option value='-1'>Sin perfil asignado</option>" +
+					"</select>"
+				);
+			} else if ($("#profileIDToFilter").length) {
+				$("#profileIDToFilter").append("<option value=-1>Sin perfil asignado</option>");
+				var $select = $("#profileIDToFilter");
+				var $options = $select.find("option");
+				var firstOp = $options.filter('[value="0"]');
+				var secondOp = $options.filter('[value="-1"]');
+				$select.prepend(secondOp);
+				$select.prepend(firstOp);
+				$("#profileIDToFilter").val(0);
+			}
+
+			// AV: 2026-07-27: QA 3.3 — Chrome muestra "Administrar contraseñas" pese a autocomplete=off
+			// en name userName*; token no-login + reaplicar en focus (el gestor lo pisa al enfocar).
+			var $userNameFilter = $("#userNameToFilter");
+			function disableBrowserUserSuggestions() {
+				$userNameFilter.attr("autocomplete", "ipn-user-filter");
+			}
+			disableBrowserUserSuggestions();
+			$userNameFilter.on("focus", disableBrowserUserSuggestions);
+
+			$userNameFilter.autocomplete({
+				minLength: 3,
+				delay: 400,
+				source: function (request, response) {
+					$.getJSON("../users/ws/ws.asp", {
+						q: request.term,
+						doAction: 3,
+						userStatusID: $("#userStatusID").val()
+					}, function (data) {
+						response($.map(data || [], function (item) {
+							return {
+								label: item.CompleteUserNameToDisplay,
+								value: item.CompleteUserNameToDisplay,
+								item: item
+							};
+						}));
+					});
+				},
+				select: function (event, ui) {
+					if (ui.item && ui.item.item) {
+						$userNameFilter.val(ui.item.item.CompleteUserNameToDisplay);
+						window.location.href = "../users/userDetails.asp?userGUIDToFilter=" + ui.item.item.userGUID;
+					}
+					return false;
+				}
+			});
+
+			$('#storeID').on("change", function () {
+				setSalesPoints();
+			});
+
+			setSalesPoints();
+			$("#userNameToFilter").trigger("focus");
+
+			$("[name=tab]").on("click", function () {
+				$("[name=tab]").removeClass("is-active");
+				$(this).addClass("is-active");
+
+				if ($(this).attr("id") == "storesFilters") {
+					$("#storesFiltersContainer").removeClass("is-hidden");
+					$("#generalFiltersContainer").addClass("is-hidden");
+					if (!$("#filterByStores").is(":checked")) {
+						$("[name='storeIDStr']").prop("disabled", true);
+						$("#filterByStoresContent").addClass("is-hidden");
+					}
+				} else {
+					$("#generalFiltersContainer").removeClass("is-hidden");
+					$("#storesFiltersContainer").addClass("is-hidden");
+				}
+			});
+
+			$("#filterByStores").on("click", function () {
+				if ($(this).is(":checked")) {
+					$("[name='storeIDStr']").prop("disabled", false);
+					$("#checkAllStores").prop("disabled", false);
+					$("#filterByStoresContent").removeClass("is-hidden");
+				} else {
+					$("[name='storeIDStr']").prop("disabled", true);
+					$("#checkAllStores").prop("disabled", true);
+					$("#filterByStoresContent").addClass("is-hidden");
+				}
+			});
+
+			$("#checkAllStores").on("click", function () {
+				checkAll("checkAllStores", "storeIDStr");
+				checkAll("checkAllStores", "companyIDStr");
+			});
+
+			$("[name='companyIDStr']").on("click", function () {
+				var companyID = $(this).val();
+				if ($(this).is(":checked"))
+					$("[companyID='" + companyID + "']").prop("checked", true);
+				else
+					$("[companyID='" + companyID + "']").prop("checked", false);
+			});
+
+			var $dd = $(".ipn-actions-dd");
+			$dd.on("click", ".ipn-actions-dd__toggle", function (e) {
+				e.preventDefault();
+				e.stopPropagation();
+				$dd.toggleClass("is-open");
+				$(this).attr("aria-expanded", $dd.hasClass("is-open") ? "true" : "false");
+			});
+			$dd.on("click", ".ipn-actions-dd__item", function () {
+				$dd.removeClass("is-open");
+				$dd.find(".ipn-actions-dd__toggle").attr("aria-expanded", "false");
+			});
+			$(document).on("click", function () {
+				$dd.removeClass("is-open");
+				$dd.find(".ipn-actions-dd__toggle").attr("aria-expanded", "false");
+			});
+
+			$(".ipn-notice__close").on("click", function () {
+				var el = this.closest ? this.closest(".ipn-notice") : this.parentNode;
+				if (!el) return;
+				el.classList.add("is-dismissing");
+				setTimeout(function () {
+					if (el && el.parentNode) el.parentNode.removeChild(el);
+				}, 280);
+			});
+
+			// AV: 2026-07-22: No aplicar ipn-select al hidden de app mobile.
+			$("#storeID, #accessType, #userStatusID, #profileIDToFilter, #salesPointID").addClass("ipn-select");
+			$("#hasIpnAppMobileAccess").filter("select").addClass("ipn-select");
+		});
+
+		function checkAll(checkID, strID) {
+			if ($("#" + checkID).is(":checked"))
+				$("input:checkbox[name='" + strID + "']").prop("checked", true);
+			else
+				$("input:checkbox[name='" + strID + "']").prop("checked", false);
+		}
+
+		function showPopup() {
+			ipnAlert({
+				title: "L\u00edmite de usuarios",
+				message: "Su cuenta ha alcanzado el l\u00edmite de usuarios disponibles. Si desea adquirir m\u00e1s, por favor p\u00f3ngase en contacto con su ejecutivo de cuentas.",
+				confirmText: "Entendido",
+				icon: "warning"
+			});
+		}
+
+		function setSalesPoints() {
+			var storeID = $("#storeID").val();
+			var $field = $("#salesPointFilterField");
+
+			// AV: 2026-07-22: PVF solo visible con sucursal seleccionada.
+			if (!storeID || storeID === "0") {
+				$field.addClass("is-hidden");
+				$("#div_salesPointCmb").html("<select id='salesPointID' name='salesPointID' class='ipn-select'><option value='0'>[ Seleccione ]</option></select>");
+				return;
+			}
+
+			$field.removeClass("is-hidden");
+			$.get("../users/ws/ws.asp", {
+				doAction: "5",
+				storeID: storeID,
+				defaultSalesPointID: 0,
+				isSalesPointRequired: "0",
+				ILCustomerToFilter: 310
+			}, function getSalesPointCmb(salesPointCmb) {
+				if (salesPointCmb != "") {
+					$("#div_salesPointCmb").html("<select id='salesPointID' name='salesPointID' class='ipn-select'></select>");
+					$("#salesPointID").html(salesPointCmb);
+				} else {
+					$("#div_salesPointCmb").html("<span class='ipn-users__hint'>No se encontraron PVFs para la sucursal seleccionada</span>");
+				}
+			});
+		}
+
+		function generateReport() {
+			let userNameToFilter = $("[name=userNameToFilter]").val();
+			let accessType = $("[name=accessType]").val();
+			let accountIDToFilter = 1;
+			let profileIDToFilter = $("[name=profileIDToFilter]").val();
+			let userStatusID = $("[name=userStatusID]").val();
+			let storeID = $("[name=storeID]").val();
+			let salesPointID = $("[name=salesPointID]").val();
+			let hasIpnAppMobileAccess = $("[name=hasIpnAppMobileAccess]").val();
+			let storeIDStr = $("#filterByStores").is(":checked") ? $("[name=storeIDStr]:checked").get().map((e) => e.value).join(",") : "";
+
+			switch (parseInt($("[name=exportType]:checked").val(), 10)) {
+				case 0:
+					$("#doAction").val(1);
+					loadAfterClick($("#exportBtn")[0]);
+					$("#frmCustomerSearch").trigger("submit");
+					break;
+				case 1:
+					let params = `reportType=users&IL_CustomerID=310&userNameToFilter=${userNameToFilter}&accessType=${accessType}&accountIDToFilter=${accountIDToFilter}&profileIDToFilter=${profileIDToFilter}&userStatusID=${userStatusID}&storeID=${storeID}&salesPointID=${salesPointID}&hasIpnAppMobileAccess=${hasIpnAppMobileAccess}&storeIDStr=${storeIDStr}&userAccountID=1`;
+					window.open(sTaskSchedulerGenericHandlerPath + "ReportExporterHandler.ashx?" + params);
+					setTimeout(iPNpopupClose, 2000);
+					break;
+				case 2:
+					if (reportRecordsQty > 100000) {
+						$("#warningTaskScheduler").show();
+						return;
+					}
+					$("#doAction").val(2);
+					$("#exportType").val(2);
+					loadAfterClick($("#exportBtn")[0]);
+					$("#frmCustomerSearch").trigger("submit");
+					break;
+			}
+		}
+
+		function changeResultType() {
+			return true;
+		}
+
+		function resetSearchButton() {
+			// AV: 2026-07-22: Ambos tabs usan .js-do-search (evitar id duplicado).
+			$(".js-do-search").removeClass("is-loading").prop("disabled", false);
+			$(".js-do-search").off("click").on("click", function () {
+				exportPopup(true);
+			});
+		}
+
+		function setExportBtnReady(ready) {
+			var $btn = $("#exportBtn");
+			if (ready) {
+				$btn.removeClass("is-loading").prop("disabled", false).show();
+			} else {
+				$btn.addClass("is-loading").prop("disabled", true);
+			}
+		}
+
+		function countRecordsQty(isSearch) {
+			let inScreenExport = $("#exportType0").is(":checked");
+			setExportBtnReady(false);
+			$("input[name=exportType]").prop("disabled", true);
+
+			let userNameToFilter = $("[name=userNameToFilter]").val();
+			let accessType = $("[name=accessType]").val();
+			let accountIDToFilter = 1;
+			let profileIDToFilter = $("[name=profileIDToFilter]").val();
+			let userStatusID = $("[name=userStatusID]").val();
+			let storeID = $("[name=storeID]").val();
+			let salesPointID = $("[name=salesPointID]").val();
+			let hasIpnAppMobileAccess = $("[name=hasIpnAppMobileAccess]").val();
+			let storeIDStr = $("#filterByStores").is(":checked") ?  $("[name=storeIDStr]:checked").get().map((e) => e.value).join(",") : "";
+
+			$.ajax({
+				method: "POST",
+				url: "ws/ws.asp",
+				data: {
+					doAction: 1,
+					userNameToFilter,
+					accessType,
+					profileIDToFilter,
+					userStatusID,
+					storeID,
+					salesPointID,
+					accountIDToFilter,
+					hasIpnAppMobileAccess,
+					storeIDStr
+				},
+				dataType: "json"
+			}).always(function ({ recordsQty } = {}) {
+				recordsQty = parseInt(recordsQty, 10) || 0;
+				reportRecordsQty = recordsQty;
+				$("[hideOnLoading]").show();
+				if (recordsQty > 0) {
+					$("#warningTaskScheduler").hide();
+					if (recordsQty > 100000) {
+						$("#recordsQty").html(recordsQty);
+						$("#warningTaskScheduler").show();
+						$("[hideOnNoResults]").hide();
+						$("#exportBtn").hide().prop("disabled", true);
+						$("input[name=exportType]").prop("checked", false);
+					} else {
+						setExportBtnReady(true);
+						$("input[name=exportType]").prop("disabled", false);
+						$("[hideOnNoResults]").show();
+						$("[hideOn1000Results], [hideOn10000Results]").show();
+						$("#exportType2").closest(".ipn-users-export__option").show();
+						if (recordsQty > 1000) {
+							$("[hideOn1000Results]").hide();
+						}
+						if (recordsQty > 10000) {
+							$("[hideOn10000Results]").hide();
+							if (!inScreenExport) {
+								$("#exportType2").prop("checked", true);
+							}
+						} else if (isSearch) {
+							$("#exportType0").prop("checked", true);
+						}
+						$("#recordsQty").html(recordsQty);
+						$("#exportBtn").show();
+					}
+				} else {
+					$("#recordsQty").html("No se encontraron resultados con los filtros seleccionados.");
+					$("#exportBtn").prop("disabled", true).hide();
+					$("[hideOnNoResults]").hide();
+					$("#warningTaskScheduler").hide();
+					$("[hideOn1000Results], [hideOn10000Results]").show();
+					$("#exportType2").closest(".ipn-users-export__option").show();
+					$("#exportType2, label[for='exportType2']").show();
+				}
+
+				const $exportOptions = $("[name=exportType]");
+				const $visibleOptions = $exportOptions.filter(":visible");
+				$exportOptions.filter(":hidden").prop("checked", false);
+				if ($visibleOptions.length > 0) {
+					$visibleOptions.prop("checked", false);
+					$visibleOptions.first().prop("checked", true);
+				}
+
+				setTimeout(function () {
+					if (typeof changeResultType === "function") {
+						changeResultType();
+					}
+				}, 100);
+				iPNpopupResize();
+			});
+		}
+
+		function exportPopup(isSearch) {
+			$("[hideOnLoading]").hide();
+			$("#recordsQty").html("Cargando...");
+			$("#warningTaskScheduler").hide();
+			$("[hideOn1000Results], [hideOn10000Results]").show();
+			$("#exportType2").closest(".ipn-users-export__option").show();
+			$("#exportType2").show();
+			$("label[for='exportType2']").show();
+			$("#exportBtn").show();
+			if (isSearch) {
+				$("[showOnSearch]").show();
+				$("#exportType0").prop("checked", true);
+			} else {
+				$("[showOnSearch]").hide();
+				$("#exportType1").prop("checked", true);
+			}
+			$("[hideOnNoResults]").show();
+			iPNpopup(1);
+			countRecordsQty(isSearch);
+		}
+	</script>
+</head>
+<body class="ipn2">
+	<input type="hidden" id="reportType" />
+	
+
+
+
+<style type="text/css">@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}</style>
+<style type="text/css">@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:400;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:500;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:600;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'IBM Plex Sans';font-style:normal;font-weight:700;src:url(/cf-fonts/v/ibm-plex-sans/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link rel="stylesheet" type="text/css" href="https://app.ipn.com.ar/system/style/iPN2.css?build=202608211036">
+<script type="text/javascript">var systemFolder = 'https://app.ipn.com.ar/system';</script>
+<script type="text/javascript" src="https://app.ipn.com.ar/system/js/ipn-dialog.js?build=202608211036"></script>
+<script type="text/javascript" src="https://app.ipn.com.ar/system/js/ipn-user-menu.js?build=202608211036"></script>
+
+
+<div class="wraper ipn-ap-wrap" style="--ipn-header-bg:#000000;--ipn-header-fg:#ffffff;--ipn-header-muted:#aebbd4;--ipn-header-border:rgba(255,255,255,.55);--ipn-header-avatar:#2f6bb5;--ipn-brand:#000000;--ipn-brand-hover:#707070;--ipn-brand-fg:#ffffff;">
+<div class="main_content ipn-ap">
+<header class="ipn-ap-topbar" role="banner">
+	<div class="ipn-ap-topbar__inner">
+		<a class="ipn-ap-topbar__brand" href="https://app.ipn.com.ar/adminPanel.asp" title="Panel de administraci&oacute;n">
+			<img class="ipn-ap-topbar__logo" alt="iPN" src="https://app.ipn.com.ar/system/images/logos/customization/310_335.jpg?rnd=202608211036" />
+		</a>
+		
+		<div class="ipn-ap-topbar__account">
+			
+			<button type="button" class="ipn-user-menu-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="ipnUserMenu" title="Men&uacute; de usuario">
+				<span class="ipn-ap-topbar__identity">
+					<span class="ipn-ap-topbar__name" title="avalos, juliana">avalos, juliana</span>
+					<span class="ipn-ap-topbar__role">46792-juli - Administrador de cuenta</span>
+				</span>
+				<span class="ipn-ap-topbar__avatar" aria-hidden="true">JA</span>
+			</button>
+			
+<div class="ipn-user-menu" id="ipnUserMenu" role="menu" aria-hidden="true" hidden>
+	<div class="ipn-user-menu__identity">
+		<div class="ipn-user-menu__avatar" aria-hidden="true">JA</div>
+		<div class="ipn-user-menu__who">
+			<div class="ipn-user-menu__who-name">avalos, juliana</div>
+			<div class="ipn-user-menu__who-role">46792-juli - adminitrativo</div>
+			<div class="ipn-user-menu__who-code">C&oacute;digo de soporte: <span class="ipn-mono">#07711</span></div>
+		</div>
+	</div>
+
+	<div class="ipn-user-menu__primary">
+		<a class="ipn-user-menu__btn-account" href="https://app.ipn.com.ar/myAccount.asp?tab=1" role="menuitem">
+			<span class="material-symbols-rounded" aria-hidden="true">person</span>
+			Mi cuenta
+		</a>
+	</div>
+
+	<nav class="ipn-user-menu__nav" aria-label="Accesos de cuenta">
+		<a class="ipn-user-menu__item" href="https://app.ipn.com.ar/adminPanel.asp" role="menuitem">
+			<span class="ipn-user-menu__item-icon ipn-user-menu__item-icon--blue" aria-hidden="true"><span class="material-symbols-rounded">apartment</span></span>
+			<span class="ipn-user-menu__item-label">Panel de administraci&oacute;n</span>
+			<span class="material-symbols-rounded ipn-user-menu__item-arrow" aria-hidden="true">chevron_right</span>
+		</a>
+
+		
+		<a class="ipn-user-menu__item" href="https://app.ipn.com.ar/techSupport/default.asp" role="menuitem">
+			<span class="ipn-user-menu__item-icon ipn-user-menu__item-icon--teal" aria-hidden="true"><span class="material-symbols-rounded">support_agent</span></span>
+			<span class="ipn-user-menu__item-label">Mesa de ayuda</span>
+			<span class="material-symbols-rounded ipn-user-menu__item-arrow" aria-hidden="true">chevron_right</span>
+		</a>
+		
+
+		<a class="ipn-user-menu__item" href="https://app.ipn.com.ar/services/login/zendesk.asp?stockType=1" target="_blank" rel="noopener noreferrer" role="menuitem">
+			<span class="ipn-user-menu__item-icon ipn-user-menu__item-icon--violet" aria-hidden="true"><span class="material-symbols-rounded">school</span></span>
+			<span class="ipn-user-menu__item-label">iPN University</span>
+			<span class="material-symbols-rounded ipn-user-menu__item-arrow" aria-hidden="true">chevron_right</span>
+		</a>
+
+		
+		<a class="ipn-user-menu__item" href="https://app.ipn.com.ar/messages.asp" role="menuitem" title="Mensajes">
+			<span class="ipn-user-menu__item-icon ipn-user-menu__item-icon--amber" aria-hidden="true"><span class="material-symbols-rounded">mail</span></span>
+			<span class="ipn-user-menu__item-label">Mensajes</span>
+			<span class="material-symbols-rounded ipn-user-menu__item-arrow" aria-hidden="true">chevron_right</span>
+		</a>
+		
+	</nav>
+
+	<div class="ipn-user-menu__actions">
+		
+		<a class="ipn-user-menu__btn-action" href="https://app.ipn.com.ar/defaultSelectedCompany.asp" role="menuitem">
+			<span class="material-symbols-rounded" aria-hidden="true">apartment</span>
+			Seleccionar RS
+		</a>
+		<a class="ipn-user-menu__btn-action" href="https://app.ipn.com.ar/logout.asp" role="menuitem">
+			<span class="material-symbols-rounded" aria-hidden="true">logout</span>
+			Cerrar sesi&oacute;n
+		</a>
+	</div>
+</div>
+
+		</div>
+	</div>
+</header>
+
+
+	<div id="iPNpopUpDiv" class="iPNpopUpDiv ipn-users-export">
+		<div class="ipn-users-export__head">
+			<div class="ipn-users-export__icon" aria-hidden="true">
+				<span class="material-symbols-rounded">description</span>
+			</div>
+			<div>
+				<h2 class="ipn-users-export__title">Generaci&oacute;n de reporte</h2>
+				<p class="ipn-users-export__sub">Cantidad de registros: <b id="recordsQty">Cargando...</b></p>
+			</div>
+		</div>
+		<div hideOnLoading>
+			<div hideOnNoResults class="ipn-users-export__options">
+				<div class="ipn-users-export__option" showOnSearch hideOn1000Results>
+					<input name="exportType" id="exportType0" type="radio" value="0" onclick="changeResultType()" showOnSearch hideOn1000Results checked />
+					<label for="exportType0" showOnSearch hideOn1000Results>Mostrar en pantalla</label>
+				</div>
+				<div class="ipn-users-export__option" hideOn10000Results>
+					<input name="exportType" id="exportType1" type="radio" value="1" onclick="changeResultType()" hideOn10000Results />
+					<label for="exportType1" hideOn10000Results>Exportaci&oacute;n directa</label>
+				</div>
+				<div class="ipn-users-export__option">
+					<input name="exportType" id="exportType2" type="radio" value="2" onclick="changeResultType()" />
+					<label for="exportType2">Exportaci&oacute;n por tarea programada</label>
+				</div>
+			</div>
+			<div id="warningTaskScheduler" class="ipn-notice ipn-notice--warning" style="display:none;" role="alert">
+				<span class="material-symbols-rounded ipn-notice__icon" aria-hidden="true">warning</span>
+				<div class="ipn-notice__body">
+					No se pueden exportar m&aacute;s de 100000 registros en tarea programada.<br />
+					Por favor, seleccione m&aacute;s filtros para realizar la exportaci&oacute;n.
+				</div>
+			</div>
+		</div>
+		<div class="ipn-users-export__actions">
+			<button type="button" class="ipn-btn ipn-btn--secondary" onclick="resetSearchButton(); iPNpopupClose();">Cerrar</button>
+			<span hideOnNoResults>
+				<button type="button" id="exportBtn" class="ipn-btn ipn-btn--primary" onclick="generateReport();">
+					<span class="material-symbols-rounded" aria-hidden="true">play_arrow</span>
+					Generar
+				</button>
+			</span>
+		</div>
+	</div>
+
+	<div class="ipn-ap__body ipn-users">
+		<nav class="ipn-breadcrumb" aria-label="Navegaci&oacute;n">
+			<a href="https://app.ipn.com.ar/adminPanel.asp">Panel de administraci&oacute;n</a>
+			<span class="material-symbols-rounded" aria-hidden="true">chevron_right</span>
+			<b>Usuarios y permisos</b>
+		</nav>
+
+		<div class="ipn-page-head">
+			<div class="ipn-page-head__icon" aria-hidden="true">
+				<span class="material-symbols-rounded">manage_accounts</span>
+			</div>
+			<div class="ipn-page-head__text">
+				<h1 class="ipn-page-title">Usuarios y permisos</h1>
+				<div class="ipn-page-subtitle">Administraci&oacute;n de usuarios, perfiles y permisos de acceso.</div>
+			</div>
+			<div class="ipn-page-head__actions">
+				
+				<a class="ipn-btn ipn-btn--primary" href="https://app.ipn.com.ar/users/addUser.asp">
+					<span class="material-symbols-rounded" aria-hidden="true">person_add</span>
+					Agregar usuario
+				</a>
+				
+				<div class="ipn-actions-dd">
+					<button type="button" class="ipn-btn ipn-btn--secondary ipn-actions-dd__toggle" aria-expanded="false" aria-haspopup="true">
+						<span class="material-symbols-rounded" aria-hidden="true">bolt</span>
+						Acciones disponibles
+						<span class="material-symbols-rounded" aria-hidden="true">expand_more</span>
+					</button>
+					<ul class="ipn-actions-dd__menu" role="menu">
+						
+						<li role="none">
+							<a class="ipn-actions-dd__item" role="menuitem" href="https://app.ipn.com.ar/users/userAnalysis.asp">
+								<span class="material-symbols-rounded" aria-hidden="true">analytics</span>
+								An&aacute;lisis de usuarios
+							</a>
+						</li>
+						<li role="none">
+							<a class="ipn-actions-dd__item" role="menuitem" href="https://app.ipn.com.ar/users/userAuditSessions.asp">
+								<span class="material-symbols-rounded" aria-hidden="true">history</span>
+								Registro de inicios de sesi&oacute;n
+							</a>
+						</li>
+						<li role="none">
+							<button type="button" class="ipn-actions-dd__item" role="menuitem" onclick="exportPopup(false);">
+								<span class="material-symbols-rounded" aria-hidden="true">file_download</span>
+								Exportar a Excel
+							</button>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+
+		
+		<div class="ipn-users__quota">
+			Su cuenta ha utilizado <b>15</b> usuarios de <b>26</b> disponibles.
+		</div>
+		
+		<form method="post" id="frmCustomerSearch" action="securityUsers.asp" name="frmCustomerSearch" autocomplete="off">
+			<input type="hidden" id="doAction" name="doAction" value="1" />
+			<input type="hidden" id="exportType" name="exportType" value="0" />
+			<input type="hidden" id="ILCustomerToFilter" name="ILCustomerToFilter" value="" />
+
+			<div class="ipn-tabs" role="tablist">
+				<button type="button" id="generalFilters" name="tab" class="ipn-tabs__item is-active" role="tab">General</button>
+				<button type="button" id="storesFilters" name="tab" class="ipn-tabs__item" role="tab">Sucursales</button>
+			</div>
+
+			<div class="ipn-card">
+				<div class="ipn-card__body">
+					<div id="generalFiltersContainer" class="ipn-secure-filters ipn-secure-filters--4">
+						<div class="ipn-field">
+							<label class="ipn-label" for="userNameToFilter">Usuario</label>
+							<input type="search" name="userNameToFilter" class="ipn-input" id="userNameToFilter" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" data-1p-ignore="true" data-form-type="other" />
+						</div>
+
+						<div class="ipn-field">
+							<label class="ipn-label" for="accessType">Tipo de acceso</label>
+							
+							<select id="accessType" name="accessType" class="ipn-select">
+								<option value="0"  selected  >[ Seleccione ]</option>
+								
+								<option value="2"  >Administrador de cuenta</option>
+								<option value="3"  >Usuario limitado de punto de venta</option>
+								<option value="4"  >Usuario limitado administrativo</option>
+								<option value="5"  >Vendedor</option>
+							</select>
+						</div>
+
+						
+
+						<div class="ipn-field">
+							<label class="ipn-label" for="userStatusID">Estado</label>
+							<select id="userStatusID" name="userStatusID" class="ipn-select">
+								<option value="2" >Todos</option>
+								<option value="1" selected="selected">Habilitados</option>
+								<option value="0" >Deshabilitados</option>
+							</select>
+						</div>
+
+						<div class="ipn-field">
+							<label class="ipn-label" for="storeID">Sucursal asignada</label>
+							<select class="ipn-select" id="storeID" name="storeID" autocomplete="off" onChange= ""><option value="0">[ Seleccione ]</option><option value=6 storeTypeID="2" allowDiffPickupStoreFromNV="1">[6] - ADMIN GATICAR</option><option value=9 storeTypeID="1" allowDiffPickupStoreFromNV="1">[9] - CA&Ntilde;UELAS</option><option value=10 storeTypeID="12" allowDiffPickupStoreFromNV="1">[10] - iB2B</option><option value=3 storeTypeID="2" allowDiffPickupStoreFromNV="1">[3] - Oficina - Dep&oacute;sito general</option><option value=1 storeTypeID="1" allowDiffPickupStoreFromNV="1">[1] - OUTLET</option><option value=5 storeTypeID="1" allowDiffPickupStoreFromNV="1">[5] - SBW CANNING</option></select>
+						</div>
+
+						<div class="ipn-field is-hidden" id="salesPointFilterField">
+							<label class="ipn-label" for="salesPointID">Punto de venta asignado</label>
+							<div id="div_salesPointCmb">
+								<select id="salesPointID" name="salesPointID" class="ipn-select">
+									<option value="0">[ Seleccione ]</option>
+								</select>
+							</div>
+						</div>
+
+						
+						<input type="hidden" id="hasIpnAppMobileAccess" name="hasIpnAppMobileAccess" value="0" />
+						
+
+						<div class="ipn-secure-filters__actions">
+							<button type="button" id="doSearch" name="doSearch" class="ipn-btn ipn-btn--primary js-do-search">
+								<span class="material-symbols-rounded" aria-hidden="true">search</span>
+								Buscar
+							</button>
+						</div>
+					</div>
+
+					<div id="storesFiltersContainer" class="is-hidden">
+						<div class="ipn-users__stores-toggle">
+							<label class="ipn-check" for="filterByStores">
+								<input type="checkbox" value="1" id="filterByStores" name="filterByStores"  />
+								<span>¿Aplicar filtro por sucursal?</span>
+							</label>
+						</div>
+						<div id="filterByStoresContent" class="is-hidden">
+							<p class="ipn-users__stores-help">A continuaci&oacute;n seleccione las sucursales que deben tener acceso los usuarios:</p>
+							<div class="ipn-users__stores-level0">
+								<label class="ipn-check" for="checkAllStores">
+									<input type="checkbox" value="1" id="checkAllStores" name="checkAllStores"  />
+									<span>Todas</span>
+								</label>
+							</div>
+							
+									<div class="ipn-users__stores-level1">
+										<label class="ipn-check" for="companyID_1">
+											<input type="checkbox" value="1" id="companyID_1" name="companyIDStr" checked="checked"/>
+											<span><b>DANIEL ALEJANDRO GRASSO</b></span>
+										</label>
+									</div>
+									<div class='ipn-users__stores-level2'><b>Venta al público</b></div>
+											<div class="ipn-users__stores-level3">
+												<label class="ipn-check" for="storeID_9">
+													<input type="checkbox" companyID="1" value="9" id="storeID_9" name="storeIDStr" checked="checked"/>
+													<span>[9] CAÑUELAS</span>
+												</label>
+											</div>
+											
+											<div class="ipn-users__stores-level3">
+												<label class="ipn-check" for="storeID_1">
+													<input type="checkbox" companyID="1" value="1" id="storeID_1" name="storeIDStr" checked="checked"/>
+													<span>[1] OUTLET</span>
+												</label>
+											</div>
+											<div class='ipn-users__stores-level2'><b>Oficina comercial</b></div>
+											<div class="ipn-users__stores-level3">
+												<label class="ipn-check" for="storeID_3">
+													<input type="checkbox" companyID="1" value="3" id="storeID_3" name="storeIDStr" checked="checked"/>
+													<span>[3] Oficina - Depósito general</span>
+												</label>
+											</div>
+											<div class='ipn-users__stores-level2'><b>Tienda iB2B</b></div>
+											<div class="ipn-users__stores-level3">
+												<label class="ipn-check" for="storeID_10">
+													<input type="checkbox" companyID="1" value="10" id="storeID_10" name="storeIDStr" checked="checked"/>
+													<span>[10] iB2B</span>
+												</label>
+											</div>
+											
+										<div class="ipn-users__stores-level1">
+											<label class="ipn-check" for="companyID_2">
+												<input type="checkbox" value="2" id="companyID_2" name="companyIDStr" />
+												<span><b>GATICAR</b></span>
+											</label>
+										</div>
+										<div class='ipn-users__stores-level2'><b>Venta al público</b></div>
+											<div class="ipn-users__stores-level3">
+												<label class="ipn-check" for="storeID_5">
+													<input type="checkbox" companyID="2" value="5" id="storeID_5" name="storeIDStr" />
+													<span>[5] SBW CANNING</span>
+												</label>
+											</div>
+											<div class='ipn-users__stores-level2'><b>Oficina comercial</b></div>
+											<div class="ipn-users__stores-level3">
+												<label class="ipn-check" for="storeID_6">
+													<input type="checkbox" companyID="2" value="6" id="storeID_6" name="storeIDStr" />
+													<span>[6] ADMIN GATICAR</span>
+												</label>
+											</div>
+											
+						</div>
+						<div class="ipn-users__stores-actions">
+							<button type="button" class="ipn-btn ipn-btn--primary js-do-search">
+								<span class="material-symbols-rounded" aria-hidden="true">search</span>
+								Buscar
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		
+	</div>
+	
+</div>
+
+<footer class="ipn-ap-footer" role="contentinfo">
+	<div class="ipn-ap-footer__inner">
+		
+		<div class="ipn-ap-footer__row">
+			<div class="ipn-ap-footer__brand">
+				<span class="ipn-ap-footer__product">iPN ERP Cloud</span>
+				
+				<span class="ipn-ap-footer__copy">&copy; 2005&ndash;2026 infiniteLoop S.A.</span>
+				<span class="ipn-ap-footer__sep" aria-hidden="true">&middot;</span>
+				<a class="ipn-ap-footer__link" href="https://ipn.com.ar/legal/terminos?utm_source=app_ipn&utm_medium=internal&utm_campaign=ecosistema_ipn&utm_content=ipn_app_footer&utm_term=footer" target="_blank" rel="noopener noreferrer">T&eacute;rminos y condiciones</a>
+				<span class="ipn-ap-footer__sep" aria-hidden="true">&middot;</span>
+				<a class="ipn-ap-footer__link" href="https://ipn.com.ar/legal/privacidad?utm_source=app_ipn&utm_medium=internal&utm_campaign=ecosistema_ipn&utm_content=ipn_app_footer&utm_term=footer" target="_blank" rel="noopener noreferrer">Pol&iacute;ticas de privacidad</a>
+			</div>
+			<div class="ipn-ap-footer__meta">
+				<span class="ipn-ap-footer__build">v2.4.0.6 &middot; build 202608211036</span>
+			</div>
+		</div>
+		
+	</div>
+</footer>
+</div>
+
+<script type="text/javascript">
+/* AV: 2026-07-20: userSessionGUID en forms (mismo patrón pie.asp; jQuery 4 .on) */
+$(function () {
+	if ($("form").length > 0) {
+		$("form").on("submit", function () {
+			if ($("input[name=userSessionGUID]").length === 0) {
+				$("<input>").attr({
+					type: "hidden",
+					name: "userSessionGUID",
+					value: "{BCBA87F4-791A-49FC-9ABA-E2A2802475E5}"
+				}).appendTo(this);
+			}
+		});
+	}
+});
+</script>
+
+
+<script type="text/javascript">
+(function () {
+	if (window.__SENTRY_LOADED__) return;
+	window.__SENTRY_LOADED__ = true;
+	var s = document.createElement("script");
+	s.src = "https://app.ipn.com.ar/system/js/sentry.min.js";
+	s.crossOrigin = "anonymous";
+	s.onload = function () {
+		if (!window.Sentry) return;
+		Sentry.init({
+			tracesSampleRate: 0,
+			replaysSessionSampleRate: 0,
+			replaysOnErrorSampleRate: 0,
+			// AV: 2026-07-28: JAVASCRIPT-7B — "Script error." / ErrorEvent sin stack (CDN cross-origin).
+			// Alineado con pie.asp / pie_secure / ipnPosthogBeforeSend.
+			ignoreErrors: [
+				/Policy with name ["']default["'] already exists/i,
+				/^Script error\.?$/,
+				/^ErrorEvent$/i,
+				/ErrorEvent ['"]?captured as exception/i,
+				/Non-Error (exception|promise rejection) captured with keys/i,
+				/captured as exception with keys:\s*isTrusted/i,
+				// AV: 2026-07-28: JAVASCRIPT-7C — "Error: Aa" (ruido extensión/tercero; no hay throw en iPN).
+				// AV: 2026-07-28: JAVASCRIPT-7F — "Error: fa" (mismo patrón; salesOrder/details.asp).
+				// AV: 2026-07-31: JAVASCRIPT-7P — "Error: fa" (mismo patrón; salesPoint/dashBoard/default.asp).
+				/^Aa$/,
+				/^Error:\s*Aa$/i,
+				/^fa$/,
+				/^Error:\s*fa$/i,
+				// AV: 2026-08-03: JAVASCRIPT-7Y — PostHog uuidv7 RangeError "invalid field value"
+				// (browser-common; polyfill/extensión Date.now/RNG — posthog-js#710).
+				/^invalid field value$/i,
+				/RangeError:\s*invalid field value/i
+			],
+			denyUrls: [
+				/^chrome-extension:\/\//i,
+				/^moz-extension:\/\//i,
+				/^safari-extension:\/\//i
+			],
+			beforeSend: function (event) {
+				try {
+					var msg = String((event && event.message) || "");
+					var vals = (event && event.exception && event.exception.values) || [];
+					var ex0 = vals.length ? vals[0] : null;
+					var exType = String((ex0 && ex0.type) || "");
+					var exVal = String((ex0 && ex0.value) || "");
+					var blob = msg + "\n" + exType + "\n" + exVal;
+					if (/Policy with name ["']default["'] already exists/i.test(blob) ||
+						/\bScript error\.?\b/i.test(blob) ||
+						/^ErrorEvent$/i.test(exType) ||
+						/ErrorEvent captured as/i.test(blob) ||
+						/Non-Error (exception|promise rejection) captured with keys/i.test(blob) ||
+						/captured as exception with keys:\s*isTrusted/i.test(blob) ||
+						/^Aa$/i.test(exVal.trim()) ||
+						/^Error:\s*Aa$/i.test(msg.trim()) ||
+						/^Error:\s*Aa$/i.test(exVal.trim()) ||
+						// AV: 2026-07-28: JAVASCRIPT-7F — mismo drop que Aa para "Error: fa".
+						// AV: 2026-07-31: JAVASCRIPT-7P — misma firma en salesPoint/dashBoard/default.asp.
+						/^fa$/i.test(exVal.trim()) ||
+						/^Error:\s*fa$/i.test(msg.trim()) ||
+						/^Error:\s*fa$/i.test(exVal.trim()) ||
+						// AV: 2026-08-03: JAVASCRIPT-7Y — drop PostHog uuidv7 RangeError.
+						(/^RangeError$/i.test(exType) && /^invalid field value$/i.test(exVal.trim())) ||
+						/RangeError:\s*invalid field value/i.test(msg) ||
+						/^invalid field value$/i.test(exVal.trim())) {
+						return null;
+					}
+				} catch (e) { /* no bloquear envío por fallo del filtro */ }
+				return event;
+			}
+		});
+		Sentry.onLoad(function () {
+			var scope = Sentry.getCurrentScope();
+			scope.setContext("Page", { url: window.location.href });
+			scope.setUser({ id: 7711 });
+			scope.setContext("IL_Customer", {"IL_CustomerID":310,"companyID":1,"userID":7711,"accountID":1,"accessType":2});
+			scope.setTag("il_customer_id", "310");
+			scope.setTag("company_id", "1");
+			scope.setTag("access_type", "2");
+			scope.setTag("app_area", "adminPanel");
+			scope.setTag("app_domain", window.location.hostname);
+		});
+	};
+	(document.head || document.body).appendChild(s);
+})();
+</script>
+
+<script type="text/javascript">
+(function () {
+	if (window.__POSTHOG_LOADED__) return;
+	window.__POSTHOG_LOADED__ = true;
+
+	!function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="Ji Yi init fn mn Ur pn bn cn capture calculateEventProperties Sn register register_once register_for_session unregister unregister_for_session Tn getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync Mn identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset shutdown setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty Cn xn createPersonProfile setInternalOrTestUser In hn Pn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing debug Vr Rt getPageViewId captureTraceFeedback captureTraceMetric an".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+
+	// AV: 2026-07-25: PostHog 019f81d1 — ErrorEvent/isTrusted; 019f8501 — alinear con pie.asp.
+	function ipnPosthogBeforeSend(event) {
+		if (!event || event.event !== "$exception") { return event; }
+		var props = event.properties || {};
+		var list = props["$exception_list"] || [];
+		var ex = list.length ? list[0] : null;
+		var type = String((ex && ex.type) || props["$exception_type"] || "");
+		var value = String((ex && ex.value) || props["$exception_message"] || "");
+		if (/Policy with name ["']default["'] already exists/i.test(value) ||
+			/^ErrorEvent$/i.test(type) ||
+			/ErrorEvent captured as/i.test(value) ||
+			/captured as exception with keys:\s*isTrusted/i.test(value) ||
+			/Non-Error exception captured with keys/i.test(value) ||
+			value === "Script error." || value === "Script error" ||
+			// AV: 2026-07-28: JAVASCRIPT-7C / 7F — mismo drop que Sentry para "Error: Aa" / "Error: fa".
+			// AV: 2026-07-31: JAVASCRIPT-7P — misma firma en salesPoint/dashBoard/default.asp.
+			value === "Aa" || /^Error:\s*Aa$/i.test(value) ||
+			value === "fa" || /^Error:\s*fa$/i.test(value) ||
+			// AV: 2026-08-03: JAVASCRIPT-7Y — mismo drop que Sentry para PostHog uuidv7.
+			(/^RangeError$/i.test(type) && /^invalid field value$/i.test(value.trim())) ||
+			/^invalid field value$/i.test(value.trim()) ||
+			/RangeError:\s*invalid field value/i.test(value)) {
+			return null;
+		}
+		return event;
+	}
+
+	// AV: 2026-07-20: Error Tracking — captura de excepciones no manejadas
+	posthog.init("phc_ndp4qixgWxW3LGvyQGgnvvt2UVREKGphTKMyCDvSoZdr", {
+		api_host: "https://us.i.posthog.com",
+		defaults: "2026-05-30",
+		person_profiles: "identified_only",
+		// AV: 2026-07-25: PostHog 019f8501 — autocapture:true quedó solo en adminPanel/secure
+		// tras el fix de pie.asp (450cc82); en DOM pesados (iOS/WebKit) → RangeError stack.
+		autocapture: false,
+		capture_pageview: true,
+		disable_session_recording: true,
+		before_send: ipnPosthogBeforeSend,
+		capture_exceptions: {
+			capture_unhandled_errors: true,
+			capture_unhandled_rejections: true,
+			capture_console_errors: false
+		}
+	});
+
+	posthog.identify("7711");
+	posthog.group("company", "310");
+	posthog.register({
+		il_customer_id: 310,
+		company_id: 1,
+		access_type: 2,
+		module_id: 1,
+		store_id: 0,
+		app_area: "adminPanel",
+		app_domain: window.location.hostname
+	});
+})();
+</script>
+
+</body>
+</html>

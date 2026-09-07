@@ -1,0 +1,522 @@
+[
+  {
+    "title": "* { box-sizing: border-box; -moz-box-sizing: border-box; } h1 { margin: 1em 0; text-align: center; } input.visible { visibility: visible !important; } function dynamicColors(array1) { var arr = []; $.each(array1, function (index, value) { var r = Math.floor(Math.random() * 255); var g = Math.floor(Math.random() * 255); var b = Math.floor(Math.random() * 255); arr.push(\"rgb(\" + r + \",\" + g + \",\" + b + \")\"); }); return arr; } function setCustomer() { var optSelected = $(\"#selectedStore option:selected\"); var storeID = optSelected.val(); var storeName = optSelected.attr(\"storeName\"); var companyID = optSelected.attr(\"companyID\"); var companyName = optSelected.attr(\"companyName\"); var storeTypeID = optSelected.attr(\"storeTypeID\"); $(\"#storeID\").val(storeID); $(\"#companyID\").val(companyID); $(\"#storeTypeID\").val(storeTypeID); $(\"#frmSelected\").submit(); } $(document).ready(function () { if ($('input[type=\"checkbox\"][name=\"storeIDStr\"]:not(:checked)').length > 0) $(\"#checkAll\").prop(\"checked\", false); else $(\"#checkAll\").prop(\"checked\", true); $(\"#headerFilters\").click(function () { if ($(\"#contentFilters\").is(\":visible\")) { $header = $(this); $content = $header.next(); $content.slideToggle(500, function () { $(\"#headerImg\").attr(\"src\", \"https://app.ipn.com.ar/system/images/icons/32/icon_0363.png\"); }); } else { $header = $(this); $content = $header.next(); $content.slideToggle(500, function () { $(\"#headerImg\").attr(\"src\", \"https://app.ipn.com.ar/system/images/icons/32/icon_0364.png\"); }); } }); var maxDate; var today = new Date(); maxDate = moment(today).format('YYYY-MM-DD'); /* Calendar */ //IPV 14/02/2018: Sacamos la fecha limite, ya que esto hacía que no funcionara el botón de \"hoy\" //AV: 2026-08-14: Si el recurso del picker no se cargó, mantener los //filtros utilizables como inputs de texto y no interrumpir el resto del ready. if ($.fn && typeof $.fn.datetimepicker === \"function\") { $('#datePickerFrom').datetimepicker({ minDate: moment().subtract(2, 'months').format('YYYY-MM-DD'), date: moment($(\"#fromDate\").val(), \"DD/MM/YYYY\") }); $('#datePickerTo').datetimepicker({ minDate: moment().subtract(2, 'months').format('YYYY-MM-DD'), date: moment($(\"#toDate\").val(), \"DD/MM/YYYY\") }); } $(\"#storeAccess\").click(function () { if ($(\"#selectedStore\").val() == 0) generateInlineMsg(\"selectedStore\", \"Por favor seleccione una sucursal.\", 1); else setCustomer(); }); $(\"#searchBtn\").click(function () { if (daydiff(parseDateFromChr($('#fromDate').val()), parseDateFromChr($('#toDate').val())) > 30) { alert('Seleccione un rango de fechas menor a 30 días.'); return false; } if ($(\"[name='storeIDStr']:checked\").length == 0) alert(\"Por favor seleccione una sucursal.\"); else { $(\"#doAction\").val(2); loadAfterClick($(\"#searchBtn\")[0]); $(\"#frmSelected\").submit(); } }); $(\"[name='hrefStore']\").click(function () { var storeID = $(this).attr(\"storeid\"); $(\"#selectedStore\").val(storeID); setCustomer(); }); $(\"[name='reportQtip']\").qtip({ content: { text: 'Tenga en cuenta que aqu� no se incluyen recargos financieros.' }, show: 'mouseover', hide: 'mouseout', position: { corner: { target: 'rightMiddle', tooltip: 'leftMiddle' } }, style: { name: 'cream', width: 300, border: { width: 2, radius: 5 } } }); $(\"#checkAll\").click(function () { if ($(this).is(\":checked\")) { $(\"[name='storeIDStr']\").prop(\"checked\", true); $(\"[name='checkAllStoreType']\").prop(\"checked\", true); } else { $(\"[name='storeIDStr']\").prop(\"checked\", false); $(\"[name='checkAllStoreType']\").prop(\"checked\", false); } }); $(\"[name='storeIDStr']\").click(function () { if ($('input[type=\"checkbox\"][name=\"storeIDStr\"]:not(:checked)').length > 0) $(\"#checkAll\").prop(\"checked\", false); else $(\"#checkAll\").prop(\"checked\", true); if ($('input[type=\"checkbox\"][name=\"storeIDStr\"][storetypeid=\"' + $(this).attr(\"storetypeid\") + '\"]:checked').length == 0) $(\"[name='checkAllStoreType'][value='\" + $(this).attr(\"storetypeid\") + \"'\").prop(\"checked\", false); else $(\"[name='checkAllStoreType'][value='\" + $(this).attr(\"storetypeid\") + \"'\").prop(\"checked\", true); }); $(\"input[type='checkbox'][name='checkAllStoreType']\").click(function () { if ($(this).is(\":checked\")) $(\"input[type='checkbox'][name='storeIDStr'][storetypeid='\" + $(this).val() + \"']\").prop(\"checked\", true); else $(\"input[type='checkbox'][name='storeIDStr'][storetypeid='\" + $(this).val() + \"']\").prop(\"checked\", false); }); $(\"#salesByItems\").click(function () { var storeIDStr = $(\"[name='storeIDStr']:checked\").map(function () { return $(this).val(); }).get().join(\", \"); $(\"#storeIDtoFilterStr\").val(storeIDStr); $(\"#frmSalesByItems\").submit(); }); }); @font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/greek-ext/400/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/math/400/normal.woff2);unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/greek/400/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/symbols/400/normal.woff2);unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.2.10/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/latin-ext/300/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/latin/300/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/cyrillic/300/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/cyrillic-ext/300/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/math/300/normal.woff2);unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/greek-ext/300/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/symbols/300/normal.woff2);unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/greek/300/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.2.10/vietnamese/300/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/greek/700/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/greek-ext/700/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/latin/700/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/latin-ext/700/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/math/700/normal.woff2);unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/vietnamese/700/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/cyrillic-ext/700/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/cyrillic/700/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.2.10/symbols/700/normal.woff2);unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF;font-display:swap;} @font-face {font-family:'Ubuntu';font-style:normal;font-weight:400;src:url(/cf-fonts/s/ubuntu/5.2.8/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:400;src:url(/cf-fonts/s/ubuntu/5.2.8/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:400;src:url(/cf-fonts/s/ubuntu/5.2.8/greek/400/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:400;src:url(/cf-fonts/s/ubuntu/5.2.8/greek-ext/400/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:400;src:url(/cf-fonts/s/ubuntu/5.2.8/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:400;src:url(/cf-fonts/s/ubuntu/5.2.8/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(/cf-fonts/s/ubuntu/5.2.8/cyrillic/700/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(/cf-fonts/s/ubuntu/5.2.8/greek/700/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(/cf-fonts/s/ubuntu/5.2.8/latin-ext/700/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(/cf-fonts/s/ubuntu/5.2.8/cyrillic-ext/700/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(/cf-fonts/s/ubuntu/5.2.8/greek-ext/700/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(/cf-fonts/s/ubuntu/5.2.8/latin/700/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;} :root{ --fgrd: #000000; --sfrgnd: #ffffff; } /* Nuevo menu */ .exo-menu {background-color: #000000 !important;} .exo-menu li a {background-color: #000000 !important;} .flyout-right ul>li>a , .flyout-left ul>li>a, .flyout-mega-wrap, .mega-menu{ background-color: #000000 !important; } .exo-menu > li:hover {background-color: #707070 !important;} .exo-menu li a:hover {background-color: #707070 !important;} h4.row.mega-title { background-color: #707070 !important; border-bottom: 1px solid #707070!important;} .exo-menu > li {border-right: solid 1px #ffffff !important;} .exo-menu > li > ul > li {border-top: solid 1px #ffffff !important;} .exo-menu > li > ul > li ul > li {border-top: solid 1px #ffffff !important;} .exo-menu a {color: #ffffff!important} .exo-menu > li > a {color: #ffffff!important} .exo-menu a:hover {color: #ffffff!important} .exo-menu > li > ul > li > a {color: #ffffff!important} .exo-menu > li > ul > li:hover > a {color: #ffffff!important} .exo-menu > li > ul > li ul > li:hover > a {color: #ffffff!important} .exo-menu > li > ul > li ul > li > a {color: #ffffff!important} .newContent a, .newContent a:hover, .newContent a.active, .newContent a:active, .newContent a:visited, .newContent a:focus{ color:#ffffff!important;} .newContent a, .newContent a:visited, .newContent a:hover, .newContent a:active {color:#ffffff!important; outline : none;} /*End nuevo menu*/ $(document).ready(function () { //Seteo de favicon var faviconTag1 = ' '; var faviconTag2 = ' '; $(\"title\").after(faviconTag2).after(faviconTag2); // Oculto el div de Opciones del menú $(\"#boxOptionHeader\").hide(); // Muestro/Oculto el div de Opciones del menú $(document).mouseup(function (e) { var container = $(\"#boxOptionHeader\"); var container2 = $(\"#lnkOption\"); if (!container.is(e.target) && container.has(e.target).length === 0) // ... nor a descendant of the container { if (container2.is(e.target)) { if ($(\"#boxOptionHeader\").css('display') == 'none') { $(\"#boxOptionHeader\").show(); } // else { $(\"#boxOptionHeader\").hide(); } } else { container.hide(); } } }); }); var systemFolder = 'https://app.ipn.com.ar/system'; DANIEL ALEJANDRO GRASSO [46792-juli] juliana avalos [adminitrativo] C&oacute;digo de soporte: #07711 Mi cuenta Panel de administraci&oacute;n Mesa de ayuda iPN University Mensajes Cambiar de raz&oacute;n social Cerrar sesi&oacute;n Configuración Stock Tipos de Productos",
+    "url": "https://app.ipn.com.ar/system/style/bootstrap-datetimepicker-standalone.css?build=202608211036"
+  },
+  {
+    "title": "Categorías de Productos",
+    "url": "https://app.ipn.com.ar/control/category/default.asp"
+  },
+  {
+    "title": "Marcas",
+    "url": "https://app.ipn.com.ar/configuration/trademarks/default.asp"
+  },
+  {
+    "title": "Tareas",
+    "url": "https://app.ipn.com.ar/configuration/tasks/default.asp"
+  },
+  {
+    "title": "Materiales",
+    "url": "https://app.ipn.com.ar/configuration/default.asp?moduleID=33"
+  },
+  {
+    "title": "Colores",
+    "url": "https://app.ipn.com.ar/configuration/colors/default.asp"
+  },
+  {
+    "title": "Líneas",
+    "url": "https://app.ipn.com.ar/configuration/default.asp?moduleID=35"
+  },
+  {
+    "title": "Administración Horarios de cierre de caja",
+    "url": "#"
+  },
+  {
+    "title": "Chequeras",
+    "url": "https://app.ipn.com.ar/configuration/checkbook/default.asp"
+  },
+  {
+    "title": "Tipo cambiario",
+    "url": "https://app.ipn.com.ar/admin/currency/default.asp"
+  },
+  {
+    "title": "Cotizaciones ARCA",
+    "url": "https://app.ipn.com.ar/admin/currency/ARCA/default.asp"
+  },
+  {
+    "title": "Métodos de cobro",
+    "url": "https://app.ipn.com.ar/configuration/paymentMethod/default.asp"
+  },
+  {
+    "title": "Listas de precios de productos",
+    "url": "https://app.ipn.com.ar/configuration/productsPriceLists/default.asp"
+  },
+  {
+    "title": "Promociones",
+    "url": "https://app.ipn.com.ar/configuration/promotions/default.asp"
+  },
+  {
+    "title": "Cuentas de Mercado Pago",
+    "url": "https://app.ipn.com.ar/B2C/mercadoPagoAccounts/default.asp"
+  },
+  {
+    "title": "Sub-tipos de proveedores",
+    "url": "https://app.ipn.com.ar/configuration/subProviderType/default.asp"
+  },
+  {
+    "title": "Tipo de clientes",
+    "url": "https://app.ipn.com.ar/configuration/default.asp?moduleID=104"
+  },
+  {
+    "title": "Grupo de empleados",
+    "url": "https://app.ipn.com.ar/configuration/default.asp?moduleID=450"
+  },
+  {
+    "title": "Tipos de Gastos",
+    "url": "https://app.ipn.com.ar/configuration/expensesConcept/default.asp"
+  },
+  {
+    "title": "Sub-tipo de gastos",
+    "url": "https://app.ipn.com.ar/configuration/subExpensesConcept/default.asp"
+  },
+  {
+    "title": "Condiciones comerciales",
+    "url": "https://app.ipn.com.ar/configuration/commercialConditions/default.asp"
+  },
+  {
+    "title": "Conceptos bancarios",
+    "url": "https://app.ipn.com.ar/configuration/bankConcepts/default.asp"
+  },
+  {
+    "title": "Categorías de atributos de clientes",
+    "url": "https://app.ipn.com.ar/configuration/customerAttrCategories/default.asp"
+  },
+  {
+    "title": "Atributos de clientes",
+    "url": "https://app.ipn.com.ar/configuration/customerAttributes/default.asp"
+  },
+  {
+    "title": "Jerarquías de empleados",
+    "url": "https://app.ipn.com.ar/configuration/default.asp?moduleID=101"
+  },
+  {
+    "title": "Transportes",
+    "url": "https://app.ipn.com.ar/configuration/transport/default.asp"
+  },
+  {
+    "title": "Razones sociales",
+    "url": "https://app.ipn.com.ar/configuration/companies/default.asp"
+  },
+  {
+    "title": "Periodos de gestión/impositivos",
+    "url": "https://app.ipn.com.ar/admin/accounting/accountingPeriodList.asp"
+  },
+  {
+    "title": "Componentes",
+    "url": "https://app.ipn.com.ar/production/components/default.asp"
+  },
+  {
+    "title": "Talleres",
+    "url": "https://app.ipn.com.ar/production/workshop/default.asp"
+  },
+  {
+    "title": "Tipos de no conformidades",
+    "url": "https://app.ipn.com.ar/production/productionErrorsTypes/default.asp"
+  },
+  {
+    "title": "Sub-componentes",
+    "url": "https://app.ipn.com.ar/production/subComponents/default.asp"
+  },
+  {
+    "title": "Reglas de envío",
+    "url": "https://app.ipn.com.ar/B2C/shippingRules/default.asp"
+  },
+  {
+    "title": "Procesos de sincronización",
+    "url": "https://app.ipn.com.ar/configuration/MLA/taskScheduler/default.asp"
+  },
+  {
+    "title": "Procesos de sincronización",
+    "url": "https://app.ipn.com.ar/configuration/TDN/taskScheduler/default.asp"
+  },
+  {
+    "title": "Configuración avanzada",
+    "url": "https://app.ipn.com.ar/configuration/businessRules/default.asp"
+  },
+  {
+    "title": "Sucursales",
+    "url": "https://app.ipn.com.ar/configuration/stores/default.asp"
+  },
+  {
+    "title": "Notificaciones",
+    "url": "https://app.ipn.com.ar/configuration/notifications/default.asp"
+  },
+  {
+    "title": "Tareas programadas",
+    "url": "https://app.ipn.com.ar/configuration/taskScheduler/default.asp"
+  },
+  {
+    "title": "Comprobantes elec. pend. de autorización",
+    "url": "https://app.ipn.com.ar/admin/accounting/electronicInvoiceList.asp"
+  },
+  {
+    "title": "Importaciones",
+    "url": "https://app.ipn.com.ar/configuration/importation/default.asp"
+  },
+  {
+    "title": "Visualización de productos",
+    "url": "https://app.ipn.com.ar/configuration/productVisualization/details.asp"
+  },
+  {
+    "title": "Notificaciones programadas",
+    "url": "https://app.ipn.com.ar/configuration/emailnotifications/default.asp"
+  },
+  {
+    "title": "Productos",
+    "url": "https://app.ipn.com.ar/control/products/default.asp"
+  },
+  {
+    "title": "Remitos",
+    "url": "https://app.ipn.com.ar/control/salesRemito/default.asp"
+  },
+  {
+    "title": "Stock comprometido",
+    "url": "https://app.ipn.com.ar/control/stockCommitted/default.asp"
+  },
+  {
+    "title": "Reservas de stock",
+    "url": "https://app.ipn.com.ar/control/stockReservation/default.asp"
+  },
+  {
+    "title": "Remitos de compra",
+    "url": "https://app.ipn.com.ar/control/purchasesRefer/default.asp"
+  },
+  {
+    "title": "Con colector de datos",
+    "url": "https://app.ipn.com.ar/control/stockSummary/projects.asp"
+  },
+  {
+    "title": "Proveedores",
+    "url": "https://app.ipn.com.ar/admin/providers/default.asp"
+  },
+  {
+    "title": "Gastos",
+    "url": "https://app.ipn.com.ar/admin/expenses/default.asp"
+  },
+  {
+    "title": "Órdenes de compra",
+    "url": "https://app.ipn.com.ar/admin/purchasesOrder/default.asp"
+  },
+  {
+    "title": "Pedidos",
+    "url": "https://app.ipn.com.ar/admin/customers/productRequest/default.asp"
+  },
+  {
+    "title": "Devoluciones",
+    "url": "https://app.ipn.com.ar/admin/customers/devolutions/default.asp"
+  },
+  {
+    "title": "Cheques",
+    "url": "https://app.ipn.com.ar/admin/checks/default.asp"
+  },
+  {
+    "title": "Liquidación de cupones de tarjetas",
+    "url": "https://app.ipn.com.ar/admin/coupons/default.asp"
+  },
+  {
+    "title": "Documentos",
+    "url": "https://app.ipn.com.ar/admin/documents/default.asp"
+  },
+  {
+    "title": "Proyección de acreditaciones de tarjetas",
+    "url": "https://app.ipn.com.ar/admin/coupons/cashflow/default.asp"
+  },
+  {
+    "title": "Depósitos imputables",
+    "url": "https://app.ipn.com.ar/admin/deposits/default.asp"
+  },
+  {
+    "title": "Transacciones Mercado Pago",
+    "url": "https://app.ipn.com.ar/admin/InStoreQRPayments/default.asp"
+  },
+  {
+    "title": "Resumen IVA Compras",
+    "url": "https://app.ipn.com.ar/admin/accounting/purchasesBookResume.asp"
+  },
+  {
+    "title": "Subdiario IVA Ventas",
+    "url": "https://app.ipn.com.ar/admin/accounting/salesBook.asp"
+  },
+  {
+    "title": "Resumen IVA Ventas",
+    "url": "https://app.ipn.com.ar/admin/accounting/salesBookResume.asp"
+  },
+  {
+    "title": "Listado de Percepciones",
+    "url": "https://app.ipn.com.ar/admin/accounting/perceptionsRetentions.asp?displayType=0"
+  },
+  {
+    "title": "Listado de Retenciones",
+    "url": "https://app.ipn.com.ar/admin/accounting/perceptionsRetentions.asp?displayType=1"
+  },
+  {
+    "title": "Reporte para declaración jurada mensual de IIBB",
+    "url": "https://app.ipn.com.ar/admin/accounting/agreementResume.asp"
+  },
+  {
+    "title": "Interfaces para aplicativos",
+    "url": "https://app.ipn.com.ar/admin/accounting/exportTXT.asp"
+  },
+  {
+    "title": "OUTLET",
+    "url": "https://app.ipn.com.ar/setStoreData.asp?moduleID=4&storeID=1&storeName=OUTLET&companyID=1&companyName=DANIEL ALEJANDRO GRASSO&storeTypeID=1"
+  },
+  {
+    "title": "SBW CANNING",
+    "url": "https://app.ipn.com.ar/setStoreData.asp?moduleID=4&storeID=5&storeName=SBW CANNING&companyID=2&companyName=GATICAR&storeTypeID=1"
+  },
+  {
+    "title": "Materias Primas",
+    "url": "https://app.ipn.com.ar/production/rawMaterial/default.asp"
+  },
+  {
+    "title": "Fichas técnicas",
+    "url": "https://app.ipn.com.ar/production/preProducts/default.asp"
+  },
+  {
+    "title": "Órdenes de producción",
+    "url": "https://app.ipn.com.ar/production/tickets/default.asp"
+  },
+  {
+    "title": "Operarios",
+    "url": "https://app.ipn.com.ar/production/employees/default.asp"
+  },
+  {
+    "title": "Liquidaciones de haberes",
+    "url": "https://app.ipn.com.ar/production/incomeSettlement/default.asp"
+  },
+  {
+    "title": "Movimientos de materia prima",
+    "url": "https://app.ipn.com.ar/production/rawMaterialMovement/default.asp"
+  },
+  {
+    "title": "Solicitudes de fabricación",
+    "url": "https://app.ipn.com.ar/production/request/default.asp"
+  },
+  {
+    "title": "Actualizaciones de OP's",
+    "url": "https://app.ipn.com.ar/production/tickets/ticketsUpdateReport.asp"
+  },
+  {
+    "title": "Usuarios",
+    "url": "https://app.ipn.com.ar/iB2B/users/default.asp"
+  },
+  {
+    "title": "Gestor de contenidos",
+    "url": "https://app.ipn.com.ar/B2C/CMS/default.asp?ib2b=1"
+  },
+  {
+    "title": "Pedidos abiertos",
+    "url": "https://app.ipn.com.ar/iB2B/openOrders/default.asp"
+  },
+  {
+    "title": "Ventas",
+    "url": "https://app.ipn.com.ar/B2C/MLA/orders/default.asp"
+  },
+  {
+    "title": "Gestión de órdenes de compra",
+    "url": "https://app.ipn.com.ar/B2C/ordersWorkflow/default.asp"
+  },
+  {
+    "title": "Ventas",
+    "url": "https://app.ipn.com.ar/B2C/TDN/orders/default.asp"
+  },
+  {
+    "title": "Listado de compras y gastos por proveedor",
+    "url": "https://app.ipn.com.ar/admin/accounting/purchasesListByProvider.asp"
+  },
+  {
+    "title": "Detalle de compras y gastos por tipo y sub-tipo",
+    "url": "https://app.ipn.com.ar/admin/accounting/purchasesListByType.asp"
+  },
+  {
+    "title": "Compras por mes y proveedor",
+    "url": "https://app.ipn.com.ar/admin/accounting/purchases.asp"
+  },
+  {
+    "title": "Reporte de artículos comprados por proveedor",
+    "url": "https://app.ipn.com.ar/admin/accounting/providersPurchasedItems.asp"
+  },
+  {
+    "title": "Detalle de compras realizadas",
+    "url": "https://app.ipn.com.ar/admin/accounting/purchasesDetails.asp"
+  },
+  {
+    "title": "Rte. de saldos de proveedores por tipo y subtipo",
+    "url": "https://app.ipn.com.ar/admin/accounting/providersBalanceByType.asp"
+  },
+  {
+    "title": "Reporte de pagos realizados",
+    "url": "https://app.ipn.com.ar/admin/accounting/paymentsResume.asp"
+  },
+  {
+    "title": "Comprobantes pendientes de pago",
+    "url": "https://app.ipn.com.ar/admin/accounting/purchasePendingInvoices.asp"
+  },
+  {
+    "title": "Operaciones de compra pendientes de imputación",
+    "url": "https://app.ipn.com.ar/reports/pendingImputations/default.asp?receiptTypeID=1"
+  },
+  {
+    "title": "Detalle de ventas realizadas",
+    "url": "https://app.ipn.com.ar/admin/accounting/salesList.asp"
+  },
+  {
+    "title": "Ventas por mes y cliente",
+    "url": "https://app.ipn.com.ar/admin/accounting/itemSalesHistory/default.asp?viewType=21"
+  },
+  {
+    "title": "Detalle de ventas realizadas por vendedor",
+    "url": "https://app.ipn.com.ar/admin/accounting/salesByEmployee.asp"
+  },
+  {
+    "title": "Reporte de ventas vs devoluciones",
+    "url": "https://app.ipn.com.ar/admin/accounting/operationsResume.asp"
+  },
+  {
+    "title": "Reporte de ventas por vendedor y artículo",
+    "url": "https://app.ipn.com.ar/admin/accounting/itemSalesHistory/default.asp?viewType=22"
+  },
+  {
+    "title": "Comprobantes pendientes de cobro",
+    "url": "https://app.ipn.com.ar/admin/accounting/reportPayedSales.asp"
+  },
+  {
+    "title": "Reporte de NC y ND por vendedor",
+    "url": "https://app.ipn.com.ar/admin/accounting/reportCustomersCreditDebit.asp"
+  },
+  {
+    "title": "Reporte de estado de clientes",
+    "url": "https://app.ipn.com.ar/admin/accounting/customerStatusReport.asp"
+  },
+  {
+    "title": "Reporte de cobranzas realizadas",
+    "url": "https://app.ipn.com.ar/admin/accounting/incomeResume.asp"
+  },
+  {
+    "title": "Deuda vencida y futura",
+    "url": "https://app.ipn.com.ar/admin/accounting/aging.asp"
+  },
+  {
+    "title": "Extracto de ctas. ctes. por vendedor",
+    "url": "https://app.ipn.com.ar/reports/customerAcctRescBySalesMan/default.asp"
+  },
+  {
+    "title": "Operaciones de venta pendientes de imputación",
+    "url": "https://app.ipn.com.ar/reports/pendingImputations/default.asp?receiptTypeID=2"
+  },
+  {
+    "title": "Reporte de cheques de terceros",
+    "url": "https://app.ipn.com.ar/admin/accounting/checksReportByDate.asp"
+  },
+  {
+    "title": "Movimiento diario de fondos",
+    "url": "https://app.ipn.com.ar/reports/dailyPaymentSourcesMovements/default.asp"
+  },
+  {
+    "title": "Reporte de transacciones de empleados",
+    "url": "https://app.ipn.com.ar/reports/employeeAcctResc/default.asp"
+  },
+  {
+    "title": "Reporte de ajustes de cta. cte.",
+    "url": "https://app.ipn.com.ar/reports/acctRescAdjustsReport/default.asp"
+  },
+  {
+    "title": "Reporte de retiros de mercadería de empleados",
+    "url": "https://app.ipn.com.ar/reports/employeeStockWidthdrawal/default.asp"
+  },
+  {
+    "title": "Reporte de liquidación de tarjetas",
+    "url": "https://app.ipn.com.ar/admin/accounting/creditCardResumeReport/default.asp"
+  },
+  {
+    "title": "Historial de cambio de precios",
+    "url": "https://app.ipn.com.ar/reports/productsPriceListChanges/default.asp"
+  },
+  {
+    "title": "Ventas por vendedor por fecha",
+    "url": "https://app.ipn.com.ar/reports/filter.asp?reportID=3&reportCategoryID=43"
+  },
+  {
+    "title": "Ventas por tipo de producto por fecha",
+    "url": "https://app.ipn.com.ar/reports/filter.asp?reportID=4&reportCategoryID=43"
+  },
+  {
+    "title": "Ventas por sucursal por producto",
+    "url": "https://app.ipn.com.ar/reports/filter.asp?reportID=5&reportCategoryID=43"
+  },
+  {
+    "title": "Rentabilidad de ventas por local",
+    "url": "https://app.ipn.com.ar/reports/filter.asp?reportID=9&reportCategoryID=43"
+  },
+  {
+    "title": "Ventas por sucursal por forma de pago",
+    "url": "https://app.ipn.com.ar/reports/salesByStoreAndPaymentMethod/default.asp"
+  },
+  {
+    "title": "Comisiones por sucursal por tipo",
+    "url": "https://app.ipn.com.ar/reports/filter.asp?reportID=13&reportCategoryID=43"
+  },
+  {
+    "title": "Ventas por sucursal por proveedor",
+    "url": "https://app.ipn.com.ar/reports/filter.asp?reportID=14&reportCategoryID=43"
+  },
+  {
+    "title": "Reporte de operaciones de caja",
+    "url": "https://app.ipn.com.ar/reports/salesPointMovements.asp"
+  },
+  {
+    "title": "Ventas por sucursal y promoción",
+    "url": "https://app.ipn.com.ar/reports/filter.asp?reportID=23&reportCategoryID=43"
+  },
+  {
+    "title": "Reporte agrupado de operaciones de stock",
+    "url": "https://app.ipn.com.ar/reports/stockReports/stockLogOperationsGroup.asp"
+  },
+  {
+    "title": "Stock valorizado por fecha",
+    "url": "https://app.ipn.com.ar/reports/stockReports/valuedStockByDate.asp"
+  },
+  {
+    "title": "Detalle de disponibilidad de productos",
+    "url": "https://app.ipn.com.ar/reports/productsAvailability/default.asp"
+  },
+  {
+    "title": "Reposición por venta",
+    "url": "https://app.ipn.com.ar/reports/stockReplacement/default.asp"
+  },
+  {
+    "title": "Rotación",
+    "url": "https://app.ipn.com.ar/reports/stockRotation/default.asp"
+  },
+  {
+    "title": "Stock valorizado de materias primas por fecha",
+    "url": "https://app.ipn.com.ar/reports/stockReports/rawMaterialValuedStock.asp"
+  },
+  {
+    "title": "Planilla de producción diaria",
+    "url": "https://app.ipn.com.ar/reports/dailyProductionResume/default.asp"
+  },
+  {
+    "title": "Cantidades por talle por producto",
+    "url": "https://app.ipn.com.ar/reports/pairsBySizeByProduct/default.asp"
+  },
+  {
+    "title": "Reporte de liquidación de haberes",
+    "url": "https://app.ipn.com.ar/reports/incomeSettlementReport/default.asp"
+  },
+  {
+    "title": "Órdenes de producción pendientes por taller",
+    "url": "https://app.ipn.com.ar/reports/workshopTickets/default.asp"
+  }
+]

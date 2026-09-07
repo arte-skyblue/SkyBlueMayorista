@@ -1,0 +1,283 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Company {
+  id          Int          @id @default(autoincrement())
+  name        String
+  businessName String
+  cuit        String       @unique
+  taxCondition String
+  warehouses  Warehouse[]
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+model Warehouse {
+  id          Int                 @id @default(autoincrement())
+  code        String              @unique
+  name        String
+  type        String              // "SHOWROOM_WHOLESALE", "RETAIL_ONLINE_OUTLET", "STORAGE"
+  address     String?
+  companyId   Int
+  company     Company             @relation(fields: [companyId], references: [id])
+  stocks      StockByWarehouse[]
+  orders      Order[]
+  fromMovements StockMovement[]   @relation("FromWarehouse")
+  toMovements   StockMovement[]   @relation("ToWarehouse")
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+}
+
+model Brand {
+  id          Int          @id @default(autoincrement())
+  name        String       @unique
+  slug        String       @unique
+  logoUrl     String?
+  products    Product[]
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+model Season {
+  id          Int          @id @default(autoincrement())
+  name        String       @unique
+  code        String?
+  isActive    Boolean      @default(true)
+  products    Product[]
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+model Category {
+  id          Int          @id @default(autoincrement())
+  name        String       @unique
+  slug        String       @unique
+  products    Product[]
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+model ProductType {
+  id          Int          @id @default(autoincrement())
+  name        String       @unique // e.g. "Calzado Dama (35-40)"
+  family      String       @default("Calzado") // "Calzado", "Accesorios", etc.
+  sizesList   String       // Comma separated sizes e.g. "35, 36, 37, 38, 39, 40"
+  products    Product[]
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+model Product {
+  id              Int                  @id @default(autoincrement())
+  sku             String               @unique
+  title           String
+  description     String?
+  brandId         Int
+  brand           Brand                @relation(fields: [brandId], references: [id])
+  seasonId        Int
+  season          Season               @relation(fields: [seasonId], references: [id])
+  categoryId      Int
+  category        Category             @relation(fields: [categoryId], references: [id])
+  productTypeId   Int
+  productType     ProductType          @relation(fields: [productTypeId], references: [id])
+  material        String?
+  line            String?
+  providerName    String?
+  priceCost       Float                @default(0)
+  isPublishedWeb  Boolean              @default(true)
+  isFeatured      Boolean              @default(false)
+  isB2BPublished  Boolean              @default(true)
+  mainImage       String?
+  imagesJson      String?              // JSON array of image URLs
+  colors          ProductColor[]
+  prices          ProductPrice[]
+  createdAt       DateTime             @default(now())
+  updatedAt       DateTime             @updatedAt
+}
+
+model ProductColor {
+  id          Int                  @id @default(autoincrement())
+  productId   Int
+  product     Product              @relation(fields: [productId], references: [id], onDelete: Cascade)
+  colorCode   String?
+  colorName   String
+  hexCode     String?
+  imageUrl    String?
+  sizes       ProductVariantSize[]
+  createdAt   DateTime             @default(now())
+  updatedAt   DateTime             @updatedAt
+}
+
+model ProductVariantSize {
+  id              Int                 @id @default(autoincrement())
+  productColorId  Int
+  productColor    ProductColor        @relation(fields: [productColorId], references: [id], onDelete: Cascade)
+  sizeNumber      String              // e.g. "35", "36", "37/38"
+  barcodeEan13    String?             @unique
+  packageRatio    Int                 @default(1) // Ratio in standard curve package
+  stocks          StockByWarehouse[]
+  shipmentItems   ShipmentItem[]
+  orderItems      OrderItem[]
+  movements       StockMovement[]
+  createdAt       DateTime            @default(now())
+  updatedAt       DateTime            @updatedAt
+}
+
+model PriceList {
+  id            Int            @id @default(autoincrement())
+  listNumber    Int            @unique // 1 to 10
+  name          String
+  description   String?
+  markupPercent Float          // e.g. 50 for +50%, 100 for +100%
+  currency      String         @default("ARS") // "ARS", "USD"
+  isDefault     Boolean        @default(false)
+  prices        ProductPrice[]
+  customers     Customer[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+}
+
+model ProductPrice {
+  id          Int        @id @default(autoincrement())
+  productId   Int
+  product     Product    @relation(fields: [productId], references: [id], onDelete: Cascade)
+  priceListId Int
+  priceList   PriceList  @relation(fields: [priceListId], references: [id], onDelete: Cascade)
+  priceAmount Float
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  @@unique([productId, priceListId])
+}
+
+model Shipment {
+  id              Int            @id @default(autoincrement())
+  shipmentNumber  String         @unique // e.g. "IMP-2026-004"
+  containerNumber String?        // e.g. "MSCU-829182-3"
+  origin          String         @default("Brasil") // "Brasil", "China", "Nacional"
+  status          String         @default("IN_TRANSIT") // "PLANNING", "IN_TRANSIT", "CUSTOMS", "ARRIVED", "RECEIVED"
+  departureDate   DateTime?
+  etaDate         DateTime       // Estimated Arrival Date
+  receivedDate    DateTime?
+  notes           String?
+  items           ShipmentItem[]
+  orderItems      OrderItem[]
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+}
+
+model ShipmentItem {
+  id                Int                @id @default(autoincrement())
+  shipmentId        Int
+  shipment          Shipment           @relation(fields: [shipmentId], references: [id], onDelete: Cascade)
+  variantSizeId     Int
+  variantSize       ProductVariantSize @relation(fields: [variantSizeId], references: [id], onDelete: Cascade)
+  quantityExpected  Int
+  quantityReceived  Int                @default(0)
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+}
+
+model StockByWarehouse {
+  id              Int                @id @default(autoincrement())
+  warehouseId     Int
+  warehouse       Warehouse          @relation(fields: [warehouseId], references: [id], onDelete: Cascade)
+  variantSizeId   Int
+  variantSize     ProductVariantSize @relation(fields: [variantSizeId], references: [id], onDelete: Cascade)
+  physicalStock   Int                @default(0) // Real in shelves
+  committedStock  Int                @default(0) // Committed to orders
+  reservedStock   Int                @default(0) // Temporarily reserved
+  inTransitStock  Int                @default(0) // On incoming shipment
+  createdAt       DateTime           @default(now())
+  updatedAt       DateTime           @updatedAt
+
+  @@unique([warehouseId, variantSizeId])
+}
+
+model StockMovement {
+  id              Int                 @id @default(autoincrement())
+  fromWarehouseId Int?
+  fromWarehouse   Warehouse?          @relation("FromWarehouse", fields: [fromWarehouseId], references: [id])
+  toWarehouseId   Int?
+  toWarehouse     Warehouse?          @relation("ToWarehouse", fields: [toWarehouseId], references: [id])
+  variantSizeId   Int
+  variantSize     ProductVariantSize  @relation(fields: [variantSizeId], references: [id], onDelete: Cascade)
+  quantity        Int
+  type            String              // "PURCHASE_RECEIPT", "SHIPMENT_RECEIPT", "TRANSFER", "SALE", "ADJUSTMENT", "RETURN"
+  reference       String?             // e.g. "Embarque IMP-2026-004", "Pedido #1042"
+  createdAt       DateTime            @default(now())
+}
+
+model Customer {
+  id              Int       @id @default(autoincrement())
+  code            String?   @unique
+  name            String
+  businessName    String?
+  cuit            String?   @unique
+  email           String?
+  phone           String?
+  address         String?
+  city            String?
+  province        String?
+  customerType    String    @default("WHOLESALE") // "WHOLESALE", "RETAIL"
+  creditLimit     Float     @default(0)
+  currentBalance  Float     @default(0)
+  sellerName      String?   // Vendedor asignado (e.g. "Juliana", "Marcelino", "Jesica")
+  priceListId     Int       @default(2) // Default Lista 2 Mayorista
+  priceList       PriceList @relation(fields: [priceListId], references: [id])
+  orders          Order[]
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model Order {
+  id              Int         @id @default(autoincrement())
+  orderNumber     String      @unique // e.g. "PED-2026-001"
+  customerId      Int
+  customer        Customer    @relation(fields: [customerId], references: [id])
+  warehouseId     Int         @default(1)
+  warehouse       Warehouse   @relation(fields: [warehouseId], references: [id])
+  orderType       String      @default("WHOLESALE_PHYSICAL") // "WHOLESALE_PHYSICAL", "WHOLESALE_PREORDER", "RETAIL_ONLINE", "RETAIL_POS"
+  status          String      @default("NEW") // "NEW", "APPROVED", "IN_PICKING", "READY_TO_SHIP", "SHIPPED", "DELIVERED", "CANCELLED"
+  totalAmount     Float       @default(0)
+  paymentMethod   String?     // "EFECTIVO", "TRANSFERENCIA", "CHEQUE", "CTA_CTE", "MERCADO_PAGO"
+  notes           String?
+  sellerName      String?
+  items           OrderItem[]
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+}
+
+model OrderItem {
+  id              Int                 @id @default(autoincrement())
+  orderId         Int
+  order           Order               @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  variantSizeId   Int
+  variantSize     ProductVariantSize  @relation(fields: [variantSizeId], references: [id], onDelete: Cascade)
+  quantity        Int
+  unitPrice       Float
+  subtotal        Float
+  isPreorder      Boolean             @default(false)
+  shipmentId      Int?
+  shipment        Shipment?           @relation(fields: [shipmentId], references: [id])
+  createdAt       DateTime            @default(now())
+  updatedAt       DateTime            @updatedAt
+}
+
+model Transport {
+  id          Int      @id @default(autoincrement())
+  code        String?
+  name        String   @unique
+  address     String?
+  phone       String?
+  contact     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+

@@ -1,0 +1,43 @@
+{
+  "storeID": [],
+  "storeID2": [],
+  "storeIDTask": [],
+  "storeID2Task": [],
+  "providerID": [],
+  "trademarkID": [],
+  "seasonID": [],
+  "productTypeID": [],
+  "materialID": [],
+  "lineID": [],
+  "displayOnlyB2B": [
+    {
+      "id": "1",
+      "name": "Publicado en iB2B"
+    },
+    {
+      "id": "2",
+      "name": "Sin publicar en iB2B"
+    }
+  ],
+  "displayProductsAssociates": [
+    {
+      "id": "1",
+      "name": "Publicado en MeLi"
+    },
+    {
+      "id": "2",
+      "name": "Sin publicar en Meli"
+    }
+  ],
+  "displayOnlyTDN": [
+    {
+      "id": "1",
+      "name": "Publicado en TDN"
+    },
+    {
+      "id": "2",
+      "name": "Sin publicar en TDN"
+    }
+  ],
+  "TDNstoreIDToFilter": []
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "href": "https://app.ipn.com.ar/adminPanel.asp",
+    "text": ""
+  },
+  {
+    "href": "https://app.ipn.com.ar/myAccount.asp?tab=1",
+    "text": "person Mi cuenta"
+  },
+  {
+    "href": "https://app.ipn.com.ar/adminPanel.asp",
+    "text": "apartment Panel de administraci&oacute;n chevron_right"
+  },
+  {
+    "href": "https://app.ipn.com.ar/techSupport/default.asp",
+    "text": "support_agent Mesa de ayuda chevron_right"
+  },
+  {
+    "href": "https://app.ipn.com.ar/services/login/zendesk.asp?stockType=1",
+    "text": "school iPN University chevron_right"
+  },
+  {
+    "href": "https://app.ipn.com.ar/messages.asp",
+    "text": "mail Mensajes chevron_right"
+  },
+  {
+    "href": "https://app.ipn.com.ar/defaultSelectedCompany.asp",
+    "text": "apartment Seleccionar RS"
+  },
+  {
+    "href": "https://app.ipn.com.ar/logout.asp",
+    "text": "logout Cerrar sesi&oacute;n"
+  },
+  {
+    "href": "https://app.ipn.com.ar/myAccount.asp?tab=3",
+    "text": "inventory_2 88% Soluciones contratadas 7 / 8"
+  },
+  {
+    "href": "https://app.ipn.com.ar/defaultSelectedCompany.asp",
+    "text": "business arrow_forward Seleccionar raz&oacute;n social Elija la raz&oacute;n social con la que desea operar en iPN."
+  },
+  {
+    "href": "https://app.ipn.com.ar/adminPanel/securityUsers.asp",
+    "text": "manage_accounts arrow_forward Usuarios y permisos Administre altas, bajas y permisos de acceso a su cuenta."
+  },
+  {
+    "href": "https://app.ipn.com.ar/techSupport/default.asp",
+    "text": "support_agent arrow_forward Mesa de ayuda Cree tickets y consulte el estado de sus pedidos de soporte."
+  },
+  {
+    "href": "https://app.ipn.com.ar/messages.asp",
+    "text": "mail arrow_forward Mensajes Recibidos, le&iacute;dos y enviados; cree mensajes internos."
+  },
+  {
+    "href": "services/login/zendesk.asp?stockType=1",
+    "text": "school arrow_forward iPN University Manuales y gu&iacute;as para aprovechar al m&aacute;ximo las funciones de iPN."
+  },
+  {
+    "href": "https://ipn.com.ar/legal/terminos?utm_source=app_ipn&utm_medium=internal&utm_campaign=ecosistema_ipn&utm_content=ipn_app_footer&utm_term=footer",
+    "text": "T&eacute;rminos y condiciones"
+  },
+  {
+    "href": "https://ipn.com.ar/legal/privacidad?utm_source=app_ipn&utm_medium=internal&utm_campaign=ecosistema_ipn&utm_content=ipn_app_footer&utm_term=footer",
+    "text": "Pol&iacute;ticas de privacidad"
+  }
+]

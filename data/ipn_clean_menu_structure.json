@@ -1,0 +1,710 @@
+[
+  {
+    "href": "https://app.ipn.com.ar/myAccount.asp?tab=1",
+    "text": "Mi cuenta"
+  },
+  {
+    "href": "https://app.ipn.com.ar/adminPanel.asp",
+    "text": "Panel de administraci&oacute;n"
+  },
+  {
+    "href": "https://app.ipn.com.ar/techSupport/default.asp",
+    "text": "Mesa de ayuda"
+  },
+  {
+    "href": "../../services/login/zendesk.asp?stockType=1",
+    "text": "iPN University"
+  },
+  {
+    "href": "https://app.ipn.com.ar/messages.asp",
+    "text": "Mensajes"
+  },
+  {
+    "href": "https://app.ipn.com.ar/defaultSelectedCompany.asp",
+    "text": "Cambiar de raz&oacute;n social"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/productType/default.asp",
+    "text": "Tipos de Productos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/control/category/default.asp",
+    "text": "Categorías de Productos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/trademarks/default.asp",
+    "text": "Marcas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/tasks/default.asp",
+    "text": "Tareas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/default.asp?moduleID=33",
+    "text": "Materiales"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/colors/default.asp",
+    "text": "Colores"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/default.asp?moduleID=35",
+    "text": "Líneas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/checkoutTimes/default.asp",
+    "text": "Horarios de cierre de caja"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/checkbook/default.asp",
+    "text": "Chequeras"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/currency/default.asp",
+    "text": "Tipo cambiario"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/currency/ARCA/default.asp",
+    "text": "Cotizaciones ARCA"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/paymentMethod/default.asp",
+    "text": "Métodos de cobro"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/productsPriceLists/default.asp",
+    "text": "Listas de precios de productos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/promotions/default.asp",
+    "text": "Promociones"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/mercadoPagoAccounts/default.asp",
+    "text": "Cuentas de Mercado Pago"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/default.asp?moduleID=95",
+    "text": "Tipos de proveedores"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/subProviderType/default.asp",
+    "text": "Sub-tipos de proveedores"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/default.asp?moduleID=104",
+    "text": "Tipo de clientes"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/default.asp?moduleID=450",
+    "text": "Grupo de empleados"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/expensesConcept/default.asp",
+    "text": "Tipos de Gastos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/subExpensesConcept/default.asp",
+    "text": "Sub-tipo de gastos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/commercialConditions/default.asp",
+    "text": "Condiciones comerciales"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/bankConcepts/default.asp",
+    "text": "Conceptos bancarios"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/customerAttrCategories/default.asp",
+    "text": "Categorías de atributos de clientes"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/customerAttributes/default.asp",
+    "text": "Atributos de clientes"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/default.asp?moduleID=101",
+    "text": "Jerarquías de empleados"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/transport/default.asp",
+    "text": "Transportes"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/IIBBActivities/default.asp",
+    "text": "Actividades de IIBB"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/companies/default.asp",
+    "text": "Razones sociales"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/accountingPeriodList.asp",
+    "text": "Periodos de gestión/impositivos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/phases/default.asp",
+    "text": "Etapas de producción"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/components/default.asp",
+    "text": "Componentes"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/workshop/default.asp",
+    "text": "Talleres"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/productionErrorsTypes/default.asp",
+    "text": "Tipos de no conformidades"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/subComponents/default.asp",
+    "text": "Sub-componentes"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/packaging/default.asp",
+    "text": "Packaging"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/shippingRules/default.asp",
+    "text": "Reglas de envío"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/billingConfiguration/default.asp",
+    "text": "Configuración de perfiles de gestión de órdenes"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/Configuration/settings.asp",
+    "text": "Configuración avanzada"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/MLA/application/default.asp",
+    "text": "Aplicaciones"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/MLA/taskScheduler/default.asp",
+    "text": "Procesos de sincronización"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/TDN/application/default.asp",
+    "text": "Tiendas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/TDN/taskScheduler/default.asp",
+    "text": "Procesos de sincronización"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/mailSettings/default.asp",
+    "text": "Configuración de Notificaciones"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/businessRules/default.asp",
+    "text": "Configuración avanzada"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/stores/default.asp",
+    "text": "Sucursales"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/notifications/default.asp",
+    "text": "Notificaciones"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/taskScheduler/default.asp",
+    "text": "Tareas programadas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/electronicInvoiceList.asp",
+    "text": "Comprobantes elec. pend. de autorización"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/importation/default.asp",
+    "text": "Importaciones"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/productVisualization/details.asp",
+    "text": "Visualización de productos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/configuration/emailnotifications/default.asp",
+    "text": "Notificaciones programadas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/control/stockAvailable/stockByStoreProviderAndProduct.asp",
+    "text": "Stock disponible"
+  },
+  {
+    "href": "https://app.ipn.com.ar/control/products/default.asp",
+    "text": "Productos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/control/stockTracking/default.asp",
+    "text": "Envíos de mercadería"
+  },
+  {
+    "href": "https://app.ipn.com.ar/control/salesRemito/default.asp",
+    "text": "Remitos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/control/stockCommitted/default.asp",
+    "text": "Stock comprometido"
+  },
+  {
+    "href": "https://app.ipn.com.ar/control/stockReservation/default.asp",
+    "text": "Reservas de stock"
+  },
+  {
+    "href": "https://app.ipn.com.ar/control/purchasesRefer/default.asp",
+    "text": "Remitos de compra"
+  },
+  {
+    "href": "https://app.ipn.com.ar/control/stockSummary/filter.asp",
+    "text": "Manual"
+  },
+  {
+    "href": "https://app.ipn.com.ar/control/stockSummary/projects.asp",
+    "text": "Con colector de datos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/defaultSelectedStore.asp?isIPV=0",
+    "text": "PANEL DE CONTROL DE ADMINISTRACION"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/dashboard/purchasesPanel.asp",
+    "text": "Panel de control de compras"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/providers/default.asp",
+    "text": "Proveedores"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/expenses/default.asp",
+    "text": "Gastos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/purchasesOrder/default.asp",
+    "text": "Órdenes de compra"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/customers/default.asp",
+    "text": "Clientes"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/customers/productRequest/default.asp",
+    "text": "Pedidos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/customers/devolutions/default.asp",
+    "text": "Devoluciones"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/paymentSources/default.asp",
+    "text": "Fondos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/checks/default.asp",
+    "text": "Cheques"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/coupons/default.asp",
+    "text": "Liquidación de cupones de tarjetas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/documents/default.asp",
+    "text": "Documentos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/coupons/cashflow/default.asp",
+    "text": "Proyección de acreditaciones de tarjetas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/deposits/default.asp",
+    "text": "Depósitos imputables"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/InStoreQRPayments/default.asp",
+    "text": "Transacciones Mercado Pago"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/employees/default.asp",
+    "text": "Empleados"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/purchasesBook.asp",
+    "text": "Subdiario IVA Compras"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/purchasesBookResume.asp",
+    "text": "Resumen IVA Compras"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/salesBook.asp",
+    "text": "Subdiario IVA Ventas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/salesBookResume.asp",
+    "text": "Resumen IVA Ventas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/perceptionsRetentions.asp?displayType=0",
+    "text": "Listado de Percepciones"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/perceptionsRetentions.asp?displayType=1",
+    "text": "Listado de Retenciones"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/agreementResume.asp",
+    "text": "Reporte para declaración jurada mensual de IIBB"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/exportTXT.asp",
+    "text": "Interfaces para aplicativos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/setStoreData.asp?moduleID=4&storeID=9&storeName=CAÑUELAS&companyID=1&companyName=DANIEL ALEJANDRO GRASSO&storeTypeID=1",
+    "text": "CAÑUELAS"
+  },
+  {
+    "href": "https://app.ipn.com.ar/setStoreData.asp?moduleID=4&storeID=1&storeName=OUTLET&companyID=1&companyName=DANIEL ALEJANDRO GRASSO&storeTypeID=1",
+    "text": "OUTLET"
+  },
+  {
+    "href": "https://app.ipn.com.ar/setStoreData.asp?moduleID=4&storeID=5&storeName=SBW CANNING&companyID=2&companyName=GATICAR&storeTypeID=1",
+    "text": "SBW CANNING"
+  },
+  {
+    "href": "https://app.ipn.com.ar/defaultProductionDesk.asp",
+    "text": "Panel de control"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/rawMaterial/default.asp",
+    "text": "Materias Primas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/preProducts/default.asp",
+    "text": "Fichas técnicas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/tickets/default.asp",
+    "text": "Órdenes de producción"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/employees/default.asp",
+    "text": "Operarios"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/incomeSettlement/default.asp",
+    "text": "Liquidaciones de haberes"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/rawMaterialMovement/default.asp",
+    "text": "Movimientos de materia prima"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/request/default.asp",
+    "text": "Solicitudes de fabricación"
+  },
+  {
+    "href": "https://app.ipn.com.ar/production/tickets/ticketsUpdateReport.asp",
+    "text": "Actualizaciones de OP's"
+  },
+  {
+    "href": "https://app.ipn.com.ar/iB2B/defaultSelectedB2BStore.asp",
+    "text": "Panel de control"
+  },
+  {
+    "href": "https://app.ipn.com.ar/iB2B/users/default.asp",
+    "text": "Usuarios"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/CMS/default.asp?ib2b=1",
+    "text": "Gestor de contenidos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/iB2B/openOrders/default.asp",
+    "text": "Pedidos abiertos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/defaultSelectedB2CStore.asp",
+    "text": "Panel de control"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/Customers/default.asp",
+    "text": "Usuarios"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/MLA/Items/default.asp",
+    "text": "Publicaciones"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/MLA/orders/default.asp",
+    "text": "Ventas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/Orders/default.asp",
+    "text": "Órdenes de compra"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/ordersWorkflow/default.asp",
+    "text": "Gestión de órdenes de compra"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/TDN/Products/default.asp",
+    "text": "Productos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/B2C/TDN/orders/default.asp",
+    "text": "Ventas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/purchasesList.asp",
+    "text": "Listado de compras y gastos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/purchasesListByProvider.asp",
+    "text": "Listado de compras y gastos por proveedor"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/purchasesListByType.asp",
+    "text": "Detalle de compras y gastos por tipo y sub-tipo"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/purchases.asp",
+    "text": "Compras por mes y proveedor"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/providersPurchasedItems.asp",
+    "text": "Reporte de artículos comprados por proveedor"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/purchasesDetails.asp",
+    "text": "Detalle de compras realizadas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/providersBalance.asp",
+    "text": "Reporte de saldos de proveedores por fecha"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/providersBalanceByType.asp",
+    "text": "Rte. de saldos de proveedores por tipo y subtipo"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/paymentsResume.asp",
+    "text": "Reporte de pagos realizados"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/purchasePendingInvoices.asp",
+    "text": "Comprobantes pendientes de pago"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/pendingImputations/default.asp?receiptTypeID=1",
+    "text": "Operaciones de compra pendientes de imputación"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/itemSalesHistory/default.asp",
+    "text": "Análisis de ventas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/salesList.asp",
+    "text": "Detalle de ventas realizadas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/itemSalesHistory/default.asp?viewType=21",
+    "text": "Ventas por mes y cliente"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/salesByEmployee.asp",
+    "text": "Detalle de ventas realizadas por vendedor"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/operationsResume.asp",
+    "text": "Reporte de ventas vs devoluciones"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/itemSalesHistory/default.asp?viewType=22",
+    "text": "Reporte de ventas por vendedor y artículo"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/customersBalance.asp",
+    "text": "Reporte de saldos de clientes por fecha"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/reportPayedSales.asp",
+    "text": "Comprobantes pendientes de cobro"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/reportCustomersCreditDebit.asp",
+    "text": "Reporte de NC y ND por vendedor"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/customerStatusReport.asp",
+    "text": "Reporte de estado de clientes"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/incomeResume.asp",
+    "text": "Reporte de cobranzas realizadas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/aging.asp",
+    "text": "Deuda vencida y futura"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/customerAcctRescBySalesMan/default.asp",
+    "text": "Extracto de ctas. ctes. por vendedor"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/pendingImputations/default.asp?receiptTypeID=2",
+    "text": "Operaciones de venta pendientes de imputación"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/customers/productRequest/requestsReport.asp",
+    "text": "Análisis de pedidos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/checksReport.asp",
+    "text": "Reporte de estado de cheques por fecha"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/checksReportByDate.asp",
+    "text": "Reporte de cheques de terceros"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/dailyPaymentSourcesMovements/default.asp",
+    "text": "Movimiento diario de fondos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/transactionsByDay.asp",
+    "text": "Detalle de transacciones diarias"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/employeeAcctResc/default.asp",
+    "text": "Reporte de transacciones de empleados"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/acctRescAdjustsReport/default.asp",
+    "text": "Reporte de ajustes de cta. cte."
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/employeeStockWidthdrawal/default.asp",
+    "text": "Reporte de retiros de mercadería de empleados"
+  },
+  {
+    "href": "https://app.ipn.com.ar/admin/accounting/creditCardResumeReport/default.asp",
+    "text": "Reporte de liquidación de tarjetas"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/productsPriceListChanges/default.asp",
+    "text": "Historial de cambio de precios"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/filter.asp?reportID=1&reportCategoryID=43",
+    "text": "Ventas por sucursal por fecha"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/filter.asp?reportID=3&reportCategoryID=43",
+    "text": "Ventas por vendedor por fecha"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/filter.asp?reportID=4&reportCategoryID=43",
+    "text": "Ventas por tipo de producto por fecha"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/filter.asp?reportID=5&reportCategoryID=43",
+    "text": "Ventas por sucursal por producto"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/filter.asp?reportID=9&reportCategoryID=43",
+    "text": "Rentabilidad de ventas por local"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/salesByStoreAndPaymentMethod/default.asp",
+    "text": "Ventas por sucursal por forma de pago"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/filter.asp?reportID=13&reportCategoryID=43",
+    "text": "Comisiones por sucursal por tipo"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/filter.asp?reportID=14&reportCategoryID=43",
+    "text": "Ventas por sucursal por proveedor"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/salesPointMovements.asp",
+    "text": "Reporte de operaciones de caja"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/filter.asp?reportID=23&reportCategoryID=43",
+    "text": "Ventas por sucursal y promoción"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/stockReports/stockLogOperations.asp",
+    "text": "Reporte de operaciones de stock"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/stockReports/stockLogOperationsGroup.asp",
+    "text": "Reporte agrupado de operaciones de stock"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/stockReports/valuedStockByDate.asp",
+    "text": "Stock valorizado por fecha"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/productsAvailability/default.asp",
+    "text": "Detalle de disponibilidad de productos"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/stockReplacement/default.asp",
+    "text": "Reposición por venta"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/stockRotation/default.asp",
+    "text": "Rotación"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/stockReports/rawMaterialValuedStock.asp",
+    "text": "Stock valorizado de materias primas por fecha"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/filter.asp?reportID=6&reportCategoryID=58",
+    "text": "Cantidades por línea por etapa"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/dailyProductionResume/default.asp",
+    "text": "Planilla de producción diaria"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/pairsBySizeByProduct/default.asp",
+    "text": "Cantidades por talle por producto"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/incomeSettlementReport/default.asp",
+    "text": "Reporte de liquidación de haberes"
+  },
+  {
+    "href": "https://app.ipn.com.ar/reports/workshopTickets/default.asp",
+    "text": "Órdenes de producción pendientes por taller"
+  },
+  {
+    "href": "https://ipn.com.ar/legal/terminos?utm_source=app_ipn&utm_medium=internal&utm_campaign=ecosistema_ipn&utm_content=ipn_app_footer&utm_term=footer",
+    "text": "T&eacute;rminos y condiciones"
+  },
+  {
+    "href": "https://ipn.com.ar/legal/privacidad?utm_source=app_ipn&utm_medium=internal&utm_campaign=ecosistema_ipn&utm_content=ipn_app_footer&utm_term=footer",
+    "text": "Pol&iacute;ticas de privacidad"
+  },
+  {
+    "href": "https://www.ipn.com.ar/?utm_source=app_ipn&utm_medium=internal&utm_campaign=ecosistema_ipn&utm_content=ipn_app_footer&utm_term=footer",
+    "text": "infiniteLoop S.A."
+  },
+  {
+    "href": "https://app.ipn.com.ar/usersLog.asp",
+    "text": "Última actividad de la cuenta"
+  },
+  {
+    "href": "https://www.ipn.com.ar/?utm_source=app_ipn&utm_medium=internal&utm_campaign=ecosistema_ipn&utm_content=ipn_app_footer&utm_term=footer",
+    "text": "infiniteLoop S.A."
+  }
+]

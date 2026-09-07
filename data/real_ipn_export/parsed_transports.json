@@ -1,0 +1,602 @@
+[
+  {
+    "name": "10598",
+    "address": "Transporte interno",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10609",
+    "address": "VERGANI",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10610",
+    "address": "VALERIAS EXPRESSO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10615",
+    "address": "GOMEZ",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10633",
+    "address": "PARYMAR",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10634",
+    "address": "MENDEZ",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10661",
+    "address": "TAS",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10665",
+    "address": "LOPEZ SABANDO",
+    "phone": "",
+    "contact": "49187016"
+  },
+  {
+    "name": "10666",
+    "address": "EL FARO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10670",
+    "address": "EL RUTERO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10671",
+    "address": "INTERPROVINCIAL",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10672",
+    "address": "LOSA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10673",
+    "address": "EL CHANGUITO",
+    "phone": "",
+    "contact": "49115956"
+  },
+  {
+    "name": "10676",
+    "address": "GARMENDIA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10683",
+    "address": "SUPER 73",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10684",
+    "address": "CONTE",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10685",
+    "address": "COTTA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10692",
+    "address": "UNION TRANSPORTE",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10695",
+    "address": "AMERICANO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10696",
+    "address": "IRIS EXPRESS",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10704",
+    "address": "valle de lerma",
+    "phone": "",
+    "contact": "49423527"
+  },
+  {
+    "name": "10706",
+    "address": "RODRIGO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10708",
+    "address": "3 HERMANOS",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10716",
+    "address": "HADA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10723",
+    "address": "RODRIGUEZ HNOS",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10724",
+    "address": "PINTOR",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10727",
+    "address": "PERGAMINO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10728",
+    "address": "BRANIC",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10736",
+    "address": "LUKE",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10739",
+    "address": "LA RUTA TRANSPORTE",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10741",
+    "address": "DOÑA RAMONA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10743",
+    "address": "IROS",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10744",
+    "address": "ORION",
+    "phone": "",
+    "contact": "45854447"
+  },
+  {
+    "name": "10765",
+    "address": "TATI",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10913",
+    "address": "CHAP",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10914",
+    "address": "VUELTA REDONDA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10925",
+    "address": "CAPEBOL/ jumbo",
+    "phone": "",
+    "contact": "49426858"
+  },
+  {
+    "name": "10943",
+    "address": "send box",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10949",
+    "address": "copar",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10960",
+    "address": "BIN PAK",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10965",
+    "address": "SISSA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10979",
+    "address": "BIBILONI",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10981",
+    "address": "LA SEVILLANITA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10985",
+    "address": "ROMAR",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "10996",
+    "address": "MUÑOZ",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11016",
+    "address": "TRADELOG SEDICA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11017",
+    "address": "gonzalez",
+    "phone": "",
+    "contact": "46014601"
+  },
+  {
+    "name": "11018",
+    "address": "LO BRUNO",
+    "phone": "",
+    "contact": "46022892"
+  },
+  {
+    "name": "11020",
+    "address": "FORMOSA EXPRESO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11021",
+    "address": "SNAIDER",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11038",
+    "address": "BRINATTI EXPRESO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11045",
+    "address": "CRUZ DEL SUR",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11046",
+    "address": "E. R. TRANSPORTE",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11048",
+    "address": "cargo expreso",
+    "phone": "",
+    "contact": "49112299"
+  },
+  {
+    "name": "11049",
+    "address": "patti",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11052",
+    "address": "FORZAP EXPRESO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11058",
+    "address": "OLIVA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11077",
+    "address": "ÑAUDUBAY",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11078",
+    "address": "2 CIUDADES EXPRESSO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11088",
+    "address": "LIDER",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11089",
+    "address": "CAMIONERA MENDOCINA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11090",
+    "address": "BILETTA EXPRESO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11091",
+    "address": "SANTA ROSA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11092",
+    "address": "JESUS MARIA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11093",
+    "address": "MAIPU",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11105",
+    "address": "HUELQUE PUELCHE",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11110",
+    "address": "EL VASQUITO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11111",
+    "address": "CENTAURO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11112",
+    "address": "EXPRESO RIVADAVIA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11116",
+    "address": "TRADELONG",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11117",
+    "address": "PRIVITERA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11118",
+    "address": "NAPOSTA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11119",
+    "address": "DON MAX",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11138",
+    "address": "LANCIONI",
+    "phone": "",
+    "contact": "39856738"
+  },
+  {
+    "name": "11139",
+    "address": "SAN CARLOS",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11145",
+    "address": "ORTIZ",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11146",
+    "address": "BIETTA",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11159",
+    "address": "ALFA EXPRESSO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11178",
+    "address": "ALEX",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11198",
+    "address": "LURO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11203",
+    "address": "ALL BOX",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11215",
+    "address": "JUANCITO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11219",
+    "address": "EXPRESSO 5",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11221",
+    "address": "HACHA DE PIEDRA",
+    "phone": "",
+    "contact": "22062618"
+  },
+  {
+    "name": "11222",
+    "address": "BICENTENARIO",
+    "phone": "",
+    "contact": "49199433"
+  },
+  {
+    "name": "11224",
+    "address": "PINAMAR",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11229",
+    "address": "ROSARIO CARGAS",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11254",
+    "address": "tradelog",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11347",
+    "address": "SOLNACIENTE",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11370",
+    "address": "PEDRITO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11384",
+    "address": "ESTRELLA FEDERAL",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11409",
+    "address": "haristoy",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11431",
+    "address": "TRADYS",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11507",
+    "address": "EL FORTIN",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11521",
+    "address": "JUVENTUD",
+    "phone": "",
+    "contact": "49111164/8658"
+  },
+  {
+    "name": "11533",
+    "address": "BALMAR",
+    "phone": "",
+    "contact": "49186040"
+  },
+  {
+    "name": "11545",
+    "address": "ELISERO",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11551",
+    "address": "ALONSO TRANSPORTE",
+    "phone": "",
+    "contact": "43026260"
+  },
+  {
+    "name": "11559",
+    "address": "TRANSPORTE EL VILLENSE",
+    "phone": "",
+    "contact": ""
+  },
+  {
+    "name": "11597",
+    "address": "RIVADAVIA TRANSPORTE",
+    "phone": "",
+    "contact": ""
+  }
+]

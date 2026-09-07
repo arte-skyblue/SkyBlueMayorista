@@ -1,0 +1,1448 @@
+[
+  {
+    "tag": "input",
+    "name": "hdn_colorName_",
+    "id": "hdn_colorName_",
+    "type": "hidden",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "unitSizeQty",
+    "id": "task",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "totalQtyTask_",
+    "id": "totalQtyTask_",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "doAction",
+    "id": "doAction",
+    "type": "hidden",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "storeName",
+    "id": "storeName",
+    "type": "hidden",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "seasonName",
+    "id": "seasonName",
+    "type": "hidden",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "providerName",
+    "id": "providerName",
+    "type": "hidden",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "materialName",
+    "id": "materialName",
+    "type": "hidden",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "lineName",
+    "id": "lineName",
+    "type": "hidden",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "trademarkName",
+    "id": "trademarkName",
+    "type": "hidden",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "productTypeDesc",
+    "id": "productTypeDesc",
+    "type": "hidden",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "productCategoryDesc",
+    "id": "productCategoryDesc",
+    "type": "hidden",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "ProductsReceiptID",
+    "id": "ProductsReceiptID",
+    "type": "hidden",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "productImportDispatchID",
+    "id": "productImportDispatchID",
+    "type": "hidden",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "productDesc",
+    "id": "productDesc",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "description",
+    "id": "description",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "minSize",
+    "id": "minSize",
+    "type": "hidden",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "maxSize",
+    "id": "maxSize",
+    "type": "hidden",
+    "value": "6"
+  },
+  {
+    "tag": "input",
+    "name": "hdn_colorName_1",
+    "id": "hdn_colorName_1",
+    "type": "hidden",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "unitSizeQty",
+    "id": "task1_size1",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "unitSizeQty",
+    "id": "task1_size2",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "unitSizeQty",
+    "id": "task1_size3",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "unitSizeQty",
+    "id": "task1_size4",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "unitSizeQty",
+    "id": "task1_size5",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "unitSizeQty",
+    "id": "task1_size6",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "totalQtyTask_1",
+    "id": "totalQtyTask_1",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "a_addItem",
+    "type": "text",
+    "value": "Agregar color"
+  },
+  {
+    "tag": "input",
+    "name": "total1",
+    "id": "total1",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "total2",
+    "id": "total2",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "total3",
+    "id": "total3",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "total4",
+    "id": "total4",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "total5",
+    "id": "total5",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "total6",
+    "id": "total6",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "totalProducts",
+    "id": "totalProducts",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "priceCost",
+    "id": "priceCost",
+    "type": "text",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "priceListCash",
+    "id": "priceListCash",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "conversionAmt_List_2",
+    "type": "hidden",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListCash_Name",
+    "type": "hidden",
+    "value": "Público"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListCash_RechargePerc",
+    "type": "hidden",
+    "value": "100"
+  },
+  {
+    "tag": "input",
+    "name": "priceListCC",
+    "id": "priceListCC",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "conversionAmt_List_1",
+    "type": "hidden",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListCC_Name",
+    "type": "hidden",
+    "value": "Mayorista"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListCC_RechargePerc",
+    "type": "hidden",
+    "value": "50"
+  },
+  {
+    "tag": "input",
+    "name": "priceListMayorista",
+    "id": "priceListMayorista",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "conversionAmt_List_3",
+    "type": "hidden",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListMayorista_Name",
+    "type": "hidden",
+    "value": "Lista"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListMayorista_RechargePerc",
+    "type": "hidden",
+    "value": "50"
+  },
+  {
+    "tag": "input",
+    "name": "priceListStores",
+    "id": "priceListStores",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "conversionAmt_List_4",
+    "type": "hidden",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListStores_Name",
+    "type": "hidden",
+    "value": "Venta a locales"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListStores_RechargePerc",
+    "type": "hidden",
+    "value": "25"
+  },
+  {
+    "tag": "input",
+    "name": "priceListOutlet",
+    "id": "priceListOutlet",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "conversionAmt_List_5",
+    "type": "hidden",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListOutlet_Name",
+    "type": "hidden",
+    "value": "Venta a outlets"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListOutlet_RechargePerc",
+    "type": "hidden",
+    "value": "15"
+  },
+  {
+    "tag": "input",
+    "name": "priceListFranchise",
+    "id": "priceListFranchise",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "conversionAmt_List_6",
+    "type": "hidden",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListFranchise_Name",
+    "type": "hidden",
+    "value": "Venta a franquicias"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListFranchise_RechargePerc",
+    "type": "hidden",
+    "value": "35"
+  },
+  {
+    "tag": "input",
+    "name": "priceListCashOutlet",
+    "id": "priceListCashOutlet",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "conversionAmt_List_8",
+    "type": "hidden",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListCashOutlet_Name",
+    "type": "hidden",
+    "value": "Venta minorista en outlet"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListCashOutlet_RechargePerc",
+    "type": "hidden",
+    "value": "80"
+  },
+  {
+    "tag": "input",
+    "name": "priceListCC2",
+    "id": "priceListCC2",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "conversionAmt_List_7",
+    "type": "hidden",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListCC2_Name",
+    "type": "hidden",
+    "value": "Venta a clientes 2"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListCC2_RechargePerc",
+    "type": "hidden",
+    "value": "60"
+  },
+  {
+    "tag": "input",
+    "name": "priceListB2C_ARS",
+    "id": "priceListB2C_ARS",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "conversionAmt_List_9",
+    "type": "hidden",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListB2C_ARS_Name",
+    "type": "hidden",
+    "value": "ML CLASSIC"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListB2C_ARS_RechargePerc",
+    "type": "hidden",
+    "value": "150"
+  },
+  {
+    "tag": "input",
+    "name": "priceListB2C_USD",
+    "id": "priceListB2C_USD",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "conversionAmt_List_10",
+    "type": "hidden",
+    "value": "6"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListB2C_USD_Name",
+    "type": "hidden",
+    "value": "Venta B2C en dólares"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "priceListB2C_USD_RechargePerc",
+    "type": "hidden",
+    "value": "100"
+  },
+  {
+    "tag": "input",
+    "name": "isB2BPublished",
+    "id": "isB2BPublished",
+    "type": "checkbox",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "isFeaturedProduct",
+    "id": "isFeaturedProduct",
+    "type": "checkbox",
+    "value": "1"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "registerBtn",
+    "type": "button",
+    "value": "Agregar"
+  },
+  {
+    "tag": "input",
+    "name": "",
+    "id": "",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "colorID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "storeID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "seasonID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "productTypeID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "productCategoryID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "providerID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "materialID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "lineID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "country",
+    "optionsCount": 0,
+    "sampleOptions": []
+  },
+  {
+    "tag": "select",
+    "name": "trademarkID",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "colorID_1",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "[ Seleccione ]"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "taskQty",
+    "optionsCount": 12,
+    "sampleOptions": [
+      {
+        "value": "1",
+        "text": "1"
+      },
+      {
+        "value": "2",
+        "text": "2"
+      },
+      {
+        "value": "3",
+        "text": "3"
+      },
+      {
+        "value": "4",
+        "text": "4"
+      },
+      {
+        "value": "5",
+        "text": "5"
+      },
+      {
+        "value": "6",
+        "text": "6"
+      },
+      {
+        "value": "7",
+        "text": "7"
+      },
+      {
+        "value": "8",
+        "text": "8"
+      },
+      {
+        "value": "9",
+        "text": "9"
+      },
+      {
+        "value": "10",
+        "text": "10"
+      },
+      {
+        "value": "11",
+        "text": "11"
+      },
+      {
+        "value": "12",
+        "text": "12"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "taskID_1",
+    "optionsCount": 1,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "0"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "cmbCashPercentage",
+    "optionsCount": 51,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "0 %"
+      },
+      {
+        "value": "5",
+        "text": "5 %"
+      },
+      {
+        "value": "10",
+        "text": "10 %"
+      },
+      {
+        "value": "15",
+        "text": "15 %"
+      },
+      {
+        "value": "20",
+        "text": "20 %"
+      },
+      {
+        "value": "25",
+        "text": "25 %"
+      },
+      {
+        "value": "30",
+        "text": "30 %"
+      },
+      {
+        "value": "35",
+        "text": "35 %"
+      },
+      {
+        "value": "40",
+        "text": "40 %"
+      },
+      {
+        "value": "45",
+        "text": "45 %"
+      },
+      {
+        "value": "50",
+        "text": "50 %"
+      },
+      {
+        "value": "55",
+        "text": "55 %"
+      },
+      {
+        "value": "60",
+        "text": "60 %"
+      },
+      {
+        "value": "65",
+        "text": "65 %"
+      },
+      {
+        "value": "70",
+        "text": "70 %"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "cmbCCPercentage",
+    "optionsCount": 51,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "0 %"
+      },
+      {
+        "value": "5",
+        "text": "5 %"
+      },
+      {
+        "value": "10",
+        "text": "10 %"
+      },
+      {
+        "value": "15",
+        "text": "15 %"
+      },
+      {
+        "value": "20",
+        "text": "20 %"
+      },
+      {
+        "value": "25",
+        "text": "25 %"
+      },
+      {
+        "value": "30",
+        "text": "30 %"
+      },
+      {
+        "value": "35",
+        "text": "35 %"
+      },
+      {
+        "value": "40",
+        "text": "40 %"
+      },
+      {
+        "value": "45",
+        "text": "45 %"
+      },
+      {
+        "value": "50",
+        "text": "50 %"
+      },
+      {
+        "value": "55",
+        "text": "55 %"
+      },
+      {
+        "value": "60",
+        "text": "60 %"
+      },
+      {
+        "value": "65",
+        "text": "65 %"
+      },
+      {
+        "value": "70",
+        "text": "70 %"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "cmbMayoristaPercentage",
+    "optionsCount": 51,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "0 %"
+      },
+      {
+        "value": "5",
+        "text": "5 %"
+      },
+      {
+        "value": "10",
+        "text": "10 %"
+      },
+      {
+        "value": "15",
+        "text": "15 %"
+      },
+      {
+        "value": "20",
+        "text": "20 %"
+      },
+      {
+        "value": "25",
+        "text": "25 %"
+      },
+      {
+        "value": "30",
+        "text": "30 %"
+      },
+      {
+        "value": "35",
+        "text": "35 %"
+      },
+      {
+        "value": "40",
+        "text": "40 %"
+      },
+      {
+        "value": "45",
+        "text": "45 %"
+      },
+      {
+        "value": "50",
+        "text": "50 %"
+      },
+      {
+        "value": "55",
+        "text": "55 %"
+      },
+      {
+        "value": "60",
+        "text": "60 %"
+      },
+      {
+        "value": "65",
+        "text": "65 %"
+      },
+      {
+        "value": "70",
+        "text": "70 %"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "cmbStorePercentage",
+    "optionsCount": 57,
+    "sampleOptions": [
+      {
+        "value": "-30",
+        "text": "-30 %"
+      },
+      {
+        "value": "-25",
+        "text": "-25 %"
+      },
+      {
+        "value": "-20",
+        "text": "-20 %"
+      },
+      {
+        "value": "-15",
+        "text": "-15 %"
+      },
+      {
+        "value": "-10",
+        "text": "-10 %"
+      },
+      {
+        "value": "-5",
+        "text": "-5 %"
+      },
+      {
+        "value": "0",
+        "text": "0 %"
+      },
+      {
+        "value": "5",
+        "text": "5 %"
+      },
+      {
+        "value": "10",
+        "text": "10 %"
+      },
+      {
+        "value": "15",
+        "text": "15 %"
+      },
+      {
+        "value": "20",
+        "text": "20 %"
+      },
+      {
+        "value": "25",
+        "text": "25 %"
+      },
+      {
+        "value": "30",
+        "text": "30 %"
+      },
+      {
+        "value": "35",
+        "text": "35 %"
+      },
+      {
+        "value": "40",
+        "text": "40 %"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "cmbOutletPercentage",
+    "optionsCount": 57,
+    "sampleOptions": [
+      {
+        "value": "-30",
+        "text": "-30 %"
+      },
+      {
+        "value": "-25",
+        "text": "-25 %"
+      },
+      {
+        "value": "-20",
+        "text": "-20 %"
+      },
+      {
+        "value": "-15",
+        "text": "-15 %"
+      },
+      {
+        "value": "-10",
+        "text": "-10 %"
+      },
+      {
+        "value": "-5",
+        "text": "-5 %"
+      },
+      {
+        "value": "0",
+        "text": "0 %"
+      },
+      {
+        "value": "5",
+        "text": "5 %"
+      },
+      {
+        "value": "10",
+        "text": "10 %"
+      },
+      {
+        "value": "15",
+        "text": "15 %"
+      },
+      {
+        "value": "20",
+        "text": "20 %"
+      },
+      {
+        "value": "25",
+        "text": "25 %"
+      },
+      {
+        "value": "30",
+        "text": "30 %"
+      },
+      {
+        "value": "35",
+        "text": "35 %"
+      },
+      {
+        "value": "40",
+        "text": "40 %"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "cmbFranchisePercentage",
+    "optionsCount": 57,
+    "sampleOptions": [
+      {
+        "value": "-30",
+        "text": "-30 %"
+      },
+      {
+        "value": "-25",
+        "text": "-25 %"
+      },
+      {
+        "value": "-20",
+        "text": "-20 %"
+      },
+      {
+        "value": "-15",
+        "text": "-15 %"
+      },
+      {
+        "value": "-10",
+        "text": "-10 %"
+      },
+      {
+        "value": "-5",
+        "text": "-5 %"
+      },
+      {
+        "value": "0",
+        "text": "0 %"
+      },
+      {
+        "value": "5",
+        "text": "5 %"
+      },
+      {
+        "value": "10",
+        "text": "10 %"
+      },
+      {
+        "value": "15",
+        "text": "15 %"
+      },
+      {
+        "value": "20",
+        "text": "20 %"
+      },
+      {
+        "value": "25",
+        "text": "25 %"
+      },
+      {
+        "value": "30",
+        "text": "30 %"
+      },
+      {
+        "value": "35",
+        "text": "35 %"
+      },
+      {
+        "value": "40",
+        "text": "40 %"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "cmbOutletCashSalePercentage",
+    "optionsCount": 51,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "0 %"
+      },
+      {
+        "value": "5",
+        "text": "5 %"
+      },
+      {
+        "value": "10",
+        "text": "10 %"
+      },
+      {
+        "value": "15",
+        "text": "15 %"
+      },
+      {
+        "value": "20",
+        "text": "20 %"
+      },
+      {
+        "value": "25",
+        "text": "25 %"
+      },
+      {
+        "value": "30",
+        "text": "30 %"
+      },
+      {
+        "value": "35",
+        "text": "35 %"
+      },
+      {
+        "value": "40",
+        "text": "40 %"
+      },
+      {
+        "value": "45",
+        "text": "45 %"
+      },
+      {
+        "value": "50",
+        "text": "50 %"
+      },
+      {
+        "value": "55",
+        "text": "55 %"
+      },
+      {
+        "value": "60",
+        "text": "60 %"
+      },
+      {
+        "value": "65",
+        "text": "65 %"
+      },
+      {
+        "value": "70",
+        "text": "70 %"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "cmbCC2Percentage",
+    "optionsCount": 51,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "0 %"
+      },
+      {
+        "value": "5",
+        "text": "5 %"
+      },
+      {
+        "value": "10",
+        "text": "10 %"
+      },
+      {
+        "value": "15",
+        "text": "15 %"
+      },
+      {
+        "value": "20",
+        "text": "20 %"
+      },
+      {
+        "value": "25",
+        "text": "25 %"
+      },
+      {
+        "value": "30",
+        "text": "30 %"
+      },
+      {
+        "value": "35",
+        "text": "35 %"
+      },
+      {
+        "value": "40",
+        "text": "40 %"
+      },
+      {
+        "value": "45",
+        "text": "45 %"
+      },
+      {
+        "value": "50",
+        "text": "50 %"
+      },
+      {
+        "value": "55",
+        "text": "55 %"
+      },
+      {
+        "value": "60",
+        "text": "60 %"
+      },
+      {
+        "value": "65",
+        "text": "65 %"
+      },
+      {
+        "value": "70",
+        "text": "70 %"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "cmbB2C_ARSPercentage",
+    "optionsCount": 51,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "0 %"
+      },
+      {
+        "value": "5",
+        "text": "5 %"
+      },
+      {
+        "value": "10",
+        "text": "10 %"
+      },
+      {
+        "value": "15",
+        "text": "15 %"
+      },
+      {
+        "value": "20",
+        "text": "20 %"
+      },
+      {
+        "value": "25",
+        "text": "25 %"
+      },
+      {
+        "value": "30",
+        "text": "30 %"
+      },
+      {
+        "value": "35",
+        "text": "35 %"
+      },
+      {
+        "value": "40",
+        "text": "40 %"
+      },
+      {
+        "value": "45",
+        "text": "45 %"
+      },
+      {
+        "value": "50",
+        "text": "50 %"
+      },
+      {
+        "value": "55",
+        "text": "55 %"
+      },
+      {
+        "value": "60",
+        "text": "60 %"
+      },
+      {
+        "value": "65",
+        "text": "65 %"
+      },
+      {
+        "value": "70",
+        "text": "70 %"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "cmbB2C_USDPercentage",
+    "optionsCount": 51,
+    "sampleOptions": [
+      {
+        "value": "0",
+        "text": "0 %"
+      },
+      {
+        "value": "5",
+        "text": "5 %"
+      },
+      {
+        "value": "10",
+        "text": "10 %"
+      },
+      {
+        "value": "15",
+        "text": "15 %"
+      },
+      {
+        "value": "20",
+        "text": "20 %"
+      },
+      {
+        "value": "25",
+        "text": "25 %"
+      },
+      {
+        "value": "30",
+        "text": "30 %"
+      },
+      {
+        "value": "35",
+        "text": "35 %"
+      },
+      {
+        "value": "40",
+        "text": "40 %"
+      },
+      {
+        "value": "45",
+        "text": "45 %"
+      },
+      {
+        "value": "50",
+        "text": "50 %"
+      },
+      {
+        "value": "55",
+        "text": "55 %"
+      },
+      {
+        "value": "60",
+        "text": "60 %"
+      },
+      {
+        "value": "65",
+        "text": "65 %"
+      },
+      {
+        "value": "70",
+        "text": "70 %"
+      }
+    ]
+  },
+  {
+    "tag": "select",
+    "name": "IVApercent",
+    "optionsCount": 0,
+    "sampleOptions": []
+  },
+  {
+    "tag": "select",
+    "name": "IVAActivityTypeID",
+    "optionsCount": 7,
+    "sampleOptions": [
+      {
+        "value": "1",
+        "text": "Bienes (excepto bienes de uso)"
+      },
+      {
+        "value": "2",
+        "text": "Locaciones"
+      },
+      {
+        "value": "3",
+        "text": "Obras"
+      },
+      {
+        "value": "4",
+        "text": "Prestaciones de servicios"
+      },
+      {
+        "value": "5",
+        "text": "Bienes de Uso"
+      },
+      {
+        "value": "6",
+        "text": "Bienes usados (compras a consumidores finales)"
+      },
+      {
+        "value": "7",
+        "text": "Otros conceptos"
+      }
+    ]
+  }
+]

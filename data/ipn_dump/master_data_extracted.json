@@ -1,0 +1,1181 @@
+{
+  "Marcas": [
+    [
+      "",
+      "DANIEL ALEJANDRO GRASSO [46792-juli]",
+      ""
+    ],
+    [
+      "Nombre:",
+      "",
+      ""
+    ]
+  ],
+  "Tipos de Producto": [
+    [
+      "",
+      "DANIEL ALEJANDRO GRASSO [46792-juli]",
+      ""
+    ],
+    [
+      "Descripci&oacute;n:",
+      "",
+      "Mostrar deshabilitados",
+      "",
+      "Buscar -->"
+    ],
+    [
+      "ID",
+      "Descripci&oacute;n",
+      "Talles",
+      "Familia"
+    ],
+    [
+      "33",
+      "Accesorio/Cinturon",
+      "85, 90, 95, 100, 105, 110"
+    ],
+    [
+      "2",
+      "Accesorios",
+      "Unico"
+    ],
+    [
+      "7",
+      "Calzado (35-42)",
+      "35, 36, 37, 38, 39, 40, 41, 42"
+    ],
+    [
+      "1",
+      "Calzado Dama (35-40)",
+      "35, 36, 37, 38, 39, 40"
+    ],
+    [
+      "36",
+      "Calzado Dama (35-41)",
+      "35, 36, 37, 38, 39, 40, 41"
+    ],
+    [
+      "26",
+      "Calzado Dama 36-40 (NO USAR)",
+      "36, 37, 38, 39, 40"
+    ],
+    [
+      "11",
+      "Calzado de Dama (3 -8)",
+      "3, 4, 5, 6, 8, 7, 3.5, 4.5, 5.5, 6.5, 7.5"
+    ],
+    [
+      "20",
+      "Calzado de Dama (35/40)",
+      "35/36, 37/38, 39/40"
+    ],
+    [
+      "10",
+      "Calzado de Dama (36/41)",
+      "36, 37, 38, 39, 40, 41"
+    ],
+    [
+      "24",
+      "Calzado de Hombre (39/45)",
+      "39, 40, 41, 42, 43, 44, 45"
+    ],
+    [
+      "28",
+      "Calzado de Hombre (39/46)",
+      "39/40, 41/42, 43/44, 45/46"
+    ],
+    [
+      "29",
+      "Calzado de Hombre (40-45)",
+      "40/41, 42/43, 44/45"
+    ],
+    [
+      "18",
+      "Calzado de Hombre (41/46)",
+      "41/42, 43/44, 45/46"
+    ],
+    [
+      "15",
+      "Calzado de Niño (19/26)",
+      "23/24, 25/26, 19/20, 21/22"
+    ],
+    [
+      "27",
+      "Calzado de Niño (21/26)",
+      "26, 21, 22, 23, 24, 25"
+    ],
+    [
+      "14",
+      "Calzado de Niño (22-32)",
+      "26, 27, 28, 29, 30, 31, 32, 22, 23, 24, 25"
+    ],
+    [
+      "30",
+      "Calzado de Niño (23/34)",
+      "34, 26, 27, 28, 29, 30, 31, 32, 33, 24, 25"
+    ],
+    [
+      "13",
+      "Calzado de Niño (26/34)",
+      "34, 26, 27, 28, 29, 30, 31, 32, 33"
+    ],
+    [
+      "31",
+      "Calzado de Niños (21/36)",
+      "35/36, 23/24, 25/26, 27/28, 29/30, 31/32, 33/34, 21/22"
+    ],
+    [
+      "37",
+      "Calzado de niños (24 al 31)",
+      "26, 27, 28, 29, 30, 31, 24, 25"
+    ],
+    [
+      "9",
+      "Calzado de Niños (25/32)",
+      "26, 27, 28, 29, 30, 31, 32, 25"
+    ],
+    [
+      "12",
+      "Calzado de Niños (27-34)",
+      "34, 27, 28, 29, 30, 31, 32, 33"
+    ],
+    [
+      "23",
+      "Calzado de Niños (27-37)",
+      "35, 36, 34, 27, 28, 29, 30, 31, 32, 33, 37/38"
+    ],
+    [
+      "16",
+      "Calzado de Niños (27/34)",
+      "27/28, 29/30, 31/32, 33/34"
+    ],
+    [
+      "38",
+      "Calzado de niños (28 al 38)",
+      "35, 36, 37, 38, 34, 28, 29, 30, 31, 32, 33"
+    ],
+    [
+      "39",
+      "Calzado de Niños (28-37)",
+      "35, 36, 37, 34, 28, 29, 30, 31, 32, 33"
+    ],
+    [
+      "3",
+      "Calzado de Niños (28/34)",
+      "34, 28, 29, 30, 31, 32, 33"
+    ],
+    [
+      "6",
+      "Calzado de Niños (29/36)",
+      "35, 36, 34, 29, 30, 31, 32, 33"
+    ],
+    [
+      "5",
+      "Calzado de Niños (33/38)",
+      "35, 36, 37, 38, 34, 33"
+    ],
+    [
+      "4",
+      "Calzado Hombre (39/44)",
+      "39, 40, 41, 42, 43, 44"
+    ],
+    [
+      "19",
+      "Calzado Hombre (39/46)",
+      "39/40, 41/42, 43/44, 45/46"
+    ],
+    [
+      "32",
+      "Ojotas de dama (34/41)",
+      "40/41, 36/37, 38/39, 34/35"
+    ],
+    [
+      "25",
+      "PLATILLAS",
+      "35, 36, 37, 38, 39, 40"
+    ],
+    [
+      "Registros 1- 33 de 33",
+      "P&aacute;gina 1 de 1"
+    ]
+  ],
+  "Categorías": [
+    [
+      "",
+      "DANIEL ALEJANDRO GRASSO [46792-juli]",
+      ""
+    ],
+    [
+      "Tipo de producto:",
+      "[ Seleccione ]Accesorio/CinturonAccesoriosCalzado (35-42)Calzado Dama (35-40)Calzado Dama (35-41)Calzado Dama 36-40 (NO USAR)Calzado de Dama (3 -8)Calzado de Dama (35/40)Calzado de Dama (36/41)Calzado de Hombre (39/45)Calzado de Hombre (39/46)Calzado de Hombre (40-45)Calzado de Hombre (41/46)Calzado de Ni&ntilde;o (19/26)Calzado de Ni&ntilde;o (21/26)Calzado de Ni&ntilde;o (22-32)Calzado de Ni&ntilde;o (23/34)Calzado de Ni&ntilde;o (26/34)Calzado de Ni&ntilde;os (21/36)Calzado de ni&ntilde;os (24 al 31)Calzado de Ni&ntilde;os (25/32)Calzado de Ni&ntilde;os (27-34)Calzado de Ni&ntilde;os (27-37)Calzado de Ni&ntilde;os (27/34)Calzado de ni&ntilde;os (28 al 38)Calzado de Ni&ntilde;os (28-37)Calzado de Ni&ntilde;os (28/34)Calzado de Ni&ntilde;os (29/36)Calzado de Ni&ntilde;os (33/38)Calzado Hombre (39/44)Calzado Hombre (39/46)Ojotas de dama (34/41)PLATILLAS",
+      "",
+      "Categor&iacute;a:",
+      "",
+      "",
+      "Mostrar deshabilitadas",
+      "",
+      ""
+    ],
+    [
+      "Tipo de producto",
+      "Categor&iacute;a"
+    ],
+    [
+      "Calzado Dama (35-40)",
+      "[1] - BOTAS"
+    ],
+    [
+      "Calzado Dama (35-40)",
+      "[2] - ZAPATILLAS"
+    ],
+    [
+      "Calzado Dama (35-40)",
+      "[3] - ZAPATOS"
+    ],
+    [
+      "Calzado Dama (35-40)",
+      "[4] - BOTINETAS"
+    ],
+    [
+      "Calzado Dama (35-40)",
+      "[5] - MULES"
+    ],
+    [
+      "Calzado Dama (35-40)",
+      "[6] - SANDALIAS"
+    ],
+    [
+      "Calzado Dama (35-40)",
+      "[7] - DISCONTINUOS"
+    ],
+    [
+      "Calzado Dama (35-40)",
+      "[22] - ZUECOS"
+    ],
+    [
+      "Calzado Dama (35-40)",
+      "[25] - PANTUFLAS"
+    ],
+    [
+      "Calzado Dama (35-40)",
+      "[49] - OJOTAS"
+    ],
+    [
+      "Accesorios",
+      "[8] - CARTERAS"
+    ],
+    [
+      "Accesorios",
+      "[9] - BILLETERAS"
+    ],
+    [
+      "Accesorios",
+      "[10] - CINTURONES"
+    ],
+    [
+      "Accesorios",
+      "[26] - PLANTILLAS"
+    ],
+    [
+      "Accesorios",
+      "[36] - CORDONES"
+    ],
+    [
+      "Accesorios",
+      "[37] - LLAVEROS"
+    ],
+    [
+      "Accesorios",
+      "[40] - PINS"
+    ],
+    [
+      "Accesorios",
+      "[42] - PAÑUELOS"
+    ],
+    [
+      "Accesorios",
+      "[50] - PARAGUAS"
+    ],
+    [
+      "Accesorios",
+      "[67] - VALIJAS"
+    ],
+    [
+      "Accesorios",
+      "[70] - MOCHILAS"
+    ],
+    [
+      "Accesorios",
+      "[71] - Botella"
+    ],
+    [
+      "Accesorios",
+      "[76] - Bolsa"
+    ],
+    [
+      "Calzado de Niños (28/34)",
+      "[11] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Niños (28/34)",
+      "[12] - BOTAS"
+    ],
+    [
+      "Calzado de Niños (28/34)",
+      "[13] - ZAPATOS"
+    ],
+    [
+      "Calzado Hombre (39/44)",
+      "[23] - ZUECOS"
+    ],
+    [
+      "Calzado Hombre (39/44)",
+      "[32] - Calzado Hombre (39/44)"
+    ],
+    [
+      "Calzado de Niños (33/38)",
+      "[14] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Niños (29/36)",
+      "[15] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Niños (29/36)",
+      "[48] - BOTAS"
+    ],
+    [
+      "Calzado de Niños (29/36)",
+      "[56] - SANDALIAS"
+    ],
+    [
+      "Calzado (35-42)",
+      "[16] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Niños (25/32)",
+      "[18] - Zapatillas"
+    ],
+    [
+      "Calzado de Dama (36/41)",
+      "[19] - BORCEGO"
+    ],
+    [
+      "Calzado de Dama (36/41)",
+      "[21] - BOTAS"
+    ],
+    [
+      "Calzado de Dama (36/41)",
+      "[38] - SANDALIAS"
+    ],
+    [
+      "Calzado de Dama (36/41)",
+      "[39] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Dama (3 -8)",
+      "[20] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Niños (27-34)",
+      "[24] - BOTAS"
+    ],
+    [
+      "Calzado de Niños (27-34)",
+      "[30] - ZUECOS"
+    ],
+    [
+      "Calzado de Niños (27-34)",
+      "[41] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Niño (26/34)",
+      "[27] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Niño (22-32)",
+      "[28] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Niño (22-32)",
+      "[47] - BOTAS"
+    ],
+    [
+      "Calzado de Niño (22-32)",
+      "[55] - SANDALIAS"
+    ],
+    [
+      "Calzado de Niño (19/26)",
+      "[29] - ZUECOS"
+    ],
+    [
+      "Calzado de Niño (19/26)",
+      "[51] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Niños (27/34)",
+      "[31] - ZUECOS"
+    ],
+    [
+      "Calzado de Hombre (41/46)",
+      "[33] - ZUECOS"
+    ],
+    [
+      "Calzado Hombre (39/46)",
+      "[34] - ZUECOS"
+    ],
+    [
+      "Calzado de Dama (35/40)",
+      "[35] - ZUECOS"
+    ],
+    [
+      "Calzado de Dama (35/40)",
+      "[63] - PANTUFLAS"
+    ],
+    [
+      "Calzado de Niños (27-37)",
+      "[43] - ZAPATOS"
+    ],
+    [
+      "Calzado de Niños (27-37)",
+      "[44] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Hombre (39/45)",
+      "[45] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Hombre (39/45)",
+      "[46] - ZAPATOS"
+    ],
+    [
+      "Calzado de Hombre (39/45)",
+      "[58] - SANDALIAS"
+    ],
+    [
+      "Calzado Dama 36-40 (NO USAR)",
+      "[62] - BOTAS"
+    ],
+    [
+      "Calzado Dama 36-40 (NO USAR)",
+      "[65] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Niño (21/26)",
+      "[52] - Zapatillas"
+    ],
+    [
+      "Calzado de Hombre (39/46)",
+      "[53] - ZUECOS"
+    ],
+    [
+      "Calzado de Hombre (39/46)",
+      "[64] - PANTUFLAS"
+    ],
+    [
+      "Calzado de Hombre (40-45)",
+      "[54] - OJOTAS"
+    ],
+    [
+      "Calzado de Hombre (40-45)",
+      "[77] - Zapatos"
+    ],
+    [
+      "Calzado de Niño (23/34)",
+      "[57] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de Niños (21/36)",
+      "[59] - Zuecos"
+    ],
+    [
+      "Ojotas de dama (34/41)",
+      "[60] - OJOTAS"
+    ],
+    [
+      "Accesorio/Cinturon",
+      "[61] - CINTURON"
+    ],
+    [
+      "Calzado Dama (35-41)",
+      "[66] - BOTA"
+    ],
+    [
+      "Calzado Dama (35-41)",
+      "[68] - ZAPATILLAS"
+    ],
+    [
+      "Calzado Dama (35-41)",
+      "[69] - SANDALIA"
+    ],
+    [
+      "Calzado Dama (35-41)",
+      "[84] - MOCASINES"
+    ],
+    [
+      "Calzado Dama (35-41)",
+      "[85] - OJOTAS"
+    ],
+    [
+      "Calzado Dama (35-41)",
+      "[86] - ZAPATOS"
+    ],
+    [
+      "Calzado de niños (24 al 31)",
+      "[72] - BOTAS"
+    ],
+    [
+      "Calzado de niños (28 al 38)",
+      "[73] - BOTAS"
+    ],
+    [
+      "Calzado de niños (28 al 38)",
+      "[74] - SANDALIAS"
+    ],
+    [
+      "Calzado de niños (28 al 38)",
+      "[75] - ZAPATILLAS"
+    ],
+    [
+      "Calzado de niños (28 al 38)",
+      "[83] - ZAPATO"
+    ],
+    [
+      "Calzado de Niños (28-37)",
+      "[78] - Botas KIDS"
+    ],
+    [
+      "Calzado de Niños (28-37)",
+      "[79] - Zapas KIDS"
+    ],
+    [
+      "Calzado de Niños (28-37)",
+      "[80] - Sandalias KIDS"
+    ],
+    [
+      "Calzado de Niños (28-37)",
+      "[81] - Borcegos KIDS"
+    ],
+    [
+      "Calzado de Niños (28-37)",
+      "[82] - Ojotas KIDS"
+    ]
+  ],
+  "Colores": [
+    [
+      "",
+      "DANIEL ALEJANDRO GRASSO [46792-juli]",
+      ""
+    ],
+    [
+      "Nombre:",
+      "",
+      ""
+    ],
+    [
+      "C&oacute;digo&nbsp;(Espa&ntilde;ol)",
+      "Nombre&nbsp;(Espa&ntilde;ol)",
+      "Imagen"
+    ],
+    [
+      "001",
+      "PU Leopardo",
+      ""
+    ],
+    [
+      "002",
+      "PU Reptil Blanco",
+      ""
+    ],
+    [
+      "003",
+      "PU Reptil Bordo",
+      ""
+    ],
+    [
+      "004",
+      "Arno Beige",
+      ""
+    ],
+    [
+      "005",
+      "Arno Negro",
+      ""
+    ],
+    [
+      "006",
+      "Arno Nude",
+      ""
+    ],
+    [
+      "007",
+      "Arno Bordo",
+      ""
+    ],
+    [
+      "008",
+      "PU Blanco",
+      ""
+    ],
+    [
+      "009",
+      "PU Negro",
+      ""
+    ],
+    [
+      "010",
+      "PU Nude",
+      ""
+    ],
+    [
+      "011",
+      "PU Bordo",
+      ""
+    ],
+    [
+      "012",
+      "PU Beige",
+      ""
+    ],
+    [
+      "013",
+      "PU Reptil Beige",
+      ""
+    ],
+    [
+      "014",
+      "Croco Charol Negro",
+      ""
+    ],
+    [
+      "015",
+      "Croco Charol Nude",
+      ""
+    ],
+    [
+      "016",
+      "Serpiente Plata",
+      ""
+    ],
+    [
+      "017",
+      "Croco Charol Blanco",
+      ""
+    ],
+    [
+      "01719",
+      "BERRY",
+      ""
+    ],
+    [
+      "018",
+      "Croco Charol Bordo",
+      ""
+    ],
+    [
+      "019",
+      "Arno Terra",
+      ""
+    ],
+    [
+      "020",
+      "Arno Suela",
+      ""
+    ],
+    [
+      "021",
+      "PU Suela",
+      ""
+    ],
+    [
+      "022",
+      "PU Plata",
+      ""
+    ],
+    [
+      "023",
+      "PU Blanco-Plata",
+      ""
+    ],
+    [
+      "024",
+      "PU Blanco-Nude",
+      ""
+    ],
+    [
+      "025",
+      "PU Blanco-Negro",
+      ""
+    ],
+    [
+      "026",
+      "Set Negro",
+      ""
+    ],
+    [
+      "027",
+      "Set Gris",
+      ""
+    ],
+    [
+      "028",
+      "Set Verde",
+      ""
+    ],
+    [
+      "029",
+      "Set Blanco",
+      ""
+    ],
+    [
+      "030",
+      "PU Peltre",
+      ""
+    ],
+    [
+      "031",
+      "PU Rosa",
+      ""
+    ],
+    [
+      "032",
+      "Glitter Plata",
+      ""
+    ],
+    [
+      "033",
+      "Glitter Multicolor",
+      ""
+    ],
+    [
+      "034",
+      "Glitter Negro",
+      ""
+    ],
+    [
+      "035",
+      "Charol Negro",
+      ""
+    ],
+    [
+      "036",
+      "Charol Nude",
+      ""
+    ],
+    [
+      "037",
+      "Charol Blanco",
+      ""
+    ],
+    [
+      "038",
+      "PU Reptil Gris",
+      ""
+    ],
+    [
+      "039",
+      "Glitter Blanco",
+      ""
+    ],
+    [
+      "040",
+      "PU Iguana negro",
+      ""
+    ],
+    [
+      "041",
+      "PU Taupe",
+      ""
+    ],
+    [
+      "042",
+      "DF BEIGE",
+      ""
+    ],
+    [
+      "043",
+      "DF Jirafa",
+      ""
+    ],
+    [
+      "044",
+      "DF Leopardo",
+      ""
+    ],
+    [
+      "045",
+      "Charol Bordo",
+      ""
+    ],
+    [
+      "046",
+      "Lona Blanca",
+      ""
+    ],
+    [
+      "047",
+      "Lona negra",
+      ""
+    ],
+    [
+      "048",
+      "Lona Camuflada",
+      ""
+    ],
+    [
+      "049",
+      "Lona Roja",
+      ""
+    ],
+    [
+      "050",
+      "Lona Cebra",
+      ""
+    ],
+    [
+      "051",
+      "Lona Leopardo",
+      ""
+    ],
+    [
+      "052",
+      "PU Habano",
+      ""
+    ],
+    [
+      "053",
+      "Set Rosa",
+      ""
+    ],
+    [
+      "054",
+      "Set Verde Militar",
+      ""
+    ],
+    [
+      "055",
+      "Tejido Negro",
+      ""
+    ],
+    [
+      "056",
+      "Tejido Camel",
+      ""
+    ],
+    [
+      "057",
+      "Tejido Gris",
+      ""
+    ],
+    [
+      "058",
+      "Tejido Fucsia",
+      ""
+    ],
+    [
+      "059",
+      "Tejido Rosa",
+      ""
+    ],
+    [
+      "060",
+      "Tejido Nude",
+      ""
+    ],
+    [
+      "061",
+      "Tejido Beige",
+      ""
+    ],
+    [
+      "062",
+      "Set Melange Fucsia",
+      ""
+    ],
+    [
+      "063",
+      "Set Melange Nude",
+      ""
+    ],
+    [
+      "064",
+      "Set Melange Negro",
+      ""
+    ],
+    [
+      "065",
+      "Set Nude",
+      ""
+    ],
+    [
+      "066",
+      "Cuero Negro",
+      ""
+    ],
+    [
+      "067",
+      "Cuero Suela",
+      ""
+    ],
+    [
+      "068",
+      "Cuero Beige",
+      ""
+    ],
+    [
+      "069",
+      "Cuero Bordo",
+      ""
+    ],
+    [
+      "070",
+      "Cuero Habano",
+      ""
+    ],
+    [
+      "071",
+      "Cuero Taupe",
+      ""
+    ],
+    [
+      "072",
+      "Cuero Charol Bordo",
+      ""
+    ],
+    [
+      "073",
+      "Cuero Reptil Beige",
+      ""
+    ],
+    [
+      "074",
+      "Cuero Reptil Negro",
+      ""
+    ],
+    [
+      "075",
+      "Cuero Reptil Suela",
+      ""
+    ],
+    [
+      "076",
+      "Microfibra Negra",
+      ""
+    ],
+    [
+      "077",
+      "Microfibra Gris",
+      ""
+    ],
+    [
+      "078",
+      "Microfibra Beige",
+      ""
+    ],
+    [
+      "079",
+      "Microfibra Taupe",
+      ""
+    ],
+    [
+      "080",
+      "PU Piton Peltre",
+      ""
+    ],
+    [
+      "081",
+      "Cuero Blanco",
+      ""
+    ],
+    [
+      "082",
+      "DF Negro",
+      ""
+    ],
+    [
+      "083",
+      "DF Gris",
+      ""
+    ],
+    [
+      "084",
+      "DF Nude",
+      ""
+    ],
+    [
+      "085",
+      "Lurex Negro",
+      ""
+    ],
+    [
+      "086",
+      "Lurex Plata",
+      ""
+    ],
+    [
+      "087",
+      "Tejido Rojo",
+      ""
+    ],
+    [
+      "088",
+      "Tejido Gris-Negro",
+      ""
+    ],
+    [
+      "099",
+      "Cuero Nude",
+      ""
+    ],
+    [
+      "100",
+      "Cuero Croco Taupe",
+      ""
+    ],
+    [
+      "1000",
+      "BCO VERDE LIMA",
+      ""
+    ],
+    [
+      "1001",
+      "VERDE LILA",
+      ""
+    ],
+    [
+      "1002",
+      "BLANCO ROJO",
+      ""
+    ],
+    [
+      "1003",
+      "BLANCO NEGRO CHAROL",
+      ""
+    ],
+    [
+      "1004",
+      "BLANCO AMARILLO",
+      ""
+    ],
+    [
+      "1005",
+      "NEGRO LIMA",
+      ""
+    ],
+    [
+      "1006",
+      "NEGRO NUDE",
+      ""
+    ],
+    [
+      "1007",
+      "BLANCO NEGRO LIMA",
+      ""
+    ],
+    [
+      "1008",
+      "NEGRO VISÓN",
+      ""
+    ],
+    [
+      "Registros 1 - 100 de 652",
+      "Registros 1 - 100 de 652 \" /> |\" />"
+    ]
+  ],
+  "Listas de Precios": [
+    [
+      "",
+      "DANIEL ALEJANDRO GRASSO [46792-juli]",
+      ""
+    ],
+    [
+      "Nombre",
+      "Descripci&oacute;n",
+      "% Rentabilidad",
+      "Moneda base",
+      "Estado",
+      "Acciones"
+    ],
+    [
+      "1 - Público",
+      "Precio de venta minorista en los puntos de venta.",
+      "&nbsp;100,00&nbsp;%",
+      "Peso argentino",
+      "Habilitada",
+      "--> --> &nbsp; &nbsp; &nbsp; --> -->"
+    ],
+    [
+      "2 - Mayorista",
+      "Mayorista",
+      "&nbsp;50,00&nbsp;%",
+      "Peso argentino",
+      "Habilitada",
+      "--> --> &nbsp; &nbsp; &nbsp; --> --> &nbsp; &nbsp; &nbsp; --> -->"
+    ],
+    [
+      "3 - Lista",
+      "Lista",
+      "&nbsp;50,00&nbsp;%",
+      "Peso argentino",
+      "Habilitada",
+      "--> --> &nbsp; &nbsp; &nbsp; --> --> &nbsp; &nbsp; &nbsp; --> -->"
+    ],
+    [
+      "4 - Venta a locales",
+      "Precio de venta a locales.",
+      "&nbsp;25,00&nbsp;%",
+      "Peso argentino",
+      "Habilitada",
+      "--> --> &nbsp; &nbsp; &nbsp; --> --> &nbsp; &nbsp; &nbsp; --> -->"
+    ],
+    [
+      "5 - Venta a outlets",
+      "Precio de venta a outlets.",
+      "&nbsp;15,00&nbsp;%",
+      "Peso argentino",
+      "Habilitada",
+      "--> --> &nbsp; &nbsp; &nbsp; --> --> &nbsp; &nbsp; &nbsp; --> -->"
+    ],
+    [
+      "6 - Venta a franquicias",
+      "Precio de venta a franquicias.",
+      "&nbsp;35,00&nbsp;%",
+      "Peso argentino",
+      "Habilitada",
+      "--> --> &nbsp; &nbsp; &nbsp; --> --> &nbsp; &nbsp; &nbsp; --> -->"
+    ],
+    [
+      "7 - Venta minorista en outlet",
+      "Precio de venta minorista en los outlets.",
+      "&nbsp;80,00&nbsp;%",
+      "Peso argentino",
+      "Habilitada",
+      "--> --> &nbsp; &nbsp; &nbsp; --> --> &nbsp; &nbsp; &nbsp; --> -->"
+    ],
+    [
+      "8 - Venta a clientes 2",
+      "Precio de venta a clientes en cuenta corriente (lista 2).",
+      "&nbsp;60,00&nbsp;%",
+      "Peso argentino",
+      "Habilitada",
+      "--> --> &nbsp; &nbsp; &nbsp; --> --> &nbsp; &nbsp; &nbsp; --> -->"
+    ],
+    [
+      "9 - ML CLASSIC",
+      "ML CLASSIC",
+      "&nbsp;150,00&nbsp;%",
+      "Peso argentino",
+      "Habilitada",
+      "--> --> &nbsp; &nbsp; &nbsp; --> -->"
+    ],
+    [
+      "10 - Venta B2C en dólares",
+      "Precio de venta en dólares desde B2C.",
+      "&nbsp;100,00&nbsp;%",
+      "Dólar estadounidense",
+      "Habilitada",
+      "--> --> &nbsp; &nbsp; &nbsp; --> -->"
+    ]
+  ]
+}
