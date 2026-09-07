@@ -13,10 +13,12 @@ import {
   X, 
   ShieldCheck, 
   PackageCheck, 
-  Flame 
+  Flame,
+  Sparkles 
 } from 'lucide-react';
 import { COMPANY_INFO, ADVISORS } from '../data/mockData';
 import SpotlightCard from './reactbits/SpotlightCard';
+import { useTheme } from '../context/ThemeContext';
 // Elegant Woman Shoe (High Heel / Stiletto) SVG Icon
 function WomanShoeIcon({ className = "w-5 h-5" }) {
   return (
