@@ -8,7 +8,7 @@ export default function BlurText({
   stagger = 0.03,
   duration = 0.45,
 }) {
-  const words = text.split(' ');
+  const lines = (text || '').split('\n');
 
   const container = {
     hidden: { opacity: 0 },
@@ -37,16 +37,20 @@ export default function BlurText({
 
   return (
     <motion.span
-      className={`inline-flex flex-wrap gap-x-1.5 ${className}`}
+      className={`inline-flex flex-col ${className}`}
       variants={container}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: '-40px' }}
     >
-      {words.map((word, index) => (
-        <motion.span key={index} variants={child} className="inline-block">
-          {word}
-        </motion.span>
+      {lines.map((line, lineIndex) => (
+        <span key={lineIndex} className="inline-flex flex-wrap gap-x-1.5">
+          {line.split(' ').map((word, wordIndex) => (
+            <motion.span key={`${lineIndex}-${wordIndex}`} variants={child} className="inline-block">
+              {word}
+            </motion.span>
+          ))}
+        </span>
       ))}
     </motion.span>
   );

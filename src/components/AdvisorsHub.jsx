@@ -23,8 +23,9 @@ export default function AdvisorsHub({ onOpenAdvisorModal }) {
             <span className="font-sf-bold text-slate-900 dark:text-white">COMERCIALES</span>
           </h2>
 
-          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            Atención humana y personalizada para armar tus compras por módulos, despachos y altas con CUIT.
+          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline max-w-2xl mx-auto">
+            Atención humana y personalizada para armar tus pedidos <br className="hidden sm:inline" />
+            por módulos, coordinar despachos y gestionar altas con CUIT.
           </p>
         </div>
 

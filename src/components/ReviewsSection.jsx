@@ -31,8 +31,9 @@ export default function ReviewsSection() {
             <span className="font-sf-bold text-slate-900 dark:text-white">CLIENTES</span>
           </h2>
 
-          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            Zapaterías, showrooms y cadenas multimarca que eligen a SkyBlue como su distribuidor mayorista oficial.
+          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline max-w-2xl mx-auto">
+            Zapaterías, showrooms y cadenas multimarca que eligen <br className="hidden sm:inline" />
+            a SkyBlue como su distribuidor mayorista oficial.
           </p>
         </div>
 

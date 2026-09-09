@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import SeoHeaderBlock from './components/SeoHeaderBlock';
 import HeroSlider from './components/HeroSlider';
 import BrandShowcase from './components/BrandShowcase';
+import CatalogShowcaseSection from './components/CatalogShowcaseSection';
 import CategoryCatalog from './components/CategoryCatalog';
 import ProfitCalculator from './components/ProfitCalculator';
 import CommercialConditions from './components/CommercialConditions';
@@ -140,7 +141,12 @@ export default function App() {
               onOpenAdvisorModal={handleOpenAdvisorModal} 
             />
 
-            {/* 3. Category Catalog: Product Showcase in 45° with Margin Stickers */}
+            {/* 3. 3D Catalog Showcase: Portadas Oficiales & Descarga Directa PDF con Gate */}
+            <CatalogShowcaseSection 
+              onOpenAdvisorModal={handleOpenAdvisorModal} 
+            />
+
+            {/* 4. Category Catalog: Product Showcase in 45° with Margin Stickers */}
             <CategoryCatalog 
               onOpenModal={handleOpenModal} 
               onOpenAdvisorModal={handleOpenAdvisorModal} 
@@ -214,6 +220,9 @@ export default function App() {
 
         {activeTab === 'catalogo' && (
           <div className="space-y-12 py-8">
+            <CatalogShowcaseSection 
+              onOpenAdvisorModal={handleOpenAdvisorModal} 
+            />
             <CategoryCatalog 
               onOpenModal={handleOpenModal} 
               onOpenAdvisorModal={handleOpenAdvisorModal} 

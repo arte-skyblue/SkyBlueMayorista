@@ -60,8 +60,9 @@ export default function ProfitCalculator({ onOpenAdvisorModal }) {
               <span className="font-sf-bold text-slate-900 dark:text-white">RENTABILIDAD</span>
             </h2>
 
-            <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-              Calculá la rentabilidad neta de tu compra mayorista con márgenes proyectados de x2.0 a x2.5
+            <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline max-w-2xl mx-auto">
+              Calculá la rentabilidad neta de tu compra mayorista <br className="hidden sm:inline" />
+              con márgenes comerciales proyectados de x2.0 a x2.5.
             </p>
           </div>
 

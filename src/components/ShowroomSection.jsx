@@ -58,8 +58,9 @@ export default function ShowroomSection({ onOpenAdvisorModal }) {
             <span className="font-sf-bold text-slate-900 dark:text-white">SHOWROOM</span>
           </h2>
 
-          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            Vení a conocer las colecciones completas, probar calces y recibir atención personalizada para tu comercio.
+          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline max-w-2xl mx-auto">
+            Vení a conocer las colecciones completas, probar calces <br className="hidden sm:inline" />
+            y recibir atención personalizada para tu comercio.
           </p>
         </div>
 

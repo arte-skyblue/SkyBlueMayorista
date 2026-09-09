@@ -273,7 +273,17 @@ export default function Navbar({ activeTab, setActiveTab, onOpenModal, onOpenAdv
 
               {/* Ver Catálogos CTA */}
               <button
-                onClick={() => onOpenModal('catalogo')}
+                onClick={() => {
+                  const el = document.getElementById('catalogos-showcase');
+                  if (el) {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                  } else {
+                    handleTabClick('inicio');
+                    setTimeout(() => {
+                      document.getElementById('catalogos-showcase')?.scrollIntoView({ behavior: 'smooth' });
+                    }, 120);
+                  }
+                }}
                 className="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-xl bg-neutral-900 text-white hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200 font-sf-bold text-xs transition-all whitespace-nowrap shadow-sm hover:shadow"
               >
                 <FileText className="w-3.5 h-3.5" />
@@ -412,7 +422,15 @@ export default function Navbar({ activeTab, setActiveTab, onOpenModal, onOpenAdv
                 <button
                   onClick={() => {
                     setMobileMenuOpen(false);
-                    onOpenModal('catalogo');
+                    const el = document.getElementById('catalogos-showcase');
+                    if (el) {
+                      el.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                      handleTabClick('inicio');
+                      setTimeout(() => {
+                        document.getElementById('catalogos-showcase')?.scrollIntoView({ behavior: 'smooth' });
+                      }, 120);
+                    }
                   }}
                   className="w-full py-3.5 px-4 rounded-xl bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 font-sf-bold text-sm flex items-center justify-center gap-2 shadow-sm text-center"
                 >

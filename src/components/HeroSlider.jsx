@@ -45,6 +45,11 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
       }, 100);
     } else if (link === 'showroom') {
       setActiveTab('showroom');
+    } else if (link === 'catalogos') {
+      setActiveTab('inicio');
+      setTimeout(() => {
+        document.getElementById('catalogos-showcase')?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     } else {
       setActiveTab('catalogo');
     }
@@ -117,7 +122,7 @@ export default function HeroSlider({ setActiveTab, onOpenModal, onOpenAdvisorMod
                 )}
               </h2>
 
-              <p className="text-xs text-slate-600 dark:text-neutral-300 font-sf-medium leading-relaxed">
+              <p className="text-xs text-slate-600 dark:text-neutral-300 font-sf-medium leading-relaxed whitespace-pre-line">
                 {banner.subtitle}
               </p>
             </motion.div>

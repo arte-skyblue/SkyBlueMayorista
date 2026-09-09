@@ -30,8 +30,9 @@ export default function BlogSection({ onOpenModal }) {
             <span className="font-sf-bold text-slate-900 dark:text-white">VENTAS Y TENDENCIAS</span>
           </h2>
 
-          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            Artículos y guías comerciales prácticas para que aumentes la rotación en tu local, optimices tus curvas y multipliques tus márgenes.
+          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline max-w-2xl mx-auto">
+            Artículos prácticos y estrategias comerciales <br className="hidden sm:inline" />
+            para optimizar curvas de calzado y elevar márgenes.
           </p>
         </div>
 

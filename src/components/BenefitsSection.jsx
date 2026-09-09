@@ -38,8 +38,9 @@ export default function BenefitsSection({ onOpenModal, onOpenAdvisorModal }) {
             <span className="font-sf-bold text-slate-900 dark:text-white">EXCLUSIVOS</span>
           </h2>
 
-          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            Márgenes netos superiores, material publicitario oficial de estudio y atención personalizada para hacer crecer tu zapatería o showroom.
+          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline max-w-2xl mx-auto">
+            Márgenes netos superiores, material publicitario oficial <br className="hidden sm:inline" />
+            y asesoramiento especializado para hacer crecer tu negocio.
           </p>
         </div>
 

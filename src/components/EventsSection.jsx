@@ -34,7 +34,8 @@ export default function EventsSection({ onOpenModal }) {
             </h2>
 
             <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-              Presentamos las colecciones de calzado oficial en las exposiciones y ferias más importantes de Argentina.
+              Presentamos las colecciones de calzado oficial <br className="hidden sm:inline" />
+              en las exposiciones y ferias comerciales de Argentina.
             </p>
           </div>
 

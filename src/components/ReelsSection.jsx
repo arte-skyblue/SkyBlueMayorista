@@ -86,8 +86,9 @@ export default function ReelsSection({ onOpenAdvisorModal }) {
             </span>
           </h2>
 
-          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            Videos profesionales listos para usar en tus historias de Instagram, reels y estados de WhatsApp. Multiplicá tus ventas sin gastar en producción audiovisual.
+          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline max-w-2xl mx-auto">
+            Videos profesionales listos para historias y reels. <br className="hidden sm:inline" />
+            Multiplicá tus ventas sin gastar en producción audiovisual.
           </p>
         </div>
 

@@ -108,8 +108,9 @@ export default function CommercialConditions({ onOpenModal, onOpenAdvisorModal }
             <span className="font-sf-bold text-slate-900 dark:text-white">COMERCIALES</span>
           </h2>
 
-          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            Comprá con reglas claras: curvas de fábrica balanceadas para no quedarte con pares clavados, 10% OFF por transferencia y flete bonificado.
+          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline max-w-2xl mx-auto">
+            Comprá con reglas claras: curvas de fábrica balanceadas, <br className="hidden sm:inline" />
+            10% OFF por transferencia y logística bonificada al expreso.
           </p>
         </div>
 

@@ -64,7 +64,8 @@ export default function FaqSection({ onOpenAdvisorModal }) {
               </h2>
 
               <p className="font-sf-regular text-slate-600 dark:text-neutral-300 text-sm sm:text-base leading-relaxed">
-                Todo lo que necesitás saber sobre compras por curva, facturación oficial con CUIT, traslados bonificados al expreso y rentabilidad garantizada.
+                Todo lo que necesitás saber sobre compras por curva, <br className="hidden sm:inline" />
+                facturación oficial con CUIT, logística y rentabilidad.
               </p>
             </div>
 

@@ -1223,3 +1223,85 @@ export const ASSET_SEO_METADATA = {
     }
   }
 };
+
+export const CATALOGS_LIST = [
+  {
+    id: "xti-dama",
+    title: "Xti Dama SS26/27",
+    brand: "Xti Shoes",
+    category: "Calzado Femenino",
+    description: "Sandalias, stilettos, zapatillas urbanas y plataformas con diseño europeo y certificado vegano PETA.",
+    cover: "/catalogo-portadas/portada-xti-dama.svg",
+    pdfUrl: "/catalogos/catalogo-xti-dama.pdf",
+    pages: "48 páginas",
+    badge: "Más Vendido",
+    badgeColor: "bg-primary text-white",
+    curves: "Curvas de 8 y 12 pares"
+  },
+  {
+    id: "xti-caballero",
+    title: "Xti Caballero FW26/27",
+    brand: "Xti Men",
+    category: "Calzado Masculino",
+    description: "Zapatos formales, náuticos, botines chelsea y zapatillas urbanas masculinas de alto impacto.",
+    cover: "/catalogo-portadas/portada-xti-caballero.svg",
+    pdfUrl: "/catalogos/catalogo-xti-caballero.pdf",
+    pages: "36 páginas",
+    badge: "Nueva Colección",
+    badgeColor: "bg-slate-800 text-slate-100",
+    curves: "Curvas de 8 y 12 pares"
+  },
+  {
+    id: "xti-kids",
+    title: "Xti Kids 26/27",
+    brand: "Xti Kids",
+    category: "Infantil y Juvenil",
+    description: "Calzado infantil ergonómico, resistente y súper moderno para niños y adolescentes con suelas antideslizantes.",
+    cover: "/catalogo-portadas/portada-xti-kids.svg",
+    pdfUrl: "/catalogos/catalogo-xti-kids.pdf",
+    pages: "32 páginas",
+    badge: "Línea Kids",
+    badgeColor: "bg-sky-500 text-white",
+    curves: "Curvas de 8 y 12 pares"
+  },
+  {
+    id: "refresh",
+    title: "Refresh Colección 2027",
+    brand: "Refresh Spain",
+    category: "Moda Joven & Urbana",
+    description: "Tendencia fresca y juvenil. Sneakers con estilo, botitas chunky y calzado para la generación actual.",
+    cover: "/catalogo-portadas/portada-refresh.svg",
+    pdfUrl: "/catalogos/catalogo-refresh.pdf",
+    pages: "40 páginas",
+    badge: "Tendencia",
+    badgeColor: "bg-emerald-500 text-white",
+    curves: "Curvas de 8 y 12 pares"
+  },
+  {
+    id: "carteras",
+    title: "Carteras Xti & Refresh",
+    brand: "Xti & Refresh Accesorios",
+    category: "Marroquinería Mayorista",
+    description: "Carteras, bandoleras, mochilas urbanas y bolsos de mano con lista de precios netos para revendedores.",
+    cover: "/catalogo-portadas/portada-carteras.svg",
+    pdfUrl: "/catalogos/catalogo-carteras.pdf",
+    pages: "44 páginas",
+    badge: "Con Precios",
+    badgeColor: "bg-fuchsia-600 text-white",
+    curves: "Por unidad / Módulos"
+  },
+  {
+    id: "petite-jolie",
+    title: "Petite Jolie Colección",
+    brand: "Petite Jolie Brasil",
+    category: "J-Lastic® Impermeable",
+    description: "Bolsos icónicos, calzado colorido e impermeable elaborado con tecnología exclusiva J-Lastic aromatizada.",
+    cover: "/catalogo-portadas/portada-petite-jolie.svg",
+    pdfUrl: "/catalogos/catalogo-petite-jolie.pdf",
+    pages: "52 páginas",
+    badge: "Exclusivo Brasil",
+    badgeColor: "bg-pink-500 text-white",
+    curves: "Curvas cerradas"
+  }
+];
+

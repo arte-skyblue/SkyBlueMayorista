@@ -70,8 +70,9 @@ export default function BrandShowcase({ onOpenModal, onOpenAdvisorModal }) {
             <span className="font-sf-bold text-slate-900 dark:text-white">MARCAS</span>
           </h2>
 
-          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            Importación oficial y distribución mayorista en Argentina de Xti España, Refresh, Petite Jolie y Giulia Domna.
+          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline max-w-2xl mx-auto">
+            Importación oficial y distribución mayorista en Argentina <br className="hidden sm:inline" />
+            de Xti España, Refresh, Petite Jolie y Giulia Domna.
           </p>
         </div>
 

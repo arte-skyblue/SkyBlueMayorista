@@ -39,8 +39,9 @@ export default function CategoryCatalog({ onOpenModal }) {
             <span className="font-sf-bold text-slate-900 dark:text-white">PRODUCTO</span>
           </h2>
 
-          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline">
-            Modelos de alta rotación comercial con stock permanente y despacho inmediato por curva cerrada.
+          <p className="font-sf-medium text-slate-600 dark:text-neutral-300 text-base sm:text-lg 2xl:text-xl apple-subheadline max-w-2xl mx-auto">
+            Modelos de alta rotación con stock permanente <br className="hidden sm:inline" />
+            y despacho inmediato en curvas cerradas de fábrica.
           </p>
           {/* Trust Badges - Franja Comercial */}
           <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
