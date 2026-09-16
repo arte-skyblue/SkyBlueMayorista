@@ -1,0 +1,185 @@
+{
+    "project": "SkyBlue Mayorista Social Media Schedule",
+    "version": "1.0.0",
+    "default_channels": {
+        "meta": {
+            "instagram_username": "skyblue.mayorista",
+            "facebook_page_name": "Sky Blue Mayorista"
+        },
+        "linkedin": {
+            "organization_name": "SkyBlue Mayorista Argentina"
+        }
+    },
+    "scheduled_posts": [
+        {
+            "id": "POST_XTI_001",
+            "campaign": "Xti - Primavera 2026 / Verano 2027",
+            "target_networks": [
+                "INSTAGRAM",
+                "FACEBOOK"
+            ],
+            "post_type": "CAROUSEL",
+            "target_audience": "Revendedores, Zapaterías y Boutiques",
+            "scheduled_date": "2026-09-21T12:00:00-03:00",
+            "status": "PENDING_CREATIVE",
+            "media_paths": [
+                "public/creatives/xti_pv2026_01.jpg",
+                "public/creatives/xti_pv2026_02.jpg",
+                "public/creatives/xti_pv2026_03.jpg"
+            ],
+            "caption": "💥 ¡Novedad exclusiva en SkyBlue! Ya podés incorporar a tu local la nueva colección Xti Primavera 2026 / Verano 2027 👠 calzado de dama y caballero diseñado con la más alta tendencia europea.\n\n📦 Variedad de hormas, confort inigualable y rotación garantizada en tu vidriera.\n\n📲 Hacé tu pedido mayorista directamente desde nuestra Plataforma B2B o solicitá el catálogo PDF actualizado por WhatsApp.\n\n👉 Link en BIO o escribinos por privado para precios por curva.",
+            "hashtags": [
+                "#XtiShoes",
+                "#CalzadoMayorista",
+                "#ZapateriasArgentina",
+                "#ModaVerano2027",
+                "#SkyBlueMayorista",
+                "#CalzadoDama",
+                "#CalzadoCaballero"
+            ],
+            "link_url": "https://skyblue.com.ar/b2b"
+        },
+        {
+            "id": "POST_REFRESH_001",
+            "campaign": "Refresh - Primavera 2026 / Verano 2027",
+            "target_networks": [
+                "INSTAGRAM",
+                "FACEBOOK"
+            ],
+            "post_type": "REELS",
+            "target_audience": "Tiendas de calzado joven y urbano",
+            "scheduled_date": "2026-09-23T11:30:00-03:00",
+            "status": "PENDING_CREATIVE",
+            "media_paths": [
+                "public/creatives/refresh_pv2026_reel.mp4"
+            ],
+            "caption": "👟 Refresh Primavera 2026 / Verano 2027 llegó para romperla en tu comercio. Zapatillas urbanas, sandalias frescas y carteras a juego con la frescura que buscan tus clientes jóvenes.\n\n💡 Beneficios para revendedores:\n✅ Excelente margen de ganancia.\n✅ Entrega inmediata a todo el país.\n✅ Stock verificado online en tiempo real.\n\n📩 Comentá 'REFRESH' y te enviamos el listado de precios actualizado al instante.",
+            "hashtags": [
+                "#RefreshShoes",
+                "#CalzadoUrbano",
+                "#SkyBlueMayorista",
+                "#Zapateria",
+                "#DistribuidoraDeCalzado"
+            ],
+            "link_url": "https://wa.me/5491138916779?text=Hola!%20Quiero%20info%20de%20Refresh"
+        },
+        {
+            "id": "POST_PETITE_001",
+            "campaign": "Petite Jolie - Verano 2027",
+            "target_networks": [
+                "INSTAGRAM",
+                "FACEBOOK"
+            ],
+            "post_type": "FEED_IMAGE",
+            "target_audience": "Boutiques femeninas y accesorios",
+            "scheduled_date": "2026-09-25T12:30:00-03:00",
+            "status": "PENDING_CREATIVE",
+            "media_paths": [
+                "public/creatives/petite_jolie_v2027_01.jpg"
+            ],
+            "caption": "🌸 Petite Jolie Verano 2027: La marca icon de calzado y accesorios de plástico inyectado ya está disponible en SkyBlue.\n\n🛍️ Bolsos, carteras, chinelas y accesorios impermeables que son un éxito de ventas en todo el país.\n\n🎯 Ideal para regalar y regalarse. Sumá color a tu exhibidor.\n\n📱 Solicitá tu usuario para nuestro portal mayorista y accedé a promos exclusivas por curva completa.",
+            "hashtags": [
+                "#PetiteJolie",
+                "#Verano2027",
+                "#BolsosPetiteJolie",
+                "#AccesoriosFemeninos",
+                "#SkyBlueMayorista"
+            ],
+            "link_url": "https://skyblue.com.ar/b2b"
+        },
+        {
+            "id": "POST_MADRE_001",
+            "campaign": "Día de la Madre Argentina",
+            "target_networks": [
+                "INSTAGRAM",
+                "FACEBOOK"
+            ],
+            "post_type": "FEED_IMAGE",
+            "target_audience": "Comerciantes y Revendedores mayoristas",
+            "scheduled_date": "2026-09-24T17:00:00-03:00",
+            "status": "PENDING_CREATIVE",
+            "media_paths": [
+                "public/creatives/especial_dia_de_la_madre.jpg"
+            ],
+            "caption": "🎁 Día de la Madre 2026: ¿Tu local ya tiene el stock listo para la fecha más fuerte del año?\n\nEn SkyBlue te preparamos los COMBOS MÁS VENDIDOS en calzado y carteras de Xti, Refresh y Petite Jolie con precios especiales al por mayor y despacho prioritario.\n\n⏳ No dejes tus compras para último momento. Garantizá el stock de tus clientes hoy.\n\n📲 Escribinos por WhatsApp o comprá directo en nuestra web B2B.",
+            "hashtags": [
+                "#DiaDeLaMadreArgentina",
+                "#OfertasMayoristas",
+                "#RegaloMama",
+                "#SkyBlueMayorista",
+                "#CalzadoFemenino"
+            ],
+            "link_url": "https://wa.me/5491138916779?text=Quiero%20combos%20Dia%20de%20la%20Madre"
+        },
+        {
+            "id": "POST_B2B_001",
+            "campaign": "Plataforma B2B SkyBlue",
+            "target_networks": [
+                "INSTAGRAM",
+                "FACEBOOK"
+            ],
+            "post_type": "REELS",
+            "target_audience": "Clientes recurrentes y nuevos revendedores",
+            "scheduled_date": "2026-09-22T18:00:00-03:00",
+            "status": "PENDING_CREATIVE",
+            "media_paths": [
+                "public/creatives/tutorial_b2b_skyblue.mp4"
+            ],
+            "caption": "📲 Comprar al por mayor nunca fue tan fácil. Con la Plataforma B2B de SkyBlue, podés:\n1️⃣ Ver el stock actualizado en tiempo real.\n2️⃣ Elegir tus curvas de talle y colores al instante.\n3️⃣ Confirmar tu pedido las 24hs, los 7 días de la semana.\n\n🔗 Registrate gratis en skyblue.com.ar/b2b y empezá a pedir sin demoras.",
+            "hashtags": [
+                "#PlataformaB2B",
+                "#Mayorista247",
+                "#SkyBlue",
+                "#AutogestionComercial"
+            ],
+            "link_url": "https://skyblue.com.ar/b2b"
+        },
+        {
+            "id": "POST_SHOWROOM_001",
+            "campaign": "Showroom Comercial",
+            "target_networks": [
+                "INSTAGRAM",
+                "FACEBOOK"
+            ],
+            "post_type": "REELS",
+            "target_audience": "Compradores presenciales",
+            "scheduled_date": "2026-09-26T11:00:00-03:00",
+            "status": "PENDING_CREATIVE",
+            "media_paths": [
+                "public/creatives/tour_showroom_skyblue.mp4"
+            ],
+            "caption": "🏢 ¡Vení a conocer la nueva colección Primavera/Verano en nuestro Showroom Comercial!\n\n☕ Disfrutá de una atención personalizada, conocé al detalle las texturas y acabados de Xti, Refresh y Petite Jolie, y armá tu pedido a medida con nuestros asesores comerciales.\n\n📌 Agendá tu cita previa escribiéndonos por WhatsApp o MD. ¡Te esperamos!",
+            "hashtags": [
+                "#ShowroomSkyBlue",
+                "#AtencionMayorista",
+                "#BuenosAiresModa",
+                "#CalzadoAlPorMayor"
+            ],
+            "link_url": "https://wa.me/5491138916779?text=Hola!%20Quiero%20agendar%20cita%20Showroom"
+        },
+        {
+            "id": "POST_LINKEDIN_SPORTS_001",
+            "campaign": "Casas de Deportes Argentina",
+            "target_networks": [
+                "LINKEDIN"
+            ],
+            "post_type": "LINKEDIN_ARTICLE",
+            "target_audience": "Gerentes de compras y dueños de casas de deportes",
+            "scheduled_date": "2026-09-21T10:30:00-03:00",
+            "status": "PENDING_CREATIVE",
+            "media_paths": [
+                "public/creatives/linkedin_casas_deportes_b2b.png"
+            ],
+            "caption": "🏆 Atención Gerentes de Compras y Dueños de Casas de Deportes en Argentina:\n\nEl segmento de calzado athleisure y deportivo urbano representa hoy una de las categorías de mayor rotación y margen de contribución para las tiendas deportivas.\n\nEn SkyBlue Mayorista abastecemos a comercios de todo el país con las líneas especializadas de Xti y Refresh, ofreciendo:\n📊 Alto Margen Comercial: Estructura de precios altamente competitiva para el canal retail.\n⚡ Entrega Eficiente y Stock Constante: Abastecimiento rápido para no perder ventas en picos de demanda.\n📱 Plataforma de Gestión B2B: Pedidos por volumen 24/7 con trazabilidad total.\n\n🤝 ¿Buscás optimizar la rentabilidad de tu cadena deportiva esta temporada?\nContactate directamente con nuestra unidad de negocios B2B o visitá nuestro showroom corporativo.\n\n🌐 www.skyblue.com.ar | 📩 b2b@skyblue.com.ar",
+            "hashtags": [
+                "#CasasDeDeportes",
+                "#RetailArgentina",
+                "#CalzadoDeportivo",
+                "#B2BCommerce",
+                "#SkyBlueMayorista",
+                "#DistribucionMayorista"
+            ],
+            "link_url": "https://skyblue.com.ar/b2b"
+        }
+    ]
+}
